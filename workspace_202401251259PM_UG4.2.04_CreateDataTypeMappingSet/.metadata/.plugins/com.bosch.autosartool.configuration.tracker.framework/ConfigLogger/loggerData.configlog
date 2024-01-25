@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tracker:TrackerRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tracker="http://www.bosch.com/autosartool/tracker/model">
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="Basic_Workflow" timestamp="2024-01-25 11:46:49.649" description="Created ApplicationPrimitiveDataType &lt;b>MyApplicationDataType&lt;/b> " title="Created ApplicationPrimitiveDataType &lt;b>MyApplicationDataType&lt;/b> ">
+    <changes>
+      <affectedFiles>ApplicationDataTypes_MyApplicationDataType.arxml</affectedFiles>
+      <changeObjectsUris>platform:/resource/Basic_Workflow/ApplicationDataTypes_MyApplicationDataType.arxml#/ApplicationDataTypes/MyApplicationDataType?type=ApplicationPrimitiveDataType</changeObjectsUris>
+      <changedParentObjects>platform:/resource/Basic_Workflow/ApplicationDataTypes_MyApplicationDataType.arxml#/ApplicationDataTypes?type=ARPackage</changedParentObjects>
+    </changes>
+    <uiChanges actionType="VIEW" timestamp="2024-01-25 10:59:09.098" title="Opened Filesystem Navigator View" commandId="commandId" viewId="com.bosch.wbp.filenavigator.ui.view" name="Filesystem Navigator" uiClassType="org.eclipse.ui.internal.ViewReference"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:45:15.329" title="Selected Software in AR Explorer" commandId="commandId" name="Software" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="CONTEXT_MENU" timestamp="2024-01-25 11:45:36.212" title="Clicked Create Application Data Type/Create Data Type/Create Elements | Application Primitive Data Type MenuItem" commandId="commandId" name="Create Application Data Type/Create Data Type/Create Elements | Application Primitive Data Type" uiClassType="org.eclipse.swt.widgets.MenuItem"/>
+    <uiChanges actionType="DIALOG" timestamp="2024-01-25 11:45:36.804" title="Opened New AR Element Creation Dialog" commandId="commandId" dialogName="New AR Element Creation" name="New AR Element Creation"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:46:07.667" title="Set Value of ShortName Text field as MyApplicationDataType" commandId="commandId" name="MyApplicationDataType" uiClassType="org.eclipse.swt.widgets.Text"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:46:32.89" title="Set Value of File Name Text field as ApplicationDataTypes_MyApplicationDataType.arxml" commandId="commandId" name="ApplicationDataTypes_MyApplicationDataType.arxml" uiClassType="org.eclipse.swt.widgets.Text"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:46:32.891" title="Selected Basic_Workflow [ AR 22-11 ] Tree" commandId="commandId" name="Basic_Workflow [ AR 22-11 ]" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:46:48.233" title="Clicked Finish Button" commandId="commandId" name="Finish" uiClassType="org.eclipse.swt.widgets.Button"/>
+    <uiChanges actionType="DIALOG" timestamp="2024-01-25 11:46:48.432" title="Closed New AR Element Creation Dialog" commandId="commandId" dialogName="New AR Element Creation" name="New AR Element Creation"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" actionType="OPERATION" project="" timestamp="2024-01-25 11:46:49.666" description="ApplicationDataTypes_MyApplicationDataType.arxml" title="Updated &lt;b>Basic_Workflow&lt;/b> Project : Added &lt;b>File(s)&lt;/b>" changeType="PROJECT_CHANGES"/>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="Basic_Workflow" timestamp="2024-01-25 11:52:27.876" description="Created DataTypeMappingSet &lt;b>MyDataTypeMappingSet&lt;/b> " title="Created DataTypeMappingSet &lt;b>MyDataTypeMappingSet&lt;/b> ">
+    <changes>
+      <affectedFiles>DataTypeMappingSets_MyDataTypeMappingSet.arxml</affectedFiles>
+      <changeObjectsUris>platform:/resource/Basic_Workflow/DataTypeMappingSets_MyDataTypeMappingSet.arxml#/DataTypeMappingSets/MyDataTypeMappingSet?type=DataTypeMappingSet</changeObjectsUris>
+      <changedParentObjects>platform:/resource/Basic_Workflow/DataTypeMappingSets_MyDataTypeMappingSet.arxml#/DataTypeMappingSets?type=ARPackage</changedParentObjects>
+    </changes>
+    <uiChanges actionType="VIEW" timestamp="2024-01-25 11:50:24.775" title="Opened Filesystem Navigator View" commandId="commandId" viewId="com.bosch.wbp.filenavigator.ui.view" name="Filesystem Navigator" uiClassType="org.eclipse.ui.internal.ViewReference"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:50:35.693" title="Selected Basic_Workflow [ AR 22-11 ] in AR Explorer" commandId="commandId" name="Basic_Workflow [ AR 22-11 ]" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:50:40.122" title="Selected Software in AR Explorer" commandId="commandId" name="Software" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="CONTEXT_MENU" timestamp="2024-01-25 11:50:59.597" title="Clicked Create Data Type/Create Elements | Data Type Mapping Set MenuItem" commandId="commandId" name="Create Data Type/Create Elements | Data Type Mapping Set" uiClassType="org.eclipse.swt.widgets.MenuItem"/>
+    <uiChanges actionType="DIALOG" timestamp="2024-01-25 11:50:59.8" title="Opened New AR Element Creation Dialog" commandId="commandId" dialogName="New AR Element Creation" name="New AR Element Creation"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:51:18.49" title="Set Value of ShortName Text field as MyDataTypeMappingSet" commandId="commandId" name="MyDataTypeMappingSet" uiClassType="org.eclipse.swt.widgets.Text"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:52:26.519" title="Set Value of File Name Text field as DataTypeMappingSets_MyDataTypeMappingSet.arxml" commandId="commandId" name="DataTypeMappingSets_MyDataTypeMappingSet.arxml" uiClassType="org.eclipse.swt.widgets.Text"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:52:26.521" title="Clicked Finish Button" commandId="commandId" name="Finish" uiClassType="org.eclipse.swt.widgets.Button"/>
+    <uiChanges actionType="DIALOG" timestamp="2024-01-25 11:52:26.715" title="Closed New AR Element Creation Dialog" commandId="commandId" dialogName="New AR Element Creation" name="New AR Element Creation"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" actionType="OPERATION" project="" timestamp="2024-01-25 11:52:27.897" description="DataTypeMappingSets_MyDataTypeMappingSet.arxml" title="Updated &lt;b>Basic_Workflow&lt;/b> Project : Added &lt;b>File(s)&lt;/b>" changeType="PROJECT_CHANGES"/>
+  <trackerEntries xsi:type="tracker:UIChangesEntry" actionType="EDITOR" project="Basic_Workflow" timestamp="2024-01-25 11:52:46.332" title="Opened Data Dictionary Editor on &lt;b>Basic_Workflow&lt;/b> " commandId="commandId" editorId="com.bosch.autosartool.asw.component.editor4x.general" name="Data Dictionary Editor" uiClassType="org.eclipse.ui.internal.EditorReference"/>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="Basic_Workflow" timestamp="2024-01-25 11:53:13.826" description="Created &lt;b>DataTypeMap&lt;/b>(DataTypeMap)" title="Updated DataTypeMappingSet &lt;b>MyDataTypeMappingSet&lt;/b> : Created DataTypeMap &lt;b>DataTypeMap&lt;/b> ">
+    <changes>
+      <affectedFiles>DataTypeMappingSets_MyDataTypeMappingSet.arxml</affectedFiles>
+      <changeObjectsUris>platform:/resource/Basic_Workflow/DataTypeMappingSets_MyDataTypeMappingSet.arxml#/DataTypeMappingSets/MyDataTypeMappingSet/@dataTypeMaps.0?type=DataTypeMap</changeObjectsUris>
+      <changedParentObjects>platform:/resource/Basic_Workflow/DataTypeMappingSets_MyDataTypeMappingSet.arxml#/DataTypeMappingSets/MyDataTypeMappingSet?type=DataTypeMappingSet</changedParentObjects>
+    </changes>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:53:13.608" title="Clicked Add ImageHyperlink" commandId="commandId" name="Add" uiClassType="org.eclipse.ui.forms.widgets.ImageHyperlink"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="Basic_Workflow" timestamp="2024-01-25 11:53:38.563" description="Deleted &lt;b>DataTypeMap&lt;/b>(DataTypeMap)" title="Modified DataTypeMappingSet &lt;b>MyDataTypeMappingSet&lt;/b> : Deleted DataTypeMap &lt;b>DataTypeMap&lt;/b> ">
+    <changes modificationType="REMOVED">
+      <affectedFiles>DataTypeMappingSets_MyDataTypeMappingSet.arxml</affectedFiles>
+      <changeObjectsUris>ar:/#/DataTypeMappingSets/MyDataTypeMappingSet?type=DataTypeMap</changeObjectsUris>
+      <changedParentObjects>platform:/resource/Basic_Workflow/DataTypeMappingSets_MyDataTypeMappingSet.arxml#/DataTypeMappingSets/MyDataTypeMappingSet?type=DataTypeMappingSet</changedParentObjects>
+    </changes>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:53:37.462" title="Clicked Delete ImageHyperlink" commandId="commandId" name="Delete" uiClassType="org.eclipse.ui.forms.widgets.ImageHyperlink"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="Basic_Workflow" timestamp="2024-01-25 11:55:31.376" description="Created &lt;b>SwDataDefProps&lt;/b>(SwDataDefProps)" title="Updated ApplicationPrimitiveDataType &lt;b>MyApplicationDataType&lt;/b> : Created SwDataDefProps &lt;b>SwDataDefProps&lt;/b> ">
+    <changes>
+      <affectedFiles>ApplicationDataTypes_MyApplicationDataType.arxml</affectedFiles>
+      <changeObjectsUris>platform:/resource/Basic_Workflow/ApplicationDataTypes_MyApplicationDataType.arxml#/ApplicationDataTypes/MyApplicationDataType/@swDataDefProps?type=SwDataDefProps</changeObjectsUris>
+      <changedParentObjects>platform:/resource/Basic_Workflow/ApplicationDataTypes_MyApplicationDataType.arxml#/ApplicationDataTypes/MyApplicationDataType?type=ApplicationPrimitiveDataType</changedParentObjects>
+    </changes>
+    <uiChanges actionType="DIALOG" timestamp="2024-01-25 11:54:22.182" title="Opened ImplementationDataType selection dialog " commandId="commandId" dialogName="ImplementationDataType selection dialog" name="ImplementationDataType selection dialog"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:55:31.185" title="Clicked OK Button" commandId="commandId" name="OK" uiClassType="org.eclipse.swt.widgets.Button"/>
+    <uiChanges actionType="DIALOG" timestamp="2024-01-25 11:55:31.289" title="Closed ImplementationDataType selection dialog " commandId="commandId" dialogName="ImplementationDataType selection dialog" name="ImplementationDataType selection dialog"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" timestamp="2024-01-25 11:56:12.23" description="Deleted &lt;b>MyDataTypeMappingSet&lt;/b>(DataTypeMappingSet)" title="Deleted DataTypeMappingSet &lt;b>MyDataTypeMappingSet&lt;/b> ">
+    <changes modificationType="REMOVED">
+      <changeObjectsUris>#//</changeObjectsUris>
+      <changedParentObjects>ar:/#/DataTypeMappingSets?type=ARPackage</changedParentObjects>
+    </changes>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:56:04.358" title="Clicked Cancel Button" commandId="commandId" name="Cancel" uiClassType="org.eclipse.swt.widgets.Button"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:56:09.027" title="Selected MyDataTypeMappingSet in AR Explorer" commandId="commandId" name="MyDataTypeMappingSet" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="CONTEXT_MENU" timestamp="2024-01-25 11:56:10.922" title="Clicked Delete MenuItem" commandId="commandId" name="Delete" uiClassType="org.eclipse.swt.widgets.MenuItem"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:UIChangesEntry" actionType="EDITOR" project="Basic_Workflow" timestamp="2024-01-25 11:56:25.577" title="Closed Data Dictionary Editor on &lt;b>Basic_Workflow&lt;/b> " commandId="commandId" editorId="com.bosch.autosartool.asw.component.editor4x.general" name="Data Dictionary Editor" uiClassType="org.eclipse.ui.internal.EditorReference"/>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="Basic_Workflow" timestamp="2024-01-25 11:57:09.87" description="Created &lt;b>DataTypeMappingSets&lt;/b>(ARPackage)" title="Updated AUTOSAR &lt;b>&lt;/b> : Created ARPackage &lt;b>DataTypeMappingSets&lt;/b> ">
+    <changes>
+      <affectedFiles>DataTypeMappingSets_MyDataTypeMappingSet.arxml</affectedFiles>
+      <changeObjectsUris>platform:/resource/Basic_Workflow/DataTypeMappingSets_MyDataTypeMappingSet.arxml#/DataTypeMappingSets?type=ARPackage</changeObjectsUris>
+      <changedParentObjects>platform:/resource/Basic_Workflow/DataTypeMappingSets_MyDataTypeMappingSet.arxml#/?type=AUTOSAR</changedParentObjects>
+    </changes>
+    <uiChanges actionType="TOOLBAR_BUTTON" timestamp="2024-01-25 11:56:26.453" title="Clicked Save (Ctrl+S) ToolItem" commandId="commandId" name="Save (Ctrl+S)" uiClassType="org.eclipse.swt.widgets.ToolItem"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:56:30.666" title="Selected Software in AR Explorer" commandId="commandId" name="Software" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:56:31.714" title="Selected Software in AR Explorer" commandId="commandId" name="Software" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:56:33.92" title="Selected Application Data Types in AR Explorer" commandId="commandId" name="Application Data Types" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:56:34.633" title="Selected Application Data Types in AR Explorer" commandId="commandId" name="Application Data Types" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:56:36.258" title="Selected Application Data Types in AR Explorer" commandId="commandId" name="Application Data Types" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:56:48.487" title="Selected Software in AR Explorer" commandId="commandId" name="Software" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:56:48.893" title="Selected Software in AR Explorer" commandId="commandId" name="Software" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="CONTEXT_MENU" timestamp="2024-01-25 11:56:54.722" title="Clicked Create Data Type/Create Elements | Data Type Mapping Set MenuItem" commandId="commandId" name="Create Data Type/Create Elements | Data Type Mapping Set" uiClassType="org.eclipse.swt.widgets.MenuItem"/>
+    <uiChanges actionType="DIALOG" timestamp="2024-01-25 11:56:54.798" title="Opened New AR Element Creation Dialog" commandId="commandId" dialogName="New AR Element Creation" name="New AR Element Creation"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:57:02.677" title="Set Value of ShortName Text field as MyDataTypeMappingSet" commandId="commandId" name="MyDataTypeMappingSet" uiClassType="org.eclipse.swt.widgets.Text"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:57:09.734" title="Set Value of File Name Text field as DataTypeMappingSets_MyDataTypeMappingSet.arxml" commandId="commandId" name="DataTypeMappingSets_MyDataTypeMappingSet.arxml" uiClassType="org.eclipse.swt.widgets.Text"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:57:09.735" title="Clicked Finish Button" commandId="commandId" name="Finish" uiClassType="org.eclipse.swt.widgets.Button"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="Basic_Workflow" timestamp="2024-01-25 11:57:09.922" description="Created DataTypeMappingSet &lt;b>MyDataTypeMappingSet&lt;/b> " title="Created DataTypeMappingSet &lt;b>MyDataTypeMappingSet&lt;/b> ">
+    <changes>
+      <affectedFiles>DataTypeMappingSets_MyDataTypeMappingSet.arxml</affectedFiles>
+      <changeObjectsUris>platform:/resource/Basic_Workflow/DataTypeMappingSets_MyDataTypeMappingSet.arxml#/DataTypeMappingSets/MyDataTypeMappingSet?type=DataTypeMappingSet</changeObjectsUris>
+      <changedParentObjects>platform:/resource/Basic_Workflow/DataTypeMappingSets_MyDataTypeMappingSet.arxml#/DataTypeMappingSets?type=ARPackage</changedParentObjects>
+    </changes>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:UIChangesEntry" actionType="EDITOR" project="Basic_Workflow" timestamp="2024-01-25 11:57:16.805" title="Opened Data Dictionary Editor on &lt;b>Basic_Workflow&lt;/b> " commandId="commandId" editorId="com.bosch.autosartool.asw.component.editor4x.general" name="Data Dictionary Editor" uiClassType="org.eclipse.ui.internal.EditorReference"/>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="Basic_Workflow" timestamp="2024-01-25 11:57:25.135" description="Deleted &lt;b>MyApplicationDataType&lt;/b>(ApplicationPrimitiveDataType)" title="Deleted ApplicationPrimitiveDataType &lt;b>MyApplicationDataType&lt;/b> ">
+    <changes modificationType="REMOVED">
+      <affectedFiles>ApplicationDataTypes_MyApplicationDataType.arxml</affectedFiles>
+      <changeObjectsUris>ar:/#/ApplicationDataTypes/MyApplicationDataType?type=ApplicationPrimitiveDataType</changeObjectsUris>
+      <changedParentObjects>platform:/resource/Basic_Workflow/ApplicationDataTypes_MyApplicationDataType.arxml#/ApplicationDataTypes?type=ARPackage</changedParentObjects>
+    </changes>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:57:24.18" title="Clicked Delete ImageHyperlink" commandId="commandId" name="Delete" uiClassType="org.eclipse.ui.forms.widgets.ImageHyperlink"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="Basic_Workflow" timestamp="2024-01-25 11:57:27.357" description="Created &lt;b>ApplicationPrimitiveDataType_0&lt;/b>(ApplicationPrimitiveDataType)" title="Updated ARPackage &lt;b>Pkg_ApplicationDataTypes&lt;/b> : Created ApplicationPrimitiveDataType &lt;b>ApplicationPrimitiveDataType_0&lt;/b> ">
+    <changes>
+      <affectedFiles>Data_Dictionary_Cfg.arxml</affectedFiles>
+      <changeObjectsUris>platform:/resource/Basic_Workflow/Data_Dictionary_Cfg.arxml#/Pkg_ApplicationDataTypes/ApplicationPrimitiveDataType_0?type=ApplicationPrimitiveDataType</changeObjectsUris>
+      <changedParentObjects>platform:/resource/Basic_Workflow/Data_Dictionary_Cfg.arxml#/Pkg_ApplicationDataTypes?type=ARPackage</changedParentObjects>
+    </changes>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" actionType="OPERATION" project="" timestamp="2024-01-25 11:57:27.534" description="Data_Dictionary_Cfg.arxml" title="Updated &lt;b>Basic_Workflow&lt;/b> Project : Added &lt;b>File(s)&lt;/b>" changeType="PROJECT_CHANGES"/>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="Basic_Workflow" timestamp="2024-01-25 11:57:32.53" description="Deleted &lt;b>ApplicationPrimitiveDataType_0&lt;/b>(ApplicationPrimitiveDataType)" title="Deleted ApplicationPrimitiveDataType &lt;b>ApplicationPrimitiveDataType_0&lt;/b> ">
+    <changes modificationType="REMOVED">
+      <affectedFiles>Data_Dictionary_Cfg.arxml</affectedFiles>
+      <changeObjectsUris>ar:/#/Pkg_ApplicationDataTypes/ApplicationPrimitiveDataType_0?type=ApplicationPrimitiveDataType</changeObjectsUris>
+      <changedParentObjects>platform:/resource/Basic_Workflow/Data_Dictionary_Cfg.arxml#/Pkg_ApplicationDataTypes?type=ARPackage</changedParentObjects>
+    </changes>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:57:31.581" title="Clicked Delete ImageHyperlink" commandId="commandId" name="Delete" uiClassType="org.eclipse.ui.forms.widgets.ImageHyperlink"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:UIChangesEntry" actionType="EDITOR" project="Basic_Workflow" timestamp="2024-01-25 11:58:11.411" title="Closed Data Dictionary Editor on &lt;b>Basic_Workflow&lt;/b> " commandId="commandId" editorId="com.bosch.autosartool.asw.component.editor4x.general" name="Data Dictionary Editor" uiClassType="org.eclipse.ui.internal.EditorReference"/>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" timestamp="2024-01-25 11:58:13.776" description="Deleted &lt;b>MyDataTypeMappingSet&lt;/b>(DataTypeMappingSet)" title="Deleted DataTypeMappingSet &lt;b>MyDataTypeMappingSet&lt;/b> ">
+    <changes modificationType="REMOVED">
+      <changeObjectsUris>#//</changeObjectsUris>
+      <changedParentObjects>ar:/#/DataTypeMappingSets?type=ARPackage</changedParentObjects>
+    </changes>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:58:12.346" title="Selected MyDataTypeMappingSet in AR Explorer" commandId="commandId" name="MyDataTypeMappingSet" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="CONTEXT_MENU" timestamp="2024-01-25 11:58:13.485" title="Clicked Delete MenuItem" commandId="commandId" name="Delete" uiClassType="org.eclipse.swt.widgets.MenuItem"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="Basic_Workflow" timestamp="2024-01-25 11:58:36.338" description="Created &lt;b>DataTypeMappingSets&lt;/b>(ARPackage)" title="Updated AUTOSAR &lt;b>&lt;/b> : Created ARPackage &lt;b>DataTypeMappingSets&lt;/b> ">
+    <changes>
+      <affectedFiles>DataTypeMappingSets_MyDataTypeMappingSet.arxml</affectedFiles>
+      <changeObjectsUris>platform:/resource/Basic_Workflow/DataTypeMappingSets_MyDataTypeMappingSet.arxml#/DataTypeMappingSets?type=ARPackage</changeObjectsUris>
+      <changedParentObjects>platform:/resource/Basic_Workflow/DataTypeMappingSets_MyDataTypeMappingSet.arxml#/?type=AUTOSAR</changedParentObjects>
+    </changes>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:58:15.368" title="Selected Software in AR Explorer" commandId="commandId" name="Software" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="CONTEXT_MENU" timestamp="2024-01-25 11:58:18.432" title="Clicked Create Data Type/Create Elements | Data Type Mapping Set MenuItem" commandId="commandId" name="Create Data Type/Create Elements | Data Type Mapping Set" uiClassType="org.eclipse.swt.widgets.MenuItem"/>
+    <uiChanges actionType="DIALOG" timestamp="2024-01-25 11:58:18.509" title="Opened New AR Element Creation Dialog" commandId="commandId" dialogName="New AR Element Creation" name="New AR Element Creation"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:58:28.05" title="Set Value of ShortName Text field as MyDataTypeMappingSet" commandId="commandId" name="MyDataTypeMappingSet" uiClassType="org.eclipse.swt.widgets.Text"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:58:36.218" title="Set Value of File Name Text field as DataTypeMappingSets_MyDataTypeMappingSet.arxml" commandId="commandId" name="DataTypeMappingSets_MyDataTypeMappingSet.arxml" uiClassType="org.eclipse.swt.widgets.Text"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:58:36.219" title="Clicked Finish Button" commandId="commandId" name="Finish" uiClassType="org.eclipse.swt.widgets.Button"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="Basic_Workflow" timestamp="2024-01-25 11:58:36.385" description="Created DataTypeMappingSet &lt;b>MyDataTypeMappingSet&lt;/b> " title="Created DataTypeMappingSet &lt;b>MyDataTypeMappingSet&lt;/b> ">
+    <changes>
+      <affectedFiles>DataTypeMappingSets_MyDataTypeMappingSet.arxml</affectedFiles>
+      <changeObjectsUris>platform:/resource/Basic_Workflow/DataTypeMappingSets_MyDataTypeMappingSet.arxml#/DataTypeMappingSets/MyDataTypeMappingSet?type=DataTypeMappingSet</changeObjectsUris>
+      <changedParentObjects>platform:/resource/Basic_Workflow/DataTypeMappingSets_MyDataTypeMappingSet.arxml#/DataTypeMappingSets?type=ARPackage</changedParentObjects>
+    </changes>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:UIChangesEntry" actionType="EDITOR" project="Basic_Workflow" timestamp="2024-01-25 11:58:40.398" title="Opened Data Dictionary Editor on &lt;b>Basic_Workflow&lt;/b> " commandId="commandId" editorId="com.bosch.autosartool.asw.component.editor4x.general" name="Data Dictionary Editor" uiClassType="org.eclipse.ui.internal.EditorReference"/>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="Basic_Workflow" timestamp="2024-01-25 11:59:18.498" description="Created &lt;b>DataTypeMap&lt;/b>(DataTypeMap)" title="Updated DataTypeMappingSet &lt;b>MyDataTypeMappingSet&lt;/b> : Created DataTypeMap &lt;b>DataTypeMap&lt;/b> ">
+    <changes>
+      <affectedFiles>DataTypeMappingSets_MyDataTypeMappingSet.arxml</affectedFiles>
+      <changeObjectsUris>platform:/resource/Basic_Workflow/DataTypeMappingSets_MyDataTypeMappingSet.arxml#/DataTypeMappingSets/MyDataTypeMappingSet/@dataTypeMaps.0?type=DataTypeMap</changeObjectsUris>
+      <changedParentObjects>platform:/resource/Basic_Workflow/DataTypeMappingSets_MyDataTypeMappingSet.arxml#/DataTypeMappingSets/MyDataTypeMappingSet?type=DataTypeMappingSet</changedParentObjects>
+    </changes>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:59:05.535" title="Selected MyDataTypeMappingSet Tree" commandId="commandId" name="MyDataTypeMappingSet" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:59:18.386" title="Clicked Add ImageHyperlink" commandId="commandId" name="Add" uiClassType="org.eclipse.ui.forms.widgets.ImageHyperlink"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="Basic_Workflow" timestamp="2024-01-25 11:59:45.728" description="Created &lt;b>ApplicationPrimitiveDataType_0&lt;/b>(ApplicationPrimitiveDataType)" title="Updated ARPackage &lt;b>Pkg_ApplicationDataTypes&lt;/b> : Created ApplicationPrimitiveDataType &lt;b>ApplicationPrimitiveDataType_0&lt;/b> ">
+    <changes>
+      <affectedFiles>Data_Dictionary_Cfg.arxml</affectedFiles>
+      <changeObjectsUris>platform:/resource/Basic_Workflow/Data_Dictionary_Cfg.arxml#/Pkg_ApplicationDataTypes/ApplicationPrimitiveDataType_0?type=ApplicationPrimitiveDataType</changeObjectsUris>
+      <changedParentObjects>platform:/resource/Basic_Workflow/Data_Dictionary_Cfg.arxml#/Pkg_ApplicationDataTypes?type=ARPackage</changedParentObjects>
+    </changes>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:59:26.934" title="Clicked OK Button" commandId="commandId" name="OK" uiClassType="org.eclipse.swt.widgets.Button"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:59:31.427" title="Selected Data Types in AR Explorer" commandId="commandId" name="Data Types" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:59:32.902" title="Selected Data Types in AR Explorer" commandId="commandId" name="Data Types" uiClassType="org.eclipse.swt.widgets.Tree"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="Basic_Workflow" timestamp="2024-01-25 11:59:52.468" description="Configured &lt;b>applicationDataType&lt;/b> of &lt;b>DataTypeMap&lt;/b> (DataTypeMap)  of &lt;b>MyDataTypeMappingSet&lt;/b> (DataTypeMappingSet) To ApplicationPrimitiveDataType_0" title="Configured &lt;b>applicationDataType&lt;/b> of &lt;b>DataTypeMap&lt;/b> (DataTypeMap)  of &lt;b>MyDataTypeMappingSet&lt;/b> (DataTypeMappingSet) ">
+    <changes modificationType="MODIFIED">
+      <affectedFiles>DataTypeMappingSets_MyDataTypeMappingSet.arxml</affectedFiles>
+      <changeObjectsUris>platform:/resource/Basic_Workflow/DataTypeMappingSets_MyDataTypeMappingSet.arxml#/DataTypeMappingSets/MyDataTypeMappingSet/@dataTypeMaps.0?type=DataTypeMap</changeObjectsUris>
+      <changedParentObjects>platform:/resource/Basic_Workflow/DataTypeMappingSets_MyDataTypeMappingSet.arxml#/DataTypeMappingSets/MyDataTypeMappingSet?type=DataTypeMappingSet</changedParentObjects>
+    </changes>
+    <uiChanges actionType="DIALOG" timestamp="2024-01-25 11:59:49.847" title="Opened ApplicationDataType selection dialog " commandId="commandId" dialogName="ApplicationDataType selection dialog" name="ApplicationDataType selection dialog"/>
+    <uiChanges actionType="DIALOG" timestamp="2024-01-25 11:59:52.415" title="Closed ApplicationDataType selection dialog " commandId="commandId" dialogName="ApplicationDataType selection dialog" name="ApplicationDataType selection dialog"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="Basic_Workflow" timestamp="2024-01-25 12:00:17.853" description="Configured &lt;b>implementationDataType&lt;/b> of &lt;b>DataTypeMap&lt;/b> (DataTypeMap)  of &lt;b>MyDataTypeMappingSet&lt;/b> (DataTypeMappingSet) To uint8" title="Configured &lt;b>implementationDataType&lt;/b> of &lt;b>DataTypeMap&lt;/b> (DataTypeMap)  of &lt;b>MyDataTypeMappingSet&lt;/b> (DataTypeMappingSet) ">
+    <changes modificationType="MODIFIED">
+      <affectedFiles>DataTypeMappingSets_MyDataTypeMappingSet.arxml</affectedFiles>
+      <changeObjectsUris>platform:/resource/Basic_Workflow/DataTypeMappingSets_MyDataTypeMappingSet.arxml#/DataTypeMappingSets/MyDataTypeMappingSet/@dataTypeMaps.0?type=DataTypeMap</changeObjectsUris>
+      <changedParentObjects>platform:/resource/Basic_Workflow/DataTypeMappingSets_MyDataTypeMappingSet.arxml#/DataTypeMappingSets/MyDataTypeMappingSet?type=DataTypeMappingSet</changedParentObjects>
+    </changes>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:59:54.395" title="Selected MyDataTypeMappingSet Tree" commandId="commandId" name="MyDataTypeMappingSet" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="DIALOG" timestamp="2024-01-25 12:00:03.839" title="Opened ImplementationDataType selection dialog " commandId="commandId" dialogName="ImplementationDataType selection dialog" name="ImplementationDataType selection dialog"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 12:00:17.704" title="Clicked OK Button" commandId="commandId" name="OK" uiClassType="org.eclipse.swt.widgets.Button"/>
+    <uiChanges actionType="DIALOG" timestamp="2024-01-25 12:00:17.805" title="Closed ImplementationDataType selection dialog " commandId="commandId" dialogName="ImplementationDataType selection dialog" name="ImplementationDataType selection dialog"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:UIChangesEntry" actionType="EDITOR" project="Basic_Workflow" timestamp="2024-01-25 12:59:07.854" title="Closed Data Dictionary Editor on &lt;b>Basic_Workflow&lt;/b> " commandId="commandId" editorId="com.bosch.autosartool.asw.component.editor4x.general" name="Data Dictionary Editor" uiClassType="org.eclipse.ui.internal.EditorReference"/>
+  <trackerEntries xsi:type="tracker:UIChangesEntry" actionType="EDITOR" project="Basic_Workflow" timestamp="2024-01-25 13:04:09.601" title="Closed Data Dictionary Editor on &lt;b>MyDataTypeMappingSet&lt;/b> (DataTypeMappingSet)" commandId="commandId" editorId="com.bosch.autosartool.asw.component.editor4x.general" name="Data Dictionary Editor" uiClassType="org.eclipse.ui.internal.EditorReference"/>
+  <trackerEntries xsi:type="tracker:UIChangesEntry" actionType="EDITOR" project="Basic_Workflow" timestamp="2024-01-25 13:04:16.798" title="Opened Data Dictionary Editor on &lt;b>Basic_Workflow&lt;/b> " commandId="commandId" editorId="com.bosch.autosartool.asw.component.editor4x.general" name="Data Dictionary Editor" uiClassType="org.eclipse.ui.internal.EditorReference"/>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" timestamp="2024-01-25 13:04:39.806" description="Deleted &lt;b>ApplicationPrimitiveDataType_0&lt;/b>(ApplicationPrimitiveDataType)" title="Deleted ApplicationPrimitiveDataType &lt;b>ApplicationPrimitiveDataType_0&lt;/b> ">
+    <changes modificationType="REMOVED">
+      <changeObjectsUris>#//</changeObjectsUris>
+      <changedParentObjects>ar:/#/Pkg_ApplicationDataTypes?type=ARPackage</changedParentObjects>
+    </changes>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 13:04:26.392" title="Selected ApplicationPrimitiveDataType_0 in AR Explorer" commandId="commandId" name="ApplicationPrimitiveDataType_0" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 13:04:27.138" title="Selected ApplicationPrimitiveDataType_0 in AR Explorer" commandId="commandId" name="ApplicationPrimitiveDataType_0" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="CONTEXT_MENU" timestamp="2024-01-25 13:04:29.614" title="Clicked Rename MenuItem" commandId="commandId" name="Rename" uiClassType="org.eclipse.swt.widgets.MenuItem"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 13:04:34.793" title="Selected Primitive Data Types in AR Explorer" commandId="commandId" name="Primitive Data Types" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 13:04:34.994" title="Selected Primitive Data Types in AR Explorer" commandId="commandId" name="Primitive Data Types" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 13:04:36.684" title="Selected ApplicationPrimitiveDataType_0 in AR Explorer" commandId="commandId" name="ApplicationPrimitiveDataType_0" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 13:04:36.898" title="Selected ApplicationPrimitiveDataType_0 in AR Explorer" commandId="commandId" name="ApplicationPrimitiveDataType_0" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="CONTEXT_MENU" timestamp="2024-01-25 13:04:38.375" title="Clicked Delete MenuItem" commandId="commandId" name="Delete" uiClassType="org.eclipse.swt.widgets.MenuItem"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="Basic_Workflow" timestamp="2024-01-25 13:05:22.764" description="Created ApplicationPrimitiveDataType &lt;b>MyApplicationDataType&lt;/b> " title="Created ApplicationPrimitiveDataType &lt;b>MyApplicationDataType&lt;/b> ">
+    <changes>
+      <affectedFiles>ApplicationDataTypes_MyApplicationDataType.arxml</affectedFiles>
+      <changeObjectsUris>platform:/resource/Basic_Workflow/ApplicationDataTypes_MyApplicationDataType.arxml#/ApplicationDataTypes/MyApplicationDataType?type=ApplicationPrimitiveDataType</changeObjectsUris>
+      <changedParentObjects>platform:/resource/Basic_Workflow/ApplicationDataTypes_MyApplicationDataType.arxml#/ApplicationDataTypes?type=ARPackage</changedParentObjects>
+    </changes>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 13:04:42.885" title="Selected Primitive Data Types in AR Explorer" commandId="commandId" name="Primitive Data Types" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="TOOLBAR_BUTTON" timestamp="2024-01-25 13:04:45.218" title="Clicked Save (Ctrl+S) ToolItem" commandId="commandId" name="Save (Ctrl+S)" uiClassType="org.eclipse.swt.widgets.ToolItem"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 13:04:47.676" title="Selected ApplicationPrimitiveDataType_0 in AR Explorer" commandId="commandId" name="ApplicationPrimitiveDataType_0" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 13:04:48.01" title="Selected ApplicationPrimitiveDataType_0 in AR Explorer" commandId="commandId" name="ApplicationPrimitiveDataType_0" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 13:04:49.995" title="Selected Primitive Data Types in AR Explorer" commandId="commandId" name="Primitive Data Types" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 13:04:53.141" title="Selected Software in AR Explorer" commandId="commandId" name="Software" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 13:04:53.466" title="Selected Software in AR Explorer" commandId="commandId" name="Software" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="CONTEXT_MENU" timestamp="2024-01-25 13:04:58.729" title="Clicked Create Application Data Type/Create Data Type/Create Elements | Application Primitive Data Type MenuItem" commandId="commandId" name="Create Application Data Type/Create Data Type/Create Elements | Application Primitive Data Type" uiClassType="org.eclipse.swt.widgets.MenuItem"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="Basic_Workflow" timestamp="2024-01-25 13:05:30.131" description="Configured &lt;b>applicationDataType&lt;/b> of &lt;b>DataTypeMap&lt;/b> (DataTypeMap)  of &lt;b>MyDataTypeMappingSet&lt;/b> (DataTypeMappingSet) To MyApplicationDataType" title="Configured &lt;b>applicationDataType&lt;/b> of &lt;b>DataTypeMap&lt;/b> (DataTypeMap)  of &lt;b>MyDataTypeMappingSet&lt;/b> (DataTypeMappingSet) ">
+    <changes modificationType="MODIFIED">
+      <affectedFiles>DataTypeMappingSets_MyDataTypeMappingSet.arxml</affectedFiles>
+      <changeObjectsUris>platform:/resource/Basic_Workflow/DataTypeMappingSets_MyDataTypeMappingSet.arxml#/DataTypeMappingSets/MyDataTypeMappingSet/@dataTypeMaps.0?type=DataTypeMap</changeObjectsUris>
+      <changedParentObjects>platform:/resource/Basic_Workflow/DataTypeMappingSets_MyDataTypeMappingSet.arxml#/DataTypeMappingSets/MyDataTypeMappingSet?type=DataTypeMappingSet</changedParentObjects>
+    </changes>
+    <uiChanges actionType="DIALOG" timestamp="2024-01-25 13:05:26.91" title="Opened ApplicationDataType selection dialog " commandId="commandId" dialogName="ApplicationDataType selection dialog" name="ApplicationDataType selection dialog"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 13:05:30.012" title="Clicked OK Button" commandId="commandId" name="OK" uiClassType="org.eclipse.swt.widgets.Button"/>
+    <uiChanges actionType="DIALOG" timestamp="2024-01-25 13:05:30.064" title="Closed ApplicationDataType selection dialog " commandId="commandId" dialogName="ApplicationDataType selection dialog" name="ApplicationDataType selection dialog"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:UIChangesEntry" actionType="EDITOR" project="Basic_Workflow" timestamp="2024-01-25 13:06:22.063" title="Closed Data Dictionary Editor on &lt;b>Basic_Workflow&lt;/b> " commandId="commandId" editorId="com.bosch.autosartool.asw.component.editor4x.general" name="Data Dictionary Editor" uiClassType="org.eclipse.ui.internal.EditorReference"/>
+</tracker:TrackerRoot>

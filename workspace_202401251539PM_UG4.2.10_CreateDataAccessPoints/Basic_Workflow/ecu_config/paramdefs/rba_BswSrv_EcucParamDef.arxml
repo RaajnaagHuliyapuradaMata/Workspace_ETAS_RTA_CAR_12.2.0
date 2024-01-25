@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <ADMIN-DATA>
+    <DOC-REVISIONS>
+      <DOC-REVISION>
+        <ISSUED-BY>RB</ISSUED-BY>
+        <DATE>2023-02-22</DATE>
+      </DOC-REVISION>
+    </DOC-REVISIONS>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>RB</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>RBA</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>rba_BswSrv</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE>
+                  <SHORT-NAME>EcucModuleDefs</SHORT-NAME>
+                  <ELEMENTS>
+                    <!-- Module Definition: rba_BswSrv -->
+                    <ECUC-MODULE-DEF>
+                      <SHORT-NAME>rba_BswSrv</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">BswLib BswSrv</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">BswSrv config package</L-2>
+                      </DESC>
+                      <CATEGORY>VENDOR_SPECIFIC_MODULE_DEFINITION</CATEGORY>
+                      <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                          <DOC-REVISION>
+                            <REVISION-LABEL>0.1.0</REVISION-LABEL>
+                            <ISSUED-BY>RB</ISSUED-BY>
+                            <DATE>2011-04-19</DATE>
+                          </DOC-REVISION>
+                        </DOC-REVISIONS>
+                      </ADMIN-DATA>
+                      <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <POST-BUILD-VARIANT-SUPPORT>false</POST-BUILD-VARIANT-SUPPORT>
+                      <SUPPORTED-CONFIG-VARIANTS>
+                        <SUPPORTED-CONFIG-VARIANT>VARIANT-PRE-COMPILE</SUPPORTED-CONFIG-VARIANT>
+                      </SUPPORTED-CONFIG-VARIANTS>
+                      <CONTAINERS>
+                        <!-- Container Definition: rba_BswSrv_Config -->
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>rba_BswSrv_Config</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Configuration data set</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Configuration data of BswSrv</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <PARAMETERS>
+                            <!-- PARAMETER DEFINITION: rba_BswSrv_Config_Compatibility -->
+                            <ECUC-MULTILINE-STRING-PARAM-DEF>
+                              <SHORT-NAME>rba_BswSrv_Config_Compatibility</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Compatibility Configuration</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">User can configure this parameter by entering the multiline string manually, if needed. This configuration is added for compatibility.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB:0.1.0:2022-09-07</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <ECUC-MULTILINE-STRING-PARAM-DEF-VARIANTS>
+                                <ECUC-MULTILINE-STRING-PARAM-DEF-CONDITIONAL/>
+                              </ECUC-MULTILINE-STRING-PARAM-DEF-VARIANTS>
+                            </ECUC-MULTILINE-STRING-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: rba_BswSrv_Config_Compiler_Lib_Support -->
+                            <ECUC-BOOLEAN-PARAM-DEF>
+                              <SHORT-NAME>rba_BswSrv_Config_Compiler_Lib_Support</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">rba_BswSrv_Config_Compiler_Library_Support</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Defines if Compiler Library Optimisation is enabled or not.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB:0.1.0:2022-08-23</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                            </ECUC-BOOLEAN-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: rba_BswSrv_Config_Disable_Interrupt -->
+                            <ECUC-MULTILINE-STRING-PARAM-DEF>
+                              <SHORT-NAME>rba_BswSrv_Config_Disable_Interrupt</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Disable Interrupt</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">configurable macro which can be mapped to Os functions to disable interrupt</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB:0.1.0:2022-12-12</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <ECUC-MULTILINE-STRING-PARAM-DEF-VARIANTS>
+                                <ECUC-MULTILINE-STRING-PARAM-DEF-CONDITIONAL/>
+                              </ECUC-MULTILINE-STRING-PARAM-DEF-VARIANTS>
+                            </ECUC-MULTILINE-STRING-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: rba_BswSrv_Config_Disable_Lock_support -->
+                            <ECUC-BOOLEAN-PARAM-DEF>
+                              <SHORT-NAME>rba_BswSrv_Config_Disable_Lock_support</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Disable Lock support</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Macro to check Lock support enabled or disabled. If it is set to true, Lock support disabled.Configure ONLY for BootCtrl, or possibly CB projects. Removes all interrupt suspend and spinlock interfaces. If it is set to false then lock support enabled</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB:0.1.0:2022-08-23</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>true</DEFAULT-VALUE>
+                            </ECUC-BOOLEAN-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: rba_BswSrv_Config_Enable_Interrupt -->
+                            <ECUC-MULTILINE-STRING-PARAM-DEF>
+                              <SHORT-NAME>rba_BswSrv_Config_Enable_Interrupt</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Enable Interrupt</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">configurable macro which can be mapped to Os functions to enable interrupt</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB:0.1.0:2022-12-12</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <ECUC-MULTILINE-STRING-PARAM-DEF-VARIANTS>
+                                <ECUC-MULTILINE-STRING-PARAM-DEF-CONDITIONAL/>
+                              </ECUC-MULTILINE-STRING-PARAM-DEF-VARIANTS>
+                            </ECUC-MULTILINE-STRING-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: rba_BswSrv_Config_GetReturnAddress -->
+                            <ECUC-MULTILINE-STRING-PARAM-DEF>
+                              <SHORT-NAME>rba_BswSrv_Config_GetReturnAddress</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Get return address function</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">This is function definition of rba_BswSrv_GetReturnAddress(). User needs to enter the proper function definition otherwise it may cause build error and functional issue.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB:0.1.0:2022-12-19</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <ECUC-MULTILINE-STRING-PARAM-DEF-VARIANTS>
+                                <ECUC-MULTILINE-STRING-PARAM-DEF-CONDITIONAL/>
+                              </ECUC-MULTILINE-STRING-PARAM-DEF-VARIANTS>
+                            </ECUC-MULTILINE-STRING-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: rba_BswSrv_Config_Get_Core_Id -->
+                            <ECUC-MULTILINE-STRING-PARAM-DEF>
+                              <SHORT-NAME>rba_BswSrv_Config_Get_Core_Id</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Core Id</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">This can be configured to project specifc function to return core id</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB:0.1.0:2022-12-12</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <ECUC-MULTILINE-STRING-PARAM-DEF-VARIANTS>
+                                <ECUC-MULTILINE-STRING-PARAM-DEF-CONDITIONAL/>
+                              </ECUC-MULTILINE-STRING-PARAM-DEF-VARIANTS>
+                            </ECUC-MULTILINE-STRING-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: rba_BswSrv_Config_Get_Sys_Tick -->
+                            <ECUC-MULTILINE-STRING-PARAM-DEF>
+                              <SHORT-NAME>rba_BswSrv_Config_Get_Sys_Tick</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">System Tick</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">This can be configured to project specifc function to get system ticks.
+This is mandatory configuration if rba_BswSrv_Config_Log_Level is greater than 0.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB:0.1.0:2022-12-12</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <ECUC-MULTILINE-STRING-PARAM-DEF-VARIANTS>
+                                <ECUC-MULTILINE-STRING-PARAM-DEF-CONDITIONAL/>
+                              </ECUC-MULTILINE-STRING-PARAM-DEF-VARIANTS>
+                            </ECUC-MULTILINE-STRING-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: rba_BswSrv_Config_Include_Header -->
+                            <ECUC-MULTILINE-STRING-PARAM-DEF>
+                              <SHORT-NAME>rba_BswSrv_Config_Include_Header</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Header File Inclusion</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">This is used to include the header file in the rba_BswSrv_Cfg.h file. User needs to enter the filename with file extension. E.g. stdio.h</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY-INFINITE>true</UPPER-MULTIPLICITY-INFINITE>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB:0.1.0:2023-02-01</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <ECUC-MULTILINE-STRING-PARAM-DEF-VARIANTS>
+                                <ECUC-MULTILINE-STRING-PARAM-DEF-CONDITIONAL/>
+                              </ECUC-MULTILINE-STRING-PARAM-DEF-VARIANTS>
+                            </ECUC-MULTILINE-STRING-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: rba_BswSrv_Config_Log_Level -->
+                            <ECUC-INTEGER-PARAM-DEF>
+                              <SHORT-NAME>rba_BswSrv_Config_Log_Level</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Log Level</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Defines Logging Level. If it is set as 0, no logging.
+If it is set as 1,logging of locks and interrupts for each core and interrupt suspend time log can be activated at runtime.
+If it is set as 2,logging of locks and interrupts for each core and top 10 log of interrupt suspend time can be activated at runtime.
+If it is set as 3,logging for each lock type and it is For debugging only, because it needs a lot of runtime.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB:0.1.0:2022-12-12</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                            </ECUC-INTEGER-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: rba_BswSrv_Config_Machine_Support_64bit -->
+                            <ECUC-BOOLEAN-PARAM-DEF>
+                              <SHORT-NAME>rba_BswSrv_Config_Machine_Support_64bit</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">rba_BswSrv_Config_Machine_64bit_Support</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Defines if the Machine support 64BIT Operations like memset_64, memcpy_64 and memcompare_64 is enabled or not.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB:0.1.0:2022-08-23</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                            </ECUC-BOOLEAN-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: rba_BswSrv_Config_Mcu_Perform_Reset -->
+                            <ECUC-MULTILINE-STRING-PARAM-DEF>
+                              <SHORT-NAME>rba_BswSrv_Config_Mcu_Perform_Reset</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">MCU Perform Reset</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">This can be configured to project specifc function to call the mcu reset function.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB:0.1.0:2023-02-22</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <ECUC-MULTILINE-STRING-PARAM-DEF-VARIANTS>
+                                <ECUC-MULTILINE-STRING-PARAM-DEF-CONDITIONAL/>
+                              </ECUC-MULTILINE-STRING-PARAM-DEF-VARIANTS>
+                            </ECUC-MULTILINE-STRING-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: rba_BswSrv_Config_PrvTryToGetLock -->
+                            <ECUC-MULTILINE-STRING-PARAM-DEF>
+                              <SHORT-NAME>rba_BswSrv_Config_PrvTryToGetLock</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Atomic test and set</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">This is function definition of rba_BswSrv_PrvTryToGetLock(). User needs to enter the proper function definition otherwise it may cause build error and functional issue.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB:0.1.0:2022-12-19</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <ECUC-MULTILINE-STRING-PARAM-DEF-VARIANTS>
+                                <ECUC-MULTILINE-STRING-PARAM-DEF-CONDITIONAL/>
+                              </ECUC-MULTILINE-STRING-PARAM-DEF-VARIANTS>
+                            </ECUC-MULTILINE-STRING-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: rba_BswSrv_Config_PrvWriteLock -->
+                            <ECUC-MULTILINE-STRING-PARAM-DEF>
+                              <SHORT-NAME>rba_BswSrv_Config_PrvWriteLock</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Store to allow atomic test and Set</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">This is function definition of rba_BswSrv_PrvWriteLock(). User needs to enter the proper function definition otherwise it may cause build error and functional issue.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB:0.1.0:2022-12-19</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <ECUC-MULTILINE-STRING-PARAM-DEF-VARIANTS>
+                                <ECUC-MULTILINE-STRING-PARAM-DEF-CONDITIONAL/>
+                              </ECUC-MULTILINE-STRING-PARAM-DEF-VARIANTS>
+                            </ECUC-MULTILINE-STRING-PARAM-DEF>
+                          </PARAMETERS>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                        <!-- Container Definition: rba_BswSrv_FifoConfig -->
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>rba_BswSrv_FifoConfig</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Settings related to &quot;Lock-free&quot; fifo&apos;s</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Configuration settings of all &quot;lock-free&quot; fifo&apos;s</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <SUB-CONTAINERS>
+                            <!-- Container Definition: rba_BswSrv_Fifo -->
+                            <ECUC-PARAM-CONF-CONTAINER-DEF>
+                              <SHORT-NAME>rba_BswSrv_Fifo</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Configuration of specific &quot;lock-free&quot; fifo</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Configuration of a specific lock-free fifo.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>4096</UPPER-MULTIPLICITY>
+                              <PARAMETERS>
+                                <!-- PARAMETER DEFINITION: rba_BswSrv_FifoId -->
+                                <ECUC-STRING-PARAM-DEF>
+                                  <SHORT-NAME>rba_BswSrv_FifoId</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Fifo identifier</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Identifier is used to select specific FIFO.<BR/>
+This identifer must be unique (case insensitive).<BR/>
+Identifiers are used as:<BR/>
+- suffix in FIFO functions and variables<BR/>
+- upper-case&apos;d-infix in macro names<BR/>
+For the 2 FIFO IDs &apos;foo&apos; and &apos;Foo&apos; there would be for example a macro name conflict because of the same &apos;FOO&apos; suffix.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <ORIGIN>RB:0.1.0:2011-11-17</ORIGIN>
+                                  <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                    <ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                      <MIN-LENGTH>1</MIN-LENGTH>
+                                      <REGULAR-EXPRESSION>^[a-zA-Z0-9_]+$</REGULAR-EXPRESSION>
+                                    </ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                  </ECUC-STRING-PARAM-DEF-VARIANTS>
+                                </ECUC-STRING-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_BswSrv_FifoSize -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_BswSrv_FifoSize</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Fifo Size</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Set a minimum size for the FIFO in Bytes.<BR/>
+Please configure only 1 size per FIFO.<BR/>
+The multiplicity &apos;*&apos; is used here to be able to detect FIFO duplicates.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY-INFINITE>true</UPPER-MULTIPLICITY-INFINITE>
+                                  <ORIGIN>RB:0.1.0:2011-11-17</ORIGIN>
+                                  <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <MIN>1</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                              </PARAMETERS>
+                            </ECUC-PARAM-CONF-CONTAINER-DEF>
+                          </SUB-CONTAINERS>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                      </CONTAINERS>
+                    </ECUC-MODULE-DEF>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

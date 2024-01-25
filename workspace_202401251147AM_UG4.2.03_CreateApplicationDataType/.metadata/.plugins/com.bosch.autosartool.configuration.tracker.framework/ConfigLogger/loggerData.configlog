@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tracker:TrackerRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tracker="http://www.bosch.com/autosartool/tracker/model">
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" project="Basic_Workflow" timestamp="2024-01-25 11:46:49.649" description="Created ApplicationPrimitiveDataType &lt;b>MyApplicationDataType&lt;/b> " title="Created ApplicationPrimitiveDataType &lt;b>MyApplicationDataType&lt;/b> ">
+    <changes>
+      <affectedFiles>ApplicationDataTypes_MyApplicationDataType.arxml</affectedFiles>
+      <changeObjectsUris>platform:/resource/Basic_Workflow/ApplicationDataTypes_MyApplicationDataType.arxml#/ApplicationDataTypes/MyApplicationDataType?type=ApplicationPrimitiveDataType</changeObjectsUris>
+      <changedParentObjects>platform:/resource/Basic_Workflow/ApplicationDataTypes_MyApplicationDataType.arxml#/ApplicationDataTypes?type=ARPackage</changedParentObjects>
+    </changes>
+    <uiChanges actionType="VIEW" timestamp="2024-01-25 10:59:09.098" title="Opened Filesystem Navigator View" commandId="commandId" viewId="com.bosch.wbp.filenavigator.ui.view" name="Filesystem Navigator" uiClassType="org.eclipse.ui.internal.ViewReference"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:45:15.329" title="Selected Software in AR Explorer" commandId="commandId" name="Software" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="CONTEXT_MENU" timestamp="2024-01-25 11:45:36.212" title="Clicked Create Application Data Type/Create Data Type/Create Elements | Application Primitive Data Type MenuItem" commandId="commandId" name="Create Application Data Type/Create Data Type/Create Elements | Application Primitive Data Type" uiClassType="org.eclipse.swt.widgets.MenuItem"/>
+    <uiChanges actionType="DIALOG" timestamp="2024-01-25 11:45:36.804" title="Opened New AR Element Creation Dialog" commandId="commandId" dialogName="New AR Element Creation" name="New AR Element Creation"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:46:07.667" title="Set Value of ShortName Text field as MyApplicationDataType" commandId="commandId" name="MyApplicationDataType" uiClassType="org.eclipse.swt.widgets.Text"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:46:32.89" title="Set Value of File Name Text field as ApplicationDataTypes_MyApplicationDataType.arxml" commandId="commandId" name="ApplicationDataTypes_MyApplicationDataType.arxml" uiClassType="org.eclipse.swt.widgets.Text"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:46:32.891" title="Selected Basic_Workflow [ AR 22-11 ] Tree" commandId="commandId" name="Basic_Workflow [ AR 22-11 ]" uiClassType="org.eclipse.swt.widgets.Tree"/>
+    <uiChanges actionType="WIDGET" timestamp="2024-01-25 11:46:48.233" title="Clicked Finish Button" commandId="commandId" name="Finish" uiClassType="org.eclipse.swt.widgets.Button"/>
+    <uiChanges actionType="DIALOG" timestamp="2024-01-25 11:46:48.432" title="Closed New AR Element Creation Dialog" commandId="commandId" dialogName="New AR Element Creation" name="New AR Element Creation"/>
+  </trackerEntries>
+  <trackerEntries xsi:type="tracker:ConfigurationChangesEntry" actionType="OPERATION" project="" timestamp="2024-01-25 11:46:49.666" description="ApplicationDataTypes_MyApplicationDataType.arxml" title="Updated &lt;b>Basic_Workflow&lt;/b> Project : Added &lt;b>File(s)&lt;/b>" changeType="PROJECT_CHANGES"/>
+</tracker:TrackerRoot>
