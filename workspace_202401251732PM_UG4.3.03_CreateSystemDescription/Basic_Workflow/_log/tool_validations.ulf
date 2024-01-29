@@ -1,0 +1,934 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ULF-PROCESSING-LOG>
+<ADMIN-DATA>
+<LANGUAGE>EN</LANGUAGE>
+<USED-LANGUAGES>
+<L-10 L="EN">English</L-10>
+<L-10 L="DE">German</L-10>
+</USED-LANGUAGES>
+</ADMIN-DATA>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.978+0100">
+<SHORT-NAME>ISOLAR-A_1</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute NmJ1939IdentityNumber is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.983+0100">
+<SHORT-NAME>ISOLAR-A_2</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute TC_BAM_PacketsPerBlock is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.983+0100">
+<SHORT-NAME>ISOLAR-A_3</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute NmActiveCoordinator is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.983+0100">
+<SHORT-NAME>ISOLAR-A_4</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute TpConn_BAM_Cancellation is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.983+0100">
+<SHORT-NAME>ISOLAR-A_5</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute TC_CMDT_DynamicBlockSize is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.984+0100">
+<SHORT-NAME>ISOLAR-A_6</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute TpConn_TX_Cancellation is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.984+0100">
+<SHORT-NAME>ISOLAR-A_7</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute AliveTimeout is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.984+0100">
+<SHORT-NAME>ISOLAR-A_8</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute NmJ1939Function is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.984+0100">
+<SHORT-NAME>ISOLAR-A_9</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute TC_BAM_DynamicBlockSize is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.985+0100">
+<SHORT-NAME>ISOLAR-A_10</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute SamplePointMin is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.985+0100">
+<SHORT-NAME>ISOLAR-A_11</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute TpConn_BAM_Retry is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.985+0100">
+<SHORT-NAME>ISOLAR-A_12</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute TpConn_CMDT_Cancellation is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.985+0100">
+<SHORT-NAME>ISOLAR-A_13</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute TC_CMDT_MaxExpectedPackets is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.985+0100">
+<SHORT-NAME>ISOLAR-A_14</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute TC_CMDT_DynamicBufferRatio is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.986+0100">
+<SHORT-NAME>ISOLAR-A_15</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute GenMsgStartDelayTime is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.986+0100">
+<SHORT-NAME>ISOLAR-A_16</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute NmJ1939ManufacturerCode is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.986+0100">
+<SHORT-NAME>ISOLAR-A_17</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute SyncJumpWidthMax is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.986+0100">
+<SHORT-NAME>ISOLAR-A_18</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute TC_BAM_DynamicBufferRatio is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.987+0100">
+<SHORT-NAME>ISOLAR-A_19</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute TC_TX_DynamicBufferRatio is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.987+0100">
+<SHORT-NAME>ISOLAR-A_20</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute GenMsgCycleTime is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.987+0100">
+<SHORT-NAME>ISOLAR-A_21</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute NmJ1939SystemInstance is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.987+0100">
+<SHORT-NAME>ISOLAR-A_22</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute TpConn_TX_Retry is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.987+0100">
+<SHORT-NAME>ISOLAR-A_23</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute GenSigStartValue is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.987+0100">
+<SHORT-NAME>ISOLAR-A_24</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute TpConn_CMDT_Retry is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.988+0100">
+<SHORT-NAME>ISOLAR-A_25</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute TC_TX_DynamicBlockSize is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.988+0100">
+<SHORT-NAME>ISOLAR-A_26</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute NmJ1939FunctionInstance is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.988+0100">
+<SHORT-NAME>ISOLAR-A_27</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute CI_MsgName is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.988+0100">
+<SHORT-NAME>ISOLAR-A_28</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute SyncJumpWidthMin is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.988+0100">
+<SHORT-NAME>ISOLAR-A_29</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute NmJ1939CordCluster is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.988+0100">
+<SHORT-NAME>ISOLAR-A_30</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute NmStationAddress is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.988+0100">
+<SHORT-NAME>ISOLAR-A_31</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute TC_TX_MaxExpectedPackets is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.989+0100">
+<SHORT-NAME>ISOLAR-A_32</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute TC_TX_PacketsPerBlock is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.989+0100">
+<SHORT-NAME>ISOLAR-A_33</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute NmJ1939IndustryGroup is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.989+0100">
+<SHORT-NAME>ISOLAR-A_34</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute NmJ1939ECUInstance is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.989+0100">
+<SHORT-NAME>ISOLAR-A_35</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute NmJ1939AAC is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.989+0100">
+<SHORT-NAME>ISOLAR-A_36</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute DBName is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.990+0100">
+<SHORT-NAME>ISOLAR-A_37</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute GenMsgSendType is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.990+0100">
+<SHORT-NAME>ISOLAR-A_38</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute NmNode is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.990+0100">
+<SHORT-NAME>ISOLAR-A_39</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute NmJ1939System is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.990+0100">
+<SHORT-NAME>ISOLAR-A_40</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute TC_BAM_MaxExpectedPackets is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.990+0100">
+<SHORT-NAME>ISOLAR-A_41</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute TC_CMDT_PacketsPerBlock is not present in the DBC file</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="DBC ImportWizard" T="2024-01-25T16:23:07.990+0100">
+<SHORT-NAME>ISOLAR-A_42</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The BA Attribute CANFD_BRS present in the DBC file  is not yet Supported by the DBC Importer</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+</ULF-PROCESSING-LOG>

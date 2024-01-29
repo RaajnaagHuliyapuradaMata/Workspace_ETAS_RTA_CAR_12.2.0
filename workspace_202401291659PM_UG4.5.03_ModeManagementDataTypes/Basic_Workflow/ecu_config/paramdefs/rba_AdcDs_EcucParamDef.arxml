@@ -1,0 +1,1885 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <ADMIN-DATA>
+    <DOC-REVISIONS>
+      <DOC-REVISION>
+        <ISSUED-BY>RB</ISSUED-BY>
+        <DATE>2021-10-29</DATE>
+      </DOC-REVISION>
+    </DOC-REVISIONS>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>RB</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>RBA</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>rba_AdcDs</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE>
+                  <SHORT-NAME>EcucModuleDefs</SHORT-NAME>
+                  <ELEMENTS>
+                    <!-- Module Definition: rba_AdcDs -->
+                    <ECUC-MODULE-DEF>
+                      <SHORT-NAME>rba_AdcDs</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">MCAL Delta-Sigma Analog/Digital Converter</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">Configuration for the delta-sigma analog-digital-converter (AdcDs).</L-2>
+                      </DESC>
+                      <CATEGORY>VENDOR_SPECIFIC_MODULE_DEFINITION</CATEGORY>
+                      <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                          <DOC-REVISION>
+                            <REVISION-LABEL>0.1.0</REVISION-LABEL>
+                            <ISSUED-BY>RB</ISSUED-BY>
+                            <DATE>2017-09-06</DATE>
+                          </DOC-REVISION>
+                        </DOC-REVISIONS>
+                      </ADMIN-DATA>
+                      <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <POST-BUILD-VARIANT-SUPPORT>true</POST-BUILD-VARIANT-SUPPORT>
+                      <SUPPORTED-CONFIG-VARIANTS>
+                        <SUPPORTED-CONFIG-VARIANT>VARIANT-PRE-COMPILE</SUPPORTED-CONFIG-VARIANT>
+                      </SUPPORTED-CONFIG-VARIANTS>
+                      <CONTAINERS>
+                        <!-- Container Definition: rba_AdcDs_ConfigSet -->
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>rba_AdcDs_ConfigSet</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Configuration data set</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">This is the base container that contains the post-build selectable configuration parameters</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <SUB-CONTAINERS>
+                            <!-- Container Definition: rba_AdcDs_HwUnit -->
+                            <ECUC-PARAM-CONF-CONTAINER-DEF>
+                              <SHORT-NAME>rba_AdcDs_HwUnit</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">HW unit</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">This container contains HW-Unit specific parameters.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY-INFINITE>true</UPPER-MULTIPLICITY-INFINITE>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <PARAMETERS>
+                                <!-- PARAMETER DEFINITION: rba_AdcDs_AutoStart -->
+                                <ECUC-BOOLEAN-PARAM-DEF>
+                                  <SHORT-NAME>rba_AdcDs_AutoStart</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Automatic start</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Set to true for automatic start of conversion immediately after initialization. For synchronous start use unit group configuration. Default is auto start disabled.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                                </ECUC-BOOLEAN-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AdcDs_CalibrationMode -->
+                                <ECUC-ENUMERATION-PARAM-DEF>
+                                  <SHORT-NAME>rba_AdcDs_CalibrationMode</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Calibration mode</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Selects which type of calibration is required for this AdcDs unit.<BR/>
+ST: For calibration a DMA is necessary even if no DMA transfer for conversion results will be used.<BR/>
+IFX: At least startup calibration is mandatory.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <LITERALS>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>RBA_ADCDS_PRV_CALIBRATION_NONE</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">No calibration</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>RBA_ADCDS_PRV_CALIBRATION_STARTUP</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Startup calibration</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>RBA_ADCDS_PRV_CALIBRATION_TRIGGERED</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Triggered calibration during runtime</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>RBA_ADCDS_PRV_CALIBRATION_ALL</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Startup and triggered calibration</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                  </LITERALS>
+                                </ECUC-ENUMERATION-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AdcDs_CallbackHeaderName -->
+                                <ECUC-STRING-PARAM-DEF>
+                                  <SHORT-NAME>rba_AdcDs_CallbackHeaderName</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Callback function header name</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Name of header with external decalaration of callback function.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                    <ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                      <DEFAULT-VALUE>NULL_PTR</DEFAULT-VALUE>
+                                      <MAX-LENGTH>60</MAX-LENGTH>
+                                      <MIN-LENGTH>1</MIN-LENGTH>
+                                    </ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                  </ECUC-STRING-PARAM-DEF-VARIANTS>
+                                </ECUC-STRING-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AdcDs_CallbackName -->
+                                <ECUC-FUNCTION-NAME-DEF>
+                                  <SHORT-NAME>rba_AdcDs_CallbackName</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Callback function</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Name of callback function: This function must not have any parameters or return value.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <ECUC-FUNCTION-NAME-DEF-VARIANTS>
+                                    <ECUC-FUNCTION-NAME-DEF-CONDITIONAL>
+                                      <DEFAULT-VALUE>NULL_PTR</DEFAULT-VALUE>
+                                    </ECUC-FUNCTION-NAME-DEF-CONDITIONAL>
+                                  </ECUC-FUNCTION-NAME-DEF-VARIANTS>
+                                </ECUC-FUNCTION-NAME-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AdcDs_DsadcDmaName -->
+                                <ECUC-STRING-PARAM-DEF>
+                                  <SHORT-NAME>rba_AdcDs_DsadcDmaName</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Dma to transfer AdcDs results</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">DMA to transfer AdcDs conversion results. If calibration is configured this DMA must be provided even if no DMA transfer to a result buffer is configrued. Prefix &quot;rba_Dma_&quot; must be added to the configured shortname from the DMA (rba_Dma_Ch).</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                    <ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                      <DEFAULT-VALUE>RBA_DMA_NUM_IDS_E</DEFAULT-VALUE>
+                                      <MAX-LENGTH>60</MAX-LENGTH>
+                                      <MIN-LENGTH>1</MIN-LENGTH>
+                                    </ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                  </ECUC-STRING-PARAM-DEF-VARIANTS>
+                                </ECUC-STRING-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AdcDs_DsadcResBufHeaderName -->
+                                <ECUC-STRING-PARAM-DEF>
+                                  <SHORT-NAME>rba_AdcDs_DsadcResBufHeaderName</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">AdcDs result buffer header name</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Name of header with external decalaration of result buffer to be used as destination for the AdcDs results.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                    <ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                      <DEFAULT-VALUE>NULL_PTR</DEFAULT-VALUE>
+                                      <MAX-LENGTH>60</MAX-LENGTH>
+                                      <MIN-LENGTH>1</MIN-LENGTH>
+                                    </ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                  </ECUC-STRING-PARAM-DEF-VARIANTS>
+                                </ECUC-STRING-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AdcDs_DsadcResBufName -->
+                                <ECUC-STRING-PARAM-DEF>
+                                  <SHORT-NAME>rba_AdcDs_DsadcResBufName</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">AdcDs result buffer name</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Name of result buffer to be used as destination for the AdcDs result transfer.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                    <ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                      <DEFAULT-VALUE>NULL_PTR</DEFAULT-VALUE>
+                                      <MAX-LENGTH>60</MAX-LENGTH>
+                                      <MIN-LENGTH>1</MIN-LENGTH>
+                                    </ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                  </ECUC-STRING-PARAM-DEF-VARIANTS>
+                                </ECUC-STRING-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AdcDs_Ena32BitTransfer -->
+                                <ECUC-BOOLEAN-PARAM-DEF>
+                                  <SHORT-NAME>rba_AdcDs_Ena32BitTransfer</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Enable 32-bit AdcDs result transfer</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Set to true to enable 32-bit DMA transfer for AdcDs conversion results. This is important for memory regions which can only be accessed by 32-bit write commands. Disabled by default.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                                </ECUC-BOOLEAN-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AdcDs_EnaDmaTransfer -->
+                                <ECUC-BOOLEAN-PARAM-DEF>
+                                  <SHORT-NAME>rba_AdcDs_EnaDmaTransfer</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Enable DMA transfer</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Enable or disable DMA Transfer.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                </ECUC-BOOLEAN-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AdcDs_EnaGate -->
+                                <ECUC-BOOLEAN-PARAM-DEF>
+                                  <SHORT-NAME>rba_AdcDs_EnaGate</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Enable gating</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Enable or disable Gating. Disabled by default.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                                </ECUC-BOOLEAN-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AdcDs_EnaPrivateBus -->
+                                <ECUC-BOOLEAN-PARAM-DEF>
+                                  <SHORT-NAME>rba_AdcDs_EnaPrivateBus</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Enable private bus</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Enable/Disable the private bus of the AdcDs (Connection to the DSPL modules). Only available for ST Centauri cut 2 and following cuts. Disabled by default.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                                </ECUC-BOOLEAN-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AdcDs_EnaRuntimeBufLinkage -->
+                                <ECUC-BOOLEAN-PARAM-DEF>
+                                  <SHORT-NAME>rba_AdcDs_EnaRuntimeBufLinkage</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Enable runtime result buffer linkage</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Set to true to enable linkage of result buffers during initialisation of the AdcDs driver.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                                </ECUC-BOOLEAN-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AdcDs_FilterName -->
+                                <ECUC-STRING-PARAM-DEF>
+                                  <SHORT-NAME>rba_AdcDs_FilterName</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Filter name</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Set the name of the filter settings container that should be used for this hw unit</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                    <ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                      <MAX-LENGTH>60</MAX-LENGTH>
+                                      <MIN-LENGTH>1</MIN-LENGTH>
+                                    </ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                  </ECUC-STRING-PARAM-DEF-VARIANTS>
+                                </ECUC-STRING-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AdcDs_GainFactor -->
+                                <ECUC-ENUMERATION-PARAM-DEF>
+                                  <SHORT-NAME>rba_AdcDs_GainFactor</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Gain</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Set the gain factor. Following gain factors can be configured:<BR/>
+ST: 1, 2, 4<BR/>
+IFX: 1, 2</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <LITERALS>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>GAIN_1</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Input gain factor 1</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>GAIN_2</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Input gain factor 2</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>GAIN_4</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Input gain factor 4</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                  </LITERALS>
+                                </ECUC-ENUMERATION-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AdcDs_GateLevel -->
+                                <ECUC-ENUMERATION-PARAM-DEF>
+                                  <SHORT-NAME>rba_AdcDs_GateLevel</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Gate Level</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Set the gate level (high/low) to use for gating the DMA transfers<BR/>
+Setting is only available for Infineon controllers</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <LITERALS>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>GATE_LEVEL_LOW</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Triggering transfer active during low level of gate signal</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>GATE_LEVEL_HIGH</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Triggering transfer active during high level of gate signal</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                  </LITERALS>
+                                </ECUC-ENUMERATION-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AdcDs_GateLine -->
+                                <ECUC-ENUMERATION-PARAM-DEF>
+                                  <SHORT-NAME>rba_AdcDs_GateLine</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Gate Line</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Set the gate line to use for gating the DMA transfers<BR/>
+Setting is only available for Infineon controllers</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <LITERALS>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>GTM_LINE_0</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Gating signal from GTM line 0</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>GTM_LINE_1</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Gating signal from GTM line 1</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>GTM_LINE_2</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Gating signal from GTM line 2</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>GTM_LINE_3</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Gating signal from GTM line 3</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                  </LITERALS>
+                                </ECUC-ENUMERATION-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AdcDs_GtmDmaName -->
+                                <ECUC-STRING-PARAM-DEF>
+                                  <SHORT-NAME>rba_AdcDs_GtmDmaName</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Dma to transfer GTM values</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">DMA to transfer angle/time capture from GTM. Prefix &quot;rba_Dma_&quot; must be added to the configured shortname from the DMA (rba_Dma_Ch).</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                    <ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                      <DEFAULT-VALUE>RBA_DMA_NUM_IDS_E</DEFAULT-VALUE>
+                                      <MAX-LENGTH>60</MAX-LENGTH>
+                                      <MIN-LENGTH>1</MIN-LENGTH>
+                                    </ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                  </ECUC-STRING-PARAM-DEF-VARIANTS>
+                                </ECUC-STRING-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AdcDs_GtmName -->
+                                <ECUC-STRING-PARAM-DEF>
+                                  <SHORT-NAME>rba_AdcDs_GtmName</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Gtm Name</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Name of GTM Tim which is used for timestamp/angle capturing. Prefix &quot;rba_Gtm_Tim_&quot; must be added to the configured shortname from the GTM (rba_Gtm_Tim).</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                    <ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                      <DEFAULT-VALUE>RBA_GTM_TIM_INVALID_E</DEFAULT-VALUE>
+                                      <MAX-LENGTH>60</MAX-LENGTH>
+                                      <MIN-LENGTH>1</MIN-LENGTH>
+                                    </ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                  </ECUC-STRING-PARAM-DEF-VARIANTS>
+                                </ECUC-STRING-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AdcDs_GtmResBufHeaderName -->
+                                <ECUC-STRING-PARAM-DEF>
+                                  <SHORT-NAME>rba_AdcDs_GtmResBufHeaderName</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">GTM result buffer header name</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Name of header with external decalaration of result buffer to be used for the GTM value (time/angle).</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                    <ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                      <DEFAULT-VALUE>NULL_PTR</DEFAULT-VALUE>
+                                      <MAX-LENGTH>60</MAX-LENGTH>
+                                      <MIN-LENGTH>1</MIN-LENGTH>
+                                    </ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                  </ECUC-STRING-PARAM-DEF-VARIANTS>
+                                </ECUC-STRING-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AdcDs_GtmResBufName -->
+                                <ECUC-STRING-PARAM-DEF>
+                                  <SHORT-NAME>rba_AdcDs_GtmResBufName</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">GTM result buffer name</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Name of result buffer to be used as destination for the GTM value (time/angle).</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                    <ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                      <DEFAULT-VALUE>NULL_PTR</DEFAULT-VALUE>
+                                      <MAX-LENGTH>60</MAX-LENGTH>
+                                      <MIN-LENGTH>1</MIN-LENGTH>
+                                    </ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                  </ECUC-STRING-PARAM-DEF-VARIANTS>
+                                </ECUC-STRING-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AdcDs_HwUnitId -->
+                                <ECUC-ENUMERATION-PARAM-DEF>
+                                  <SHORT-NAME>rba_AdcDs_HwUnitId</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Hardware unit ID</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">ID of the HW unit (physical).</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <LITERALS>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>AdcDs_0</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">AdcDs_0</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>AdcDs_1</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">AdcDs_1</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>AdcDs_2</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">AdcDs_2</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>AdcDs_3</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">AdcDs_3</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>AdcDs_4</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">AdcDs_4</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>AdcDs_5</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">AdcDs_5</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>AdcDs_6</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">AdcDs_6</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>AdcDs_7</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">AdcDs_7</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>AdcDs_8</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">AdcDs_8</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>AdcDs_9</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">AdcDs_9</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>AdcDs_10</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">AdcDs_10</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>AdcDs_11</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">AdcDs_11</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>AdcDs_12</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">AdcDs_12</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>AdcDs_13</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">AdcDs_13</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                  </LITERALS>
+                                </ECUC-ENUMERATION-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AdcDs_InputSignal -->
+                                <ECUC-STRING-PARAM-DEF>
+                                  <SHORT-NAME>rba_AdcDs_InputSignal</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Input signal</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Initial signal to be used for initialization</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                    <ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                      <MAX-LENGTH>60</MAX-LENGTH>
+                                      <MIN-LENGTH>1</MIN-LENGTH>
+                                    </ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                  </ECUC-STRING-PARAM-DEF-VARIANTS>
+                                </ECUC-STRING-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AdcDs_OutputEventCounter -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_AdcDs_OutputEventCounter</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Number of conversions before a callback</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Number of results (AdcDs/Gtm) to be transfered to the result buffer before a callback. The value that can be used depends on which buffer mode is used and whether values are to be transferred from the GTM.<BR/>
+If the GTM is not used the value has to be in the following ranges:<BR/>
+Ringbuffer: 2..8192<BR/>
+Linear buffer: 2..16383<BR/>
+If the GTM is used the value has to be in the follwing range: 2..511</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <MAX>16383</MAX>
+                                  <MIN>2</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AdcDs_ResultBufferLength -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_AdcDs_ResultBufferLength</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Result buffer length</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Length of result buffers for AdcDs (and Gtm) values. For circular buffer mode (ring buffer) the size must be 2 to the power of n. Max. possible values:<BR/>
+Ringbuffer: 8192 <BR/>
+linear buffer (without GTM transfer): 16383<BR/>
+linear buffer (with GTM transfer): 511</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <MAX>16383</MAX>
+                                  <MIN>1</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AdcDs_ResultBufferMode -->
+                                <ECUC-ENUMERATION-PARAM-DEF>
+                                  <SHORT-NAME>rba_AdcDs_ResultBufferMode</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Result buffer mode</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Mode for result buffer, must either be circular (ring buffer) or linear (stop after configured amount of transfers).</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <LITERALS>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>RBA_ADCDS_BUFFER_MODE_CIRCULAR</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">circular buffer</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>RBA_ADCDS_BUFFER_MODE_LINEAR</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">linear buffer</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                  </LITERALS>
+                                </ECUC-ENUMERATION-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AdcDs_TriggerGtm -->
+                                <ECUC-ENUMERATION-PARAM-DEF>
+                                  <SHORT-NAME>rba_AdcDs_TriggerGtm</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Trigger GTM</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Enable or disable triggering of GTM to be able to get timestamps/angles</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>RBA_ADCDS_OUTPUT_TRIGGER_GTM_NONE</DEFAULT-VALUE>
+                                  <LITERALS>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>RBA_ADCDS_OUTPUT_TRIGGER_GTM_TIMER</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Output for timer trigger (TBU_TS0)</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>RBA_ADCDS_OUTPUT_TRIGGER_GTM_ANGLE</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Output for angle trigger (TBU_TS1)</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>RBA_ADCDS_OUTPUT_TRIGGER_GTM_TIMER2</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Output for timer trigger (TBU_TS2)</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>RBA_ADCDS_OUTPUT_TRIGGER_GTM_NONE</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Disable trigger</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                  </LITERALS>
+                                </ECUC-ENUMERATION-PARAM-DEF>
+                              </PARAMETERS>
+                              <SUB-CONTAINERS>
+                                <!-- Container Definition: rba_AdcDs_Signal -->
+                                <ECUC-PARAM-CONF-CONTAINER-DEF>
+                                  <SHORT-NAME>rba_AdcDs_Signal</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Signal</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">This container contains the Signal of the AdcDs.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY-INFINITE>true</UPPER-MULTIPLICITY-INFINITE>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <PARAMETERS>
+                                    <!-- PARAMETER DEFINITION: rba_AdcDs_BiasChannel -->
+                                    <ECUC-BOOLEAN-PARAM-DEF>
+                                      <SHORT-NAME>rba_AdcDs_BiasChannel</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Bias active</L-4>
+                                      </LONG-NAME>
+                                      <DESC>
+                                        <L-2 L="EN">Input biasing for the related signal can be activated. True will activate the biasing. For high impedance input set this value to false. Default value is false.</L-2>
+                                      </DESC>
+                                      <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                      <MULTIPLICITY-CONFIG-CLASSES>
+                                        <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                        </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      </MULTIPLICITY-CONFIG-CLASSES>
+                                      <ORIGIN>RB</ORIGIN>
+                                      <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                      <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                      <VALUE-CONFIG-CLASSES>
+                                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                                      </VALUE-CONFIG-CLASSES>
+                                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                      <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                                    </ECUC-BOOLEAN-PARAM-DEF>
+                                    <!-- PARAMETER DEFINITION: rba_AdcDs_ExternalResistor -->
+                                    <ECUC-INTEGER-PARAM-DEF>
+                                      <SHORT-NAME>rba_AdcDs_ExternalResistor</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">External resistor</L-4>
+                                      </LONG-NAME>
+                                      <DESC>
+                                        <L-2 L="EN">This feature is currently not supported for ST controllers.<BR/>
+External resistor value (in Ohm). This setting is only necessary if the correction values (gain, offset) for an external resistor should be calculated by the AdcDs driver.</L-2>
+                                      </DESC>
+                                      <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                      <MULTIPLICITY-CONFIG-CLASSES>
+                                        <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                        </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      </MULTIPLICITY-CONFIG-CLASSES>
+                                      <ORIGIN>RB</ORIGIN>
+                                      <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                      <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                      <VALUE-CONFIG-CLASSES>
+                                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                                      </VALUE-CONFIG-CLASSES>
+                                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                      <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                                      <MAX>10000</MAX>
+                                      <MIN>1</MIN>
+                                    </ECUC-INTEGER-PARAM-DEF>
+                                    <!-- PARAMETER DEFINITION: rba_AdcDs_InputMode -->
+                                    <ECUC-ENUMERATION-PARAM-DEF>
+                                      <SHORT-NAME>rba_AdcDs_InputMode</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Input mode</L-4>
+                                      </LONG-NAME>
+                                      <DESC>
+                                        <L-2 L="EN">Input Mode: single ended (positive/negative input) or differential input</L-2>
+                                      </DESC>
+                                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                      <ORIGIN>RB</ORIGIN>
+                                      <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                      <VALUE-CONFIG-CLASSES>
+                                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                                      </VALUE-CONFIG-CLASSES>
+                                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                      <LITERALS>
+                                        <ECUC-ENUMERATION-LITERAL-DEF>
+                                          <SHORT-NAME>RBA_ADCDS_INPUT_MODE_SINGLE_ENDED_POS</SHORT-NAME>
+                                          <LONG-NAME>
+                                            <L-4 L="EN">Single-ended mode, positive input</L-4>
+                                          </LONG-NAME>
+                                          <ORIGIN>RB</ORIGIN>
+                                        </ECUC-ENUMERATION-LITERAL-DEF>
+                                        <ECUC-ENUMERATION-LITERAL-DEF>
+                                          <SHORT-NAME>RBA_ADCDS_INPUT_MODE_SINGLE_ENDED_NEG</SHORT-NAME>
+                                          <LONG-NAME>
+                                            <L-4 L="EN">Single-ended mode, negative input</L-4>
+                                          </LONG-NAME>
+                                          <ORIGIN>RB</ORIGIN>
+                                        </ECUC-ENUMERATION-LITERAL-DEF>
+                                        <ECUC-ENUMERATION-LITERAL-DEF>
+                                          <SHORT-NAME>RBA_ADCDS_INPUT_MODE_DIFFERENTIAL</SHORT-NAME>
+                                          <LONG-NAME>
+                                            <L-4 L="EN">Differential input mode</L-4>
+                                          </LONG-NAME>
+                                          <ORIGIN>RB</ORIGIN>
+                                        </ECUC-ENUMERATION-LITERAL-DEF>
+                                      </LITERALS>
+                                    </ECUC-ENUMERATION-PARAM-DEF>
+                                    <!-- PARAMETER DEFINITION: rba_AdcDs_InputReferenceVoltage -->
+                                    <ECUC-ENUMERATION-PARAM-DEF>
+                                      <SHORT-NAME>rba_AdcDs_InputReferenceVoltage</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Input reference voltage</L-4>
+                                      </LONG-NAME>
+                                      <DESC>
+                                        <L-2 L="EN">Reference voltage to be used by the AdcDs. Valid values are:<BR/>
+- Reference to ground<BR/>
+- Reference to 2.5V<BR/>
+Default is ground.<BR/>
+If signal is configured for differential input mode this configuration will only be used when switching to single ended input mode during runtime.</L-2>
+                                      </DESC>
+                                      <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                      <MULTIPLICITY-CONFIG-CLASSES>
+                                        <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                        </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      </MULTIPLICITY-CONFIG-CLASSES>
+                                      <ORIGIN>RB</ORIGIN>
+                                      <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                      <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                      <VALUE-CONFIG-CLASSES>
+                                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                                      </VALUE-CONFIG-CLASSES>
+                                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                      <LITERALS>
+                                        <ECUC-ENUMERATION-LITERAL-DEF>
+                                          <SHORT-NAME>RBA_ADCDS_PRV_REFERENCE_GND</SHORT-NAME>
+                                          <LONG-NAME>
+                                            <L-4 L="EN">Ground</L-4>
+                                          </LONG-NAME>
+                                          <ORIGIN>RB</ORIGIN>
+                                        </ECUC-ENUMERATION-LITERAL-DEF>
+                                        <ECUC-ENUMERATION-LITERAL-DEF>
+                                          <SHORT-NAME>RBA_ADCDS_PRV_REFERENCE_2_5</SHORT-NAME>
+                                          <LONG-NAME>
+                                            <L-4 L="EN">Common mode voltage (2.5V)</L-4>
+                                          </LONG-NAME>
+                                          <ORIGIN>RB</ORIGIN>
+                                        </ECUC-ENUMERATION-LITERAL-DEF>
+                                      </LITERALS>
+                                    </ECUC-ENUMERATION-PARAM-DEF>
+                                    <!-- PARAMETER DEFINITION: rba_AdcDs_MuxChannelId -->
+                                    <ECUC-ENUMERATION-PARAM-DEF>
+                                      <SHORT-NAME>rba_AdcDs_MuxChannelId</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Multiplexer channel</L-4>
+                                      </LONG-NAME>
+                                      <DESC>
+                                        <L-2 L="EN">Set multiplexer input channel.<BR/>
+For single ended signals the input pin connected to the AdcDs is the combination of the mux channel id and the input mode setting (positive or negative)<BR/>
+For AdcDs converters without input multiplexer use channel 0.</L-2>
+                                      </DESC>
+                                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                      <ORIGIN>RB</ORIGIN>
+                                      <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                      <VALUE-CONFIG-CLASSES>
+                                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                                      </VALUE-CONFIG-CLASSES>
+                                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                      <LITERALS>
+                                        <ECUC-ENUMERATION-LITERAL-DEF>
+                                          <SHORT-NAME>Channel_0</SHORT-NAME>
+                                          <LONG-NAME>
+                                            <L-4 L="EN">Channel_0</L-4>
+                                          </LONG-NAME>
+                                          <ORIGIN>RB</ORIGIN>
+                                        </ECUC-ENUMERATION-LITERAL-DEF>
+                                        <ECUC-ENUMERATION-LITERAL-DEF>
+                                          <SHORT-NAME>Channel_1</SHORT-NAME>
+                                          <LONG-NAME>
+                                            <L-4 L="EN">Channel_1</L-4>
+                                          </LONG-NAME>
+                                          <ORIGIN>RB</ORIGIN>
+                                        </ECUC-ENUMERATION-LITERAL-DEF>
+                                        <ECUC-ENUMERATION-LITERAL-DEF>
+                                          <SHORT-NAME>Channel_2</SHORT-NAME>
+                                          <LONG-NAME>
+                                            <L-4 L="EN">Channel_2</L-4>
+                                          </LONG-NAME>
+                                          <ORIGIN>RB</ORIGIN>
+                                        </ECUC-ENUMERATION-LITERAL-DEF>
+                                        <ECUC-ENUMERATION-LITERAL-DEF>
+                                          <SHORT-NAME>Channel_3</SHORT-NAME>
+                                          <LONG-NAME>
+                                            <L-4 L="EN">Channel_3</L-4>
+                                          </LONG-NAME>
+                                          <ORIGIN>RB</ORIGIN>
+                                        </ECUC-ENUMERATION-LITERAL-DEF>
+                                      </LITERALS>
+                                    </ECUC-ENUMERATION-PARAM-DEF>
+                                  </PARAMETERS>
+                                </ECUC-PARAM-CONF-CONTAINER-DEF>
+                              </SUB-CONTAINERS>
+                            </ECUC-PARAM-CONF-CONTAINER-DEF>
+                            <!-- Container Definition: rba_AdcDs_UnitGroup -->
+                            <ECUC-PARAM-CONF-CONTAINER-DEF>
+                              <SHORT-NAME>rba_AdcDs_UnitGroup</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Unit group</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">This container contains one group of AdcDs Units. This units can be started synchron. Note that any call to rba_AdcDs_EnableUnitGroup/rba_AdcDs_DisableUnitGroup will end synchronous operation of this unit in relation to other units in this group.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY-INFINITE>true</UPPER-MULTIPLICITY-INFINITE>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <PARAMETERS>
+                                <!-- PARAMETER DEFINITION: rba_AdcDs_AutoSyncStart -->
+                                <ECUC-BOOLEAN-PARAM-DEF>
+                                  <SHORT-NAME>rba_AdcDs_AutoSyncStart</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Automatic synchron start</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Set to true for automatic start of conversion for all units in this group immediately after initialization.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                                </ECUC-BOOLEAN-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AdcDs_UnitName -->
+                                <ECUC-STRING-PARAM-DEF>
+                                  <SHORT-NAME>rba_AdcDs_UnitName</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">AdcDs unit name</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Logical name of the unit</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>2</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY-INFINITE>true</UPPER-MULTIPLICITY-INFINITE>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                    <ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                      <MAX-LENGTH>60</MAX-LENGTH>
+                                      <MIN-LENGTH>1</MIN-LENGTH>
+                                    </ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                  </ECUC-STRING-PARAM-DEF-VARIANTS>
+                                </ECUC-STRING-PARAM-DEF>
+                              </PARAMETERS>
+                            </ECUC-PARAM-CONF-CONTAINER-DEF>
+                          </SUB-CONTAINERS>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                        <!-- Container Definition: rba_AdcDs_FilterIfx -->
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>rba_AdcDs_FilterIfx</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Filter IFX</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">This container contains one set of filter parameters that can be used by all AdcDs units. This filter set can only be used for ST controllers.</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY-INFINITE>true</UPPER-MULTIPLICITY-INFINITE>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <PARAMETERS>
+                            <!-- PARAMETER DEFINITION: rba_AdcDs_OutputSampleRate -->
+                            <ECUC-ENUMERATION-PARAM-DEF>
+                              <SHORT-NAME>rba_AdcDs_OutputSampleRate</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Output sample rate</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Output sample rate</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <ORIGIN>RB</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <LITERALS>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_333_33kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 333.333333333333kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_250_00kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 250kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_200_00kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 200kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_166_67kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 166.666666666667kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_142_86kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 142.857142857143kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_125_00kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 125kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_111_11kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 111.111111111111kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_100_00kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 100kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_90_91kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 90.9090909090909kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_83_33kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 83.3333333333333kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_71_43kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 71.4285714285714kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_62_50kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 62.5kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_55_56kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 55.5555555555556kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_50_00kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 50kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_45_45kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 45.4545454545455kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_41_67kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 41.6666666666667kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_35_71kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 35.7142857142857kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_31_25kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 31.25kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_15_63kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 15.625kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_7_81kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 7.8125kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                              </LITERALS>
+                            </ECUC-ENUMERATION-PARAM-DEF>
+                          </PARAMETERS>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                        <!-- Container Definition: rba_AdcDs_FilterSt -->
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>rba_AdcDs_FilterSt</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Filter ST</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">This container contains one set of filter parameters that can be used by all AdcDs units. This filter set can only be used for ST controllers.</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY-INFINITE>true</UPPER-MULTIPLICITY-INFINITE>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <PARAMETERS>
+                            <!-- PARAMETER DEFINITION: rba_AdcDs_FilterModeSt -->
+                            <ECUC-ENUMERATION-PARAM-DEF>
+                              <SHORT-NAME>rba_AdcDs_FilterModeSt</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Filter mode</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Filter mode selection<BR/>
+FIR_BYPASS filter mode currently not supported</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>FIR_ACTIVE_FS_3</DEFAULT-VALUE>
+                              <LITERALS>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>FIR_ACTIVE_FS_3</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">FIR Filter active (Fs/3 mode - default mode)</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>FIR_BYPASS</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">FIR Bypass</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                              </LITERALS>
+                            </ECUC-ENUMERATION-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: rba_AdcDs_OutputSampleRate -->
+                            <ECUC-ENUMERATION-PARAM-DEF>
+                              <SHORT-NAME>rba_AdcDs_OutputSampleRate</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Output sample rate</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Output sample rate</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <ORIGIN>RB</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <LITERALS>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_333_33kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 333.333333333333kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_250_00kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 250kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_200_00kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 200kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_166_67kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 166.666666666667kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_142_86kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 142.857142857143kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_125_00kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 125kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_111_11kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 111.111111111111kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_100_00kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 100kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_90_91kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 90.9090909090909kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_83_33kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 83.3333333333333kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_71_43kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 71.4285714285714kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_62_50kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 62.5kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_55_56kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 55.5555555555556kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_50_00kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 50kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_45_45kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 45.4545454545455kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_41_67kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 41.6666666666667kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_35_71kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 35.7142857142857kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_31_25kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 31.25kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_15_63kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 15.625kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>OSR_7_81kHz</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output sample rate 7.8125kHz</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                              </LITERALS>
+                            </ECUC-ENUMERATION-PARAM-DEF>
+                          </PARAMETERS>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                        <!-- Container Definition: rba_AdcDs_General -->
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>rba_AdcDs_General</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">General settings</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Container with general configuration parameters of the AdcDs driver.</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <PARAMETERS>
+                            <!-- PARAMETER DEFINITION: rba_AdcDs_DevErrorDetect -->
+                            <ECUC-BOOLEAN-PARAM-DEF>
+                              <SHORT-NAME>rba_AdcDs_DevErrorDetect</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Development error detection</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Switches the Development Error Detection on or off. true: Enabled. false: Disabled.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <ORIGIN>RB</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                            </ECUC-BOOLEAN-PARAM-DEF>
+                          </PARAMETERS>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                      </CONTAINERS>
+                    </ECUC-MODULE-DEF>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

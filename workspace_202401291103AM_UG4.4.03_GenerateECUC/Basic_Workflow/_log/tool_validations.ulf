@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ULF-PROCESSING-LOG>
+<ADMIN-DATA>
+<LANGUAGE>EN</LANGUAGE>
+<USED-LANGUAGES>
+<L-10 L="EN">English</L-10>
+<L-10 L="DE">German</L-10>
+</USED-LANGUAGES>
+</ADMIN-DATA>
+<LOG-ENTRY TI="EcuExtract_WARN_21" T="2024-01-29T10:53:44.869+0100">
+<SHORT-NAME>ISOLAR-A_1</SHORT-NAME>
+<DESC>
+<L-2 L="EN">System version is not specified, default System version will be added to the extracted System</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">DBC_SysDesc.arxml</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+<SD GID="editorID">com.bosch.autosartool.generic.editor</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CustomTargetURI">platform:/resource/Basic_Workflow/DBC_SysDesc.arxml#/Systems/System?type=System</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="Resource">/Basic_Workflow/DBC_SysDesc.arxml</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="QUALIFIEDNAME">/Systems/System</SD>
+<SD GID="URI">platform:/resource/Basic_Workflow/DBC_SysDesc.arxml#/Systems/System?type=System</SD>
+<SD GID="ELEMENT">splittable.autosar40.system.SplittableSystemImpl@59d9a8e7 (shortName: System) (containerIPduHeaderByteOrder: &lt;unset&gt;, ecuExtractVersion: &lt;unset&gt;, pncVectorLength: &lt;unset&gt;, pncVectorOffset: &lt;unset&gt;, systemVersion: &lt;unset&gt;)</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="com.bosch.blueworx.core.logging.view.problemslog.markerClickExecutionID">DoubleClickValidation</SD>
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="id">EcuExtract_WARN_21</SD>
+<SD GID="ELEMENTECLASS">System</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="EcuExtract_OK_04" T="2024-01-29T10:53:44.877+0100">
+<SHORT-NAME>ISOLAR-A_2</SHORT-NAME>
+<DESC>
+<L-2 L="EN">List of *.arxml files which has been created during ECU Extract are: [ApplicationECU_FlatMap.arxml, ApplicationECU_FlatView_SWCD.arxml, System_EcuExtr.arxml]</L-2>
+</DESC>
+<CATEGORY>SYSTEM</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">DBC_SysDesc.arxml</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+<SD GID="editorID">com.bosch.autosartool.generic.editor</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CustomTargetURI">platform:/resource/Basic_Workflow/DBC_SysDesc.arxml#/DBC_SysDesc_Can_Network/Pkg_Ecu/ApplicationECU?type=EcuInstance</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="Resource">/Basic_Workflow/DBC_SysDesc.arxml</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="QUALIFIEDNAME">/DBC_SysDesc_Can_Network/Pkg_Ecu/ApplicationECU</SD>
+<SD GID="URI">platform:/resource/Basic_Workflow/DBC_SysDesc.arxml#/DBC_SysDesc_Can_Network/Pkg_Ecu/ApplicationECU?type=EcuInstance</SD>
+<SD GID="ELEMENT">splittable.autosar40.system.fibex.fibexcore.coretopology.SplittableEcuInstanceImpl@2441542d (shortName: ApplicationECU) (comConfigurationGwTimeBase: 0.005, comConfigurationRxTimeBase: 0.01, comConfigurationTxTimeBase: 0.01, comEnableMDTForCyclicTransmission: &lt;unset&gt;, diagnosticAddress: &lt;unset&gt;, ethSwitchPortGroupDerivation: &lt;unset&gt;, pnResetTime: &lt;unset&gt;, pncNmRequest: &lt;unset&gt;, pncPrepareSleepTimer: &lt;unset&gt;, pncSynchronousWakeup: &lt;unset&gt;, sleepModeSupported: false, v2xSupported: &lt;unset&gt;, wakeUpOverBusSupported: false)</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="com.bosch.blueworx.core.logging.view.problemslog.markerClickExecutionID">DoubleClickValidation</SD>
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="id">EcuExtract_OK_04</SD>
+<SD GID="ELEMENTECLASS">EcuInstance</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+</ULF-PROCESSING-LOG>
