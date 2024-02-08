@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ULF-PROCESSING-LOG>
+<ADMIN-DATA>
+<LANGUAGE>EN</LANGUAGE>
+<USED-LANGUAGES>
+<L-10 L="EN">English</L-10>
+<L-10 L="DE">German</L-10>
+</USED-LANGUAGES>
+</ADMIN-DATA>
+<LOG-ENTRY TI="Default" S="c4ba5e68d3b6583c5d8f363b7f6510a9" T="2024-02-08T15:40:08.103+0100">
+<SHORT-NAME>RTA-RTE_1</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The RTE implementation requires OsCounter 'Rte_TickCounter'. This object is not declared in the input. - Line: unknown</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-RTE</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">Basic_Workflow</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-RTE</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="52c7cf4004d615a01cd391aa58fc565f" T="2024-02-08T15:40:08.103+0100">
+<SHORT-NAME>RTA-RTE_2</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Counter Rte_TickCounter must be ticked at 1 ms. - Line: unknown</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-RTE</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">Basic_Workflow</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-RTE</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="2807026f78e550a620b0937f3d5eae39" T="2024-02-08T15:40:08.104+0100">
+<SHORT-NAME>RTA-RTE_3</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identifiers [BswM_Cfg_DfrdBswNotification_BswM_MRP_BswM_MDG_ECUM_STATE_APP_POST_RUN, BswM_Cfg_DfrdBswNotification_BswM_MRP_BswM_MDG_ECUM_STATE_APP_RUN, BswM_Cfg_DfrdBswNotification_BswM_MRP_BswM_MDG_ECUM_STATE_PREP_SHUTDOWN, BswM_Cfg_DfrdBswNotification_BswM_MRP_BswM_MDG_ECUM_STATE_RUN] are not significant in the first 31 characters. - Line: unknown</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-RTE</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">Basic_Workflow</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-RTE</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="96ff119a1752776001ffb14ab65fe7e7" T="2024-02-08T15:40:08.104+0100">
+<SHORT-NAME>RTA-RTE_4</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identifiers [CanIf_ControllerStateType_struct_app, CanIf_ControllerStateType_struct_impl] are not significant in the first 31 characters. - Line: unknown</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-RTE</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">Basic_Workflow</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-RTE</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="e89612dab5e94dc8b4f5e7da74d35d84" T="2024-02-08T15:40:08.105+0100">
+<SHORT-NAME>RTA-RTE_5</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identifiers [CanIf_Prv_TxBufferStatus_tst_struct_app, CanIf_Prv_TxBufferStatus_tst_struct_impl] are not significant in the first 31 characters. - Line: unknown</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-RTE</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">Basic_Workflow</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-RTE</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="50e072408c187667b54ec654c0692450" T="2024-02-08T15:40:08.105+0100">
+<SHORT-NAME>RTA-RTE_6</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identifiers [CanSM_BusOffRecoveryStateType_Enum_app, CanSM_BusOffRecoveryStateType_Enum_impl] are not significant in the first 31 characters. - Line: unknown</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-RTE</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">Basic_Workflow</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-RTE</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="70dfb415a5b45b8a0b2bb79bb8130a4f" T="2024-02-08T15:40:08.105+0100">
+<SHORT-NAME>RTA-RTE_7</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identifiers [CanSM_NetworkModeStateType_Enum_app, CanSM_NetworkModeStateType_Enum_impl] are not significant in the first 31 characters. - Line: unknown</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-RTE</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">Basic_Workflow</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-RTE</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="b3fd38b411fc881d7cc0478df957f8b2" T="2024-02-08T15:40:08.106+0100">
+<SHORT-NAME>RTA-RTE_8</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identifiers [Rte_PortHandle_My_SR_Interface_P, Rte_PortHandle_My_SR_Interface_R] are not significant in the first 31 characters. - Line: unknown</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-RTE</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">Basic_Workflow</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-RTE</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="2397e9cd7ccd202d259ab7235b219375" T="2024-02-08T15:40:08.106+0100">
+<SHORT-NAME>RTA-RTE_9</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identifiers [SchM_Enter_Can_CAN_EXCLUSIVE_AREA_00, SchM_Enter_Can_CAN_EXCLUSIVE_AREA_01, SchM_Enter_Can_CAN_EXCLUSIVE_AREA_02] are not significant in the first 31 characters. - Line: unknown</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-RTE</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">Basic_Workflow</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-RTE</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="9e98d0b01a8117b6f8e147321292517b" T="2024-02-08T15:40:08.106+0100">
+<SHORT-NAME>RTA-RTE_10</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identifiers [SchM_Exit_Can_CAN_EXCLUSIVE_AREA_00, SchM_Exit_Can_CAN_EXCLUSIVE_AREA_01, SchM_Exit_Can_CAN_EXCLUSIVE_AREA_02] are not significant in the first 31 characters. - Line: unknown</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-RTE</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">Basic_Workflow</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-RTE</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="W002890" S="60c6a1393b88d39a1d589e415cd23630" T="2024-02-08T15:40:08.054+0100">
+<SHORT-NAME>RTA-RTE_11</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Target ARObject: &lt;MDG_ECUM_STATE&gt; CATEGORY node missing from /ModeDeclarationGroups/MDG_ECUM_STATE element. RTA-RTE will default to alphabetical order for this object. - Line: 7. [Infos] &lt;MDG_ECUM_STATE&gt; : &lt;/ModeDeclarationGroups/MDG_ECUM_STATE&gt;</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">BswMModeMapping.arxml</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-RTE</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="editorInputUri">platform:/resource/Basic_Workflow/BswMModeMapping.arxml#/ModeDeclarationGroups/MDG_ECUM_STATE?type=ModeDeclarationGroup</SD>
+<SD GID="editorID">com.bosch.autosartool.generic.editor</SD>
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="valuri_/ModeDeclarationGroups/MDG_ECUM_STATE">platform:/resource/Basic_Workflow/BswMModeMapping.arxml#/ModeDeclarationGroups/MDG_ECUM_STATE?type=ModeDeclarationGroup</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="KEY_FOR_FILTER">RTA-RTE</SD>
+<SD GID="Resource">/Basic_Workflow/BswMModeMapping.arxml</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="QUALIFIEDNAME">/ModeDeclarationGroups/MDG_ECUM_STATE</SD>
+<SD GID="id">W002890</SD>
+<SD GID="URI">platform:/resource/Basic_Workflow/BswMModeMapping.arxml#/ModeDeclarationGroups/MDG_ECUM_STATE?type=ModeDeclarationGroup</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="W002150" S="efd1d466fc911cbb0f5b4acf095da39b" T="2024-02-08T15:40:08.099+0100">
+<SHORT-NAME>RTA-RTE_12</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Target ARObject: &lt;BswM&gt; No SwcInstance mapped to the ECU references this SwcBswMapping. RTA-RTE used SwcInstance '/ApplicationECU_FlatView/SwComponentTypes/ApplicationECU_FlatView/CPT_BswM' because it was the only SwcInstance that uses the referenced Internalbehavior '/AUTOSAR_BswM/SwComponentTypes/BswM/IB_BswM'. - Line: 94. [Infos] &lt;BswM&gt; : &lt;/AUTOSAR_BswM/SwcBswMappings/BswM&gt;</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-RTE</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="editorInputUri">platform:/resource/Basic_Workflow/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml#/AUTOSAR_BswM/SwcBswMappings/BswM?type=SwcBswMapping</SD>
+<SD GID="editorID">com.bosch.autosartool.generic.editor</SD>
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="KEY_FOR_FILTER">RTA-RTE</SD>
+<SD GID="Resource">/Basic_Workflow/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml</SD>
+<SD GID="valuri_/AUTOSAR_BswM/SwcBswMappings/BswM">platform:/resource/Basic_Workflow/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml#/AUTOSAR_BswM/SwcBswMappings/BswM?type=SwcBswMapping</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="QUALIFIEDNAME">/AUTOSAR_BswM/SwcBswMappings/BswM</SD>
+<SD GID="id">W002150</SD>
+<SD GID="URI">platform:/resource/Basic_Workflow/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml#/AUTOSAR_BswM/SwcBswMappings/BswM?type=SwcBswMapping</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="I007801" S="8eb46a4510966037b3e3d1967e1d9392" T="2024-02-08T15:40:08.101+0100">
+<SHORT-NAME>RTA-RTE_13</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Target ARObject: &lt;PP_BswMSwcGenericRequest&gt; Provided port 'BswM.PP_BswMSwcGenericRequest' of SW-C instance '/ApplicationECU_FlatView/SwComponentTypes/ApplicationECU_FlatView/CPT_BswM' is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated. - Line: 13. [Infos] &lt;PP_BswMSwcGenericRequest&gt; : &lt;/AUTOSAR_BswM/SwComponentTypes/BswM/PP_BswMSwcGenericRequest&gt;</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-RTE</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="editorInputUri">platform:/resource/Basic_Workflow/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml#/AUTOSAR_BswM/SwComponentTypes/BswM/PP_BswMSwcGenericRequest?type=PPortPrototype</SD>
+<SD GID="editorID">com.bosch.autosartool.generic.editor</SD>
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="KEY_FOR_FILTER">RTA-RTE</SD>
+<SD GID="valuri_/AUTOSAR_BswM/SwComponentTypes/BswM/PP_BswMSwcGenericRequest">platform:/resource/Basic_Workflow/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml#/AUTOSAR_BswM/SwComponentTypes/BswM/PP_BswMSwcGenericRequest?type=PPortPrototype</SD>
+<SD GID="Resource">/Basic_Workflow/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="QUALIFIEDNAME">/AUTOSAR_BswM/SwComponentTypes/BswM/PP_BswMSwcGenericRequest</SD>
+<SD GID="id">I007801</SD>
+<SD GID="URI">platform:/resource/Basic_Workflow/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml#/AUTOSAR_BswM/SwComponentTypes/BswM/PP_BswMSwcGenericRequest?type=PPortPrototype</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="W001205" S="c27520d03b83cd1d57632f33f9d0f1bc" T="2024-02-08T15:40:08.100+0100">
+<SHORT-NAME>RTA-RTE_14</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Target ARObject: &lt;ComM&gt; Software-component type 'ComM' does not have any provided or required ports. - Line: 42. [Infos] &lt;ComM&gt; : &lt;/AUTOSAR_ComM/SwComponentTypes/ComM&gt;</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-RTE</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="editorInputUri">platform:/resource/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml#/AUTOSAR_ComM/SwComponentTypes/ComM?type=ServiceSwComponentType</SD>
+<SD GID="editorID">com.bosch.autosartool.generic.editor</SD>
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="valuri_/AUTOSAR_ComM/SwComponentTypes/ComM">platform:/resource/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml#/AUTOSAR_ComM/SwComponentTypes/ComM?type=ServiceSwComponentType</SD>
+<SD GID="KEY_FOR_FILTER">RTA-RTE</SD>
+<SD GID="Resource">/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="QUALIFIEDNAME">/AUTOSAR_ComM/SwComponentTypes/ComM</SD>
+<SD GID="id">W001205</SD>
+<SD GID="URI">platform:/resource/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml#/AUTOSAR_ComM/SwComponentTypes/ComM?type=ServiceSwComponentType</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="W002150" S="3b796ae35f6d32474fced017275f96c0" T="2024-02-08T15:40:08.099+0100">
+<SHORT-NAME>RTA-RTE_15</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Target ARObject: &lt;SwcBswMapping_ComM&gt; No SwcInstance mapped to the ECU references this SwcBswMapping. RTA-RTE used SwcInstance '/ApplicationECU_FlatView/SwComponentTypes/ApplicationECU_FlatView/CPT_ComM' because it was the only SwcInstance that uses the referenced Internalbehavior '/AUTOSAR_ComM/SwComponentTypes/ComM/ComM_Int'. - Line: 140. [Infos] &lt;SwcBswMapping_ComM&gt; : &lt;/AUTOSAR_ComM/SwcBswMappings/SwcBswmapping/SwcBswMapping_ComM&gt;</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-RTE</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="editorInputUri">platform:/resource/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml#/AUTOSAR_ComM/SwcBswMappings/SwcBswmapping/SwcBswMapping_ComM?type=SwcBswMapping</SD>
+<SD GID="editorID">com.bosch.autosartool.generic.editor</SD>
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="valuri_/AUTOSAR_ComM/SwcBswMappings/SwcBswmapping/SwcBswMapping_ComM">platform:/resource/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml#/AUTOSAR_ComM/SwcBswMappings/SwcBswmapping/SwcBswMapping_ComM?type=SwcBswMapping</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="KEY_FOR_FILTER">RTA-RTE</SD>
+<SD GID="Resource">/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="QUALIFIEDNAME">/AUTOSAR_ComM/SwcBswMappings/SwcBswmapping/SwcBswMapping_ComM</SD>
+<SD GID="id">W002150</SD>
+<SD GID="URI">platform:/resource/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml#/AUTOSAR_ComM/SwcBswMappings/SwcBswmapping/SwcBswMapping_ComM?type=SwcBswMapping</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="W002151" S="57a2a19a415c876d9f1a02631d817ca2" T="2024-02-08T15:40:08.100+0100">
+<SHORT-NAME>RTA-RTE_16</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Target ARObject: &lt;SwcBswMapping_ComM&gt; No BswImplementation mapped to the ECU references this SwcBswMapping. RTA-RTE used BswImplementation '/AUTOSAR_ComM/BswImplementations/ComM' because it was the only BswImplementation that uses the referenced Internalbehavior '/AUTOSAR_ComM/BswModuleDescriptions/ComM/BswInternalBehavior'. - Line: 140. [Infos] &lt;SwcBswMapping_ComM&gt; : &lt;/AUTOSAR_ComM/SwcBswMappings/SwcBswmapping/SwcBswMapping_ComM&gt;</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-RTE</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="editorInputUri">platform:/resource/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml#/AUTOSAR_ComM/SwcBswMappings/SwcBswmapping/SwcBswMapping_ComM?type=SwcBswMapping</SD>
+<SD GID="editorID">com.bosch.autosartool.generic.editor</SD>
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="valuri_/AUTOSAR_ComM/SwcBswMappings/SwcBswmapping/SwcBswMapping_ComM">platform:/resource/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml#/AUTOSAR_ComM/SwcBswMappings/SwcBswmapping/SwcBswMapping_ComM?type=SwcBswMapping</SD>
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="KEY_FOR_FILTER">RTA-RTE</SD>
+<SD GID="Resource">/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="QUALIFIEDNAME">/AUTOSAR_ComM/SwcBswMappings/SwcBswmapping/SwcBswMapping_ComM</SD>
+<SD GID="id">W002151</SD>
+<SD GID="URI">platform:/resource/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml#/AUTOSAR_ComM/SwcBswMappings/SwcBswmapping/SwcBswMapping_ComM?type=SwcBswMapping</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="W001205" S="5562949284fd15b3b47efafdce051f0e" T="2024-02-08T15:40:08.101+0100">
+<SHORT-NAME>RTA-RTE_17</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Target ARObject: &lt;Det&gt; Software-component type 'Det' does not have any provided or required ports. - Line: 11. [Infos] &lt;Det&gt; : &lt;/AUTOSAR_Det/SwComponentTypes/Det&gt;</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">ecu_config/bsw/gen/swcd/Det_Cfg_SWCD.arxml</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-RTE</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="editorInputUri">platform:/resource/Basic_Workflow/ecu_config/bsw/gen/swcd/Det_Cfg_SWCD.arxml#/AUTOSAR_Det/SwComponentTypes/Det?type=ServiceSwComponentType</SD>
+<SD GID="editorID">com.bosch.autosartool.generic.editor</SD>
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="KEY_FOR_FILTER">RTA-RTE</SD>
+<SD GID="Resource">/Basic_Workflow/ecu_config/bsw/gen/swcd/Det_Cfg_SWCD.arxml</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="QUALIFIEDNAME">/AUTOSAR_Det/SwComponentTypes/Det</SD>
+<SD GID="id">W001205</SD>
+<SD GID="URI">platform:/resource/Basic_Workflow/ecu_config/bsw/gen/swcd/Det_Cfg_SWCD.arxml#/AUTOSAR_Det/SwComponentTypes/Det?type=ServiceSwComponentType</SD>
+<SD GID="valuri_/AUTOSAR_Det/SwComponentTypes/Det">platform:/resource/Basic_Workflow/ecu_config/bsw/gen/swcd/Det_Cfg_SWCD.arxml#/AUTOSAR_Det/SwComponentTypes/Det?type=ServiceSwComponentType</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="I007801" S="4678950932fd458d23fbf23d73b7f943" T="2024-02-08T15:40:08.102+0100">
+<SHORT-NAME>RTA-RTE_18</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Target ARObject: &lt;shutdownTarget&gt; Provided port 'EcuM.shutdownTarget' of SW-C instance '/ApplicationECU_FlatView/SwComponentTypes/ApplicationECU_FlatView/CPT_EcuM' is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated. - Line: 16. [Infos] &lt;shutdownTarget&gt; : &lt;/AUTOSAR_EcuM/SwComponentTypes/EcuM/shutdownTarget&gt;</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-RTE</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="editorInputUri">platform:/resource/Basic_Workflow/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml#/AUTOSAR_EcuM/SwComponentTypes/EcuM/shutdownTarget?type=PPortPrototype</SD>
+<SD GID="editorID">com.bosch.autosartool.generic.editor</SD>
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="KEY_FOR_FILTER">RTA-RTE</SD>
+<SD GID="valuri_/AUTOSAR_EcuM/SwComponentTypes/EcuM/shutdownTarget">platform:/resource/Basic_Workflow/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml#/AUTOSAR_EcuM/SwComponentTypes/EcuM/shutdownTarget?type=PPortPrototype</SD>
+<SD GID="Resource">/Basic_Workflow/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="QUALIFIEDNAME">/AUTOSAR_EcuM/SwComponentTypes/EcuM/shutdownTarget</SD>
+<SD GID="id">I007801</SD>
+<SD GID="URI">platform:/resource/Basic_Workflow/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml#/AUTOSAR_EcuM/SwComponentTypes/EcuM/shutdownTarget?type=PPortPrototype</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="I007801" S="2cff4f5e6c5b7c366b8e47ebe62746c9" T="2024-02-08T15:40:08.102+0100">
+<SHORT-NAME>RTA-RTE_19</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Target ARObject: &lt;bootTarget&gt; Provided port 'EcuM.bootTarget' of SW-C instance '/ApplicationECU_FlatView/SwComponentTypes/ApplicationECU_FlatView/CPT_EcuM' is not connected to a requiring port or there are no OperationInvokedEvents that reference the port. The servers for operations in the categorizing interface will never be activated. - Line: 20. [Infos] &lt;bootTarget&gt; : &lt;/AUTOSAR_EcuM/SwComponentTypes/EcuM/bootTarget&gt;</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-RTE</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="editorInputUri">platform:/resource/Basic_Workflow/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml#/AUTOSAR_EcuM/SwComponentTypes/EcuM/bootTarget?type=PPortPrototype</SD>
+<SD GID="editorID">com.bosch.autosartool.generic.editor</SD>
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="KEY_FOR_FILTER">RTA-RTE</SD>
+<SD GID="Resource">/Basic_Workflow/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="QUALIFIEDNAME">/AUTOSAR_EcuM/SwComponentTypes/EcuM/bootTarget</SD>
+<SD GID="id">I007801</SD>
+<SD GID="URI">platform:/resource/Basic_Workflow/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml#/AUTOSAR_EcuM/SwComponentTypes/EcuM/bootTarget?type=PPortPrototype</SD>
+<SD GID="valuri_/AUTOSAR_EcuM/SwComponentTypes/EcuM/bootTarget">platform:/resource/Basic_Workflow/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml#/AUTOSAR_EcuM/SwComponentTypes/EcuM/bootTarget?type=PPortPrototype</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="W001205" S="2cc95984febaa39789ffa9c5d0b25a34" T="2024-02-08T15:40:08.101+0100">
+<SHORT-NAME>RTA-RTE_20</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Target ARObject: &lt;rba_DiagLib&gt; Software-component type 'rba_DiagLib' does not have any provided or required ports. - Line: 11. [Infos] &lt;rba_DiagLib&gt; : &lt;/rba_DiagLib/SwComponentTypes/rba_DiagLib&gt;</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">ecu_config/bsw/gen/swcd/rba_DiagLib_Cfg_SWCD.arxml</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-RTE</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="editorInputUri">platform:/resource/Basic_Workflow/ecu_config/bsw/gen/swcd/rba_DiagLib_Cfg_SWCD.arxml#/rba_DiagLib/SwComponentTypes/rba_DiagLib?type=ServiceSwComponentType</SD>
+<SD GID="editorID">com.bosch.autosartool.generic.editor</SD>
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="KEY_FOR_FILTER">RTA-RTE</SD>
+<SD GID="Resource">/Basic_Workflow/ecu_config/bsw/gen/swcd/rba_DiagLib_Cfg_SWCD.arxml</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="QUALIFIEDNAME">/rba_DiagLib/SwComponentTypes/rba_DiagLib</SD>
+<SD GID="id">W001205</SD>
+<SD GID="URI">platform:/resource/Basic_Workflow/ecu_config/bsw/gen/swcd/rba_DiagLib_Cfg_SWCD.arxml#/rba_DiagLib/SwComponentTypes/rba_DiagLib?type=ServiceSwComponentType</SD>
+<SD GID="valuri_/rba_DiagLib/SwComponentTypes/rba_DiagLib">platform:/resource/Basic_Workflow/ecu_config/bsw/gen/swcd/rba_DiagLib_Cfg_SWCD.arxml#/rba_DiagLib/SwComponentTypes/rba_DiagLib?type=ServiceSwComponentType</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="I100046" S="2e89ea806bc2e8ccd9ee3a26e40f213" T="2024-02-08T15:40:08.098+0100">
+<SHORT-NAME>RTA-RTE_21</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Target ARObject: &lt;RteBswGeneral&gt; RTE found the legacy parameter RteUseComShadowSignalApi whose value is 'false'. - Line: 11. [Infos] &lt;RteBswGeneral&gt; : &lt;/RTE/Rte/RteBswGeneral&gt;</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">ecu_config/rte/internal/Rte_EcucValues.arxml</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-RTE</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="editorInputUri">platform:/resource/Basic_Workflow/ecu_config/rte/internal/Rte_EcucValues.arxml#/RTE/Rte/RteBswGeneral?type=EcucContainerValue</SD>
+<SD GID="editorID">com.bosch.autosartool.bsw.editor.ar4x.bswPropertiesEditor</SD>
+<SD GID="project_name">Basic_Workflow</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="PROJECT">Basic_Workflow</SD>
+<SD GID="KEY_FOR_FILTER">RTA-RTE</SD>
+<SD GID="Resource">/Basic_Workflow/ecu_config/rte/internal/Rte_EcucValues.arxml</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="QUALIFIEDNAME">/RTE/Rte/RteBswGeneral</SD>
+<SD GID="id">I100046</SD>
+<SD GID="URI">platform:/resource/Basic_Workflow/ecu_config/rte/internal/Rte_EcucValues.arxml#/RTE/Rte/RteBswGeneral?type=EcucContainerValue</SD>
+<SD GID="valuri_/RTE/Rte/RteBswGeneral">platform:/resource/Basic_Workflow/ecu_config/rte/internal/Rte_EcucValues.arxml#/RTE/Rte/RteBswGeneral?type=EcucContainerValue</SD>
+</SDG>
+</LOG-ENTRY>
+</ULF-PROCESSING-LOG>

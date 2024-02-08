@@ -315,7 +315,7 @@
     <sharedElements xsi:type="basic:Part" xmi:id="_zmqGEbtmEe6H_9USNeqgXA" elementId="com.bosch.arcab.abstract.navigator" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="ECU Navigator" iconURI="platform:/plugin/com.bosch.autosartool.bsw.images.epl/icons/hardware_ecu.gif" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="com.bosch.autosartool.bsw.navigator.view.AbstractNavigator"/>
       <persistedState key="originalCompatibilityViewBundle" value="com.bosch.autosartool.bsw.navigator"/>
-      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;>&#xD;&#xA;&lt;org.eclipse.sphinx.emf.workspace.ui.expanded>&#xD;&#xA;&lt;org.eclipse.sphinx.emf.workspace.ui.project name=&quot;Basic_Workflow&quot;/>&#xD;&#xA;&lt;/org.eclipse.sphinx.emf.workspace.ui.expanded>&#xD;&#xA;&lt;org.eclipse.sphinx.emf.workspace.ui.selected>&#xD;&#xA;&lt;org.eclipse.sphinx.emf.workspace.ui.eObject uri=&quot;platform:/resource/Basic_Workflow/BswM_EcucValues.arxml#/ETAS_Project/EcucModuleConfigurationValuess/BswM?type=EcucModuleConfigurationValues&quot;/>&#xD;&#xA;&lt;/org.eclipse.sphinx.emf.workspace.ui.selected>&#xD;&#xA;&lt;lastRecentlyUsedFilters/>&#xD;&#xA;&lt;/view>"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;>&#xD;&#xA;&lt;org.eclipse.sphinx.emf.workspace.ui.expanded>&#xD;&#xA;&lt;org.eclipse.sphinx.emf.workspace.ui.project name=&quot;Basic_Workflow&quot;/>&#xD;&#xA;&lt;/org.eclipse.sphinx.emf.workspace.ui.expanded>&#xD;&#xA;&lt;lastRecentlyUsedFilters/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:ISOLAR-A</tags>
       <tags>active</tags>
@@ -357,7 +357,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_zh13gLtmEe6H_9USNeqgXA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_yRUYoMXLEe6Jc7lFpU2mHA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_zGkRFLtmEe6H_9USNeqgXA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_LkBTEMZoEe60zOxYBanwIQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_zGkRFLtmEe6H_9USNeqgXA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_zh13gbtmEe6H_9USNeqgXA" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -397,7 +397,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_zh13iLtmEe6H_9USNeqgXA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_yRXb8MXLEe6Jc7lFpU2mHA" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_zGjqJrtmEe6H_9USNeqgXA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_LkDIQcZoEe60zOxYBanwIQ" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_zGjqJrtmEe6H_9USNeqgXA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_zh13ibtmEe6H_9USNeqgXA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -4563,7 +4563,7 @@
   <addons xmi:id="_zFt8RrtmEe6H_9USNeqgXA" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_zFt8R7tmEe6H_9USNeqgXA" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_zF_B8LtmEe6H_9USNeqgXA" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_x6kskcXLEe6Jc7lFpU2mHA" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_zGbt4LtmEe6H_9USNeqgXA" elementId="org.eclipse.ui.category.edit" name="Edit"/>
   <categories xmi:id="_zGbt4btmEe6H_9USNeqgXA" elementId="com.bosch.autosartool.bsw.bswm.abstraction.editor.category1" name="BSWM Editor"/>

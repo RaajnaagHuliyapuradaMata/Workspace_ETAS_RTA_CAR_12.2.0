@@ -1,0 +1,46 @@
+*************************General Errors and Warnings*******************************
+*************************The following BA attributes are not Present in the DBC File*******************************
+Warning : The BA Attribute NmJ1939IdentityNumber is not present in the DBC file
+Warning : The BA Attribute TC_BAM_PacketsPerBlock is not present in the DBC file
+Warning : The BA Attribute NmActiveCoordinator is not present in the DBC file
+Warning : The BA Attribute TpConn_BAM_Cancellation is not present in the DBC file
+Warning : The BA Attribute TC_CMDT_DynamicBlockSize is not present in the DBC file
+Warning : The BA Attribute TpConn_TX_Cancellation is not present in the DBC file
+Warning : The BA Attribute AliveTimeout is not present in the DBC file
+Warning : The BA Attribute NmJ1939Function is not present in the DBC file
+Warning : The BA Attribute TC_BAM_DynamicBlockSize is not present in the DBC file
+Warning : The BA Attribute SamplePointMin is not present in the DBC file
+Warning : The BA Attribute TpConn_BAM_Retry is not present in the DBC file
+Warning : The BA Attribute TpConn_CMDT_Cancellation is not present in the DBC file
+Warning : The BA Attribute TC_CMDT_MaxExpectedPackets is not present in the DBC file
+Warning : The BA Attribute TC_CMDT_DynamicBufferRatio is not present in the DBC file
+Warning : The BA Attribute GenMsgStartDelayTime is not present in the DBC file
+Warning : The BA Attribute NmJ1939ManufacturerCode is not present in the DBC file
+Warning : The BA Attribute SyncJumpWidthMax is not present in the DBC file
+Warning : The BA Attribute TC_BAM_DynamicBufferRatio is not present in the DBC file
+Warning : The BA Attribute TC_TX_DynamicBufferRatio is not present in the DBC file
+Warning : The BA Attribute GenMsgCycleTime is not present in the DBC file
+Warning : The BA Attribute NmJ1939SystemInstance is not present in the DBC file
+Warning : The BA Attribute TpConn_TX_Retry is not present in the DBC file
+Warning : The BA Attribute GenSigStartValue is not present in the DBC file
+Warning : The BA Attribute TpConn_CMDT_Retry is not present in the DBC file
+Warning : The BA Attribute TC_TX_DynamicBlockSize is not present in the DBC file
+Warning : The BA Attribute NmJ1939FunctionInstance is not present in the DBC file
+Warning : The BA Attribute CI_MsgName is not present in the DBC file
+Warning : The BA Attribute SyncJumpWidthMin is not present in the DBC file
+Warning : The BA Attribute NmJ1939CordCluster is not present in the DBC file
+Warning : The BA Attribute NmStationAddress is not present in the DBC file
+Warning : The BA Attribute TC_TX_MaxExpectedPackets is not present in the DBC file
+Warning : The BA Attribute TC_TX_PacketsPerBlock is not present in the DBC file
+Warning : The BA Attribute NmJ1939IndustryGroup is not present in the DBC file
+Warning : The BA Attribute NmJ1939ECUInstance is not present in the DBC file
+Warning : The BA Attribute NmJ1939AAC is not present in the DBC file
+Warning : The BA Attribute DBName is not present in the DBC file
+Warning : The BA Attribute GenMsgSendType is not present in the DBC file
+Warning : The BA Attribute NmNode is not present in the DBC file
+Warning : The BA Attribute NmJ1939System is not present in the DBC file
+Warning : The BA Attribute TC_BAM_MaxExpectedPackets is not present in the DBC file
+Warning : The BA Attribute TC_CMDT_PacketsPerBlock is not present in the DBC file
+
+**************************The following BA Attributes  are present in DBC file but are not yet Supported by the DBC Importer*********************
+Warning : The BA Attribute CANFD_BRS present in the DBC file  is not yet Supported by the DBC Importer

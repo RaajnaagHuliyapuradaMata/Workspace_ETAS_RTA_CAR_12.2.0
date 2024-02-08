@@ -1,0 +1,26 @@
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --project=C:\ETAS\RTA-CAR_12.2.0\RTA-CAR\Workspace_ETAS_RTA_CAR_12.2.0\workspace\Basic_Workflow, --ecuinstance=ApplicationECU, --otheropt=C:\ETAS\RTA-CAR_12.2.0\RTA-CAR\Workspace_ETAS_RTA_CAR_12.2.0\workspace\Basic_Workflow\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2024/01/29 11:00:12
+/******************************************************END OF REPORT*****************************************************************/

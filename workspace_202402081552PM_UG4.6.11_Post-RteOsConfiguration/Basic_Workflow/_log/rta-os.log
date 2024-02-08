@@ -1,0 +1,13 @@
+Deploying OS Paramdef started
+Reading options information
+Creating new VSMD
+C:\ETAS\RTA-CAR_12.2.0\RTA-CAR\Workspace_ETAS_RTA_CAR_12.2.0\workspace\Basic_Workflow\ecu_config\paramdefs\Os_EcucParamDef.arxml
+Done
+
+
+Time taken to deploy OS Paramdef: 11744 ms.
+Deploying OS Ecuc Values started
+Loading OS Paramdef
+ecu_config\os\internal\Os_EcucValues.arxml
+Done
+Time taken to deploy OS EcucValues: 164 ms.
