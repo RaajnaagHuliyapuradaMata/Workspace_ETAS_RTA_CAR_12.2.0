@@ -1,0 +1,9 @@
+App\ PrimitiveDefault\ Category=VALUE
+EcucContainerValue_BswMModeRequesterId=DECIMAL
+EcucContainerValue_BswMRbIntrptQueueMaxSize=DECIMAL
+EcucContainerValue_BswMRbMaxNumOfRules=DECIMAL
+EcucContainerValue_BswMRequestedModeMax=DECIMAL
+EcucContainerValue_EcuMRbModeSwitchQueueLength=DECIMAL
+com.bosch.autosartool.ui.nattable.widget.NatSingleReferenceSelectionDialogparentElementUri=350
+com.bosch.autosartool.ui.nattable.widget.NatSingleReferenceSelectionDialogshortName=393
+eclipse.preferences.version=1
