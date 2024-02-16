@@ -1,0 +1,377 @@
+Deploying OS Paramdef started
+Reading options information
+Creating new VSMD
+C:\ETAS\RTA-CAR_12.2.0\RTA-CAR\Workspace_ETAS_RTA_CAR_12.2.0\workspace\Basic_Workflow\ecu_config\paramdefs\Os_EcucParamDef.arxml
+Done
+
+
+Time taken to deploy OS Paramdef: 11744 ms.
+Deploying OS Ecuc Values started
+Loading OS Paramdef
+ecu_config\os\internal\Os_EcucValues.arxml
+Done
+Time taken to deploy OS EcucValues: 164 ms.
+********************************************************************************
+Build Execution started
+********************************************************************************
+Tool Version : RTA-CAR 12.2.0 
+Tool Build Id :20230905_1800
+Date : Thu Feb 15 16:21:24 CET 2024
+Project : Basic_Workflow
+********************************************************************************
+
+********************************************************************************
+Project clean execution has started at 16:21:24:937 hh:mm:ss:ms 
+********************************************************************************
+Clean action: RTA_OS 
+********************************************************************************
+Project clean execution has been completed
+Time taken to run Project Clean :: 00:00:00:016 hh:mm:ss:ms 
+********************************************************************************
+********************************************************************************
+Main build execution has started at 16:21:29:038 hh:mm:ss:ms 
+********************************************************************************
+Execute action: RTA_OS 
+********************************************************************************
+RTA-OS Code Generator 
+Version 12.2.0.35369, Copyright ¸ ETAS 2023
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Bfx_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Compiler_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Det_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Platform_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/ComM_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/Com_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Bfx_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/BswM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/ComM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Com_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Det_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/EcuM_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/EcuM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/PduR_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/PduR_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/rba_BswSrv_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/rba_DiagLib_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/Det_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/rba_DiagLib_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/CanIf_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/CanSM_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/ComM_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/Com_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/PduR_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/rba_BswSrv_EcucValues.arxml'.
+Fatal: No target has been selected
+ (Location = RTAOSGen)
+Errors: 1, Warnings: 35.
+Command: [C:/ETAS/RTA-CAR_12.2.0/RTA-OS_12.2.0/bin/RTAOSGen.exe,  --ar_version:R22-11, --output:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/os, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/Compiler, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/Compiler/integration, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/Platform, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/integration, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/integration/Memmap, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/integration/SchM, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/integration, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/integration/os, , , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Bfx_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Compiler_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Det_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Platform_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/ComM_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/Com_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Bfx_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/BswM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/ComM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Com_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Det_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/EcuM_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/EcuM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/PduR_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/PduR_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/rba_BswSrv_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/rba_DiagLib_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/Det_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/rba_DiagLib_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/CanIf_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/CanSM_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/ComM_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/Com_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/PduR_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/rba_BswSrv_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/os/internal/Os_EcucValues_Split_NotForRTE.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/rte/osNeeds.arxml]
+Execution failed with error
+Execution of action RTA_OS failed
+********************************************************************************
+Post handle is skipped due to previous errors
+
+Build Summary 
+********************************************************************************
+- RTA_OS --> Error (Executed for 00:00:03:836 hh:mm:ss:ms)
+Execution failed with error
+Time taken for the complete build: 00:00:04:869
+********************************************************************************
+Build Execution started
+********************************************************************************
+Tool Version : RTA-CAR 12.2.0 
+Tool Build Id :20230905_1800
+Date : Thu Feb 15 16:22:10 CET 2024
+Project : Basic_Workflow
+********************************************************************************
+
+********************************************************************************
+Project clean execution has started at 16:22:10:481 hh:mm:ss:ms 
+********************************************************************************
+Clean action: RTA_OS 
+********************************************************************************
+Project clean execution has been completed
+Time taken to run Project Clean :: 00:00:00:006 hh:mm:ss:ms 
+********************************************************************************
+********************************************************************************
+Main build execution has started at 16:22:13:983 hh:mm:ss:ms 
+********************************************************************************
+Execute action: RTA_OS 
+********************************************************************************
+RTA-OS Code Generator 
+Version 12.2.0.35369, Copyright ¸ ETAS 2023
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Bfx_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Compiler_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Det_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Platform_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/ComM_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/Com_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Bfx_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/BswM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/ComM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Com_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Det_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/EcuM_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/EcuM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/PduR_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/PduR_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/rba_BswSrv_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/rba_DiagLib_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/Det_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/rba_DiagLib_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/CanIf_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/CanSM_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/ComM_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/Com_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/PduR_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/rba_BswSrv_EcucValues.arxml'.
+Fatal: No target has been selected
+ (Location = RTAOSGen)
+Errors: 1, Warnings: 35.
+Command: [C:/ETAS/RTA-CAR_12.2.0/RTA-OS_12.2.0/bin/RTAOSGen.exe,  --ar_version:R22-11, --output:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/os, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/Compiler, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/Compiler/integration, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/Platform, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/integration, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/integration/Memmap, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/integration/SchM, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/integration, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/integration/os, , , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Bfx_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Compiler_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Det_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Platform_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/ComM_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/Com_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Bfx_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/BswM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/ComM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Com_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Det_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/EcuM_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/EcuM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/PduR_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/PduR_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/rba_BswSrv_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/rba_DiagLib_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/Det_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/rba_DiagLib_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/CanIf_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/CanSM_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/ComM_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/Com_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/PduR_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/rba_BswSrv_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/os/internal/Os_EcucValues_Split_NotForRTE.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/rte/osNeeds.arxml]
+Execution failed with error
+Execution of action RTA_OS failed
+********************************************************************************
+Post handle is skipped due to previous errors
+
+Build Summary 
+********************************************************************************
+- RTA_OS --> Error (Executed for 00:00:11:890 hh:mm:ss:ms)
+Execution failed with error
+Time taken for the complete build: 00:00:12:251
+********************************************************************************
+Build Execution started
+********************************************************************************
+Tool Version : RTA-CAR 12.2.0 
+Tool Build Id :20230905_1800
+Date : Fri Feb 16 10:03:37 CET 2024
+Project : Basic_Workflow
+********************************************************************************
+
+********************************************************************************
+Project clean execution has started at 10:03:38:738 hh:mm:ss:ms 
+********************************************************************************
+Clean action: RTA_OS 
+********************************************************************************
+Project clean execution has been completed
+Time taken to run Project Clean :: 00:00:00:018 hh:mm:ss:ms 
+********************************************************************************
+********************************************************************************
+Main build execution has started at 10:03:43:552 hh:mm:ss:ms 
+********************************************************************************
+Execute action: RTA_OS 
+********************************************************************************
+RTA-OS Code Generator 
+Version 12.2.0.35369, Copyright ¸ ETAS 2023
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Bfx_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Compiler_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Det_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Platform_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/ComM_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/Com_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Bfx_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/BswM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/ComM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Com_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Det_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/EcuM_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/EcuM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/PduR_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/PduR_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/rba_BswSrv_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/rba_DiagLib_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/Det_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/rba_DiagLib_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/CanIf_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/CanSM_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/ComM_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/Com_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/PduR_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/rba_BswSrv_EcucValues.arxml'.
+Fatal: No target has been selected
+ (Location = RTAOSGen)
+Errors: 1, Warnings: 35.
+Command: [C:/ETAS/RTA-CAR_12.2.0/RTA-OS_12.2.0/bin/RTAOSGen.exe,  --ar_version:R22-11, --output:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/os, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/Compiler, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/Compiler/integration, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/Platform, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/integration, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/integration/Memmap, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/integration/SchM, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/integration, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/integration/os, , , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Bfx_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Compiler_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Det_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Platform_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/ComM_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/Com_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Bfx_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/BswM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/ComM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Com_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Det_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/EcuM_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/EcuM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/PduR_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/PduR_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/rba_BswSrv_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/rba_DiagLib_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/Det_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/rba_DiagLib_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/CanIf_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/CanSM_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/ComM_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/Com_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/PduR_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/rba_BswSrv_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/os/internal/Os_EcucValues_Split_NotForRTE.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/rte/osNeeds.arxml]
+Execution failed with error
+Execution of action RTA_OS failed
+********************************************************************************
+Post handle is skipped due to previous errors
+
+Build Summary 
+********************************************************************************
+- RTA_OS --> Error (Executed for 00:00:04:023 hh:mm:ss:ms)
+Execution failed with error
+Time taken for the complete build: 00:00:05:593
+********************************************************************************
+Build Execution started
+********************************************************************************
+Tool Version : RTA-CAR 12.2.0 
+Tool Build Id :20230905_1800
+Date : Fri Feb 16 10:05:34 CET 2024
+Project : Basic_Workflow
+********************************************************************************
+
+********************************************************************************
+Project clean execution has started at 10:05:34:467 hh:mm:ss:ms 
+********************************************************************************
+Clean action: RTA_OS 
+********************************************************************************
+Project clean execution has been completed
+Time taken to run Project Clean :: 00:00:00:007 hh:mm:ss:ms 
+********************************************************************************
+********************************************************************************
+Main build execution has started at 10:05:38:090 hh:mm:ss:ms 
+********************************************************************************
+Execute action: RTA_OS 
+********************************************************************************
+RTA-OS Code Generator 
+Version 12.2.0.35369, Copyright ¸ ETAS 2023
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Bfx_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Compiler_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Det_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Platform_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/ComM_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/Com_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Bfx_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/BswM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/ComM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Com_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Det_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/EcuM_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/EcuM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/PduR_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/PduR_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/rba_BswSrv_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/rba_DiagLib_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/Det_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/rba_DiagLib_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/CanIf_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/CanSM_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/ComM_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/Com_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/PduR_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/rba_BswSrv_EcucValues.arxml'.
+Selected target VRTA[MinGW] V3.0.51.2700
+......................................................................................................
+Information: ScheduleTable Rte_ScheduleTable has 100 expiry points.
+Information: Updated 'RTAOS.lib'
+Errors: 0, Warnings: 35.
+Command: [C:/ETAS/RTA-CAR_12.2.0/RTA-OS_12.2.0/bin/RTAOSGen.exe,  --ar_version:R22-11, --output:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/os, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/Compiler, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/Compiler/integration, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/Platform, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/integration, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/integration/Memmap, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/integration/SchM, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/integration, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/integration/os, , , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Bfx_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Compiler_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Det_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Platform_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/ComM_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/Com_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Bfx_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/BswM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/ComM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Com_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Det_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/EcuM_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/EcuM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/PduR_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/PduR_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/rba_BswSrv_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/rba_DiagLib_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/Det_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/rba_DiagLib_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/CanIf_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/CanSM_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/ComM_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/Com_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/PduR_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/rba_BswSrv_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/os/internal/Os_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/os/internal/Os_EcucValues_Split_NotForRTE.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/rte/osNeeds.arxml]
+Execution of action RTA_OS successfully completed
+********************************************************************************
+
+Build Summary 
+********************************************************************************
+- RTA_OS --> Success (Executed for 00:00:25:104 hh:mm:ss:ms)
+Time taken for the complete build: 00:00:25:483
+********************************************************************************
+Build Execution started
+********************************************************************************
+Tool Version : RTA-CAR 12.2.0 
+Tool Build Id :20230905_1800
+Date : Fri Feb 16 10:08:57 CET 2024
+Project : Basic_Workflow
+********************************************************************************
+
+********************************************************************************
+Project clean execution has started at 10:08:57:777 hh:mm:ss:ms 
+********************************************************************************
+C:\ETAS\RTA-CAR_12.2.0\RTA-CAR\Workspace_ETAS_RTA_CAR_12.2.0\workspace\Basic_Workflow\src\os directory cleaned
+Clean action: RTA_OS 
+********************************************************************************
+Project clean execution has been completed
+Time taken to run Project Clean :: 00:00:00:012 hh:mm:ss:ms 
+********************************************************************************
+********************************************************************************
+Main build execution has started at 10:09:01:172 hh:mm:ss:ms 
+********************************************************************************
+Execute action: RTA_OS 
+********************************************************************************
+RTA-OS Code Generator 
+Version 12.2.0.35369, Copyright ¸ ETAS 2023
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Bfx_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Compiler_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Det_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Platform_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/ComM_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/Com_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Bfx_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/BswM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/ComM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Com_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Det_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/EcuM_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/EcuM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/PduR_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/PduR_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/rba_BswSrv_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/rba_DiagLib_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/Det_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/rba_DiagLib_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/CanIf_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/CanSM_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/ComM_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/Com_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/PduR_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/rba_BswSrv_EcucValues.arxml'.
+Selected target VRTA[MinGW] V3.0.51.2700
+......................................................................................................
+Information: ScheduleTable Rte_ScheduleTable has 100 expiry points.
+Information: Updated 'RTAOS.lib'
+Errors: 0, Warnings: 35.
+Command: [C:/ETAS/RTA-CAR_12.2.0/RTA-OS_12.2.0/bin/RTAOSGen.exe,  --ar_version:R22-11, --output:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/os, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/Compiler, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/Compiler/integration, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/Platform, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/integration, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/integration/Memmap, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/bsw/integration/SchM, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/integration, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/integration/os, , , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Bfx_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Compiler_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Det_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/Platform_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/ComM_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/Com_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Bfx_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/BswM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanIf_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/CanSM_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/ComM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Com_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/Det_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/EcuM_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/EcuM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/PduR_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/PduR_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/rba_BswSrv_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/bswmd/rba_DiagLib_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/ComM_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/Det_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/gen/swcd/rba_DiagLib_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/CanIf_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/CanSM_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/ComM_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/Com_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/bswmd_ecuc_values/PduR_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/bsw/internal/rba_BswSrv_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/os/internal/Os_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/ecu_config/os/internal/Os_EcucValues_Split_NotForRTE.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/Workspace_ETAS_RTA_CAR_12.2.0/workspace/Basic_Workflow/src/rte/osNeeds.arxml]
+Execution of action RTA_OS successfully completed
+********************************************************************************
+
+Build Summary 
+********************************************************************************
+- RTA_OS --> Success (Executed for 00:00:20:539 hh:mm:ss:ms)
+Time taken for the complete build: 00:00:20:843

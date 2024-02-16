@@ -1,0 +1,91 @@
+cmake_minimum_required(VERSION 3.9)
+
+# automatically set the unity builds off for stability, set to on in target specific CMakeLists for speed 
+set(UNITY_BUILD_FLAG OFF)
+
+function(runTargetIndependentCMake)
+    get_filename_component(SRC_DIR "../src" REALPATH)
+
+    message(STATUS "src Dir ${SRC_DIR}")
+
+    # Use CCache if it is avaliable on path, customer likely to not have this
+    find_program(CCACHE_PROGRAM ccache)
+    if(CCACHE_PROGRAM)
+        set_property(GLOBAL PROPERTY RULE_LAUNCH_COMPILE "${CCACHE_PROGRAM}")
+        set(CMAKE_CXX_COMPILER_LAUNCHER "ccache")
+        message(STATUS "Using CCache")
+    else()
+       message(STATUS "CCache not found - For faster build times install CCache and add to the system path")
+    endif()
+
+    # set the number of workers allowed to run the compiler at one time
+    set(CMAKE_CXX_COMPILER_WORKS 1)
+
+    # First, let's gather all of the source and header files we need
+    # Looking at the src dir
+    file(GLOB_RECURSE C_SRC_FILES "${SRC_DIR}/*.c")
+    file(GLOB_RECURSE CPP_SRC_FILES "${SRC_DIR}/*.cpp")
+    file(GLOB_RECURSE HEADER_FOLDERS LIST_DIRECTORIES true "${SRC_DIR}")
+
+    # Put all the source and header files together
+    set(ALL_HEADER_FILES "${HEADER_FOLDERS}")
+    set(ALL_SOURCE_FILES "${C_SRC_FILES};${CPP_SRC_FILES}")
+
+    # Remove files that otherwise crash the build (the list of these will have already been specified in the target specific CMakeLists.txt)
+    foreach(X IN LISTS BANNED_FILES)
+        list(FILTER ALL_SOURCE_FILES EXCLUDE REGEX ".*/${X}")
+    endforeach()
+    
+    set(location "NULL")
+    string(REPLACE "/build" "" location "${CMAKE_CURRENT_SOURCE_DIR}")
+    message(STATUS "Location of working dir is ${location}")
+    # Files from the folders Dem, Dcm, rte, asw and CanTp_PreCompile and any C++ files at all should not be included in unity builds.
+    # Files in these folders and C++ files will still be compiled but not in the same manner as the others.
+    foreach(L IN LISTS ALL_SOURCE_FILES)
+        foreach(F IN LISTS L)
+            foreach(T IN LISTS UNITY_BUILD_BANNED_TAGS)
+
+                string(REPLACE ${location} ".." F ${F})
+                if(${F} MATCHES ${T})
+                    set_source_files_properties(${F} PROPERTIES SKIP_UNITY_BUILD_INCLUSION TRUE)
+                endif()
+                
+            endforeach()
+        endforeach()
+    endforeach()
+    add_executable(${TARGET_NAME} ${ALL_SOURCE_FILES})
+
+    set(OUTPUT_DIR_PATH "..")
+    set(OUTPUT_DIR_NAME "output")
+
+    # In the target specific CMakeLists i.e.(Targets\<target-name>\Implementation\Build\CMakeScripts\CMakeLists.txt) there should be a UNITY_BUILD_FLAG variable set to ON to enable UNITY_BUILDs
+    # Set the unity build flag to what is specified in the target specific CMakeLists.txt
+    set_target_properties(${TARGET_NAME} PROPERTIES UNITY_BUILD ${UNITY_BUILD_FLAG})
+    set_target_properties(${TARGET_NAME} PROPERTIES UNITY_BUILD_BATCH_SIZE 50)
+    set_target_properties(${TARGET_NAME} PROPERTIES OUTPUT_NAME "${OUTPUT_FILENAME}")
+    set_target_properties(${TARGET_NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${OUTPUT_DIR_PATH}/${OUTPUT_DIR_NAME}")
+
+    set_target_properties(${TARGET_NAME} PROPERTIES LINK_DEPENDS ${LINKER_SCRIPT})
+
+    # Link appropriate directories and libraries specified in CMakeLists.txt
+    target_link_directories(${TARGET_NAME} PRIVATE ${TARGET_LINK_DIRS})
+    target_link_libraries(${TARGET_NAME} ${LIBRARIES})
+
+    # Allow header files to reference any folder it may require to
+    foreach(L IN LISTS ALL_HEADER_FILES)
+        foreach(X IN LISTS L)
+            string(REPLACE ${location} ".." &{X} X)
+            target_include_directories(${TARGET_NAME} PRIVATE ${X})
+        endforeach()
+    endforeach()
+
+    # Tell the output file to access appropriate folders
+    target_include_directories(${TARGET_NAME} PRIVATE ${INCLUDE_DIRECTORIES})
+
+endfunction()
+
+
+# Quality of life fucntion to show where functionality is successfull
+function(checkLoading)
+    message(STATUS "Loaded general CMake file sucessfully")
+endfunction()

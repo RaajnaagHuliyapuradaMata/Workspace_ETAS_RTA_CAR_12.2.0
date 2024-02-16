@@ -1,0 +1,7 @@
+«IMPORT arm»
+«EXTENSION templates::MemMap_ArUtils»
+
+«REM» Pragma Configuration«ENDREM»
+«DEFINE MCU_RB_GENERIC_ARMEMMAP_PRAGMA_CONFIG FOR ICEArProject-»
+
+«ENDDEFINE»

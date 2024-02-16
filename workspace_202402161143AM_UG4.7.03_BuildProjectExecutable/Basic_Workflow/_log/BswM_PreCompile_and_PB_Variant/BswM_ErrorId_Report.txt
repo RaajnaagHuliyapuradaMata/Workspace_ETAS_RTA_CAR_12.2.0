@@ -1,0 +1,35 @@
+
+============================================================================
+BswM - ErrorId Report
+============================================================================
+/*If BswMReportFailRuntimeErrorId is not configured in any of the BswMActionList then the report will be empty.
+BswMReportFailRuntimeErrorId will be considered only if BswMReportFailRuntimeErrorId is configured in a BswMActionListItem which contains the BswMActionListItemRef as BswMAction*/
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+BswMActionList           | BswMActionListItem |   BswMReportFailRuntimeErrorId  |              BswMAction               | BswMActionListItemRef | 
+-------------------------------------------------------------------------------------------------------------------------------------------------                  
+BswM_AL_FullComm_AllBus  | BswMActionListItem_0 |           0x80                |      BSWM_ACTION_PDU_GRP_SWITCH            | BswM_AI_StartPduGroup_All  | 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+BswM_AL_FullComm_AllBus  | BswMActionListItem_1 |           0x80                |      BSWM_ACTION_COMM_ALLOW_COM            | BswM_AI_ComMCommAllowed_Can0  | 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+BswM_AL_FullComm_AllBus  | BswMActionListItem_2 |           0x80                |      BSWM_ACTION_COMM_MODE_SWITCH          | BswM_AI_ComMReqFullComm_User0  | 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+BswM_AL_FullComm_AllBus  | BswMActionListItem_3 |           0x80                |      BSWM_ACTION_SCHM_SWITCH               | BswM_AI_BswMSwitchAppRun  | 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+BswM_AL_GoDown           | BswMActionListItem_0 |           0x80                |      BSWM_ACTION_USR_CALLOUT               | BswM_AI_GoDown  |      
+-------------------------------------------------------------------------------------------------------------------------------------------------
+BswM_AL_Shutdown         | BswMActionListItem_0 |           0x80                |      BSWM_ACTION_USR_CALLOUT               | BswM_AI_RteStop  |     
+-------------------------------------------------------------------------------------------------------------------------------------------------
+BswM_AL_Shutdown         | BswMActionListItem_1 |           0x80                |      BSWM_ACTION_USR_CALLOUT               | BswM_AI_ComMDeInit  |  
+-------------------------------------------------------------------------------------------------------------------------------------------------
+BswM_AL_Shutdown         | BswMActionListItem_2 |           0x80                |      BSWM_ACTION_SCHM_SWITCH               | BswM_AI_BswMSwitchPrepShutdown  | 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+BswM_AL_StopComm_AllBus  | BswMActionListItem_0 |           0x80                |      BSWM_ACTION_COMM_MODE_SWITCH          | BswM_AI_ComMReqNoComm_User0  | 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+BswM_AL_StopComm_AllBus  | BswMActionListItem_1 |           0x80                |      BSWM_ACTION_COMM_ALLOW_COM            | BswM_AI_ComMCommNotAllowed_Can0  | 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+BswM_AL_StopComm_AllBus  | BswMActionListItem_2 |           0x80                |      BSWM_ACTION_PDU_GRP_SWITCH            | BswM_AI_StopPduGroup_All  | 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+BswM_AL_StopComm_AllBus  | BswMActionListItem_3 |           0x80                |      BSWM_ACTION_SCHM_SWITCH               | BswM_AI_BswMSwitchPostRun  | 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+

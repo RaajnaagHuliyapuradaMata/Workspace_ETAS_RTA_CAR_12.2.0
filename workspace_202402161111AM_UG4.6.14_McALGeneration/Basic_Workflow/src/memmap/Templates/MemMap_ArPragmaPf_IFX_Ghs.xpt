@@ -1,0 +1,1086 @@
+«IMPORT arm»
+«EXTENSION templates::MemMap_ArUtils»
+«REM» Pragma Configuration«ENDREM»
+ «DEFINE MCU_RB_IFX_GHS_ARMEMMAP_PRAGMA_CONFIG FOR ICEArProject-»
+
+      «configPragmaForMemSectionName("CODE").setStartMemmapPragma("#pragma ghs section text=default")»
+      «configPragmaForMemSectionName("CODE").setEndMemmapPragma("#pragma ghs section text=default")»
+
+      «configPragmaForMemSectionName("CODE_FAST").setStartMemmapPragma("#pragma ghs section text=default")»
+      «configPragmaForMemSectionName("CODE_FAST").setEndMemmapPragma("#pragma ghs section text=default")»
+
+      «configPragmaForMemSectionName("CODE_SLOW").setStartMemmapPragma("#pragma ghs section text=default")»
+      «configPragmaForMemSectionName("CODE_SLOW").setEndMemmapPragma("#pragma ghs section text=default")»
+
+      «configPragmaForMemSectionName("CALLOUT_CODE").setStartMemmapPragma("#pragma ghs section text=default")»
+      «configPragmaForMemSectionName("CALLOUT_CODE").setEndMemmapPragma("#pragma ghs section text=default")»
+
+      «configPragmaForMemSectionName("CALIB_8").setStartMemmapPragma("#pragma ghs section rodata=\".rodata.caldata.a1\"")»
+      «configPragmaForMemSectionName("CALIB_8").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CALIB_16").setStartMemmapPragma("#pragma ghs section rodata=\".rodata.caldata.a2\"")»
+      «configPragmaForMemSectionName("CALIB_16").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CALIB_32").setStartMemmapPragma("#pragma ghs section rodata=\".rodata.caldata.a4\"")»
+      «configPragmaForMemSectionName("CALIB_32").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CALIB_64").setStartMemmapPragma("#pragma ghs section rodata=\".rodata.caldata.a8\"")»
+      «configPragmaForMemSectionName("CALIB_64").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CALIB_BOOLEAN").setStartMemmapPragma("#pragma ghs section rodata=\".rodata.caldata.a1\"")»
+      «configPragmaForMemSectionName("CALIB_BOOLEAN").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CALIB_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section rodata=\".rodata.caldata.ax\"")»
+      «configPragmaForMemSectionName("CALIB_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CALIB_PTR").setStartMemmapPragma("#pragma ghs section rodata=\".rodata.caldata.a4\"")»
+      «configPragmaForMemSectionName("CALIB_PTR").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONFIG_DATA_8").setStartMemmapPragma("#pragma ghs section rodata=default")»
+      «configPragmaForMemSectionName("CONFIG_DATA_8").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONFIG_DATA_16").setStartMemmapPragma("#pragma ghs section rodata=default")»
+      «configPragmaForMemSectionName("CONFIG_DATA_16").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONFIG_DATA_32").setStartMemmapPragma("#pragma ghs section rodata=default")»
+      «configPragmaForMemSectionName("CONFIG_DATA_32").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONFIG_DATA_64").setStartMemmapPragma("#pragma ghs section rodata=default")»
+      «configPragmaForMemSectionName("CONFIG_DATA_64").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONFIG_DATA_BOOLEAN").setStartMemmapPragma("#pragma ghs section rodata=default")»
+      «configPragmaForMemSectionName("CONFIG_DATA_BOOLEAN").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONFIG_DATA_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section rodata=default")»
+      «configPragmaForMemSectionName("CONFIG_DATA_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONFIG_DATA_PTR").setStartMemmapPragma("#pragma ghs section rodata=default")»
+      «configPragmaForMemSectionName("CONFIG_DATA_PTR").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONFIG_DATA_POSTBUILD_8").setStartMemmapPragma("#pragma ghs section rodata=default")»
+      «configPragmaForMemSectionName("CONFIG_DATA_POSTBUILD_8").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONFIG_DATA_POSTBUILD_16").setStartMemmapPragma("#pragma ghs section rodata=default")»
+      «configPragmaForMemSectionName("CONFIG_DATA_POSTBUILD_16").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONFIG_DATA_POSTBUILD_32").setStartMemmapPragma("#pragma ghs section rodata=default")»
+      «configPragmaForMemSectionName("CONFIG_DATA_POSTBUILD_32").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONFIG_DATA_POSTBUILD_64").setStartMemmapPragma("#pragma ghs section rodata=default")»
+      «configPragmaForMemSectionName("CONFIG_DATA_POSTBUILD_64").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONFIG_DATA_POSTBUILD_BOOLEAN").setStartMemmapPragma("#pragma ghs section rodata=default")»
+      «configPragmaForMemSectionName("CONFIG_DATA_POSTBUILD_BOOLEAN").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONFIG_DATA_POSTBUILD_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section rodata=default")»
+      «configPragmaForMemSectionName("CONFIG_DATA_POSTBUILD_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONFIG_DATA_POSTBUILD_PTR").setStartMemmapPragma("#pragma ghs section rodata=default")»
+      «configPragmaForMemSectionName("CONFIG_DATA_POSTBUILD_PTR").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONST_8").setStartMemmapPragma("#pragma ghs section rodata=default")»
+      «configPragmaForMemSectionName("CONST_8").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONST_16").setStartMemmapPragma("#pragma ghs section rodata=default")»
+      «configPragmaForMemSectionName("CONST_16").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONST_32").setStartMemmapPragma("#pragma ghs section rodata=default")»
+      «configPragmaForMemSectionName("CONST_32").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONST_64").setStartMemmapPragma("#pragma ghs section rodata=default")»
+      «configPragmaForMemSectionName("CONST_64").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONST_BOOLEAN").setStartMemmapPragma("#pragma ghs section rodata=default")»
+      «configPragmaForMemSectionName("CONST_BOOLEAN").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONST_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section rodata=default")»
+      «configPragmaForMemSectionName("CONST_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONST_PTR").setStartMemmapPragma("#pragma ghs section rodata=default")»
+      «configPragmaForMemSectionName("CONST_PTR").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONST_SAVED_RECOVERY_ZONE_8").setStartMemmapPragma("#pragma ghs section rodata=default")»
+      «configPragmaForMemSectionName("CONST_SAVED_RECOVERY_ZONE_8").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONST_SAVED_RECOVERY_ZONE_16").setStartMemmapPragma("#pragma ghs section rodata=default")»
+      «configPragmaForMemSectionName("CONST_SAVED_RECOVERY_ZONE_16").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONST_SAVED_RECOVERY_ZONE_32").setStartMemmapPragma("#pragma ghs section rodata=default")»
+      «configPragmaForMemSectionName("CONST_SAVED_RECOVERY_ZONE_32").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONST_SAVED_RECOVERY_ZONE_64").setStartMemmapPragma("#pragma ghs section rodata=default")»
+      «configPragmaForMemSectionName("CONST_SAVED_RECOVERY_ZONE_64").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONST_SAVED_RECOVERY_ZONE_BOOLEAN").setStartMemmapPragma("#pragma ghs section rodata=default")»
+      «configPragmaForMemSectionName("CONST_SAVED_RECOVERY_ZONE_BOOLEAN").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONST_SAVED_RECOVERY_ZONE_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section rodata=default")»
+      «configPragmaForMemSectionName("CONST_SAVED_RECOVERY_ZONE_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONST_SAVED_RECOVERY_ZONE_PTR").setStartMemmapPragma("#pragma ghs section rodata=default")»
+      «configPragmaForMemSectionName("CONST_SAVED_RECOVERY_ZONE_PTR").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("INTERNAL_VAR_CLEARED_8").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("INTERNAL_VAR_CLEARED_8").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("INTERNAL_VAR_CLEARED_16").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("INTERNAL_VAR_CLEARED_16").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("INTERNAL_VAR_CLEARED_32").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("INTERNAL_VAR_CLEARED_32").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("INTERNAL_VAR_CLEARED_64").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("INTERNAL_VAR_CLEARED_64").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("INTERNAL_VAR_CLEARED_BOOLEAN").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("INTERNAL_VAR_CLEARED_BOOLEAN").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("INTERNAL_VAR_CLEARED_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section bss=\".bss.ax\"")»
+      «configPragmaForMemSectionName("INTERNAL_VAR_CLEARED_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("INTERNAL_VAR_CLEARED_PTR").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("INTERNAL_VAR_CLEARED_PTR").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("INTERNAL_VAR_INIT_8").setStartMemmapPragma("#pragma ghs section data=default \n  #pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("INTERNAL_VAR_INIT_8").setEndMemmapPragma("#pragma ghs section data=default \n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("INTERNAL_VAR_INIT_16").setStartMemmapPragma("#pragma ghs section data=default \n  #pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("INTERNAL_VAR_INIT_16").setEndMemmapPragma("#pragma ghs section data=default \n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("INTERNAL_VAR_INIT_32").setStartMemmapPragma("#pragma ghs section data=default \n  #pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("INTERNAL_VAR_INIT_32").setEndMemmapPragma("#pragma ghs section data=default \n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("INTERNAL_VAR_INIT_64").setStartMemmapPragma("#pragma ghs section data=default \n  #pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("INTERNAL_VAR_INIT_64").setEndMemmapPragma("#pragma ghs section data=default \n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("INTERNAL_VAR_INIT_BOOLEAN").setStartMemmapPragma("#pragma ghs section data=default \n  #pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("INTERNAL_VAR_INIT_BOOLEAN").setEndMemmapPragma("#pragma ghs section data=default \n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("INTERNAL_VAR_INIT_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section data=\".data.ax\"\n #pragma ghs section bss=\".bss.ax\"")»
+      «configPragmaForMemSectionName("INTERNAL_VAR_INIT_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section data=default \n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("INTERNAL_VAR_INIT_PTR").setStartMemmapPragma("#pragma ghs section data=default \n  #pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("INTERNAL_VAR_INIT_PTR").setEndMemmapPragma("#pragma ghs section data=default \n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("INTERNAL_VAR_POWER_ON_CLEARED_8").setStartMemmapPragma("#pragma ghs section bss=\".bss.PORST.a1\"")»
+      «configPragmaForMemSectionName("INTERNAL_VAR_POWER_ON_CLEARED_8").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("INTERNAL_VAR_POWER_ON_CLEARED_16").setStartMemmapPragma("#pragma ghs section bss=\".bss.PORST.a2\"")»
+      «configPragmaForMemSectionName("INTERNAL_VAR_POWER_ON_CLEARED_16").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("INTERNAL_VAR_POWER_ON_CLEARED_32").setStartMemmapPragma("#pragma ghs section bss=\".bss.PORST.a4\"")»
+      «configPragmaForMemSectionName("INTERNAL_VAR_POWER_ON_CLEARED_32").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("INTERNAL_VAR_POWER_ON_CLEARED_64").setStartMemmapPragma("#pragma ghs section bss=\".bss.PORST.a8\"")»
+      «configPragmaForMemSectionName("INTERNAL_VAR_POWER_ON_CLEARED_64").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("INTERNAL_VAR_POWER_ON_CLEARED_BOOLEAN").setStartMemmapPragma("#pragma ghs section bss=\".bss.PORST.a1\"")»
+      «configPragmaForMemSectionName("INTERNAL_VAR_POWER_ON_CLEARED_BOOLEAN").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("INTERNAL_VAR_POWER_ON_CLEARED_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section bss=\".bss.PORST.ax\"")»
+      «configPragmaForMemSectionName("INTERNAL_VAR_POWER_ON_CLEARED_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("INTERNAL_VAR_POWER_ON_CLEARED_PTR").setStartMemmapPragma("#pragma ghs section bss=\".bss.PORST.a4\"")»
+      «configPragmaForMemSectionName("INTERNAL_VAR_POWER_ON_CLEARED_PTR").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_CLEARED_8").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_CLEARED_8").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_CLEARED_16").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_CLEARED_16").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_CLEARED_32").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_CLEARED_32").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_CLEARED_64").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_CLEARED_64").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_CLEARED_BOOLEAN").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_CLEARED_BOOLEAN").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_CLEARED_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section bss=\".bss.ax\"")»
+      «configPragmaForMemSectionName("VAR_CLEARED_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_CLEARED_PTR").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_CLEARED_PTR").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_FAST_CLEARED_8").setStartMemmapPragma("#pragma ghs startsda\n  #pragma ghs section sbss=default")»
+      «configPragmaForMemSectionName("VAR_FAST_CLEARED_8").setEndMemmapPragma("#pragma ghs section sbss=default\n   #pragma ghs endsda")»
+
+      «configPragmaForMemSectionName("VAR_FAST_CLEARED_16").setStartMemmapPragma("#pragma ghs startsda\n  #pragma ghs section sbss=default")»
+      «configPragmaForMemSectionName("VAR_FAST_CLEARED_16").setEndMemmapPragma("#pragma ghs section sbss=default\n  #pragma ghs endsda")»
+
+      «configPragmaForMemSectionName("VAR_FAST_CLEARED_32").setStartMemmapPragma("#pragma ghs startsda\n  #pragma ghs section sbss=default")»
+      «configPragmaForMemSectionName("VAR_FAST_CLEARED_32").setEndMemmapPragma("#pragma ghs section sbss=default\n   #pragma ghs endsda")»
+
+      «configPragmaForMemSectionName("VAR_FAST_CLEARED_64").setStartMemmapPragma("#pragma ghs startsda\n  #pragma ghs section sbss=default")»
+      «configPragmaForMemSectionName("VAR_FAST_CLEARED_64").setEndMemmapPragma("#pragma ghs section sbss=default\n   #pragma ghs endsda")»
+
+      «configPragmaForMemSectionName("VAR_FAST_CLEARED_BOOLEAN").setStartMemmapPragma("#pragma ghs startsda\n  #pragma ghs section sbss=default")»
+      «configPragmaForMemSectionName("VAR_FAST_CLEARED_BOOLEAN").setEndMemmapPragma("#pragma ghs section sbss=default\n   #pragma ghs endsda")»
+
+      «configPragmaForMemSectionName("VAR_FAST_CLEARED_UNSPECIFIED").setStartMemmapPragma("#pragma ghs startsda\n  #pragma ghs section sbss=\".sbss.ax\"")»
+      «configPragmaForMemSectionName("VAR_FAST_CLEARED_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section sbss=default\n  #pragma ghs endsda")»
+
+      «configPragmaForMemSectionName("VAR_FAST_CLEARED_PTR").setStartMemmapPragma("#pragma ghs startsda\n  #pragma ghs section sbss=default")»
+      «configPragmaForMemSectionName("VAR_FAST_CLEARED_PTR").setEndMemmapPragma("#pragma ghs section sbss=default\n   #pragma ghs endsda")»
+
+      «configPragmaForMemSectionName("VAR_FAST_INIT_8").setStartMemmapPragma("#pragma ghs startsda\n #pragma ghs section sdata=default\n #pragma ghs section sbss=default")»
+      «configPragmaForMemSectionName("VAR_FAST_INIT_8").setEndMemmapPragma("#pragma ghs section sdata=default\n #pragma ghs section sbss=default\n #pragma ghs endsda")»
+
+      «configPragmaForMemSectionName("VAR_FAST_INIT_16").setStartMemmapPragma("#pragma ghs startsda\n #pragma ghs section sdata=default\n #pragma ghs section sbss=default")»
+      «configPragmaForMemSectionName("VAR_FAST_INIT_16").setEndMemmapPragma("#pragma ghs section sdata=default\n #pragma ghs section sbss=default\n #pragma ghs endsda")»
+
+      «configPragmaForMemSectionName("VAR_FAST_INIT_32").setStartMemmapPragma("#pragma ghs startsda\n #pragma ghs section sdata=default\n #pragma ghs section sbss=default")»
+      «configPragmaForMemSectionName("VAR_FAST_INIT_32").setEndMemmapPragma("#pragma ghs section sdata=default\n #pragma ghs section sbss=default\n #pragma ghs endsda")»
+
+      «configPragmaForMemSectionName("VAR_FAST_INIT_64").setStartMemmapPragma("#pragma ghs startsda\n #pragma ghs section sdata=default\n #pragma ghs section sbss=default")»
+      «configPragmaForMemSectionName("VAR_FAST_INIT_64").setEndMemmapPragma("#pragma ghs section sdata=default\n #pragma ghs section sbss=default\n #pragma ghs endsda")»
+
+      «configPragmaForMemSectionName("VAR_FAST_INIT_BOOLEAN").setStartMemmapPragma("#pragma ghs startsda\n #pragma ghs section sdata=default\n #pragma ghs section sbss=default")»
+      «configPragmaForMemSectionName("VAR_FAST_INIT_BOOLEAN").setEndMemmapPragma("#pragma ghs section sdata=default\n #pragma ghs section sbss=default\n #pragma ghs endsda")»
+
+      «configPragmaForMemSectionName("VAR_FAST_INIT_UNSPECIFIED").setStartMemmapPragma("#pragma ghs startsda\n #pragma ghs section sdata=\".sdata.ax\"\n #pragma ghs section sbss=\".sbss.ax\"")»
+      «configPragmaForMemSectionName("VAR_FAST_INIT_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section sdata=default\n #pragma ghs section sbss=default\n #pragma ghs endsda")»
+
+      «configPragmaForMemSectionName("VAR_FAST_INIT_PTR").setStartMemmapPragma("#pragma ghs startsda\n #pragma ghs section sdata=default\n #pragma ghs section sbss=default")»
+      «configPragmaForMemSectionName("VAR_FAST_INIT_PTR").setEndMemmapPragma("#pragma ghs section sdata=default\n #pragma ghs section sbss=default\n #pragma ghs endsda")»
+
+      «configPragmaForMemSectionName("VAR_FAST_POWER_ON_CLEARED_8").setStartMemmapPragma("#pragma ghs section bss=\".bss.PORST.a1\"")»
+      «configPragmaForMemSectionName("VAR_FAST_POWER_ON_CLEARED_8").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_FAST_POWER_ON_CLEARED_16").setStartMemmapPragma("#pragma ghs section bss=\".bss.PORST.a2\"")»
+      «configPragmaForMemSectionName("VAR_FAST_POWER_ON_CLEARED_16").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_FAST_POWER_ON_CLEARED_32").setStartMemmapPragma("#pragma ghs section bss=\".bss.PORST.a4\"")»
+      «configPragmaForMemSectionName("VAR_FAST_POWER_ON_CLEARED_32").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_FAST_POWER_ON_CLEARED_64").setStartMemmapPragma("#pragma ghs section bss=\".bss.PORST.a8\"")»
+      «configPragmaForMemSectionName("VAR_FAST_POWER_ON_CLEARED_64").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_FAST_POWER_ON_CLEARED_BOOLEAN").setStartMemmapPragma("#pragma ghs section bss=\".bss.PORST.a1\"")»
+      «configPragmaForMemSectionName("VAR_FAST_POWER_ON_CLEARED_BOOLEAN").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_FAST_POWER_ON_CLEARED_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section bss=\".bss.PORST.ax\"")»
+      «configPragmaForMemSectionName("VAR_FAST_POWER_ON_CLEARED_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_FAST_POWER_ON_CLEARED_PTR").setStartMemmapPragma("#pragma ghs section bss=\".bss.PORST.a4\"")»
+      «configPragmaForMemSectionName("VAR_FAST_POWER_ON_CLEARED_PTR").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_INIT_8").setStartMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_INIT_8").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_INIT_16").setStartMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_INIT_16").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_INIT_32").setStartMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_INIT_32").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_INIT_64").setStartMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_INIT_64").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_INIT_BOOLEAN").setStartMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_INIT_BOOLEAN").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_INIT_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section data=\".data.ax\"\n  #pragma ghs section bss=\".bss.ax\"")»
+      «configPragmaForMemSectionName("VAR_INIT_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_INIT_PTR").setStartMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_INIT_PTR").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_POWER_ON_CLEARED_8").setStartMemmapPragma("#pragma ghs section bss=\".bss.PORST.a1\"")»
+      «configPragmaForMemSectionName("VAR_POWER_ON_CLEARED_8").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_POWER_ON_CLEARED_16").setStartMemmapPragma("#pragma ghs section bss=\".bss.PORST.a2\"")»
+      «configPragmaForMemSectionName("VAR_POWER_ON_CLEARED_16").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_POWER_ON_CLEARED_32").setStartMemmapPragma("#pragma ghs section bss=\".bss.PORST.a4\"")»
+      «configPragmaForMemSectionName("VAR_POWER_ON_CLEARED_32").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_POWER_ON_CLEARED_64").setStartMemmapPragma("#pragma ghs section bss=\".bss.PORST.a8\"")»
+      «configPragmaForMemSectionName("VAR_POWER_ON_CLEARED_64").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_POWER_ON_CLEARED_BOOLEAN").setStartMemmapPragma("#pragma ghs section bss=\".bss.PORST.a1\"")»
+      «configPragmaForMemSectionName("VAR_POWER_ON_CLEARED_BOOLEAN").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_POWER_ON_CLEARED_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section bss=\".bss.PORST.ax\"")»
+      «configPragmaForMemSectionName("VAR_POWER_ON_CLEARED_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_POWER_ON_CLEARED_PTR").setStartMemmapPragma("#pragma ghs section bss=\".bss.PORST.a4\"")»
+      «configPragmaForMemSectionName("VAR_POWER_ON_CLEARED_PTR").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SAVED_ZONE_8").setStartMemmapPragma("#pragma ghs section bss=\".bss.TRAPRST.a1\"")»
+      «configPragmaForMemSectionName("VAR_SAVED_ZONE_8").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SAVED_ZONE_16").setStartMemmapPragma("#pragma ghs section bss=\".bss.TRAPRST.a2\"")»
+      «configPragmaForMemSectionName("VAR_SAVED_ZONE_16").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SAVED_ZONE_32").setStartMemmapPragma("#pragma ghs section bss=\".bss.TRAPRST.a4\"")»
+      «configPragmaForMemSectionName("VAR_SAVED_ZONE_32").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SAVED_ZONE_64").setStartMemmapPragma("#pragma ghs section bss=\".bss.TRAPRST.a8\"")»
+      «configPragmaForMemSectionName("VAR_SAVED_ZONE_64").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SAVED_ZONE_BOOLEAN").setStartMemmapPragma("#pragma ghs section bss=\".bss.TRAPRST.a1\"")»
+      «configPragmaForMemSectionName("VAR_SAVED_ZONE_BOOLEAN").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SAVED_ZONE_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section bss=\".bss.TRAPRST.ax\"")»
+      «configPragmaForMemSectionName("VAR_SAVED_ZONE_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SAVED_ZONE_PTR").setStartMemmapPragma("#pragma ghs section bss=\".bss.TRAPRST.a4\"")»
+      «configPragmaForMemSectionName("VAR_SAVED_ZONE_PTR").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SLOW_INIT_8").setStartMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_SLOW_INIT_8").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SLOW_INIT_16").setStartMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_SLOW_INIT_16").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SLOW_INIT_32").setStartMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_SLOW_INIT_32").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SLOW_INIT_64").setStartMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_SLOW_INIT_64").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SLOW_INIT_BOOLEAN").setStartMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_SLOW_INIT_BOOLEAN").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SLOW_INIT_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section data=\".data.ax\"\n  #pragma ghs section bss=\".bss.ax\"")»
+      «configPragmaForMemSectionName("VAR_SLOW_INIT_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SLOW_INIT_PTR").setStartMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_SLOW_INIT_PTR").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SLOW_CLEARED_8").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_SLOW_CLEARED_8").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SLOW_CLEARED_16").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_SLOW_CLEARED_16").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SLOW_CLEARED_32").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_SLOW_CLEARED_32").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SLOW_CLEARED_64").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_SLOW_CLEARED_64").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SLOW_CLEARED_BOOLEAN").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_SLOW_CLEARED_BOOLEAN").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SLOW_CLEARED_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section bss=\".bss.ax\"")»
+      «configPragmaForMemSectionName("VAR_SLOW_CLEARED_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SLOW_CLEARED_PTR").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_SLOW_CLEARED_PTR").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SLOW_POWER_ON_CLEARED_8").setStartMemmapPragma("#pragma ghs section bss=\".bss.PORST.a1\"")»
+      «configPragmaForMemSectionName("VAR_SLOW_POWER_ON_CLEARED_8").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SLOW_POWER_ON_CLEARED_16").setStartMemmapPragma("#pragma ghs section bss=\".bss.PORST.a2\"")»
+      «configPragmaForMemSectionName("VAR_SLOW_POWER_ON_CLEARED_16").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SLOW_POWER_ON_CLEARED_32").setStartMemmapPragma("#pragma ghs section bss=\".bss.PORST.a4\"")»
+      «configPragmaForMemSectionName("VAR_SLOW_POWER_ON_CLEARED_32").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SLOW_POWER_ON_CLEARED_64").setStartMemmapPragma("#pragma ghs section bss=\".bss.PORST.a8\"")»
+      «configPragmaForMemSectionName("VAR_SLOW_POWER_ON_CLEARED_64").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SLOW_POWER_ON_CLEARED_BOOLEAN").setStartMemmapPragma("#pragma ghs section bss=\".bss.PORST.a1\"")»
+      «configPragmaForMemSectionName("VAR_SLOW_POWER_ON_CLEARED_BOOLEAN").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SLOW_POWER_ON_CLEARED_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section bss=\".bss.PORST.ax\"")»
+      «configPragmaForMemSectionName("VAR_SLOW_POWER_ON_CLEARED_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SLOW_POWER_ON_CLEARED_PTR").setStartMemmapPragma("#pragma ghs section bss=\".bss.PORST.a4\"")»
+      «configPragmaForMemSectionName("VAR_SLOW_POWER_ON_CLEARED_PTR").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_NON_CACHED_SHARED_RAM_8").setStartMemmapPragma("#pragma ghs section data=default")»
+      «configPragmaForMemSectionName("VAR_NON_CACHED_SHARED_RAM_8").setEndMemmapPragma("#pragma ghs section data=default")»
+
+      «configPragmaForMemSectionName("VAR_NON_CACHED_SHARED_RAM_16").setStartMemmapPragma("#pragma ghs section data=default")»
+      «configPragmaForMemSectionName("VAR_NON_CACHED_SHARED_RAM_16").setEndMemmapPragma("#pragma ghs section data=default")»
+
+      «configPragmaForMemSectionName("VAR_NON_CACHED_SHARED_RAM_32").setStartMemmapPragma("#pragma ghs section data=default")»
+      «configPragmaForMemSectionName("VAR_NON_CACHED_SHARED_RAM_32").setEndMemmapPragma("#pragma ghs section data=default")»
+
+      «configPragmaForMemSectionName("VAR_NON_CACHED_SHARED_RAM_64").setStartMemmapPragma("#pragma ghs section data=default")»
+      «configPragmaForMemSectionName("VAR_NON_CACHED_SHARED_RAM_64").setEndMemmapPragma("#pragma ghs section data=default")»
+
+      «configPragmaForMemSectionName("VAR_NON_CACHED_SHARED_RAM_BOOLEAN").setStartMemmapPragma("#pragma ghs section data=default")»
+      «configPragmaForMemSectionName("VAR_NON_CACHED_SHARED_RAM_BOOLEAN").setEndMemmapPragma("#pragma ghs section data=default")»
+
+      «configPragmaForMemSectionName("VAR_NON_CACHED_SHARED_RAM_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section data=\".data.ax\"")»
+      «configPragmaForMemSectionName("VAR_NON_CACHED_SHARED_RAM_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section data=default")»
+
+      «configPragmaForMemSectionName("VAR_NON_CACHED_SHARED_RAM_PTR").setStartMemmapPragma("#pragma ghs section data=default")»
+      «configPragmaForMemSectionName("VAR_NON_CACHED_SHARED_RAM_PTR").setEndMemmapPragma("#pragma ghs section data=default")»
+
+      «configPragmaForMemSectionName("VAR_NON_CACHED_RAM_8").setStartMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_NON_CACHED_RAM_8").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_NON_CACHED_RAM_16").setStartMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_NON_CACHED_RAM_16").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_NON_CACHED_RAM_32").setStartMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_NON_CACHED_RAM_32").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_NON_CACHED_RAM_64").setStartMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_NON_CACHED_RAM_64").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_NON_CACHED_RAM_BOOLEAN").setStartMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_NON_CACHED_RAM_BOOLEAN").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_NON_CACHED_RAM_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section data=\".data.ax\"\n  #pragma ghs section bss=\".bss.ax\"")»
+      «configPragmaForMemSectionName("VAR_NON_CACHED_RAM_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_NON_CACHED_RAM_PTR").setStartMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("VAR_NON_CACHED_RAM_PTR").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SECURED_CLEARED_8").setStartMemmapPragma("#pragma ghs section bss=\".bss.accpr.a1\"")»
+      «configPragmaForMemSectionName("VAR_SECURED_CLEARED_8").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SECURED_CLEARED_16").setStartMemmapPragma("#pragma ghs section bss=\".bss.accpr.a2\"")»
+      «configPragmaForMemSectionName("VAR_SECURED_CLEARED_16").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SECURED_CLEARED_32").setStartMemmapPragma("#pragma ghs section bss=\".bss.accpr.a4\"")»
+      «configPragmaForMemSectionName("VAR_SECURED_CLEARED_32").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SECURED_CLEARED_64").setStartMemmapPragma("#pragma ghs section bss=\".bss.accpr.a8\"")»
+      «configPragmaForMemSectionName("VAR_SECURED_CLEARED_64").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SECURED_CLEARED_BOOLEAN").setStartMemmapPragma("#pragma ghs section bss=\".bss.accpr.a1\"")»
+      «configPragmaForMemSectionName("VAR_SECURED_CLEARED_BOOLEAN").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SECURED_CLEARED_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section bss=\".bss.accpr.ax\"")»
+      «configPragmaForMemSectionName("VAR_SECURED_CLEARED_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SECURED_CLEARED_PTR").setStartMemmapPragma("#pragma ghs section bss=\".bss.accpr.a4\"")»
+      «configPragmaForMemSectionName("VAR_SECURED_CLEARED_PTR").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_SECURED_CACHED_RAM_ALIGNED_CLEARED_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section bss=\".bss.accprcacheline\"")»
+      «configPragmaForMemSectionName("VAR_SECURED_CACHED_RAM_ALIGNED_CLEARED_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_EARLY_RAM_INIT_8").setStartMemmapPragma("#pragma ghs section data=\".data.DLMU0_SWRESET.a1\"\n  #pragma ghs section bss=\".bss.DLMU0_SWRESET.a1\"")»
+      «configPragmaForMemSectionName("VAR_EARLY_RAM_INIT_8").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_EARLY_RAM_INIT_16").setStartMemmapPragma("#pragma ghs section data=\".data.DLMU0_SWRESET.a2\"\n  #pragma ghs section bss=\".bss.DLMU0_SWRESET.a2\"")»
+      «configPragmaForMemSectionName("VAR_EARLY_RAM_INIT_16").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_EARLY_RAM_INIT_32").setStartMemmapPragma("#pragma ghs section data=\".data.DLMU0_SWRESET.a4\"\n  #pragma ghs section bss=\".bss.DLMU0_SWRESET.a4\"")»
+      «configPragmaForMemSectionName("VAR_EARLY_RAM_INIT_32").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_EARLY_RAM_INIT_64").setStartMemmapPragma("#pragma ghs section data=\".data.DLMU0_SWRESET.a8\"\n  #pragma ghs section bss=\".bss.DLMU0_SWRESET.a8\"")»
+      «configPragmaForMemSectionName("VAR_EARLY_RAM_INIT_64").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_EARLY_RAM_INIT_BOOLEAN").setStartMemmapPragma("#pragma ghs section data=\".data.DLMU0_SWRESET.a1\"\n  #pragma ghs section bss=\".bss.DLMU0_SWRESET.a1\"")»
+      «configPragmaForMemSectionName("VAR_EARLY_RAM_INIT_BOOLEAN").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_EARLY_RAM_INIT_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section data=\".data.DLMU0_SWRESET.ax\"\n  #pragma ghs section bss=\".bss.DLMU0_SWRESET.ax\"")»
+      «configPragmaForMemSectionName("VAR_EARLY_RAM_INIT_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_EARLY_RAM_INIT_PTR").setStartMemmapPragma("#pragma ghs section data=\".data.DLMU0_SWRESET.a4\"\n  #pragma ghs section bss=\".bss.DLMU0_SWRESET.a4\"")»
+      «configPragmaForMemSectionName("VAR_EARLY_RAM_INIT_PTR").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_EARLY_RAM_CLEARED_8").setStartMemmapPragma("#pragma ghs section bss=\".bss.DLMU0_SWRESET.a1\"")»
+      «configPragmaForMemSectionName("VAR_EARLY_RAM_CLEARED_8").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_EARLY_RAM_CLEARED_16").setStartMemmapPragma("#pragma ghs section bss=\".bss.DLMU0_SWRESET.a2\"")»
+      «configPragmaForMemSectionName("VAR_EARLY_RAM_CLEARED_16").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_EARLY_RAM_CLEARED_32").setStartMemmapPragma("#pragma ghs section bss=\".bss.DLMU0_SWRESET.a4\"")»
+      «configPragmaForMemSectionName("VAR_EARLY_RAM_CLEARED_32").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_EARLY_RAM_CLEARED_64").setStartMemmapPragma("#pragma ghs section bss=\".bss.DLMU0_SWRESET.a8\"")»
+      «configPragmaForMemSectionName("VAR_EARLY_RAM_CLEARED_64").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_EARLY_RAM_CLEARED_BOOLEAN").setStartMemmapPragma("#pragma ghs section bss=\".bss.DLMU0_SWRESET.a1\"")»
+      «configPragmaForMemSectionName("VAR_EARLY_RAM_CLEARED_BOOLEAN").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_EARLY_RAM_CLEARED_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section bss=\".bss.DLMU0_SWRESET.ax\"")»
+      «configPragmaForMemSectionName("VAR_EARLY_RAM_CLEARED_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_EARLY_RAM_CLEARED_PTR").setStartMemmapPragma("#pragma ghs section bss=\".bss.DLMU0_SWRESET.a4\"")»
+      «configPragmaForMemSectionName("VAR_EARLY_RAM_CLEARED_PTR").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_TRAPRST_INIT_8").setStartMemmapPragma("#pragma ghs section data=\".data.TRAPRST.a1\"\n  #pragma ghs section bss=\".bss.TRAPRST.a1\"")»
+      «configPragmaForMemSectionName("VAR_TRAPRST_INIT_8").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_TRAPRST_INIT_16").setStartMemmapPragma("#pragma ghs section data=\".data.TRAPRST.a2\"\n  #pragma ghs section bss=\".bss.TRAPRST.a2\"")»
+      «configPragmaForMemSectionName("VAR_TRAPRST_INIT_16").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_TRAPRST_INIT_32").setStartMemmapPragma("#pragma ghs section data=\".data.TRAPRST.a4\"\n  #pragma ghs section bss=\".bss.TRAPRST.a4\"")»
+      «configPragmaForMemSectionName("VAR_TRAPRST_INIT_32").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_TRAPRST_INIT_64").setStartMemmapPragma("#pragma ghs section data=\".data.TRAPRST.a8\"\n  #pragma ghs section bss=\".bss.TRAPRST.a8\"")»
+      «configPragmaForMemSectionName("VAR_TRAPRST_INIT_64").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_TRAPRST_INIT_BOOLEAN").setStartMemmapPragma("#pragma ghs section data=\".data.TRAPRST.a1\"\n  #pragma ghs section bss=\".bss.TRAPRST.a1\"")»
+      «configPragmaForMemSectionName("VAR_TRAPRST_INIT_BOOLEAN").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_TRAPRST_INIT_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section data=\".data.TRAPRST.ax\"\n  #pragma ghs section bss=\".bss.TRAPRST.ax\"")»
+      «configPragmaForMemSectionName("VAR_TRAPRST_INIT_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_TRAPRST_INIT_PTR").setStartMemmapPragma("#pragma ghs section data=\".data.TRAPRST.a4\"\n  #pragma ghs section bss=\".bss.TRAPRST.a4\"")»
+      «configPragmaForMemSectionName("VAR_TRAPRST_INIT_PTR").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_TRAPRST_CLEARED_8").setStartMemmapPragma("#pragma ghs section bss=\".bss.TRAPRST.a1\"")»
+      «configPragmaForMemSectionName("VAR_TRAPRST_CLEARED_8").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_TRAPRST_CLEARED_16").setStartMemmapPragma("#pragma ghs section bss=\".bss.TRAPRST.a2\"")»
+      «configPragmaForMemSectionName("VAR_TRAPRST_CLEARED_16").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_TRAPRST_CLEARED_32").setStartMemmapPragma("#pragma ghs section bss=\".bss.TRAPRST.a4\"")»
+      «configPragmaForMemSectionName("VAR_TRAPRST_CLEARED_32").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_TRAPRST_CLEARED_64").setStartMemmapPragma("#pragma ghs section bss=\".bss.TRAPRST.a8\"")»
+      «configPragmaForMemSectionName("VAR_TRAPRST_CLEARED_64").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_TRAPRST_CLEARED_BOOLEAN").setStartMemmapPragma("#pragma ghs section bss=\".bss.TRAPRST.a1\"")»
+      «configPragmaForMemSectionName("VAR_TRAPRST_CLEARED_BOOLEAN").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_TRAPRST_CLEARED_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section bss=\".bss.TRAPRST.ax\"")»
+      «configPragmaForMemSectionName("VAR_TRAPRST_CLEARED_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_TRAPRST_CLEARED_PTR").setStartMemmapPragma("#pragma ghs section bss=\".bss.TRAPRST.a4\"")»
+      «configPragmaForMemSectionName("VAR_TRAPRST_CLEARED_PTR").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_LABEL_ONLY").setStartMemmapPragma("#pragma ghs section bss=\".label_only\"")»
+      «configPragmaForMemSectionName("VAR_LABEL_ONLY").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CONST_IMMUTABLE_COLUMNS_32").setStartMemmapPragma("#pragma ghs section rodata=\".rodata.BManif.Immutable.ax\"")»
+      «configPragmaForMemSectionName("CONST_IMMUTABLE_COLUMNS_32").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONST_IMMUTABLE_HEADER_32").setStartMemmapPragma("#pragma ghs section rodata=\".rodata.BManif.Immutable.header.ax\"")»
+      «configPragmaForMemSectionName("CONST_IMMUTABLE_HEADER_32").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONST_IMMUTABLE_TABLES_CHECKSUM_32").setStartMemmapPragma("#pragma ghs section rodata=\".rodata.BManif.Immutable.ax\"")»
+      «configPragmaForMemSectionName("CONST_IMMUTABLE_TABLES_CHECKSUM_32").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONST_MODIFIABLE_COLUMNS_32").setStartMemmapPragma("#pragma ghs section rodata=\".rodata.BManif.Modifiable.ax\"")»
+      «configPragmaForMemSectionName("CONST_MODIFIABLE_COLUMNS_32").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONST_SUBSCRIBED_TABLES_MARKER_32").setStartMemmapPragma("#pragma ghs section rodata=\".rodata.BManif.Modifiable.ax\"")»
+      «configPragmaForMemSectionName("CONST_SUBSCRIBED_TABLES_MARKER_32").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CONST_TOTAL_TABLES_CHECKSUM_32").setStartMemmapPragma("#pragma ghs section rodata=\".rodata.BManif.Modifiable.ax\"")»
+      «configPragmaForMemSectionName("CONST_TOTAL_TABLES_CHECKSUM_32").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_INIT_8").setStartMemmapPragma("#pragma ghs section data=\".data.hsm_shared.a1\"\n  #pragma ghs section bss=\".bss.hsm_shared.a1\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_INIT_8").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_INIT_16").setStartMemmapPragma("#pragma ghs section data=\".data.hsm_shared.a2\"\n  #pragma ghs section bss=\".bss.hsm_shared.a2\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_INIT_16").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_INIT_32").setStartMemmapPragma("#pragma ghs section data=\".data.hsm_shared.a4\"\n  #pragma ghs section bss=\".bss.hsm_shared.a4\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_INIT_32").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_INIT_64").setStartMemmapPragma("#pragma ghs section data=\".data.hsm_shared.a8\"\n  #pragma ghs section bss=\".bss.hsm_shared.a8\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_INIT_64").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_INIT_BOOLEAN").setStartMemmapPragma("#pragma ghs section data=\".data.hsm_shared.a1\"\n  #pragma ghs section bss=\".bss.hsm_shared.a1\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_INIT_BOOLEAN").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_INIT_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section data=\".data.hsm_shared.ax\"\n  #pragma ghs section bss=\".bss.hsm_shared.ax\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_INIT_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_INIT_PTR").setStartMemmapPragma("#pragma ghs section data=\".data.hsm_shared.a4\"\n  #pragma ghs section bss=\".bss.hsm_shared.a4\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_INIT_PTR").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_CLEARED_8").setStartMemmapPragma("#pragma ghs section bss=\".bss.hsm_shared.a1\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_CLEARED_8").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_CLEARED_16").setStartMemmapPragma("#pragma ghs section bss=\".bss.hsm_shared.a2\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_CLEARED_16").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_CLEARED_32").setStartMemmapPragma("#pragma ghs section bss=\".bss.hsm_shared.a4\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_CLEARED_32").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_CLEARED_64").setStartMemmapPragma("#pragma ghs section bss=\".bss.hsm_shared.a8\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_CLEARED_64").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_CLEARED_BOOLEAN").setStartMemmapPragma("#pragma ghs section bss=\".bss.hsm_shared.a1\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_CLEARED_BOOLEAN").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_CLEARED_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section bss=\".bss.hsm_shared.ax\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_CLEARED_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_CLEARED_PTR").setStartMemmapPragma("#pragma ghs section bss=\".bss.hsm_shared.a4\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_CLEARED_PTR").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_READONLY_INIT_8").setStartMemmapPragma("#pragma ghs section data=\".data.hsm_shared_ro.a1\"\n  #pragma ghs section bss=\".bss.hsm_shared_ro.a1\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_READONLY_INIT_8").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_READONLY_INIT_16").setStartMemmapPragma("#pragma ghs section data=\".data.hsm_shared_ro.a2\"\n  #pragma ghs section bss=\".bss.hsm_shared_ro.a2\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_READONLY_INIT_16").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_READONLY_INIT_32").setStartMemmapPragma("#pragma ghs section data=\".data.hsm_shared_ro.a4\"\n  #pragma ghs section bss=\".bss.hsm_shared_ro.a4\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_READONLY_INIT_32").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_READONLY_INIT_64").setStartMemmapPragma("#pragma ghs section data=\".data.hsm_shared_ro.a8\"\n  #pragma ghs section bss=\".bss.hsm_shared_ro.a8\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_READONLY_INIT_64").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_READONLY_INIT_BOOLEAN").setStartMemmapPragma("#pragma ghs section data=\".data.hsm_shared_ro.a1\"\n  #pragma ghs section bss=\".bss.hsm_shared_ro.a1\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_READONLY_INIT_BOOLEAN").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_READONLY_INIT_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section data=\".data.hsm_shared_ro.ax\"\n  #pragma ghs section bss=\".bss.hsm_shared_ro.ax\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_READONLY_INIT_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_READONLY_INIT_PTR").setStartMemmapPragma("#pragma ghs section data=\".data.hsm_shared_ro.a4\"\n  #pragma ghs section bss=\".bss.hsm_shared_ro.a4\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_READONLY_INIT_PTR").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_READONLY_CLEARED_8").setStartMemmapPragma("#pragma ghs section bss=\".bss.hsm_shared_ro.a1\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_READONLY_CLEARED_8").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_READONLY_CLEARED_16").setStartMemmapPragma("#pragma ghs section bss=\".bss.hsm_shared_ro.a2\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_READONLY_CLEARED_16").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_READONLY_CLEARED_32").setStartMemmapPragma("#pragma ghs section bss=\".bss.hsm_shared_ro.a4\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_READONLY_CLEARED_32").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_READONLY_CLEARED_64").setStartMemmapPragma("#pragma ghs section bss=\".bss.hsm_shared_ro.a8\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_READONLY_CLEARED_64").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_READONLY_CLEARED_BOOLEAN").setStartMemmapPragma("#pragma ghs section bss=\".bss.hsm_shared_ro.a1\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_READONLY_CLEARED_BOOLEAN").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_READONLY_CLEARED_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section bss=\".bss.hsm_shared_ro.ax\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_READONLY_CLEARED_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_READONLY_CLEARED_PTR").setStartMemmapPragma("#pragma ghs section bss=\".bss.hsm_shared_ro.a4\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_READONLY_CLEARED_PTR").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section data=\".data.hsm_shared.ax\"\n  #pragma ghs section bss=\".bss.hsm_shared.ax\"")»
+      «configPragmaForMemSectionName("VAR_HSM_SHARED_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("TBM_WRITE").setStartMemmapPragma("#pragma ghs section bss=\".bss.rba_distab_tbm_write.a4\"")»
+      «configPragmaForMemSectionName("TBM_WRITE").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("ETKS_INITOMDRAM").setStartMemmapPragma("#pragma ghs section bss=\".bss.rba_etks_initomdram.a4\"")»
+      «configPragmaForMemSectionName("ETKS_INITOMDRAM").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("ETKS_INITRAM").setStartMemmapPragma("#pragma ghs section bss=\".bss.rba_etks_initram\"")»
+      «configPragmaForMemSectionName("ETKS_INITRAM").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CODE_MO_CYCL_CHECKED").setStartMemmapPragma("#pragma ghs section text=\".text.Mo_CyclicCheck\"")»
+      «configPragmaForMemSectionName("CODE_MO_CYCL_CHECKED").setEndMemmapPragma("#pragma ghs section text=default")»
+
+      «configPragmaForMemSectionName("ETK_READ_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section bss=\".bss.CalsupSvbbEtkReadPowerOn.ax\"")»
+      «configPragmaForMemSectionName("ETK_READ_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("ETK_WRITE_8").setStartMemmapPragma("#pragma ghs section bss=\".bss.rba_svbbetk_write\"")»
+      «configPragmaForMemSectionName("ETK_WRITE_8").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("DATA_READ").setStartMemmapPragma("#pragma ghs section bss=\".bss.rba_distab_read.a4\"")»
+      «configPragmaForMemSectionName("DATA_READ").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EVTLST").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_clear.a4\"")»
+      «configPragmaForMemSectionName("EVTLST").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("DATA_WRITE").setStartMemmapPragma("#pragma ghs section bss=\".bss.rba_distab_write.a4\"")»
+      «configPragmaForMemSectionName("DATA_WRITE").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_MO_NON_CYCL_CHECKED").setStartMemmapPragma("#pragma ghs section bss=\".bss.Mo_NonCyclicCheck\"")»
+      «configPragmaForMemSectionName("VAR_MO_NON_CYCL_CHECKED").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_CLEARED_262144").setStartMemmapPragma("#pragma ghs section bss=\".bss.SYSRAM0_a32768\"")»
+      «configPragmaForMemSectionName("VAR_CLEARED_262144").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_CLEARED_131072").setStartMemmapPragma("#pragma ghs section bss=\".bss.SYSRAM0_a16384\"")»
+      «configPragmaForMemSectionName("VAR_CLEARED_131072").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_CLEARED_65536").setStartMemmapPragma("#pragma ghs section bss=\".bss.SYSRAM0_a8192\"")»
+      «configPragmaForMemSectionName("VAR_CLEARED_65536").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_CLEARED_32768").setStartMemmapPragma("#pragma ghs section bss=\".bss.SYSRAM0_a4096\"")»
+      «configPragmaForMemSectionName("VAR_CLEARED_32768").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_CLEARED_16384").setStartMemmapPragma("#pragma ghs section bss=\".bss.SYSRAM0_a2048\"")»
+      «configPragmaForMemSectionName("VAR_CLEARED_16384").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_CLEARED_8192").setStartMemmapPragma("#pragma ghs section bss=\".bss.SYSRAM0_a1024\"")»
+      «configPragmaForMemSectionName("VAR_CLEARED_8192").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_CLEARED_4096").setStartMemmapPragma("#pragma ghs section bss=\".bss.SYSRAM0_a512\"")»
+      «configPragmaForMemSectionName("VAR_CLEARED_4096").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_CLEARED_2048").setStartMemmapPragma("#pragma ghs section bss=\".bss.SYSRAM0_a256\"")»
+      «configPragmaForMemSectionName("VAR_CLEARED_2048").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_CLEARED_1024").setStartMemmapPragma("#pragma ghs section bss=\".bss.SYSRAM0_a128\"")»
+      «configPragmaForMemSectionName("VAR_CLEARED_1024").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_CLEARED_512").setStartMemmapPragma("#pragma ghs section bss=\".bss.SYSRAM0_a64\"")»
+      «configPragmaForMemSectionName("VAR_CLEARED_512").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_CLEARED_256").setStartMemmapPragma("#pragma ghs section bss=\".bss.SYSRAM0_a32\"")»
+      «configPragmaForMemSectionName("VAR_CLEARED_256").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_CLEARED_128").setStartMemmapPragma("#pragma ghs section bss=\".bss.SYSRAM0_a16\"")»
+      «configPragmaForMemSectionName("VAR_CLEARED_128").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EDRAM_STANDBY_8").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_powerfail.a1\"")»
+      «configPragmaForMemSectionName("EDRAM_STANDBY_8").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EDRAM_STANDBY_16").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_powerfail.a2\"")»
+      «configPragmaForMemSectionName("EDRAM_STANDBY_16").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EDRAM_STANDBY_32").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_powerfail.a4\"")»
+      «configPragmaForMemSectionName("EDRAM_STANDBY_32").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EDRAM_STANDBY_64").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_powerfail.a8\"")»
+      «configPragmaForMemSectionName("EDRAM_STANDBY_64").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EDRAM_STANDBY_BOOLEAN").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_powerfail.a1\"")»
+      «configPragmaForMemSectionName("EDRAM_STANDBY_BOOLEAN").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EDRAM_STANDBY_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_powerfail.ax\"")»
+      «configPragmaForMemSectionName("EDRAM_STANDBY_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EDRAM_STANDBY_PTR").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_powerfail.a4\"")»
+      «configPragmaForMemSectionName("EDRAM_STANDBY_PTR").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EDRAM_POWERFAIL_8").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_powerfail.a1\"")»
+      «configPragmaForMemSectionName("EDRAM_POWERFAIL_8").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EDRAM_POWERFAIL_16").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_powerfail.a2\"")»
+      «configPragmaForMemSectionName("EDRAM_POWERFAIL_16").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EDRAM_POWERFAIL_32").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_powerfail.a4\"")»
+      «configPragmaForMemSectionName("EDRAM_POWERFAIL_32").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EDRAM_POWERFAIL_64").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_powerfail.a8\"")»
+      «configPragmaForMemSectionName("EDRAM_POWERFAIL_64").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EDRAM_POWERFAIL_BOOLEAN").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_powerfail.a1\"")»
+      «configPragmaForMemSectionName("EDRAM_POWERFAIL_BOOLEAN").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EDRAM_POWERFAIL_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_powerfail.ax\"")»
+      «configPragmaForMemSectionName("EDRAM_POWERFAIL_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EDRAM_POWERFAIL_PTR").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_powerfail.a4\"")»
+      «configPragmaForMemSectionName("EDRAM_POWERFAIL_PTR").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EDRAM_CLEAR_8").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_clear.a1\"")»
+      «configPragmaForMemSectionName("EDRAM_CLEAR_8").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EDRAM_CLEAR_16").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_clear.a2\"")»
+      «configPragmaForMemSectionName("EDRAM_CLEAR_16").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EDRAM_CLEAR_32").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_clear.a4\"")»
+      «configPragmaForMemSectionName("EDRAM_CLEAR_32").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EDRAM_CLEAR_64").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_clear.a8\"")»
+      «configPragmaForMemSectionName("EDRAM_CLEAR_64").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EDRAM_CLEAR_BOOLEAN").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_clear.a1\"")»
+      «configPragmaForMemSectionName("EDRAM_CLEAR_BOOLEAN").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EDRAM_CLEAR_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_clear.ax\"")»
+      «configPragmaForMemSectionName("EDRAM_CLEAR_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EDRAM_CLEAR_PTR").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_clear.a4\"")»
+      «configPragmaForMemSectionName("EDRAM_CLEAR_PTR").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EDRAM_RESET_SAFE_8").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_traprst.a1\"")»
+      «configPragmaForMemSectionName("EDRAM_RESET_SAFE_8").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EDRAM_RESET_SAFE_16").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_traprst.a2\"")»
+      «configPragmaForMemSectionName("EDRAM_RESET_SAFE_16").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EDRAM_RESET_SAFE_32").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_traprst.a4\"")»
+      «configPragmaForMemSectionName("EDRAM_RESET_SAFE_32").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EDRAM_RESET_SAFE_64").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_traprst.a8\"")»
+      «configPragmaForMemSectionName("EDRAM_RESET_SAFE_64").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EDRAM_RESET_SAFE_BOOLEAN").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_traprst.a1\"")»
+      «configPragmaForMemSectionName("EDRAM_RESET_SAFE_BOOLEAN").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EDRAM_RESET_SAFE_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_traprst.ax\"")»
+      «configPragmaForMemSectionName("EDRAM_RESET_SAFE_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("EDRAM_RESET_SAFE_PTR").setStartMemmapPragma("#pragma ghs section bss=\".bss.edram_traprst.a4\"")»
+      «configPragmaForMemSectionName("EDRAM_RESET_SAFE_PTR").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CODE_CORE0").setStartMemmapPragma("#pragma ghs section text=default")»
+      «configPragmaForMemSectionName("CODE_CORE0").setEndMemmapPragma("#pragma ghs section text=default")»
+
+      «configPragmaForMemSectionName("CODE_CORE1").setStartMemmapPragma("#pragma ghs section text=default")»
+      «configPragmaForMemSectionName("CODE_CORE1").setEndMemmapPragma("#pragma ghs section text=default")»
+
+      «configPragmaForMemSectionName("CODE_CORE2").setStartMemmapPragma("#pragma ghs section text=default")»
+      «configPragmaForMemSectionName("CODE_CORE2").setEndMemmapPragma("#pragma ghs section text=default")»
+
+      «configPragmaForMemSectionName("CODE_CORE3").setStartMemmapPragma("#pragma ghs section text=default")»
+      «configPragmaForMemSectionName("CODE_CORE3").setEndMemmapPragma("#pragma ghs section text=default")»
+
+      «configPragmaForMemSectionName("CODE_CORE4").setStartMemmapPragma("#pragma ghs section text=default")»
+      «configPragmaForMemSectionName("CODE_CORE4").setEndMemmapPragma("#pragma ghs section text=default")»
+
+      «configPragmaForMemSectionName("CODE_CORE5").setStartMemmapPragma("#pragma ghs section text=default")»
+      «configPragmaForMemSectionName("CODE_CORE5").setEndMemmapPragma("#pragma ghs section text=default")»
+
+      «configPragmaForMemSectionName("CONST_LABEL_ONLY").setStartMemmapPragma("#pragma ghs section bss=\".label_only\"")»
+      «configPragmaForMemSectionName("CONST_LABEL_ONLY").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CODE_RAM_ALL").setStartMemmapPragma("#pragma ghs section text=\".text.RAM_ALL\"")»
+      «configPragmaForMemSectionName("CODE_RAM_ALL").setEndMemmapPragma("#pragma ghs section text=default")»
+
+      «configPragmaForMemSectionName("VAR_RAM_ALL_CLEARED_8").setStartMemmapPragma("#pragma ghs startzda\n #pragma ghs section zbss=\".zbss.RAM_ALL_DATA_SWRESET.a1\"")»
+      «configPragmaForMemSectionName("VAR_RAM_ALL_CLEARED_8").setEndMemmapPragma("#pragma ghs section zbss=default\n #pragma ghs endzda")»
+
+      «configPragmaForMemSectionName("VAR_RAM_ALL_CLEARED_16").setStartMemmapPragma("#pragma ghs startzda\n #pragma ghs section zbss=\".zbss.RAM_ALL_DATA_SWRESET.a2\"")»
+      «configPragmaForMemSectionName("VAR_RAM_ALL_CLEARED_16").setEndMemmapPragma("#pragma ghs section zbss=default\n #pragma ghs endzda")»
+
+      «configPragmaForMemSectionName("VAR_RAM_ALL_CLEARED_32").setStartMemmapPragma("#pragma ghs startzda\n #pragma ghs section zbss=\".zbss.RAM_ALL_DATA_SWRESET.a4\"")»
+      «configPragmaForMemSectionName("VAR_RAM_ALL_CLEARED_32").setEndMemmapPragma("#pragma ghs section zbss=default\n #pragma ghs endzda")»
+
+      «configPragmaForMemSectionName("VAR_RAM_ALL_CLEARED_64").setStartMemmapPragma("#pragma ghs startzda\n #pragma ghs section zbss=\".zbss.RAM_ALL_DATA_SWRESET.a8\"")»
+      «configPragmaForMemSectionName("VAR_RAM_ALL_CLEARED_64").setEndMemmapPragma("#pragma ghs section zbss=default\n #pragma ghs endzda")»
+
+      «configPragmaForMemSectionName("VAR_RAM_ALL_CLEARED_BOOLEAN").setStartMemmapPragma("#pragma ghs startzda\n #pragma ghs section zbss=\".zbss.RAM_ALL_DATA_SWRESET.a1\"")»
+      «configPragmaForMemSectionName("VAR_RAM_ALL_CLEARED_BOOLEAN").setEndMemmapPragma("#pragma ghs section zbss=default\n #pragma ghs endzda")»
+
+      «configPragmaForMemSectionName("VAR_RAM_ALL_CLEARED_UNSPECIFIED").setStartMemmapPragma("#pragma ghs startzda\n #pragma ghs section zbss=\".zbss.RAM_ALL_DATA_SWRESET.ax\"")»
+      «configPragmaForMemSectionName("VAR_RAM_ALL_CLEARED_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section zbss=default\n #pragma ghs endzda")»
+
+      «configPragmaForMemSectionName("VAR_RAM_ALL_CLEARED_PTR").setStartMemmapPragma("#pragma ghs startzda\n #pragma ghs section zbss=\".zbss.RAM_ALL_DATA_SWRESET.a4\"")»
+      «configPragmaForMemSectionName("VAR_RAM_ALL_CLEARED_PTR").setEndMemmapPragma("#pragma ghs section zbss=default\n #pragma ghs endzda")»
+
+      «configPragmaForMemSectionName("VAR_RAM_ALL_INIT_8").setStartMemmapPragma("#pragma ghs startzda\n #pragma ghs section zdata=\".zdata.RAM_ALL_DATA_SWRESET.a1\"\n #pragma ghs section zbss=\".zbss.RAM_ALL_DATA_SWRESET.a1\"")»
+      «configPragmaForMemSectionName("VAR_RAM_ALL_INIT_8").setEndMemmapPragma("#pragma ghs section zdata=default\n #pragma ghs section zbss=default\n #pragma ghs endzda")»
+
+      «configPragmaForMemSectionName("VAR_RAM_ALL_INIT_16").setStartMemmapPragma("#pragma ghs startzda\n #pragma ghs section zdata=\".zdata.RAM_ALL_DATA_SWRESET.a2\"\n #pragma ghs section zbss=\".zbss.RAM_ALL_DATA_SWRESET.a2\"")»
+      «configPragmaForMemSectionName("VAR_RAM_ALL_INIT_16").setEndMemmapPragma("#pragma ghs section zdata=default\n #pragma ghs section zbss=default\n #pragma ghs endzda")»
+
+      «configPragmaForMemSectionName("VAR_RAM_ALL_INIT_32").setStartMemmapPragma("#pragma ghs startzda\n #pragma ghs section zdata=\".zdata.RAM_ALL_DATA_SWRESET.a4\"\n #pragma ghs section zbss=\".zbss.RAM_ALL_DATA_SWRESET.a4\"")»
+      «configPragmaForMemSectionName("VAR_RAM_ALL_INIT_32").setEndMemmapPragma("#pragma ghs section zdata=default\n #pragma ghs section zbss=default\n #pragma ghs endzda")»
+
+      «configPragmaForMemSectionName("VAR_RAM_ALL_INIT_64").setStartMemmapPragma("#pragma ghs startzda\n #pragma ghs section zdata=\".zdata.RAM_ALL_DATA_SWRESET.a8\"\n #pragma ghs section zbss=\".zbss.RAM_ALL_DATA_SWRESET.a8\"")»
+      «configPragmaForMemSectionName("VAR_RAM_ALL_INIT_64").setEndMemmapPragma("#pragma ghs section zdata=default\n #pragma ghs section zbss=default\n #pragma ghs endzda")»
+
+      «configPragmaForMemSectionName("VAR_RAM_ALL_INIT_BOOLEAN").setStartMemmapPragma("#pragma ghs startzda\n #pragma ghs section zdata=\".zdata.RAM_ALL_DATA_SWRESET.a1\"\n #pragma ghs section zbss=\".zbss.RAM_ALL_DATA_SWRESET.a1\"")»
+      «configPragmaForMemSectionName("VAR_RAM_ALL_INIT_BOOLEAN").setEndMemmapPragma("#pragma ghs section zdata=default\n #pragma ghs section zbss=default\n #pragma ghs endzda")»
+
+      «configPragmaForMemSectionName("VAR_RAM_ALL_INIT_UNSPECIFIED").setStartMemmapPragma("#pragma ghs startzda\n #pragma ghs section zdata=\".zdata.RAM_ALL_DATA_SWRESET.ax\"\n #pragma ghs section zbss=\".zbss.RAM_ALL_DATA_SWRESET.ax\"")»
+      «configPragmaForMemSectionName("VAR_RAM_ALL_INIT_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section zdata=default\n #pragma ghs section zbss=default\n #pragma ghs endzda")»
+
+      «configPragmaForMemSectionName("VAR_RAM_ALL_INIT_PTR").setStartMemmapPragma("#pragma ghs startzda\n #pragma ghs section zdata=\".zdata.RAM_ALL_DATA_SWRESET.a4\"\n #pragma ghs section zbss=\".zbss.RAM_ALL_DATA_SWRESET.a4\"")»
+      «configPragmaForMemSectionName("VAR_RAM_ALL_INIT_PTR").setEndMemmapPragma("#pragma ghs section zdata=default\n #pragma ghs section zbss=default\n #pragma ghs endzda")»
+
+      «configPragmaForMemSectionName("ADAPTIVECALIB_8").setStartMemmapPragma("#pragma ghs section rodata=\".data.CalSup_CalAdaptive.a1\"")»
+      «configPragmaForMemSectionName("ADAPTIVECALIB_8").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("ADAPTIVECALIB_16").setStartMemmapPragma("#pragma ghs section rodata=\".data.CalSup_CalAdaptive.a2\"")»
+      «configPragmaForMemSectionName("ADAPTIVECALIB_16").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("ADAPTIVECALIB_32").setStartMemmapPragma("#pragma ghs section rodata=\".data.CalSup_CalAdaptive.a4\"")»
+      «configPragmaForMemSectionName("ADAPTIVECALIB_32").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("ADAPTIVECALIB_64").setStartMemmapPragma("#pragma ghs section rodata=\".data.CalSup_CalAdaptive.a8\"")»
+      «configPragmaForMemSectionName("ADAPTIVECALIB_64").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("ADAPTIVECALIB_BOOLEAN").setStartMemmapPragma("#pragma ghs section rodata=\".data.CalSup_CalAdaptive.a1\"")»
+      «configPragmaForMemSectionName("ADAPTIVECALIB_BOOLEAN").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("ADAPTIVECALIB_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section rodata=\".data.CalSup_CalAdaptive.ax\"")»
+      «configPragmaForMemSectionName("ADAPTIVECALIB_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("ADAPTIVECALIB_PTR").setStartMemmapPragma("#pragma ghs section rodata=\".data.CalSup_CalAdaptive.a4\"")»
+      «configPragmaForMemSectionName("ADAPTIVECALIB_PTR").setEndMemmapPragma("#pragma ghs section rodata=default")»
+
+      «configPragmaForMemSectionName("CORE0_VAR_CLEARED_8").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE0_VAR_CLEARED_8").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE0_VAR_CLEARED_16").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE0_VAR_CLEARED_16").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE0_VAR_CLEARED_32").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE0_VAR_CLEARED_32").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE0_VAR_CLEARED_64").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE0_VAR_CLEARED_64").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE0_VAR_CLEARED_BOOLEAN").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE0_VAR_CLEARED_BOOLEAN").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE0_VAR_CLEARED_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section bss=\".bss.ax\"")»
+      «configPragmaForMemSectionName("CORE0_VAR_CLEARED_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE0_VAR_CLEARED_PTR").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE0_VAR_CLEARED_PTR").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE1_VAR_CLEARED_8").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE1_VAR_CLEARED_8").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE1_VAR_CLEARED_16").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE1_VAR_CLEARED_16").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE1_VAR_CLEARED_32").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE1_VAR_CLEARED_32").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE1_VAR_CLEARED_64").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE1_VAR_CLEARED_64").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE1_VAR_CLEARED_BOOLEAN").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE1_VAR_CLEARED_BOOLEAN").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE1_VAR_CLEARED_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section bss=\".bss.ax\"")»
+      «configPragmaForMemSectionName("CORE1_VAR_CLEARED_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE1_VAR_CLEARED_PTR").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE1_VAR_CLEARED_PTR").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE2_VAR_CLEARED_8").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE2_VAR_CLEARED_8").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE2_VAR_CLEARED_16").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE2_VAR_CLEARED_16").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE2_VAR_CLEARED_32").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE2_VAR_CLEARED_32").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE2_VAR_CLEARED_64").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE2_VAR_CLEARED_64").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE2_VAR_CLEARED_BOOLEAN").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE2_VAR_CLEARED_BOOLEAN").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE2_VAR_CLEARED_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section bss=\".bss.ax\"")»
+      «configPragmaForMemSectionName("CORE2_VAR_CLEARED_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE2_VAR_CLEARED_PTR").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE2_VAR_CLEARED_PTR").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE3_VAR_CLEARED_8").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE3_VAR_CLEARED_8").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE3_VAR_CLEARED_16").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE3_VAR_CLEARED_16").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE3_VAR_CLEARED_32").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE3_VAR_CLEARED_32").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE3_VAR_CLEARED_64").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE3_VAR_CLEARED_64").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE3_VAR_CLEARED_BOOLEAN").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE3_VAR_CLEARED_BOOLEAN").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE3_VAR_CLEARED_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section bss=\".bss.ax\"")»
+      «configPragmaForMemSectionName("CORE3_VAR_CLEARED_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE3_VAR_CLEARED_PTR").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE3_VAR_CLEARED_PTR").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE4_VAR_CLEARED_8").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE4_VAR_CLEARED_8").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE4_VAR_CLEARED_16").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE4_VAR_CLEARED_16").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE4_VAR_CLEARED_32").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE4_VAR_CLEARED_32").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE4_VAR_CLEARED_64").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE4_VAR_CLEARED_64").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE4_VAR_CLEARED_BOOLEAN").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE4_VAR_CLEARED_BOOLEAN").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE4_VAR_CLEARED_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section bss=\".bss.ax\"")»
+      «configPragmaForMemSectionName("CORE4_VAR_CLEARED_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE4_VAR_CLEARED_PTR").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE4_VAR_CLEARED_PTR").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE5_VAR_CLEARED_8").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE5_VAR_CLEARED_8").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE5_VAR_CLEARED_16").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE5_VAR_CLEARED_16").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE5_VAR_CLEARED_32").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE5_VAR_CLEARED_32").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE5_VAR_CLEARED_64").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE5_VAR_CLEARED_64").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE5_VAR_CLEARED_BOOLEAN").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE5_VAR_CLEARED_BOOLEAN").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE5_VAR_CLEARED_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section bss=\".bss.ax\"")»
+      «configPragmaForMemSectionName("CORE5_VAR_CLEARED_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CORE5_VAR_CLEARED_PTR").setStartMemmapPragma("#pragma ghs section bss=default")»
+      «configPragmaForMemSectionName("CORE5_VAR_CLEARED_PTR").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_GLOBAL_INIT_8").setStartMemmapPragma("#pragma ghs section data=\".data.DLMU0_SWRESET.a1\"\n  #pragma ghs section bss=\".bss.DLMU0_SWRESET.a1\"")»
+      «configPragmaForMemSectionName("VAR_GLOBAL_INIT_8").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_GLOBAL_INIT_16").setStartMemmapPragma("#pragma ghs section data=\".data.DLMU0_SWRESET.a2\"\n  #pragma ghs section bss=\".bss.DLMU0_SWRESET.a2\"")»
+      «configPragmaForMemSectionName("VAR_GLOBAL_INIT_16").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_GLOBAL_INIT_32").setStartMemmapPragma("#pragma ghs section data=\".data.DLMU0_SWRESET.a4\"\n  #pragma ghs section bss=\".bss.DLMU0_SWRESET.a4\"")»
+      «configPragmaForMemSectionName("VAR_GLOBAL_INIT_32").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_GLOBAL_INIT_64").setStartMemmapPragma("#pragma ghs section data=\".data.DLMU0_SWRESET.a8\"\n  #pragma ghs section bss=\".bss.DLMU0_SWRESET.a8\"")»
+      «configPragmaForMemSectionName("VAR_GLOBAL_INIT_64").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_GLOBAL_INIT_BOOLEAN").setStartMemmapPragma("#pragma ghs section data=\".data.DLMU0_SWRESET.a1\"\n  #pragma ghs section bss=\".bss.DLMU0_SWRESET.a1\"")»
+      «configPragmaForMemSectionName("VAR_GLOBAL_INIT_BOOLEAN").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_GLOBAL_INIT_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section data=\".data.DLMU0_SWRESET.ax\"\n  #pragma ghs section bss=\".bss.DLMU0_SWRESET.ax\"")»
+      «configPragmaForMemSectionName("VAR_GLOBAL_INIT_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_GLOBAL_INIT_PTR").setStartMemmapPragma("#pragma ghs section data=\".data.DLMU0_SWRESET.a4\"\n  #pragma ghs section bss=\".bss.DLMU0_SWRESET.a4\"")»
+      «configPragmaForMemSectionName("VAR_GLOBAL_INIT_PTR").setEndMemmapPragma("#pragma ghs section data=default\n  #pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_GLOBAL_CLEARED_8").setStartMemmapPragma("#pragma ghs section bss=\".bss.DLMU0_SWRESET.a1\"")»
+      «configPragmaForMemSectionName("VAR_GLOBAL_CLEARED_8").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_GLOBAL_CLEARED_16").setStartMemmapPragma("#pragma ghs section bss=\".bss.DLMU0_SWRESET.a2\"")»
+      «configPragmaForMemSectionName("VAR_GLOBAL_CLEARED_16").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_GLOBAL_CLEARED_32").setStartMemmapPragma("#pragma ghs section bss=\".bss.DLMU0_SWRESET.a4\"")»
+      «configPragmaForMemSectionName("VAR_GLOBAL_CLEARED_32").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_GLOBAL_CLEARED_64").setStartMemmapPragma("#pragma ghs section bss=\".bss.DLMU0_SWRESET.a8\"")»
+      «configPragmaForMemSectionName("VAR_GLOBAL_CLEARED_64").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_GLOBAL_CLEARED_BOOLEAN").setStartMemmapPragma("#pragma ghs section bss=\".bss.DLMU0_SWRESET.a1\"")»
+      «configPragmaForMemSectionName("VAR_GLOBAL_CLEARED_BOOLEAN").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_GLOBAL_CLEARED_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section bss=\".bss.DLMU0_SWRESET.ax\"")»
+      «configPragmaForMemSectionName("VAR_GLOBAL_CLEARED_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_GLOBAL_CLEARED_PTR").setStartMemmapPragma("#pragma ghs section bss=\".bss.DLMU0_SWRESET.a4\"")»
+      «configPragmaForMemSectionName("VAR_GLOBAL_CLEARED_PTR").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("CODE_RAM").setStartMemmapPragma("#pragma ghs section text=\".text.RAM\"")»
+      «configPragmaForMemSectionName("CODE_RAM").setEndMemmapPragma("#pragma ghs section text=default")»
+
+      «configPragmaForMemSectionName("VAR_CLEARED_ATOMIC_8").setStartMemmapPragma("#pragma ghs section bss=\".bss.atomic.a1\"")»
+      «configPragmaForMemSectionName("VAR_CLEARED_ATOMIC_8").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_CLEARED_ATOMIC_16").setStartMemmapPragma("#pragma ghs section bss=\".bss.atomic.a2\"")»
+      «configPragmaForMemSectionName("VAR_CLEARED_ATOMIC_16").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_CLEARED_ATOMIC_32").setStartMemmapPragma("#pragma ghs section bss=\".bss.atomic.a4\"")»
+      «configPragmaForMemSectionName("VAR_CLEARED_ATOMIC_32").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_CLEARED_ATOMIC_64").setStartMemmapPragma("#pragma ghs section bss=\".bss.atomic.a8\"")»
+      «configPragmaForMemSectionName("VAR_CLEARED_ATOMIC_64").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_CLEARED_ATOMIC_BOOLEAN").setStartMemmapPragma("#pragma ghs section bss=\".bss.atomic.a1\"")»
+      «configPragmaForMemSectionName("VAR_CLEARED_ATOMIC_BOOLEAN").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_CLEARED_ATOMIC_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section bss=\".bss.atomic.ax\"")»
+      «configPragmaForMemSectionName("VAR_CLEARED_ATOMIC_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section bss=default")»
+
+      «configPragmaForMemSectionName("VAR_CLEARED_ATOMIC_PTR").setStartMemmapPragma("#pragma ghs section bss=\".bss.atomic.a4\"")»
+      «configPragmaForMemSectionName("VAR_CLEARED_ATOMIC_PTR").setEndMemmapPragma("#pragma ghs section bss=default")» 
+
+      «configPragmaForMemSectionName("VAR_CLEARED_LOCK_SEMA_UNSPECIFIED").setStartMemmapPragma("#pragma ghs section bss=\".bss.lock_sema\"")»
+      «configPragmaForMemSectionName("VAR_CLEARED_LOCK_SEMA_UNSPECIFIED").setEndMemmapPragma("#pragma ghs section bss=default")»	  
+
+«ENDDEFINE»

@@ -1,0 +1,127 @@
+config_set: 
+ controller: 
+  0: Can_Network_CANNODE_0
+   hardware_name = 
+   hardware_name_win = 
+   hardware_name_ux = 
+   busoff_processing = CAN_POLLING
+   activation = true
+   base_address = 0
+   id = 0
+   rx_processing = CAN_POLLING
+   tx_processing = CAN_POLLING
+   wakeup_processing = CAN_POLLING
+   wakeup_support = false
+   default_baudrate = /vecu/EcucModuleConfigurationValuess/Can/CanConfigSet/Can_Network_CANNODE_0/Can_Network_CANNODE_0_BR_0
+   cpu_clock_ref = /vecu/EcucModuleConfigurationValuess/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint
+   wakeup_source_ref = 
+   enable_checkwakeup_api = false
+   baudrate_config: 
+    0: Can_Network_CANNODE_0_BR_0
+     controller_baud_rate = 500
+     id = 1
+     controller_prop_seg = 0
+     controller_seg1 = 10
+     controller_seg2 = 0
+     controller_sync_jump_width = 0
+     fd_baudrate_config: 
+      fd_baudrate = 800
+      fd_prop_delay = 0
+      fd_controller_seg1 = 10
+      fd_controller_seg2 = 0
+      fd_controller_sync_jump_width = 0
+      fd_controller_trcv_delay_comp_offset = 0
+      fd_controller_txbitrate_switch = true
+      fd_controller_sp_offset = 0
+   filter_mask: 
+   tt_controller: 
+    appl_watchdog_limit = 
+    cycle_count_max = 
+    expected_tx_trigger = 
+    external_clock_synchronisation = 
+    global_time_filtering = 
+    initial_ref_offset = 
+    interrupt_enable = 
+    level2 = 
+    ntu_config = 
+    operation_mode = 
+    sync_deviation = 
+    tur_restore = 
+    time_master = 
+    time_master_priority = 
+    tx_enable_window_length = 
+    watch_trigger_gap_time_mark = 
+    watch_trigger_time_mark = 
+    ttirq_processing = 
+ hardware_object: 
+  0: Can_Network_CANNODE_0_Rx_Std_MailBox_1
+   handle_type = CAN_HWP_RXTYPE_FULL
+   id_type = CAN_HWP_IDTYPE_STANDARD
+   id_value = 
+   object_id = 0
+   object_type = RECEIVE
+   controller_ref = /vecu/EcucModuleConfigurationValuess/Can/CanConfigSet/Can_Network_CANNODE_0
+   filter_mask_ref = 
+   main_function_rw_period_ref = 
+   hardware_uses_polling = false
+   fd_padding_value = 0
+   hwobject_cnt = 1
+   trigger_transmit = false
+   hwobject_payload_length = CAN_OBJECT_PL_8
+   hwfilter: 
+    0: CanHwFilter
+     code = 20
+     mask = 2047
+   tt_hardware_object_trigger: 
+    tt_hardware_object_base_cycle = 
+    tt_hardware_object_cycle_repetition = 
+    tt_hardware_object_time_mark = 
+    id = 
+    type = 
+  1: Can_Network_CANNODE_0_Tx_Std_MailBox_1
+   handle_type = CAN_HWP_RXTYPE_FULL
+   id_type = CAN_HWP_IDTYPE_STANDARD
+   id_value = 
+   object_id = 1
+   object_type = TRANSMIT
+   controller_ref = /vecu/EcucModuleConfigurationValuess/Can/CanConfigSet/Can_Network_CANNODE_0
+   filter_mask_ref = 
+   main_function_rw_period_ref = 
+   hardware_uses_polling = false
+   fd_padding_value = 0
+   hwobject_cnt = 1
+   trigger_transmit = false
+   hwobject_payload_length = CAN_OBJECT_PL_8
+   hwfilter: 
+   tt_hardware_object_trigger: 
+    tt_hardware_object_base_cycle = 
+    tt_hardware_object_cycle_repetition = 
+    tt_hardware_object_time_mark = 
+    id = 
+    type = 
+ icom: 
+  icom_config: 
+general: 
+ change_baudrate_api = false
+ dev_error_detection = false
+ hardware_cancellation = false
+ identical_id_cancellation = false
+ index = 0
+ l_pdu_receive_callout_function = 
+ main_function_busoff_period = 0.001
+ main_function_mode_period = 0.001
+ main_function_wakeup_period = 
+ multiplexed_transmission = false
+ timeout_duration = 1.0
+ version_info_api = false
+ counter_ref = 
+ support_ttcan_ref = 
+ icom_support = false
+ enable_security_event_reporting = false
+ global_time_support = false
+ ecuc_partition_ref = 0
+ main_function_rw_periods: 
+ icom_general: 
+  icom_level = 
+  icom_variant = 
+

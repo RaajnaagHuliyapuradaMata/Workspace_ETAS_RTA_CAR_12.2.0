@@ -1,0 +1,7 @@
+.\src\memmap\Templates\MemMap_ArPragmaPf_Generic.xpt
+.\src\memmap\Templates\MemMap_ArPragmaPf_IFX.xpt
+.\src\memmap\Templates\MemMap_ArPragmaPf_IFX_Ghs.xpt
+.\src\memmap\Templates\MemMap_ArPragmaPf_ST.xpt
+.\src\memmap\Templates\MemMap_ArTemplate.xpt
+.\src\memmap\Templates\MemMap_ArUtils.ext
+

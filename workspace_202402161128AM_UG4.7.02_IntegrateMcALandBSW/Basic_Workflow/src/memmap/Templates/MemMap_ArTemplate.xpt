@@ -1,0 +1,217 @@
+«IMPORT arm»
+«EXTENSION templates::MemMap_ArUtils»
+«EXTENSION com::bosch::ara2l::core::templates::icecore»
+
+«REM» **                                Entry definition 01.AR_MEMMAP_FILE_ENTRY                                   **«ENDREM»
+«REM» **                                ============================================                        **«ENDREM»
+
+«REM» ************START DOING CODEGENERATION FOR AR memmap files****************«ENDREM» 
+  
+«DEFINE MCU_RB_NXP_G22_ARMEMMAP_PRAGMA_CONFIG_ENTRY FOR Collection-»
+    «REM»Start to store pragma sections from the template«ENDREM»      
+    «invokeDefinition("MCU_RB_ST_UCU_ARMEMMAP_PRAGMA_CONFIG",getICEProject())-»
+     
+    «REM»Start «ENDREM»
+    
+    «FOREACH this AS component-»
+           «EXPAND ARMEMMAP_PRAGMA_CONFIG FOR component»
+    «ENDFOREACH»
+«ENDDEFINE»
+
+«DEFINE MCU_RB_RH850_GHS_ARMEMMAP_PRAGMA_CONFIG_ENTRY FOR Collection-»
+    «REM»Start to store pragma sections from the template«ENDREM»      
+    «invokeDefinition("MCU_RB_ST_UCU_ARMEMMAP_PRAGMA_CONFIG",getICEProject())-»
+     
+    «REM»Start «ENDREM»
+    
+    «FOREACH this AS component-»
+           «EXPAND ARMEMMAP_PRAGMA_CONFIG FOR component»
+    «ENDFOREACH»
+«ENDDEFINE»
+
+«DEFINE MCU_RB_IFX_ARMEMMAP_PRAGMA_CONFIG_ENTRY FOR Collection-»
+    «REM»Start to store pragma sections from the template«ENDREM»      
+    «invokeDefinition("MCU_RB_IFX_UCU_ARMEMMAP_PRAGMA_CONFIG",getICEProject())-»
+     
+    «REM»Start «ENDREM»
+    
+    «FOREACH this AS component-»
+           «EXPAND ARMEMMAP_PRAGMA_CONFIG FOR component»
+    «ENDFOREACH»
+«ENDDEFINE»
+
+«DEFINE MCU_RB_IFX_UCU_ARMEMMAP_PRAGMA_CONFIG_ENTRY FOR Collection-»
+    «REM»Start to store pragma sections from the template«ENDREM»      
+    «invokeDefinition("MCU_RB_IFX_UCU_ARMEMMAP_PRAGMA_CONFIG",getICEProject())-»
+     
+    «REM»Start «ENDREM»
+    
+    «FOREACH this AS component-»
+           «EXPAND ARMEMMAP_PRAGMA_CONFIG FOR component»
+    «ENDFOREACH»
+«ENDDEFINE»
+
+«DEFINE MCU_RB_IFX_UC1_ARMEMMAP_PRAGMA_CONFIG_ENTRY FOR Collection-»
+    «REM»Start to store pragma sections from the template«ENDREM»      
+    «invokeDefinition("MCU_RB_IFX_UCU_ARMEMMAP_PRAGMA_CONFIG",getICEProject())-»
+     
+    «REM»Start «ENDREM»
+    
+    «FOREACH this AS component-»
+           «EXPAND ARMEMMAP_PRAGMA_CONFIG FOR component»
+    «ENDFOREACH»
+«ENDDEFINE»
+
+«REM» **                                Entry definition 01.AR_MEMMAP_FILE_ENTRY                                   **«ENDREM»
+«REM» **                                ============================================                        **«ENDREM»
+
+«REM» ************START DOING CODEGENERATION FOR AR memmap files****************«ENDREM» 
+
+«DEFINE MCU_RB_ST_ARMEMMAP_PRAGMA_CONFIG_ENTRY FOR Collection-»
+    «REM»Start to store pragma sections from the template«ENDREM»      
+    «invokeDefinition("MCU_RB_ST_UCU_ARMEMMAP_PRAGMA_CONFIG",getICEArProject())-»
+     
+    «REM»Start «ENDREM»
+    «FOREACH this AS component-»
+           «EXPAND ARMEMMAP_PRAGMA_CONFIG FOR component»
+    «ENDFOREACH»
+«ENDDEFINE»
+
+«REM» **                                Entry definition 01.AR_MEMMAP_FILE_ENTRY                                   **«ENDREM»
+«REM» **                                ============================================                        **«ENDREM»
+
+«REM» ************START DOING CODEGENERATION FOR AR memmap files****************«ENDREM» 
+
+«DEFINE MCU_RB_ST_UCU_ARMEMMAP_PRAGMA_CONFIG_ENTRY FOR Collection-»
+    «REM»Start to store pragma sections from the template«ENDREM»      
+    «invokeDefinition("MCU_RB_ST_UCU_ARMEMMAP_PRAGMA_CONFIG",getICEArProject())-»
+     
+    «REM»Start «ENDREM»
+    «FOREACH this AS component-»
+           «EXPAND ARMEMMAP_PRAGMA_CONFIG FOR component»
+    «ENDFOREACH»
+«ENDDEFINE»
+
+«REM» **                                Entry definition 01.AR_MEMMAP_FILE_ENTRY                            **«ENDREM»
+«REM» **                                ============================================                        **«ENDREM»
+
+«REM» ************START DOING CODEGENERATION FOR AR memmap files****************«ENDREM» 
+  
+«DEFINE MCU_RB_GENERIC_ARMEMMAP_PRAGMA_CONFIG_ENTRY FOR Collection-»
+    «REM»Start to store pragma sections from the template«ENDREM»      
+    «invokeDefinition("MCU_RB_GENERIC_ARMEMMAP_PRAGMA_CONFIG",getICEProject())-»
+     
+    «REM»Start «ENDREM»
+    
+    «FOREACH this AS component-»
+           «EXPAND ARMEMMAP_PRAGMA_CONFIG FOR component»
+    «ENDFOREACH»
+«ENDDEFINE»
+
+«REM» **                                Entry definition 01.AR_MEMMAP_FILE_ENTRY                            **«ENDREM»
+«REM» **                                ============================================                        **«ENDREM»
+
+«REM» ************START DOING CODEGENERATION FOR AR memmap files****************«ENDREM» 
+  
+«DEFINE MCU_RB_IFX_GHS_ARMEMMAP_PRAGMA_CONFIG_ENTRY FOR Collection-»
+    «REM»Start to store pragma sections from the template«ENDREM»      
+    «invokeDefinition("MCU_RB_IFX_GHS_ARMEMMAP_PRAGMA_CONFIG",getICEProject())-»
+     
+    «REM»Start «ENDREM»
+    
+    «FOREACH this AS component-»
+           «EXPAND ARMEMMAP_PRAGMA_CONFIG FOR component»
+    «ENDFOREACH»
+«ENDDEFINE»
+
+«REM» **                                Feature map definition for AR_MEMMAP_FILE                                   **«ENDREM»
+«REM» **                                ============================================                        **«ENDREM»
+
+«REM» ************START DOING CODEGENERATION FOR AR memmap files****************«ENDREM» 
+  
+«DEFINE ARMEMMAP_PRAGMA_CONFIG FOR Object-»
+     «IF isGenerateDestinationFile((ArComponent)this) == true-»
+     «FILE getMemmapFileName(((ArComponent)this))-»
+/*
+ **********************************************************************************************************************
+ *
+ * Copyright (c) ETAS GmbH 2023, all rights reserved.
+ * The reproduction, distribution and utilization of this document as well as the communication of its contents to
+ * others without explicit authorization is prohibited. Offenders will be held liable for the payment of damages.
+ * All rights reserved in the event of the grant of a patent, utility model or design.
+ *
+ **********************************************************************************************************************
+ 
+ **********************************************************************************************************************
+ Machine Type: «getMachineType()»
+ Generated by «getIceModule()» «getICEVersion()»
+ **********************************************************************************************************************
+*/ 
+    «EXPAND ARMEMMAP_H FOR (ArComponent)this»«ENDFILE»
+    «ELSE»
+    «logWarnForNoAddMemorySection((ArComponent)this)»
+    «ENDIF»
+         
+«ENDDEFINE»
+
+
+
+
+«REM» *********************************************************************************************************** «ENDREM»
+«REM» *                                                                                                         * «ENDREM»
+«REM» *                                     Memory Mapping                                                  * «ENDREM»
+«REM» *                                                                                                         * «ENDREM»
+«REM» *********************************************************************************************************** «ENDREM»
+«REM» **                                    Feature definition MEMMAP_H                                     **«ENDREM»
+«REM» **                                    ===========================                                     **«ENDREM»
+
+«DEFINE ARMEMMAP_H FOR ArComponent-»
+/* MR12 DIR 4.10 VIOLATION: Memmap file must be included multiple times */
+/* MR12 RULE 20.5 VIOLATION: AUTOSAR MemMap concept requires #undef, AUTOSAR MemMap requirements are incompatible to MISRA */ 
+    «FOREACH getRecordedARPragmaSections(getICEArProject(), this) AS arPragmaSection ITERATOR it-»
+        «LET arPragmaSection.getARAllocationStartKeyword() AS arAllocationStartKeyword-»
+            «IF it.counter0 == 0-»#if defined«ELSE-»#elif defined«ENDIF» «arAllocationStartKeyword»«IF isValidateStartStop() == true»
+    #ifdef MEMMAP_SEC_STARTED
+        #error "Missing STOP section for previously started section"
+    #else
+        #define MEMMAP_SEC_STARTED
+    #endif
+    #ifdef «arAllocationStartKeyword»_STARTED
+        #error "Section «arPragmaSection.getARAllocationStartKeywordWithoutCompName()» defined redundantly"
+    #else 
+        #define «arAllocationStartKeyword»_STARTED
+    #endif«ENDIF»
+             «""-»  «arPragmaSection.getStartPragma()»
+			 «IF getMachineType() == "MCU_RB_GENERIC"»
+                 «""-»  #define BSW_START_SEC«arPragmaSection.getARAllocationStartKeyword().split("START_SEC").last()»
+                 «""-»  #include "Bsw_MemMap.h"
+			«ENDIF» 
+             «""-»  #undef «arAllocationStartKeyword»           
+             «ENDLET-»«LET arPragmaSection.getARAllocationStopKeyword() AS arAllocationStopKeyword-»
+        «""-»#elif defined «arAllocationStopKeyword» «IF isValidateStartStop() == true»
+    #ifdef MEMMAP_SEC_STARTED
+        #undef MEMMAP_SEC_STARTED
+        #ifndef «arPragmaSection.getARAllocationStartKeyword()»_STARTED
+            #error "Missing STOP section for previously started section"
+        #endif
+    #endif
+    #ifdef «arPragmaSection.getARAllocationStartKeyword()»_STARTED
+        #undef «arPragmaSection.getARAllocationStartKeyword()»_STARTED
+    #else
+        #error "Missing section «arPragmaSection.getARAllocationStartKeywordWithoutCompName()»"
+    #endif«ENDIF»     
+             «""-»  «arPragmaSection.getStopPragma()»
+			 «IF getMachineType() == "MCU_RB_GENERIC"»
+                 «""-»  #define BSW_STOP_SEC«arPragmaSection.getARAllocationStopKeyword().split("STOP_SEC").last()»
+                 «""-»  #include "Bsw_MemMap.h"
+			«ENDIF» 
+             «""-»  #undef «arAllocationStopKeyword»             
+        «ENDLET-»
+    «ENDFOREACH-»
+    «IF isStrictValidateMissingPragmas() == true-»
+          «logErrorForNoPragmaConfiguration()-» 
+    «ENDIF-»
+«""-»#else 
+«""-»#error "«this.getShortName()»_MemMap.h, wrong pragma command" 
+«""-»#endif
+«ENDDEFINE»

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <uri name="BuildActionManifest_1-0-2.xsd" uri="jar:file:/C:/ETAS/RTA-CAR_12.2.0/ISOLAR-AB_12.2.1/plugins/com.bosch.bfw.bamf.loader_2023.1.0.202307131707.jar!/schemas/BuildActionManifest_1-0-2.xsd"/>
+  <uri name="AUTOSAR_00049_COMPACT.xsd" uri="jar:file:/C:/ETAS/RTA-CAR_12.2.0/ISOLAR-AB_12.2.1/plugins/com.bosch.bfw.bamf.loader_2023.1.0.202307131707.jar!/schemas/AUTOSAR_00049_COMPACT.xsd"/>
+</catalog>
