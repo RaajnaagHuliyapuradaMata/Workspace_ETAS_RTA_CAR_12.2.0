@@ -1,0 +1,148 @@
+import arm;
+extension org::eclipse::xtend::util::stdlib::globalvar reexport;
+extension org::eclipse::xtend::util::stdlib::io reexport;
+ 
+private Object getStrategy():
+((Object) GLOBALVAR STRATEGY)
+;
+
+cached String getFacadeIndex():
+((String) GLOBALVAR FACADE_INDEX)
+;
+
+String getMemmapFileName(ArComponent arComponent):
+getMemmapFileName(getStrategy(),arComponent)
+;
+
+private String getMemmapFileName(Object strategy, ArComponent arComponent):
+JAVA com.bosch.ara2l.core.engine.util.FileNameGenerator.getMemmapFileName(java.lang.Object,org.eclipse.emf.ecore.EObject)
+;
+
+
+cached ICEArProject getICEArProject():
+((ArComponent) GLOBALVAR ICE_MODEL).getICEArProject()
+;
+    
+
+ICEArProject getICEProject()
+    :getICEArProject()
+; 
+
+
+String invokeDefinition(String definitionName, Object entity)
+    :invokeDefinition(getFacadeIndex(),definitionName,entity)
+    ;
+    
+String invokeDefinition(String definitionName, Object entity, Collection paramsCollection)
+    :invokeDefinition(getFacadeIndex(),definitionName,entity,paramsCollection)
+    ;   
+
+private String invokeDefinition(String facadeIndex,String definitionName, Object entity, Collection paramsCollection )
+    :JAVA com.bosch.ara2l.core.engine.custom.xpand.XpandHelper.invokeDefinition(java.lang.String,java.lang.String,java.lang.Object, java.util.Collection)
+    ;
+        
+private String invokeDefinition(String facadeIndex,String definitionName, Object entity)
+    :JAVA com.bosch.ara2l.core.engine.custom.xpand.XpandHelper.invokeDefinition(java.lang.String,java.lang.String, java.lang.Object)
+    ;
+    
+String getMachineType()
+    :JAVA com.bosch.memmapgen.config.ARmemmapConfiguration.getMachineType()
+;
+  
+//To check whether the option --validate_start_stop_for_armemmap has been enabled in the options file
+boolean isValidateStartStop():
+JAVA com.bosch.memmapgen.config.ARmemmapConfiguration.isValidateStartStop()
+;
+
+//To check whether the option --strict_validate_missing_pragmas has been enabled in the options file
+boolean isStrictValidateMissingPragmas():
+JAVA com.bosch.memmapgen.config.ARmemmapConfiguration.isStrictValidateMissingPragmas()
+;
+  
+//Gets the PragmaConfiguration object for given adsName for 
+//doing pragma configuration.
+ArPragmaConfiguration configPragmaDefault(ICEArProject dcgproject):
+JAVA com.bosch.memmapgen.javaextensions.ArmemmapPragmaConfigurationUtil.configPragmaDefault(com.bosch.ara2l.applications.arcore.arm.ICEArProject)
+;
+ 
+
+ArPragmaConfiguration configPragmaForMemSectionName(ICEArProject dcgproject, String adsName):
+JAVA com.bosch.memmapgen.javaextensions.ArmemmapPragmaConfigurationUtil.configPragmaForMemSectionName(com.bosch.ara2l.applications.arcore.arm.ICEArProject, java.lang.String)
+;
+
+ArPragmaConfiguration configPragmaForMemSectionName(ICEArProject dcgproject, String adsName, Object listOfComponents):
+JAVA com.bosch.memmapgen.javaextensions.ArmemmapPragmaConfigurationUtil.configPragmaForMemSectionName(com.bosch.ara2l.applications.arcore.arm.ICEArProject, java.lang.String, java.lang.Object)
+;
+
+ArPragmaConfiguration configPragmaForAds(ICEArProject dcgproject, String adsName):
+JAVA com.bosch.memmapgen.javaextensions.ArmemmapPragmaConfigurationUtil.configPragmaForAds(com.bosch.ara2l.applications.arcore.arm.ICEArProject, java.lang.String)
+;
+
+boolean addMemorySection(ICEArProject dcgproject, String memSectionName):
+JAVA com.bosch.memmapgen.javaextensions.ArmemmapPragmaConfigurationUtil.addMemorySection( com.bosch.ara2l.applications.arcore.arm.ICEArProject, java.lang.String)
+;
+
+boolean addMemorySection(ICEArProject dcgproject, String memSectionName,String componentName):
+JAVA com.bosch.memmapgen.javaextensions.ArmemmapPragmaConfigurationUtil.addMemorySection( com.bosch.ara2l.applications.arcore.arm.ICEArProject, java.lang.String, java.lang.String)
+;
+
+//Sets the pragmaString while doing start pragma configuration.
+boolean setStartMemmapPragma(ArPragmaConfiguration pragmaConfig, String pragmaString):
+JAVA com.bosch.memmapgen.javaextensions.ArmemmapPragmaConfigurationUtil.setStartMemmapPragma(com.bosch.ara2l.applications.arcore.arm.ArPragmaConfiguration, java.lang.String)
+;
+
+
+boolean isGenerateDestinationFile(ArComponent arComponent):arComponent.generateDestinationFile
+;
+
+//Sets the pragmaString while doing start pragma configuration.
+boolean setEndMemmapPragma(ArPragmaConfiguration pragmaConfig, String pragmaString):
+JAVA com.bosch.memmapgen.javaextensions.ArmemmapPragmaConfigurationUtil.setEndMemmapPragma( com.bosch.ara2l.applications.arcore.arm.ArPragmaConfiguration, java.lang.String)
+;
+
+
+Collection[ARPragmaSection] getRecordedARPragmaSections(ICEArProject dcgproject, ArComponent arComponent):
+JAVA com.bosch.memmapgen.javaextensions.ArmemmapPragmaConfigurationUtil.getRecordedARPragmaSections(com.bosch.ara2l.applications.arcore.arm.ICEArProject, com.bosch.ara2l.applications.arcore.arm.ArComponent)
+;
+
+
+//Gets the ARAllocation Start keyword for ARPragmaSection for the _MemMap.h file
+String getARAllocationStartKeyword(arm::ARPragmaSection arPragmaSection):
+JAVA com.bosch.memmapgen.javaextensions.ArmemmapPragmaConfigurationUtil.getARAllocationStartKeyword(com.bosch.ara2l.applications.arcore.arm.ARPragmaSection)
+;
+
+//This returns the component name which is used in validting the start and stop pragma sections
+String getComponentName(arm::ARPragmaSection arPragmaSection):
+JAVA com.bosch.memmapgen.javaextensions.ArmemmapPragmaConfigurationUtil.getComponentName(com.bosch.ara2l.applications.arcore.arm.ARPragmaSection)
+;
+
+//This returns the Ar allocation start keyword without the component name which is used in validting the start and stop pragma sections
+String getARAllocationStartKeywordWithoutCompName(arm::ARPragmaSection arPragmaSection):
+JAVA com.bosch.memmapgen.javaextensions.ArmemmapPragmaConfigurationUtil.getARAllocationStartKeywordWithoutCompName(com.bosch.ara2l.applications.arcore.arm.ARPragmaSection)
+;
+
+//Gets the ARAllocation Start keyword for ARPragmaSection for the _MemMap.h file
+String getARAllocationStopKeyword(arm::ARPragmaSection arPragmaSection):
+JAVA com.bosch.memmapgen.javaextensions.ArmemmapPragmaConfigurationUtil.getARAllocationStopKeyword(com.bosch.ara2l.applications.arcore.arm.ARPragmaSection)
+;
+
+//This method is used to get the Start Pragma for the given ARPragmaSection
+String getStartPragma(arm::ARPragmaSection arPragmaSection):
+JAVA com.bosch.memmapgen.javaextensions.ArmemmapPragmaConfigurationUtil.getStartPragma(com.bosch.ara2l.applications.arcore.arm.ARPragmaSection)
+;
+ 
+//This method is used to get the Stop Pragma for the given ARPragmaSection
+String getStopPragma(arm::ARPragmaSection arPragmaSection):
+JAVA com.bosch.memmapgen.javaextensions.ArmemmapPragmaConfigurationUtil.getStopPragma(com.bosch.ara2l.applications.arcore.arm.ARPragmaSection)
+;
+
+boolean logWarnForNoAddMemorySection(ArComponent arComponent):
+JAVA com.bosch.memmapgen.javaextensions.ArmemmapPragmaConfigurationUtil.logWarnForNoAddMemorySection(com.bosch.ara2l.applications.arcore.arm.ArComponent)
+;
+
+boolean logErrorForNoPragmaConfiguration():
+JAVA com.bosch.memmapgen.javaextensions.ArmemmapPragmaConfigurationUtil.logErrorForNoPragmaConfiguration()
+;
+
+String getShortName(ArComponent arComponent):arComponent.shortName
+;
