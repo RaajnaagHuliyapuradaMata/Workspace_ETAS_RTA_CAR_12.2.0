@@ -1,0 +1,2085 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ULF-PROCESSING-LOG>
+<ADMIN-DATA>
+<LANGUAGE>EN</LANGUAGE>
+<USED-LANGUAGES>
+<L-10 L="EN">English</L-10>
+<L-10 L="DE">German</L-10>
+</USED-LANGUAGES>
+</ADMIN-DATA>
+<LOG-ENTRY TI="Java validation" S="95f08b997610a7cde66d47f985fdef68" T="2024-02-29T13:52:28.461+0100">
+<SHORT-NAME>RTA-BSW_1</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Generation of the file ComM_Cfg.h completed</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Java validation" S="aaeaf65a9f9676653c4ece41d9cdd4b7" T="2024-02-29T13:52:28.464+0100">
+<SHORT-NAME>RTA-BSW_2</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Generation of the file ComM_Cfg.c started</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Java validation" S="6192e7be415085881fdceeb536dc04a7" T="2024-02-29T13:52:28.489+0100">
+<SHORT-NAME>RTA-BSW_3</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Generation of the file ComM_Cfg.c completed</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Java validation" S="4fbc5aa53e120c911fd9ac729e414e46" T="2024-02-29T13:52:28.492+0100">
+<SHORT-NAME>RTA-BSW_4</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Generation of the file ComM_Cfg_Internal.h started</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Java validation" S="d816d354535d2b1192d223b30fe40bf9" T="2024-02-29T13:52:28.513+0100">
+<SHORT-NAME>RTA-BSW_5</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Generation of the file ComM_Cfg_Internal.h completed</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Java validation" S="80dae043436d713e7f513886e6043c74" T="2024-02-29T13:52:28.515+0100">
+<SHORT-NAME>RTA-BSW_6</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Generation of the file ComM_PBcfg.h started</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Java validation" S="23042f71b65d262c84c551a7035b75d" T="2024-02-29T13:52:28.521+0100">
+<SHORT-NAME>RTA-BSW_7</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Generation of the file ComM_PBcfg.h completed</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Java validation" S="a7ce9d672d35e802950a91c3141a6d4" T="2024-02-29T13:52:28.523+0100">
+<SHORT-NAME>RTA-BSW_8</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Generation of the file ComM_PBcfg.c started</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Java validation" S="613f04d2ccada3824bafabb46122d202" T="2024-02-29T13:52:28.558+0100">
+<SHORT-NAME>RTA-BSW_9</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Generation of the file ComM_PBcfg.c completed</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Java validation" S="86954183cdb16d1be2b9767e1f908333" T="2024-02-29T13:52:28.561+0100">
+<SHORT-NAME>RTA-BSW_10</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Generation of the file ComM_Main.h started</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Java validation" S="e79aefcf401ba440cdc33fcda2f0017d" T="2024-02-29T13:52:28.569+0100">
+<SHORT-NAME>RTA-BSW_11</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Generation of the file ComM_Main.h completed</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Java validation" S="88c73937679313cfc3f8f6e64a49b176" T="2024-02-29T13:52:28.572+0100">
+<SHORT-NAME>RTA-BSW_12</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Generation of the file ComM_Main.c started</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Java validation" S="3481906aba9bcfb409fae616c2222001" T="2024-02-29T13:52:28.582+0100">
+<SHORT-NAME>RTA-BSW_13</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Generation of the file ComM_Main.c completed</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Java validation" S="45f3441793ffa75e01c1add0f9c3c4dc" T="2024-02-29T13:52:28.585+0100">
+<SHORT-NAME>RTA-BSW_14</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Generation of the file ComM_Cfg_SWCD.arxml started</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Java validation" S="56ee2d34bc8895ae8e0a4de0c64aa165" T="2024-02-29T13:52:28.610+0100">
+<SHORT-NAME>RTA-BSW_15</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Generation of the file ComM_Cfg_SWCD.arxml completed</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Java validation" S="5f7ed6c09de8653b7e3dc38b7d84e958" T="2024-02-29T13:52:28.612+0100">
+<SHORT-NAME>RTA-BSW_16</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Generation of the file ComM_Cbk.h started</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Java validation" S="9d62a3377e0a74253873c50350a70359" T="2024-02-29T13:52:28.617+0100">
+<SHORT-NAME>RTA-BSW_17</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Generation of the file ComM_Cbk.h completed</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="d01391aa88a269c5d70096c5b03dfd06" T="2024-02-29T13:52:39.541+0100">
+<SHORT-NAME>RTA-BSW_18</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Starting action: Copy generated code to the output folder.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="59791823ae63caffdcf73c0c79ecf1a9" T="2024-02-29T13:52:39.636+0100">
+<SHORT-NAME>RTA-BSW_19</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Finished action: Copy generated code to the output folder.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="7038fb2f29ff42cf231ff016ae65d5ee" T="2024-02-29T13:52:39.659+0100">
+<SHORT-NAME>RTA-BSW_20</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Starting action: Copy generated ARXML to the output folder.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="296d485dc0d79c66e409c97bc270da64" T="2024-02-29T13:52:40.009+0100">
+<SHORT-NAME>RTA-BSW_21</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Finished action: Copy generated ARXML to the output folder.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="85c19937e161ee172511fcf58016d27a" T="2024-02-29T13:52:40.030+0100">
+<SHORT-NAME>RTA-BSW_22</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Starting action: Copy integration code to the output folder.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="805d3c532eba193296f48bd6327480c4" T="2024-02-29T13:52:40.086+0100">
+<SHORT-NAME>RTA-BSW_23</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Copied new integration code file 'EcuM_RunTime.h'.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="72098bd79ddbc3e47cb3767a050943ee" T="2024-02-29T13:52:40.091+0100">
+<SHORT-NAME>RTA-BSW_24</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Copied new integration code file 'EcuM_CompilerSpecific.h'.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="eeb12cd2a838ed8ab08abdfa6e04879" T="2024-02-29T13:52:40.096+0100">
+<SHORT-NAME>RTA-BSW_25</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Copied new integration code file 'EcuM_Callout_Stubs.c'.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="de90b30dd35bec3e9029ab355407bfe" T="2024-02-29T13:52:40.102+0100">
+<SHORT-NAME>RTA-BSW_26</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Copied new integration code file 'EcuM_Cfg_SchM.h'.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="8e7a748f6166a9d907219e829efecf58" T="2024-02-29T13:52:40.130+0100">
+<SHORT-NAME>RTA-BSW_27</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Copied new integration code file 'BswM_Appl.c'.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="4a85b781a1a4e1cab9d3ba8f8ad970b9" T="2024-02-29T13:52:40.136+0100">
+<SHORT-NAME>RTA-BSW_28</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Copied new integration code file 'BswM_Cfg_SchM.h'.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="e46af223d419f7c5e3da5f93d6d14ed8" T="2024-02-29T13:52:40.157+0100">
+<SHORT-NAME>RTA-BSW_29</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Finished action: Copy integration code to the output folder.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="aabca650221d271eb879f01ecb174e67" T="2024-02-29T13:52:40.180+0100">
+<SHORT-NAME>RTA-BSW_30</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Starting action: Copy static code to the output folder.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="41564dba1e135a0282ee405125c0f2ac" T="2024-02-29T13:52:40.687+0100">
+<SHORT-NAME>RTA-BSW_31</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Finished action: Copy static code to the output folder.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="3781b3f2cd6421b132854ed2cef53670" T="2024-02-29T13:52:40.711+0100">
+<SHORT-NAME>RTA-BSW_32</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Starting action: Copy static ARXML to the output folder.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="1e992310a538cde501dce1711b73129b" T="2024-02-29T13:52:40.911+0100">
+<SHORT-NAME>RTA-BSW_33</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Finished action: Copy static ARXML to the output folder.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="ab0fc64e36e303f345167e30ee83c0c" T="2024-02-29T13:52:40.942+0100">
+<SHORT-NAME>RTA-BSW_34</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Starting action: Copy generated logs to the output folder.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="35bfa3340d93f329643ea49f37de3b1f" T="2024-02-29T13:52:40.962+0100">
+<SHORT-NAME>RTA-BSW_35</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Finished action: Copy generated logs to the output folder.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="aec86aec889ff3916c4f734085bbb888" T="2024-02-29T13:52:40.989+0100">
+<SHORT-NAME>RTA-BSW_36</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Starting action: Cleanup generated code to the output folder.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="e1fa78f8b318ad617533b8fce3b3e165" T="2024-02-29T13:52:41.041+0100">
+<SHORT-NAME>RTA-BSW_37</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Finished action: Cleanup generated code to the output folder.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="75183b6e220e35c8301ee557f1749b4" T="2024-02-29T13:52:41.083+0100">
+<SHORT-NAME>RTA-BSW_38</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Starting action: Generate the CodeGen version and diagnostic header file.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="867e88a54b332aa0982fdf641ad60668" T="2024-02-29T13:52:41.341+0100">
+<SHORT-NAME>RTA-BSW_39</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Finished action: Generate the CodeGen version and diagnostic header file.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="8e3c9f2de3c23f98cade3b6494586dd7" T="2024-02-29T13:52:41.395+0100">
+<SHORT-NAME>RTA-BSW_40</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Starting action: Map Service Components to ECU_Extract</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="114f15ef9e0d2ae1669921a27416131a" T="2024-02-29T13:52:41.532+0100">
+<SHORT-NAME>RTA-BSW_41</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Finished action: Map Service Components to ECU_Extract</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="52e1e2b8cafc8bf77c3f3bd50f43571d" T="2024-02-29T13:51:55.927+0100">
+<SHORT-NAME>RTA-BSW_42</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Starting action: Verifying Licenses</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="4c1e47d1a92f5bb6836815cf44c7cd3d" T="2024-02-29T13:51:55.961+0100">
+<SHORT-NAME>RTA-BSW_43</SHORT-NAME>
+<DESC>
+<L-2 L="EN">License availabe for stack: Common: OK</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="cf185bf8b1621a11cae01fb0ca588fd9" T="2024-02-29T13:51:55.964+0100">
+<SHORT-NAME>RTA-BSW_44</SHORT-NAME>
+<DESC>
+<L-2 L="EN">License availabe for stack: RTA-BASE: OK</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="44df7adcf9b78afda24d5bba5ffa275e" T="2024-02-29T13:51:55.967+0100">
+<SHORT-NAME>RTA-BSW_45</SHORT-NAME>
+<DESC>
+<L-2 L="EN">License availabe for stack: RTA-CAN: OK</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="8cefa30708e211959ddb92ff37fc48f7" T="2024-02-29T13:51:55.970+0100">
+<SHORT-NAME>RTA-BSW_46</SHORT-NAME>
+<DESC>
+<L-2 L="EN">License availabe for stack: RTA-COM: OK</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="4dbd8c83d1d699a5ecab515ecb2d63f8" T="2024-02-29T13:51:55.973+0100">
+<SHORT-NAME>RTA-BSW_47</SHORT-NAME>
+<DESC>
+<L-2 L="EN">License availabe for stack: RTA-DIAG: OK</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="db66611110456441d0456c906a695c15" T="2024-02-29T13:51:55.975+0100">
+<SHORT-NAME>RTA-BSW_48</SHORT-NAME>
+<DESC>
+<L-2 L="EN">License availabe for stack: RTA-ETH: OK</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="6435c258f1f061068319178f11e47f31" T="2024-02-29T13:51:55.977+0100">
+<SHORT-NAME>RTA-BSW_49</SHORT-NAME>
+<DESC>
+<L-2 L="EN">License availabe for stack: RTA-FRAY: OK</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="f1846284e15a378bbc9ced27fdd4baa" T="2024-02-29T13:51:55.980+0100">
+<SHORT-NAME>RTA-BSW_50</SHORT-NAME>
+<DESC>
+<L-2 L="EN">License availabe for stack: RTA-HWD(Can): OK</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="eac46dd4788bd71cff7b7b58b2e506cd" T="2024-02-29T13:51:55.983+0100">
+<SHORT-NAME>RTA-BSW_51</SHORT-NAME>
+<DESC>
+<L-2 L="EN">License availabe for stack: RTA-HWD(Eth): OK</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="b86596a6df5deb4fd13757ac55f1ac5d" T="2024-02-29T13:51:55.985+0100">
+<SHORT-NAME>RTA-BSW_52</SHORT-NAME>
+<DESC>
+<L-2 L="EN">License availabe for stack: RTA-HWD(Fray): OK</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="d0fa2e35c5189f7e673cb31e5916de8e" T="2024-02-29T13:51:55.987+0100">
+<SHORT-NAME>RTA-BSW_53</SHORT-NAME>
+<DESC>
+<L-2 L="EN">License availabe for stack: RTA-HWD(Lin): OK</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="59f4855735b9280b68ab80a6069c206f" T="2024-02-29T13:51:55.989+0100">
+<SHORT-NAME>RTA-BSW_54</SHORT-NAME>
+<DESC>
+<L-2 L="EN">License availabe for stack: RTA-J1939: OK</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="63779bbab0bbfa57b588630e90ef5855" T="2024-02-29T13:51:55.990+0100">
+<SHORT-NAME>RTA-BSW_55</SHORT-NAME>
+<DESC>
+<L-2 L="EN">License availabe for stack: RTA-LIN: OK</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="47d22de5bd326515f682830c20ca99b5" T="2024-02-29T13:51:55.994+0100">
+<SHORT-NAME>RTA-BSW_56</SHORT-NAME>
+<DESC>
+<L-2 L="EN">License availabe for stack: RTA-MEM: OK</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="4702388204f052a9257dee8bacce71" T="2024-02-29T13:51:55.996+0100">
+<SHORT-NAME>RTA-BSW_57</SHORT-NAME>
+<DESC>
+<L-2 L="EN">License availabe for stack: RTA-RipsPlugins: OK</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="bea9baa159c01b89496a517f8a4374b1" T="2024-02-29T13:51:55.999+0100">
+<SHORT-NAME>RTA-BSW_58</SHORT-NAME>
+<DESC>
+<L-2 L="EN">License availabe for stack: RTA-SAFE: OK</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="23050b020f403f7b6bc43b467623b564" T="2024-02-29T13:51:56.001+0100">
+<SHORT-NAME>RTA-BSW_59</SHORT-NAME>
+<DESC>
+<L-2 L="EN">License availabe for stack: RTA-SEC: OK</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="3cb98df3b67812e512107966538faef1" T="2024-02-29T13:51:56.003+0100">
+<SHORT-NAME>RTA-BSW_60</SHORT-NAME>
+<DESC>
+<L-2 L="EN">License availabe for stack: RTA-SWCL: NO</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="671e2613189002044946c3a816785a60" T="2024-02-29T13:51:56.005+0100">
+<SHORT-NAME>RTA-BSW_61</SHORT-NAME>
+<DESC>
+<L-2 L="EN">License availabe for stack: RTA-XCP: OK</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="dcd6272e9e5a57764274cfa7a78761b5" T="2024-02-29T13:51:56.008+0100">
+<SHORT-NAME>RTA-BSW_62</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Finished action: Verifying Licenses</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="1af4bd10dfc9efc9bc078e864844acff" T="2024-02-29T13:51:56.027+0100">
+<SHORT-NAME>RTA-BSW_63</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Starting action: Register the Application. Applicable only for Headless usage</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="48e1a726712e35a8712cb3e62ee2f056" T="2024-02-29T13:51:56.034+0100">
+<SHORT-NAME>RTA-BSW_64</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Finished action: Register the Application. Applicable only for Headless usage</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="b3ef148b3265843993dddf385b2a5874" T="2024-02-29T13:51:56.053+0100">
+<SHORT-NAME>RTA-BSW_65</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Starting action: Remove Bswmd Ecuc Values for ArxmlGen</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="8de5b013a4442fa6c8bcce867014a607" T="2024-02-29T13:51:56.055+0100">
+<SHORT-NAME>RTA-BSW_66</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Removing static BSWMD Ecuc Values.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="ace78d15f4dc48b0ec777a49b630bb73" T="2024-02-29T13:51:56.057+0100">
+<SHORT-NAME>RTA-BSW_67</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Static BSWMD Ecuc Values.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="389d8c87cfd966e83ce0dc6e20745fa5" T="2024-02-29T13:51:56.079+0100">
+<SHORT-NAME>RTA-BSW_68</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Successfully removed static BSWMD Ecuc Values.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="46d5b47bd5ce1a0b13187d1320520b4b" T="2024-02-29T13:51:56.082+0100">
+<SHORT-NAME>RTA-BSW_69</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Finished action: Remove Bswmd Ecuc Values for ArxmlGen</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="df7878f69cc14fb1958ef740ac86bcf" T="2024-02-29T13:51:56.103+0100">
+<SHORT-NAME>RTA-BSW_70</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Starting action: Create Bswmd Ecuc Values for ArxmlGen</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="a5ca89ce0209e6ce4629679309c569b4" T="2024-02-29T13:51:56.106+0100">
+<SHORT-NAME>RTA-BSW_71</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Acquiring static BSWMD Ecuc Values.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="f7ec5a9cddaf0ef249f362e63eb61306" T="2024-02-29T13:51:56.122+0100">
+<SHORT-NAME>RTA-BSW_72</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Creating static BSWMD Ecuc Values files.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="a22d6aba397be048b31a57dd53336777" T="2024-02-29T13:51:56.134+0100">
+<SHORT-NAME>RTA-BSW_73</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Creating file 'ComM_Prot_EcucValues.arxml'.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="176e69aee8001af6fab620eba0f3dfc1" T="2024-02-29T13:51:56.151+0100">
+<SHORT-NAME>RTA-BSW_74</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Creating file 'CanSM_Prot_EcucValues.arxml'.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="fc7d71bc56d6d5fea7827650c9390e39" T="2024-02-29T13:51:56.157+0100">
+<SHORT-NAME>RTA-BSW_75</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Creating file 'PduR_Prot_EcucValues.arxml'.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="d52b2c24c80ca4d1f4c916054470f4d0" T="2024-02-29T13:51:56.165+0100">
+<SHORT-NAME>RTA-BSW_76</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Creating file 'Com_Prot_EcucValues.arxml'.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="19b5806b5429b98738d76c3904ba6b18" T="2024-02-29T13:51:56.183+0100">
+<SHORT-NAME>RTA-BSW_77</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Creating file 'CanIf_Prot_EcucValues.arxml'.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="484d10f9a491c5bc150090c191b20a8e" T="2024-02-29T13:51:56.188+0100">
+<SHORT-NAME>RTA-BSW_78</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Successfully created static BSWMD Ecuc Values.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="93140fe5a03df916d720779b512639ee" T="2024-02-29T13:51:56.191+0100">
+<SHORT-NAME>RTA-BSW_79</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Finished action: Create Bswmd Ecuc Values for ArxmlGen</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="726f9de99ead82c23f7b38a719a471fc" T="2024-02-29T13:51:56.218+0100">
+<SHORT-NAME>RTA-BSW_80</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Starting action: Checks for empty definitons.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="2ac4a7124ee700a4150df79ab48ccf4f" T="2024-02-29T13:51:56.387+0100">
+<SHORT-NAME>RTA-BSW_81</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Finished action: Checks for empty definitons.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="2904f7d22306ebf5117f3cad177ea3ec" T="2024-02-29T13:51:56.408+0100">
+<SHORT-NAME>RTA-BSW_82</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Starting action: Runs project validation.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Default" S="8f3b954883b3cab79f2c7662d38d60a9" T="2024-02-29T13:51:56.412+0100">
+<SHORT-NAME>RTA-BSW_83</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Finished action: Runs project validation.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Java validation" S="8d48163eadba65d468b631482404a4d8" T="2024-02-29T13:52:21.832+0100">
+<SHORT-NAME>RTA-BSW_84</SHORT-NAME>
+<DESC>
+<L-2 L="EN">No BswM ComMUser created as ComMDirectUserMapping is disabled</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Java validation" S="902ff9360393e8975284d5e149878505" T="2024-02-29T13:52:24.040+0100">
+<SHORT-NAME>RTA-BSW_85</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Forwarding User size Information into application data type of variable ComM_UserStruct</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Java validation" S="bbb908195379dbbc405a1ab43e3fb1ea" T="2024-02-29T13:52:24.043+0100">
+<SHORT-NAME>RTA-BSW_86</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Forwarding User size Information into implementation data type of variable ComM_UserStruct</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Java validation" S="647fd37d75deaad61ba4380abc5dbd42" T="2024-02-29T13:52:24.045+0100">
+<SHORT-NAME>RTA-BSW_87</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Forwarding channel size to application data type of variable ComM_ChannelStruct</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Java validation" S="179338cd24743bf29a5e600ee82a41f4" T="2024-02-29T13:52:24.048+0100">
+<SHORT-NAME>RTA-BSW_88</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Forwarding channel size to implementation data type of variable ComM_ChannelStruct</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Java validation" S="15b8eab609245d0b0ecae24c93ed6049" T="2024-02-29T13:52:24.050+0100">
+<SHORT-NAME>RTA-BSW_89</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Forwarding callback information to Com</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Java validation" S="6e83512eaa94eebb826abf845b41f44d" T="2024-02-29T13:52:24.056+0100">
+<SHORT-NAME>RTA-BSW_90</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Forwarding callback information to NvM</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Java validation" S="ea91c65a86d7980a8290948d9c981d63" T="2024-02-29T13:52:25.599+0100">
+<SHORT-NAME>RTA-BSW_91</SHORT-NAME>
+<DESC>
+<L-2 L="EN">The ComMChannel Can_Network_Channel_Can_Network has ComMNmVariant configured as 'None'. Channel with 'None' will never go to NO_COMMUNICATION. Check if this is the intended behaviour.</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Java validation" S="1cb912e7d8f61343ec14211d0259e0a2" T="2024-02-29T13:52:28.135+0100">
+<SHORT-NAME>RTA-BSW_92</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Generation of the file ComM_EOC.arxml started</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Java validation" S="a9a1ef5ef21fc8afceec520187d9d2d0" T="2024-02-29T13:52:28.395+0100">
+<SHORT-NAME>RTA-BSW_93</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Generation of the file ComM_EOC.arxml completed</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Java validation" S="8a76c17255c2c280e37f7c3e7bf83b00" T="2024-02-29T13:52:28.398+0100">
+<SHORT-NAME>RTA-BSW_94</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Generation of the file ComM_Cfg.h started</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="oAW Validations" S="caf5e042fd976d44588e5df4d0904144" T="2024-02-29T13:52:30.887+0100">
+<SHORT-NAME>RTA-BSW_95</SHORT-NAME>
+<DESC>
+<L-2 L="EN">INFO: : "CanIfBusOffNotification" is configured True. CAN_SM is the default UL for Bus-off Notification,
+  "CanSM_ControllerBusOff" shall be the default "canIfDispatchUserCtrlBusOffName" for Bus-Off Notifications</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">ApplicationECU_Project_EcucValues.arxml</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="editorInputUri">platform:/resource/NewProjectFromScratch/ApplicationECU_Project_EcucValues.arxml#/ETAS_Project/EcucModuleConfigurationValuess/CanIf/CanIfDispatchCfg?type=EcucContainerValue</SD>
+<SD GID="editorID">com.bosch.autosartool.bsw.editor.ar4x.bswPropertiesEditor</SD>
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+<SD GID="Resource">/NewProjectFromScratch/ApplicationECU_Project_EcucValues.arxml</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="QUALIFIEDNAME">/ETAS_Project/EcucModuleConfigurationValuess/CanIf/CanIfDispatchCfg</SD>
+<SD GID="URI">platform:/resource/NewProjectFromScratch/ApplicationECU_Project_EcucValues.arxml#/ETAS_Project/EcucModuleConfigurationValuess/CanIf/CanIfDispatchCfg?type=EcucContainerValue</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="oAW Validations" S="c52bd6841f201218bb6024d5c65fc81d" T="2024-02-29T13:52:29.091+0100">
+<SHORT-NAME>RTA-BSW_96</SHORT-NAME>
+<DESC>
+<L-2 L="EN">ComSignal [ S_ApplicationECU_SG_TestResult_Tx_Can_Network_Channel_CAN_Tx ] :is Configured with Transfer Property[TRIGGERED] then the IPdu [IP_ApplicationECU_TestResult_Tx_Can_Network_Channel_CAN_Tx]'stransmission mode should be DIRECT/MIXED/MIXED_PHASE_SHIFT in False/True mode</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">ApplicationECU_Project_EcucValues.arxml</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="editorInputUri">platform:/resource/NewProjectFromScratch/ApplicationECU_Project_EcucValues.arxml#/ETAS_Project/EcucModuleConfigurationValuess/Com/ComConfig/S_ApplicationECU_SG_TestResult_Tx_Can_Network_Channel_CAN_Tx?type=EcucContainerValue</SD>
+<SD GID="editorID">com.bosch.autosartool.bsw.editor.ar4x.bswPropertiesEditor</SD>
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+<SD GID="Resource">/NewProjectFromScratch/ApplicationECU_Project_EcucValues.arxml</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="QUALIFIEDNAME">/ETAS_Project/EcucModuleConfigurationValuess/Com/ComConfig/S_ApplicationECU_SG_TestResult_Tx_Can_Network_Channel_CAN_Tx</SD>
+<SD GID="URI">platform:/resource/NewProjectFromScratch/ApplicationECU_Project_EcucValues.arxml#/ETAS_Project/EcucModuleConfigurationValuess/Com/ComConfig/S_ApplicationECU_SG_TestResult_Tx_Can_Network_Channel_CAN_Tx?type=EcucContainerValue</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="BCT013" S="100eac779a5ce5d511f43f46004491e2" T="2024-02-29T13:52:21.948+0100">
+<SHORT-NAME>RTA-BSW_97</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Invalid field: There is no rule/definition for the configured element "CompilerRbArRelease".</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">ecu_config/bsw/integrationCfg/Compiler.arxml</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="editorInputUri">platform:/resource/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Compiler.arxml#/RB/UBK/Project/EcucModuleConfigurationValuess/Compiler/CompilerRbSettings_0/@parameterValues.0?type=EcucTextualParamValue</SD>
+<SD GID="editorID">com.bosch.autosartool.bsw.editor.ar4x.bswPropertiesEditor</SD>
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+<SD GID="Resource">/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Compiler.arxml</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="QUALIFIEDNAME">/RB/UBK/Project/EcucModuleConfigurationValuess/Compiler/CompilerRbSettings_0/@parameterValues.0</SD>
+<SD GID="URI">platform:/resource/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Compiler.arxml#/RB/UBK/Project/EcucModuleConfigurationValuess/Compiler/CompilerRbSettings_0/@parameterValues.0?type=EcucTextualParamValue</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="oAW Validations" S="eeeffcc30d3e11c0b8130cb5a316d99d" T="2024-02-29T13:52:37.984+0100">
+<SHORT-NAME>RTA-BSW_98</SHORT-NAME>
+<DESC>
+<L-2 L="EN">rba_ArxmlGen: The short name of executable entity "Fls_MainFunction" with category "Schedulable" of component "Fls" doesn't starts with the prefix SE_</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">ecu_config/bsw/integrationCfg/Fls_BSWMD_EcucValues.arxml</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-BSW</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="editorInputUri">platform:/resource/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Fls_BSWMD_EcucValues.arxml#/RB/UBK/Project/EcucModuleConfigurationValuess/rba_ArxmlGen/Fls/Fls_MainFunction?type=EcucContainerValue</SD>
+<SD GID="editorID">com.bosch.autosartool.bsw.editor.ar4x.bswPropertiesEditor</SD>
+<SD GID="project_name">NewProjectFromScratch</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="KEY_FOR_FILTER">RTA-BSW</SD>
+<SD GID="Resource">/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Fls_BSWMD_EcucValues.arxml</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="QUALIFIEDNAME">/RB/UBK/Project/EcucModuleConfigurationValuess/rba_ArxmlGen/Fls/Fls_MainFunction</SD>
+<SD GID="URI">platform:/resource/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Fls_BSWMD_EcucValues.arxml#/RB/UBK/Project/EcucModuleConfigurationValuess/rba_ArxmlGen/Fls/Fls_MainFunction?type=EcucContainerValue</SD>
+</SDG>
+</LOG-ENTRY>
+</ULF-PROCESSING-LOG>

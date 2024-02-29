@@ -1,0 +1,1678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <ADMIN-DATA>
+    <DOC-REVISIONS>
+      <DOC-REVISION>
+        <ISSUED-BY>RB</ISSUED-BY>
+        <DATE>2022-11-10</DATE>
+      </DOC-REVISION>
+    </DOC-REVISIONS>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>AUTOSAR_Port</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>EcucModuleDefs</SHORT-NAME>
+          <ELEMENTS>
+            <!-- Module Definition: Port -->
+            <ECUC-MODULE-DEF>
+              <SHORT-NAME>Port</SHORT-NAME>
+              <LONG-NAME>
+                <L-4 L="EN">MCAL Port Driver</L-4>
+              </LONG-NAME>
+              <DESC>
+                <L-2 L="EN">Configuration of the MCAL module for uC ports.</L-2>
+              </DESC>
+              <CATEGORY>VENDOR_SPECIFIC_MODULE_DEFINITION</CATEGORY>
+              <ADMIN-DATA>
+                <DOC-REVISIONS>
+                  <DOC-REVISION>
+                    <REVISION-LABEL>4.5.0</REVISION-LABEL>
+                    <ISSUED-BY>AUTOSAR</ISSUED-BY>
+                    <DATE>2020-11-26</DATE>
+                  </DOC-REVISION>
+                  <DOC-REVISION>
+                    <REVISION-LABEL>4.0.0</REVISION-LABEL>
+                    <ISSUED-BY>RB</ISSUED-BY>
+                    <DATE>2020-10-23</DATE>
+                  </DOC-REVISION>
+                </DOC-REVISIONS>
+              </ADMIN-DATA>
+              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+              <POST-BUILD-VARIANT-SUPPORT>true</POST-BUILD-VARIANT-SUPPORT>
+              <REFINED-MODULE-DEF-REF DEST="ECUC-MODULE-DEF">/AUTOSAR/EcucDefs/Port</REFINED-MODULE-DEF-REF>
+              <SUPPORTED-CONFIG-VARIANTS>
+                <SUPPORTED-CONFIG-VARIANT>VARIANT-PRE-COMPILE</SUPPORTED-CONFIG-VARIANT>
+              </SUPPORTED-CONFIG-VARIANTS>
+              <CONTAINERS>
+                <!-- Container Definition: PortConfigSet -->
+                <ECUC-PARAM-CONF-CONTAINER-DEF>
+                  <SHORT-NAME>PortConfigSet</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Configuration data set</L-4>
+                  </LONG-NAME>
+                  <DESC>
+                    <L-2 L="EN">Defines one data set of post-build configuration. Which of these data sets is actually active is controlled by EcuM. Data sets can only be switched at initialization time.</L-2>
+                  </DESC>
+                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                  <SUB-CONTAINERS>
+                    <!-- Container Definition: PortContainer -->
+                    <ECUC-PARAM-CONF-CONTAINER-DEF>
+                      <SHORT-NAME>PortContainer</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">Port Container</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">Configuration of a single port, consisting of pins.<BR/>
+The scheme to be used is uC dependent: Port_&lt;PortIdx&gt;.<BR/>
+&lt;PortIdx&gt; specifies the index of the uC port.<BR/>
+PortIdx for ST uC: &lt;A-Z&gt;<BR/>
+PortIdx for IFX uC: &lt;00,01,...10,11...&gt;</L-2>
+                      </DESC>
+                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY-INFINITE>true</UPPER-MULTIPLICITY-INFINITE>
+                      <MULTIPLICITY-CONFIG-CLASSES>
+                        <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                      </MULTIPLICITY-CONFIG-CLASSES>
+                      <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                      <SUB-CONTAINERS>
+                        <!-- Container Definition: PortPin -->
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>PortPin</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Pin Container</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Configuration of an individual Port pin.</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY-INFINITE>true</UPPER-MULTIPLICITY-INFINITE>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <PARAMETERS>
+                            <!-- PARAMETER DEFINITION: PortPinDirection -->
+                            <ECUC-ENUMERATION-PARAM-DEF>
+                              <SHORT-NAME>PortPinDirection</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Direction</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Configuration of the initial Port pin direction (In or Out).</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <LITERALS>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>PORT_PIN_DIRECTION_IN</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">In</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>PORT_PIN_DIRECTION_OUT</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Out</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                              </LITERALS>
+                            </ECUC-ENUMERATION-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: PortPinDirectionChangeable -->
+                            <ECUC-BOOLEAN-PARAM-DEF>
+                              <SHORT-NAME>PortPinDirectionChangeable</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Direction changeable</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Enables/disables if a pin direction is changeable by Port_SetPinDirection API call<BR/>
+<BR/>
+If set to true there needs to be at least one input mode and one output mode configured for this pin container.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                            </ECUC-BOOLEAN-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: PortPinInitialMode -->
+                            <ECUC-STRING-PARAM-DEF>
+                              <SHORT-NAME>PortPinInitialMode</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Initial mode</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Configuration of the initial port pin mode. This mode will be active after Port_Init() function is called. The initial mode needs to be configured also as PortPinMode (PortPinMode contains all available modes and PortPinInitialMode selects the one which is initialized)<BR/>
+<BR/>
+Valid names are<BR/>
+PORT_PIN_MODE_INPUT_xxx<BR/>
+PORT_PIN_MODE_OUTPUT_xxx<BR/>
+<BR/>
+Since xxx depends on the current Machine Type please have a look at: <BR/>
+Port_Cfg.h (only available after successful SW build)<BR/>
+or<BR/>
+the JSON files in Port/src-java/port/devices/[ifx/st]<BR/>
+<BR/>
+There you can find all supported modes for the current Machine Type. If you configure an invalid string here the error message will also tell you which modes are supported on the current pin for the current Machine Type.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                <ECUC-STRING-PARAM-DEF-CONDITIONAL/>
+                              </ECUC-STRING-PARAM-DEF-VARIANTS>
+                            </ECUC-STRING-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: PortPinLevelValue -->
+                            <ECUC-ENUMERATION-PARAM-DEF>
+                              <SHORT-NAME>PortPinLevelValue</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Output Level</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Configuration of the initial pin output level. This tag is only needed if PORT_PIN_MODE_OUTPUT_DIO is present in PortPinMode tag. If a configuration has PORT_PIN_MODE_OUTPUT_DIO in the PortPinMode tag but the PortPinInitialMode tag contains another mode the PortPinLevelValue will be visible on the pin only after swichting the mode to PORT_PIN_MODE_OUTPUT_DIO.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <LITERALS>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>PORT_PIN_LEVEL_HIGH</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">High</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>PORT_PIN_LEVEL_LOW</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Low</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                              </LITERALS>
+                            </ECUC-ENUMERATION-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: PortPinMode -->
+                            <ECUC-STRING-PARAM-DEF>
+                              <SHORT-NAME>PortPinMode</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Mode</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Configuration of the allowed port pin modes, which can be set by Port_SetPinMode API call. See tag PortPinInitialMode for possible values.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY-INFINITE>true</UPPER-MULTIPLICITY-INFINITE>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                <ECUC-STRING-PARAM-DEF-CONDITIONAL/>
+                              </ECUC-STRING-PARAM-DEF-VARIANTS>
+                            </ECUC-STRING-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: PortPinModeChangeable -->
+                            <ECUC-BOOLEAN-PARAM-DEF>
+                              <SHORT-NAME>PortPinModeChangeable</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Mode changeable</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Enables/disables if a pin mode is changeable by Port_SetPinMode API call. The possible modes which can be used in Port_SetPinMode API call are configured under PortPinMode</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                            </ECUC-BOOLEAN-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: PortPinRbAllowOutputOverwrite -->
+                            <ECUC-BOOLEAN-PARAM-DEF>
+                              <SHORT-NAME>PortPinRbAllowOutputOverwrite</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Allow override by Output signal</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">This tag needs to be set to true for an input pin, to allow an additional output signal in parallel on the same physical port pin. By setting this tag to true the integrator confirms that an input and an output on the same pin is the intended configuration, and it is not a configuration error which would lead to a malfunction of the input configuration.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                            </ECUC-BOOLEAN-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: PortPinRbBootCtrlForward -->
+                            <ECUC-BOOLEAN-PARAM-DEF>
+                              <SHORT-NAME>PortPinRbBootCtrlForward</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Enable BootCtrl Forward</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">To be able to communicate with the voltage regulator on the PCB, rba_BootCrl needs to know which pins are used for communication with this device. This tag needs to be true for the following pins.<BR/>
+<BR/>
+SPI: SDO, SDI, CLK, CS<BR/>
+MSC: SIP, SIN, FCLP, FCLN, SDO, SSY</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                            </ECUC-BOOLEAN-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: PortPinRbCallbackEdgeSelection -->
+                            <ECUC-ENUMERATION-PARAM-DEF>
+                              <SHORT-NAME>PortPinRbCallbackEdgeSelection</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Callback edge selection</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Selects on which edge of the signal a callback should be called</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <LITERALS>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>PORT_PIN_CALLBACK_EDGE_RISING</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">RISING</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>PORT_PIN_CALLBACK_EDGE_FALLING</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">FALLING</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>PORT_PIN_CALLBACK_EDGE_BOTH</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">BOTH</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                              </LITERALS>
+                            </ECUC-ENUMERATION-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: PortPinRbCallbackFunctionName -->
+                            <ECUC-STRING-PARAM-DEF>
+                              <SHORT-NAME>PortPinRbCallbackFunctionName</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Callback function name</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">The name of the callback function to be called.<BR/>
+This needs to be a void void function.<BR/>
+Do not append () to the function name</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                <ECUC-STRING-PARAM-DEF-CONDITIONAL/>
+                              </ECUC-STRING-PARAM-DEF-VARIANTS>
+                            </ECUC-STRING-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: PortPinRbCallbackHeaderName -->
+                            <ECUC-STRING-PARAM-DEF>
+                              <SHORT-NAME>PortPinRbCallbackHeaderName</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Callback header name</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">The name of the header file where the extern decleration for the function configured in tag PortPinRbCallbackFunctionName can be found.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                <ECUC-STRING-PARAM-DEF-CONDITIONAL/>
+                              </ECUC-STRING-PARAM-DEF-VARIANTS>
+                            </ECUC-STRING-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: PortPinRbCharacteristicOutput -->
+                            <ECUC-ENUMERATION-PARAM-DEF>
+                              <SHORT-NAME>PortPinRbCharacteristicOutput</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Output characteristic</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Configuration of the Port pin output characteristics (PushPull or OpenDrain).</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <LITERALS>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>PORT_PIN_CHARACTERISTIC_OUTPUT_PUSHPULL</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">PushPull</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>PORT_PIN_CHARACTERISTIC_OUTPUT_OPENDRAIN</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">OpenDrain</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>PORT_PIN_CHARACTERISTIC_OUTPUT_OPENSOURCE</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">OpenSource</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                              </LITERALS>
+                            </ECUC-ENUMERATION-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: PortPinRbCustSpecName -->
+                            <ECUC-STRING-PARAM-DEF>
+                              <SHORT-NAME>PortPinRbCustSpecName</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Customerspecific name</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Customer-specific name of this signal. If present, this name is visible in the report.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                <ECUC-STRING-PARAM-DEF-CONDITIONAL/>
+                              </ECUC-STRING-PARAM-DEF-VARIANTS>
+                            </ECUC-STRING-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: PortPinRbHwConnector -->
+                            <ECUC-STRING-PARAM-DEF>
+                              <SHORT-NAME>PortPinRbHwConnector</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Hardware connector</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Specifies to which port and which pin on the uC this signal is connected to.<BR/>
+The scheme to be used is a (uC dependent) BSW typical generic HW name: PORT_&lt;PortIdx&gt;_&lt;PinIdx&gt;.<BR/>
+&lt;PortIdx&gt; specifies the index of the uC port. &lt;PinIdx&gt; specifies the index of the particular pin.<BR/>
+PortIdx for ST uC: &lt;A-Z&gt;<BR/>
+PortIdx for IFX uC: &lt;00,01,...10,11...&gt;<BR/>
+PinIdx: two decimals (This means a leading &apos;0&apos; must be used for numbers &lt; 10)<BR/>
+</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <ORIGIN>RB</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                <ECUC-STRING-PARAM-DEF-CONDITIONAL/>
+                              </ECUC-STRING-PARAM-DEF-VARIANTS>
+                            </ECUC-STRING-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: PortPinRbInputLevel -->
+                            <ECUC-ENUMERATION-PARAM-DEF>
+                              <SHORT-NAME>PortPinRbInputLevel</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Input Level</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Selects the used input level for the pin</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <LITERALS>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>PORT_PIN_INPUT_LEVEL_AUTOMOTIVE</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">AUTOMOTIVE</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>PORT_PIN_INPUT_LEVEL_TTL</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">TTL</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>PORT_PIN_INPUT_LEVEL_CMOS</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">CMOS</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>PORT_PIN_INPUT_LEVEL_RGMII</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">RGMII (only IFX)</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                              </LITERALS>
+                            </ECUC-ENUMERATION-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: PortPinRbModeFunction -->
+                            <ECUC-STRING-PARAM-DEF>
+                              <SHORT-NAME>PortPinRbModeFunction</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Mode function</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Only configure this tag if the Port script tells you to do so. Then the script will also print the possible values for the tag.
+
+This tag is needed for example if PORT_PIN_MODE_OUTPUT_SPI for tag PortPinInitialMode or PortPinMode is ambigious. This happens if the port pin has more than one alternate function for SPI output (for ex. A DATA or CLK output). In this case the port configuration script will abort and print out the possible alternatives which needs then configured here.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY-INFINITE>true</UPPER-MULTIPLICITY-INFINITE>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                <ECUC-STRING-PARAM-DEF-CONDITIONAL/>
+                              </ECUC-STRING-PARAM-DEF-VARIANTS>
+                            </ECUC-STRING-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: PortPinRbPullConfig -->
+                            <ECUC-ENUMERATION-PARAM-DEF>
+                              <SHORT-NAME>PortPinRbPullConfig</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Pull resistor configuration</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Configuration of the Port pin input characteristics (PullUp, PullDown, NoPull).</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <LITERALS>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>PORT_PIN_CHARACTERISTIC_INPUT_PULLUP</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">PullUp</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>PORT_PIN_CHARACTERISTIC_INPUT_PULLDOWN</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">PullDown</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>PORT_PIN_CHARACTERISTIC_INPUT_NOPULL</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">NoPull</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                              </LITERALS>
+                            </ECUC-ENUMERATION-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: PortPinRbSafeMode -->
+                            <ECUC-BOOLEAN-PARAM-DEF>
+                              <SHORT-NAME>PortPinRbSafeMode</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Safe Mode</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">If set to true for a output pin, the output buffer of the pin is disable in case the chip enters safe mode</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                            </ECUC-BOOLEAN-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: PortPinStrength -->
+                            <ECUC-ENUMERATION-PARAM-DEF>
+                              <SHORT-NAME>PortPinStrength</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Output strength</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Output driver strength. This is the driver strength wich is mentioned in the hardware manual of the device datasheet</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <LITERALS>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>PORT_PIN_STRENGTH_ST_WEAK</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">ST Weak</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>PORT_PIN_STRENGTH_ST_MEDIUM</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">ST Medium</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>PORT_PIN_STRENGTH_ST_STRONG</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">ST Strong</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>PORT_PIN_STRENGTH_ST_VERY_STRONG</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">ST Very Stong</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>PORT_PIN_STRENGTH_ST_ULTRA_STRONG</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">ST Ultra Stong</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>PORT_PIN_STRENGTH_IFX_MEDIUM</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">IFX Medium</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>PORT_PIN_STRENGTH_IFX_MEDIUM_SHARP_EDGE</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">IFX Medium Sharp Edge</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>PORT_PIN_STRENGTH_IFX_STRONG_MEDIUM_EDGE</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">IFX Strong Medium Edge</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>PORT_PIN_STRENGTH_IFX_STRONG_SHARP_EDGE</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">IFX Strong Sharp</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>PORT_PIN_STRENGTH_IFX_RGMII</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">IFX RGMII</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                              </LITERALS>
+                            </ECUC-ENUMERATION-PARAM-DEF>
+                          </PARAMETERS>
+                          <SUB-CONTAINERS>
+                            <!-- Container Definition: PortRbIfxLvdsConfig -->
+                            <ECUC-PARAM-CONF-CONTAINER-DEF>
+                              <SHORT-NAME>PortRbIfxLvdsConfig</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">IFX LVDS configuration</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Container for IFX LVDS configuration</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <PARAMETERS>
+                                <!-- PARAMETER DEFINITION: PortRbIfxLvdsMode -->
+                                <ECUC-BOOLEAN-PARAM-DEF>
+                                  <SHORT-NAME>PortRbIfxLvdsMode</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Enable LVDS Mode</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Selects LVDS mode for the pin, since LVDS needs two pins this tag must be configured for both pins the positiv and the negativ pin</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                </ECUC-BOOLEAN-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: PortRbIfxLvds_LVDSM -->
+                                <ECUC-ENUMERATION-PARAM-DEF>
+                                  <SHORT-NAME>PortRbIfxLvds_LVDSM</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">LVDS-M Mode</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">LVDS-M Mode<BR/>
+Selects reduced frequency mode “LVDS-M” of the receiver. This mode reduces the static current of the RX pad. The max data rate is reduced to 160 Mbps (80 MHz).</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <LITERALS>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>LVDS_H_MODE</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">LVDS-H Mode</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>LVDS_M_MODE</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">LVDS-M Mode</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                  </LITERALS>
+                                </ECUC-ENUMERATION-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: PortRbIfxLvds_REN_CTRL -->
+                                <ECUC-ENUMERATION-PARAM-DEF>
+                                  <SHORT-NAME>PortRbIfxLvds_REN_CTRL</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">LVDS RX_EN controller</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">LVDS RX_EN controller<BR/>
+The LVDS RX_EN control function can be selected from the Port (default) or HSCT module (where this is connected).</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <LITERALS>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>PORT_CONTROLLED</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Port controlled</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>HSCT_CONTROLLED</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">HSCT controlled</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                  </LITERALS>
+                                </ECUC-ENUMERATION-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: PortRbIfxLvds_TEN_CTRL -->
+                                <ECUC-ENUMERATION-PARAM-DEF>
+                                  <SHORT-NAME>PortRbIfxLvds_TEN_CTRL</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">LVDS TX_EN controller</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">LVDS TX_EN controller<BR/>
+The LVDS TX_EN control function can be selected from the Port (default) or HSCT module (where this is connected).</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <LITERALS>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>PORT_CONTROLLED</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Port controlled</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>HSCT_CONTROLLED</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">HSCT controlled</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                  </LITERALS>
+                                </ECUC-ENUMERATION-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: PortRbIfxLvds_TERM -->
+                                <ECUC-ENUMERATION-PARAM-DEF>
+                                  <SHORT-NAME>PortRbIfxLvds_TERM</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Receiver Termination Mode</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Select Receiver Termination Mode<BR/>
+Selects a suitable internal load resistor between both pads.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <LITERALS>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>EXT_TERM</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">external termination - on the PCB</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>INT_TERM</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">100 Ohm Receiver internal termination</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                  </LITERALS>
+                                </ECUC-ENUMERATION-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: PortRbIfxLvds_TX_PWDPD -->
+                                <ECUC-ENUMERATION-PARAM-DEF>
+                                  <SHORT-NAME>PortRbIfxLvds_TX_PWDPD</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">TX Power down pull down</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Enable TX Power down pull down.<BR/>
+This function disables or enables the LVDS pull down resistor. The<BR/>
+application code must disable TX power down pull down resistor with a power up. With a LVDS Power Down configuration the pull down function must be enabled, if required.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <LITERALS>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>DISABLE_TX_POWER_DOWN_PD_RESISTOR</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">disabled TX Power down pull down resistor</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>ENABLE_TX_POWER_DOWN_PD_RESISTOR</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">enabled TX Power down pull down resistor</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                  </LITERALS>
+                                </ECUC-ENUMERATION-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: PortRbIfxLvds_VDIFFADJ -->
+                                <ECUC-ENUMERATION-PARAM-DEF>
+                                  <SHORT-NAME>PortRbIfxLvds_VDIFFADJ</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">LVDS Output Amplitude Tuning</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">LVDS Output Amplitude Tuning<BR/>
+With these two configuration bits the LVDS output current/amplitude<BR/>
+can be adjusted. The voltage swing depending on VDIFFADJ setting is documented in the Data Sheet, see parameter V_OD.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <LITERALS>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>VAL_0</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">00</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>VAL_1</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">01</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>VAL_2</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">10</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>VAL_3</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">11</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                  </LITERALS>
+                                </ECUC-ENUMERATION-PARAM-DEF>
+                              </PARAMETERS>
+                            </ECUC-PARAM-CONF-CONTAINER-DEF>
+                            <!-- Container Definition: PortRbStLvdsConfig -->
+                            <ECUC-PARAM-CONF-CONTAINER-DEF>
+                              <SHORT-NAME>PortRbStLvdsConfig</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">ST LVDS configuration</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Container for ST LVDS configuration</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <PARAMETERS>
+                                <!-- PARAMETER DEFINITION: PortRbStLvdsMode -->
+                                <ECUC-BOOLEAN-PARAM-DEF>
+                                  <SHORT-NAME>PortRbStLvdsMode</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Enable LVDS Mode</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Selects LVDS mode for the pin, since LVDS needs two pins this tag must be configured for both pins the positiv and the negativ pin</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                </ECUC-BOOLEAN-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: PortRbStLvdsOdcConfig -->
+                                <ECUC-ENUMERATION-PARAM-DEF>
+                                  <SHORT-NAME>PortRbStLvdsOdcConfig</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Output Drive Control</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Configures the output driver to be used for LVDS output port pins. Therefore this only needs to be configured for OUTPUT pins.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <LITERALS>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>MSC_LVDS</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Microsecond Channel LVDS</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>LFAST_LVDS</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">LFAST LVDS</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                  </LITERALS>
+                                </ECUC-ENUMERATION-PARAM-DEF>
+                              </PARAMETERS>
+                            </ECUC-PARAM-CONF-CONTAINER-DEF>
+                          </SUB-CONTAINERS>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                      </SUB-CONTAINERS>
+                    </ECUC-PARAM-CONF-CONTAINER-DEF>
+                    <!-- Container Definition: PortRbMuxContainer -->
+                    <ECUC-PARAM-CONF-CONTAINER-DEF>
+                      <SHORT-NAME>PortRbMuxContainer</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">Port Multiplexer Container</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">This container is only used for ST controllers with SIUL hardware unit. Use this container to make connections described on tab Input Muxing in Centauri_Pinout.xlsx</L-2>
+                      </DESC>
+                      <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY-INFINITE>true</UPPER-MULTIPLICITY-INFINITE>
+                      <MULTIPLICITY-CONFIG-CLASSES>
+                        <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                      </MULTIPLICITY-CONFIG-CLASSES>
+                      <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                      <PARAMETERS>
+                        <!-- PARAMETER DEFINITION: PortRbInput -->
+                        <ECUC-STRING-PARAM-DEF>
+                          <SHORT-NAME>PortRbInput</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Input</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Content of column Input form tab Input Muxing in Centauri_Pinout.xlsx</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <ORIGIN>RB</ORIGIN>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                          <ECUC-STRING-PARAM-DEF-VARIANTS>
+                            <ECUC-STRING-PARAM-DEF-CONDITIONAL/>
+                          </ECUC-STRING-PARAM-DEF-VARIANTS>
+                        </ECUC-STRING-PARAM-DEF>
+                        <!-- PARAMETER DEFINITION: PortRbInstance -->
+                        <ECUC-STRING-PARAM-DEF>
+                          <SHORT-NAME>PortRbInstance</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Instance</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Content of column Instance form tab Input Muxing in Centauri_Pinout.xlsx</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <ORIGIN>RB</ORIGIN>
+                          <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                          <ECUC-STRING-PARAM-DEF-VARIANTS>
+                            <ECUC-STRING-PARAM-DEF-CONDITIONAL/>
+                          </ECUC-STRING-PARAM-DEF-VARIANTS>
+                        </ECUC-STRING-PARAM-DEF>
+                        <!-- PARAMETER DEFINITION: PortRbSourceInstance -->
+                        <ECUC-STRING-PARAM-DEF>
+                          <SHORT-NAME>PortRbSourceInstance</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Source Instance</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Content of column Source Instance form tab Input Muxing in Centauri_Pinout.xlsx</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <ORIGIN>RB</ORIGIN>
+                          <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                          <ECUC-STRING-PARAM-DEF-VARIANTS>
+                            <ECUC-STRING-PARAM-DEF-CONDITIONAL/>
+                          </ECUC-STRING-PARAM-DEF-VARIANTS>
+                        </ECUC-STRING-PARAM-DEF>
+                        <!-- PARAMETER DEFINITION: PortRbSourceSignal -->
+                        <ECUC-STRING-PARAM-DEF>
+                          <SHORT-NAME>PortRbSourceSignal</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Source Signal</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Content of column Source Signal form tab Input Muxing in Centauri_Pinout.xlsx</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <ORIGIN>RB</ORIGIN>
+                          <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                          <ECUC-STRING-PARAM-DEF-VARIANTS>
+                            <ECUC-STRING-PARAM-DEF-CONDITIONAL/>
+                          </ECUC-STRING-PARAM-DEF-VARIANTS>
+                        </ECUC-STRING-PARAM-DEF>
+                      </PARAMETERS>
+                    </ECUC-PARAM-CONF-CONTAINER-DEF>
+                    <!-- Container Definition: PortRbPowerDomain -->
+                    <ECUC-PARAM-CONF-CONTAINER-DEF>
+                      <SHORT-NAME>PortRbPowerDomain</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">Port Power Domain</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">This container is only used for IFX controllers.<BR/>
+If tag PortConfigSet-&gt;PortContainer-&gt;PortPin-&gt;PortPinRbInputLevel is set to TTL the voltage of the power domain of this port pin needs to be configured.<BR/>
+<BR/>
+Configure this tag only if the Port script aborts and shows an error that this contanier should be configured.</L-2>
+                      </DESC>
+                      <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY-INFINITE>true</UPPER-MULTIPLICITY-INFINITE>
+                      <MULTIPLICITY-CONFIG-CLASSES>
+                        <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                      </MULTIPLICITY-CONFIG-CLASSES>
+                      <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                      <PARAMETERS>
+                        <!-- PARAMETER DEFINITION: PortRbPadSupplyVoltage -->
+                        <ECUC-ENUMERATION-PARAM-DEF>
+                          <SHORT-NAME>PortRbPadSupplyVoltage</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Pad Supply Voltage</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Select the pad supply voltage for the current power domain</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <ORIGIN>RB</ORIGIN>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                          <LITERALS>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>V5</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">5 Volt</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>V3_3</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">3.3 Volt</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                          </LITERALS>
+                        </ECUC-ENUMERATION-PARAM-DEF>
+                      </PARAMETERS>
+                    </ECUC-PARAM-CONF-CONTAINER-DEF>
+                  </SUB-CONTAINERS>
+                </ECUC-PARAM-CONF-CONTAINER-DEF>
+                <!-- Container Definition: PortGeneral -->
+                <ECUC-PARAM-CONF-CONTAINER-DEF>
+                  <SHORT-NAME>PortGeneral</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">General settings</L-4>
+                  </LONG-NAME>
+                  <DESC>
+                    <L-2 L="EN">Configuration of general aspects of the Port module.</L-2>
+                  </DESC>
+                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                  <PARAMETERS>
+                    <!-- PARAMETER DEFINITION: PortDevErrorDetect -->
+                    <ECUC-BOOLEAN-PARAM-DEF>
+                      <SHORT-NAME>PortDevErrorDetect</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">Development error detection</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">Enables/disables the detection and notification of development errors. If this parameter is enabled, then extended error checking is performed during runtime</L-2>
+                      </DESC>
+                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                    </ECUC-BOOLEAN-PARAM-DEF>
+                  </PARAMETERS>
+                </ECUC-PARAM-CONF-CONTAINER-DEF>
+                <!-- Container Definition: PortRbPartition -->
+                <ECUC-PARAM-CONF-CONTAINER-DEF>
+                  <SHORT-NAME>PortRbPartition</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Port Partition (ST Devices)</L-4>
+                  </LONG-NAME>
+                  <DESC>
+                    <L-2 L="EN">Shortname of partition. This shortname can be used with the following APIs Port_Rb_ResetPinToInitialState and Port_Rb_IsResourceValid<BR/>
+<BR/>
+This container is only needed in Partition Manager usecases, for the software running in the Partition Manager (not in the partitions).<BR/>
+<BR/>
+When this configuration exists then the following APIs can be used: Port_Rb_ResetPinToInitialState and Port_Rb_IsResourceValid<BR/>
+<BR/>
+This container is only supported for ST devices</L-2>
+                  </DESC>
+                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                  <UPPER-MULTIPLICITY-INFINITE>true</UPPER-MULTIPLICITY-INFINITE>
+                  <SUB-CONTAINERS>
+                    <!-- Container Definition: PortRbInputMuxResources -->
+                    <ECUC-PARAM-CONF-CONTAINER-DEF>
+                      <SHORT-NAME>PortRbInputMuxResources</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">Input Mux Resources</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">Container to collect all input multiplexer settings which are allowed to be written in the current partition.</L-2>
+                      </DESC>
+                      <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <SUB-CONTAINERS>
+                        <!-- Container Definition: PortRbInputMuxResource -->
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>PortRbInputMuxResource</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Input Mux Resource</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Container for one input multiplexer. The information can be found in the IO_DEFINITION.xlsx attached to the spec on the sheet Input Muxing.</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY-INFINITE>true</UPPER-MULTIPLICITY-INFINITE>
+                          <PARAMETERS>
+                            <!-- PARAMETER DEFINITION: PortRbMuxInput -->
+                            <ECUC-STRING-PARAM-DEF>
+                              <SHORT-NAME>PortRbMuxInput</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Mux Input</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Input column in xlsx on the sheet Input Muxing.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <ORIGIN>RB</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                <ECUC-STRING-PARAM-DEF-CONDITIONAL/>
+                              </ECUC-STRING-PARAM-DEF-VARIANTS>
+                            </ECUC-STRING-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: PortRbMuxInstance -->
+                            <ECUC-STRING-PARAM-DEF>
+                              <SHORT-NAME>PortRbMuxInstance</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Mux Instance</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Instance column in xlsx on the sheet Input Muxing.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <ORIGIN>RB</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                <ECUC-STRING-PARAM-DEF-CONDITIONAL/>
+                              </ECUC-STRING-PARAM-DEF-VARIANTS>
+                            </ECUC-STRING-PARAM-DEF>
+                          </PARAMETERS>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                      </SUB-CONTAINERS>
+                    </ECUC-PARAM-CONF-CONTAINER-DEF>
+                    <!-- Container Definition: PortRbPortResources -->
+                    <ECUC-PARAM-CONF-CONTAINER-DEF>
+                      <SHORT-NAME>PortRbPortResources</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">Port Resources</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">Container to collect all PortPins which are allowed to be written in the current partition. The configured pins here are all processed by the Port_Rb_ResetPinToInitialState API</L-2>
+                      </DESC>
+                      <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <PARAMETERS>
+                        <!-- PARAMETER DEFINITION: PortRbPortResource -->
+                        <ECUC-STRING-PARAM-DEF>
+                          <SHORT-NAME>PortRbPortResource</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Port Resource</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Port connector to specify the allowed pins<BR/>
+<BR/>
+Format: PORT_&lt;PortIdx&gt;_&lt;PinIdx&gt;.<BR/>
+&lt;PortIdx&gt; specifies the index of the uC port.<BR/>
+&lt;PinIdx&gt; specifies the index of the particular pin.<BR/>
+<BR/>
+PortIdx: &lt;A-Z&gt;<BR/>
+PinIdx: two decimals (This means a leading &apos;0&apos; must be used for numbers &lt; 10)</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY-INFINITE>true</UPPER-MULTIPLICITY-INFINITE>
+                          <ORIGIN>RB</ORIGIN>
+                          <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                          <ECUC-STRING-PARAM-DEF-VARIANTS>
+                            <ECUC-STRING-PARAM-DEF-CONDITIONAL/>
+                          </ECUC-STRING-PARAM-DEF-VARIANTS>
+                        </ECUC-STRING-PARAM-DEF>
+                      </PARAMETERS>
+                    </ECUC-PARAM-CONF-CONTAINER-DEF>
+                  </SUB-CONTAINERS>
+                </ECUC-PARAM-CONF-CONTAINER-DEF>
+              </CONTAINERS>
+            </ECUC-MODULE-DEF>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

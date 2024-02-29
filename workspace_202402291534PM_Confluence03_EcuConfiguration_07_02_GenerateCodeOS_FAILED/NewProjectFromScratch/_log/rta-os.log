@@ -1,0 +1,1907 @@
+Deploying OS Paramdef started
+Reading options information
+Creating new VSMD
+C:\ETAS\RTA-CAR_12.2.0\RTA-CAR\workspace\NewProjectFromScratch\ecu_config\paramdefs\Os_EcucParamDef.arxml
+Done
+
+
+Time taken to deploy OS Paramdef: 8319 ms.
+Deploying OS Ecuc Values started
+Loading OS Paramdef
+ecu_config\os\internal\Os_EcucValues.arxml
+Done
+Time taken to deploy OS EcucValues: 147 ms.
+********************************************************************************
+Build Execution started
+********************************************************************************
+Tool Version : RTA-CAR 12.2.0 
+Tool Build Id :20230905_1800
+Date : Thu Feb 29 15:00:54 CET 2024
+Project : NewProjectFromScratch
+********************************************************************************
+
+********************************************************************************
+Project clean execution has started at 15:00:55:140 hh:mm:ss:ms 
+********************************************************************************
+Clean action: RTA_OS 
+********************************************************************************
+Project clean execution has been completed
+Time taken to run Project Clean :: 00:00:00:039 hh:mm:ss:ms 
+********************************************************************************
+********************************************************************************
+Main build execution has started at 15:01:00:212 hh:mm:ss:ms 
+********************************************************************************
+Execute action: RTA_OS 
+********************************************************************************
+RTA-OS Code Generator 
+Version 12.2.0.35369, Copyright ¸ ETAS 2023
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/BswM_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/BswM_ModeMapping.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/EcuM_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/ComM_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/Com_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Bfx_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/BswM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/ComM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Com_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/EcuM_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/EcuM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Fls_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/PduR_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/PduR_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/rba_BswSrv_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/rba_DiagLib_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/ComM_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/rba_DiagLib_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Can_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Compiler.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Fls_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Fls_BSWMD_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Platform.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/CanIf_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/CanSM_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/ComM_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/Com_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/PduR_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/rba_BswSrv_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/CanIf/integration/Can_GeneralTypes.arxml'.
+Selected target VRTA[MinGW] V3.0.51.2700
+Error: The parameter called [Activation] for [.../Os/OsTask] 'OsTaskAutoStart' must have a value specified.
+ (Location = [Novalue Parameter(/Os/OsTask/OsTaskActivation)])
+Error: The parameter called [Priority] for [.../Os/OsTask] 'OsTaskAutoStart' must have a value specified.
+ (Location = [Novalue Parameter(/Os/OsTask/OsTaskPriority)])
+Error: The parameter called [Schedule] for [.../Os/OsTask] 'OsTaskAutoStart' must have a value specified.
+ (Location = [Novalue Parameter(/Os/OsTask/OsTaskSchedule)])
+Errors: 3, Warnings: 39.
+Command: [C:/ETAS/RTA-CAR_12.2.0/RTA-OS_12.2.0/bin/RTAOSGen.exe,  --ar_version:R22-11, --output:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/os, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/Compiler, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/Compiler/integration, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/Rba_BswSrv/api, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/Rba_BswSrv/src, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/integration/Memmap, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/integration/SchM, , , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/BswM_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/BswM_ModeMapping.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/EcuM_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/ComM_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/Com_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Bfx_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/BswM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/ComM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Com_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/EcuM_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/EcuM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Fls_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/PduR_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/PduR_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/rba_BswSrv_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/rba_DiagLib_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/ComM_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/rba_DiagLib_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Can_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Compiler.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Fls_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Fls_BSWMD_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Platform.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/CanIf_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/CanSM_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/ComM_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/Com_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/PduR_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/rba_BswSrv_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/os/internal/Os_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/CanIf/integration/Can_GeneralTypes.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/osNeeds.arxml, , --build:clean]
+Execution failed with error
+Execution of action RTA_OS failed
+********************************************************************************
+Post handle is skipped due to previous errors
+
+Build Summary 
+********************************************************************************
+- RTA_OS --> Error (Executed for 00:00:04:120 hh:mm:ss:ms)
+Execution failed with error
+Time taken for the complete build: 00:00:05:627
+********************************************************************************
+Build Execution started
+********************************************************************************
+Tool Version : RTA-CAR 12.2.0 
+Tool Build Id :20230905_1800
+Date : Thu Feb 29 15:04:12 CET 2024
+Project : NewProjectFromScratch
+********************************************************************************
+
+********************************************************************************
+Project clean execution has started at 15:04:12:996 hh:mm:ss:ms 
+********************************************************************************
+Clean action: RTA_OS 
+********************************************************************************
+Project clean execution has been completed
+Time taken to run Project Clean :: 00:00:00:007 hh:mm:ss:ms 
+********************************************************************************
+********************************************************************************
+Main build execution has started at 15:04:16:457 hh:mm:ss:ms 
+********************************************************************************
+Execute action: RTA_OS 
+********************************************************************************
+RTA-OS Code Generator 
+Version 12.2.0.35369, Copyright ¸ ETAS 2023
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/BswM_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/BswM_ModeMapping.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/EcuM_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/ComM_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/Com_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Bfx_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/BswM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/ComM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Com_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/EcuM_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/EcuM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Fls_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/PduR_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/PduR_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/rba_BswSrv_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/rba_DiagLib_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/ComM_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/rba_DiagLib_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Can_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Compiler.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Fls_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Fls_BSWMD_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Platform.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/CanIf_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/CanSM_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/ComM_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/Com_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/PduR_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/rba_BswSrv_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/CanIf/integration/Can_GeneralTypes.arxml'.
+Selected target VRTA[MinGW] V3.0.51.2700
+.......
+Error: Failed to compile 'GetExecutionTime.c':
+GetExecutionTime.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ReadPeripheral.c':
+ReadPeripheral.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_vectors.c':
+Os_vectors.c:47:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'SetScheduleTableAsync.c':
+SetScheduleTableAsync.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'DisableAllInterrupts.c':
+DisableAllInterrupts.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetVersionInfo.c':
+GetVersionInfo.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ValidateCounter.c':
+ValidateCounter.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_Trust.c':
+Os_Trust.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ProtectionSupport.c':
+ProtectionSupport.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'SetRelAlarm.c':
+SetRelAlarm.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetEvent.c':
+GetEvent.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ControlIdle.c':
+ControlIdle.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'TerminateTask.c':
+TerminateTask.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetTaskState.c':
+GetTaskState.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'SetEvent.c':
+SetEvent.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_Stack.c':
+Os_Stack.c:41:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'SyncScheduleTableRel.c':
+SyncScheduleTableRel.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_GetCurrentTPL.c':
+Os_GetCurrentTPL.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetElapsedCounterValue.c':
+GetElapsedCounterValue.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ClearEvent.c':
+ClearEvent.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetTaskMaxStackUsage.c':
+GetTaskMaxStackUsage.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'SetAbsAlarm.c':
+SetAbsAlarm.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'SyncScheduleTable.c':
+SyncScheduleTable.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_SetJmp.c':
+Os_SetJmp.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'CheckTaskMemoryAccess.c':
+CheckTaskMemoryAccess.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetCurrentApplicationID.c':
+GetCurrentApplicationID.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_GetCurrentIMask.c':
+Os_GetCurrentIMask.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetTaskMaxExecutionTime.c':
+GetTaskMaxExecutionTime.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_fsb.c':
+Os_fsb.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Schedule.c':
+Schedule.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetCounterValue.c':
+GetCounterValue.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'SuspendOSInterrupts.c':
+SuspendOSInterrupts.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'CheckObjectOwnership.c':
+CheckObjectOwnership.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_Cfg_KL.c':
+Os_Cfg_KL.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetTaskID.c':
+GetTaskID.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ResumeOSInterrupts.c':
+ResumeOSInterrupts.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'SuspendAllInterrupts.c':
+SuspendAllInterrupts.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_Cbk_ChangingTrust.c':
+Os_Cbk_ChangingTrust.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetApplicationState.c':
+GetApplicationState.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'CheckObjectAccess.c':
+CheckObjectAccess.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_Cfg_Counters.c':
+Os_Cfg_Counters.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetStackValue.c':
+GetStackValue.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ResumeAllInterrupts.c':
+ResumeAllInterrupts.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'StopScheduleTable.c':
+StopScheduleTable.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'CheckISRMemoryAccess.c':
+CheckISRMemoryAccess.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_Cbk_ChangedTrust.c':
+Os_Cbk_ChangedTrust.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_Cfg.c':
+Os_Cfg.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetApplicationID.c':
+GetApplicationID.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetStackUsage.c':
+GetStackUsage.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'RestartOS.c':
+RestartOS.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'StartScheduleTableSynchron.c':
+StartScheduleTableSynchron.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'NextScheduleTable.c':
+NextScheduleTable.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ChainTask.c':
+ChainTask.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'WritePeripheral.c':
+WritePeripheral.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetAlarmBase.c':
+GetAlarmBase.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetStackSize.c':
+GetStackSize.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ResetTaskMaxStackUsage.c':
+ResetTaskMaxStackUsage.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'StartScheduleTableRel.c':
+StartScheduleTableRel.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ModifyPeripheral.c':
+ModifyPeripheral.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'CancelAlarm.c':
+CancelAlarm.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'WaitEvent.c':
+WaitEvent.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetAlarm.c':
+GetAlarm.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetScheduleTableStatus.c':
+GetScheduleTableStatus.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'StartScheduleTableAbs.c':
+StartScheduleTableAbs.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ResetTaskMaxExecutionTime.c':
+ResetTaskMaxExecutionTime.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'InterruptSource.c':
+InterruptSource.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ValidateTask.c':
+ValidateTask.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'CallTrustedFunction.c':
+CallTrustedFunction.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetActiveApplicationMode.c':
+GetActiveApplicationMode.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetResource.c':
+GetResource.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'InShutdown.c':
+InShutdown.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ResetIsrMaxStackUsage.c':
+ResetIsrMaxStackUsage.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ValidateScheduleTable.c':
+ValidateScheduleTable.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'StartOS.c':
+StartOS.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'EnableAllInterrupts.c':
+EnableAllInterrupts.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'AllowAccess.c':
+AllowAccess.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetIsrMaxStackUsage.c':
+GetIsrMaxStackUsage.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ResetIsrMaxExecutionTime.c':
+ResetIsrMaxExecutionTime.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'IncrementCounter.c':
+IncrementCounter.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ValidateResource.c':
+ValidateResource.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'StackOverrunHook.c':
+StackOverrunHook.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'AdvanceCounter.c':
+AdvanceCounter.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ElapsedTime.c':
+ElapsedTime.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetIsrMaxExecutionTime.c':
+GetIsrMaxExecutionTime.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ReleaseResource.c':
+ReleaseResource.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Idle.c':
+Idle.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ValidateISR.c':
+ValidateISR.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ActivateTask.c':
+ActivateTask.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'DispatchTask.c':
+DispatchTask.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ShutdownOS.c':
+ShutdownOS.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetISRID.c':
+GetISRID.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'vrtaOSMonitorDevice.cpp':
+vrtaOSMonitorDevice.cpp:37:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'vrtaIdleHandling.cpp':
+vrtaIdleHandling.cpp:51:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'vrtaAppMain.c':
+vrtaAppMain.c:531:73: fatal error: Os_MemMap.h: No such file or directory
+ #include "Os_MemMap.h" /* [MISRA 2012 Dir 4.10] */ /*lint !e537 !e451 */
+                                                                         ^
+compilation terminated.
+Error: Failed to compile 'Os_wrapper.c':
+Os_wrapper.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Errors: 95, Warnings: 39.
+Command: [C:/ETAS/RTA-CAR_12.2.0/RTA-OS_12.2.0/bin/RTAOSGen.exe,  --ar_version:R22-11, --output:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/os, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/Compiler, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/Compiler/integration, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/Rba_BswSrv/api, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/Rba_BswSrv/src, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/integration/Memmap, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/integration/SchM, , , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/BswM_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/BswM_ModeMapping.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/EcuM_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/ComM_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/Com_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Bfx_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/BswM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/ComM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Com_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/EcuM_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/EcuM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Fls_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/PduR_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/PduR_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/rba_BswSrv_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/rba_DiagLib_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/ComM_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/rba_DiagLib_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Can_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Compiler.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Fls_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Fls_BSWMD_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Platform.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/CanIf_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/CanSM_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/ComM_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/Com_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/PduR_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/rba_BswSrv_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/os/internal/Os_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/CanIf/integration/Can_GeneralTypes.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/osNeeds.arxml, , --build:clean]
+Execution failed with error
+Execution of action RTA_OS failed
+********************************************************************************
+Post handle is skipped due to previous errors
+
+Build Summary 
+********************************************************************************
+- RTA_OS --> Error (Executed for 00:00:26:788 hh:mm:ss:ms)
+Execution failed with error
+Time taken for the complete build: 00:00:27:099
+********************************************************************************
+Build Execution started
+********************************************************************************
+Tool Version : RTA-CAR 12.2.0 
+Tool Build Id :20230905_1800
+Date : Thu Feb 29 15:06:51 CET 2024
+Project : NewProjectFromScratch
+********************************************************************************
+
+********************************************************************************
+Project clean execution has started at 15:06:51:065 hh:mm:ss:ms 
+********************************************************************************
+C:\ETAS\RTA-CAR_12.2.0\RTA-CAR\workspace\NewProjectFromScratch\src\os directory cleaned
+Clean action: RTA_OS 
+********************************************************************************
+Project clean execution has been completed
+Time taken to run Project Clean :: 00:00:00:011 hh:mm:ss:ms 
+********************************************************************************
+********************************************************************************
+Main build execution has started at 15:06:54:499 hh:mm:ss:ms 
+********************************************************************************
+Execute action: RTA_OS 
+********************************************************************************
+RTA-OS Code Generator 
+Version 12.2.0.35369, Copyright ¸ ETAS 2023
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/BswM_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/BswM_ModeMapping.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/EcuM_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/ComM_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/Com_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Bfx_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/BswM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/ComM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Com_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/EcuM_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/EcuM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Fls_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/PduR_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/PduR_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/rba_BswSrv_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/rba_DiagLib_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/ComM_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/rba_DiagLib_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Can_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Compiler.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Fls_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Fls_BSWMD_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Platform.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/CanIf_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/CanSM_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/ComM_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/Com_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/PduR_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/rba_BswSrv_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/CanIf/integration/Can_GeneralTypes.arxml'.
+Selected target VRTA[MinGW] V3.0.51.2700
+.......
+Error: Failed to compile 'SetScheduleTableAsync.c':
+SetScheduleTableAsync.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetVersionInfo.c':
+GetVersionInfo.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'DisableAllInterrupts.c':
+DisableAllInterrupts.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_vectors.c':
+Os_vectors.c:47:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetExecutionTime.c':
+GetExecutionTime.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ValidateCounter.c':
+ValidateCounter.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ReadPeripheral.c':
+ReadPeripheral.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetTaskState.c':
+GetTaskState.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'SetRelAlarm.c':
+SetRelAlarm.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ControlIdle.c':
+ControlIdle.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_Trust.c':
+Os_Trust.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'TerminateTask.c':
+TerminateTask.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetEvent.c':
+GetEvent.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ProtectionSupport.c':
+ProtectionSupport.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetTaskMaxStackUsage.c':
+GetTaskMaxStackUsage.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ClearEvent.c':
+ClearEvent.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'SetEvent.c':
+SetEvent.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_Stack.c':
+Os_Stack.c:41:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetElapsedCounterValue.c':
+GetElapsedCounterValue.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'SyncScheduleTableRel.c':
+SyncScheduleTableRel.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_GetCurrentTPL.c':
+Os_GetCurrentTPL.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'CheckTaskMemoryAccess.c':
+CheckTaskMemoryAccess.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetTaskMaxExecutionTime.c':
+GetTaskMaxExecutionTime.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'SetAbsAlarm.c':
+SetAbsAlarm.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'SyncScheduleTable.c':
+SyncScheduleTable.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_GetCurrentIMask.c':
+Os_GetCurrentIMask.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_SetJmp.c':
+Os_SetJmp.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetCurrentApplicationID.c':
+GetCurrentApplicationID.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'CheckObjectOwnership.c':
+CheckObjectOwnership.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetTaskID.c':
+GetTaskID.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Schedule.c':
+Schedule.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_Cfg_KL.c':
+Os_Cfg_KL.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'SuspendOSInterrupts.c':
+SuspendOSInterrupts.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_fsb.c':
+Os_fsb.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetCounterValue.c':
+GetCounterValue.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetStackValue.c':
+GetStackValue.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'CheckObjectAccess.c':
+CheckObjectAccess.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ResumeOSInterrupts.c':
+ResumeOSInterrupts.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_Cfg_Counters.c':
+Os_Cfg_Counters.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_Cbk_ChangingTrust.c':
+Os_Cbk_ChangingTrust.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'SuspendAllInterrupts.c':
+SuspendAllInterrupts.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetApplicationState.c':
+GetApplicationState.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetStackUsage.c':
+GetStackUsage.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'CheckISRMemoryAccess.c':
+CheckISRMemoryAccess.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ResumeAllInterrupts.c':
+ResumeAllInterrupts.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_Cfg.c':
+Os_Cfg.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'StopScheduleTable.c':
+StopScheduleTable.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_Cbk_ChangedTrust.c':
+Os_Cbk_ChangedTrust.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetApplicationID.c':
+GetApplicationID.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetStackSize.c':
+GetStackSize.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ChainTask.c':
+ChainTask.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'RestartOS.c':
+RestartOS.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'NextScheduleTable.c':
+NextScheduleTable.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'StartScheduleTableSynchron.c':
+StartScheduleTableSynchron.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'WritePeripheral.c':
+WritePeripheral.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetAlarmBase.c':
+GetAlarmBase.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetScheduleTableStatus.c':
+GetScheduleTableStatus.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'CancelAlarm.c':
+CancelAlarm.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ResetTaskMaxStackUsage.c':
+ResetTaskMaxStackUsage.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ModifyPeripheral.c':
+ModifyPeripheral.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'StartScheduleTableRel.c':
+StartScheduleTableRel.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetAlarm.c':
+GetAlarm.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'WaitEvent.c':
+WaitEvent.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetResource.c':
+GetResource.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'CallTrustedFunction.c':
+CallTrustedFunction.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ResetTaskMaxExecutionTime.c':
+ResetTaskMaxExecutionTime.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'InterruptSource.c':
+InterruptSource.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetActiveApplicationMode.c':
+GetActiveApplicationMode.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'StartScheduleTableAbs.c':
+StartScheduleTableAbs.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ValidateTask.c':
+ValidateTask.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetIsrMaxStackUsage.c':
+GetIsrMaxStackUsage.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'AllowAccess.c':
+AllowAccess.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ResetIsrMaxStackUsage.c':
+ResetIsrMaxStackUsage.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'EnableAllInterrupts.c':
+EnableAllInterrupts.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'InShutdown.c':
+InShutdown.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'StartOS.c':
+StartOS.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetIsrMaxExecutionTime.c':
+GetIsrMaxExecutionTime.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'AdvanceCounter.c':
+AdvanceCounter.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ValidateScheduleTable.c':
+ValidateScheduleTable.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ResetIsrMaxExecutionTime.c':
+ResetIsrMaxExecutionTime.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ElapsedTime.c':
+ElapsedTime.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'IncrementCounter.c':
+IncrementCounter.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetISRID.c':
+GetISRID.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'StackOverrunHook.c':
+StackOverrunHook.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ValidateResource.c':
+ValidateResource.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ActivateTask.c':
+ActivateTask.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ReleaseResource.c':
+ReleaseResource.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'DispatchTask.c':
+DispatchTask.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Idle.c':
+Idle.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ValidateISR.c':
+ValidateISR.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ShutdownOS.c':
+ShutdownOS.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'vrtaOSMonitorDevice.cpp':
+vrtaOSMonitorDevice.cpp:37:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'vrtaIdleHandling.cpp':
+vrtaIdleHandling.cpp:51:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'vrtaAppMain.c':
+vrtaAppMain.c:531:73: fatal error: Os_MemMap.h: No such file or directory
+ #include "Os_MemMap.h" /* [MISRA 2012 Dir 4.10] */ /*lint !e537 !e451 */
+                                                                         ^
+compilation terminated.
+Error: Failed to compile 'Os_wrapper.c':
+Os_wrapper.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Errors: 95, Warnings: 39.
+Command: [C:/ETAS/RTA-CAR_12.2.0/RTA-OS_12.2.0/bin/RTAOSGen.exe,  --ar_version:R22-11, --output:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/os, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/Compiler, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/Compiler/integration, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/Rba_BswSrv/api, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/Rba_BswSrv/src, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/integration/Memmap, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/integration/SchM, , , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/BswM_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/BswM_ModeMapping.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/EcuM_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/ComM_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/Com_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Bfx_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/BswM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/ComM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Com_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/EcuM_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/EcuM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Fls_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/PduR_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/PduR_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/rba_BswSrv_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/rba_DiagLib_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/ComM_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/rba_DiagLib_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Can_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Compiler.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Fls_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Fls_BSWMD_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Platform.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/CanIf_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/CanSM_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/ComM_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/Com_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/PduR_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/rba_BswSrv_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/os/internal/Os_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/CanIf/integration/Can_GeneralTypes.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/osNeeds.arxml, , --build:clean]
+Execution failed with error
+Execution of action RTA_OS failed
+********************************************************************************
+Post handle is skipped due to previous errors
+
+Build Summary 
+********************************************************************************
+- RTA_OS --> Error (Executed for 00:00:19:456 hh:mm:ss:ms)
+Execution failed with error
+Time taken for the complete build: 00:00:19:820
+********************************************************************************
+Build Execution started
+********************************************************************************
+Tool Version : RTA-CAR 12.2.0 
+Tool Build Id :20230905_1800
+Date : Thu Feb 29 15:13:25 CET 2024
+Project : NewProjectFromScratch
+********************************************************************************
+
+********************************************************************************
+Project clean execution has started at 15:13:25:208 hh:mm:ss:ms 
+********************************************************************************
+C:\ETAS\RTA-CAR_12.2.0\RTA-CAR\workspace\NewProjectFromScratch\src\os directory cleaned
+Clean action: RTA_OS 
+********************************************************************************
+Project clean execution has been completed
+Time taken to run Project Clean :: 00:00:00:011 hh:mm:ss:ms 
+********************************************************************************
+********************************************************************************
+Main build execution has started at 15:13:28:610 hh:mm:ss:ms 
+********************************************************************************
+Execute action: RTA_OS 
+********************************************************************************
+RTA-OS Code Generator 
+Version 12.2.0.35369, Copyright ¸ ETAS 2023
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/BswM_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/BswM_ModeMapping.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/EcuM_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/ComM_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/Com_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Bfx_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/BswM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/ComM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Com_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/EcuM_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/EcuM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Fls_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/PduR_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/PduR_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/rba_BswSrv_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/rba_DiagLib_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/ComM_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/rba_DiagLib_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Can_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Compiler.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Fls_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Fls_BSWMD_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Platform.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/CanIf_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/CanSM_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/ComM_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/Com_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/PduR_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/rba_BswSrv_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/CanIf/integration/Can_GeneralTypes.arxml'.
+Error: Fault while loading target. Specified argument was out of the range of valid values. (Parameter 'C:\ETAS\RTA-CAR_12.2.0\RTA-CAR\workspace\NewProjectFromScratch\src\bsw\integration\Memmap does not exist')
+ (Location = RTAOSGen)
+Errors: 1, Warnings: 39.
+Command: [C:/ETAS/RTA-CAR_12.2.0/RTA-OS_12.2.0/bin/RTAOSGen.exe,  --ar_version:R22-11, --output:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/os, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/Compiler, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/Compiler/integration, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/Rba_BswSrv/api, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/Rba_BswSrv/src, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/integration/Memmap, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/integration/SchM, , , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/BswM_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/BswM_ModeMapping.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/EcuM_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/ComM_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/Com_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Bfx_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/BswM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/ComM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Com_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/EcuM_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/EcuM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Fls_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/PduR_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/PduR_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/rba_BswSrv_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/rba_DiagLib_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/ComM_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/rba_DiagLib_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Can_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Compiler.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Fls_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Fls_BSWMD_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Platform.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/CanIf_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/CanSM_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/ComM_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/Com_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/PduR_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/rba_BswSrv_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/os/internal/Os_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/CanIf/integration/Can_GeneralTypes.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/osNeeds.arxml, , --build:clean]
+Execution failed with error
+Execution of action RTA_OS failed
+********************************************************************************
+Post handle is skipped due to previous errors
+
+Build Summary 
+********************************************************************************
+- RTA_OS --> Error (Executed for 00:00:03:711 hh:mm:ss:ms)
+Execution failed with error
+Time taken for the complete build: 00:00:04:022
+********************************************************************************
+Build Execution started
+********************************************************************************
+Tool Version : RTA-CAR 12.2.0 
+Tool Build Id :20230905_1800
+Date : Thu Feb 29 15:14:01 CET 2024
+Project : NewProjectFromScratch
+********************************************************************************
+
+********************************************************************************
+Project clean execution has started at 15:14:01:370 hh:mm:ss:ms 
+********************************************************************************
+Clean action: RTA_OS 
+********************************************************************************
+Project clean execution has been completed
+Time taken to run Project Clean :: 00:00:00:006 hh:mm:ss:ms 
+********************************************************************************
+********************************************************************************
+Main build execution has started at 15:14:04:796 hh:mm:ss:ms 
+********************************************************************************
+Execute action: RTA_OS 
+********************************************************************************
+RTA-OS Code Generator 
+Version 12.2.0.35369, Copyright ¸ ETAS 2023
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/BswM_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/BswM_ModeMapping.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/EcuM_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/ComM_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/Com_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Bfx_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/BswM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/ComM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Com_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/EcuM_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/EcuM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Fls_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/PduR_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/PduR_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/rba_BswSrv_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/rba_DiagLib_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/ComM_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/rba_DiagLib_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Can_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Compiler.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Fls_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Fls_BSWMD_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Platform.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/CanIf_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/CanSM_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/ComM_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/Com_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/PduR_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/rba_BswSrv_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/CanIf/integration/Can_GeneralTypes.arxml'.
+Error: Fault while loading target. Specified argument was out of the range of valid values. (Parameter 'C:\ETAS\RTA-CAR_12.2.0\RTA-CAR\workspace\NewProjectFromScratch\src\bsw\integration\Memmap does not exist')
+ (Location = RTAOSGen)
+Errors: 1, Warnings: 39.
+Command: [C:/ETAS/RTA-CAR_12.2.0/RTA-OS_12.2.0/bin/RTAOSGen.exe,  --ar_version:R22-11, --output:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/os, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/Compiler, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/Compiler/integration, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/Rba_BswSrv/api, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/Rba_BswSrv/src, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/integration/Memmap, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/integration/SchM, , , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/BswM_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/BswM_ModeMapping.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/EcuM_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/ComM_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/Com_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Bfx_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/BswM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/ComM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Com_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/EcuM_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/EcuM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Fls_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/PduR_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/PduR_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/rba_BswSrv_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/rba_DiagLib_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/ComM_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/rba_DiagLib_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Can_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Compiler.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Fls_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Fls_BSWMD_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Platform.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/CanIf_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/CanSM_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/ComM_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/Com_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/PduR_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/rba_BswSrv_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/os/internal/Os_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/CanIf/integration/Can_GeneralTypes.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/osNeeds.arxml, , --build:clean]
+Execution failed with error
+Execution of action RTA_OS failed
+********************************************************************************
+Post handle is skipped due to previous errors
+
+Build Summary 
+********************************************************************************
+- RTA_OS --> Error (Executed for 00:00:03:588 hh:mm:ss:ms)
+Execution failed with error
+Time taken for the complete build: 00:00:03:894
+********************************************************************************
+Build Execution started
+********************************************************************************
+Tool Version : RTA-CAR 12.2.0 
+Tool Build Id :20230905_1800
+Date : Thu Feb 29 15:14:51 CET 2024
+Project : NewProjectFromScratch
+********************************************************************************
+
+********************************************************************************
+Project clean execution has started at 15:14:51:120 hh:mm:ss:ms 
+********************************************************************************
+Clean action: RTA_OS 
+********************************************************************************
+Project clean execution has been completed
+Time taken to run Project Clean :: 00:00:00:006 hh:mm:ss:ms 
+********************************************************************************
+********************************************************************************
+Main build execution has started at 15:14:54:481 hh:mm:ss:ms 
+********************************************************************************
+Execute action: RTA_OS 
+********************************************************************************
+RTA-OS Code Generator 
+Version 12.2.0.35369, Copyright ¸ ETAS 2023
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/BswM_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/BswM_ModeMapping.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/EcuM_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/ComM_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/Com_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Bfx_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/BswM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/ComM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Com_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/EcuM_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/EcuM_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Fls_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/PduR_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/PduR_EOC.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/rba_BswSrv_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/rba_DiagLib_Cfg_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/ComM_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/rba_DiagLib_Cfg_SWCD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Can_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Compiler.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Fls_BSWMD.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Fls_BSWMD_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Platform.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/CanIf_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/CanSM_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/ComM_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/Com_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/PduR_Prot_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/rba_BswSrv_EcucValues.arxml'.
+Warning: No ECU information found when reading input file 'C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/CanIf/integration/Can_GeneralTypes.arxml'.
+Selected target VRTA[MinGW] V3.0.51.2700
+.......
+Error: Failed to compile 'ValidateCounter.c':
+ValidateCounter.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_vectors.c':
+Os_vectors.c:47:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ReadPeripheral.c':
+ReadPeripheral.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'SetScheduleTableAsync.c':
+SetScheduleTableAsync.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetVersionInfo.c':
+GetVersionInfo.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetExecutionTime.c':
+GetExecutionTime.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'DisableAllInterrupts.c':
+DisableAllInterrupts.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_Trust.c':
+Os_Trust.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ProtectionSupport.c':
+ProtectionSupport.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'SetRelAlarm.c':
+SetRelAlarm.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetTaskState.c':
+GetTaskState.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetEvent.c':
+GetEvent.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'TerminateTask.c':
+TerminateTask.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ControlIdle.c':
+ControlIdle.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_Stack.c':
+Os_Stack.c:41:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_GetCurrentTPL.c':
+Os_GetCurrentTPL.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'SetEvent.c':
+SetEvent.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetTaskMaxStackUsage.c':
+GetTaskMaxStackUsage.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'SyncScheduleTableRel.c':
+SyncScheduleTableRel.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetElapsedCounterValue.c':
+GetElapsedCounterValue.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ClearEvent.c':
+ClearEvent.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_GetCurrentIMask.c':
+Os_GetCurrentIMask.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_SetJmp.c':
+Os_SetJmp.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetTaskMaxExecutionTime.c':
+GetTaskMaxExecutionTime.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'SetAbsAlarm.c':
+SetAbsAlarm.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'SyncScheduleTable.c':
+SyncScheduleTable.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetCurrentApplicationID.c':
+GetCurrentApplicationID.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'CheckTaskMemoryAccess.c':
+CheckTaskMemoryAccess.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_fsb.c':
+Os_fsb.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_Cfg_KL.c':
+Os_Cfg_KL.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetTaskID.c':
+GetTaskID.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Schedule.c':
+Schedule.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetCounterValue.c':
+GetCounterValue.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'SuspendOSInterrupts.c':
+SuspendOSInterrupts.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'CheckObjectOwnership.c':
+CheckObjectOwnership.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_Cbk_ChangingTrust.c':
+Os_Cbk_ChangingTrust.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_Cfg_Counters.c':
+Os_Cfg_Counters.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetStackValue.c':
+GetStackValue.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'SuspendAllInterrupts.c':
+SuspendAllInterrupts.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ResumeOSInterrupts.c':
+ResumeOSInterrupts.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetApplicationState.c':
+GetApplicationState.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'CheckObjectAccess.c':
+CheckObjectAccess.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetStackUsage.c':
+GetStackUsage.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_Cbk_ChangedTrust.c':
+Os_Cbk_ChangedTrust.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Os_Cfg.c':
+Os_Cfg.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'StopScheduleTable.c':
+StopScheduleTable.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ResumeAllInterrupts.c':
+ResumeAllInterrupts.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetApplicationID.c':
+GetApplicationID.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'CheckISRMemoryAccess.c':
+CheckISRMemoryAccess.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetStackSize.c':
+GetStackSize.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'WritePeripheral.c':
+WritePeripheral.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'NextScheduleTable.c':
+NextScheduleTable.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'StartScheduleTableSynchron.c':
+StartScheduleTableSynchron.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'RestartOS.c':
+RestartOS.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetAlarmBase.c':
+GetAlarmBase.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ChainTask.c':
+ChainTask.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetScheduleTableStatus.c':
+GetScheduleTableStatus.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'WaitEvent.c':
+WaitEvent.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ModifyPeripheral.c':
+ModifyPeripheral.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'StartScheduleTableRel.c':
+StartScheduleTableRel.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetAlarm.c':
+GetAlarm.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ResetTaskMaxStackUsage.c':
+ResetTaskMaxStackUsage.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetResource.c':
+GetResource.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'CancelAlarm.c':
+CancelAlarm.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ValidateTask.c':
+ValidateTask.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'InterruptSource.c':
+InterruptSource.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'StartScheduleTableAbs.c':
+StartScheduleTableAbs.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetActiveApplicationMode.c':
+GetActiveApplicationMode.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ResetTaskMaxExecutionTime.c':
+ResetTaskMaxExecutionTime.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'InShutdown.c':
+InShutdown.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ValidateScheduleTable.c':
+ValidateScheduleTable.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetIsrMaxStackUsage.c':
+GetIsrMaxStackUsage.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'CallTrustedFunction.c':
+CallTrustedFunction.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'StartOS.c':
+StartOS.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'EnableAllInterrupts.c':
+EnableAllInterrupts.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ResetIsrMaxStackUsage.c':
+ResetIsrMaxStackUsage.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'IncrementCounter.c':
+IncrementCounter.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ValidateResource.c':
+ValidateResource.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetIsrMaxExecutionTime.c':
+GetIsrMaxExecutionTime.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'AllowAccess.c':
+AllowAccess.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ResetIsrMaxExecutionTime.c':
+ResetIsrMaxExecutionTime.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ElapsedTime.c':
+ElapsedTime.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'StackOverrunHook.c':
+StackOverrunHook.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'Idle.c':
+Idle.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ValidateISR.c':
+ValidateISR.c:40:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'GetISRID.c':
+GetISRID.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'DispatchTask.c':
+DispatchTask.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ShutdownOS.c':
+ShutdownOS.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ReleaseResource.c':
+ReleaseResource.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'AdvanceCounter.c':
+AdvanceCounter.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'ActivateTask.c':
+ActivateTask.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'vrtaOSMonitorDevice.cpp':
+vrtaOSMonitorDevice.cpp:37:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'vrtaIdleHandling.cpp':
+vrtaIdleHandling.cpp:51:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Error: Failed to compile 'vrtaAppMain.c':
+vrtaAppMain.c:531:73: fatal error: Os_MemMap.h: No such file or directory
+ #include "Os_MemMap.h" /* [MISRA 2012 Dir 4.10] */ /*lint !e537 !e451 */
+                                                                         ^
+compilation terminated.
+Error: Failed to compile 'Os_wrapper.c':
+Os_wrapper.c:39:64: fatal error: Std_Types.h: No such file or directory
+ #include <Std_Types.h>  /* [$UKS 649] : Includes Std_Types.h */
+                                                                ^
+compilation terminated.
+Errors: 95, Warnings: 39.
+Command: [C:/ETAS/RTA-CAR_12.2.0/RTA-OS_12.2.0/bin/RTAOSGen.exe,  --ar_version:R22-11, --output:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/os, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/Compiler, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/Compiler/integration, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/Rba_BswSrv/api, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/Rba_BswSrv/src, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/integration/Memmap, --include:C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/integration/SchM, , , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/BswM_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/BswM_ModeMapping.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/ecucvalues/EcuM_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/ComM_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/Com_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Bfx_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/BswM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanIf_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/CanSM_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/ComM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Com_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/EcuM_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/EcuM_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/Fls_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/PduR_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/PduR_EOC.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/rba_BswSrv_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/bswmd/rba_DiagLib_Cfg_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/ComM_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/gen/swcd/rba_DiagLib_Cfg_SWCD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Can_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Compiler.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Fls_BSWMD.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Fls_BSWMD_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/integrationCfg/Platform.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/CanIf_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/CanSM_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/ComM_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/Com_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/bswmd_ecuc_values/PduR_Prot_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/bsw/internal/rba_BswSrv_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/ecu_config/os/internal/Os_EcucValues.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/bsw/CanIf/integration/Can_GeneralTypes.arxml, , C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/osNeeds.arxml, , --build:clean]
+Execution failed with error
+Execution of action RTA_OS failed
+********************************************************************************
+Post handle is skipped due to previous errors
+
+Build Summary 
+********************************************************************************
+- RTA_OS --> Error (Executed for 00:00:19:006 hh:mm:ss:ms)
+Execution failed with error
+Time taken for the complete build: 00:00:19:300

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <ADMIN-DATA>
+    <LANGUAGE>EN</LANGUAGE>
+    <USED-LANGUAGES>
+      <L-10 L="EN" xml:space="default">English</L-10>
+    </USED-LANGUAGES>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>RB</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>RBA</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>Common</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE>
+                  <SHORT-NAME>CentralElements</SHORT-NAME>
+                  <AR-PACKAGES>
+                    <AR-PACKAGE>
+                      <SHORT-NAME>SwAddrMethods</SHORT-NAME>
+                      <CATEGORY>STANDARD</CATEGORY>
+                      <ELEMENTS>
+                        <SW-ADDR-METHOD>
+                          <SHORT-NAME>HSM_SHARED_VAR</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Addressing method for exchange of Data with the Hardware Security Module. Restricted to Security</L-4>
+                          </LONG-NAME>
+                          <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME-AND-ALIGNMENT</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                          <SECTION-INITIALIZATION-POLICY>INIT</SECTION-INITIALIZATION-POLICY>
+                          <SECTION-TYPE>VAR</SECTION-TYPE>
+                        </SW-ADDR-METHOD>
+                        <SW-ADDR-METHOD>
+                          <SHORT-NAME>VAR_RAM_ALL_CLEARED</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Addressing method for core local RAM specific buffers linked to the same address but mirrored from different RAM areas.</L-4>
+                          </LONG-NAME>
+                          <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME-AND-ALIGNMENT</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                          <SECTION-INITIALIZATION-POLICY>CLEARED</SECTION-INITIALIZATION-POLICY>
+                          <SECTION-TYPE>VAR</SECTION-TYPE>
+                        </SW-ADDR-METHOD>
+                        <SW-ADDR-METHOD>
+                          <SHORT-NAME>VAR_RAM_ALL_INIT</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Addressing method for core local RAM specific buffers linked to the same address but mirrored from different RAM areas.</L-4>
+                          </LONG-NAME>
+                          <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME-AND-ALIGNMENT</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                          <SECTION-INITIALIZATION-POLICY>INIT</SECTION-INITIALIZATION-POLICY>
+                          <SECTION-TYPE>VAR</SECTION-TYPE>
+                        </SW-ADDR-METHOD>
+                        <SW-ADDR-METHOD>
+                          <SHORT-NAME>VAR_NON_CACHED_RAM</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Addressing method for core local RAM buffers.</L-4>
+                          </LONG-NAME>
+                          <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME-AND-ALIGNMENT</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                          <SECTION-INITIALIZATION-POLICY>INIT</SECTION-INITIALIZATION-POLICY>
+                          <SECTION-TYPE>VAR</SECTION-TYPE>
+                        </SW-ADDR-METHOD>
+                        <SW-ADDR-METHOD>
+                          <SHORT-NAME>VAR_NON_CACHED_SHARED_RAM</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Addressing method for RAM buffers shared between cores.</L-4>
+                          </LONG-NAME>
+                          <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME-AND-ALIGNMENT</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                          <SECTION-INITIALIZATION-POLICY>INIT</SECTION-INITIALIZATION-POLICY>
+                          <SECTION-TYPE>VAR</SECTION-TYPE>
+                        </SW-ADDR-METHOD>
+                        <SW-ADDR-METHOD>
+                          <SHORT-NAME>VAR_EARLY_RAM_CLEARED</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Addressing method for RAM buffers required to be cleared before initialization code.</L-4>
+                          </LONG-NAME>
+                          <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME-AND-ALIGNMENT</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                          <SECTION-INITIALIZATION-POLICY>CLEARED</SECTION-INITIALIZATION-POLICY>
+                          <SECTION-TYPE>VAR</SECTION-TYPE>
+                        </SW-ADDR-METHOD>
+                        <SW-ADDR-METHOD>
+                          <SHORT-NAME>VAR_EARLY_RAM_INIT</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Addressing method for RAM buffers required to initialized before initialization code.</L-4>
+                          </LONG-NAME>
+                          <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME-AND-ALIGNMENT</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                          <SECTION-INITIALIZATION-POLICY>INIT</SECTION-INITIALIZATION-POLICY>
+                          <SECTION-TYPE>VAR</SECTION-TYPE>
+                        </SW-ADDR-METHOD>
+                        <SW-ADDR-METHOD>
+                          <SHORT-NAME>VAR_TRAPRST_CLEARED</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Addressing method for RAM buffers required to be cleared after system trap.</L-4>
+                          </LONG-NAME>
+                          <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME-AND-ALIGNMENT</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                          <SECTION-INITIALIZATION-POLICY>CLEARED</SECTION-INITIALIZATION-POLICY>
+                          <SECTION-TYPE>VAR</SECTION-TYPE>
+                        </SW-ADDR-METHOD>
+                        <SW-ADDR-METHOD>
+                          <SHORT-NAME>VAR_TRAPRST_INIT</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Addressing method for RAM buffers required to be initialized after system trap.</L-4>
+                          </LONG-NAME>
+                          <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME-AND-ALIGNMENT</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                          <SECTION-INITIALIZATION-POLICY>INIT</SECTION-INITIALIZATION-POLICY>
+                          <SECTION-TYPE>VAR</SECTION-TYPE>
+                        </SW-ADDR-METHOD>
+                        <SW-ADDR-METHOD>
+                          <SHORT-NAME>CONST_LABEL_ONLY</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Addressing method for global or static constants for linker labels.</L-4>
+                          </LONG-NAME>
+                          <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                          <SECTION-TYPE>CONST</SECTION-TYPE>
+                        </SW-ADDR-METHOD>
+                        <SW-ADDR-METHOD>
+                          <SHORT-NAME>CONST_FAST</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Addressing method for global or static constants. This addressing method is an extension to AUTOSAR.</L-4>
+                          </LONG-NAME>
+                          <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME-AND-ALIGNMENT</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                          <SECTION-TYPE>CONST</SECTION-TYPE>
+                        </SW-ADDR-METHOD> 
+                        <SW-ADDR-METHOD>
+                          <SHORT-NAME>VAR_SECURED_CLEARED</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">To be used for Memory Sections that are read-protected against external access.Within these section, temporary copies of the user-data are stored before the data is transferred to the Nv-Media.So this is a security measure.</L-4>
+                          </LONG-NAME>
+                          <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME-AND-ALIGNMENT</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                          <SECTION-INITIALIZATION-POLICY>CLEARED</SECTION-INITIALIZATION-POLICY>
+                          <SECTION-TYPE>VAR</SECTION-TYPE>
+                        </SW-ADDR-METHOD>
+                        <SW-ADDR-METHOD>
+                          <SHORT-NAME>VAR_SECURED_CACHED_RAM_ALIGNED_CLEARED</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">This section in addition is aligned to a cache-line in the memory (in some controllers like ZynqUs) needed to perform DMA operations from external flash to the RAM location. If other data is stored in the same cache-line, then this will be corrupted due to the DMA data transfer which is bypassing the cache-mechanism.Cache-Line is typically 64 bytes (but could also be 128byte/256 byte).</L-4>
+                          </LONG-NAME>
+                          <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME-AND-ALIGNMENT</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                          <SECTION-INITIALIZATION-POLICY>CLEARED</SECTION-INITIALIZATION-POLICY>
+                          <SECTION-TYPE>VAR</SECTION-TYPE>
+                        </SW-ADDR-METHOD>
+                        <SW-ADDR-METHOD>
+                          <SHORT-NAME>CODE_RAM</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Addressing method for code that need to be located in RAM for functional reason.</L-4>
+                          </LONG-NAME>
+                          <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                          <SECTION-TYPE>CODE</SECTION-TYPE>
+                        </SW-ADDR-METHOD>
+                        <SW-ADDR-METHOD>
+                          <SHORT-NAME>CODE_RAM_ALL</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Addressing method for optimization of RAM code.</L-4>
+                          </LONG-NAME>
+                          <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                          <SECTION-TYPE>CODE</SECTION-TYPE>
+                        </SW-ADDR-METHOD>
+                        <SW-ADDR-METHOD>
+                          <SHORT-NAME>VAR_GLOBAL_INIT</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Addressing method for global variables that are initialized with values after every reset and need to be written from all cores.</L-4>
+                          </LONG-NAME>
+                          <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME-AND-ALIGNMENT</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                          <SECTION-INITIALIZATION-POLICY>INIT</SECTION-INITIALIZATION-POLICY>
+                          <SECTION-TYPE>VAR</SECTION-TYPE>
+                        </SW-ADDR-METHOD>  
+                        <SW-ADDR-METHOD>
+                          <SHORT-NAME>VAR_GLOBAL_CLEARED</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Addressing method for global variables that are cleared with to zero after every reset and need to be written from all cores.</L-4>
+                          </LONG-NAME>
+                          <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME-AND-ALIGNMENT</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                          <SECTION-INITIALIZATION-POLICY>CLEARED</SECTION-INITIALIZATION-POLICY>
+                          <SECTION-TYPE>VAR</SECTION-TYPE>
+                        </SW-ADDR-METHOD>
+                        <SW-ADDR-METHOD>
+                          <SHORT-NAME>VAR_CLEARED_ATOMIC</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Addressing method for Memory Sections that are used for variables requiring atomic operation. It should only be used in combination with BswSrv or other service routines like e.g. BCL.</L-4>
+                          </LONG-NAME>
+                          <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME-AND-ALIGNMENT</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                          <SECTION-INITIALIZATION-POLICY>CLEARED</SECTION-INITIALIZATION-POLICY>
+                          <SECTION-TYPE>VAR</SECTION-TYPE>
+                        </SW-ADDR-METHOD>  
+                        <SW-ADDR-METHOD>
+                          <SHORT-NAME>VAR_CLEARED_LOCK_SEMA</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Addressing method for Memory Sections that are used for variables related for semaphores and/or locks where read–modify–write operation is required.</L-4>
+                          </LONG-NAME>
+                          <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME-AND-ALIGNMENT</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                          <SECTION-INITIALIZATION-POLICY>CLEARED</SECTION-INITIALIZATION-POLICY>
+                          <SECTION-TYPE>VAR</SECTION-TYPE>
+                        </SW-ADDR-METHOD>
+                        <SW-ADDR-METHOD>
+                          <SHORT-NAME>VAR_LABEL_ONLY</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Addressing method for global or static variables for linker labels.</L-4>
+                          </LONG-NAME>
+                          <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                          <SECTION-TYPE>VAR</SECTION-TYPE>
+                        </SW-ADDR-METHOD>                                                                                                                        
+                      </ELEMENTS>
+                    </AR-PACKAGE>
+                  </AR-PACKAGES>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

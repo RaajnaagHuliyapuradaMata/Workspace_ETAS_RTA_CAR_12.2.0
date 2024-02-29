@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="UpdateSelected" value="true"/>
+	<item key="Ignore comspec conflicts" value="false"/>
+	<item key="BackupSelected" value="false"/>
+	<item key="Customize FlatMap" value="false"/>
+	<item key="Customize ECUExtract version" value="false"/>
+	<item key="EcuEctractVersion" value="1.0.0"/>
+	<item key="FlatMapExtnFile" value=""/>
+	<item key="Ignore alternate configuration" value="false"/>
+</section>

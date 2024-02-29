@@ -1,0 +1,2 @@
+RTE Paramdef is deployed into the following location: ecu_config/paramdefs/Rte_EcucParamDef.arxml
+RTE EcucValues file with default value is deployed into the following location: ecu_config/rte/internal/Rte_EcucValues.arxml

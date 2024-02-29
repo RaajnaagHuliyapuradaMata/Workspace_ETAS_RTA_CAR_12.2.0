@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>MSI_ShutDown</SHORT-NAME>
+      <ELEMENTS>
+        <MODE-SWITCH-INTERFACE>
+          <SHORT-NAME>MSI_ShutDown</SHORT-NAME>
+          <IS-SERVICE>true</IS-SERVICE>
+          <MODE-GROUP>
+            <SHORT-NAME>MDGP_MSI_ShutDown</SHORT-NAME>
+            <TYPE-TREF DEST="MODE-DECLARATION-GROUP">/MSI_ShutDown/MDG/MDG_ShutDown</TYPE-TREF>
+          </MODE-GROUP>
+        </MODE-SWITCH-INTERFACE>
+        <DATA-TYPE-MAPPING-SET>
+          <SHORT-NAME>MG_Shutdown_Mapping</SHORT-NAME>
+          <MODE-REQUEST-TYPE-MAPS>
+            <MODE-REQUEST-TYPE-MAP>
+              <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+              <MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP">/MSI_ShutDown/MDG/MDG_ShutDown</MODE-GROUP-REF>
+            </MODE-REQUEST-TYPE-MAP>
+          </MODE-REQUEST-TYPE-MAPS>
+        </DATA-TYPE-MAPPING-SET>
+      </ELEMENTS>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>MDG</SHORT-NAME>
+          <ELEMENTS>
+            <MODE-DECLARATION-GROUP>
+              <SHORT-NAME>MDG_ShutDown</SHORT-NAME>
+              <CATEGORY>EXPLICIT_ORDER</CATEGORY>
+              <INITIAL-MODE-REF DEST="MODE-DECLARATION">/MSI_ShutDown/MDG/MDG_ShutDown/RUN</INITIAL-MODE-REF>
+              <MODE-DECLARATIONS>
+                <MODE-DECLARATION>
+                  <SHORT-NAME>SHUT_DOWN</SHORT-NAME>
+                  <CATEGORY>EXPLICIT_ORDER</CATEGORY>
+                  <VALUE>0</VALUE>
+                </MODE-DECLARATION>
+                <MODE-DECLARATION>
+                  <SHORT-NAME>RUN</SHORT-NAME>
+                  <CATEGORY>EXPLICIT_ORDER</CATEGORY>
+                  <VALUE>1</VALUE>
+                </MODE-DECLARATION>
+              </MODE-DECLARATIONS>
+            </MODE-DECLARATION-GROUP>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>System</SHORT-NAME>
+      <ELEMENTS>
+        <MODE-DECLARATION-GROUP>
+          <SHORT-NAME>Mdg2</SHORT-NAME>
+          <INITIAL-MODE-REF DEST="MODE-DECLARATION">/System/Mdg2/Mode1</INITIAL-MODE-REF>
+          <MODE-DECLARATIONS>
+            <MODE-DECLARATION>
+              <SHORT-NAME>Mode1</SHORT-NAME>
+            </MODE-DECLARATION>
+          </MODE-DECLARATIONS>
+        </MODE-DECLARATION-GROUP>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

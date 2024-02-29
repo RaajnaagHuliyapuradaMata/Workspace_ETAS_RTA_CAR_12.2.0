@@ -1,0 +1,2236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
+  <ADMIN-DATA>
+    <DOC-REVISIONS>
+      <DOC-REVISION>
+        <ISSUED-BY>RB</ISSUED-BY>
+        <DATE>2021-12-07</DATE>
+      </DOC-REVISION>
+    </DOC-REVISIONS>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>AUTOSAR_IdsM</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>EcucModuleDefs</SHORT-NAME>
+          <ELEMENTS>
+            <!-- Module Definition: IdsM -->
+            <ECUC-MODULE-DEF>
+              <SHORT-NAME>IdsM</SHORT-NAME>
+              <LONG-NAME>
+                <L-4 L="EN">IdsM</L-4>
+              </LONG-NAME>
+              <DESC>
+                <L-2 L="EN">Configuration of the IdsM (Intrusion detection system manager) module.</L-2>
+              </DESC>
+              <CATEGORY>VENDOR_SPECIFIC_MODULE_DEFINITION</CATEGORY>
+              <ADMIN-DATA>
+                <DOC-REVISIONS>
+                  <DOC-REVISION>
+                    <REVISION-LABEL>4.8.0</REVISION-LABEL>
+                    <ISSUED-BY>AUTOSAR</ISSUED-BY>
+                  </DOC-REVISION>
+                  <DOC-REVISION>
+                    <REVISION-LABEL>2.0.0</REVISION-LABEL>
+                    <ISSUED-BY>RB</ISSUED-BY>
+                    <DATE>2022-01-24</DATE>
+                  </DOC-REVISION>
+                </DOC-REVISIONS>
+              </ADMIN-DATA>
+              <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00001</RELATED-TRACE-ITEM-REF>
+              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+              <POST-BUILD-VARIANT-SUPPORT>false</POST-BUILD-VARIANT-SUPPORT>
+              <REFINED-MODULE-DEF-REF DEST="ECUC-MODULE-DEF">/AUTOSAR/EcucDefs/IdsM</REFINED-MODULE-DEF-REF>
+              <SUPPORTED-CONFIG-VARIANTS>
+                <SUPPORTED-CONFIG-VARIANT>VARIANT-PRE-COMPILE</SUPPORTED-CONFIG-VARIANT>
+              </SUPPORTED-CONFIG-VARIANTS>
+              <CONTAINERS>
+                <ECUC-PARAM-CONF-CONTAINER-DEF>
+                  <SHORT-NAME>IdsMConfiguration</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">IdsMConfiguration</L-4>
+                  </LONG-NAME>
+                  <DESC>
+                    <L-2 L="EN">Configuration parameters of the module IdsM.</L-2>
+                  </DESC>
+                  <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00003</RELATED-TRACE-ITEM-REF>
+                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                  <SUB-CONTAINERS>
+                    <ECUC-PARAM-CONF-CONTAINER-DEF>
+                      <SHORT-NAME>IdsMBlockState</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">IdsMBlockState</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">Configuration of an IdsM blocking state used in the IdsMStateBlockFilter to suspend the collection of
+                                            security events. The active state is reported by the BswM via IdsM_BswM_StateChanged().</L-2>
+                      </DESC>
+                              <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00020</RELATED-TRACE-ITEM-REF>
+                      <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>16</UPPER-MULTIPLICITY>
+                      <MULTIPLICITY-CONFIG-CLASSES>
+                        <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                      </MULTIPLICITY-CONFIG-CLASSES>
+                      <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                      <PARAMETERS>
+                        <ECUC-INTEGER-PARAM-DEF>
+                          <SHORT-NAME>IdsMBlockStateID</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMBlockStateID</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">This value specifies the identifier of this block state.</L-2>
+                          </DESC>
+                                     <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00052</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <SCOPE>ECU</SCOPE>
+                          <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                          <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>true</SYMBOLIC-NAME-VALUE>
+                          <MAX>15</MAX>
+                          <MIN>0</MIN>
+                        </ECUC-INTEGER-PARAM-DEF>
+                      </PARAMETERS>
+                    </ECUC-PARAM-CONF-CONTAINER-DEF>
+                    <ECUC-PARAM-CONF-CONTAINER-DEF>
+                      <SHORT-NAME>IdsMBufferConfiguration</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">IdsMBufferConfiguration</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">Configuration of the event buffers and context data buffers used by IdsM.</L-2>
+                      </DESC>
+                              <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00020</RELATED-TRACE-ITEM-REF>
+                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <PARAMETERS>
+                              </PARAMETERS>
+                      <SUB-CONTAINERS>
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>IdsMContextDataBuffer</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMContextDataBuffer</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Buffer that is reserved to store the context data of SEvs. Depending on the type of SEv that is processed, there
+                                                        can be significant differences in sizes of the context data. TRACE[SWS_IdsM_00704]</L-2>
+                          </DESC>
+                                          <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00020</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>65535</UPPER-MULTIPLICITY>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <PARAMETERS>
+                            <ECUC-INTEGER-PARAM-DEF>
+                              <SHORT-NAME>IdsMContextDataBufferSize</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">IdsMContextDataBufferSize</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Size of the context data buffer in bytes. It is recommended to configure
+                                                                buffers with an appropriate size depending on the configured SEvs.</L-2>
+                              </DESC>
+                                                 <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00046</RELATED-TRACE-ITEM-REF>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <SCOPE>LOCAL</SCOPE>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <MAX>1500</MAX>
+                              <MIN>1</MIN>
+                            </ECUC-INTEGER-PARAM-DEF>
+                            <ECUC-INTEGER-PARAM-DEF>
+                              <SHORT-NAME>IdsMNumberOfContextDataBuffers</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">IdsMNumberOfContextDataBuffers</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">The number of buffers with the configured buffer size specified in
+                                                                IdsMContextDataBufferSize. It is recommended to configure an
+                                                                appropriate number of buffers depending on the configured SEvs.</L-2>
+                              </DESC>
+                                                 <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00046</RELATED-TRACE-ITEM-REF>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <SCOPE>LOCAL</SCOPE>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <MAX>65535</MAX>
+                              <MIN>1</MIN>
+                            </ECUC-INTEGER-PARAM-DEF>
+                          </PARAMETERS>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>IdsMEventBuffers</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMEventBuffers</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Buffers used to store the SEvs. TRACE[SWS_IdsM_00701] </L-2>
+                          </DESC>
+                                          <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00020</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <PARAMETERS>
+                            <ECUC-INTEGER-PARAM-DEF>
+                              <SHORT-NAME>IdsMNumberOfEventBuffers</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">IdsMNumberOfEventBuffers</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">The number of event buffers used to store the SEvs.
+                                                                The suggested number of buffers can be calculated as follows:
+                                                                IdsMNumberOfBuffers = Number of Aggregation Filter Instances +
+                                                                Upper bound of parallel processed SEvs.
+                                                                Number of Aggregation Filter Instances = The number of configured
+                                                                SEvs that use a filter chain that contains an aggregation filter.
+                                                                Upper bound of parallel processed SEvs = 10% of the number of
+                                                                configured SEvs.</L-2>
+                              </DESC>
+                                                 <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00050</RELATED-TRACE-ITEM-REF>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <SCOPE>LOCAL</SCOPE>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <MAX>65535</MAX>
+                              <MIN>1</MIN>
+                            </ECUC-INTEGER-PARAM-DEF>
+                          </PARAMETERS>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>IdsMRbQSEvBuffers</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMRbQSEvBuffers</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Buffers used to store the QSEvs.</L-2>
+                          </DESC>
+                                          <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">SWS_Rb_IdsM_07497</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <PARAMETERS>
+                            <ECUC-INTEGER-PARAM-DEF>
+                              <SHORT-NAME>IdsMRbNumberOfQSEvBuffers</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">IdsMRbNumberOfQSEvBuffers</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">The number of buffers to store the QSEv datagram.
+                                                   After a SEv is qualified to be a QSEv, it is required to be transmitted or
+                                                   locally persisted. In some cases where transmission confirmation is expected before
+                                                   subsequent transmission or reduced frequency of NvM storage, a QSEv buffering would help.</L-2>
+                              </DESC>
+                                                 <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">SWS_Rb_IdsM_07497</RELATED-TRACE-ITEM-REF>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <SCOPE>LOCAL</SCOPE>
+                              <ORIGIN>RB:4.0.0:2023-01-20</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>1</DEFAULT-VALUE>
+                              <MAX>65535</MAX>
+                              <MIN>1</MIN>
+                            </ECUC-INTEGER-PARAM-DEF>
+                          </PARAMETERS>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                      </SUB-CONTAINERS>
+                    </ECUC-PARAM-CONF-CONTAINER-DEF>
+                    <ECUC-PARAM-CONF-CONTAINER-DEF>
+                    <SHORT-NAME>IdsMContextDataModification</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="EN">Configuration of context data modifier callouts.</L-2>
+                              </DESC>
+                              <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00064</RELATED-TRACE-ITEM-REF>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <PARAMETERS>
+                                <ECUC-STRING-PARAM-DEF>
+                                  <SHORT-NAME>IdsMGlobalContextDataHeaderFileIncludes</SHORT-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">List of optional header files which contains the prototypes of the context data modifier callouts.</L-2>
+                                  </DESC>
+                                  <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00072</RELATED-TRACE-ITEM-REF>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY-INFINITE>true</UPPER-MULTIPLICITY-INFINITE>
+                                  <SCOPE>LOCAL</SCOPE>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                    <ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                      <MIN-LENGTH>0</MIN-LENGTH>
+                                    </ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                  </ECUC-STRING-PARAM-DEF-VARIANTS>
+                                </ECUC-STRING-PARAM-DEF>
+                                <ECUC-FUNCTION-NAME-DEF>
+                                  <SHORT-NAME>IdsMGlobalContextDataModifierCalloutFct</SHORT-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Global context data modifier callout function. This callout can be overruled by event-specific context data modifier callouts.</L-2>
+                                  </DESC>
+                                  <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00070</RELATED-TRACE-ITEM-REF>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <SCOPE>LOCAL</SCOPE>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <ECUC-FUNCTION-NAME-DEF-VARIANTS>
+                                    <ECUC-FUNCTION-NAME-DEF-CONDITIONAL></ECUC-FUNCTION-NAME-DEF-CONDITIONAL>
+                                  </ECUC-FUNCTION-NAME-DEF-VARIANTS>
+                                </ECUC-FUNCTION-NAME-DEF>
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>IdsMGlobalContextDataSizeModifier</SHORT-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Global context data size modifier used in combination with global context data size modifier callout function.</L-2>
+                                  </DESC>
+                                  <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">SWS_Rb_IdsM_07655</RELATED-TRACE-ITEM-REF>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <SCOPE>LOCAL</SCOPE>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                                  <MAX>1500</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                              </PARAMETERS>
+                              <SUB-CONTAINERS>
+                                <ECUC-PARAM-CONF-CONTAINER-DEF>
+                                  <SHORT-NAME>IdsMContextDataModifierCallout</SHORT-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Configuration of event specific context data modifier callouts.</L-2>
+                                  </DESC>
+                                  <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00065</RELATED-TRACE-ITEM-REF>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>65535</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <PARAMETERS>
+                                    <ECUC-FUNCTION-NAME-DEF>
+                                      <SHORT-NAME>IdsMContextDataModifierCalloutFct</SHORT-NAME>
+                                      <DESC>
+                                        <L-2 L="EN">Event specific context data modifier callout function. If the global context data modifier callout is configured, it can be overruled by this event-specific callout.</L-2>
+                                      </DESC>
+                                      <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00067</RELATED-TRACE-ITEM-REF>
+                                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                      <SCOPE>LOCAL</SCOPE>
+                                      <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                                      <VALUE-CONFIG-CLASSES>
+                                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                                      </VALUE-CONFIG-CLASSES>
+                                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                      <ECUC-FUNCTION-NAME-DEF-VARIANTS>
+                                        <ECUC-FUNCTION-NAME-DEF-CONDITIONAL></ECUC-FUNCTION-NAME-DEF-CONDITIONAL>
+                                      </ECUC-FUNCTION-NAME-DEF-VARIANTS>
+                                    </ECUC-FUNCTION-NAME-DEF>
+                                    <ECUC-INTEGER-PARAM-DEF>
+                                      <SHORT-NAME>IdsMContextDataSizeModifier</SHORT-NAME>
+                                      <DESC>
+                                        <L-2 L="EN">Event specific context data size modifier used in combination with event specific context data size modifier callout function.</L-2>
+                                      </DESC>
+                                      <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">SWS_Rb_IdsM_07652</RELATED-TRACE-ITEM-REF>
+                                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                      <SCOPE>LOCAL</SCOPE>
+                                      <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                                      <VALUE-CONFIG-CLASSES>
+                                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                                      </VALUE-CONFIG-CLASSES>
+                                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                      <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                                      <MAX>1500</MAX>
+                                      <MIN>0</MIN>
+                                    </ECUC-INTEGER-PARAM-DEF>
+                                  </PARAMETERS>
+                                </ECUC-PARAM-CONF-CONTAINER-DEF>
+                              </SUB-CONTAINERS>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                      <SHORT-NAME>IdsMEvent</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">IdsMEvent</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">Configuration of the IdsM Event unit which is reported by a sensor and its parameters</L-2>
+                      </DESC>
+                              <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00017</RELATED-TRACE-ITEM-REF>
+                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>65535</UPPER-MULTIPLICITY>
+                      <MULTIPLICITY-CONFIG-CLASSES>
+                        <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                      </MULTIPLICITY-CONFIG-CLASSES>
+                      <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                      <PARAMETERS>
+                        <ECUC-INTEGER-PARAM-DEF>
+                          <SHORT-NAME>IdsMExternalEventId</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMExternalEventId</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">The external security event ID which is reported to the sink. There are
+                                                    two different value ranges depending on the referencing module:
+                                                    Standarized SEv ID is defined by the AUTOSAR specification. This ID
+                                                    is usually derived from the SecXT. Standard ID range: 0x0000 - 0x8000
+                                                    Generic User Event ID is defined by the user. Used when a SW-C /
+                                                    Application references the SEv. Generic ID range: 0x8000 - 0xFFFE.
+                                                    0xFFFF is considered an invalid ID.
+                                                    SWS_IdsM_00608 must be respected.  TRACE[SWS_IdsM_00604]. </L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <SCOPE>LOCAL</SCOPE>
+                          <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                          <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                          <MAX>65534</MAX>
+                          <MIN>0</MIN>
+                        </ECUC-INTEGER-PARAM-DEF>
+                        <ECUC-INTEGER-PARAM-DEF>
+                          <SHORT-NAME>IdsMInternalEventId</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMInternalEventId</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Consecutive number used internally as an identifier by the IdsM module.
+                                                    This number is calculated internally and shall not be configured
+                                                    manually. This parameter is only available to publish the result of this
+                                                    calculation. Applications using IdsM APIs shall not rely on the value of
+                                                    this parameter. Instead, they shall use the symbolic name value.</L-2>
+                          </DESC>
+                                    <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00033</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <SCOPE>ECU</SCOPE>
+                          <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                          <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                          <DEFAULT-VALUE>65535</DEFAULT-VALUE>
+                          <MAX>65535</MAX>
+                          <MIN>0</MIN>
+                        </ECUC-INTEGER-PARAM-DEF>
+                        <ECUC-ENUMERATION-PARAM-DEF>
+                          <SHORT-NAME>IdsMReportingModeFilter</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMReportingModeFilter</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">The reporting mode filter defines the level of detail of the reporting.
+                                                    Whether SEv should be dropped, forwarded with context data or
+                                                    forwarded without context data. The parameter determines if the SEv
+                                                    is either: - dropped (OFF) - sent without context data (BRIEF) - sent with context
+                                                    data (DETAILED) - sent without context data, ignoring the rest of the
+                                                    filter chain (BRIEF_BYPASSING_FILTERS) - sent with context data
+                                                    ignoring the rest of the filter chain (DETAILED_BYPASSING_FILTERS)
+                                                    TRACE[SWS_IdsM_01010]</L-2>
+                          </DESC>
+                                      <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00036</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <SCOPE>LOCAL</SCOPE>
+                          <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                          <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                          <LITERALS>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>BRIEF</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">BRIEF</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>BRIEF_BYPASSING_FILTERS</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">BRIEF_BYPASSING_FILTERS</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>DETAILED</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">DETAILED</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>DETAILED_BYPASSING_FILTERS</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">DETAILED_BYPASSING_FILTERS</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>OFF</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">OFF</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                          </LITERALS>
+                        </ECUC-ENUMERATION-PARAM-DEF>
+                        <ECUC-INTEGER-PARAM-DEF>
+                          <SHORT-NAME>IdsMSensorInstanceId</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMSensorInstanceId</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">The instance ID of the sensor which reports security events to the IdsM.
+                                                    If there is only one instance of a sensor, the default ID is 0. TRACE[SWS_IdsM_00605].
+                                                    SWS_IdsM_00608 must be respected. </L-2>
+                          </DESC>
+                                    <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00031</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <SCOPE>LOCAL</SCOPE>
+                          <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                          <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                          <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                          <MAX>65535</MAX>
+                          <MIN>0</MIN>
+                        </ECUC-INTEGER-PARAM-DEF>
+                        <ECUC-BOOLEAN-PARAM-DEF>
+                          <SHORT-NAME>IdsMSinkDem</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMSinkDem</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">The QSEv will be sent to the Dem Module into a Security Event Memory (Sem) to persist it on the local ECU.</L-2>
+                          </DESC>
+                                  <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00035</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>0</UPPER-MULTIPLICITY>
+                          <SCOPE>LOCAL</SCOPE>
+                          <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                          <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                          <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                        </ECUC-BOOLEAN-PARAM-DEF>
+                        <ECUC-BOOLEAN-PARAM-DEF>
+                          <SHORT-NAME>IdsMSinkIdsR</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMSinkIdsR</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">The QSEv will be sent to the IDS Reporter</L-2>
+                          </DESC>
+                                  <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00034</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <SCOPE>LOCAL</SCOPE>
+                          <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                          <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                          <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                        </ECUC-BOOLEAN-PARAM-DEF>
+                      </PARAMETERS>
+                      <REFERENCES>
+                        <ECUC-REFERENCE-DEF>
+                          <SHORT-NAME>IdsMFilterChainRef</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMFilterChainRef</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Reference to a configured IdsM filter chain.</L-2>
+                          </DESC>
+                                  <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00030</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <SCOPE>LOCAL</SCOPE>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <DESTINATION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_IdsM/EcucModuleDefs/IdsM/IdsMConfiguration/IdsMFilterChain</DESTINATION-REF>
+                        </ECUC-REFERENCE-DEF>
+                      </REFERENCES>
+                      <SUB-CONTAINERS>
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                                    <SHORT-NAME>IdsMContextDataModifierOptions</SHORT-NAME>
+                                    <DESC>
+                                        <L-2 L="EN">Adittional configuration parameters of a SEv to be able to modify incoming context data.</L-2>
+                                    </DESC>
+                                    <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00061</RELATED-TRACE-ITEM-REF>
+                                    <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                    <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                    <MULTIPLICITY-CONFIG-CLASSES>
+                                        <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                            <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                            <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                        </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                    </MULTIPLICITY-CONFIG-CLASSES>
+                                    <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                                    <REFERENCES>
+                                        <ECUC-REFERENCE-DEF>
+                                            <SHORT-NAME>IdsMContextDataModifierCalloutRef</SHORT-NAME>
+                                            <DESC>
+                                                <L-2 L="EN">Reference to event specific context data modifier callout function.</L-2>
+                                            </DESC>
+                                            <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00063</RELATED-TRACE-ITEM-REF>
+                                            <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                            <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                            <SCOPE>LOCAL</SCOPE>
+                                            <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                                            <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                                            <VALUE-CONFIG-CLASSES>
+                                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                                    <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                                    <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                                            </VALUE-CONFIG-CLASSES>
+                                            <DESTINATION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcucDefs/IdsM/IdsMConfiguration/IdsMContextDataModification/IdsMContextDataModifierCallout</DESTINATION-REF>
+                                        </ECUC-REFERENCE-DEF>
+                                    </REFERENCES>
+                                </ECUC-PARAM-CONF-CONTAINER-DEF>
+                                    <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>IdsMServiceInterfaceOptions</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMServiceInterfaceOptions</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Additional configuration parameters of a SEv.
+                                            Addition to AR - This container, if configured,
+                                            is used for application and basic software SEvs. AUTOSAR defines it only for application SEvs. This satisfies
+                                            AUTOSAR and in addition to it the parameters in IdsMServiceInterfaceOptions are used for basis software SEv as well
+                                            in the following way. (1) Configured IdsMEventMaxContextDataSize is used to validate the context data size provided
+                                            while reporting an SEv over the APIs that support context data (IdsM_SetSecurityEventWith**ContextData). (2) If
+                                            IdsMAdditionalParameterOption is configured to CountTimestamp and the SEv was reported without a timestamp, IdsM
+                                            will obtain the timestamp from StbM and add it to the SEv regardless if the SEv is a ASW or a BSW SEv. If IdsMAdditionalParameterOption
+                                            is not configured to CountTimestamp and the SEv was reported with a timestamp, IdsM will drop the provided timestamp and
+                                            buffer the event without a timestamp.
+
+                                            The AUTOSAR requirement is statisfied because the parameters of this container are used
+                                            to generate the service interfaces for the SEv when configured IdsMExternalId is in range 0x8000 - 0xFFFE as specified in AR IdsM SWS Ch 8.7. </L-2>
+                          </DESC>
+                                          <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00037</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <PARAMETERS>
+                            <ECUC-ENUMERATION-PARAM-DEF>
+                              <SHORT-NAME>IdsMAdditionalParameterOption</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">IdsMAdditionalParameterOption</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">In addition to the optional context data the Service Port Interface can
+                                                                be extended by the following parameters: - None: No extensions -
+                                                                Count: Additionally a count can be passed. This value is used as an
+                                                                initialization counter for the corresponding SEv. - Count and
+                                                                Timestamp: Additionally to the count a timestamp can be passed.
+                                                                Note: The timestamp option depends on whether
+                                                                IdsMTimeStampOption is configured to enable timestamps.</L-2>
+                              </DESC>
+                                                  <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00039</RELATED-TRACE-ITEM-REF>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <SCOPE>LOCAL</SCOPE>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <LITERALS>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>Count</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Count</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>CountTimestamp</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">CountTimestamp</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>None</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">None</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                              </LITERALS>
+                            </ECUC-ENUMERATION-PARAM-DEF>
+                            <ECUC-INTEGER-PARAM-DEF>
+                              <SHORT-NAME>IdsMEventMaxContextDataSize</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">IdsMEventMaxContextDataSize</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Maximum number of bytes of context data to be accepted by IdsM for this particular event.
+                                                                   Additional hint for configuration - TRACE[SWS_IdsM_00501] The functions IdsM_SetSecurityEventWithContext-
+                                                                   Data, IdsM_SetSecurityEventWithCountContextData and IdsM_SetSecurityEventWithTimestampCountContextData
+                                                                   shall support a maximum length of 1500 bytes for the context data.
+                                                                   To avoid overloading of the network, a maximum of 1500 bytes for the context
+                                                                   data is recommended, especially when transmitting on CAN Bus.
+                                                                   There might be cases in which this limit is insufficient to transmit all the sensor’s information,
+                                                                   in that case it shall be evaluated that there are enough resources to avoid
+                                                                   flooding of the communication channels.</L-2>
+                              </DESC>
+                                                    <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00038</RELATED-TRACE-ITEM-REF>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <SCOPE>LOCAL</SCOPE>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                              <MAX>1500</MAX>
+                              <MIN>0</MIN>
+                            </ECUC-INTEGER-PARAM-DEF>
+                          </PARAMETERS>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                      </SUB-CONTAINERS>
+                    </ECUC-PARAM-CONF-CONTAINER-DEF>
+                    <ECUC-PARAM-CONF-CONTAINER-DEF>
+                      <SHORT-NAME>IdsMFilterChain</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">IdsMFilterChain</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">A filter chain is a combination of filters that affects one or more SEvs.
+                                            A filter receives a SEv, checks condition(s) and, e.g. -
+                                            forwards SEv immediately/later - drops SEv - stores SEv - modifies SEv
+                                            Consider that the filter order is defined as follows: -
+                                            Reporting Mode Level (per SEv ID) - Block State (per
+                                            SEv ID) - Forward Every nth (per SEv ID) - Event
+                                            Aggregation (per SEv ID) - Event Threshold (per SEv
+                                            ID) - Event Rate Limitation (per IdsM Instance) - Traffic
+                                            Limitation (per IdsM Instance)</L-2>
+                      </DESC>
+                              <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00016</RELATED-TRACE-ITEM-REF>
+                      <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY-INFINITE>true</UPPER-MULTIPLICITY-INFINITE>
+                      <MULTIPLICITY-CONFIG-CLASSES>
+                        <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                      </MULTIPLICITY-CONFIG-CLASSES>
+                      <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                      <SUB-CONTAINERS>
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>IdsMBlockStateFilter</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMBlockStateFilter</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">This state filter drops SEvs if the current State reported
+                                                        by the BswM is in this state filter list.</L-2>
+                          </DESC>
+                                          <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00021</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <REFERENCES>
+                            <ECUC-REFERENCE-DEF>
+                              <SHORT-NAME>IdsMBlockStateReference</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">IdsMBlockStateReference</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">The collection of SEvs during this state will be suspended</L-2>
+                              </DESC>
+                                              <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00051</RELATED-TRACE-ITEM-REF>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>16</UPPER-MULTIPLICITY>
+                              <SCOPE>LOCAL</SCOPE>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <REQUIRES-SYMBOLIC-NAME-VALUE>true</REQUIRES-SYMBOLIC-NAME-VALUE>
+                              <DESTINATION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_IdsM/EcucModuleDefs/IdsM/IdsMConfiguration/IdsMBlockState</DESTINATION-REF>
+                            </ECUC-REFERENCE-DEF>
+                          </REFERENCES>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>IdsMEventAggregationFilter</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMEventAggregationFilter</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">All received events of a certain event ID that are
+                                                        received by this filter during a single aggregation time
+                                                        interval are not forwarded immediately.
+                                                        Instead, only the last or the first received SEv is stored
+                                                        in an aggregation buffer, depending on the configuration
+                                                        of "IdsMContextDataSourceSelector".
+                                                        The counter field of the SEv is modified so that it
+                                                        contains the sum of the counter fields of all incoming
+                                                        SEvs during the current aggregation time interval. At the
+                                                        end of the aggregation time interval, the buffered SEv is
+                                                        sent out and the aggregation buffer is cleared.
+                                                        If there was no incoming SEv until the end of the
+                                                        aggregation time interval, no message will be sent.</L-2>
+                          </DESC>
+                                          <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00024</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <PARAMETERS>
+                            <ECUC-ENUMERATION-PARAM-DEF>
+                              <SHORT-NAME>IdsMContextDataSourceSelector</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">IdsMContextDataSourceSelector</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">The resulting SEv from the aggregation filter contains the context data
+                                                            from one of the following two sources:
+                                                            IDSM_FILTERS_CTX_USE_FIRST = ContextData of first received SEv is used for resulting QSEv.
+                                                            IDSM_FILTERS_CTX_USE_LAST = ContextData of last received SEv is used for resulting QSEv.</L-2>
+                              </DESC>
+                                              <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00026</RELATED-TRACE-ITEM-REF>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <SCOPE>LOCAL</SCOPE>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <LITERALS>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>IDSM_FILTERS_CTX_USE_FIRST</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">IDSM_FILTERS_CTX_USE_FIRST</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>IDSM_FILTERS_CTX_USE_LAST</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">IDSM_FILTERS_CTX_USE_LAST</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                              </LITERALS>
+                            </ECUC-ENUMERATION-PARAM-DEF>
+                            <ECUC-FLOAT-PARAM-DEF>
+                              <SHORT-NAME>IdsMEventAggregationTimeInterval</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">IdsMEventAggregationTimeInterval</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Length of the aggregation time interval (as float in seconds).
+                                                            Note: Shall be configured as a multiple of the IdsM main function period.</L-2>
+                              </DESC>
+                                              <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00025</RELATED-TRACE-ITEM-REF>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <SCOPE>LOCAL</SCOPE>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <MAX INTERVAL-TYPE="OPEN">INF</MAX>
+                              <MIN INTERVAL-TYPE="OPEN">0</MIN>
+                            </ECUC-FLOAT-PARAM-DEF>
+                          </PARAMETERS>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>IdsMEventThresholdFilter</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMEventThresholdFilter</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                                            <L-2 L="EN">During each time interval "IdsMEventThresholdTimeInterval", the filter
+                                                        drops the first "IdsMEventThresholdNumber - 1" SEvs and forwards all
+                                                        other incoming SEvs immediately until the end of the time interval.</L-2>
+                          </DESC>
+                                          <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00027</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <PARAMETERS>
+                            <ECUC-INTEGER-PARAM-DEF>
+                              <SHORT-NAME>IdsMEventThresholdNumber</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">IdsMEventThresholdNumber</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">This parameter assigns the threshold ’p’ for each SEv ID affected by
+                                                            this threshold filter. All SEvs ’ p-1’ are dropped, SEvs equal or greater
+                                                            than ’p’ are forwarded.</L-2>
+                              </DESC>
+                                              <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00029</RELATED-TRACE-ITEM-REF>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <SCOPE>LOCAL</SCOPE>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <MAX>65535</MAX>
+                              <MIN>2</MIN>
+                            </ECUC-INTEGER-PARAM-DEF>
+                            <ECUC-FLOAT-PARAM-DEF>
+                              <SHORT-NAME>IdsMEventThresholdTimeInterval</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">IdsMEventThresholdTimeInterval</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Length of the threshold time interval (as float in seconds).
+                                                            Note: Shall be configured as a multiple of the IdsM main function period.</L-2>
+                              </DESC>
+                                              <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00028</RELATED-TRACE-ITEM-REF>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <SCOPE>LOCAL</SCOPE>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <MAX INTERVAL-TYPE="OPEN">INF</MAX>
+                              <MIN INTERVAL-TYPE="OPEN">0</MIN>
+                            </ECUC-FLOAT-PARAM-DEF>
+                          </PARAMETERS>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>IdsMForwardEveryNthFilter</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMForwardEveryNthFilter</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Out of all incoming SEVs, drop all but every nth. Those will be forwarded without modification.</L-2>
+                          </DESC>
+                                          <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00022</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <PARAMETERS>
+                            <ECUC-INTEGER-PARAM-DEF>
+                              <SHORT-NAME>IdsMNthParameter</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">IdsMNthParameter</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">For each SEv ID for which this filter is configured, this parameter
+                                                            assigns the appropriate n. Only 1 from n SEvs will be forwarded.</L-2>
+                              </DESC>
+                                              <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00023</RELATED-TRACE-ITEM-REF>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <SCOPE>LOCAL</SCOPE>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <MAX>65535</MAX>
+                              <MIN>2</MIN>
+                            </ECUC-INTEGER-PARAM-DEF>
+                          </PARAMETERS>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>IdsMRbCustomFilter</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMRbCustomFilter</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Custom filter to be used over a callout</L-2>
+                          </DESC>
+                                        <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">IdsM_SWCS_IDXXXXX</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>100</UPPER-MULTIPLICITY>
+                          <REFERENCES>
+                            <ECUC-REFERENCE-DEF>
+                              <SHORT-NAME>IdsMRbCustomFilterReference</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">IdsMRbCustomFilterReference</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                    <L-2 L="EN">Reference to IdsMRbCustomFilter to hook a custom filter to a filter chain</L-2>
+                              </DESC>
+                                              <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">IdsM_SWCS_IDXXXXX</RELATED-TRACE-ITEM-REF>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <SCOPE>LOCAL</SCOPE>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <REQUIRES-SYMBOLIC-NAME-VALUE>true</REQUIRES-SYMBOLIC-NAME-VALUE>
+                              <DESTINATION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_IdsM/EcucModuleDefs/IdsM/IdsMConfiguration/IdsMRbCustomFilter</DESTINATION-REF>
+                            </ECUC-REFERENCE-DEF>
+                          </REFERENCES>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                      </SUB-CONTAINERS>
+                    </ECUC-PARAM-CONF-CONTAINER-DEF>
+                    <ECUC-PARAM-CONF-CONTAINER-DEF>
+                      <SHORT-NAME>IdsMPdus</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">IdsMPdus</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">Configuration of the PDU references used to send the events data.</L-2>
+                      </DESC>
+                              <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00018</RELATED-TRACE-ITEM-REF>
+                      <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <MULTIPLICITY-CONFIG-CLASSES>
+                        <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                      </MULTIPLICITY-CONFIG-CLASSES>
+                      <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                      <SUB-CONTAINERS>
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>IdsMIfTxPdu</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMIfTxPdu</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">IF PDU used to transmit a QSEv via the PduR to the IdsR.
+                                                        If the total size of the QSEv’s data to be transmitted fits
+                                                        in a single frame of the underlying bus, the IF PDU is used.</L-2>
+                          </DESC>
+                                          <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00040</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <PARAMETERS>
+                            <ECUC-INTEGER-PARAM-DEF>
+                              <SHORT-NAME>IdsMIfTxPduHandleId</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">IdsMIfTxPduHandleId</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">IdsM does not use this parameter, content will be ignored. The existence of this parameter is needed by PduR.</L-2>
+                              </DESC>
+                                              <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00041</RELATED-TRACE-ITEM-REF>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <SCOPE>ECU</SCOPE>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>true</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                              <MAX>0</MAX>
+                              <MIN>0</MIN>
+                            </ECUC-INTEGER-PARAM-DEF>
+                          </PARAMETERS>
+                          <REFERENCES>
+                            <ECUC-REFERENCE-DEF>
+                              <SHORT-NAME>IdsMIfTxPduRef</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">IdsMIfTxPduRef</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Reference to the IF PDU used for transmission of the QSEvs.
+                                                IdsM is not post build capable. Though the container referred to has
+                                                post-build capable configurations (Pdu/PduLength), IdsM does not support.
+                                                The burden lays on the configurator / integrator to maintain the
+                                                consistency in the configuration.
+                                                </L-2>
+                              </DESC>
+                                              <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00042</RELATED-TRACE-ITEM-REF>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <SCOPE>ECU</SCOPE>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <DESTINATION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcucDefs/EcuC/EcucConfigSet/EcucPduCollection/Pdu</DESTINATION-REF>
+                            </ECUC-REFERENCE-DEF>
+                          </REFERENCES>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>IdsMTpTxPdu</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMTpTxPdu</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">TP PDU used to transmit a QSEv via the PduR to the IdsR.
+                                                        If the total size of the QSEv’s data to be transmitted is
+                                                        bigger than the size of a single frame of the underlying
+                                                        bus, the TP PDU is used. IdsM is not post build capable.
+                                                        Though the container referred to has post-build capable
+                                                        configurations (Pdu/PduLength), IdsM does not support.The burden
+                                                        lays on the configurator / integrator to maintain the
+                                                        consistency in the configuration.  </L-2>
+                          </DESC>
+                                          <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00043</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <PARAMETERS>
+                            <ECUC-INTEGER-PARAM-DEF>
+                              <SHORT-NAME>IdsMTpTxPduHandleId</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">IdsMTpTxPduHandleId</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">IdsM does not use this parameter, content will be ignored.
+                                                            The existence of this parameter is needed by PduR.</L-2>
+                              </DESC>
+                                              <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00044</RELATED-TRACE-ITEM-REF>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <SCOPE>ECU</SCOPE>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>true</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                              <MAX>0</MAX>
+                              <MIN>0</MIN>
+                            </ECUC-INTEGER-PARAM-DEF>
+                          </PARAMETERS>
+                          <REFERENCES>
+                            <ECUC-REFERENCE-DEF>
+                              <SHORT-NAME>IdsMTpTxPduRef</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">IdsMTpTxPduRef</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Reference to the TP PDU used for transmission of the QSEvs.
+                                                 </L-2>
+                              </DESC>
+                                              <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00045</RELATED-TRACE-ITEM-REF>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <SCOPE>ECU</SCOPE>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <DESTINATION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcucDefs/EcuC/EcucConfigSet/EcucPduCollection/Pdu</DESTINATION-REF>
+                            </ECUC-REFERENCE-DEF>
+                          </REFERENCES>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                      </SUB-CONTAINERS>
+                    </ECUC-PARAM-CONF-CONTAINER-DEF>
+                    <ECUC-PARAM-CONF-CONTAINER-DEF>
+                      <SHORT-NAME>IdsMRbCustomFilter</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">IdsMRbCustomFilter</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">Custom filter to be used over a callout.</L-2>
+                      </DESC>
+                            <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">SWS_Rb_IdsM_07484</RELATED-TRACE-ITEM-REF>
+                      <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>100</UPPER-MULTIPLICITY>
+                      <MULTIPLICITY-CONFIG-CLASSES>
+                        <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                      </MULTIPLICITY-CONFIG-CLASSES>
+                      <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                      <PARAMETERS>
+                        <ECUC-STRING-PARAM-DEF>
+                          <SHORT-NAME>IdsMRbCustomFilterFunction</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMRbCustomFilterFunction</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN"> IdsM generates a callout to {IdsMRbCustomFilterFunction} at the position indicated by IdsMRbCustomFilterSequenceNumber.
+                                  The definition of the function lays in the responsibility of the project configuring it.
+
+                                  Rules for the function -
+                                  (1) Return value shall be a boolean.
+                                  TRUE if processed event is filtered out.
+                                  FALSE if process event is to be passed to the next filter or to be qualified
+                                  The filter shall respect SWS_IdsM_00904, SWS_IdsM_00905.
+                                  (2) First argument of the function prototype is IdsM_Event_Config_tst. This shall NOT be modified by the user. It is only for reading purposes.
+                                  (3) Second arguement of the function prototype is IdsM_EventBuffer_tst. Modification of elements of this structure is allowed as a part of
+                                  the implemented filtering algorithm. However failures arrising in IdsM due to modification of this structure shall be in the
+                                  resposiibilty of the user. Consultation with RTA-BSW IdsM responsible is advised.
+                                  (4) Calling of IdsM_Prv_ClearLinkedContextDataBuffer to clear associated context data during dropping is in the responsibility of the function, e.g., IdsM_Prv_ApplyBlockStateFilter.
+                                  </L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <SCOPE>LOCAL</SCOPE>
+                          <ORIGIN>RB:4.0.0:2023-01-20</ORIGIN>
+                          <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                        </ECUC-STRING-PARAM-DEF>
+                      </PARAMETERS>
+                    </ECUC-PARAM-CONF-CONTAINER-DEF>
+                  </SUB-CONTAINERS>
+                </ECUC-PARAM-CONF-CONTAINER-DEF>
+                <ECUC-PARAM-CONF-CONTAINER-DEF>
+                  <SHORT-NAME>IdsMGeneral</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">IdsMGeneral</L-4>
+                  </LONG-NAME>
+                  <DESC>
+                    <L-2 L="EN">General configuration parameters of IdsM.</L-2>
+                  </DESC>
+                  <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00002</RELATED-TRACE-ITEM-REF>
+                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                  <PARAMETERS>
+                    <ECUC-BOOLEAN-PARAM-DEF>
+                      <SHORT-NAME>IdsMDevErrorDetect</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">IdsMDevErrorDetect</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">This parameter enables/disables the Development Error Detection and Notification.
+                                    true: Development error detection is enabled.
+                                    false: Development error detection is disabled.</L-2>
+                      </DESC>
+                      <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00005</RELATED-TRACE-ITEM-REF>
+                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <SCOPE>LOCAL</SCOPE>
+                      <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                    </ECUC-BOOLEAN-PARAM-DEF>
+                    <ECUC-BOOLEAN-PARAM-DEF>
+                      <SHORT-NAME>IdsMDiagnosticSupport</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">IdsMDiagnosticSupport</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">Enables or disables the Dcm APIs which are used to read and write
+                                    certain values of the IdsM module through the diagnostic
+                                    communication manager.TRACE[SWS_IdsM_01800]</L-2>
+                      </DESC>
+                      <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00010</RELATED-TRACE-ITEM-REF>
+                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <SCOPE>LOCAL</SCOPE>
+                      <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                    </ECUC-BOOLEAN-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF>
+                      <SHORT-NAME>IdsMInstanceId</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">IdsMInstanceId</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">The unique identifier of the sending IdsM instance. This ID helps
+                                    identifying the origin of a SEv, together with the SEv configuration
+                                    parameters: ExternalEventId and the IdsMSensorInstanceId..</L-2>
+                      </DESC>
+                      <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00007</RELATED-TRACE-ITEM-REF>
+                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <SCOPE>LOCAL</SCOPE>
+                      <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <MAX>1023</MAX>
+                      <MIN>0</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>
+                    <ECUC-FLOAT-PARAM-DEF>
+                      <SHORT-NAME>IdsMMainFunctionPeriod</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">IdsMMainFunctionPeriod</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">The period between successive calls to the IdsM main function (as float in seconds)..</L-2>
+                      </DESC>
+                      <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00004</RELATED-TRACE-ITEM-REF>
+                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <SCOPE>ECU</SCOPE>
+                      <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>0.01</DEFAULT-VALUE>
+                      <MAX INTERVAL-TYPE="OPEN">INF</MAX>
+                      <MIN INTERVAL-TYPE="OPEN">0</MIN>
+                    </ECUC-FLOAT-PARAM-DEF>
+                    <ECUC-BOOLEAN-PARAM-DEF>
+                      <SHORT-NAME>IdsMSignatureSupport</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">IdsMSignatureSupport</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">This parameter enables/disables the functionality of sending messages
+                                    to the network with a signature of encryption calculated by the crypto
+                                    services.</L-2>
+                      </DESC>
+                      <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00009</RELATED-TRACE-ITEM-REF>
+                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <SCOPE>LOCAL</SCOPE>
+                      <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                    </ECUC-BOOLEAN-PARAM-DEF>
+                    <ECUC-BOOLEAN-PARAM-DEF>
+                      <SHORT-NAME>IdsMVersionInfoApi</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">IdsMVersionInfoApi</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">This parameter enables/disables the function IdsM_GetVersionInfo() to
+                                    get major, minor and patch version information of the module.</L-2>
+                      </DESC>
+                      <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00006</RELATED-TRACE-ITEM-REF>
+                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <SCOPE>LOCAL</SCOPE>
+                      <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                    </ECUC-BOOLEAN-PARAM-DEF>
+                    <ECUC-BOOLEAN-PARAM-DEF>
+                        <SHORT-NAME>IdsMRbSinkIdsRFixedIfPduLength</SHORT-NAME>
+                        <LONG-NAME>
+                          <L-4 L="EN">IdsMRbSinkIdsRFixedIfPduLength</L-4>
+                        </LONG-NAME>
+                        <DESC>
+                          <L-2 L="EN">This parameter enables/disables padding of zeros to the QSEv datagram to match the
+                                      PduLength of the configured underlying If Pdu referred by IdsMIfTxPduRef. The
+                                      QSEv datagram is computed by IdsM based on 5.1.1 IDS Protocol Overview from
+                                      Specification of Intrusion Detection System Protocol.
+
+                                      true: Zeros are padded to the end of the QSEv datagram to match the configured PduLength and
+                                      transmission to PduR is triggered with size of data equivalent to configured PduLength.
+
+                                      false: Transmission of QSEv datagram is requested based on IdsM computed QSEv datagram size.</L-2>
+                        </DESC>
+                        <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">SWS_Rb_IdsM_07640</RELATED-TRACE-ITEM-REF>
+                        <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                        <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                        <SCOPE>LOCAL</SCOPE>
+                        <ORIGIN>RB:4.0.0:2023-04-20</ORIGIN>
+                        <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                        <VALUE-CONFIG-CLASSES>
+                          <ECUC-VALUE-CONFIGURATION-CLASS>
+                            <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                            <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                          </ECUC-VALUE-CONFIGURATION-CLASS>
+                        </VALUE-CONFIG-CLASSES>
+                        <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                        <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                    </ECUC-BOOLEAN-PARAM-DEF>
+                  </PARAMETERS>
+                  <REFERENCES>
+                    <ECUC-REFERENCE-DEF>
+                      <SHORT-NAME>IdsMNvmBlockDescriptor</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">IdsMNvmBlockDescriptor</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">Choose a NvM block descriptor reference, that is used to load and store the non-volatile data of IdsM module.
+                                        The supported NvM block names are: RAM: IdsM_NvMRamBlockData ROM: IdsM_NvMRomBlockData.</L-2>
+                      </DESC>
+                          <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00013</RELATED-TRACE-ITEM-REF>
+                      <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <SCOPE>ECU</SCOPE>
+                      <MULTIPLICITY-CONFIG-CLASSES>
+                        <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                      </MULTIPLICITY-CONFIG-CLASSES>
+                      <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                      <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <REQUIRES-SYMBOLIC-NAME-VALUE>true</REQUIRES-SYMBOLIC-NAME-VALUE>
+                      <DESTINATION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcucDefs/NvM/NvMBlockDescriptor</DESTINATION-REF>
+                    </ECUC-REFERENCE-DEF>
+                  </REFERENCES>
+                  <SUB-CONTAINERS>
+                    <ECUC-PARAM-CONF-CONTAINER-DEF>
+                      <SHORT-NAME>IdsMGlobalRateLimitationFilters</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">IdsMGlobalRateLimitationFilters</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">Global rate limitation filters for all SEvs.</L-2>
+                      </DESC>
+                              <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00008</RELATED-TRACE-ITEM-REF>
+                      <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <MULTIPLICITY-CONFIG-CLASSES>
+                        <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                      </MULTIPLICITY-CONFIG-CLASSES>
+                      <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                      <SUB-CONTAINERS>
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>IdsMFilterEventRateLimitation</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMFilterEventRateLimitation</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                                        <L-2 L="EN">For configurable time intervals of length "IdsMRateLimitationTimeInterval" this filter forwards all
+                                                    the SEvs until reaching the limit "IdsMRateLimitationMaximumEvents". The limit is measured in number of incoming SEvs.
+                                                    Until the end of the time interval, all subsequent SEvs are dropped. This is helpful to cap the load that the IdsM
+                                                    generates unto information sinks like the IdsR. This filter is not specific to a single SEv but it applies to all SEvs
+                                                    handled by the current IdsM instance.</L-2>
+                          </DESC>
+                                      <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00053</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <PARAMETERS>
+                            <ECUC-INTEGER-PARAM-DEF>
+                              <SHORT-NAME>IdsMRateLimitationMaximumEvents</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">IdsMRateLimitationMaximumEvents</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">The maximum number of SEvs which are passed on by this filter in a
+                                                            single rate limitation time interval. TRACE[SWS_IdsM_01080]</L-2>
+                              </DESC>
+                                              <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00055</RELATED-TRACE-ITEM-REF>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <SCOPE>LOCAL</SCOPE>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <MAX>65535</MAX>
+                              <MIN>1</MIN>
+                            </ECUC-INTEGER-PARAM-DEF>
+                            <ECUC-FLOAT-PARAM-DEF>
+                              <SHORT-NAME>IdsMRateLimitationTimeInterval</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">IdsMRateLimitationTimeInterval</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Time interval length of the event rate limitation filter (as float in seconds).
+                                                        Note: Shall be configured as a multiple of the IdsM main function period. TRACE[SWS_IdsM_01080]</L-2>
+                              </DESC>
+                                                  <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00054</RELATED-TRACE-ITEM-REF>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <SCOPE>LOCAL</SCOPE>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <MAX INTERVAL-TYPE="OPEN">INF</MAX>
+                              <MIN INTERVAL-TYPE="OPEN">0</MIN>
+                            </ECUC-FLOAT-PARAM-DEF>
+                          </PARAMETERS>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>IdsMFilterTrafficLimitation</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMFilterTrafficLimitation</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">The traffic limitation filter forwards all the incoming SEvs until reaching the limit
+                                                    "IdsMTrafficLimitationMaximumBytes". The limit is measured in incoming amount of bytes.
+                                                    This filter forwards SEvs only, if the accumulated sizes of all incoming SEvs in the current traffic limitation time
+                                                    interval up until the current SEv is smaller or equal than a configurable maximum number of bytes
+                                                    "IdsMTrafficLimitationMaximumBytes". The length of the traffic limitation time interval is configurable in
+                                                    "IdsMTrafficLimitationTimeInterval". This filter is not specific to a single SEv but it applies to
+                                                    all SEvs handled by the current IdsM instance.</L-2>
+                          </DESC>
+                                      <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00056</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <PARAMETERS>
+                            <ECUC-INTEGER-PARAM-DEF>
+                              <SHORT-NAME>IdsMTrafficLimitationMaximumBytes</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">IdsMTrafficLimitationMaximumBytes</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">The maximum number of bytes to be sent out by the IdsM in a single
+                                                        traffic limitation time interval. TRACE[SWS_IdsM_01090]</L-2>
+                              </DESC>
+                                              <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00058</RELATED-TRACE-ITEM-REF>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <SCOPE>LOCAL</SCOPE>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <MAX>65535</MAX>
+                              <MIN>1</MIN>
+                            </ECUC-INTEGER-PARAM-DEF>
+                            <ECUC-FLOAT-PARAM-DEF>
+                              <SHORT-NAME>IdsMTrafficLimitationTimeInterval</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">IdsMTrafficLimitationTimeInterval</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Length of the traffic limitation time interval (as float in seconds).
+                                                        Note: Shall be configured as a multiple of the IdsM main function period. TRACE[SWS_IdsM_01090]</L-2>
+                              </DESC>
+                                                  <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00057</RELATED-TRACE-ITEM-REF>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <SCOPE>LOCAL</SCOPE>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <MAX INTERVAL-TYPE="OPEN">INF</MAX>
+                              <MIN INTERVAL-TYPE="OPEN">0</MIN>
+                            </ECUC-FLOAT-PARAM-DEF>
+                          </PARAMETERS>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                      </SUB-CONTAINERS>
+                    </ECUC-PARAM-CONF-CONTAINER-DEF>
+                    <ECUC-PARAM-CONF-CONTAINER-DEF>
+                      <SHORT-NAME>IdsMRbFilterChainSequence</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">IdsMRbFilterChainSequence</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">Sequence of the filters in the filter chain. No configuration needed if no custom filters are used and AUTOSAR filter order is required.</L-2>
+                      </DESC>
+                          <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">SWS_Rb_IdsM_07489</RELATED-TRACE-ITEM-REF>
+                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <MULTIPLICITY-CONFIG-CLASSES>
+                        <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                      </MULTIPLICITY-CONFIG-CLASSES>
+                      <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                      <PARAMETERS>
+                        <ECUC-INTEGER-PARAM-DEF>
+                          <SHORT-NAME>IdsMRbBlockStateFilterSequenceNumber</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMRbBlockStateFilterSequenceNumber</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                               <L-2 L="EN">Sequence number of the block state filter in the filter chain. The sequence number is allowed to be discontinuous.
+                               Default sequence number = 1, i.e., block state filter is the first filter applied in the filter chain. </L-2>
+                          </DESC>
+                             <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">SWS_Rb_IdsM_07489</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <SCOPE>LOCAL</SCOPE>
+                          <ORIGIN>RB:4.0.0:2023-01-20</ORIGIN>
+                          <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                          <DEFAULT-VALUE>1</DEFAULT-VALUE>
+                          <MAX>104</MAX>
+                          <MIN>1</MIN>
+                        </ECUC-INTEGER-PARAM-DEF>
+                        <ECUC-INTEGER-PARAM-DEF>
+                          <SHORT-NAME>IdsMRbEventAggregationFilterSequenceNumber</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMRbEventAggregationFilterSequenceNumber</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                               <L-2 L="EN">Sequence number of the event aggregation filter in the filter chain. The sequence number is allowed to be discontinuous.
+                               Default sequence number = 3, i.e., event aggregation filter is the third filter applied in the filter chain.</L-2>
+                          </DESC>
+                             <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">SWS_Rb_IdsM_07489</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <SCOPE>LOCAL</SCOPE>
+                          <ORIGIN>RB:4.0.0:2023-01-20</ORIGIN>
+                          <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                          <DEFAULT-VALUE>3</DEFAULT-VALUE>
+                          <MAX>104</MAX>
+                          <MIN>1</MIN>
+                        </ECUC-INTEGER-PARAM-DEF>
+                        <ECUC-INTEGER-PARAM-DEF>
+                          <SHORT-NAME>IdsMRbEventThresholdFilterSequenceNumber</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMRbEventThresholdFilterSequenceNumber</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                               <L-2 L="EN">Sequence number of the event threshold filter in the filter chain. The sequence number is allowed to be discontinuous.
+                               Default sequence number = 4, i.e., event threshold filter is the first filter applied in the filter chain.</L-2>
+                          </DESC>
+                             <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">SWS_Rb_IdsM_07489</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <SCOPE>LOCAL</SCOPE>
+                          <ORIGIN>RB:4.0.0:2023-01-20</ORIGIN>
+                          <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                          <DEFAULT-VALUE>4</DEFAULT-VALUE>
+                          <MAX>104</MAX>
+                          <MIN>1</MIN>
+                        </ECUC-INTEGER-PARAM-DEF>
+                        <ECUC-INTEGER-PARAM-DEF>
+                          <SHORT-NAME>IdsMRbForwardEveryNthFilterSequenceNumber</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMRbForwardEveryNthFilterSequenceNumber</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                               <L-2 L="EN">Sequence number of the sampling filter (forward every Nth filter) in the filter chain. The sequence number is allowed to be discontinuous.
+                               Default sequence number = 2, i.e., forward every Nth filter is the first filter applied in the filter chain.</L-2>
+                          </DESC>
+                             <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">SWS_Rb_IdsM_07489</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <SCOPE>LOCAL</SCOPE>
+                          <ORIGIN>RB:4.0.0:2023-01-20</ORIGIN>
+                          <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                          <DEFAULT-VALUE>2</DEFAULT-VALUE>
+                          <MAX>104</MAX>
+                          <MIN>1</MIN>
+                        </ECUC-INTEGER-PARAM-DEF>
+                      </PARAMETERS>
+                      <SUB-CONTAINERS>
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>IdsMRbCustomFilterSequenceNumber</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMRbCustomFilterSequenceNumber</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Custom filter to be used over a callout</L-2>
+                          </DESC>
+                                  <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">SWS_Rb_IdsM_07489</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>100</UPPER-MULTIPLICITY>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <PARAMETERS>
+                            <ECUC-INTEGER-PARAM-DEF>
+                              <SHORT-NAME>IdsMRbCustomFilterSequenceNumber</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">IdsMRbCustomFilterSequenceNumber</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                          <L-2 L="EN">Sequence number of the custom filter in the filter chain. The sequence number is allowed to be discontinuous.
+                               No default sequence number, i.e., the sequence number of custom filter have to always be explicitly configured.</L-2>
+                              </DESC>
+                                        <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">SWS_Rb_IdsM_07489</RELATED-TRACE-ITEM-REF>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <SCOPE>LOCAL</SCOPE>
+                              <ORIGIN>RB:4.0.0:2023-01-20</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <MAX>104</MAX>
+                              <MIN>1</MIN>
+                            </ECUC-INTEGER-PARAM-DEF>
+                          </PARAMETERS>
+                          <REFERENCES>
+                            <ECUC-REFERENCE-DEF>
+                              <SHORT-NAME>IdsMRbCustomFilterRef</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">IdsMRbCustomFilterRef</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                          <L-2 L="EN">This parameter serves as an association between sequence numbers and custom filters by having a reference to IdsMRbCustomFilter.</L-2>
+                              </DESC>
+                                        <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">SWS_Rb_IdsM_07489</RELATED-TRACE-ITEM-REF>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <SCOPE>LOCAL</SCOPE>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB:4.0.0:2023-01-20</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <REQUIRES-SYMBOLIC-NAME-VALUE>true</REQUIRES-SYMBOLIC-NAME-VALUE>
+                              <DESTINATION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_IdsM/EcucModuleDefs/IdsM/IdsMConfiguration/IdsMRbCustomFilter</DESTINATION-REF>
+                            </ECUC-REFERENCE-DEF>
+                          </REFERENCES>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                      </SUB-CONTAINERS>
+                    </ECUC-PARAM-CONF-CONTAINER-DEF>
+                    <ECUC-PARAM-CONF-CONTAINER-DEF>
+                      <SHORT-NAME>IdsMSignature</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">IdsMSignature</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">Disabled. If this container exists all qualified security events are signed by the crypto service.</L-2>
+                      </DESC>
+                              <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00059</RELATED-TRACE-ITEM-REF>
+                      <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <MULTIPLICITY-CONFIG-CLASSES>
+                        <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                      </MULTIPLICITY-CONFIG-CLASSES>
+                      <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                      <PARAMETERS>
+                        <ECUC-INTEGER-PARAM-DEF>
+                          <SHORT-NAME>IdsMSignatureLength</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMSignatureLength</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">This parameter defines the length of the signature in bytes calculated
+                                                   by the crypto service.</L-2>
+                          </DESC>
+                                     <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00011</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <SCOPE>LOCAL</SCOPE>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                          <MAX>4294967295</MAX>
+                          <MIN>1</MIN>
+                        </ECUC-INTEGER-PARAM-DEF>
+                      </PARAMETERS>
+                      <REFERENCES>
+                        <ECUC-REFERENCE-DEF>
+                          <SHORT-NAME>IdsMCsmJobReference</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMCsmJobReference</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">This parameter references the Csm job that is used to generate
+                                                    signatures when qualified security events must be signed.</L-2>
+                          </DESC>
+                                      <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00015</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <SCOPE>LOCAL</SCOPE>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <DESTINATION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcucDefs/Csm/CsmJobs/CsmJob</DESTINATION-REF>
+                        </ECUC-REFERENCE-DEF>
+                      </REFERENCES>
+                    </ECUC-PARAM-CONF-CONTAINER-DEF>
+                    <ECUC-PARAM-CONF-CONTAINER-DEF>
+                      <SHORT-NAME>IdsMTimestamp</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">IdsMTimestamp</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">If this container exists a timestamp field is added to all qualified security events.</L-2>
+                      </DESC>
+                              <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00060</RELATED-TRACE-ITEM-REF>
+                      <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <MULTIPLICITY-CONFIG-CLASSES>
+                        <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                      </MULTIPLICITY-CONFIG-CLASSES>
+                      <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                      <PARAMETERS>
+                        <ECUC-ENUMERATION-PARAM-DEF>
+                          <SHORT-NAME>IdsMTimestampOption</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMTimestampOption</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">This parameter speciies if the origin of the timestamp is from the
+                                                        AUTOSAR stack or from the application (custom timestamp). TRACE[SWS_IdsM_01100] </L-2>
+                          </DESC>
+                                      <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00012</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <SCOPE>LOCAL</SCOPE>
+                          <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                          <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                          <LITERALS>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>AUTOSAR</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">AUTOSAR</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>Custom</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Custom</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                          </LITERALS>
+                        </ECUC-ENUMERATION-PARAM-DEF>
+                      </PARAMETERS>
+                      <REFERENCES>
+                        <ECUC-REFERENCE-DEF>
+                          <SHORT-NAME>IdsMStbmTimeBaseReference</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">IdsMStbmTimeBaseReference</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">This parameter references the time source when the origin of the timestamp is AUTOSAR.</L-2>
+                          </DESC>
+                                      <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_IdsM_00014</RELATED-TRACE-ITEM-REF>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <SCOPE>LOCAL</SCOPE>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <REQUIRES-SYMBOLIC-NAME-VALUE>true</REQUIRES-SYMBOLIC-NAME-VALUE>
+                          <DESTINATION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_StbM/EcucModuleDefs/StbM/StbMSynchronizedTimeBase</DESTINATION-REF>
+                        </ECUC-REFERENCE-DEF>
+                      </REFERENCES>
+                    </ECUC-PARAM-CONF-CONTAINER-DEF>
+                  </SUB-CONTAINERS>
+                </ECUC-PARAM-CONF-CONTAINER-DEF>
+              </CONTAINERS>
+            </ECUC-MODULE-DEF>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

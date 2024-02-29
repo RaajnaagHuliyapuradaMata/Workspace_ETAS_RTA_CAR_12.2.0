@@ -1,0 +1,219 @@
+Conf-Gen PreProcessor executing...
+Detected Ecu Extract preference customization file in the project: C:\ETAS\RTA-CAR_12.2.0\RTA-CAR\workspace\NewProjectFromScratch\EcuExtract_CLI_Input.txt
+Ecu Extract completed successfully
+
+Conf-Gen PreProcessor executed.
+Conf-Gen executing...
+********************************************************************************
+Conf-Gen Execution Started
+********************************************************************************
+Tool Version : ISOLAR-B 
+Tool Build Id :20230905_1800
+Date : Thu Feb 29 10:33:23 CET 2024
+Project : NewProjectFromScratch
+********************************************************************************
+Executing Start Script: RTA-BSW
+********************************************************************************
+[INFO]isCreateComNotification is configured as false
+[INFO]IsDcmRoutingForTpOnly is configured as true
+[INFO]IsRtaBswDcmIpdu is configured as true
+[INFO]ar_deviation_ComNmPdu_CutNmData is configured as true
+[INFO]isCreateDefaultDemFreezeFrameClass is configured as true
+[INFO]logOutputLevel is configured as INFO
+[INFO]Running importer...
+[INFO]Starting mapping
+[INFO]Total number of MB defined: 2
+[INFO]Number of receive pdus : 1
+[INFO]Number of transmit pdus : 1
+[INFO]AutoMapping Started
+[INFO]Number of MBs = 2 for Can_Network_CANNODE_0
+[INFO]Number of MBs >= Number of Pdus
+[INFO]Mapping 1 TxPdus into 1 mailboxes
+[INFO]Mapping 1 RxPdus into 1 mailboxes
+[INFO]Mapping Complete
+[INFO]Start validation
+[INFO]Finished validating
+[INFO]Identified project specific resource: rba_AdcDs_EcucParamDef.arxml
+[INFO]Identified project specific resource: LinSM_EcucParamDef.arxml
+[INFO]Identified project specific resource: rba_Stm_EcucParamDef.arxml
+[INFO]Identified project specific resource: Rte_Rips_EcucParamDef.arxml
+[INFO]Identified project specific resource: StbM_EcucParamDef.arxml
+[INFO]Identified project specific resource: EcuC_EcucParamDef.arxml
+[INFO]Identified project specific resource: LinTrcv_EcucParamDef.arxml
+[INFO]Identified project specific resource: rba_ComStackCdd_EcucParamDef.arxml
+[INFO]Identified project specific resource: rba_CUCELCompuMethods_BSWMD.arxml
+[INFO]Identified project specific resource: Crypto_EcucParamDef.arxml
+[INFO]Identified project specific resource: CanTSyn_EcucParamDef.arxml
+[INFO]Identified project specific resource: FiM_EcucParamDef.arxml
+[INFO]Identified project specific resource: rba_Reg_EcucParamDef.arxml
+[INFO]Identified project specific resource: MemIf_EcucParamDef.arxml
+[INFO]Identified project specific resource: EthTrcv_EcucParamDef.arxml
+[INFO]Identified project specific resource: Xfrm_EcucParamDef.arxml
+[INFO]Identified project specific resource: Standard_Types.arxml
+[INFO]Identified project specific resource: rba_Dma_EcucParamDef.arxml
+[INFO]Identified project specific resource: PlatformSwBasePatch_Types.arxml
+[INFO]Identified project specific resource: CryIf_EcucParamDef.arxml
+[INFO]Identified project specific resource: Mfl_EcucParamDef.arxml
+[INFO]Identified project specific resource: Eth_EcucParamDef.arxml
+[INFO]Identified project specific resource: TcpIp_EcucParamDef.arxml
+[INFO]Identified project specific resource: Det_EcucParamDef.arxml
+[INFO]Identified project specific resource: SwCluC_EcucParamDef.arxml
+[INFO]Identified project specific resource: Pwm_EcucParamDef.arxml
+[INFO]Identified project specific resource: Dcm_EcucParamDef.arxml
+[INFO]Identified project specific resource: Rte_Rips_CSXfrm_EcucParamDef.arxml
+[INFO]Identified project specific resource: Crc_EcucParamDef.arxml
+[INFO]Identified project specific resource: PlatformBase_Types.arxml
+[INFO]Identified project specific resource: rba_I2c_EcucParamDef.arxml
+[INFO]Identified project specific resource: Xcp_EcucParamDef.arxml
+[INFO]Identified project specific resource: rba_Gtm_EcucParamDef.arxml
+[INFO]Identified project specific resource: WdgIf_EcucParamDef.arxml
+[INFO]Identified project specific resource: Dem_Rb_EcucParamDef.arxml
+[INFO]Identified project specific resource: Mcu_EcucParamDef.arxml
+[INFO]Identified project specific resource: Ea_EcucParamDef.arxml
+[INFO]Identified project specific resource: NvM_EcucParamDef.arxml
+[INFO]Identified project specific resource: Mfx_EcucParamDef.arxml
+[INFO]Identified project specific resource: Fr_EcucParamDef.arxml
+[INFO]Identified project specific resource: rba_SysElem_EcucParamDef.arxml
+[INFO]Identified project specific resource: AISpecification_Unit_SWCD.arxml
+[INFO]Identified project specific resource: EthSM_EcucParamDef.arxml
+[INFO]Identified project specific resource: Fls_EcucParamDef.arxml
+[INFO]Identified project specific resource: ComM_EcucParamDef.arxml
+[INFO]Identified project specific resource: UdpNm_EcucParamDef.arxml
+[INFO]Identified project specific resource: ETAS_OptionsParamDef.arxml
+[INFO]Identified project specific resource: Rte_Rips_SRCom_EcucParamDef.arxml
+[INFO]Identified project specific resource: Fee_EcucParamDef.arxml
+[INFO]Identified project specific resource: Ifl_EcucParamDef.arxml
+[INFO]Identified project specific resource: rba_MemLibVal_EcucParamDef.arxml
+[INFO]Identified project specific resource: FlsTst_EcucParamDef.arxml
+[INFO]Identified project specific resource: rba_Msc_EcucParamDef.arxml
+[INFO]Identified project specific resource: MyReceivingSWC.arxml
+[INFO]Identified project specific resource: System_EcuExtr.arxml
+[INFO]Identified project specific resource: Adc_EcucParamDef.arxml
+[INFO]Identified project specific resource: AISpecification_PhysicalDimension_SWCD.arxml
+[INFO]Identified project specific resource: Sd_EcucParamDef.arxml
+[INFO]Identified project specific resource: Composition.arxml
+[INFO]Identified project specific resource: Dem_EcucParamDef.arxml
+[INFO]Identified project specific resource: rba_XCoreCdd_EcucParamDef.arxml
+[INFO]Identified project specific resource: FrTrcv_EcucParamDef.arxml
+[INFO]Identified project specific resource: rba_Mpu_EcucParamDef.arxml
+[INFO]Identified project specific resource: BswM_EcucParamDef.arxml
+[INFO]Identified project specific resource: EcucValueCollection_Generated.arxml
+[INFO]Identified project specific resource: Port_EcucParamDef.arxml
+[INFO]Identified project specific resource: WdgM_EcucParamDef.arxml
+[INFO]Identified project specific resource: ApplicationECU_FlatMap.arxml
+[INFO]Identified project specific resource: rba_CUCELSwAddrMethodAddOn_BSWMD.arxml
+[INFO]Identified project specific resource: DBC_SysDesc.arxml
+[INFO]Identified project specific resource: Os_EcucValues.arxml
+[INFO]Identified project specific resource: FrIf_EcucParamDef.arxml
+[INFO]Identified project specific resource: Rte_EcucParamDef.arxml
+[INFO]Identified project specific resource: Spi_EcucParamDef.arxml
+[INFO]Identified project specific resource: CanTp_EcucParamDef.arxml
+[INFO]Identified project specific resource: J1939Tp_EcucParamDef.arxml
+[INFO]Identified project specific resource: rba_Dfa_EcucParamDef.arxml
+[INFO]Identified project specific resource: rba_McalSrv_EcucParamDef.arxml
+[INFO]Identified project specific resource: FrSM_EcucParamDef.arxml
+[INFO]Identified project specific resource: EthIf_EcucParamDef.arxml
+[INFO]Identified project specific resource: Gpt_EcucParamDef.arxml
+[INFO]Identified project specific resource: rba_Acp_EcucParamDef.arxml
+[INFO]Identified project specific resource: E2EXf_EcucParamDef.arxml
+[INFO]Identified project specific resource: PduR_EcucParamDef.arxml
+[INFO]Identified project specific resource: ComUser_EcucParamDef.arxml
+[INFO]Identified project specific resource: EthTSyn_EcucParamDef.arxml
+[INFO]Identified project specific resource: SomeIpTp_EcucParamDef.arxml
+[INFO]Identified project specific resource: CanTrcv_EcucParamDef.arxml
+[INFO]Identified project specific resource: ApplicationECU_FlatView_SWCD.arxml
+[INFO]Identified project specific resource: Com_EcucParamDef.arxml
+[INFO]Identified project specific resource: J1939Rm_EcucParamDef.arxml
+[INFO]Identified project specific resource: CanNm_EcucParamDef.arxml
+[INFO]Identified project specific resource: J1939Nm_EcucParamDef.arxml
+[INFO]Identified project specific resource: LdComUser_EcucParamDef.arxml
+[INFO]Identified project specific resource: Platform_EcucParamdef.arxml
+[INFO]Identified project specific resource: rba_BswSrv_EcucParamDef.arxml
+[INFO]Identified project specific resource: rba_Wdta_EcucParamDef.arxml
+[INFO]Identified project specific resource: PlatformBaseOld_Types.arxml
+[INFO]Identified project specific resource: J1939Dcm_EcucParamDef.arxml
+[INFO]Identified project specific resource: IpduM_EcucParamDef.arxml
+[INFO]Identified project specific resource: Dlt_EcucParamDef.arxml
+[INFO]Identified project specific resource: rba_Emm_EcucParamDef.arxml
+[INFO]Identified project specific resource: rba_Uart_EcucParamDef.arxml
+[INFO]Identified project specific resource: rba_MemLib_EcucParamDef.arxml
+[INFO]Identified project specific resource: rba_BswSrv_EcucValues.arxml
+[INFO]Identified project specific resource: Can_EcucParamDef.arxml
+[INFO]Identified project specific resource: rba_DemObdBasic_EcucParamDef.arxml
+[INFO]Identified project specific resource: Lin_EcucParamDef.arxml
+[INFO]Identified project specific resource: Csm_EcucParamDef.arxml
+[INFO]Identified project specific resource: Compiler_EcucParamDef.arxml
+[INFO]Identified project specific resource: DoIP_EcucParamDef.arxml
+[INFO]Identified project specific resource: SoAd_EcucParamDef.arxml
+[INFO]Identified project specific resource: LdCom_EcucParamDef.arxml
+[INFO]Identified project specific resource: LinIf_EcucParamDef.arxml
+[INFO]Identified project specific resource: IdsM_EcucParamDef.arxml
+[INFO]Identified project specific resource: ISOLAR_PlatformTypes.arxml
+[INFO]Identified project specific resource: Efx_EcucParamDef.arxml
+[INFO]Identified project specific resource: rba_DiagLib_EcucParamDef.arxml
+[INFO]Identified project specific resource: CanSM_EcucParamDef.arxml
+[INFO]Identified project specific resource: ComStack_Types.arxml
+[INFO]Identified project specific resource: LinIf_LinTp_EcucParamDef.arxml
+[INFO]Identified project specific resource: EcuM_EcucParamDef.arxml
+[INFO]Identified project specific resource: rba_CUCELSwAddrMethod_BSWMD.arxml
+[INFO]Identified project specific resource: Wdg_EcucParamDef.arxml
+[INFO]Identified project specific resource: Interfaces.arxml
+[INFO]Identified project specific resource: Eep_EcucParamDef.arxml
+[INFO]Identified project specific resource: E2E_EcucParamDef.arxml
+[INFO]Identified project specific resource: KeyM_EcucParamDef.arxml
+[INFO]Identified project specific resource: DataTypes.arxml
+[INFO]Identified project specific resource: PlatformOld_Types.arxml
+[INFO]Identified project specific resource: rba_ArxmlGen_EcucParamDef.arxml
+[INFO]Identified project specific resource: FrNm_EcucParamDef.arxml
+[INFO]Identified project specific resource: Icu_EcucParamDef.arxml
+[INFO]Identified project specific resource: Os_EcucParamDef.arxml
+[INFO]Identified project specific resource: Rte_EcucValues.arxml
+[INFO]Identified project specific resource: rba_C2c_EcucParamDef.arxml
+[INFO]Identified project specific resource: FrTp_EcucParamDef.arxml
+[INFO]Identified project specific resource: Platform_Types.arxml
+[INFO]Identified project specific resource: Ifx_EcucParamDef.arxml
+[INFO]Identified project specific resource: SecOC_EcucParamDef.arxml
+[INFO]Identified project specific resource: CanIf_EcucParamdef.arxml
+[INFO]Identified project specific resource: Nm_EcucParamDef.arxml
+[INFO]Identified project specific resource: Dio_EcucParamDef.arxml
+[INFO]Identified project specific resource: ecy_hsm_EcucParamDef.arxml
+[INFO]Identified project specific resource: rba_Amu_EcucParamDef.arxml
+[INFO]Identified project specific resource: MyTransmittingSWC.arxml
+[INFO]Identified project specific resource: Bfx_EcucParamDef.arxml
+[INFO]---
+[WARN]No file found (ends with Configuration Importer.txt)
+[INFO]---
+[INFO]EcuInstance is taken from Configuration_Importer.java: ApplicationECU
+[INFO]Importing Ecu: ApplicationECU of file DBC_SysDesc.arxml
+[INFO]Identified System of category ECU_EXTRACT
+[INFO]Found current RootSwCompositionPrototype: /System_EcuExtract/EXTR_ApplicationECU/CPT_ApplicationECU_FlatView
+[INFO]Found current Rootswcompo_Flatview (merged)- /ApplicationECU_FlatView/SwComponentTypes/ApplicationECU_FlatView
+[INFO]Found current Rootswcompo_Flatview (non-merged)- /ApplicationECU_FlatView/SwComponentTypes/ApplicationECU_FlatView
+[WARN]value of ECU-INSTANCE / COM-CONFIGURATION-GW-TIME-BASE in extract will be ignored: mapped Ecuc container ComTimeBase for ComGwTimeBase is not supported by ParamDef
+[WARN]value of ECU-INSTANCE / COM-CONFIGURATION-RX-TIME-BASE in extract will be ignored: mapped Ecuc container ComTimeBase for ComRxTimeBase is not supported by ParamDef
+[WARN]value of ECU-INSTANCE / COM-CONFIGURATION-TX-TIME-BASE in extract will be ignored: mapped Ecuc container ComTimeBase for ComTxTimeBase is not supported by ParamDef
+[INFO]Processing Can/J1939 Cluster Can_Network
+[WARN]No NmCluster found for CommunicationConnector Conn_Can_Network_CANNODE_0_ApplicationECU - ComMNmVariant must be manually set to either NONE or LIGHT
+[WARN]Mandatory element UnusedBitPattern is missing for IsignalIpdu ApplicationECU_TestResult_Tx: ComIPdu IP_ApplicationECU_TestResult_Tx_Can_Network_Channel_CAN_Tx -> parameter ComTxIPduUnusedAreasDefault cannot be set
+[INFO]No DiagnosticContributionSet found
+[INFO]No Xfrm Config found, skipping Xfrm Import
+[INFO]Adding further RTA-BSW configuration...
+[WARN]Skip: /ETAS_Project/EcucModuleConfigurationValuess/PduR/CanIf/PduRChangeParameterApi does not exist
+[WARN]Skip: /ETAS_Project/EcucModuleConfigurationValuess/PduR/Com/PduRChangeParameterApi does not exist
+[INFO]Copying properties to parameters...
+[WARN]Skip: /ETAS_Project/EcucModuleConfigurationValuess/Can/CanGeneral/CanPublicIcomSupport does not exist
+[WARN]Skip: /ETAS_Project/EcucModuleConfigurationValuess/Can/CanConfigSet/Can_Network_CANNODE_0/CanWakeupFunctionalityAPI does not exist
+[WARN]Skip: /ETAS_Project/EcucModuleConfigurationValuess/PduR/PduRGeneral/PduRGwTpWithLimitedBuffer does not exist
+[INFO]Further RTA-BSW configuration added
+[INFO]JacoP importer execution completed.
+Executing 'Conf-Gen Enhancer' for project 'NewProjectFromScratch'
+********************************************************************************
+********************************************************************************
+Time taken for Executing Conf-Gen Enhancer: 00:00:00:021
+********************************************************************************
+********************************************************************************
+Total Time taken for Conf-Gen Execution: 00:00:12:062
+********************************************************************************
+Conf-Gen executed.
+Conf-Gen PostProcessor executing...
+Conf-Gen PostProcessor executed.
