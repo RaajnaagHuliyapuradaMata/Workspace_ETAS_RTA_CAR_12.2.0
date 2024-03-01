@@ -1,0 +1,138 @@
+RTE Paramdef is deployed into the following location: ecu_config/paramdefs/Rte_EcucParamDef.arxml
+RTE EcucValues file with default value is deployed into the following location: ecu_config/rte/internal/Rte_EcucValues.arxml
+********************************************************************************
+Build Execution started
+********************************************************************************
+Tool Version : RTA-CAR 12.2.0 
+Tool Build Id :20230905_1800
+Date : Thu Feb 29 14:20:51 CET 2024
+Project : NewProjectFromScratch
+********************************************************************************
+
+********************************************************************************
+Project clean execution has started at 14:20:52:349 hh:mm:ss:ms 
+********************************************************************************
+Clean action: RTA_RTE 
+********************************************************************************
+Project clean execution has been completed
+Time taken to run Project Clean :: 00:00:00:088 hh:mm:ss:ms 
+********************************************************************************
+********************************************************************************
+Pre build execution has started at 14:20:52:782 hh:mm:ss:ms 
+********************************************************************************
+Pre build validation successfully completed
+Execute action: RtePreProcessor 
+********************************************************************************
+Execution of action RtePreProcessor successfully completed
+********************************************************************************
+********************************************************************************
+Main build execution has started at 14:20:58:322 hh:mm:ss:ms 
+********************************************************************************
+Execute action: RTA_RTE 
+********************************************************************************
+Command line options: 
+-q 1 -r /DBC_SysDesc_Can_Network/Pkg_Ecu/ApplicationECU -f C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/rtegen_files.lst [ C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ApplicationECU_FlatMap.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ApplicationECU_FlatView_SWCD.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ApplicationECU_Project_EcucValues.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/DBC_SysDesc.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/DataTypes.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/EcucValueCollection_Generated.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ISOLAR_PlatformTypes.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/Interfaces.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/MyReceivingSWC.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/MyTransmittingSWC.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/System_EcuExtr.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/ecucvalues/BswM_EcucValues.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/ecucvalues/BswM_ModeMapping.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/ecucvalues/EcuM_EcucValues.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/gen/ComM_EOC.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/gen/Com_EOC.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/gen/_fwd/ecuc_configuration_values_fwd.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/gen/bswmd/Bfx_BSWMD.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/gen/bswmd/BswM_Cfg_BSWMD.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/gen/bswmd/CanIf_BSWMD.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/gen/bswmd/CanIf_Cfg_BSWMD.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/gen/bswmd/CanIf_EOC.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/gen/bswmd/CanSM_BSWMD.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/gen/bswmd/CanSM_Cfg_BSWMD.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/gen/bswmd/CanSM_EOC.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/gen/bswmd/ComM_Cfg_BSWMD.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/gen/bswmd/Com_Cfg_BSWMD.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/gen/bswmd/EcuM_BSWMD.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/gen/bswmd/EcuM_Cfg_BSWMD.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/gen/bswmd/Fls_Cfg_BSWMD.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/gen/bswmd/PduR_Cfg_BSWMD.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/gen/bswmd/PduR_EOC.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/gen/bswmd/rba_BswSrv_BSWMD.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/gen/bswmd/rba_DiagLib_Cfg_BSWMD.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/gen/swcd/BswM_Cfg_SWCD.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/gen/swcd/ComM_Cfg_SWCD.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/gen/swcd/ComM_SWCD.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/gen/swcd/EcuM_Cfg_SWCD.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/gen/swcd/rba_DiagLib_Cfg_SWCD.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/integrationCfg/Can_BSWMD.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/integrationCfg/Compiler.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/integrationCfg/Fls_BSWMD.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/integrationCfg/Fls_BSWMD_EcucValues.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/integrationCfg/Platform.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/internal/bswmd_ecuc_values/CanIf_Prot_EcucValues.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/internal/bswmd_ecuc_values/CanSM_Prot_EcucValues.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/internal/bswmd_ecuc_values/ComM_Prot_EcucValues.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/internal/bswmd_ecuc_values/Com_Prot_EcucValues.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/internal/bswmd_ecuc_values/PduR_Prot_EcucValues.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/bsw/internal/rba_BswSrv_EcucValues.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/os/internal/Os_EcucValues.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/ecu_config/rte/internal/Rte_EcucValues.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/src/bsw/CanIf/integration/Can_GeneralTypes.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/system_config/AISpecification_PhysicalDimension_SWCD.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/system_config/AISpecification_Unit_SWCD.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/system_config/ComStack_Types.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/system_config/Composition.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/system_config/MSI_ShutDown.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/system_config/PlatformBaseOld_Types.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/system_config/PlatformBase_Types.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/system_config/PlatformOld_Types.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/system_config/PlatformSwBasePatch_Types.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/system_config/Platform_Types.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/system_config/Standard_Types.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/system_config/rba_CUCELCompuMethods_BSWMD.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/system_config/rba_CUCELSwAddrMethodAddOn_BSWMD.arxml C:/Users/nhuliyap/AppData/Local/Temp/rta/rte/AR2111/system_config/rba_CUCELSwAddrMethod_BSWMD.arxml ] --strict-unconnected-rport-check=off --os-define-osenv=RTAOS40 --notimestamps --samples=memmap -o [*.*]C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte --error-report=xml
+Product Version : RTA-RTE V12.2.0
+Copyright (C) ETAS GmbH 2004-2023
+Operating System : Windows
+Pre-processor warning set to - pragma message
+Phase is RTE (license verified)
+>Validating XML...
+>Validating Containers...
+<Validating Containers... done
+<Validating XML... done
+>Building types database...
+<Building types database... done
+>Flattening Root Composition...
+>Parsing RTE Configuration...
+<Parsing RTE Configuration... done
+<Flattening Root Composition... done
+>Validating Input...
+<Validating Input... done
+>Finding modes...
+<Finding modes... done
+>Building skeleton reification tree...
+<Building skeleton reification tree... done
+>Building reification tree...
+<Building reification tree... done
+>Generating output files...
+<Generating output files... done
+>Processing templates...
+<Processing templates... done
+Messages written to C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/RteErr.xml.
+0 errors, 23 warnings and 8 info messages were generated.
+The following files were generated:
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/BswM_MemMap.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/ComM_MemMap.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/EcuM_MemMap.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/MyReceivingSWC_MemMap.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/MyTransmittingSWC_MemMap.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/Rte.c
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/Rte.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/Rte_BSWMD.arxml
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/Rte_BswM.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/Rte_BswM_Type.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/Rte_Catalog.xml
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/Rte_Cbk.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/Rte_Cfg.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/Rte_ComM.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/Rte_ComM_Type.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/Rte_Const.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/Rte_DataHandleType.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/Rte_EcuM.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/Rte_EcuM_Type.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/Rte_Hook.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/Rte_Intl.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/Rte_Lib.c
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/Rte_Main.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/Rte_McSupportData.arxml
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/Rte_MyReceivingSWC.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/Rte_MyReceivingSWC_Type.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/Rte_MyTransmittingSWC.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/Rte_MyTransmittingSWC_Type.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/Rte_Os_Type.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/Rte_Type.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/Rte_rba_DiagLib.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/Rte_rba_DiagLib_Type.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/SchM_BswM.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/SchM_BswM_Type.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/SchM_Can.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/SchM_CanSM.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/SchM_CanSM_Type.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/SchM_Can_Type.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/SchM_Com.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/SchM_ComM.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/SchM_ComM_Type.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/SchM_Com_Type.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/SchM_EcuM.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/SchM_EcuM_Type.h
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/osNeeds.arxml
+	C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/rba_DiagLib_MemMap.h
+Command: [C:/ETAS/RTA-CAR_12.2.0/RTA-RTE_12.2.0/bin/RTEGen.exe, -q, 1, -r, /DBC_SysDesc_Can_Network/Pkg_Ecu/ApplicationECU, -f, C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte/rtegen_files.lst, --strict-unconnected-rport-check=off, --os-define-osenv=RTAOS40, --notimestamps, --samples=memmap, -o, [*.*]C:/ETAS/RTA-CAR_12.2.0/RTA-CAR/workspace/NewProjectFromScratch/src/rte, --error-report=xml]
+Execution of action RTA_RTE successfully completed
+********************************************************************************
+********************************************************************************
+Post build execution has started at 14:21:02:953 hh:mm:ss:ms 
+********************************************************************************
+Execute action: ProblemsLogEntryCreator 
+********************************************************************************
+Execution of action ProblemsLogEntryCreator successfully completed
+********************************************************************************
+Execute action: RtePostProcessor 
+********************************************************************************
+Execution of action RtePostProcessor successfully completed
+********************************************************************************
+
+********************************************************************************
+Pre Build Summary 
+********************************************************************************
+- RtePreProcessor --> Success (Executed for 00:00:01:394 hh:mm:ss:ms)
+Build Summary 
+********************************************************************************
+- RTA_RTE --> Success (Executed for 00:00:02:411 hh:mm:ss:ms)
+********************************************************************************
+Post Build Summary 
+********************************************************************************
+- ProblemsLogEntryCreator --> Success (Executed for 00:00:00:079 hh:mm:ss:ms)
+- RtePostProcessor --> Success (Executed for 00:00:00:188 hh:mm:ss:ms)
+Time taken for the complete build: 00:00:05:480

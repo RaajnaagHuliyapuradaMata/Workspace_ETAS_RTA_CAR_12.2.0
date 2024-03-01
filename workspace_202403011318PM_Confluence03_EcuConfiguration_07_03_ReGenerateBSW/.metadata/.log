@@ -1,0 +1,102 @@
+!SESSION 2024-03-01 13:11:22.239 -----------------------------------------------
+eclipse.buildId=20230905_1800
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file C:\ETAS\RTA-CAR_12.2.0\RTA-CAR\workspace\.metadata\.bak_0.log
+Created Time: 2024-03-01 13:12:16.945
+
+!ENTRY org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-03-01 13:12:16.945
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.gautosar.xtend.typesystem": ConfigReference type 'EcucUriReferenceDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-03-01 13:12:16.945
+!MESSAGE ConfigReference type 'EcucUriReferenceDef' not supported yet!
+
+!ENTRY org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-03-01 13:12:16.949
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.gautosar.xtend.typesystem": ConfigReference type 'EcucUriReferenceDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-03-01 13:12:16.950
+!MESSAGE ConfigReference type 'EcucUriReferenceDef' not supported yet!
+
+!ENTRY org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-03-01 13:12:16.956
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.gautosar.xtend.typesystem": ConfigReference type 'EcucUriReferenceDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-03-01 13:12:16.956
+!MESSAGE ConfigReference type 'EcucUriReferenceDef' not supported yet!
+
+!ENTRY org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-03-01 13:12:16.957
+!MESSAGE Problems occurred when invoking code from plug-in "org.artop.ecuc.gautosar.xtend.typesystem": ConfigReference type 'EcucUriReferenceDef' not supported yet!.
+!SUBENTRY 1 org.artop.ecuc.gautosar.xtend.typesystem 2 0 2024-03-01 13:12:16.957
+!MESSAGE ConfigReference type 'EcucUriReferenceDef' not supported yet!
+
+!ENTRY com.rbei.build.core 1 0 2024-03-01 13:12:57.125
+!MESSAGE Starting action: Copy generated code to the output folder.
+
+!ENTRY com.rbei.build.core 1 0 2024-03-01 13:12:57.228
+!MESSAGE Finished action: Copy generated code to the output folder.
+
+!ENTRY com.rbei.build.core 1 0 2024-03-01 13:12:57.254
+!MESSAGE Starting action: Copy generated ARXML to the output folder.
+
+!ENTRY com.rbei.build.core 1 0 2024-03-01 13:12:57.465
+!MESSAGE Finished action: Copy generated ARXML to the output folder.
+
+!ENTRY com.rbei.build.core 1 0 2024-03-01 13:12:57.491
+!MESSAGE Starting action: Copy integration code to the output folder.
+
+!ENTRY com.rbei.build.core 1 0 2024-03-01 13:12:57.552
+!MESSAGE Finished action: Copy integration code to the output folder.
+
+!ENTRY com.rbei.build.core 1 0 2024-03-01 13:12:57.572
+!MESSAGE Starting action: Copy static code to the output folder.
+
+!ENTRY com.rbei.build.core 1 0 2024-03-01 13:12:58.035
+!MESSAGE Finished action: Copy static code to the output folder.
+
+!ENTRY com.rbei.build.core 1 0 2024-03-01 13:12:58.061
+!MESSAGE Starting action: Copy static ARXML to the output folder.
+
+!ENTRY com.rbei.build.core 1 0 2024-03-01 13:12:58.211
+!MESSAGE Finished action: Copy static ARXML to the output folder.
+
+!ENTRY com.rbei.build.core 1 0 2024-03-01 13:12:58.235
+!MESSAGE Starting action: Copy generated logs to the output folder.
+
+!ENTRY com.rbei.build.core 1 0 2024-03-01 13:12:58.253
+!MESSAGE Finished action: Copy generated logs to the output folder.
+
+!ENTRY com.rbei.build.core 1 0 2024-03-01 13:12:58.277
+!MESSAGE Starting action: Cleanup generated code to the output folder.
+
+!ENTRY com.rbei.build.core 1 0 2024-03-01 13:12:58.306
+!MESSAGE Finished action: Cleanup generated code to the output folder.
+
+!ENTRY com.rbei.build.core 1 0 2024-03-01 13:12:58.333
+!MESSAGE Starting action: Generate the CodeGen version and diagnostic header file.
+
+!ENTRY com.rbei.build.core 1 0 2024-03-01 13:12:58.347
+!MESSAGE Finished action: Generate the CodeGen version and diagnostic header file.
+
+!ENTRY com.rbei.build.core 1 0 2024-03-01 13:12:58.368
+!MESSAGE Starting action: Map Service Components to ECU_Extract
+
+!ENTRY com.rbei.build.core 1 0 2024-03-01 13:12:58.379
+!MESSAGE Finished action: Map Service Components to ECU_Extract
+
+!ENTRY com.bosch.blueworx.core 1 0 2024-03-01 13:12:58.554
+!MESSAGE FileLogger: Close log writer invoked by 
+java.base/java.lang.Thread.getStackTrace(Thread.java:1602)
+com.bosch.blueworx.core.logging.filelogging.FileLogger.getStackTrace(FileLogger.java:275)
+com.bosch.blueworx.core.logging.filelogging.FileLogger.closeLogWritter(FileLogger.java:269)
+com.etas.rtacar.plugin.userhook.core.util.RtaCarPrePostContextHandler.reset(RtaCarPrePostContextHandler.java:372)
+com.rbei.build.service.BuildService3$4.done(BuildService3.java:431)
+org.eclipse.core.internal.jobs.JobListeners.doNotify(JobListeners.java:80)
+org.eclipse.core.internal.jobs.JobListeners.done(JobListeners.java:118)
+org.eclipse.core.internal.jobs.JobManager.endJob(JobManager.java:701)
+org.eclipse.core.internal.jobs.WorkerPool.endJob(WorkerPool.java:117)
+org.eclipse.core.internal.jobs.Worker.run(Worker.java:83)
+
+!ENTRY com.bosch.autosartool.common.util 1 0 2024-03-01 13:13:02.587
+!MESSAGE TypeSystem cleared!!
+
+!ENTRY com.bosch.autosartool.common.util 1 0 2024-03-01 13:13:02.588
+!MESSAGE MetaTypes cleared!!

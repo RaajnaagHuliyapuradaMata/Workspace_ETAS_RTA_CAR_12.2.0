@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00051.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ApplicationECU_FlatView</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>SwComponentTypes</SHORT-NAME>
+          <ELEMENTS>
+            <COMPOSITION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>ApplicationECU_FlatView</SHORT-NAME>
+              <PORTS>
+                <R-PORT-PROTOTYPE>
+                  <SHORT-NAME>RPortPrototype_0</SHORT-NAME>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/My_SR_Interface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+              </PORTS>
+              <COMPONENTS>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_MyReceivingSWC_ApplicationEcu</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/MyReceivingSWC/MyReceivingSWC</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_MyTransmittingSWC_ApplicationEcu</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/MyTransmittingSWC/MyTransmittingSWC</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+              </COMPONENTS>
+              <CONNECTORS>
+                <DELEGATION-SW-CONNECTOR>
+                  <SHORT-NAME>DSC_CPT_MyReceivingSWC_ApplicationEcu_RPortPrototype_0_RPortPrototype_0</SHORT-NAME>
+                  <INNER-PORT-IREF>
+                    <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ApplicationECU_FlatView/SwComponentTypes/ApplicationECU_FlatView/CPT_MyReceivingSWC_ApplicationEcu</CONTEXT-COMPONENT-REF>
+                      <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MyReceivingSWC/MyReceivingSWC/RPortPrototype_0</TARGET-R-PORT-REF>
+                    </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  </INNER-PORT-IREF>
+                  <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ApplicationECU_FlatView/SwComponentTypes/ApplicationECU_FlatView/RPortPrototype_0</OUTER-PORT-REF>
+                </DELEGATION-SW-CONNECTOR>
+              </CONNECTORS>
+            </COMPOSITION-SW-COMPONENT-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

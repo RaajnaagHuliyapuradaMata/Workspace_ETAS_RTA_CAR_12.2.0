@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00051.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>System_EcuExtract</SHORT-NAME>
+      <ELEMENTS>
+        <SYSTEM>
+          <SHORT-NAME>EXTR_ApplicationECU</SHORT-NAME>
+          <CATEGORY>ECU_EXTRACT</CATEGORY>
+          <ECU-EXTRACT-VERSION>1.0.0</ECU-EXTRACT-VERSION>
+          <FIBEX-ELEMENTS>
+            <FIBEX-ELEMENT-REF-CONDITIONAL>
+              <FIBEX-ELEMENT-REF DEST="ECU-INSTANCE">/DBC_SysDesc_Can_Network/Pkg_Ecu/ApplicationECU</FIBEX-ELEMENT-REF>
+            </FIBEX-ELEMENT-REF-CONDITIONAL>
+            <FIBEX-ELEMENT-REF-CONDITIONAL>
+              <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/DBC_SysDesc_Can_Network/Pkg_ISignal/ApplicationECU_SG_TestResult_Tx</FIBEX-ELEMENT-REF>
+            </FIBEX-ELEMENT-REF-CONDITIONAL>
+            <FIBEX-ELEMENT-REF-CONDITIONAL>
+              <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/DBC_SysDesc_Can_Network/Pkg_Frame/ApplicationECU_TestResult_Tx</FIBEX-ELEMENT-REF>
+            </FIBEX-ELEMENT-REF-CONDITIONAL>
+            <FIBEX-ELEMENT-REF-CONDITIONAL>
+              <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/DBC_SysDesc_Can_Network/Pkg_Pdus/ApplicationECU_TestResult_Tx</FIBEX-ELEMENT-REF>
+            </FIBEX-ELEMENT-REF-CONDITIONAL>
+            <FIBEX-ELEMENT-REF-CONDITIONAL>
+              <FIBEX-ELEMENT-REF DEST="CAN-CLUSTER">/DBC_SysDesc_Can_Network/Pkg_Cluster/Can_Network</FIBEX-ELEMENT-REF>
+            </FIBEX-ELEMENT-REF-CONDITIONAL>
+            <FIBEX-ELEMENT-REF-CONDITIONAL>
+              <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/DBC_SysDesc_Can_Network/Pkg_ISignal/TestECU_SG_TestCode_Tx</FIBEX-ELEMENT-REF>
+            </FIBEX-ELEMENT-REF-CONDITIONAL>
+            <FIBEX-ELEMENT-REF-CONDITIONAL>
+              <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/DBC_SysDesc_Can_Network/Pkg_Frame/TestECU_TestCode_Tx</FIBEX-ELEMENT-REF>
+            </FIBEX-ELEMENT-REF-CONDITIONAL>
+            <FIBEX-ELEMENT-REF-CONDITIONAL>
+              <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/DBC_SysDesc_Can_Network/Pkg_Pdus/TestECU_TestCode_Tx</FIBEX-ELEMENT-REF>
+            </FIBEX-ELEMENT-REF-CONDITIONAL>
+          </FIBEX-ELEMENTS>
+          <MAPPINGS>
+            <SYSTEM-MAPPING>
+              <SHORT-NAME>SYSMPG_ApplicationECU</SHORT-NAME>
+              <DATA-MAPPINGS>
+                <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                  <DATA-ELEMENT-IREF>
+                    <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/System_EcuExtract/EXTR_ApplicationECU/CPT_ApplicationECU_FlatView</CONTEXT-COMPOSITION-REF>
+                    <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ApplicationECU_FlatView/SwComponentTypes/ApplicationECU_FlatView/RPortPrototype_0</CONTEXT-PORT-REF>
+                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/My_SR_Interface/DE_MyDataElement</TARGET-DATA-PROTOTYPE-REF>
+                  </DATA-ELEMENT-IREF>
+                  <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/DBC_SysDesc_Can_Network/Pkg_Signal/TestECU_SG_TestCode_Tx</SYSTEM-SIGNAL-REF>
+                </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                  <DATA-ELEMENT-IREF>
+                    <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/System_EcuExtract/EXTR_ApplicationECU/CPT_ApplicationECU_FlatView</CONTEXT-COMPOSITION-REF>
+                    <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ApplicationECU_FlatView/SwComponentTypes/ApplicationECU_FlatView/RPortPrototype_0</CONTEXT-PORT-REF>
+                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/My_SR_Interface/DE_MyDataElement</TARGET-DATA-PROTOTYPE-REF>
+                  </DATA-ELEMENT-IREF>
+                  <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/DBC_SysDesc_Can_Network/Pkg_Signal/ApplicationECU_SG_TestResult_Tx</SYSTEM-SIGNAL-REF>
+                </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+              </DATA-MAPPINGS>
+              <SW-MAPPINGS>
+                <SWC-TO-ECU-MAPPING>
+                  <SHORT-NAME>SwcToEcuMapping_0</SHORT-NAME>
+                  <COMPONENT-IREFS>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/System_EcuExtract/EXTR_ApplicationECU/CPT_ApplicationECU_FlatView</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ApplicationECU_FlatView/SwComponentTypes/ApplicationECU_FlatView/CPT_MyReceivingSWC_ApplicationEcu</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/System_EcuExtract/EXTR_ApplicationECU/CPT_ApplicationECU_FlatView</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ApplicationECU_FlatView/SwComponentTypes/ApplicationECU_FlatView/CPT_MyTransmittingSWC_ApplicationEcu</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                  </COMPONENT-IREFS>
+                  <ECU-INSTANCE-REF DEST="ECU-INSTANCE">/DBC_SysDesc_Can_Network/Pkg_Ecu/ApplicationECU</ECU-INSTANCE-REF>
+                </SWC-TO-ECU-MAPPING>
+              </SW-MAPPINGS>
+            </SYSTEM-MAPPING>
+          </MAPPINGS>
+          <PNC-VECTOR-LENGTH>0</PNC-VECTOR-LENGTH>
+          <PNC-VECTOR-OFFSET>0</PNC-VECTOR-OFFSET>
+          <ROOT-SOFTWARE-COMPOSITIONS>
+            <ROOT-SW-COMPOSITION-PROTOTYPE>
+              <SHORT-NAME>CPT_ApplicationECU_FlatView</SHORT-NAME>
+              <FLAT-MAP-REF DEST="FLAT-MAP">/ApplicationECU_FlatView/ApplicationECU_FlatMap</FLAT-MAP-REF>
+              <SOFTWARE-COMPOSITION-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/ApplicationECU_FlatView/SwComponentTypes/ApplicationECU_FlatView</SOFTWARE-COMPOSITION-TREF>
+            </ROOT-SW-COMPOSITION-PROTOTYPE>
+          </ROOT-SOFTWARE-COMPOSITIONS>
+          <SYSTEM-VERSION>1.0.0</SYSTEM-VERSION>
+        </SYSTEM>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

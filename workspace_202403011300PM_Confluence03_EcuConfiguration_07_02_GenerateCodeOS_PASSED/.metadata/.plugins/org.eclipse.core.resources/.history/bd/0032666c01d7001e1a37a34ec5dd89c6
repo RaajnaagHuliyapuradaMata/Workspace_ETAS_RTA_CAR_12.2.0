@@ -1,0 +1,1123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ADMIN-DATA>
+    <LANGUAGE>EN</LANGUAGE>
+    <USED-LANGUAGES>
+      <L-10 L="EN" xml:space="default">English</L-10>
+    </USED-LANGUAGES>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>RB</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>RBA</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>rba_BswSrv</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE>
+                  <SHORT-NAME>BswImplementations</SHORT-NAME>
+                  <ELEMENTS>
+                  <BSW-IMPLEMENTATION>
+                      <SHORT-NAME>rba_BswSrv</SHORT-NAME>
+                      <CODE-DESCRIPTORS>
+                        <CODE>
+                          <SHORT-NAME>CodeDescriptor</SHORT-NAME>
+                          <ARTIFACT-DESCRIPTORS>
+                            <AUTOSAR-ENGINEERING-OBJECT>
+                              <SHORT-LABEL>ArEngObj</SHORT-LABEL>
+                              <CATEGORY>SWSRC</CATEGORY>
+                            </AUTOSAR-ENGINEERING-OBJECT>
+                          </ARTIFACT-DESCRIPTORS>
+                        </CODE>
+                      </CODE-DESCRIPTORS>
+                      <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+                      <RESOURCE-CONSUMPTION>
+                        <SHORT-NAME>rba_BswSrv_ResourceConsumption</SHORT-NAME>
+                        <MEMORY-SECTIONS>
+                          <MEMORY-SECTION>
+                            <SHORT-NAME>RBA_BSWSRV_CODE</SHORT-NAME>
+                            <PREFIX-REF DEST="SECTION-NAME-PREFIX">/RB/RBA/rba_BswSrv/BswImplementations/rba_BswSrv/rba_BswSrv_ResourceConsumption/RBA_BSWSRV</PREFIX-REF>
+                            <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/RB/RBA/Common/CentralElements/SwAddrMethods/CODE</SW-ADDRMETHOD-REF>
+                            <SYMBOL>CODE</SYMBOL>
+                          </MEMORY-SECTION>
+						  <MEMORY-SECTION>
+                            <SHORT-NAME>RBA_BSWSRV_VAR_CLEARED_32</SHORT-NAME>
+							<ALIGNMENT>32</ALIGNMENT>
+                            <PREFIX-REF DEST="SECTION-NAME-PREFIX">/RB/RBA/rba_BswSrv/BswImplementations/rba_BswSrv/rba_BswSrv_ResourceConsumption/RBA_BSWSRV</PREFIX-REF>
+                            <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/RB/RBA/Common/CentralElements/SwAddrMethods/VAR_CLEARED</SW-ADDRMETHOD-REF>
+                            <SYMBOL>VAR_CLEARED_32</SYMBOL>
+                          </MEMORY-SECTION>						  
+						  <MEMORY-SECTION>
+                            <SHORT-NAME>RBA_BSWSRV_VAR_CLEARED_UNSPECIFIED</SHORT-NAME>
+							<ALIGNMENT>UNSPECIFIED</ALIGNMENT>
+                            <PREFIX-REF DEST="SECTION-NAME-PREFIX">/RB/RBA/rba_BswSrv/BswImplementations/rba_BswSrv/rba_BswSrv_ResourceConsumption/RBA_BSWSRV</PREFIX-REF>
+                            <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/RB/RBA/Common/CentralElements/SwAddrMethods/VAR_CLEARED</SW-ADDRMETHOD-REF>
+                            <SYMBOL>VAR_CLEARED_UNSPECIFIED</SYMBOL>
+                          </MEMORY-SECTION>	
+						  <MEMORY-SECTION>
+                            <SHORT-NAME>RBA_BSWSRV_VAR_INIT_UNSPECIFIED</SHORT-NAME>
+							<ALIGNMENT>UNSPECIFIED</ALIGNMENT>
+                            <PREFIX-REF DEST="SECTION-NAME-PREFIX">/RB/RBA/rba_BswSrv/BswImplementations/rba_BswSrv/rba_BswSrv_ResourceConsumption/RBA_BSWSRV</PREFIX-REF>
+                            <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/RB/RBA/Common/CentralElements/SwAddrMethods/VAR_INIT</SW-ADDRMETHOD-REF>
+                            <SYMBOL>VAR_INIT_UNSPECIFIED</SYMBOL>
+                          </MEMORY-SECTION>							  
+                          <MEMORY-SECTION>
+                            <SHORT-NAME>RBA_BSWSRV_CONFIG_DATA_UNSPECIFIED</SHORT-NAME>
+							<ALIGNMENT>UNSPECIFIED</ALIGNMENT>
+                            <PREFIX-REF DEST="SECTION-NAME-PREFIX">/RB/RBA/rba_BswSrv/BswImplementations/rba_BswSrv/rba_BswSrv_ResourceConsumption/RBA_BSWSRV</PREFIX-REF>
+                            <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/RB/RBA/Common/CentralElements/SwAddrMethods/CONFIG_DATA</SW-ADDRMETHOD-REF>
+                            <SYMBOL>CONFIG_DATA_UNSPECIFIED</SYMBOL>
+                          </MEMORY-SECTION>						  
+						  
+                          </MEMORY-SECTIONS>
+                        <SECTION-NAME-PREFIXS>
+                          <SECTION-NAME-PREFIX>
+                            <SHORT-NAME>RBA_BSWSRV</SHORT-NAME>
+                            <SYMBOL>RBA_BSWSRV</SYMBOL>
+                          </SECTION-NAME-PREFIX>
+                        </SECTION-NAME-PREFIXS>
+                      </RESOURCE-CONSUMPTION>
+                      <BEHAVIOR-REF DEST="BSW-INTERNAL-BEHAVIOR">/RB/RBA/rba_BswSrv/BswModuleDescriptions/rba_BswSrv/BswInternalBehaviour</BEHAVIOR-REF>
+                    </BSW-IMPLEMENTATION>
+                          </ELEMENTS>
+                        </AR-PACKAGE>
+                        <AR-PACKAGE>
+                          <SHORT-NAME>BswModuleDescriptions</SHORT-NAME>
+                  <ELEMENTS>
+                    <BSW-MODULE-DESCRIPTION>
+                      <SHORT-NAME>rba_BswSrv</SHORT-NAME>
+                      <CATEGORY>BSW_MODULE</CATEGORY>
+                      <MODULE-ID>255</MODULE-ID>
+                      <PROVIDED-ENTRYS>
+                        <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                          <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/RB/RBA/rba_BswSrv/BswModuleEntrys/rba_BswSrv_ByteOrderSwap16</BSW-MODULE-ENTRY-REF>
+                        </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                        <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                          <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/RB/RBA/rba_BswSrv/BswModuleEntrys/rba_BswSrv_ByteOrderSwap32</BSW-MODULE-ENTRY-REF>
+                        </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                        <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                          <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/RB/RBA/rba_BswSrv/BswModuleEntrys/rba_BswSrv_CountLeadingZero32</BSW-MODULE-ENTRY-REF>
+                        </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                        <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                          <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/RB/RBA/rba_BswSrv/BswModuleEntrys/rba_BswSrv_MemCompare</BSW-MODULE-ENTRY-REF>
+                        </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                        <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                          <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/RB/RBA/rba_BswSrv/BswModuleEntrys/rba_BswSrv_MemCompare16</BSW-MODULE-ENTRY-REF>
+                        </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                        <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                          <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/RB/RBA/rba_BswSrv/BswModuleEntrys/rba_BswSrv_MemCompare32</BSW-MODULE-ENTRY-REF>
+                        </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                        <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                          <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/RB/RBA/rba_BswSrv/BswModuleEntrys/rba_BswSrv_MemCompare64</BSW-MODULE-ENTRY-REF>
+                        </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                        <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                          <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/RB/RBA/rba_BswSrv/BswModuleEntrys/rba_BswSrv_MemCompare8</BSW-MODULE-ENTRY-REF>
+                        </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                        <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                          <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/RB/RBA/rba_BswSrv/BswModuleEntrys/rba_BswSrv_MemCopy</BSW-MODULE-ENTRY-REF>
+                        </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                        <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                          <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/RB/RBA/rba_BswSrv/BswModuleEntrys/rba_BswSrv_MemCopy16</BSW-MODULE-ENTRY-REF>
+                        </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                        <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                          <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/RB/RBA/rba_BswSrv/BswModuleEntrys/rba_BswSrv_MemCopy32</BSW-MODULE-ENTRY-REF>
+                        </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                        <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                          <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/RB/RBA/rba_BswSrv/BswModuleEntrys/rba_BswSrv_MemCopy64</BSW-MODULE-ENTRY-REF>
+                        </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                        <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                          <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/RB/RBA/rba_BswSrv/BswModuleEntrys/rba_BswSrv_MemCopy8</BSW-MODULE-ENTRY-REF>
+                        </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                        <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                          <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/RB/RBA/rba_BswSrv/BswModuleEntrys/rba_BswSrv_MemSet</BSW-MODULE-ENTRY-REF>
+                        </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                        <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                          <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/RB/RBA/rba_BswSrv/BswModuleEntrys/rba_BswSrv_MemSet16</BSW-MODULE-ENTRY-REF>
+                        </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                        <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                          <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/RB/RBA/rba_BswSrv/BswModuleEntrys/rba_BswSrv_MemSet32</BSW-MODULE-ENTRY-REF>
+                        </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                        <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                          <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/RB/RBA/rba_BswSrv/BswModuleEntrys/rba_BswSrv_MemSet64</BSW-MODULE-ENTRY-REF>
+                        </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                        <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                          <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/RB/RBA/rba_BswSrv/BswModuleEntrys/rba_BswSrv_MemSet8</BSW-MODULE-ENTRY-REF>
+                        </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                      </PROVIDED-ENTRYS>
+                      <OUTGOING-CALLBACKS>
+                        <!--Not yet implemented.-->
+                      </OUTGOING-CALLBACKS>
+                      <BSW-MODULE-DEPENDENCYS>
+                        <BSW-MODULE-DEPENDENCY>
+                          <SHORT-NAME>Standard</SHORT-NAME>
+                          <TARGET-MODULE-ID>197</TARGET-MODULE-ID>
+                        </BSW-MODULE-DEPENDENCY>
+                      </BSW-MODULE-DEPENDENCYS><INTERNAL-BEHAVIORS>
+<BSW-INTERNAL-BEHAVIOR>
+<SHORT-NAME>BswInternalBehaviour</SHORT-NAME></BSW-INTERNAL-BEHAVIOR></INTERNAL-BEHAVIORS>
+                    </BSW-MODULE-DESCRIPTION>
+                  </ELEMENTS>
+                  
+                  
+                  
+                </AR-PACKAGE><AR-PACKAGE>
+                    <SHORT-NAME>BswModuleEntrys</SHORT-NAME>
+                    <ELEMENTS>
+                      <BSW-MODULE-ENTRY>
+                        <SHORT-NAME>rba_BswSrv_ByteOrderSwap16</SHORT-NAME>
+                        <DESC>
+                          <L-2 L="EN">rba_BswSrv_ByteOrderSwap16  Swaps the byte order of a 16 bit value for endianess conversion.  \param   Input_u16: input value \return  value with swapped byte order \retval  uint16 \seealso \usedresources</L-2>
+                        </DESC>
+                        <SERVICE-ID>0</SERVICE-ID>
+                        <IS-REENTRANT>false</IS-REENTRANT>
+                        <IS-SYNCHRONOUS>false</IS-SYNCHRONOUS>
+                        <CALL-TYPE>REGULAR</CALL-TYPE>
+                        <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+                        <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+                        <ARGUMENTS>
+                          <SW-SERVICE-ARG>
+                            <!--Name="Input_u16", Kind="in", Type="uint16", IsConst="False"-->
+                            <SHORT-NAME>Input_u16</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                        </ARGUMENTS>
+                      </BSW-MODULE-ENTRY>
+                      <BSW-MODULE-ENTRY>
+                        <SHORT-NAME>rba_BswSrv_ByteOrderSwap32</SHORT-NAME>
+                        <DESC>
+                          <L-2 L="EN">rba_BswSrv_ByteOrderSwap32  Swaps the byte order of a 32 bit value for endianess conversion.  \param   Input_u32: input value \return  value with swapped byte order \retval  uint32 \seealso \usedresources</L-2>
+                        </DESC>
+                        <SERVICE-ID>0</SERVICE-ID>
+                        <IS-REENTRANT>false</IS-REENTRANT>
+                        <IS-SYNCHRONOUS>false</IS-SYNCHRONOUS>
+                        <CALL-TYPE>REGULAR</CALL-TYPE>
+                        <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+                        <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+                        <ARGUMENTS>
+                          <SW-SERVICE-ARG>
+                            <!--Name="Input_u32", Kind="in", Type="uint32", IsConst="False"-->
+                            <SHORT-NAME>Input_u32</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                        </ARGUMENTS>
+                      </BSW-MODULE-ENTRY>
+                      <BSW-MODULE-ENTRY>
+                        <SHORT-NAME>rba_BswSrv_CountLeadingZero32</SHORT-NAME>
+                        <DESC>
+                          <L-2 L="EN">rba_BswSrv_CountLeadingZero32  count leading zeros in 32 bit value.  \param   Input_u32: input value \return  number of leading zeros \retval  uint32 \seealso \usedresources</L-2>
+                        </DESC>
+                        <SERVICE-ID>0</SERVICE-ID>
+                        <IS-REENTRANT>false</IS-REENTRANT>
+                        <IS-SYNCHRONOUS>false</IS-SYNCHRONOUS>
+                        <CALL-TYPE>REGULAR</CALL-TYPE>
+                        <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+                        <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+                        <ARGUMENTS>
+                          <SW-SERVICE-ARG>
+                            <!--Name="Input_u32", Kind="in", Type="uint32", IsConst="False"-->
+                            <SHORT-NAME>Input_u32</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                        </ARGUMENTS>
+                      </BSW-MODULE-ENTRY>
+                      <BSW-MODULE-ENTRY>
+                        <SHORT-NAME>rba_BswSrv_MemCompare</SHORT-NAME>
+                        <DESC>
+                          <L-2 L="EN" >The rba_BswSrv_MemCompare API shall compare data between two memory locations.</L-2>
+                        </DESC>
+                        <SERVICE-ID>0</SERVICE-ID>
+                        <IS-REENTRANT>false</IS-REENTRANT>
+                        <IS-SYNCHRONOUS>false</IS-SYNCHRONOUS>
+                        <CALL-TYPE>REGULAR</CALL-TYPE>
+                        <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+                        <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+                        <ARGUMENTS>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xSrc1_pcv", Kind="in", Type="void*", IsConst="True"-->
+                            <SHORT-NAME>xSrc1_pcv</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/void</BASE-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xSrc2_pcv", Kind="in", Type="void*", IsConst="True"-->
+                            <SHORT-NAME>xSrc2_pcv</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/void</BASE-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="numBytes_u32", Kind="in", Type="uint32", IsConst="False"-->
+                            <SHORT-NAME>numBytes_u32</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                        </ARGUMENTS>
+                      </BSW-MODULE-ENTRY>
+                      <BSW-MODULE-ENTRY>
+                        <SHORT-NAME>rba_BswSrv_MemCompare16</SHORT-NAME>
+                        <DESC>
+                          <L-2 L="EN">rba_BswSrv_MemCompare16 - compare memory in 16 Bit blocks  Memory compare routine. Pointer parameters must be 2 Byte aligned. The size should be a multiple of 2. If not, it is rounded down to the next multiple of 2.  \param   xSrc1_pcu16     first source address \param   xSrc2_pcu16     second source address \param   numBytes_u32    number of bytes to be compared \return  stEqual_u32     result of comparison \retval  0               memory area contents are equal \retval  1               memory area contents differ \seealso     rba_BswSrv_MemCompare8, rba_BswSrv_MemCompare32, rba_BswSrv_MemCompare64</L-2>
+                        </DESC>
+                        <SERVICE-ID>0</SERVICE-ID>
+                        <IS-REENTRANT>false</IS-REENTRANT>
+                        <IS-SYNCHRONOUS>false</IS-SYNCHRONOUS>
+                        <CALL-TYPE>REGULAR</CALL-TYPE>
+                        <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+                        <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+                        <ARGUMENTS>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xSrc1_pcu16", Kind="in", Type="uint16*", IsConst="True"-->
+                            <SHORT-NAME>xSrc1_pcu16</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xSrc2_pcu16", Kind="in", Type="uint16*", IsConst="True"-->
+                            <SHORT-NAME>xSrc2_pcu16</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="numBytes_u32", Kind="in", Type="uint32", IsConst="False"-->
+                            <SHORT-NAME>numBytes_u32</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                        </ARGUMENTS>
+                      </BSW-MODULE-ENTRY>
+                      <BSW-MODULE-ENTRY>
+                        <SHORT-NAME>rba_BswSrv_MemCompare32</SHORT-NAME>
+                        <DESC>
+                          <L-2 L="EN">rba_BswSrv_MemCompare32 - compare memory in 32 Bit blocks  Memory compare routine. Pointer parameters must be 4 Byte aligned. The size should be a multiple of 4. If not, it is rounded down to the next multiple of 4.  \param   xSrc1_pcu32     first source address \param   xSrc2_pcu32     second source address \param   numBytes_u32    number of bytes to be compared \return  stEqual_u32     result of comparison \retval  0               memory area contents are equal \retval  1               memory area contents differ \seealso     rba_BswSrv_MemCompare8, rba_BswSrv_MemCompare16, rba_BswSrv_MemCompare64</L-2>
+                        </DESC>
+                        <SERVICE-ID>0</SERVICE-ID>
+                        <IS-REENTRANT>false</IS-REENTRANT>
+                        <IS-SYNCHRONOUS>false</IS-SYNCHRONOUS>
+                        <CALL-TYPE>REGULAR</CALL-TYPE>
+                        <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+                        <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+                        <ARGUMENTS>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xSrc1_pcu32", Kind="in", Type="uint32*", IsConst="True"-->
+                            <SHORT-NAME>xSrc1_pcu32</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xSrc2_pcu32", Kind="in", Type="uint32*", IsConst="True"-->
+                            <SHORT-NAME>xSrc2_pcu32</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="numBytes_u32", Kind="in", Type="uint32", IsConst="False"-->
+                            <SHORT-NAME>numBytes_u32</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                        </ARGUMENTS>
+                      </BSW-MODULE-ENTRY>
+                      <BSW-MODULE-ENTRY>
+                        <SHORT-NAME>rba_BswSrv_MemCompare64</SHORT-NAME>
+                        <DESC>
+                          <L-2 L="EN">rba_BswSrv_MemCompare64 - compare memory in 64 Bit blocks  Memory compare routine. Pointer parameters must be 8 Byte aligned. The size should be a multiple of 8. If not, it is rounded down to the next multiple of 8.  \param   xSrc1_pcu32     first source address \param   xSrc2_pcu32     second source address \param   numBytes_u32    number of bytes to be compared \return  stEqual_u32     result of comparison \retval  0               memory area contents are equal \retval  1               memory area contents differ \seealso     rba_BswSrv_MemCompare8, rba_BswSrv_MemCompare16, rba_BswSrv_MemCompare32</L-2>
+                        </DESC>
+                        <SERVICE-ID>0</SERVICE-ID>
+                        <IS-REENTRANT>false</IS-REENTRANT>
+                        <IS-SYNCHRONOUS>false</IS-SYNCHRONOUS>
+                        <CALL-TYPE>REGULAR</CALL-TYPE>
+                        <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+                        <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+                        <ARGUMENTS>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xSrc1_pcu64", Kind="in", Type="rba_BswSrv_uint64*", IsConst="True"-->
+                            <SHORT-NAME>xSrc1_pcu64</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/RB/RBA/rba_BswSrv/ImplementationDataTypes/rba_BswSrv_uint64</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xSrc2_pcu64", Kind="in", Type="rba_BswSrv_uint64*", IsConst="True"-->
+                            <SHORT-NAME>xSrc2_pcu64</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/RB/RBA/rba_BswSrv/ImplementationDataTypes/rba_BswSrv_uint64</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="numBytes_u32", Kind="in", Type="uint32", IsConst="False"-->
+                            <SHORT-NAME>numBytes_u32</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                        </ARGUMENTS>
+                      </BSW-MODULE-ENTRY>
+                      <BSW-MODULE-ENTRY>
+                        <SHORT-NAME>rba_BswSrv_MemCompare8</SHORT-NAME>
+                        <DESC>
+                          <L-2 L="EN">rba_BswSrv_MemCompare8 - compare memory  Memory compare routine.  \param   xSrc1_pcu8      pointer to the first source address \param   xSrc2_pcu8      pointer to the second source address \param   numBytes_u32    number of bytes to be compared \return  stEqual_u32     result of comparison \retval  0               memory area contents are equal \retval  1               memory area contents differ \seealso     rba_BswSrv_MemCompare16, rba_BswSrv_MemCompare32, rba_BswSrv_MemCompare64</L-2>
+                        </DESC>
+                        <SERVICE-ID>0</SERVICE-ID>
+                        <IS-REENTRANT>false</IS-REENTRANT>
+                        <IS-SYNCHRONOUS>false</IS-SYNCHRONOUS>
+                        <CALL-TYPE>REGULAR</CALL-TYPE>
+                        <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+                        <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+                        <ARGUMENTS>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xSrc1_pcu8", Kind="in", Type="uint8*", IsConst="True"-->
+                            <SHORT-NAME>xSrc1_pcu8</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xSrc2_pcu8", Kind="in", Type="uint8*", IsConst="True"-->
+                            <SHORT-NAME>xSrc2_pcu8</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="numBytes_u32", Kind="in", Type="uint32", IsConst="False"-->
+                            <SHORT-NAME>numBytes_u32</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                        </ARGUMENTS>
+                      </BSW-MODULE-ENTRY>
+                      <BSW-MODULE-ENTRY>
+                        <SHORT-NAME>rba_BswSrv_MemCopy</SHORT-NAME>
+                        <DESC>
+                          <L-2 L="EN" >The rba_BswSrv_MemCopy API shall copy a 8-bit, 16-bit , 32-bit and 64 bit data from one predefined memory location to other.</L-2>
+                        </DESC>
+                        <SERVICE-ID>0</SERVICE-ID>
+                        <IS-REENTRANT>false</IS-REENTRANT>
+                        <IS-SYNCHRONOUS>false</IS-SYNCHRONOUS>
+                        <CALL-TYPE>REGULAR</CALL-TYPE>
+                        <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+                        <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+                        <ARGUMENTS>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xDest_pv", Kind="in", Type="void*", IsConst="False"-->
+                            <SHORT-NAME>xDest_pv</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                 				  <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/void</BASE-TYPE-REF>	
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xSrc_pcv", Kind="in", Type="void*", IsConst="True"-->
+                            <SHORT-NAME>xSrc_pcv</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/void</BASE-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="numBytes_u32", Kind="in", Type="uint32", IsConst="False"-->
+                            <SHORT-NAME>numBytes_u32</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                        </ARGUMENTS>
+                      </BSW-MODULE-ENTRY>
+                      <BSW-MODULE-ENTRY>
+                        <SHORT-NAME>rba_BswSrv_MemCopy16</SHORT-NAME>
+                        <DESC>
+                          <L-2 L="EN">rba_BswSrv_MemCopy16 - copy non overlapping memory in 16 Bit blocks  Memory copy routine. Source and destination must not overlap. Pointer parameters must be 2 Byte aligned. The size should be a multiple of 2. If not, it is rounded down to the next multiple of 2.  \param   xDest_pu16      destination address \param   xSrc_pcu16      source address \param   numBytes_u32    number of bytes to be copied \seealso     rba_BswSrv_MemCopy8, rba_BswSrv_MemCopy32, rba_BswSrv_MemCopy64</L-2>
+                        </DESC>
+                        <SERVICE-ID>0</SERVICE-ID>
+                        <IS-REENTRANT>false</IS-REENTRANT>
+                        <IS-SYNCHRONOUS>false</IS-SYNCHRONOUS>
+                        <CALL-TYPE>REGULAR</CALL-TYPE>
+                        <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+                        <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+                        <ARGUMENTS>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xDest_pu16", Kind="in", Type="uint16*", IsConst="False"-->
+                            <SHORT-NAME>xDest_pu16</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xSrc_pcu16", Kind="in", Type="uint16*", IsConst="True"-->
+                            <SHORT-NAME>xSrc_pcu16</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="numBytes_u32", Kind="in", Type="uint32", IsConst="False"-->
+                            <SHORT-NAME>numBytes_u32</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                        </ARGUMENTS>
+                      </BSW-MODULE-ENTRY>
+                      <BSW-MODULE-ENTRY>
+                        <SHORT-NAME>rba_BswSrv_MemCopy32</SHORT-NAME>
+                        <DESC>
+                          <L-2 L="EN">rba_BswSrv_MemCopy32 - copy non overlapping memory in 32 Bit blocks  Memory copy routine. Source and destination must not overlap. Pointer parameters must be 4 Byte aligned. The size should be a multiple of 4. If not, it is rounded down to the next multiple of 4.  \param   xDest_pu32      destination address \param   xSrc_pcu32      source address \param   numBytes_u32    number of bytes to be copied \seealso     rba_BswSrv_MemCopy8, rba_BswSrv_MemCopy16, rba_BswSrv_MemCopy64</L-2>
+                        </DESC>
+                        <SERVICE-ID>0</SERVICE-ID>
+                        <IS-REENTRANT>false</IS-REENTRANT>
+                        <IS-SYNCHRONOUS>false</IS-SYNCHRONOUS>
+                        <CALL-TYPE>REGULAR</CALL-TYPE>
+                        <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+                        <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+                        <ARGUMENTS>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xDest_pu32", Kind="in", Type="uint32*", IsConst="False"-->
+                            <SHORT-NAME>xDest_pu32</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xSrc_pcu32", Kind="in", Type="uint32*", IsConst="True"-->
+                            <SHORT-NAME>xSrc_pcu32</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="numBytes_u32", Kind="in", Type="uint32", IsConst="False"-->
+                            <SHORT-NAME>numBytes_u32</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                        </ARGUMENTS>
+                      </BSW-MODULE-ENTRY>
+                      <BSW-MODULE-ENTRY>
+                        <SHORT-NAME>rba_BswSrv_MemCopy64</SHORT-NAME>
+                        <DESC>
+                          <L-2 L="EN">rba_BswSrv_MemCopy64 - copy non overlapping memory in 64 Bit blocks  Memory copy routine. Source and destination must not overlap. Pointer parameters must be 8 Byte aligned. The size should be a multiple of 8. If not, it is rounded down to the next multiple of 8.  \param   xDest_pu64      destination address \param   xSrc_pcu64      source address \param   numBytes_u32    number of bytes to be copied \seealso     rba_BswSrv_MemCopy8, rba_BswSrv_MemCopy16, rba_BswSrv_MemCopy32</L-2>
+                        </DESC>
+                        <SERVICE-ID>0</SERVICE-ID>
+                        <IS-REENTRANT>false</IS-REENTRANT>
+                        <IS-SYNCHRONOUS>false</IS-SYNCHRONOUS>
+                        <CALL-TYPE>REGULAR</CALL-TYPE>
+                        <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+                        <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+                        <ARGUMENTS>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xDest_pu64", Kind="in", Type="rba_BswSrv_uint64*", IsConst="False"-->
+                            <SHORT-NAME>xDest_pu64</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/RB/RBA/rba_BswSrv/ImplementationDataTypes/rba_BswSrv_uint64</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xSrc_pcu64", Kind="in", Type="rba_BswSrv_uint64*", IsConst="True"-->
+                            <SHORT-NAME>xSrc_pcu64</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/RB/RBA/rba_BswSrv/ImplementationDataTypes/rba_BswSrv_uint64</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="numBytes_u32", Kind="in", Type="uint32", IsConst="False"-->
+                            <SHORT-NAME>numBytes_u32</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                        </ARGUMENTS>
+                      </BSW-MODULE-ENTRY>
+                      <BSW-MODULE-ENTRY>
+                        <SHORT-NAME>rba_BswSrv_MemCopy8</SHORT-NAME>
+                        <DESC>
+                          <L-2 L="EN">rba_BswSrv_MemCopy8 - copy non overlapping memory  Memory copy routine. Source and destination must not overlap.  \param   xDest_pu8       destination address \param   xSrc_pcu8       source address \param   numBytes_u32    number of bytes to be copied \seealso     rba_BswSrv_MemCopy16, rba_BswSrv_MemCopy32, rba_BswSrv_MemCopy64</L-2>
+                        </DESC>
+                        <SERVICE-ID>0</SERVICE-ID>
+                        <IS-REENTRANT>false</IS-REENTRANT>
+                        <IS-SYNCHRONOUS>false</IS-SYNCHRONOUS>
+                        <CALL-TYPE>REGULAR</CALL-TYPE>
+                        <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+                        <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+                        <ARGUMENTS>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xDest_pu8", Kind="in", Type="uint8*", IsConst="False"-->
+                            <SHORT-NAME>xDest_pu8</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xSrc_pcu8", Kind="in", Type="uint8*", IsConst="True"-->
+                            <SHORT-NAME>xSrc_pcu8</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="numBytes_u32", Kind="in", Type="uint32", IsConst="False"-->
+                            <SHORT-NAME>numBytes_u32</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                        </ARGUMENTS>
+                      </BSW-MODULE-ENTRY>
+                      <BSW-MODULE-ENTRY>
+                        <SHORT-NAME>rba_BswSrv_MemSet</SHORT-NAME>
+                        <DESC>
+                          <L-2 L="EN" >The rba_BswSrv_MemSet API shall set a predefined 8 bit ,16 bit ,32 bit and 64 bit pattern .</L-2>
+                        </DESC>
+                        <SERVICE-ID>0</SERVICE-ID>
+                        <IS-REENTRANT>false</IS-REENTRANT>
+                        <IS-SYNCHRONOUS>false</IS-SYNCHRONOUS>
+                        <CALL-TYPE>REGULAR</CALL-TYPE>
+                        <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+                        <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+                        <ARGUMENTS>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xDest_pv", Kind="in", Type="void*", IsConst="False"-->
+                            <SHORT-NAME>xDest_pv</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/void</BASE-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xPattern_s32", Kind="in", Type="sint32", IsConst="False"-->
+                            <SHORT-NAME>xPattern_s32</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/sint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="numBytes_u32", Kind="in", Type="uint32", IsConst="False"-->
+                            <SHORT-NAME>numBytes_u32</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                        </ARGUMENTS>
+                      </BSW-MODULE-ENTRY>
+                      <BSW-MODULE-ENTRY>
+                        <SHORT-NAME>rba_BswSrv_MemSet16</SHORT-NAME>
+                        <DESC>
+                          <L-2 L="EN">rba_BswSrv_MemSet16 - initialize memory with 16 Bit data  Memory initialization routine. 16 Bit Pattern is written to the destination. Destination must be 2 Byte aligned. The size should be a multiple of 2. If not, it is rounded down to the next multiple of 2.  \param   xDest_pu32      destination address \param   Pattern_u32     fill pattern \param   numBytes_u32    number of bytes to be initialized \seealso     rba_BswSrv_MemSet8, rba_BswSrv_MemSet32, rba_BswSrv_MemSet64</L-2>
+                        </DESC>
+                        <SERVICE-ID>0</SERVICE-ID>
+                        <IS-REENTRANT>false</IS-REENTRANT>
+                        <IS-SYNCHRONOUS>false</IS-SYNCHRONOUS>
+                        <CALL-TYPE>REGULAR</CALL-TYPE>
+                        <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+                        <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+                        <ARGUMENTS>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xDest_pu16", Kind="in", Type="uint16*", IsConst="False"-->
+                            <SHORT-NAME>xDest_pu16</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xPattern_u32", Kind="in", Type="uint32", IsConst="False"-->
+                            <SHORT-NAME>xPattern_u32</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="numBytes_u32", Kind="in", Type="uint32", IsConst="False"-->
+                            <SHORT-NAME>numBytes_u32</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                        </ARGUMENTS>
+                      </BSW-MODULE-ENTRY>
+                      <BSW-MODULE-ENTRY>
+                        <SHORT-NAME>rba_BswSrv_MemSet32</SHORT-NAME>
+                        <DESC>
+                          <L-2 L="EN">rba_BswSrv_MemSet32 - initialize memory with 32 Bit data  Memory initialization routine. 32 Bit Pattern is written to the destination. Destination must be 4 Byte aligned. The size should be a multiple of 4. If not, it is rounded down to the next multiple of 4.  \param   xDest_pu32      destination address \param   Pattern_u32     fill pattern \param   numBytes_u32    number of bytes to be initialized \seealso     rba_BswSrv_MemSet8, rba_BswSrv_MemSet16, rba_BswSrv_MemSet64</L-2>
+                        </DESC>
+                        <SERVICE-ID>0</SERVICE-ID>
+                        <IS-REENTRANT>false</IS-REENTRANT>
+                        <IS-SYNCHRONOUS>false</IS-SYNCHRONOUS>
+                        <CALL-TYPE>REGULAR</CALL-TYPE>
+                        <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+                        <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+                        <ARGUMENTS>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xDest_pu32", Kind="in", Type="uint32*", IsConst="False"-->
+                            <SHORT-NAME>xDest_pu32</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xPattern_u32", Kind="in", Type="uint32", IsConst="False"-->
+                            <SHORT-NAME>xPattern_u32</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="numBytes_u32", Kind="in", Type="uint32", IsConst="False"-->
+                            <SHORT-NAME>numBytes_u32</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                        </ARGUMENTS>
+                      </BSW-MODULE-ENTRY>
+                      <BSW-MODULE-ENTRY>
+                        <SHORT-NAME>rba_BswSrv_MemSet64</SHORT-NAME>
+                        <DESC>
+                          <L-2 L="EN">rba_BswSrv_MemSet64 - initialize memory with 64 Bit data  Memory initialization routine. 64 Bit Pattern is written to the destination. Destination must be 4 Byte aligned. The size should be a multiple of 8. If not, it is rounded down to the next multiple of 8.  \param   xDest_pu32      destination address \param   Pattern_u32     fill pattern \param   numBytes_u32    number of bytes to be initialized \seealso     rba_BswSrv_MemSet8, rba_BswSrv_MemSet16, rba_BswSrv_MemSet32</L-2>
+                        </DESC>
+                        <SERVICE-ID>0</SERVICE-ID>
+                        <IS-REENTRANT>false</IS-REENTRANT>
+                        <IS-SYNCHRONOUS>false</IS-SYNCHRONOUS>
+                        <CALL-TYPE>REGULAR</CALL-TYPE>
+                        <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+                        <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+                        <ARGUMENTS>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xDest_pu64", Kind="in", Type="rba_BswSrv_uint64*", IsConst="False"-->
+                            <SHORT-NAME>xDest_pu64</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/RB/RBA/rba_BswSrv/ImplementationDataTypes/rba_BswSrv_uint64</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xPattern_u64", Kind="in", Type="rba_BswSrv_uint64", IsConst="False"-->
+                            <SHORT-NAME>xPattern_u64</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/RB/RBA/rba_BswSrv/ImplementationDataTypes/rba_BswSrv_uint64</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="numBytes_u32", Kind="in", Type="uint32", IsConst="False"-->
+                            <SHORT-NAME>numBytes_u32</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                        </ARGUMENTS>
+                      </BSW-MODULE-ENTRY>
+                      <BSW-MODULE-ENTRY>
+                        <SHORT-NAME>rba_BswSrv_MemSet8</SHORT-NAME>
+                        <DESC>
+                          <L-2 L="EN">rba_BswSrv_MemSet8 - initialize memory with 8 Bit data  Memory initialization routine. 8 Bit Pattern is written to the destination.  \param   xDest_pu8       destination address \param   xPattern_u32    fill pattern, only lower 8 bit used \param   numBytes_u32    number of bytes to be initialized \seealso     rba_BswSrv_MemSet16, rba_BswSrv_MemSet32, rba_BswSrv_MemSet64</L-2>
+                        </DESC>
+                        <SERVICE-ID>0</SERVICE-ID>
+                        <IS-REENTRANT>false</IS-REENTRANT>
+                        <IS-SYNCHRONOUS>false</IS-SYNCHRONOUS>
+                        <CALL-TYPE>REGULAR</CALL-TYPE>
+                        <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+                        <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+                        <ARGUMENTS>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xDest_pu8", Kind="in", Type="uint8*", IsConst="False"-->
+                            <SHORT-NAME>xDest_pu8</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="xPattern_u32", Kind="in", Type="uint32", IsConst="False"-->
+                            <SHORT-NAME>xPattern_u32</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                          <SW-SERVICE-ARG>
+                            <!--Name="numBytes_u32", Kind="in", Type="uint32", IsConst="False"-->
+                            <SHORT-NAME>numBytes_u32</SHORT-NAME>
+                            <DESC>
+                              <L-2 L="EN" />
+                            </DESC>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </SW-SERVICE-ARG>
+                        </ARGUMENTS>
+                      </BSW-MODULE-ENTRY>
+                    </ELEMENTS>
+                  </AR-PACKAGE><AR-PACKAGE>
+                    <SHORT-NAME>CompuMethods</SHORT-NAME>
+                    <!--Not yet implemented.-->
+                  </AR-PACKAGE><AR-PACKAGE>
+                    <SHORT-NAME>ImplementationDataTypes</SHORT-NAME>
+                    <ELEMENTS>
+                    <IMPLEMENTATION-DATA-TYPE>
+            		<SHORT-NAME>rba_BswSrv_uint64</SHORT-NAME>
+            		<LONG-NAME>
+            		<L-4 L="EN">BswSrv spcific uint64</L-4>
+            		</LONG-NAME>
+            		<CATEGORY>TYPE_REFERENCE</CATEGORY>
+            		<SW-DATA-DEF-PROPS>
+						<SW-DATA-DEF-PROPS-VARIANTS>
+							<SW-DATA-DEF-PROPS-CONDITIONAL>
+								<IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint64</IMPLEMENTATION-DATA-TYPE-REF>
+							</SW-DATA-DEF-PROPS-CONDITIONAL>
+						</SW-DATA-DEF-PROPS-VARIANTS>
+					</SW-DATA-DEF-PROPS>
+					<TYPE-EMITTER>HEADER-TYPE</TYPE-EMITTER>
+            	</IMPLEMENTATION-DATA-TYPE>
+            	</ELEMENTS>
+                  </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
