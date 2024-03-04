@@ -1,0 +1,84 @@
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --project=C:\ETAS\RTA-CAR_12.2.0\RTA-CAR\workspace\NewProjectFromScratch, --ecuinstance=ApplicationECU, --otheropt=C:\ETAS\RTA-CAR_12.2.0\RTA-CAR\workspace\NewProjectFromScratch\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_33] PortPrototype < PPortPrototype_0> placed on ComponentPrototype <CPT_MyTransmittingSWC_ApplicationEcu>  involved in NETS which does not have any data mapping/resource mapping, Hence no delegation connection and delegated port is created in flatview.Connections involved :"ASC_CPT_MyTransmittingSWC_ApplicationEcu_PPortPrototype_0_CPT_MyReceivingSWC_TestEcu_RPortPrototype_0"
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2024/02/29 10:33:21
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --project=C:\ETAS\RTA-CAR_12.2.0\RTA-CAR\workspace\NewProjectFromScratch, --ecuinstance=ApplicationECU, --otheropt=C:\ETAS\RTA-CAR_12.2.0\RTA-CAR\workspace\NewProjectFromScratch\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_33] PortPrototype < PPortPrototype_0> placed on ComponentPrototype <CPT_MyTransmittingSWC_ApplicationEcu>  involved in NETS which does not have any data mapping/resource mapping, Hence no delegation connection and delegated port is created in flatview.Connections involved :"ASC_CPT_MyTransmittingSWC_ApplicationEcu_PPortPrototype_0_CPT_MyReceivingSWC_TestEcu_RPortPrototype_0"
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2024/02/29 10:51:14
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --project=C:\ETAS\RTA-CAR_12.2.0\RTA-CAR\workspace\NewProjectFromScratch, --ecuinstance=ApplicationECU, --otheropt=C:\ETAS\RTA-CAR_12.2.0\RTA-CAR\workspace\NewProjectFromScratch\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_33] PortPrototype < PPortPrototype_0> placed on ComponentPrototype <CPT_MyTransmittingSWC_ApplicationEcu>  involved in NETS which does not have any data mapping/resource mapping, Hence no delegation connection and delegated port is created in flatview.Connections involved :"ASC_CPT_MyTransmittingSWC_ApplicationEcu_PPortPrototype_0_CPT_MyReceivingSWC_TestEcu_RPortPrototype_0"
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2024/03/04 17:04:14
+/******************************************************END OF REPORT*****************************************************************/
