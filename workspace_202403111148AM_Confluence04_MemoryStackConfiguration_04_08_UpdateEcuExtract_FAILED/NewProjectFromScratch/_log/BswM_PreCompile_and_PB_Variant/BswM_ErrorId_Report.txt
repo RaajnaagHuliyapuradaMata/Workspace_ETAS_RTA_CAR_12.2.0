@@ -1,0 +1,13 @@
+
+============================================================================
+BswM - ErrorId Report
+============================================================================
+/*If BswMReportFailRuntimeErrorId is not configured in any of the BswMActionList then the report will be empty.
+BswMReportFailRuntimeErrorId will be considered only if BswMReportFailRuntimeErrorId is configured in a BswMActionListItem which contains the BswMActionListItemRef as BswMAction*/
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+BswMActionList           | BswMActionListItem |   BswMReportFailRuntimeErrorId  |              BswMAction               | BswMActionListItemRef | 
+-------------------------------------------------------------------------------------------------------------------------------------------------                  
+BswM_AL_BswModules_InitListTwo | BswMActionListItem_0 |           0x80                |      BSWM_ACTION_USR_CALLOUT               | BswM_AI_DetInit  |     
+-------------------------------------------------------------------------------------------------------------------------------------------------
+

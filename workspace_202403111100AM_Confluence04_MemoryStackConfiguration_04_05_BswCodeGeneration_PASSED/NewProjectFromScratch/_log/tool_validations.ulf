@@ -1,0 +1,4604 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ULF-PROCESSING-LOG>
+<ADMIN-DATA>
+<LANGUAGE>EN</LANGUAGE>
+<USED-LANGUAGES>
+<L-10 L="EN">English</L-10>
+<L-10 L="DE">German</L-10>
+</USED-LANGUAGES>
+</ADMIN-DATA>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_1</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: EcuM_BSWMD.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_2</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Fls_Cfg_BSWMD.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_3</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: FrNm_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_4</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Icu_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_5</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Os_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_6</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Rte_EcucValues.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_7</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_C2c_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_8</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: FrTp_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_9</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Platform_Types.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_10</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: PduR_Prot_EcucValues.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_11</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Ifx_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_12</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: ComM_Cfg_BSWMD.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_13</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: EcuM_Cfg_BSWMD.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_14</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: CanIf_Prot_EcucValues.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_15</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: SecOC_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_16</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: CanIf_EcucParamdef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_17</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: ComM_Prot_EcucValues.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_18</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Nm_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_19</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Com_Cfg_BSWMD.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_20</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Dio_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_21</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: ecy_hsm_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_22</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_Amu_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_23</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: ComM_Cfg_SWCD.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_24</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: MyTransmittingSWC.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_25</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Bfx_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_26</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Fls_BSWMD.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_27</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Fls_BSWMD_EcucValues.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_28</SHORT-NAME>
+<DESC>
+<L-2 L="EN">---</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_29</SHORT-NAME>
+<DESC>
+<L-2 L="EN">No file found (ends with Configuration Importer.txt)</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_30</SHORT-NAME>
+<DESC>
+<L-2 L="EN">---</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_31</SHORT-NAME>
+<DESC>
+<L-2 L="EN">EcuInstance is taken from Configuration_Importer.java: ApplicationECU</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_32</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Importing Ecu: ApplicationECU of file DBC_SysDesc.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_33</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified System of category ECU_EXTRACT</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_34</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Found current RootSwCompositionPrototype: /System_EcuExtract/EXTR_ApplicationECU/CPT_ApplicationECU_FlatView</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_35</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Found current Rootswcompo_Flatview (merged)- /ApplicationECU_FlatView/SwComponentTypes/ApplicationECU_FlatView</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_36</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Found current Rootswcompo_Flatview (non-merged)- /ApplicationECU_FlatView/SwComponentTypes/ApplicationECU_FlatView</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_37</SHORT-NAME>
+<DESC>
+<L-2 L="EN">value of ECU-INSTANCE / COM-CONFIGURATION-GW-TIME-BASE in extract will be ignored: mapped Ecuc container ComTimeBase for ComGwTimeBase is not supported by ParamDef</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_38</SHORT-NAME>
+<DESC>
+<L-2 L="EN">value of ECU-INSTANCE / COM-CONFIGURATION-RX-TIME-BASE in extract will be ignored: mapped Ecuc container ComTimeBase for ComRxTimeBase is not supported by ParamDef</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_39</SHORT-NAME>
+<DESC>
+<L-2 L="EN">value of ECU-INSTANCE / COM-CONFIGURATION-TX-TIME-BASE in extract will be ignored: mapped Ecuc container ComTimeBase for ComTxTimeBase is not supported by ParamDef</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_40</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Processing Can/J1939 Cluster Can_Network</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_41</SHORT-NAME>
+<DESC>
+<L-2 L="EN">No NmCluster found for CommunicationConnector Conn_Can_Network_CANNODE_0_ApplicationECU - ComMNmVariant must be manually set to either NONE or LIGHT</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_42</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Mandatory element UnusedBitPattern is missing for IsignalIpdu ApplicationECU_TestResult_Tx: ComIPdu IP_ApplicationECU_TestResult_Tx_Can_Network_Channel_CAN_Tx -&gt; parameter ComTxIPduUnusedAreasDefault cannot be set</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_43</SHORT-NAME>
+<DESC>
+<L-2 L="EN">No DiagnosticContributionSet found</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_44</SHORT-NAME>
+<DESC>
+<L-2 L="EN">No Xfrm Config found, skipping Xfrm Import</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_45</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Adding further RTA-BSW configuration...</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_46</SHORT-NAME>
+<DESC>
+<L-2 L="EN">ConfigureMem - Have SWC for MemStack: Begin generating Nvm, MemIf and rba_MemLib</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_47</SHORT-NAME>
+<DESC>
+<L-2 L="EN">NvMRbMainFunctionScheduling set to NVM_RB_MAINFUNC_SCHEDULING_RTE_TIMED</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_48</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Creating NvBlock: user configuration to work with old mechanism</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_49</SHORT-NAME>
+<DESC>
+<L-2 L="EN">no implementation data type</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_50</SHORT-NAME>
+<DESC>
+<L-2 L="EN">NvMRomBlockDataAddress is not fully created. MyReceivingSWC has RoleBasedDataAssignment configured without link to any Parameter Element</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_51</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Creating NvBlock: user configuration to work with old mechanism</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_52</SHORT-NAME>
+<DESC>
+<L-2 L="EN">no implementation data type</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_53</SHORT-NAME>
+<DESC>
+<L-2 L="EN">NvMRomBlockDataAddress is not fully created. MyReceivingSWC has RoleBasedDataAssignment configured without link to any Parameter Element</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_54</SHORT-NAME>
+<DESC>
+<L-2 L="EN">ConfigureMem - Have SWC for MemStack: Finish generating Nvm, MemIf and rba_MemLib</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_55</SHORT-NAME>
+<DESC>
+<L-2 L="EN">ConfigureMem - MemStack is generated - target hardware is Fee: Begin generating Fee</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_56</SHORT-NAME>
+<DESC>
+<L-2 L="EN">FeeRbMachineType set to FEE_RB_FULL_MANUAL_CFG</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_57</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Machine type FEE_RB_FULL_MANUAL_CFG, creating FeeRbDeviceFsXSectorList, Desc and StartAddr</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_58</SHORT-NAME>
+<DESC>
+<L-2 L="EN">creating FeeRbDeviceFs Sector List with number of sectors = 2 
+ and size of sectors = 1024 bytes</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_59</SHORT-NAME>
+<DESC>
+<L-2 L="EN">ConfigureMem - MemStack is generated - target hardware is Fee: Finish generating Fee</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_60</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Skip: /ETAS_Project/EcucModuleConfigurationValuess/PduR/CanIf/PduRChangeParameterApi does not exist</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_61</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Skip: /ETAS_Project/EcucModuleConfigurationValuess/PduR/Com/PduRChangeParameterApi does not exist</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_62</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Copying properties to parameters...</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_63</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Skip: /ETAS_Project/EcucModuleConfigurationValuess/Can/CanGeneral/CanPublicIcomSupport does not exist</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_64</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Skip: /ETAS_Project/EcucModuleConfigurationValuess/Can/CanConfigSet/Can_Network_CANNODE_0/CanWakeupFunctionalityAPI does not exist</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_65</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Skip: /ETAS_Project/EcucModuleConfigurationValuess/PduR/PduRGeneral/PduRGwTpWithLimitedBuffer does not exist</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_66</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Further RTA-BSW configuration added</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_67</SHORT-NAME>
+<DESC>
+<L-2 L="EN">JacoP importer execution completed.</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_68</SHORT-NAME>
+<DESC>
+<L-2 L="EN">isCreateComNotification is configured as false</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_69</SHORT-NAME>
+<DESC>
+<L-2 L="EN">IsDcmRoutingForTpOnly is configured as true</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_70</SHORT-NAME>
+<DESC>
+<L-2 L="EN">IsRtaBswDcmIpdu is configured as true</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_71</SHORT-NAME>
+<DESC>
+<L-2 L="EN">ar_deviation_ComNmPdu_CutNmData is configured as true</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_72</SHORT-NAME>
+<DESC>
+<L-2 L="EN">isCreateDefaultDemFreezeFrameClass is configured as true</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_73</SHORT-NAME>
+<DESC>
+<L-2 L="EN">logOutputLevel is configured as INFO</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_74</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Running importer...</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_75</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Starting mapping</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_76</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Total number of MB defined: 2</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_77</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Number of receive pdus : 1</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_78</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Number of transmit pdus : 1</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_79</SHORT-NAME>
+<DESC>
+<L-2 L="EN">AutoMapping Started</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_80</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Number of MBs = 2 for Can_Network_CANNODE_0</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_81</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Number of MBs &gt;= Number of Pdus</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_82</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Mapping 1 TxPdus into 1 mailboxes</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_83</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Mapping 1 RxPdus into 1 mailboxes</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_84</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Mapping Complete</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_85</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Start validation</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_86</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Finished validating</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_87</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_AdcDs_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_88</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: CanIf_EOC.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_89</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: LinSM_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_90</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_Stm_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_91</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Rte_Rips_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_92</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: StbM_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_93</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: EcuC_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_94</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: LinTrcv_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_95</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_ComStackCdd_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_96</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_CUCELCompuMethods_BSWMD.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_97</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Crypto_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_98</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: CanTSyn_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_99</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: FiM_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_100</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_Reg_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_101</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: MemIf_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_102</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: EthTrcv_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_103</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Xfrm_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_104</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: PduR_EOC.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_105</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Standard_Types.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_106</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_Dma_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_107</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: PlatformSwBasePatch_Types.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_108</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_BswSrv_BSWMD.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_109</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: CryIf_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_110</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Mfl_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_111</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Eth_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_112</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: TcpIp_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_113</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Det_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_114</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: SwCluC_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_115</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Pwm_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_116</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Dcm_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_117</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Platform.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_118</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Rte_Rips_CSXfrm_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_119</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Crc_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_120</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: PlatformBase_Types.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_121</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_I2c_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_122</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Xcp_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_123</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_Gtm_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_124</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: WdgIf_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_125</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Dem_Rb_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_126</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Mcu_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_127</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Ea_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_128</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Com_EOC.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_129</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: NvM_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_130</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: CanSM_Prot_EcucValues.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_131</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Mfx_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_132</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Fr_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_133</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_SysElem_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_134</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: AISpecification_Unit_SWCD.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_135</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: EthSM_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_136</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Fls_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_137</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: ComM_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_138</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: UdpNm_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_139</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: ETAS_OptionsParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_140</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: CanSM_BSWMD.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_141</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Rte_Rips_SRCom_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_142</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Fee_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_143</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Ifl_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_144</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: ApplicationECU_Project_EcucValues.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_145</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_MemLibVal_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_146</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_DiagLib_Cfg_BSWMD.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_147</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: FlsTst_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_148</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_Msc_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_149</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: MyReceivingSWC.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_150</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: System_EcuExtr.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_151</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: ecuc_configuration_values_fwd.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_152</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Adc_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_153</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: AISpecification_PhysicalDimension_SWCD.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_154</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Sd_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_155</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Composition.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_156</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: CanIf_Cfg_BSWMD.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_157</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Dem_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_158</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_XCoreCdd_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_159</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Bfx_BSWMD.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_160</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: FrTrcv_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_161</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_Mpu_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_162</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: BswM_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_163</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: EcucValueCollection_Generated.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_164</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Port_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_165</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: WdgM_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_166</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: ApplicationECU_FlatMap.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_167</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: MSI_ShutDown.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_168</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Rte_McSupportData.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_169</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_CUCELSwAddrMethodAddOn_BSWMD.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_170</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: DBC_SysDesc.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_171</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Os_EcucValues.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_172</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: FrIf_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_173</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Rte_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_174</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: EcuM_EcucValues.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_175</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Spi_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_176</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: CanTp_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_177</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: J1939Tp_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_178</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_Dfa_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_179</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_McalSrv_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_180</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: FrSM_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_181</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: EthIf_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_182</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Gpt_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_183</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_Acp_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_184</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: E2EXf_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_185</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: PduR_Cfg_BSWMD.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_186</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Compiler.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_187</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: PduR_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_188</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: ComM_SWCD.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_189</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: ComUser_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_190</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: BswM_ModeMapping.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_191</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: EthTSyn_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_192</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: SomeIpTp_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_193</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: CanTrcv_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_194</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: ApplicationECU_FlatView_SWCD.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_195</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Com_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_196</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: J1939Rm_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_197</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: CanNm_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_198</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: J1939Nm_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_199</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: LdComUser_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_200</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Platform_EcucParamdef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_201</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_BswSrv_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_202</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_Wdta_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_203</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: PlatformBaseOld_Types.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_204</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: J1939Dcm_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_205</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: IpduM_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_206</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Can_BSWMD.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_207</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Dlt_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_208</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_Emm_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_209</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_Uart_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_210</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_MemLib_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_211</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_BswSrv_EcucValues.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_212</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Can_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_213</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: BswM_Cfg_SWCD.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_214</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_DemObdBasic_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_215</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: BswM_Cfg_BSWMD.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_216</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Lin_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_217</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: EcuM_Cfg_SWCD.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_218</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Csm_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_219</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Compiler_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_220</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: DoIP_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_221</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: SoAd_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_222</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_DiagLib_Cfg_SWCD.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_223</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: LdCom_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_224</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: LinIf_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_225</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: CanIf_BSWMD.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_226</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: IdsM_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_227</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: ISOLAR_PlatformTypes.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_228</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Efx_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_229</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_DiagLib_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_230</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: CanSM_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_231</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: ComStack_Types.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_232</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: LinIf_LinTp_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_233</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: EcuM_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_234</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Com_Prot_EcucValues.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_235</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_CUCELSwAddrMethod_BSWMD.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_236</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Wdg_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_237</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Can_GeneralTypes.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_238</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: CanSM_Cfg_BSWMD.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_239</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: BswM_EcucValues.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_240</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Interfaces.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_241</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Eep_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_242</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: Rte_BSWMD.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_243</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: E2E_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_244</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: KeyM_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_245</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: DataTypes.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_246</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: PlatformOld_Types.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_247</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: osNeeds.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_248</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: ComM_EOC.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_249</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: CanSM_EOC.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="Conf-Gen Execution">
+<SHORT-NAME>ISOLAR-B_250</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Identified project specific resource: rba_ArxmlGen_EcucParamDef.arxml</L-2>
+</DESC>
+<CATEGORY>DEBUG</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">.</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-B</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="build_action_name">Importer</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="Resource">NewProjectFromScratch</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="EcuExtract_OK_02" T="2024-03-13T11:53:55.970+0100">
+<SHORT-NAME>ISOLAR-A_1</SHORT-NAME>
+<DESC>
+<L-2 L="EN">List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]</L-2>
+</DESC>
+<CATEGORY>SYSTEM</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">DBC_SysDesc.arxml</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="editorID">com.bosch.autosartool.generic.editor</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CustomTargetURI">platform:/resource/NewProjectFromScratch/DBC_SysDesc.arxml#/DBC_SysDesc_Can_Network/Pkg_Ecu/ApplicationECU?type=EcuInstance</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="Resource">/NewProjectFromScratch/DBC_SysDesc.arxml</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="QUALIFIEDNAME">/DBC_SysDesc_Can_Network/Pkg_Ecu/ApplicationECU</SD>
+<SD GID="URI">platform:/resource/NewProjectFromScratch/DBC_SysDesc.arxml#/DBC_SysDesc_Can_Network/Pkg_Ecu/ApplicationECU?type=EcuInstance</SD>
+<SD GID="ELEMENT">splittable.autosar40.system.fibex.fibexcore.coretopology.SplittableEcuInstanceImpl@3db06c11 (shortName: ApplicationECU) (comConfigurationGwTimeBase: 0.005, comConfigurationRxTimeBase: 0.01, comConfigurationTxTimeBase: 0.01, comEnableMDTForCyclicTransmission: &lt;unset&gt;, diagnosticAddress: &lt;unset&gt;, ethSwitchPortGroupDerivation: &lt;unset&gt;, pnResetTime: &lt;unset&gt;, pncNmRequest: &lt;unset&gt;, pncPrepareSleepTimer: &lt;unset&gt;, pncSynchronousWakeup: &lt;unset&gt;, sleepModeSupported: false, v2xSupported: &lt;unset&gt;, wakeUpOverBusSupported: false)</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="com.bosch.blueworx.core.logging.view.problemslog.markerClickExecutionID">DoubleClickValidation</SD>
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="id">EcuExtract_OK_02</SD>
+<SD GID="ELEMENTECLASS">EcuInstance</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="EcuExtract_WARN_21" T="2024-03-13T11:53:55.847+0100">
+<SHORT-NAME>ISOLAR-A_2</SHORT-NAME>
+<DESC>
+<L-2 L="EN">System version is not specified, default System version will be added to the extracted System</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">DBC_SysDesc.arxml</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="editorID">com.bosch.autosartool.generic.editor</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CustomTargetURI">platform:/resource/NewProjectFromScratch/DBC_SysDesc.arxml#/System/System?type=System</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="Resource">/NewProjectFromScratch/DBC_SysDesc.arxml</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="QUALIFIEDNAME">/System/System</SD>
+<SD GID="URI">platform:/resource/NewProjectFromScratch/DBC_SysDesc.arxml#/System/System?type=System</SD>
+<SD GID="ELEMENT">splittable.autosar40.system.SplittableSystemImpl@5a222d94 (shortName: System) (containerIPduHeaderByteOrder: &lt;unset&gt;, ecuExtractVersion: &lt;unset&gt;, pncVectorLength: &lt;unset&gt;, pncVectorOffset: &lt;unset&gt;, systemVersion: &lt;unset&gt;)</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="com.bosch.blueworx.core.logging.view.problemslog.markerClickExecutionID">DoubleClickValidation</SD>
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="id">EcuExtract_WARN_21</SD>
+<SD GID="ELEMENTECLASS">System</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+<LOG-ENTRY TI="EcuExtract_WARN_33" T="2024-03-13T11:53:55.970+0100">
+<SHORT-NAME>ISOLAR-A_3</SHORT-NAME>
+<DESC>
+<L-2 L="EN">PortPrototype &lt; PPortPrototype_0&gt; placed on ComponentPrototype &lt;CPT_MyTransmittingSWC_ApplicationEcu&gt;  involved in NETS which does not have any data mapping/resource mapping, Hence no delegation connection and delegated port is created in flatview.Connections involved :"ASC_CPT_MyTransmittingSWC_ApplicationEcu_PPortPrototype_0_CPT_MyReceivingSWC_TestEcu_RPortPrototype_0"</L-2>
+</DESC>
+<CATEGORY>WARN</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">MyTransmittingSWC.arxml</SD>
+<SD GID="ULF-LINE-NUMBER-START">0</SD>
+<SD GID="ULF-TOOL-NAME">ISOLAR-A</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="project_name">NewProjectFromScratch</SD>
+<SD GID="editorID">com.bosch.autosartool.generic.editor</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="CustomTargetURI">platform:/resource/NewProjectFromScratch/MyTransmittingSWC.arxml#/MyTransmittingSWC/MyTransmittingSWC/PPortPrototype_0?type=PPortPrototype</SD>
+<SD GID="PROJECT">NewProjectFromScratch</SD>
+<SD GID="Resource">/NewProjectFromScratch/MyTransmittingSWC.arxml</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="QUALIFIEDNAME">/MyTransmittingSWC/MyTransmittingSWC/PPortPrototype_0</SD>
+<SD GID="URI">platform:/resource/NewProjectFromScratch/MyTransmittingSWC.arxml#/MyTransmittingSWC/MyTransmittingSWC/PPortPrototype_0?type=PPortPrototype</SD>
+<SD GID="ELEMENT">autosar40.swcomponent.components.impl.PPortPrototypeImpl@2e1447c7 (shortName: PPortPrototype_0)</SD>
+<SD GID="constraintPluginId">com.bosch.autosartool.common.util</SD>
+<SD GID="com.bosch.blueworx.core.logging.view.problemslog.markerClickExecutionID">DoubleClickValidation</SD>
+<SD GID="CategoryName">ISOLAR-A</SD>
+<SD GID="id">EcuExtract_WARN_33</SD>
+<SD GID="ELEMENTECLASS">PPortPrototype</SD>
+<SD GID="UUID">001</SD>
+</SDG>
+</LOG-ENTRY>
+</ULF-PROCESSING-LOG>

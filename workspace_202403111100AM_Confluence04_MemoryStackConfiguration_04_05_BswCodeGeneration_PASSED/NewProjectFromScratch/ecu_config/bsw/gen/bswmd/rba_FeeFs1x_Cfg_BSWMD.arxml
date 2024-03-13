@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <ADMIN-DATA>
+    <USED-LANGUAGES>
+      <L-10 L="EN" xml:space="preserve">EN</L-10>
+    </USED-LANGUAGES>
+    <DOC-REVISIONS>
+      <DOC-REVISION>
+        <ISSUED-BY>RB</ISSUED-BY>
+      </DOC-REVISION>
+    </DOC-REVISIONS>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>RB</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>RBA</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>rba_FeeFs1x</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>ApplicationDataTypes</SHORT-NAME>
+                    <ELEMENTS>
+
+                      <!-- ======================================================================================== -->
+
+                      <APPLICATION-RECORD-DATA-TYPE>
+                        <SHORT-NAME>rba_FeeFs1x_PAMap_data_tst_APP</SHORT-NAME>
+                        <CATEGORY>STRUCTURE</CATEGORY>
+                        <SW-DATA-DEF-PROPS>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </SW-DATA-DEF-PROPS>
+                        <ELEMENTS>
+                          <APPLICATION-RECORD-ELEMENT>
+                            <SHORT-NAME>currWrPage_u32</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_u32</TYPE-TREF>
+                          </APPLICATION-RECORD-ELEMENT>
+                        </ELEMENTS>
+                      </APPLICATION-RECORD-DATA-TYPE>
+
+                      <!-- ======================================================================================== -->
+
+                      <APPLICATION-RECORD-DATA-TYPE>
+                        <SHORT-NAME>rba_FeeFs1x_Sector_data_tst_APP</SHORT-NAME>
+                        <CATEGORY>STRUCTURE</CATEGORY>
+                        <SW-DATA-DEF-PROPS>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </SW-DATA-DEF-PROPS>
+                        <ELEMENTS>
+                          <APPLICATION-RECORD-ELEMENT>
+                            <SHORT-NAME>maxSectCngCnt_u32</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_u32</TYPE-TREF>
+                          </APPLICATION-RECORD-ELEMENT>
+                        </ELEMENTS>
+                      </APPLICATION-RECORD-DATA-TYPE>
+
+                      <!-- ======================================================================================== -->
+
+                      <APPLICATION-RECORD-DATA-TYPE>
+                        <SHORT-NAME>rba_FeeFs1x_Sector_SectorListElement_tst_APP</SHORT-NAME>
+                        <CATEGORY>STRUCTURE</CATEGORY>
+                        <SW-DATA-DEF-PROPS>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </SW-DATA-DEF-PROPS>
+                        <ELEMENTS>
+                          <APPLICATION-RECORD-ELEMENT>
+                            <SHORT-NAME>sectorCngCnt_u32</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_u32</TYPE-TREF>
+                          </APPLICATION-RECORD-ELEMENT>
+                          <APPLICATION-RECORD-ELEMENT>
+                            <SHORT-NAME>startMarkerContent_u32</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_u32</TYPE-TREF>
+                          </APPLICATION-RECORD-ELEMENT>
+                          <APPLICATION-RECORD-ELEMENT>
+                            <SHORT-NAME>sectorState_en</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_enum8</TYPE-TREF>
+                          </APPLICATION-RECORD-ELEMENT>
+                          <APPLICATION-RECORD-ELEMENT>
+                            <SHORT-NAME>sectorMarkerWriteIdx_u8</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_u8</TYPE-TREF>
+                          </APPLICATION-RECORD-ELEMENT>
+                          <APPLICATION-RECORD-ELEMENT>
+                            <SHORT-NAME>physSectIdx_u8</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_u8</TYPE-TREF>
+                          </APPLICATION-RECORD-ELEMENT>
+                        </ELEMENTS>
+                      </APPLICATION-RECORD-DATA-TYPE>
+
+                      <!-- ======================================================================================== -->
+
+                      <APPLICATION-RECORD-DATA-TYPE>
+                        <SHORT-NAME>rba_FeeFs1x_Reorg_stm_tst_APP</SHORT-NAME>
+                        <CATEGORY>STRUCTURE</CATEGORY>
+                        <SW-DATA-DEF-PROPS>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </SW-DATA-DEF-PROPS>
+                        <ELEMENTS>
+                          <APPLICATION-RECORD-ELEMENT>
+                            <SHORT-NAME>pageNrOfSector0OverlapBlk_u32</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_u32</TYPE-TREF>
+                          </APPLICATION-RECORD-ELEMENT>
+                          <APPLICATION-RECORD-ELEMENT>
+                            <SHORT-NAME>persIdOfSector0OverlapBlk_u16</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_u16</TYPE-TREF>
+                          </APPLICATION-RECORD-ELEMENT>
+                          <APPLICATION-RECORD-ELEMENT>
+                            <SHORT-NAME>feeIndexOfSect0OverlapBlk_u16</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_u16</TYPE-TREF>
+                          </APPLICATION-RECORD-ELEMENT>
+                          <APPLICATION-RECORD-ELEMENT>
+                            <SHORT-NAME>entry_b</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_bool</TYPE-TREF>
+                          </APPLICATION-RECORD-ELEMENT>
+                          <APPLICATION-RECORD-ELEMENT>
+                            <SHORT-NAME>sector0OverlapBlkIsKnownBlk_b</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_bool</TYPE-TREF>
+                          </APPLICATION-RECORD-ELEMENT>
+                          <APPLICATION-RECORD-ELEMENT>
+                            <SHORT-NAME>isSoftReorgOngoing_b</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_bool</TYPE-TREF>
+                          </APPLICATION-RECORD-ELEMENT>
+                          <APPLICATION-RECORD-ELEMENT>
+                            <SHORT-NAME>sectorOverflowAttemptCtr_u8</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_u8</TYPE-TREF>
+                          </APPLICATION-RECORD-ELEMENT>
+                          <APPLICATION-RECORD-ELEMENT>
+                            <SHORT-NAME>state_en</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_enum8</TYPE-TREF>
+                          </APPLICATION-RECORD-ELEMENT>
+                        </ELEMENTS>
+                      </APPLICATION-RECORD-DATA-TYPE>
+
+                      <!-- ======================================================================================== -->
+
+                      <APPLICATION-ARRAY-DATA-TYPE>
+                        <SHORT-NAME>ARRAY_WriteBfr_au8_APP</SHORT-NAME>
+                        <CATEGORY>ARRAY</CATEGORY>
+                        <SW-DATA-DEF-PROPS>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </SW-DATA-DEF-PROPS>
+                        <ELEMENT>
+                          <SHORT-NAME>ARRAY_WriteBfr_au8_APP_El</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_u8</TYPE-TREF>
+                          <MAX-NUMBER-OF-ELEMENTS>8</MAX-NUMBER-OF-ELEMENTS>
+                        </ELEMENT>
+                      </APPLICATION-ARRAY-DATA-TYPE>
+
+                      <!-- ======================================================================================== -->
+
+                      <APPLICATION-ARRAY-DATA-TYPE>
+                        <SHORT-NAME>ARRAY_rba_FeeFs1x_Sector_sectorInfo_ast_APP</SHORT-NAME>
+                        <CATEGORY>ARRAY</CATEGORY>
+                        <SW-DATA-DEF-PROPS>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </SW-DATA-DEF-PROPS>
+                        <ELEMENT>
+                          <SHORT-NAME>ARRAY_rba_FeeFs1x_Sector_sectorInfo_ast_APP_El</SHORT-NAME>
+                          <CATEGORY>VALUE</CATEGORY>
+                          <TYPE-TREF DEST="APPLICATION-RECORD-DATA-TYPE">/RB/RBA/rba_FeeFs1x/ApplicationDataTypes/rba_FeeFs1x_Sector_SectorListElement_tst_APP</TYPE-TREF>
+                          <MAX-NUMBER-OF-ELEMENTS>2</MAX-NUMBER-OF-ELEMENTS>
+                        </ELEMENT>
+                      </APPLICATION-ARRAY-DATA-TYPE>
+
+                      <!-- ======================================================================================== -->
+
+                      <APPLICATION-RECORD-DATA-TYPE>
+                        <SHORT-NAME>rba_FeeFs1x_Sector_erase_tst_APP</SHORT-NAME>
+                        <CATEGORY>STRUCTURE</CATEGORY>
+                        <SW-DATA-DEF-PROPS>
+                          <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                              <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                          </SW-DATA-DEF-PROPS-VARIANTS>
+                        </SW-DATA-DEF-PROPS>
+                        <ELEMENTS>
+                          <APPLICATION-RECORD-ELEMENT>
+                            <SHORT-NAME>eraseStartAddr_u32</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_u32</TYPE-TREF>
+                          </APPLICATION-RECORD-ELEMENT>
+                          <APPLICATION-RECORD-ELEMENT>
+                            <SHORT-NAME>eraseLength_u32</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_u32</TYPE-TREF>
+                          </APPLICATION-RECORD-ELEMENT>
+                          <APPLICATION-RECORD-ELEMENT>
+                            <SHORT-NAME>WriteBfr_au8_ast</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <TYPE-TREF DEST="APPLICATION-ARRAY-DATA-TYPE">/RB/RBA/rba_FeeFs1x/ApplicationDataTypes/ARRAY_WriteBfr_au8_APP</TYPE-TREF>
+                          </APPLICATION-RECORD-ELEMENT>
+                          <APPLICATION-RECORD-ELEMENT>
+                            <SHORT-NAME>state_en</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_enum8</TYPE-TREF>
+                          </APPLICATION-RECORD-ELEMENT>
+                          <APPLICATION-RECORD-ELEMENT>
+                            <SHORT-NAME>logSectIdx_u8</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_u8</TYPE-TREF>
+                          </APPLICATION-RECORD-ELEMENT>
+                          <APPLICATION-RECORD-ELEMENT>
+                            <SHORT-NAME>entry_b</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_bool</TYPE-TREF>
+                          </APPLICATION-RECORD-ELEMENT>
+                          <APPLICATION-RECORD-ELEMENT>
+                            <SHORT-NAME>isReerasing_b</SHORT-NAME>
+                            <CATEGORY>BOOLEAN</CATEGORY>
+                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_bool</TYPE-TREF>
+                          </APPLICATION-RECORD-ELEMENT>
+                        </ELEMENTS>
+                      </APPLICATION-RECORD-DATA-TYPE>
+
+                      <!-- ======================================================================================== -->
+
+                    </ELEMENTS>
+                  </AR-PACKAGE>
+                  <AR-PACKAGE>
+                    <SHORT-NAME>ImplementationDataTypes</SHORT-NAME>
+                    <ELEMENTS>
+
+                      <!-- ======================================================================================== -->
+
+                      <IMPLEMENTATION-DATA-TYPE>
+                        <SHORT-NAME>rba_FeeFs1x_PAMap_data_tst_RTE</SHORT-NAME>
+                        <CATEGORY>STRUCTURE</CATEGORY>
+                        <SUB-ELEMENTS>
+                          <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            <SHORT-NAME>currWrPage_u32</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                        </SUB-ELEMENTS>
+                      </IMPLEMENTATION-DATA-TYPE>
+
+                      <!-- ======================================================================================== -->
+
+                      <IMPLEMENTATION-DATA-TYPE>
+                        <SHORT-NAME>rba_FeeFs1x_Sector_data_tst_RTE</SHORT-NAME>
+                        <CATEGORY>STRUCTURE</CATEGORY>
+                        <SUB-ELEMENTS>
+                          <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            <SHORT-NAME>maxSectCngCnt_u32</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                        </SUB-ELEMENTS>
+                      </IMPLEMENTATION-DATA-TYPE>
+
+                      <!-- ======================================================================================== -->
+
+                      <IMPLEMENTATION-DATA-TYPE>
+                        <SHORT-NAME>rba_FeeFs1x_Sector_SectorListElement_tst_RTE</SHORT-NAME>
+                        <CATEGORY>STRUCTURE</CATEGORY>
+                        <SUB-ELEMENTS>
+                          <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            <SHORT-NAME>sectorCngCnt_u32</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            <SHORT-NAME>startMarkerContent_u32</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            <SHORT-NAME>sectorState_en</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/RB/RBA/rba_MemLib/ImplementationDataTypes/Mem_enum8</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            <SHORT-NAME>sectorMarkerWriteIdx_u8</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            <SHORT-NAME>physSectIdx_u8</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                        </SUB-ELEMENTS>
+                      </IMPLEMENTATION-DATA-TYPE>
+
+                      <!-- ======================================================================================== -->
+
+                      <IMPLEMENTATION-DATA-TYPE>
+                        <SHORT-NAME>rba_FeeFs1x_Reorg_stm_tst_RTE</SHORT-NAME>
+                        <CATEGORY>STRUCTURE</CATEGORY>
+                        <SUB-ELEMENTS>
+                          <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            <SHORT-NAME>pageNrOfSector0OverlapBlk_u32</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            <SHORT-NAME>persIdOfSector0OverlapBlk_u16</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            <SHORT-NAME>feeIndexOfSect0OverlapBlk_u16</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            <SHORT-NAME>entry_b</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            <SHORT-NAME>sector0OverlapBlkIsKnownBlk_b</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            <SHORT-NAME>isSoftReorgOngoing_b</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            <SHORT-NAME>sectorOverflowAttemptCtr_u8</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            <SHORT-NAME>state_en</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/RB/RBA/rba_MemLib/ImplementationDataTypes/Mem_enum8</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                        </SUB-ELEMENTS>
+                      </IMPLEMENTATION-DATA-TYPE>
+
+                      <!-- ======================================================================================== -->
+
+                      <IMPLEMENTATION-DATA-TYPE>
+                        <SHORT-NAME>ARRAY_WriteBfr_au8_RTE</SHORT-NAME>
+                        <CATEGORY>ARRAY</CATEGORY>
+                        <SUB-ELEMENTS>
+                          <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            <SHORT-NAME>IMPL_WriteBfr_au8</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <ARRAY-SIZE>8</ARRAY-SIZE>
+                            <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                        </SUB-ELEMENTS>
+                      </IMPLEMENTATION-DATA-TYPE>
+
+                      <!-- ======================================================================================== -->
+
+                      <IMPLEMENTATION-DATA-TYPE>
+                        <SHORT-NAME>ARRAY_rba_FeeFs1x_Sector_sectorInfo_ast_RTE</SHORT-NAME>
+                        <CATEGORY>ARRAY</CATEGORY>
+                        <SUB-ELEMENTS>
+                          <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            <SHORT-NAME>IMPL_rba_FeeFs1x_Sector_sectorInfo_ast</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <ARRAY-SIZE>2</ARRAY-SIZE>
+                            <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/RB/RBA/rba_FeeFs1x/ImplementationDataTypes/rba_FeeFs1x_Sector_SectorListElement_tst_RTE</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                        </SUB-ELEMENTS>
+                      </IMPLEMENTATION-DATA-TYPE>
+
+                      <!-- ======================================================================================== -->
+
+                      <IMPLEMENTATION-DATA-TYPE>
+                        <SHORT-NAME>rba_FeeFs1x_Sector_erase_tst_RTE</SHORT-NAME>
+                        <CATEGORY>STRUCTURE</CATEGORY>
+                        <SUB-ELEMENTS>
+                          <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            <SHORT-NAME>eraseStartAddr_u32</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            <SHORT-NAME>eraseLength_u32</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            <SHORT-NAME>WriteBfr_au8</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/RB/RBA/rba_FeeFs1x/ImplementationDataTypes/ARRAY_WriteBfr_au8_RTE</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            <SHORT-NAME>state_en</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/RB/RBA/rba_MemLib/ImplementationDataTypes/Mem_enum8</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            <SHORT-NAME>logSectIdx_u8</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            <SHORT-NAME>entry_b</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                          <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            <SHORT-NAME>isReerasing_b</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                              <SW-DATA-DEF-PROPS-VARIANTS>
+                                <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</IMPLEMENTATION-DATA-TYPE-REF>
+                                </SW-DATA-DEF-PROPS-CONDITIONAL>
+                              </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                          </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                        </SUB-ELEMENTS>
+                      </IMPLEMENTATION-DATA-TYPE>
+
+                      <!-- ======================================================================================== -->
+
+                    </ELEMENTS>
+                  </AR-PACKAGE>
+                <!-- Data type Mapping set  -->
+                <!-- This class represents a list of mappings between ApplicationDataTypes and ImplementationDataTypes. In addition, it can contain mappings between ImplementationDataTypes and ModeDeclarationGroups. -->
+                  <AR-PACKAGE>
+                    <SHORT-NAME>DataTypeMappingSets</SHORT-NAME>
+                      <ELEMENTS>
+                        <DATA-TYPE-MAPPING-SET>
+                          <SHORT-NAME>DataTypeMappingSet</SHORT-NAME>
+                          <DATA-TYPE-MAPS>
+                            <DATA-TYPE-MAP>
+                              <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-RECORD-DATA-TYPE">/RB/RBA/rba_FeeFs1x/ApplicationDataTypes/rba_FeeFs1x_PAMap_data_tst_APP</APPLICATION-DATA-TYPE-REF>
+                              <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/RB/RBA/rba_FeeFs1x/ImplementationDataTypes/rba_FeeFs1x_PAMap_data_tst_RTE</IMPLEMENTATION-DATA-TYPE-REF>
+                            </DATA-TYPE-MAP>
+                            <DATA-TYPE-MAP>
+                              <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-RECORD-DATA-TYPE">/RB/RBA/rba_FeeFs1x/ApplicationDataTypes/rba_FeeFs1x_Sector_data_tst_APP</APPLICATION-DATA-TYPE-REF>
+                              <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/RB/RBA/rba_FeeFs1x/ImplementationDataTypes/rba_FeeFs1x_Sector_data_tst_RTE</IMPLEMENTATION-DATA-TYPE-REF>
+                            </DATA-TYPE-MAP>
+                            <DATA-TYPE-MAP>
+                              <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-RECORD-DATA-TYPE">/RB/RBA/rba_FeeFs1x/ApplicationDataTypes/rba_FeeFs1x_Sector_SectorListElement_tst_APP</APPLICATION-DATA-TYPE-REF>
+                              <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/RB/RBA/rba_FeeFs1x/ImplementationDataTypes/rba_FeeFs1x_Sector_SectorListElement_tst_RTE</IMPLEMENTATION-DATA-TYPE-REF>
+                            </DATA-TYPE-MAP>
+                            <DATA-TYPE-MAP>
+                              <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-RECORD-DATA-TYPE">/RB/RBA/rba_FeeFs1x/ApplicationDataTypes/rba_FeeFs1x_Reorg_stm_tst_APP</APPLICATION-DATA-TYPE-REF>
+                              <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/RB/RBA/rba_FeeFs1x/ImplementationDataTypes/rba_FeeFs1x_Reorg_stm_tst_RTE</IMPLEMENTATION-DATA-TYPE-REF>
+                            </DATA-TYPE-MAP>
+                            <DATA-TYPE-MAP>
+                              <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-ARRAY-DATA-TYPE">/RB/RBA/rba_FeeFs1x/ApplicationDataTypes/ARRAY_WriteBfr_au8_APP</APPLICATION-DATA-TYPE-REF>
+                              <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/RB/RBA/rba_FeeFs1x/ImplementationDataTypes/ARRAY_WriteBfr_au8_RTE</IMPLEMENTATION-DATA-TYPE-REF>
+                            </DATA-TYPE-MAP>
+                            <DATA-TYPE-MAP>
+                              <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-ARRAY-DATA-TYPE">/RB/RBA/rba_FeeFs1x/ApplicationDataTypes/ARRAY_rba_FeeFs1x_Sector_sectorInfo_ast_APP</APPLICATION-DATA-TYPE-REF>
+                              <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/RB/RBA/rba_FeeFs1x/ImplementationDataTypes/ARRAY_rba_FeeFs1x_Sector_sectorInfo_ast_RTE</IMPLEMENTATION-DATA-TYPE-REF>
+                            </DATA-TYPE-MAP>
+                            <DATA-TYPE-MAP>
+                              <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-RECORD-DATA-TYPE">/RB/RBA/rba_FeeFs1x/ApplicationDataTypes/rba_FeeFs1x_Sector_erase_tst_APP</APPLICATION-DATA-TYPE-REF>
+                              <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/RB/RBA/rba_FeeFs1x/ImplementationDataTypes/rba_FeeFs1x_Sector_erase_tst_RTE</IMPLEMENTATION-DATA-TYPE-REF>
+                            </DATA-TYPE-MAP>
+                          </DATA-TYPE-MAPS>
+                        </DATA-TYPE-MAPPING-SET>
+                      </ELEMENTS>
+                  </AR-PACKAGE>
+                  <AR-PACKAGE>
+                    <SHORT-NAME>BswModuleDescriptions</SHORT-NAME>
+                    <ELEMENTS>
+                      <BSW-MODULE-DESCRIPTION>
+                        <SHORT-NAME>rba_FeeFs1x</SHORT-NAME>
+                        <LONG-NAME>
+                          <L-4 L="EN">Flash Eeprom Emulation Fs1x</L-4>
+                        </LONG-NAME>
+                        <CATEGORY>BSW_MODULE</CATEGORY>
+                        <INTERNAL-BEHAVIORS>
+                          <BSW-INTERNAL-BEHAVIOR>
+                            <SHORT-NAME>BswInternalBehavior</SHORT-NAME>
+                            <DATA-TYPE-MAPPING-REFS>
+                              <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/RB/RBA/rba_FeeFs1x/DataTypeMappingSets/DataTypeMappingSet</DATA-TYPE-MAPPING-REF>
+                            </DATA-TYPE-MAPPING-REFS>
+                            <STATIC-MEMORYS>
+          
+                            </STATIC-MEMORYS>
+                          </BSW-INTERNAL-BEHAVIOR>
+                        </INTERNAL-BEHAVIORS>
+                      </BSW-MODULE-DESCRIPTION>
+                    </ELEMENTS>
+                  </AR-PACKAGE>
+                  <AR-PACKAGE>
+                    <SHORT-NAME>BswImplementations</SHORT-NAME>
+                    <ELEMENTS>
+                      <BSW-IMPLEMENTATION>
+                        <SHORT-NAME>rba_FeeFs1x</SHORT-NAME>
+                        <CODE-DESCRIPTORS>
+                          <CODE>
+                            <SHORT-NAME>CodeDescriptor</SHORT-NAME>
+                            <ARTIFACT-DESCRIPTORS>
+                              <AUTOSAR-ENGINEERING-OBJECT>
+                                <SHORT-LABEL>ArEngObj</SHORT-LABEL>
+                                <CATEGORY>SWSRC</CATEGORY>
+                              </AUTOSAR-ENGINEERING-OBJECT>
+                            </ARTIFACT-DESCRIPTORS>
+                          </CODE>
+                        </CODE-DESCRIPTORS>
+                        <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+                        <SW-VERSION>22.0.1</SW-VERSION>
+                        <VENDOR-ID>6</VENDOR-ID>
+                        <AR-RELEASE-VERSION>4.5.0</AR-RELEASE-VERSION>
+                        <BEHAVIOR-REF DEST="BSW-INTERNAL-BEHAVIOR">/RB/RBA/rba_FeeFs1x/BswModuleDescriptions/rba_FeeFs1x/BswInternalBehavior</BEHAVIOR-REF>
+                      </BSW-IMPLEMENTATION>
+                    </ELEMENTS>
+                  </AR-PACKAGE>
+               </AR-PACKAGES>
+             </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR >

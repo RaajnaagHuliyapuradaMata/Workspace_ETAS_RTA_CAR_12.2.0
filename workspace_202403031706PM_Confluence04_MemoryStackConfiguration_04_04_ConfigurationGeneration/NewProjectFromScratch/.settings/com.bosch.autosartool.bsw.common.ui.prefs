@@ -1,7 +1,0 @@
-BSW_CONFGEN_CONFIRMATION_REQUIRED=true
-eclipse.preferences.version=1
-lastEcuToSync=/DBC_SysDesc_Can_Network/Pkg_Ecu/ApplicationECU
-lastFileToSync=ApplicationECU_Project_EcucValues.arxml
-lastFileTypeSel=single
-lastSelectedScriptLoc=RTA-BSW_12.2.0
-selected_pdus=ALL_PDUS
