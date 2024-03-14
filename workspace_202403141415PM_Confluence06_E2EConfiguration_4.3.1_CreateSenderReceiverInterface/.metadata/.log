@@ -1,0 +1,75 @@
+!SESSION 2024-03-14 14:14:01.450 -----------------------------------------------
+eclipse.buildId=20230905_1800
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file C:\ETAS\RTA-CAR_12.2.0\RTA-CAR\workspace\.metadata\.bak_0.log
+Created Time: 2024-03-14 14:14:37.061
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2024-03-14 14:14:37.061
+!MESSAGE Unable to find tool in toolchain=cdt.managedbuild.toolchain.gnu.cygwin.base.510823575 for language=org.eclipse.cdt.core.g++
+!STACK 0
+java.lang.Exception
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuilderCorePlugin.error(ManagedBuilderCorePlugin.java:225)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.ToolchainBuiltinSpecsDetector.languageTool(ToolchainBuiltinSpecsDetector.java:106)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.ToolchainBuiltinSpecsDetector.getToolOptions(ToolchainBuiltinSpecsDetector.java:165)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.resolveCommand(AbstractBuiltinSpecsDetector.java:333)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.startupForLanguage(AbstractBuiltinSpecsDetector.java:642)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:591)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:518)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2024-03-14 14:14:37.064
+!MESSAGE Unable to find tool in toolchain=cdt.managedbuild.toolchain.gnu.cygwin.base.510823575 for language=org.eclipse.cdt.core.g++
+!STACK 0
+java.lang.Exception
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuilderCorePlugin.error(ManagedBuilderCorePlugin.java:225)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.ToolchainBuiltinSpecsDetector.languageTool(ToolchainBuiltinSpecsDetector.java:106)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.ToolchainBuiltinSpecsDetector.getSpecFileExtension(ToolchainBuiltinSpecsDetector.java:143)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.getSpecFile(AbstractBuiltinSpecsDetector.java:864)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.resolveCommand(AbstractBuiltinSpecsDetector.java:338)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.startupForLanguage(AbstractBuiltinSpecsDetector.java:642)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:591)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:518)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2024-03-14 14:14:37.065
+!MESSAGE Unable to find file extension for language org.eclipse.cdt.core.g++
+!STACK 0
+java.lang.Exception
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuilderCorePlugin.error(ManagedBuilderCorePlugin.java:225)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.ToolchainBuiltinSpecsDetector.getSpecFileExtension(ToolchainBuiltinSpecsDetector.java:157)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.getSpecFile(AbstractBuiltinSpecsDetector.java:864)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.resolveCommand(AbstractBuiltinSpecsDetector.java:338)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.startupForLanguage(AbstractBuiltinSpecsDetector.java:642)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:591)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:518)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-03-14 14:14:37.070
+!MESSAGE Error: Cannot run program "-E" (in directory "C:\ETAS\RTA-CAR_12.2.0\RTA-CAR\workspace\NewProjectFromScratch"): CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+!STACK 0
+java.io.IOException: Cannot run program "-E" (in directory "C:\ETAS\RTA-CAR_12.2.0\RTA-CAR\workspace\NewProjectFromScratch"): CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1128)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1071)
+	at java.base/java.lang.Runtime.exec(Runtime.java:592)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:92)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:193)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:274)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:802)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:727)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:592)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:518)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:492)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:153)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1107)
+	... 11 more

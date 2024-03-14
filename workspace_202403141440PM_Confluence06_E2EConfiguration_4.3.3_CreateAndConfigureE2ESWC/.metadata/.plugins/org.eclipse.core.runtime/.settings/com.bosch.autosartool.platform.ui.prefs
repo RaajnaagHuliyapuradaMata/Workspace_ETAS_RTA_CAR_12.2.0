@@ -1,0 +1,7 @@
+ConnectorsFilterPreferenceGridView=Show Assembly Connectors;Show Delegation Connectors;Show Pass-through Connectors;Show Erroneous Connectors;Show Service Connectors;Show Sender-Receiver Connectors;Show Client-Server Connectors;Show Other Interface Connectors;Show Open PPorts;Show Open RPorts;Show Open PRPorts;
+ConnectorsFilterPreferenceManualConn=Show Assembly Connectors;Show Client-Server Connectors;Show Delegation Connectors;Show Erroneous Connectors;Show Pass-through Connectors;Show Sender-Receiver Connectors;Show Service Connectors;Show Other Interface Connectors;Show Open RPorts;
+ConnectorsFilterPreferenceMatrixView=Show Assembly Connectors;Show Client-Server Connectors;Show Delegation Connectors;Show Erroneous Connectors;Show Pass-through Connectors;Show Sender-Receiver Connectors;Show Service Connectors;Show Other Interface Connectors;Show Open RPorts;
+eclipse.preferences.version=1
+org.eclipse.gef.pdock=16
+org.eclipse.gef.psize=260
+org.eclipse.gef.pstate=4

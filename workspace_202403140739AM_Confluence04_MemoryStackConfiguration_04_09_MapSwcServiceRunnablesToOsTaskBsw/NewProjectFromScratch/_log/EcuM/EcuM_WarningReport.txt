@@ -1,0 +1,48 @@
+
+
+============================================================================
+EcuM - Ecu State Manager - Warning Report
+============================================================================
+
+-> All the Boolean Parameters if not configured is assumed to be false.
+   If the parameter has to have the value "true", then that particular
+   parameter must be explictly configured as true.
+
+-> Communication Channel for all the Basic WakeupSources will be assumed as NULL_PTR.
+
+-> The Parameter "osNumberOfCores" is not configured and it is assumed as one.
+
+
+    
+-> For the Wakeup Source "ECUM_WKSOURCE_POWER" EcuMComMChannel parameter
+   is not configured. So, It is assumed as NULL_PTR.
+-> For the Wakeup Source "ECUM_WKSOURCE_RESET" EcuMComMChannel parameter
+   is not configured. So, It is assumed as NULL_PTR.
+-> For the Wakeup Source "ECUM_WKSOURCE_INTERNAL_RESET" EcuMComMChannel parameter
+   is not configured. So, It is assumed as NULL_PTR.
+-> For the Wakeup Source "ECUM_WKSOURCE_INTERNAL_WDG" EcuMComMChannel parameter
+   is not configured. So, It is assumed as NULL_PTR.
+-> For the Wakeup Source "ECUM_WKSOURCE_EXTERNAL_WDG" EcuMComMChannel parameter
+   is not configured. So, It is assumed as NULL_PTR.
+    
+-> For the Wakeup Source "ECUM_WKSOURCE_POWER" EcuMResetReasonRef parameter
+   is not configured. So, It is assumed as "MCU_RESET_UNDEFINED".
+-> For the Wakeup Source "ECUM_WKSOURCE_RESET" EcuMResetReasonRef parameter
+   is not configured. So, It is assumed as "MCU_RESET_UNDEFINED".
+-> For the Wakeup Source "ECUM_WKSOURCE_INTERNAL_RESET" EcuMResetReasonRef parameter
+   is not configured. So, It is assumed as "MCU_RESET_UNDEFINED".
+-> For the Wakeup Source "ECUM_WKSOURCE_INTERNAL_WDG" EcuMResetReasonRef parameter
+   is not configured. So, It is assumed as "MCU_RESET_UNDEFINED".
+-> For the Wakeup Source "ECUM_WKSOURCE_EXTERNAL_WDG" EcuMResetReasonRef parameter
+   is not configured. So, It is assumed as "MCU_RESET_UNDEFINED".
+
+-> EcuMValidationTimeout value for the Following wakeupsources are rounded off to the nearest integer as a count of
+   EcuMMainFunctionPeriod []
+
+
+
+
+
+
+   
+

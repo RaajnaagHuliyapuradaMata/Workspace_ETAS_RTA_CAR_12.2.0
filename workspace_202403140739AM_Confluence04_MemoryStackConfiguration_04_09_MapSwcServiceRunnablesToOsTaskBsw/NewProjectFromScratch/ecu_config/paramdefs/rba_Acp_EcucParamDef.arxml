@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <ADMIN-DATA>
+    <DOC-REVISIONS>
+      <DOC-REVISION>
+        <ISSUED-BY>RB</ISSUED-BY>
+        <DATE>2020-11-26</DATE>
+      </DOC-REVISION>
+    </DOC-REVISIONS>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>RB</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>RBA</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>rba_Acp</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE>
+                  <SHORT-NAME>EcucModuleDefs</SHORT-NAME>
+                  <ELEMENTS>
+                    <!-- Module Definition: rba_Acp -->
+                    <ECUC-MODULE-DEF>
+                      <SHORT-NAME>rba_Acp</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">MCAL Auxiliary Control Processor</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">Configuration of the MCAL module for the Auxiliary Control Processor (Acp)</L-2>
+                      </DESC>
+                      <CATEGORY>VENDOR_SPECIFIC_MODULE_DEFINITION</CATEGORY>
+                      <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                          <DOC-REVISION>
+                            <REVISION-LABEL>0.1.0</REVISION-LABEL>
+                            <ISSUED-BY>RB</ISSUED-BY>
+                            <DATE>2011-04-19</DATE>
+                          </DOC-REVISION>
+                        </DOC-REVISIONS>
+                      </ADMIN-DATA>
+                      <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <POST-BUILD-VARIANT-SUPPORT>false</POST-BUILD-VARIANT-SUPPORT>
+                      <SUPPORTED-CONFIG-VARIANTS>
+                        <SUPPORTED-CONFIG-VARIANT>VARIANT-PRE-COMPILE</SUPPORTED-CONFIG-VARIANT>
+                      </SUPPORTED-CONFIG-VARIANTS>
+                      <CONTAINERS>
+                        <!-- Container Definition: rba_Acp_ConfigSet -->
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>rba_Acp_ConfigSet</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Configuration data set</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Acp configuration container</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <SUB-CONTAINERS>
+                            <!-- Container Definition: rba_Acp_Application -->
+                            <ECUC-PARAM-CONF-CONTAINER-DEF>
+                              <SHORT-NAME>rba_Acp_Application</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Acp application</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">This container contains the configuration for an Acp application</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY-INFINITE>true</UPPER-MULTIPLICITY-INFINITE>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <PARAMETERS>
+                                <!-- PARAMETER DEFINITION: rba_Acp_Target -->
+                                <ECUC-ENUMERATION-PARAM-DEF>
+                                  <SHORT-NAME>rba_Acp_Target</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Target</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">The target controller of the Acp application</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <LITERALS>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>DME</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">DME</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>DSPH</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">DSPH</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                  </LITERALS>
+                                </ECUC-ENUMERATION-PARAM-DEF>
+                              </PARAMETERS>
+                            </ECUC-PARAM-CONF-CONTAINER-DEF>
+                          </SUB-CONTAINERS>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                        <!-- Container Definition: rba_Acp_General -->
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>rba_Acp_General</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">General settings</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">General configuration (parameters) of the rba_Acp driver software module.</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <PARAMETERS>
+                            <!-- PARAMETER DEFINITION: rba_Acp_DevErrorDetect -->
+                            <ECUC-BOOLEAN-PARAM-DEF>
+                              <SHORT-NAME>rba_Acp_DevErrorDetect</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Development error detection</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Switches the Development Error Detection and Notification ON or OFF.true: Enabled. false: Disabled.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                            </ECUC-BOOLEAN-PARAM-DEF>
+                          </PARAMETERS>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                      </CONTAINERS>
+                    </ECUC-MODULE-DEF>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="ASCII"?>
+<com.bosch.autosartool.namingconventions:NamingConvention xmlns:XMI="http://www.omg.org/XMI" xmlns:com.bosch.autosartool.namingconventions="http://namingconventions/1.0" XMI:version="2.0">
+  <profiles name="Default">
+    <descriptors arversion="AUTOSAR4x">
+      <arelements name="AsynchronousServerCallPoint" arElement="AsynchronousServerCallPoint">
+        <rules package="" description="Generic Rule" checkedStatus="true" pattern="AsynchronousServerCallPoint"/>
+        <rules package="" type="Auto Configure Runnable" description="Default Rule &#x2013; Auto Configure Runnable" checkedStatus="true" pattern="AsynchronousServerCallPoint"/>
+      </arelements>
+      <arelements name="ExternalTriggerOccurredEvent" arElement="ExternalTriggerOccurredEvent">
+        <rules package="" description="Generic Rule" checkedStatus="true" pattern="ExternalTriggerOccurredEvent"/>
+        <rules package="" type="Auto Configure Runnable" description="Default Rule &#x2013; Auto Configure Runnable" checkedStatus="true" pattern="ExternalTriggerOccurredEvent"/>
+      </arelements>
+      <arelements name="InternalTriggerOccurredEvent" arElement="InternalTriggerOccurredEvent">
+        <rules package="" description="Generic Rule" checkedStatus="true" pattern="InternalTriggerOccurredEvent"/>
+        <rules package="" type="Auto Configure Runnable" description="Default Rule &#x2013; Auto Configure Runnable" checkedStatus="true" pattern="InternalTriggerOccurredEvent"/>
+      </arelements>
+      <arelements name="InternalTriggeringPoint" arElement="InternalTriggeringPoint">
+        <rules package="" description="Generic Rule" checkedStatus="true" pattern="InternalTriggeringPoint"/>
+        <rules package="" type="Auto Configure Runnable" description="Default Rule &#x2013; Auto Configure Runnable" checkedStatus="true" pattern="InternalTriggeringPoint"/>
+      </arelements>
+      <arelements name="ModeSwitchPoint" arElement="ModeSwitchPoint">
+        <rules package="" description="Generic Rule" checkedStatus="true" pattern="ModeSwitchPoint"/>
+        <rules package="" type="Auto Configure Runnable" description="Default Rule &#x2013; Auto Configure Runnable" checkedStatus="true" pattern="ModeSwitchPoint"/>
+      </arelements>
+      <arelements name="OperationInvokedEvent" arElement="OperationInvokedEvent">
+        <rules package="" description="Generic Rule" checkedStatus="true" pattern="OperationInvokedEvent"/>
+        <rules package="" type="Auto Configure Runnable" description="Default Rule &#x2013; Auto Configure Runnable" checkedStatus="true" pattern="OperationInvokedEvent"/>
+      </arelements>
+      <arelements name="ParameterAccess" arElement="ParameterAccess">
+        <rules package="" type="Auto Configure Runnable" description="Default Rule &#x2013; Auto Configure Runnable" checkedStatus="true" pattern="ParameterAccess"/>
+      </arelements>
+      <arelements name="SwcModeSwitchEvent" arElement="SwcModeSwitchEvent">
+        <rules package="" description="Generic Rule" checkedStatus="true" pattern="SwcModeSwitchEvent"/>
+        <rules package="" type="Auto Configure Runnable" description="Default Rule &#x2013; Auto Configure Runnable" checkedStatus="true" pattern="SwcModeSwitchEvent"/>
+      </arelements>
+      <arelements name="SynchronousServerCallPoint" arElement="SynchronousServerCallPoint">
+        <rules package="" description="Generic Rule" checkedStatus="true" pattern="SynchronousServerCallPoint"/>
+        <rules package="" type="Auto Configure Runnable" description="Default Rule &#x2013; Auto Configure Runnable" checkedStatus="true" pattern="SynchronousServerCallPoint"/>
+      </arelements>
+      <arelements name="VariableAccess" arElement="VariableAccess">
+        <rules package="" description="Generic Rule" checkedStatus="true" pattern="VariableAccess.accessedVariable.autosarVariable.targetDataPrototype"/>
+        <rules package="" type="Auto Configure Runnable" description="Default Rule &#x2013; Auto Configure Runnable" checkedStatus="true" pattern="VariableAccess.accessedVariable.autosarVariable.targetDataPrototype"/>
+      </arelements>
+      <arelements name="SystemMapping" arElement="SystemMapping">
+        <rules package="" type="Auto Signal Mapping" description="Default Rule &#x2013; Auto Signal Mapping" checkedStatus="true" pattern="&quot;SystemMapping&quot;"/>
+      </arelements>
+      <arelements name="SwcToImplMapping" arElement="SwcToImplMapping">
+        <rules package="" type="Swc To Impl Mapping" description="Default Rule &#x2013; Swc To Impl Mapping" checkedStatus="true" pattern="&quot;SwcToImplMapping_&quot;+SwcToImplMapping.componentImplementation.shortName"/>
+      </arelements>
+      <arelements name="AssemblySwConnector" arElement="AssemblySwConnector">
+        <rules package="" type="Auto Assembly Connector" description="Default Rule &#x2013; Auto Assembly Connector" checkedStatus="true" pattern="&quot;ASC_&quot;+AssemblySwConnector.provider.contextComponent.shortName+&quot;_&quot;+AssemblySwConnector.provider.targetPPort.shortName+&quot;_&quot;+AssemblySwConnector.requester.contextComponent.shortName+&quot;_&quot;+AssemblySwConnector.requester.targetRPort.shortName"/>
+      </arelements>
+      <arelements name="PassThroughSwConnector" arElement="PassThroughSwConnector">
+        <rules package="" type="Auto Passthrough Connector" description="Default Rule &#x2013; Auto Passthrough Connector" checkedStatus="true" pattern="&quot;PSC_&quot;+PassThroughSwConnector.providedOuterPort.shortName+&quot;_&quot;+PassThroughSwConnector.requiredOuterPort.shortName"/>
+      </arelements>
+      <arelements name="DelegationSwConnector" arElement="DelegationSwConnector">
+        <rules package="" type="Auto Delegation Connector" description="Default Rule &#x2013; Auto Delegation Connector" checkedStatus="true" pattern="&quot;DSC_&quot;+DelegationSwConnector.innerPort.contextComponent.shortName+&quot;_&quot;+DelegationSwConnector.innerPort.portPrototype.shortName+&quot;_&quot;+DelegationSwConnector.outerPort.shortName"/>
+      </arelements>
+      <arelements name="SwComponentPrototype" arElement="SwComponentPrototype">
+        <rules package="" type="Auto Configure Composition" description="Default Rule &#x2013; Auto Configure Composition" checkedStatus="true" pattern="&quot;CPT_&quot;+SwComponentPrototype.type.shortName"/>
+      </arelements>
+      <arelements name="EthernetCommunicationController" arElement="EthernetCommunicationController">
+        <rules package="" type="Ethernet Generation" description="Default Rule &#x2013; Ethernet Generation" checkedStatus="true" pattern="EthernetCommunicationController"/>
+      </arelements>
+      <arelements name="NetworkEndpoint" arElement="NetworkEndpoint">
+        <rules package="" type="Ethernet Generation" description="Default Rule &#x2013; Ethernet Generation" checkedStatus="true" pattern="NetworkEndpoint"/>
+      </arelements>
+      <arelements name="SocketConnectionBundle" arElement="SocketConnectionBundle">
+        <rules package="" type="Ethernet Generation" description="Default Rule &#x2013; Ethernet Generation" checkedStatus="true" pattern="SocketConnectionBundle"/>
+      </arelements>
+      <arelements name="ApplicationEndpoint" arElement="ApplicationEndpoint">
+        <rules package="" type="Ethernet Generation" description="Default Rule &#x2013; Ethernet Generation" checkedStatus="true" pattern="ApplicationEndpoint"/>
+      </arelements>
+      <arelements name="CouplingElement" arElement="CouplingElement">
+        <rules package="" type="Ethernet Generation" description="Default Rule &#x2013; Ethernet Generation" checkedStatus="true" pattern="&quot;Eth_Switch&quot;"/>
+      </arelements>
+      <arelements name="PduTriggering" arElement="PduTriggering">
+        <rules package="" type="Ethernet Generation" description="Default Rule &#x2013; Ethernet Generation" checkedStatus="true" pattern="PduTriggering"/>
+      </arelements>
+      <arelements name="CommConnectorPort" arElement="CommConnectorPort">
+        <rules package="" type="Ethernet Generation" description="Default Rule &#x2013; Ethernet Generation" checkedStatus="true" pattern="CommConnectorPort"/>
+      </arelements>
+      <arelements name="ISignalTriggering" arElement="ISignalTriggering">
+        <rules package="" type="Ethernet Generation" description="Default Rule &#x2013; Ethernet Generation" checkedStatus="true" pattern="ISignalTriggering"/>
+      </arelements>
+      <arelements name="EthernetPhysicalChannel" arElement="EthernetPhysicalChannel">
+        <rules package="" type="Ethernet Generation" description="Default Rule &#x2013; Ethernet Generation" checkedStatus="true" pattern="&quot;VLAN&quot;"/>
+      </arelements>
+      <arelements name="EventHandler" arElement="EventHandler">
+        <rules package="" type="Ethernet Generation" description="Default Rule &#x2013; Ethernet Generation" checkedStatus="true" pattern="EventHandler"/>
+      </arelements>
+      <arelements name="ConsumedEventGroup" arElement="ConsumedEventGroup">
+        <rules package="" type="Ethernet Generation" description="Default Rule &#x2013; Ethernet Generation" checkedStatus="true" pattern="ConsumedEventGroup"/>
+      </arelements>
+      <arelements name="SocketAddress" arElement="SocketAddress">
+        <rules package="" type="Ethernet Generation" description="Default Rule &#x2013; Ethernet Generation" checkedStatus="true" pattern="SocketAddress"/>
+      </arelements>
+      <arelements name="CouplingPort" arElement="CouplingPort">
+        <rules package="" type="Ethernet Generation" description="Default Rule &#x2013; Ethernet Generation" checkedStatus="true" pattern="CouplingPort"/>
+      </arelements>
+      <arelements name="SecuredIPdu" arElement="SecuredIPdu">
+        <rules package="" type="Ethernet Generation" description="Default Rule &#x2013; Ethernet Generation" checkedStatus="true" pattern="SecuredIPdu"/>
+      </arelements>
+      <arelements name="DataTransformationSet" arElement="DataTransformationSet">
+        <rules package="" type="Ethernet Generation" description="Default Rule &#x2013; Ethernet Generation" checkedStatus="true" pattern="DataTransformationSet"/>
+      </arelements>
+      <arelements name="DataTransformation" arElement="DataTransformation">
+        <rules package="" type="Ethernet Generation" description="Default Rule &#x2013; Ethernet Generation" checkedStatus="true" pattern="DataTransformation"/>
+      </arelements>
+      <arelements name="TransformationTechnology" arElement="TransformationTechnology">
+        <rules package="" type="Ethernet Generation" description="Default Rule &#x2013; Ethernet Generation" checkedStatus="true" pattern="TransformationTechnology"/>
+      </arelements>
+      <arelements name="SoAdRoutingGroup" arElement="SoAdRoutingGroup">
+        <rules package="" type="Ethernet Generation" description="Default Rule &#x2013; Ethernet Generation" checkedStatus="true" pattern="SoAdRoutingGroup"/>
+      </arelements>
+      <arelements name="PduActivationRoutingGroup" arElement="PduActivationRoutingGroup">
+        <rules package="" type="Ethernet Generation" description="Default Rule &#x2013; Ethernet Generation" checkedStatus="true" pattern="PduActivationRoutingGroup"/>
+      </arelements>
+      <arelements name="SocketConnectionIpduIdentifierSet" arElement="SocketConnectionIpduIdentifierSet">
+        <rules package="" type="Ethernet Generation" description="Default Rule &#x2013; Ethernet Generation" checkedStatus="true" pattern="SocketConnectionIpduIdentifierSet"/>
+      </arelements>
+      <arelements name="SoConIPduIdentifier" arElement="SoConIPduIdentifier">
+        <rules package="" type="Ethernet Generation" description="Default Rule &#x2013; Ethernet Generation" checkedStatus="true" pattern="SoConIPduIdentifier"/>
+      </arelements>
+      <arelements name="IPduPort" arElement="IPduPort">
+        <rules package="" type="Ethernet Generation" description="Default Rule &#x2013; Ethernet Generation" checkedStatus="true" pattern="IPduPort"/>
+      </arelements>
+      <arelements name="ISignalPort" arElement="ISignalPort">
+        <rules package="" type="Ethernet Generation" description="Default Rule &#x2013; Ethernet Generation" checkedStatus="true" pattern="ISignalPort"/>
+      </arelements>
+      <arelements name="AssemblySwConnector" arElement="AssemblySwConnector">
+        <rules package="" type="Ecu Extract" description="Default Rule &#x2013; Ecu Extract" checkedStatus="true" pattern="&quot;ASC_&quot;+AssemblySwConnector.provider.contextComponent.shortName+&quot;_&quot;+AssemblySwConnector.provider.targetPPort.shortName+&quot;_&quot;+AssemblySwConnector.requester.contextComponent.shortName+&quot;_&quot;+AssemblySwConnector.requester.targetRPort.shortName"/>
+      </arelements>
+      <arelements name="DelegationSwConnector" arElement="DelegationSwConnector">
+        <rules package="" type="Ecu Extract" description="Default Rule &#x2013; Ecu Extract" checkedStatus="true" pattern="&quot;DSC_&quot;+DelegationSwConnector.innerPort.contextComponent.shortName+&quot;_&quot;+DelegationSwConnector.innerPort.portPrototype.shortName+&quot;_&quot;+DelegationSwConnector.outerPort.shortName"/>
+      </arelements>
+      <arelements name="InitEvent" arElement="InitEvent">
+        <rules package="" description="Generic Rule" checkedStatus="true" pattern="InitEvent"/>
+      </arelements>
+      <arelements name="BackgroundEvent" arElement="BackgroundEvent">
+        <rules package="" description="Generic Rule" checkedStatus="true" pattern="BackgroundEvent"/>
+      </arelements>
+      <arelements name="OsTaskExecutionEvent" arElement="OsTaskExecutionEvent">
+        <rules package="" description="Generic Rule" checkedStatus="true" pattern="OsTaskExecutionEvent"/>
+      </arelements>
+      <arelements name="TimingEvent" arElement="TimingEvent">
+        <rules package="" description="Generic Rule" checkedStatus="true" pattern="TimingEvent"/>
+      </arelements>
+      <arelements name="DataReceivedEvent" arElement="DataReceivedEvent">
+        <rules package="" description="Generic Rule" checkedStatus="true" pattern="DataReceivedEvent"/>
+      </arelements>
+      <arelements name="DataReceiveErrorEvent" arElement="DataReceiveErrorEvent">
+        <rules package="" description="Generic Rule" checkedStatus="true" pattern="DataReceiveErrorEvent"/>
+      </arelements>
+      <arelements name="DataWriteCompletedEvent" arElement="DataWriteCompletedEvent">
+        <rules package="" description="Generic Rule" checkedStatus="true" pattern="DataWriteCompletedEvent"/>
+      </arelements>
+      <arelements name="DataSendCompletedEvent" arElement="DataSendCompletedEvent">
+        <rules package="" description="Generic Rule" checkedStatus="true" pattern="DataSendCompletedEvent"/>
+      </arelements>
+      <arelements name="AsynchronousServerCallReturnsEvent" arElement="AsynchronousServerCallReturnsEvent">
+        <rules package="" description="Generic Rule" checkedStatus="true" pattern="AsynchronousServerCallReturnsEvent"/>
+      </arelements>
+      <arelements name="SwcModeManagerErrorEvent" arElement="SwcModeManagerErrorEvent">
+        <rules package="" description="Generic Rule" checkedStatus="true" pattern="SwcModeManagerErrorEvent"/>
+      </arelements>
+      <arelements name="ModeSwitchedAckEvent" arElement="ModeSwitchedAckEvent">
+        <rules package="" description="Generic Rule" checkedStatus="true" pattern="ModeSwitchedAckEvent"/>
+      </arelements>
+      <arelements name="TransformerHardErrorEvent" arElement="TransformerHardErrorEvent">
+        <rules package="" description="Generic Rule" checkedStatus="true" pattern="TransformerHardErrorEvent"/>
+      </arelements>
+      <arelements name="AsynchronousServerCallResultPoint" arElement="AsynchronousServerCallResultPoint">
+        <rules package="" description="Generic Rule" checkedStatus="true" pattern="AsynchronousServerCallResultPoint"/>
+      </arelements>
+      <arelements name="ModeAccessPointIdent" arElement="ModeAccessPointIdent">
+        <rules package="" description="Generic Rule" checkedStatus="true" pattern="ModeAccessPointIdent"/>
+      </arelements>
+      <arelements name="ExternalTriggeringPointIdent" arElement="ExternalTriggeringPointIdent">
+        <rules package="" description="Generic Rule" checkedStatus="true" pattern="ExternalTriggeringPointIdent"/>
+      </arelements>
+      <arelements name="ExclusiveArea" arElement="ExclusiveArea">
+        <rules package="" description="Generic Rule" checkedStatus="true" pattern="ExclusiveArea"/>
+      </arelements>
+      <arelements name="ExclusiveAreaNestingOrder" arElement="ExclusiveAreaNestingOrder">
+        <rules package="" description="Generic Rule" checkedStatus="true" pattern="ExclusiveAreaNestingOrder"/>
+      </arelements>
+      <arelements name="SwcInternalBehavior" arElement="SwcInternalBehavior">
+        <rules package="" description="Generic Rule" checkedStatus="true" pattern="SwcInternalBehavior"/>
+      </arelements>
+      <arelements name="RunnableEntity" arElement="RunnableEntity">
+        <rules package="" description="Generic Rule" checkedStatus="true" pattern="RunnableEntity"/>
+      </arelements>
+      <arelements name="AssemblySwConnector" arElement="AssemblySwConnector">
+        <rules package="" type="Ecu Extract" checkedStatus="true" pattern="&quot;ASC_&quot;+AssemblySwConnector.provider.contextComponent.shortName+&quot;_&quot;+AssemblySwConnector.provider.targetPPort.shortName+&quot;_&quot;+AssemblySwConnector.requester.contextComponent.shortName+&quot;_&quot;+AssemblySwConnector.requester.targetRPort.shortName"/>
+      </arelements>
+      <arelements name="DelegationSwConnector" arElement="DelegationSwConnector">
+        <rules package="" type="Ecu Extract" checkedStatus="true" pattern="&quot;DSC_&quot;+DelegationSwConnector.innerPort.contextComponent.shortName+&quot;_&quot;+DelegationSwConnector.innerPort.portPrototype.shortName+&quot;_&quot;+DelegationSwConnector.outerPort.shortName"/>
+      </arelements>
+    </descriptors>
+  </profiles>
+</com.bosch.autosartool.namingconventions:NamingConvention>

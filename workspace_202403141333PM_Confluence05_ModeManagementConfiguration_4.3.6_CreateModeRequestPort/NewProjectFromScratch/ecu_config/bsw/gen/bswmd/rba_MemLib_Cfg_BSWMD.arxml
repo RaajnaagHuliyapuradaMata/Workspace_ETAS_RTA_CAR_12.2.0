@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+  <ADMIN-DATA>
+    <LANGUAGE>EN</LANGUAGE>
+    <USED-LANGUAGES>
+      <L-10 L="EN" xml:space="default">English</L-10>
+    </USED-LANGUAGES>
+    <DOC-REVISIONS>
+      <DOC-REVISION>
+        <ISSUED-BY>RB</ISSUED-BY>
+      </DOC-REVISION>
+    </DOC-REVISIONS>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>RB</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>RBA</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>rba_MemLib</SHORT-NAME>
+              <AR-PACKAGES>
+                <!-- 
+                    ===================================================
+                      ImplementationDataTypes
+                    ===================================================
+                -->
+                <AR-PACKAGE>
+                <SHORT-NAME>ImplementationDataTypes</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">AUTOSAR Platform types</L-4>
+                  </LONG-NAME>
+                  <ELEMENTS>
+                    <IMPLEMENTATION-DATA-TYPE>
+                      <SHORT-NAME>Mem_bool</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">boolean(8bit)</L-4>
+                      </LONG-NAME>
+                      <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <IMPLEMENTATION-DATA-TYPE-REF DEST='IMPLEMENTATION-DATA-TYPE'>/AUTOSAR_Platform/ImplementationDataTypes/boolean</IMPLEMENTATION-DATA-TYPE-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-EMITTER>RTE</TYPE-EMITTER>
+                    </IMPLEMENTATION-DATA-TYPE>
+                    <IMPLEMENTATION-DATA-TYPE>
+                      <SHORT-NAME>Mem_u8</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">unsigned 8bit</L-4>
+                      </LONG-NAME>
+                      <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <IMPLEMENTATION-DATA-TYPE-REF DEST='IMPLEMENTATION-DATA-TYPE'>/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-EMITTER>RTE</TYPE-EMITTER>
+                    </IMPLEMENTATION-DATA-TYPE>
+                    <IMPLEMENTATION-DATA-TYPE>
+                      <SHORT-NAME>Mem_u16</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">unsigned 16bit</L-4>
+                      </LONG-NAME>
+                      <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <IMPLEMENTATION-DATA-TYPE-REF DEST='IMPLEMENTATION-DATA-TYPE'>/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-EMITTER>RTE</TYPE-EMITTER>
+                    </IMPLEMENTATION-DATA-TYPE>
+                    <IMPLEMENTATION-DATA-TYPE>
+                      <SHORT-NAME>Mem_u32</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">unsigned 32bit</L-4>
+                      </LONG-NAME>
+                      <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <IMPLEMENTATION-DATA-TYPE-REF DEST='IMPLEMENTATION-DATA-TYPE'>/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-EMITTER>RTE</TYPE-EMITTER>
+                    </IMPLEMENTATION-DATA-TYPE>
+                    <IMPLEMENTATION-DATA-TYPE>
+                      <SHORT-NAME>Mem_u64</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">unsigned 64bit</L-4>
+                      </LONG-NAME>
+                      <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <IMPLEMENTATION-DATA-TYPE-REF DEST='IMPLEMENTATION-DATA-TYPE'>/AUTOSAR_Platform/ImplementationDataTypes/uint64</IMPLEMENTATION-DATA-TYPE-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-EMITTER>RTE</TYPE-EMITTER>
+                    </IMPLEMENTATION-DATA-TYPE>
+                    <IMPLEMENTATION-DATA-TYPE>
+                      <SHORT-NAME>Mem_enum8</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">enum fitting into 8bit</L-4>
+                      </LONG-NAME>
+                      <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <IMPLEMENTATION-DATA-TYPE-REF DEST='IMPLEMENTATION-DATA-TYPE'>/AUTOSAR_Platform/ImplementationDataTypes/sint32</IMPLEMENTATION-DATA-TYPE-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-EMITTER>RTE</TYPE-EMITTER>
+                    </IMPLEMENTATION-DATA-TYPE>
+                    <IMPLEMENTATION-DATA-TYPE>
+                      <SHORT-NAME>Mem_enum16</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">enum fitting into 16bit but not in 8bit</L-4>
+                      </LONG-NAME>
+                      <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <IMPLEMENTATION-DATA-TYPE-REF DEST='IMPLEMENTATION-DATA-TYPE'>/AUTOSAR_Platform/ImplementationDataTypes/sint32</IMPLEMENTATION-DATA-TYPE-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-EMITTER>RTE</TYPE-EMITTER>
+                    </IMPLEMENTATION-DATA-TYPE>
+                    <IMPLEMENTATION-DATA-TYPE>
+                      <SHORT-NAME>Mem_enum32</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">enum fitting into 32bit but not in 16bit</L-4>
+                      </LONG-NAME>
+                      <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <IMPLEMENTATION-DATA-TYPE-REF DEST='IMPLEMENTATION-DATA-TYPE'>/AUTOSAR_Platform/ImplementationDataTypes/sint32</IMPLEMENTATION-DATA-TYPE-REF>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-EMITTER>RTE</TYPE-EMITTER>
+                    </IMPLEMENTATION-DATA-TYPE>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <!-- 
+                    ===================================================
+                      ApplicationDataTypes
+                    ===================================================
+                -->
+                <AR-PACKAGE>
+                  <SHORT-NAME>ApplicationDataTypes</SHORT-NAME>
+                  <ELEMENTS>
+                    <APPLICATION-PRIMITIVE-DATA-TYPE>
+                      <SHORT-NAME>Mem_u64</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">64-bit unsigned integer</L-4>
+                      </LONG-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <COMPU-METHOD-REF DEST="COMPU-METHOD">/RB/RBA/rba_MemLib/CompuMethods/Mem_Identical</COMPU-METHOD-REF>
+                            <DATA-CONSTR-REF DEST="DATA-CONSTR">/RB/RBA/rba_MemLib/DataConstrs/Mem_u64</DATA-CONSTR-REF>
+                            <DISPLAY-FORMAT>%20.0f</DISPLAY-FORMAT>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </APPLICATION-PRIMITIVE-DATA-TYPE>
+                    <APPLICATION-PRIMITIVE-DATA-TYPE>
+                      <SHORT-NAME>Mem_u32</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">32-bit unsigned integer</L-4>
+                      </LONG-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <COMPU-METHOD-REF DEST="COMPU-METHOD">/RB/RBA/rba_MemLib/CompuMethods/Mem_Identical</COMPU-METHOD-REF>
+                            <DATA-CONSTR-REF DEST="DATA-CONSTR">/RB/RBA/rba_MemLib/DataConstrs/Mem_u32</DATA-CONSTR-REF>
+                            <DISPLAY-FORMAT>%10.0f</DISPLAY-FORMAT>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </APPLICATION-PRIMITIVE-DATA-TYPE>
+                    <APPLICATION-PRIMITIVE-DATA-TYPE>
+                      <SHORT-NAME>Mem_u16</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">16-bit unsigned integer</L-4>
+                      </LONG-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <COMPU-METHOD-REF DEST="COMPU-METHOD">/RB/RBA/rba_MemLib/CompuMethods/Mem_Identical</COMPU-METHOD-REF>
+                            <DATA-CONSTR-REF DEST="DATA-CONSTR">/RB/RBA/rba_MemLib/DataConstrs/Mem_u16</DATA-CONSTR-REF>
+                            <DISPLAY-FORMAT>%6.0f</DISPLAY-FORMAT>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </APPLICATION-PRIMITIVE-DATA-TYPE>
+                    <APPLICATION-PRIMITIVE-DATA-TYPE>
+                      <SHORT-NAME>Mem_bool</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">boolean (8bit)</L-4>
+                      </LONG-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <COMPU-METHOD-REF DEST="COMPU-METHOD">/RB/RBA/rba_MemLib/CompuMethods/Mem_Identical</COMPU-METHOD-REF>
+                            <DATA-CONSTR-REF DEST="DATA-CONSTR">/RB/RBA/rba_MemLib/DataConstrs/Mem_bool</DATA-CONSTR-REF>
+                            <DISPLAY-FORMAT>%6.0f</DISPLAY-FORMAT>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </APPLICATION-PRIMITIVE-DATA-TYPE>
+                    <APPLICATION-PRIMITIVE-DATA-TYPE>
+                      <SHORT-NAME>Mem_u8</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">8-bit unsigned integer</L-4>
+                      </LONG-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <COMPU-METHOD-REF DEST="COMPU-METHOD">/RB/RBA/rba_MemLib/CompuMethods/Mem_Identical</COMPU-METHOD-REF>
+                            <DATA-CONSTR-REF DEST="DATA-CONSTR">/RB/RBA/rba_MemLib/DataConstrs/Mem_u8</DATA-CONSTR-REF>
+                            <DISPLAY-FORMAT>%6.0f</DISPLAY-FORMAT>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </APPLICATION-PRIMITIVE-DATA-TYPE>
+                    <APPLICATION-PRIMITIVE-DATA-TYPE>
+                      <SHORT-NAME>Mem_enum8</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">enum fitting into 8bit</L-4>
+                      </LONG-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <COMPU-METHOD-REF DEST="COMPU-METHOD">/RB/RBA/rba_MemLib/CompuMethods/Mem_Identical</COMPU-METHOD-REF>
+                            <DATA-CONSTR-REF DEST="DATA-CONSTR">/RB/RBA/rba_MemLib/DataConstrs/Mem_u8</DATA-CONSTR-REF>
+                            <DISPLAY-FORMAT>%6.0f</DISPLAY-FORMAT>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </APPLICATION-PRIMITIVE-DATA-TYPE>
+                    <APPLICATION-PRIMITIVE-DATA-TYPE>
+                      <SHORT-NAME>Mem_enum16</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">enum fitting into 16bit but not in 8bit</L-4>
+                      </LONG-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <COMPU-METHOD-REF DEST="COMPU-METHOD">/RB/RBA/rba_MemLib/CompuMethods/Mem_Identical</COMPU-METHOD-REF>
+                            <DATA-CONSTR-REF DEST="DATA-CONSTR">/RB/RBA/rba_MemLib/DataConstrs/Mem_u16</DATA-CONSTR-REF>
+                            <DISPLAY-FORMAT>%6.0f</DISPLAY-FORMAT>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </APPLICATION-PRIMITIVE-DATA-TYPE>
+                    <APPLICATION-PRIMITIVE-DATA-TYPE>
+                      <SHORT-NAME>Mem_enum32</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">enum fitting into 32bit but not in 16bit</L-4>
+                      </LONG-NAME>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <COMPU-METHOD-REF DEST="COMPU-METHOD">/RB/RBA/rba_MemLib/CompuMethods/Mem_Identical</COMPU-METHOD-REF>
+                            <DATA-CONSTR-REF DEST="DATA-CONSTR">/RB/RBA/rba_MemLib/DataConstrs/Mem_u32</DATA-CONSTR-REF>
+                            <DISPLAY-FORMAT>%10.0f</DISPLAY-FORMAT>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                    </APPLICATION-PRIMITIVE-DATA-TYPE>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <!-- 
+                    ===================================================
+                      BswImplementations
+                    ===================================================
+                -->
+                <AR-PACKAGE>
+                  <SHORT-NAME>BswImplementations</SHORT-NAME>
+                  <ELEMENTS>
+                    <BSW-IMPLEMENTATION>
+                      <SHORT-NAME>rba_MemLib</SHORT-NAME>
+                      <CODE-DESCRIPTORS>
+                        <CODE>
+                          <SHORT-NAME>CodeDescriptor</SHORT-NAME>
+                          <ARTIFACT-DESCRIPTORS>
+                            <AUTOSAR-ENGINEERING-OBJECT>
+                              <SHORT-LABEL>ArEngObj</SHORT-LABEL>
+                              <CATEGORY>SWSRC</CATEGORY>
+                            </AUTOSAR-ENGINEERING-OBJECT>
+                          </ARTIFACT-DESCRIPTORS>
+                        </CODE>
+                      </CODE-DESCRIPTORS>
+                      <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+                      <RESOURCE-CONSUMPTION>
+                        <SHORT-NAME>rba_MemLib_ResourceConsumption</SHORT-NAME>
+                        <MEMORY-SECTIONS>
+                          <MEMORY-SECTION>
+                            <SHORT-NAME>RBA_MEMLIB_CONST_8</SHORT-NAME>
+                            <ALIGNMENT>8</ALIGNMENT>
+                            <PREFIX-REF DEST="SECTION-NAME-PREFIX">/RB/RBA/rba_MemLib/BswImplementations/rba_MemLib/rba_MemLib_ResourceConsumption/RBA_MEMLIB</PREFIX-REF>
+                            <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/RB/RBA/Common/CentralElements/SwAddrMethods/CONST</SW-ADDRMETHOD-REF>
+                            <SYMBOL>CONST_8</SYMBOL>
+                          </MEMORY-SECTION>
+                          <MEMORY-SECTION>
+                            <SHORT-NAME>RBA_MEMLIB_CONST_32</SHORT-NAME>
+                            <ALIGNMENT>32</ALIGNMENT>
+                            <PREFIX-REF DEST="SECTION-NAME-PREFIX">/RB/RBA/rba_MemLib/BswImplementations/rba_MemLib/rba_MemLib_ResourceConsumption/RBA_MEMLIB</PREFIX-REF>
+                            <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/RB/RBA/Common/CentralElements/SwAddrMethods/CONST</SW-ADDRMETHOD-REF>
+                            <SYMBOL>CONST_32</SYMBOL>
+                          </MEMORY-SECTION>                          
+                          <MEMORY-SECTION>
+                            <SHORT-NAME>RBA_MEMLIB_VAR_CLEARED_8</SHORT-NAME>
+                            <ALIGNMENT>8</ALIGNMENT>
+                            <PREFIX-REF DEST="SECTION-NAME-PREFIX">/RB/RBA/rba_MemLib/BswImplementations/rba_MemLib/rba_MemLib_ResourceConsumption/RBA_MEMLIB</PREFIX-REF>
+                            <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/RB/RBA/Common/CentralElements/SwAddrMethods/VAR_CLEARED</SW-ADDRMETHOD-REF>
+                            <SYMBOL>VAR_CLEARED_8</SYMBOL>
+                          </MEMORY-SECTION>
+                          <MEMORY-SECTION>
+                            <SHORT-NAME>RBA_MEMLIB_VAR_CLEARED_32</SHORT-NAME>
+                            <ALIGNMENT>32</ALIGNMENT>
+                            <PREFIX-REF DEST="SECTION-NAME-PREFIX">/RB/RBA/rba_MemLib/BswImplementations/rba_MemLib/rba_MemLib_ResourceConsumption/RBA_MEMLIB</PREFIX-REF>
+                            <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/RB/RBA/Common/CentralElements/SwAddrMethods/VAR_CLEARED</SW-ADDRMETHOD-REF>
+                            <SYMBOL>VAR_CLEARED_32</SYMBOL>
+                          </MEMORY-SECTION>                          
+                          <MEMORY-SECTION>
+                            <SHORT-NAME>RBA_MEMLIB_CODE</SHORT-NAME>
+                            <PREFIX-REF DEST="SECTION-NAME-PREFIX">/RB/RBA/rba_MemLib/BswImplementations/rba_MemLib/rba_MemLib_ResourceConsumption/RBA_MEMLIB</PREFIX-REF>
+                            <SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/RB/RBA/Common/CentralElements/SwAddrMethods/CODE</SW-ADDRMETHOD-REF>
+                            <SYMBOL>CODE</SYMBOL>
+                          </MEMORY-SECTION>
+                        </MEMORY-SECTIONS>
+                        <SECTION-NAME-PREFIXS>
+                          <SECTION-NAME-PREFIX>
+                            <SHORT-NAME>RBA_MEMLIB</SHORT-NAME>
+                            <SYMBOL>RBA_MEMLIB</SYMBOL>
+                          </SECTION-NAME-PREFIX>
+                        </SECTION-NAME-PREFIXS>
+                      </RESOURCE-CONSUMPTION>      
+                      <SW-VERSION>22.0.1</SW-VERSION>
+                      <AR-RELEASE-VERSION>4.5.0</AR-RELEASE-VERSION>
+                      <BEHAVIOR-REF DEST="BSW-INTERNAL-BEHAVIOR">/RB/RBA/rba_MemLib/BswModuleDescriptions/rba_MemLib/BswInternalBehavior</BEHAVIOR-REF>
+                    </BSW-IMPLEMENTATION>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <!-- 
+                    ===================================================
+                      BswModuleDescriptions
+                    ===================================================
+                -->
+                <AR-PACKAGE>
+                  <SHORT-NAME>BswModuleDescriptions</SHORT-NAME>
+                  <ELEMENTS>
+                    <BSW-MODULE-DESCRIPTION>
+                      <SHORT-NAME>rba_MemLib</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">Memstack internal support function</L-4>
+                      </LONG-NAME>
+                      <CATEGORY>BSW_MODULE</CATEGORY>
+                      <MODULE-ID>255</MODULE-ID>
+                      <INTERNAL-BEHAVIORS>
+                        <BSW-INTERNAL-BEHAVIOR>
+                          <SHORT-NAME>BswInternalBehavior</SHORT-NAME>
+                          <ENTITYS>                   
+                          </ENTITYS>
+                          <EVENTS>
+                          </EVENTS>
+                        </BSW-INTERNAL-BEHAVIOR>
+                      </INTERNAL-BEHAVIORS>
+                    </BSW-MODULE-DESCRIPTION>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <!-- 
+                    ===================================================
+                      DataTypeMappingSets
+                    ===================================================
+                -->
+                <AR-PACKAGE>
+                  <SHORT-NAME>DataTypeMappingSets</SHORT-NAME>
+                  <ELEMENTS>
+                    <DATA-TYPE-MAPPING-SET>
+                      <SHORT-NAME>DataTypeMappingSet</SHORT-NAME>
+                      <DATA-TYPE-MAPS>
+                        <DATA-TYPE-MAP>
+                          <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_bool</APPLICATION-DATA-TYPE-REF>
+                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</IMPLEMENTATION-DATA-TYPE-REF>
+                        </DATA-TYPE-MAP>
+                        <DATA-TYPE-MAP>
+                          <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_u8</APPLICATION-DATA-TYPE-REF>
+                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                        </DATA-TYPE-MAP>
+                        <DATA-TYPE-MAP>
+                          <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_u16</APPLICATION-DATA-TYPE-REF>
+                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                        </DATA-TYPE-MAP>
+                        <DATA-TYPE-MAP>
+                          <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_u32</APPLICATION-DATA-TYPE-REF>
+                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                        </DATA-TYPE-MAP>
+                        <DATA-TYPE-MAP>
+                          <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_u64</APPLICATION-DATA-TYPE-REF>
+                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint64</IMPLEMENTATION-DATA-TYPE-REF>
+                        </DATA-TYPE-MAP>
+                        <DATA-TYPE-MAP>
+                          <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_enum8</APPLICATION-DATA-TYPE-REF>
+                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/RB/RBA/rba_MemLib/ImplementationDataTypes/Mem_enum8</IMPLEMENTATION-DATA-TYPE-REF>
+                        </DATA-TYPE-MAP>
+                        <DATA-TYPE-MAP>
+                          <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_enum16</APPLICATION-DATA-TYPE-REF>
+                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/RB/RBA/rba_MemLib/ImplementationDataTypes/Mem_enum16</IMPLEMENTATION-DATA-TYPE-REF>
+                        </DATA-TYPE-MAP>
+                        <DATA-TYPE-MAP>
+                          <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/RB/RBA/rba_MemLib/ApplicationDataTypes/Mem_enum32</APPLICATION-DATA-TYPE-REF>
+                          <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/RB/RBA/rba_MemLib/ImplementationDataTypes/Mem_enum32</IMPLEMENTATION-DATA-TYPE-REF>
+                        </DATA-TYPE-MAP>
+                      </DATA-TYPE-MAPS>
+                    </DATA-TYPE-MAPPING-SET>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <!-- 
+                    ===================================================
+                      DataConstrs
+                    ===================================================
+                -->
+                <AR-PACKAGE>
+                  <SHORT-NAME>DataConstrs</SHORT-NAME>
+                  <ELEMENTS>
+                    <DATA-CONSTR>
+                      <SHORT-NAME>Mem_bool</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <PHYS-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1.0</UPPER-LIMIT>
+                            <UNIT-REF DEST="UNIT">/RB/RBA/rba_MemLib/Units/Mem_NoUnit</UNIT-REF>
+                          </PHYS-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR>
+                      <SHORT-NAME>Mem_u8</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <PHYS-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255.0</UPPER-LIMIT>
+                            <UNIT-REF DEST="UNIT">/RB/RBA/rba_MemLib/Units/Mem_NoUnit</UNIT-REF>
+                          </PHYS-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR>
+                      <SHORT-NAME>Mem_u16</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <PHYS-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">65535.0</UPPER-LIMIT>
+                            <UNIT-REF DEST="UNIT">/RB/RBA/rba_MemLib/Units/Mem_NoUnit</UNIT-REF>
+                          </PHYS-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR>
+                      <SHORT-NAME>Mem_u24</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <PHYS-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">16777215.0</UPPER-LIMIT>
+                            <UNIT-REF DEST="UNIT">/RB/RBA/rba_MemLib/Units/Mem_NoUnit</UNIT-REF>
+                          </PHYS-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR>
+                      <SHORT-NAME>Mem_u32</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <PHYS-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4294967295.0</UPPER-LIMIT>
+                            <UNIT-REF DEST="UNIT">/RB/RBA/rba_MemLib/Units/Mem_NoUnit</UNIT-REF>
+                          </PHYS-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                    <DATA-CONSTR>
+                      <SHORT-NAME>Mem_u64</SHORT-NAME>
+                      <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                          <PHYS-CONSTRS>
+                            <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</LOWER-LIMIT>
+                            <UPPER-LIMIT INTERVAL-TYPE="CLOSED">18446744073709551615.0</UPPER-LIMIT>
+                            <UNIT-REF DEST="UNIT">/RB/RBA/rba_MemLib/Units/Mem_NoUnit</UNIT-REF>
+                          </PHYS-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                      </DATA-CONSTR-RULES>
+                    </DATA-CONSTR>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <!-- 
+                    ===================================================
+                      Units
+                    ===================================================
+                -->
+                <AR-PACKAGE>
+                  <SHORT-NAME>Units</SHORT-NAME>
+                  <ELEMENTS>
+                    <UNIT>
+                      <SHORT-NAME>Mem_NoUnit</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">Mem No Unit / 1:1 / Identical</L-4>
+                      </LONG-NAME>
+                      <DISPLAY-NAME>Mem_NoUnit</DISPLAY-NAME>
+                      <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+                      <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+                      <PHYSICAL-DIMENSION-REF DEST="PHYSICAL-DIMENSION">/RB/RBA/rba_MemLib/PhysicalDimensions/Mem_NoPhysDim</PHYSICAL-DIMENSION-REF>
+                    </UNIT>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                  <SHORT-NAME>PhysicalDimensions</SHORT-NAME>
+                  <ELEMENTS>
+                    <PHYSICAL-DIMENSION>
+                      <SHORT-NAME>Mem_NoPhysDim</SHORT-NAME>
+                      <LENGTH-EXP>0</LENGTH-EXP>
+                    </PHYSICAL-DIMENSION>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <!-- 
+                    ===================================================
+                      CompuMethods
+                    ===================================================
+                -->
+                <AR-PACKAGE>
+                  <SHORT-NAME>CompuMethods</SHORT-NAME>
+                  <ELEMENTS>
+                    <COMPU-METHOD>
+                      <SHORT-NAME>Mem_Identical</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="FOR-ALL">The internal value and the physical one are identical. No physical unit available</L-4>
+                      </LONG-NAME>
+                      <CATEGORY>IDENTICAL</CATEGORY>
+                      <UNIT-REF DEST="UNIT">/RB/RBA/rba_MemLib/Units/Mem_NoUnit</UNIT-REF>
+                    </COMPU-METHOD>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR >

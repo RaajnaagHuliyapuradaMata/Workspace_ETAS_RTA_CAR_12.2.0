@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <ADMIN-DATA>
+    <DOC-REVISIONS>
+      <DOC-REVISION>
+        <ISSUED-BY>RB</ISSUED-BY>
+        <DATE>2023-05-22</DATE>
+      </DOC-REVISION>
+    </DOC-REVISIONS>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>RB</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>RBA</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>rba_McalSrv</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE>
+                  <SHORT-NAME>EcucModuleDefs</SHORT-NAME>
+                  <ELEMENTS>
+                    <!-- Module Definition: rba_McalSrv -->
+                    <ECUC-MODULE-DEF>
+                      <SHORT-NAME>rba_McalSrv</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">MCAL Services</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">Configuration of the MCAL module rba_McalSrv</L-2>
+                      </DESC>
+                      <CATEGORY>VENDOR_SPECIFIC_MODULE_DEFINITION</CATEGORY>
+                      <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                          <DOC-REVISION>
+                            <REVISION-LABEL>0.1.0</REVISION-LABEL>
+                            <ISSUED-BY>RB</ISSUED-BY>
+                            <DATE>2018-07-06</DATE>
+                          </DOC-REVISION>
+                        </DOC-REVISIONS>
+                      </ADMIN-DATA>
+                      <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <POST-BUILD-VARIANT-SUPPORT>false</POST-BUILD-VARIANT-SUPPORT>
+                      <SUPPORTED-CONFIG-VARIANTS>
+                        <SUPPORTED-CONFIG-VARIANT>VARIANT-PRE-COMPILE</SUPPORTED-CONFIG-VARIANT>
+                      </SUPPORTED-CONFIG-VARIANTS>
+                      <CONTAINERS>
+                        <!-- Container Definition: rba_McalSrv_GeneralSettings -->
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>rba_McalSrv_GeneralSettings</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">General settings</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">General configuration</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <PARAMETERS>
+                            <!-- PARAMETER DEFINITION: rba_McalSrv_ArVersion -->
+                            <ECUC-ENUMERATION-PARAM-DEF>
+                              <SHORT-NAME>rba_McalSrv_ArVersion</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">AR Version</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Autosar version. Must be configured if no CUCEL package or CUCEL package without AR version information is in use.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <LITERALS>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>AR42_Rev2</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">AR42_Rev2</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>AR45_Rev0</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">AR45_Rev0</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>AR46_Rev0</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">AR46_Rev0</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>AR47_Rev0</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">AR47_Rev0</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>AR48_Rev0</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">AR48_Rev0</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                              </LITERALS>
+                            </ECUC-ENUMERATION-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: rba_McalSrv_EnablePrototype -->
+                            <ECUC-BOOLEAN-PARAM-DEF>
+                              <SHORT-NAME>rba_McalSrv_EnablePrototype</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">EnablePrototype</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">By default all prototype SW will be disabled. In case prototype SW will be used, the SW is only for testing purposes – IT IS NOT RELEASED FOR PRODUCTION! <BR/>
+To enable the prototype SW, following steps must be done:<BR/>
+<BR/>
+Configuration:<BR/>
+- Enable the prototype by configuring EcuCRbEnablePrototype to TRUE<BR/>
+- In case EcuCRbEnablePrototype is not present: Enable prototype by configuring rba_McalSrv_EnablePrototype to TRUE <BR/>
+<BR/>
+Coding:<BR/>
+- Remove all prototype related #errors within the Mcal package</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                            </ECUC-BOOLEAN-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: rba_McalSrv_EnableSystemCalls -->
+                            <ECUC-BOOLEAN-PARAM-DEF>
+                              <SHORT-NAME>rba_McalSrv_EnableSystemCalls</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Enable System Calls</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Enable/Disable system calls for supported components.<BR/>
+See component specific documentation to see if it supports system calls.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                            </ECUC-BOOLEAN-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: rba_McalSrv_Generation -->
+                            <ECUC-ENUMERATION-PARAM-DEF>
+                              <SHORT-NAME>rba_McalSrv_Generation</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Generation</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Configuration of Mcal generation</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <LITERALS>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>MCAL_UNICON</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">MCAL_UNICON</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                              </LITERALS>
+                            </ECUC-ENUMERATION-PARAM-DEF>
+                          </PARAMETERS>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                      </CONTAINERS>
+                    </ECUC-MODULE-DEF>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

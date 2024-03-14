@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00051.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ApplicationECU_FlatView</SHORT-NAME>
+      <ELEMENTS>
+        <FLAT-MAP>
+          <SHORT-NAME>ApplicationECU_FlatMap</SHORT-NAME>
+          <INSTANCES>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>CPT_MyReceivingSWC_ApplicationEcu</SHORT-NAME>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/System/System/RootSwCompositionPrototype</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/Composition/TopLevelComposition/CPT_MyReceivingSWC_ApplicationEcu</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/System_EcuExtract/EXTR_ApplicationECU/CPT_ApplicationECU_FlatView</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/ApplicationECU_FlatView/SwComponentTypes/ApplicationECU_FlatView/CPT_MyReceivingSWC_ApplicationEcu</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>CPT_MyTransmittingSWC_ApplicationEcu</SHORT-NAME>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/System/System/RootSwCompositionPrototype</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/Composition/TopLevelComposition/CPT_MyTransmittingSWC_ApplicationEcu</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/System_EcuExtract/EXTR_ApplicationECU/CPT_ApplicationECU_FlatView</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/ApplicationECU_FlatView/SwComponentTypes/ApplicationECU_FlatView/CPT_MyTransmittingSWC_ApplicationEcu</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>DE_MyDataElement</SHORT-NAME>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <SW-REFRESH-TIMING>
+                      <CSE-CODE>5</CSE-CODE>
+                      <CSE-CODE-FACTOR>1</CSE-CODE-FACTOR>
+                    </SW-REFRESH-TIMING>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/System/System/RootSwCompositionPrototype</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Composition/TopLevelComposition/CPT_MyReceivingSWC_ApplicationEcu</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="R-PORT-PROTOTYPE">/MyReceivingSWC/MyReceivingSWC/RPortPrototype_0</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/My_SR_Interface/DE_MyDataElement</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/System_EcuExtract/EXTR_ApplicationECU/CPT_ApplicationECU_FlatView</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ApplicationECU_FlatView/SwComponentTypes/ApplicationECU_FlatView/CPT_MyReceivingSWC_ApplicationEcu</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="R-PORT-PROTOTYPE">/MyReceivingSWC/MyReceivingSWC/RPortPrototype_0</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/My_SR_Interface/DE_MyDataElement</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>Unconnected_DE_MyDataElement_0</SHORT-NAME>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <SW-REFRESH-TIMING>
+                      <CSE-CODE>5</CSE-CODE>
+                      <CSE-CODE-FACTOR>1</CSE-CODE-FACTOR>
+                    </SW-REFRESH-TIMING>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/System/System/RootSwCompositionPrototype</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Composition/TopLevelComposition/CPT_MyTransmittingSWC_ApplicationEcu</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/MyTransmittingSWC/MyTransmittingSWC/PPortPrototype_0</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/My_SR_Interface/DE_MyDataElement</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/System_EcuExtract/EXTR_ApplicationECU/CPT_ApplicationECU_FlatView</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ApplicationECU_FlatView/SwComponentTypes/ApplicationECU_FlatView/CPT_MyTransmittingSWC_ApplicationEcu</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/MyTransmittingSWC/MyTransmittingSWC/PPortPrototype_0</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/My_SR_Interface/DE_MyDataElement</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>CPT_ComM</SHORT-NAME>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/System/System/RootSwCompositionPrototype</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/Composition/TopLevelComposition/CPT_ComM</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/System_EcuExtract/EXTR_ApplicationECU/CPT_ApplicationECU_FlatView</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/ApplicationECU_FlatView/SwComponentTypes/ApplicationECU_FlatView/CPT_ComM</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+          </INSTANCES>
+        </FLAT-MAP>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

@@ -1,0 +1,747 @@
+<!--
+ #######################################################################################################################
+ #
+ # COPYRIGHT (c) ETAS GmbH 2021, all rights reserved
+ #
+ #######################################################################################################################
+ #
+ #                  ___ ____  _   __
+ #                 /__/  /   / | /__
+ #                /__   /   /  | __/
+ #
+ #
+ #                MemStack/Fee - Configuration Report
+ #######################################################################################################################
+
+
+ * *********************************************************************************************************************
+ * Information regarding supplier of this software
+ * FEE_VENDOR_ID:   6
+ * FEE_MODULE_ID:   21
+ * FEE_INSTANCE_ID: 0
+ *
+ * Information regarding software version of fee driver
+ * FEE_SW_MAJOR_VERSION: 22
+ * FEE_SW_MINOR_VERSION: 0
+ * FEE_SW_PATCH_VERSION: 1
+ *
+ * Information regarding supported Autosar version
+ * FEE_AR_RELEASE_MAJOR_VERSION:    4
+ * FEE_AR_RELEASE_MINOR_VERSION:    5
+ * FEE_AR_RELEASE_REVISION_VERSION: 0
+ * *********************************************************************************************************************
+
+                                                          |\/|
+                                                          |  |
+                                                          |  |
+                                                          |  |
+                                                          |  |
+                                                          |  |
+                                                      ____|  |____
+                                                      \          /
+                                                       \        /
+                                                        \      /
+                                                         \    /
+                                                          \  /
+                                                           \/
+
+ * *********************************************************************************************************************
+ * SWS Item:        FEE043_Conf
+ * Container Name:  FeePublishedInformation
+ * Description:     Additional published parameters not covered by CommonPublishedInformation container.
+ *                  Note that these parameters do not have any configuration class setting, since they are published
+ *                  information.
+ * *********************************************************************************************************************
+ * *********************************************************************************************************************
+ * SWS Item:        FEE117_Conf
+ * Name:            FeeBlockOverhead
+ * Description:     Management overhead per logical block in bytes. Note: If the management overhead depends on the
+ *                  block size or block location a formula has to be provided that allows the configurator to calculate
+ *                  the management overhead correctly.
+ * Multiplicity:    1
+ * Type:            EcucIntegerParamDef
+ * Range:           0 .. 65535
+ *
+ * Configured value 14
+ * *********************************************************************************************************************
+ * *********************************************************************************************************************
+ * SWS Item:        FEE118_Conf
+ * Name:            FeePageOverhead
+ * Description:     Management overhead per page in bytes. Note: If the management overhead depends on the block size or
+ *                  block location a formula has to be provided that allows the configurator to calculate the management
+ *                  overhead correctly.
+ * Multiplicity:    1
+ * Type:            EcucIntegerParamDef
+ * Range:           0 .. 65535
+ *
+ * Configured value 0
+ * *********************************************************************************************************************
+
+                                                          |\/|
+                                                          |  |
+                                                          |  |
+                                                          |  |
+                                                          |  |
+                                                          |  |
+                                                      ____|  |____
+                                                      \          /
+                                                       \        /
+                                                        \      /
+                                                         \    /
+                                                          \  /
+                                                           \/
+
+ * *********************************************************************************************************************
+ * SWS Item:        FEE039_Conf
+ * Container Name:  FeeGeneral
+ * Description:     Container for general parameters. These parameters are not specific to a block.
+ * *********************************************************************************************************************
+
+ * *********************************************************************************************************************
+ * SWS Item:        FEE111_Conf
+ * Name:            FeeDevErrorDetect
+ * Description:     Pre-processor switch to enable or disable development error detection.
+ *                  STD_ON:  Development error detection enabled.
+ *                  STD_OFF: Development error detection disabled.
+ * Multiplicity:    1
+ * Type:            EcucBooleanParamDef
+ *
+ * Configured value STD_OFF
+ * *********************************************************************************************************************
+
+ * *********************************************************************************************************************
+ * SWS Item:        FEE114_Conf
+ * Name:            FeePollingMode
+ * Description:     Pre-processor switch to enable or disable the polling mode for this module.
+ *                  STD_ON:  Polling mode enabled, callback functions (provided to FLS module) disabled.
+ *                  STD_OFF: Polling mode disabled, callback functions (provided to FLS module) enabled.
+ * Multiplicity:    1
+ * Type:            EcucBooleanParamDef
+ *
+ * Configured value STD_ON
+ * *********************************************************************************************************************
+
+ * *********************************************************************************************************************
+ * SWS Item:        FEE119_Conf
+ * Name:            FeeSetModeSupported
+ * Description:     Compiler switch to enable or disable the 'SetMode' functionality of the FEE module.
+ *                  STD_ON:  SetMode functionality supported / code present,
+ *                  STD_OFF: SetMode functionality not supported / code not present.
+ *                  Note: This configuration setting has to be consistent with that of all underlying flash device
+ *                        drivers (configuration parameter FlsSetModeApi).
+ * Multiplicity:    1
+ * Type:            EcucBooleanParamDef
+ *
+ * Configured value STD_OFF
+ * *********************************************************************************************************************
+
+ * *********************************************************************************************************************
+ * SWS Item:        FEE115_Conf
+ * Name:            FeeVersionInfoApi
+ * Description:     Pre-processor switch to enable or disable the API to read out the modules version information.
+ *                  STD_ON:  Version info API enabled.
+ *                  STD_OFF: Version info API disabled.
+ * Multiplicity:    1
+ * Type:            EcucBooleanParamDef
+ *
+ * Configured value STD_OFF
+ * *********************************************************************************************************************
+
+ * *********************************************************************************************************************
+ * SWS Item:        FEE116_Conf
+ * Name:            FeeVirtualPageSize
+ * Description:     The size in bytes to which logical blocks shall be aligned.
+ * Multiplicity:    1
+ * Type:            EcucIntegerParamDef
+ * Range:           0 .. 65535
+ *
+ * Configured value 8
+ * *********************************************************************************************************************
+
+ * *********************************************************************************************************************
+ * SWS Item:        RB add-on
+ * Name:            FeeRbPageBufferSize
+ * Description:     Size of buffer for communication between flash driver and Fee.
+ * Multiplicity:    0 .. 1
+ * Type:            EcucIntegerParamDef
+ * Range:           256 .. Fee logical sector size
+ *
+ * Configured value 1024
+ * *********************************************************************************************************************
+
+ * *********************************************************************************************************************
+ * SWS Item:        RB add-on
+ * Name:            FeeRbSecondPageBufferSize
+ * Description:     Size of second buffer for communication between flash driver and Fee.
+ * Multiplicity:    0 .. 1
+ * Type:            EcucIntegerParamDef
+ * Range:           256 .. Fee logical sector size
+ *
+ * Configured value 1024
+ * *********************************************************************************************************************
+
+ * *********************************************************************************************************************
+ * SWS Item:        RB add-on
+ * Name:            FeeRbFsSelect
+ * Description:     Specifies the actual layout of the data on the flash.
+ * Multiplicity:    0 .. 1
+ * Type:            EcucEnumerationParamDef
+ * Range:           FS1, FS1X, FS2, FS3
+ *
+ * Configured value FS1X
+ * *********************************************************************************************************************
+
+ * *********************************************************************************************************************
+ * SWS Item:        RB add-on
+ * Name:            FeeRbMachineType
+ * Description:     Controller type to be configured in case no MCU module is present
+ * Multiplicity:    0 .. 1 (1 if no MCU module is available which pushes this information)
+ * Type:            EcucEnumerationParamDef
+ * Range:           Below are the list of all different machine types supported in this software version
+ * *********************************************************************************************************************
+ * FEE_RB_CYP_CYT2B6X_4S_4K_HSM             : Released
+ * FEE_RB_CYP_CYT2B6X_6S_8K                 : Released
+ * FEE_RB_CYP_CYT2B7X_4S_18K                : Released
+ * FEE_RB_CYP_CYT2B7X_4S_6K_HSM             : Released
+ * FEE_RB_CYP_CYT2B9X_4S_8K_HSM             : Released
+ * FEE_RB_CYP_CYT2B9X_6S_16K                : Released
+ * FEE_RB_CYP_CYT2BLX_4S_8K                 : Released
+ * FEE_RB_CYP_CYT2BLX_4S_8K_HSM             : Released
+ * FEE_RB_CYP_CYT2BLX_6S_16K                : Released
+ * FEE_RB_CYP_CYT2BLX_6S_16K_HSM            : Released
+ * FEE_RB_CYP_CYT3BBX_12S_16K               : Released
+ * FEE_RB_CYP_CYT3BBX_12S_16K_HSM           : Released
+ * FEE_RB_CYP_CYT3BBX_8S_8K                 : Released
+ * FEE_RB_CYP_CYT3BBX_8S_8K_HSM             : Released
+ * FEE_RB_IFX_TC26X                         : Limited
+ * FEE_RB_IFX_TC27X                         : Limited
+ * FEE_RB_IFX_TC27X_HSM                     : Limited
+ * FEE_RB_IFX_TC29X                         : Limited
+ * FEE_RB_IFX_TC29X_HSM                     : Limited
+ * FEE_RB_JDP_MPC5726                       : Limited
+ * FEE_RB_JDP_MPC5744                       : Limited
+ * FEE_RB_JDP_MPC5746B                      : Limited
+ * FEE_RB_JDP_MPC5746B_HSM                  : Limited
+ * FEE_RB_JDP_MPC5777                       : Limited
+ * FEE_RB_JDP_MPC5777_HSM                   : Limited
+ * FEE_RB_NXP_MPC5746C                      : Released
+ * FEE_RB_NXP_MPC5746C_HSM                  : Released
+ * FEE_RB_PC_2S_64KB                        : Limited
+ * FEE_RB_PC_6S_64KB                        : Limited
+ * FEE_RB_PC_6S_64KB_16BP                   : Limited
+ * FEE_RB_REN_RH850E2GUH_4S_16KB_HSM        : Released
+ * FEE_RB_REN_RH850E2GUH_4S_60KB            : Released
+ * FEE_RB_REN_RH850E2M_4S_8KB_HSM           : Released
+ * FEE_RB_REN_RH850E2M_6S_24KB              : Released
+ * FEE_RB_REN_RH850F1KM_S1_4S_15KB          : Released
+ * FEE_RB_REN_RH850F1KM_S1_4S_15_5KB        : Released
+ * FEE_RB_REN_RH850F1KM_S1_4S_16KB          : Released
+ * FEE_RB_REN_RH850F1KM_S2_4S_5_9375KB_HSM  : Released
+ * FEE_RB_REN_RH850F1KM_S2_6S_17_375KB      : Released
+ * FEE_RB_REN_RH850F1KM_S4_4S_5_9375KB_HSM  : Released
+ * FEE_RB_REN_RH850F1KM_S4_6S_17_375KB      : Released
+ * FEE_RB_REN_RH850F1M_4S_15KB              : Limited
+ * FEE_RB_REN_RH850F1M_4S_15_5KB            : Limited
+ * FEE_RB_REN_RH850F1M_4S_16KB              : Limited
+ * FEE_RB_REN_RH850P1LC_D1_4S_7_75KB        : Released
+ * FEE_RB_REN_RH850P1LC_D2_4S_15_75KB       : Released
+ * FEE_RB_REN_RH850P1M_4S_8KB               : Released
+ * FEE_RB_REN_RH850P1XC_D3_2S_15_5KB_HSM    : Released
+ * FEE_RB_REN_RH850P1XC_D3_4S_14_75KB       : Released
+ * FEE_RB_REN_RH850P1XC_D3_4S_15_75KB       : Released
+ * FEE_RB_REN_RH850P1XC_D3_6S_10_5KB        : Released
+ * FEE_RB_REN_RH850P1XC_D3_6S_9_8125KB      : Released
+ * FEE_RB_REN_RH850P1XC_D4_2S_15_5KB_HSM    : Released
+ * FEE_RB_REN_RH850P1XC_D4_4S_30_75KB       : Released
+ * FEE_RB_REN_RH850P1XC_D4_4S_31_75KB       : Released
+ * FEE_RB_REN_RH850P1XC_D5_2S_15_5KB_HSM    : Released
+ * FEE_RB_REN_RH850P1XC_D5_8S_23_375KB      : Released
+ * FEE_RB_REN_RH850P1XC_D5_8S_23_875KB      : Released
+ * FEE_RB_REN_RH850R1X_1MB_4S_7_5KB         : Released
+ * FEE_RB_REN_RH850R1X_1MB_4S_8KB           : Released
+ * FEE_RB_REN_RH850R1X_512KB_4S_7_5KB       : Released
+ * FEE_RB_REN_RH850R1X_512KB_4S_8KB         : Released
+ * FEE_RB_REN_RH850U2A16_4S_16KB_HSM        : Released
+ * FEE_RB_REN_RH850U2A16_4S_60KB            : Released
+ * FEE_RB_REN_RH850U2A6_4S_16KB_HSM         : Released
+ * FEE_RB_REN_RH850U2A6_4S_44KB             : Released
+ * FEE_RB_REN_RH850U2A8_4S_16KB_HSM         : Released
+ * FEE_RB_REN_RH850U2A8_4S_60KB             : Released
+ * FEE_RB_REN_RH850U2B10_4S_16KB_HSM        : Released
+ * FEE_RB_REN_RH850U2B10_4S_32KB            : Limited
+ * FEE_RB_REN_RH850U2B20_4S_24KB_HSM        : Limited
+ * FEE_RB_REN_RH850U2B24_4S_40KB_HSM        : Released
+ * FEE_RB_REN_RH850U2B2X_4S_120KB           : Released
+ * FEE_RB_REN_RH850U2B6_4S_16KB_HSM         : Released
+ * FEE_RB_REN_RH850U2B6_6S_16KB             : Limited
+ * FEE_RB_ST_SPC58XBX                       : Released
+ * FEE_RB_ST_SPC58XCX                       : Released
+ * FEE_RB_ST_SPC58XNX_HSM                   : Limited
+ * FEE_RB_ST_SPC58XXX_HSM                   : Released
+ * FEE_RB_ST_SPC58X_GH_X                    : Released
+ *
+ * Configured value FEE_RB_FULL_MANUAL_CFG
+ * *********************************************************************************************************************
+
+ * *********************************************************************************************************************
+ * SWS Item:        RB add-on
+ * Name:            FeeRbMaintainRedundantBlocks
+ * Description:     Pre-processor switch to enable or disable the API to maintain the redundant blocks.
+ *                  TRUE:  Maintain function enabled.
+ *                  FALSE: Maintain function disabled.
+ * Multiplicity:    0 .. 1
+ * Type:            EcucBooleanParamDef
+ *
+ * Configured value FALSE
+ * *********************************************************************************************************************
+
+ * *********************************************************************************************************************
+ * SWS Item:        RB add-on
+ * Name:            FeeRbTriggerReorgApi
+ * Description:     Pre-processor switch to enable or disable forced sector reorganisation (for one sector).
+ *                  TRUE:  Forced reorganisation feature supported (one forced reorg per call).
+ *                  FALSE: Forced reorganisation feature not supported.
+ * Multiplicity:    0 .. 1
+ * Type:            EcucBooleanParamDef
+ *
+ * Configured value FALSE
+ ***********************************************************************************************************************
+
+ * *********************************************************************************************************************
+ * SWS Item:        RB add-on
+ * Name:            FeeRbUseRelativeAddressing
+ * Description:     Activation of the relative Addressing Mode.
+ * Multiplicity:    0 .. 1
+ * Type:            EcucBooleanParamDef
+ *
+ * Configured value FALSE
+ * *********************************************************************************************************************
+
+/* *********************************************************************************************************************
+ * SWS Item:        RB add-on
+ * Name:            FeeRbEnterStopModeApi
+ * Description:     Pre-processor switch to enable or disable stop mode
+ *                  TRUE:  Entering into stop mode feature supported.
+ *                  FALSE: Entering into stop mode feature not supported.
+ * Multiplicity:    0 .. 1
+ * Type:            EcucBooleanParamDef
+ *
+ * Configured value FALSE
+ ******************************************************************************************************************** */
+
+ * *********************************************************************************************************************
+ * SWS Item:        RB add-on
+ * Name:            FeeRbActSurvivalEval
+ * Description:     Pre-processor switch to enable or disable an additional block specific reorganization for unknown
+ *                  blocks with an active survival setting ("FeeRbSurvival") in the medium.
+ *                  TRUE:  Feature enabled  ("block specific afterburner" on for blocks with active survival setting).
+ *                  FALSE: Feature disabled ("block specific afterburner" off for blocks with active survival setting).
+ *                  Hint:  If activated, this block will be overtaken independent from the "FeeRbActUnknownBlockReorg"
+ *                         setting ("general afterburner").
+ * Multiplicity:    0 .. 1
+ * Type:            EcucBooleanParamDef
+ *
+ * Configured value FALSE
+ * *********************************************************************************************************************
+
+ * *********************************************************************************************************************
+ * SWS Item:        RB add-on
+ * Name:            FeeRbActUnknownBlockReorg
+ * Description:     Pre-processor switch to enable or disable an additional reorganization for any unknown block in the
+ *                  medium.
+ *                  TRUE:  Feature enabled  ("general afterburner" on for all unknown blocks).
+ *                  FALSE: Feature disabled ("general afterburner" off for all unknown blocks).
+ *                  Hints: If activated, all unknown blocks will be overtaken independent from the "FeeRbActSurvivalEval"
+ *                         setting ("block specific afterburner").
+ *                         If deactivated and with active survival evaluation ("FeeRbActSurvivalEval" == TRUE),
+ *                         only blocks with an active survival setting ("FeeRbSurvival" == TRUE) will be overtaken.
+ *                         Only the CB (Customer Block) is allowed to enable this feature. It must be deactivated
+ *                         for the ASW!
+ * Multiplicity:    0 .. 1
+ * Type:            EcucBooleanParamDef
+ *
+ * Configured value FALSE
+ * *********************************************************************************************************************
+
+ * *********************************************************************************************************************
+ * SWS Item:        RB add-on
+ * Name:            FeeRbActUnknownBlockReorgCacheSize
+ * Description:     Unknown block cache size [bytes]
+ *                  This feature fastens the sector reorganisation for unknown blocks (only for global afterburner feature)
+ *                  by scanning the sector and building up a cache for unknown blocks.
+ *                  Default value of the tag, when only survival feature is activated, is the space needed for
+ *                  one unknown block cache entry (For Fee1.0 = 6bytes and Fee1x = 12bytes per cache entry).
+ *                  Default value when global after burner feature is activated is 1800 bytes.
+ *                  (For Fee1.0 = 300 unknown block cache entries and Fee1x = 150 unknown block cache entries).
+ *                  Unknown block cache size will be calculated from the configured value.
+ * Multiplicity:    0 .. 1
+ * Type:            EcucIntegerParamDef
+ *
+ * Configured value 1800
+ ******************************************************************************************************************** */
+
+
+/* *********************************************************************************************************************
+ * SWS Item:        RB add-on
+ * Name:            FeeRbGetFreeSpaceApi
+ * Description:     Pre-processor switch to enable or disable free space API
+ *                  TRUE:  Free space API supported.
+ *                  FALSE: Free space API not supported.
+ * Multiplicity:    0 .. 1
+ * Type:            EcucBooleanParamDef
+ *
+ * Configured value FALSE
+ ******************************************************************************************************************** */
+
+/* *********************************************************************************************************************
+ * SWS Item:        RB add-on
+ * Name:            FeeRbGetNrFreeBytesAndFatEntriesApi
+ * Description:     Pre-processor switch to enable or disable number free bytes and FAT entries API
+ *                  TRUE:  Number free bytes and FAT entries API supported.
+ *                  FALSE: Number free bytes and FAT entries API not supported.
+ * Multiplicity:    0 .. 1
+ * Type:            EcucBooleanParamDef
+ *
+ * Configured value FALSE
+ ******************************************************************************************************************** */
+
+/* *********************************************************************************************************************
+ * SWS Item:        RB add-on
+ * Name:            FeeRbChunkJobApis
+ * Description:     Pre-processor switch to enable or disable chunk-wise job processing APIs
+ *                  TRUE:  Chunk-wise job processing APIs supported.
+ *                  FALSE: Chunk-wise job processing APIs not supported.
+ * Multiplicity:    0 .. 1
+ * Type:            EcucBooleanParamDef
+ *
+ * Configured value FALSE
+ ******************************************************************************************************************** */
+
+/* *********************************************************************************************************************
+ * SWS Item:        RB add-on
+ * Name:            FeeRbChunkJobFeatureRequested
+ * Description:     Pre-processor switch to request feature via chunk-wise job processing APIs
+ * Multiplicity:    0 .. 1
+ * Type:            EcucEnumerationParamDef
+ *
+ * Configured value FEE_RB_CHUNK_FEATURE_LEVEL1
+ ******************************************************************************************************************** */
+
+ * *********************************************************************************************************************
+ * SWS Item:        RB add-on
+ * Name:            FeeRbBlockTableLocation
+ * Description:     Selected Location for Block Properties Table
+ *                  TRUE:  Use ROM-Loction for Fee_Rb_BlockProperties_st.
+ *                  FALSE: Use RAM-Location for Fee_Rb_BlockProperties_st.
+ * Multiplicity:    0 .. 1
+ * Type:            EcucEnumerationParamDef
+ *
+ * Configured value FALSE
+ * *********************************************************************************************************************
+
+ * *********************************************************************************************************************
+ * SWS Item:        RB add-on
+ * Name:            FeeRbSyncFlsMainLoopHook
+ * Description:     Hook into synchronous Fls_MainFunction loop
+ * Multiplicity:    0 .. 1
+ * Type:            EcucFunctionNameDef
+ *
+ * Configured value (void)0
+ ***********************************************************************************************************************
+
+ /* *********************************************************************************************************************
+ * SWS Item:        RB add-on
+ * Name:            FeeRbSetAndGetJobModeApi
+ * Description:     Pre-processor switch to enable or disable Set and Get Job Mode APIs.
+ *                  TRUE:  Set and Get Job mode APIs supported.
+ *                  FALSE: Set and Get Job mode APIs  not supported.
+ * Multiplicity:    0 .. 1
+ * Type:            EcucBooleanParamDef
+ *
+ * Configured value FALSE
+ ******************************************************************************************************************** */
+
+ /* *********************************************************************************************************************
+ * SWS Item:        RB add-on
+ * Name:            FeeRbDetailedBlkInfoApi
+ * Description:     Pre-processor switch to enable or disable Detailed Block Info API.
+ *                  TRUE:  Detailed Block Info API supported.
+ *                  FALSE: Detailed Block Info API  not supported.
+ * Multiplicity:    0 .. 1
+ * Type:            EcucBooleanParamDef
+ *
+ * Configured value FALSE
+ ******************************************************************************************************************** */
+
+ /* *********************************************************************************************************************
+ * SWS Item:        RB add-on
+ * Name:            FeeRbGetSectStateApi
+ * Description:     Pre-processor switch to enable or disable get sector state API.
+ *                  TRUE:  Get sector state API supported.
+ *                  FALSE: Get sector state API  not supported.
+ * Multiplicity:    0 .. 1
+ * Type:            EcucBooleanParamDef
+ *
+ * Configured value FALSE
+ ******************************************************************************************************************** */
+
+ /* *********************************************************************************************************************
+ * SWS Item:        RB add-on
+ * Name:            FeeRbEnterAndExitHighSpeedModeApis
+ * Description:     Pre-processor switch to enter or exit high speed mode APIs.
+ *                  TRUE:  Enter and exit high speed mode APIs supported.
+ *                  FALSE: Enter and exit high speed mode APIs not supported.
+ * Multiplicity:    0 .. 1
+ * Type:            EcucBooleanParamDef
+ *
+ * Configured value FALSE
+ ******************************************************************************************************************** */
+
+                                                          |\/|
+                                                          |  |
+                                                          |  |
+                                                          |  |
+                                                          |  |
+                                                          |  |
+                                                      ____|  |____
+                                                      \          /
+                                                       \        /
+                                                        \      /
+                                                         \    /
+                                                          \  /
+                                                           \/
+
+ * *********************************************************************************************************************
+ * SWS Item:        FEE040_Conf
+ * Container Name:  FeeBlockConfiguration
+ * Description:     Configuration of block specific parameters for the Flash EEPROM Emulation module.
+ * Layout size:     248 Bytes (including internal markers)
+ * Cycles:          0 Reachable driving cycles
+ *                  0 means the calculation is not supported by selected file system
+ *                  For this calculation it is assumed that every block in the layout is written once
+ *                  Example: A value of 10000 means each block in the layout can be written 10000 times
+ *                           then the medium is out of specification.
+ * Percentage Load: 0 % Load of the medium over lifetime
+ *                  0 means the calculation is not supported by selected file system
+ *                  For this calculation the actual write load as specified in FeeNumberOfWriteCycles is used
+ *                  Values above 100% mean that the mediums leaves the specification before all FeeNumberOfWriteCycles
+ *                  for each block are written.
+ *                  Example: A value of 40% means when for each block the configured amount of FeeNumberOfWriteCycles is
+ *                           executed then 40% of the available program cycles of the medium are used. Means another 60%
+ *                           is free before the medium leaves the specification.
+ * *********************************************************************************************************************
+
+ ***********************************************************************************************************************
+ * Blockname:   NvM_NativeBlock_2
+ *
+ * FeeBlockNumber (FEE150_Conf):                - [not configurable, auto-generated by Fee]
+ * FeeBlockSize (FEE148_Conf):                  2
+ * FeeImmediateData (FEE151_Conf):              FALSE
+ * FeeNumberOfWriteCycles (FEE110_Conf):        1 [optional]
+ * FeeRbDeviceIndex (Supplier Addon):           0
+ * FeeRbNoFallback (Supplier Addon):            FALSE
+ * FeeRbBlockPersistentID (Supplier Addon):     0xA6C9
+ * FeeRbOrigin (Supplier Addon):                NVM
+ * FeeRbSecLevel (Supplier Addon):              1
+ * FeeRbSurvival (Supplier Addon):              FALSE
+ * FeeRbRobustness (Supplier Addon):            FALSE
+ * FeeRbVarBlockLength (Supplier Addon):        FALSE
+ * FeeRbFirstReadDataMigration (Supplier Addon):FALSE
+ * FeeRbStatusFlags (Supplier Addon):           100000000
+ *
+ ***********************************************************************************************************************
+ ***********************************************************************************************************************
+ * Blockname:   NvM_NativeBlock_3
+ *
+ * FeeBlockNumber (FEE150_Conf):                - [not configurable, auto-generated by Fee]
+ * FeeBlockSize (FEE148_Conf):                  2
+ * FeeImmediateData (FEE151_Conf):              FALSE
+ * FeeNumberOfWriteCycles (FEE110_Conf):        1 [optional]
+ * FeeRbDeviceIndex (Supplier Addon):           0
+ * FeeRbNoFallback (Supplier Addon):            FALSE
+ * FeeRbBlockPersistentID (Supplier Addon):     0xB740
+ * FeeRbOrigin (Supplier Addon):                NVM
+ * FeeRbSecLevel (Supplier Addon):              1
+ * FeeRbSurvival (Supplier Addon):              FALSE
+ * FeeRbRobustness (Supplier Addon):            FALSE
+ * FeeRbVarBlockLength (Supplier Addon):        FALSE
+ * FeeRbFirstReadDataMigration (Supplier Addon):FALSE
+ * FeeRbStatusFlags (Supplier Addon):           100000000
+ *
+ ***********************************************************************************************************************
+ ***********************************************************************************************************************
+ * Blockname:   ECUM_CFG_NVM_BLOCK
+ *
+ * FeeBlockNumber (FEE150_Conf):                - [not configurable, auto-generated by Fee]
+ * FeeBlockSize (FEE148_Conf):                  4
+ * FeeImmediateData (FEE151_Conf):              FALSE
+ * FeeNumberOfWriteCycles (FEE110_Conf):        1 [optional]
+ * FeeRbDeviceIndex (Supplier Addon):           0
+ * FeeRbNoFallback (Supplier Addon):            FALSE
+ * FeeRbBlockPersistentID (Supplier Addon):     0xF2F7
+ * FeeRbOrigin (Supplier Addon):                NVM
+ * FeeRbSecLevel (Supplier Addon):              1
+ * FeeRbSurvival (Supplier Addon):              FALSE
+ * FeeRbRobustness (Supplier Addon):            FALSE
+ * FeeRbVarBlockLength (Supplier Addon):        FALSE
+ * FeeRbFirstReadDataMigration (Supplier Addon):FALSE
+ * FeeRbStatusFlags (Supplier Addon):           100000000
+ *
+ ***********************************************************************************************************************
+-->
+
+<!-- Configuration overview in machine readable XML format
+     *****************************************************                                                           -->
+
+<FEE>
+ <!-- ******************************************************************************************************************
+ * SWS Item:        FEE039_Conf
+ * Container Name:  FeeGeneral
+ * Description:     Container for general parameters. These parameters are not specific to a block.
+ * ***************************************************************************************************************** -->
+    <FEE_GENERAL>
+        <FEE_DEV_ERROR_DETECT>STD_OFF</FEE_DEV_ERROR_DETECT>
+        <FEE_POLLING_MODE>STD_ON</FEE_POLLING_MODE>
+        <FEE_SET_MODE_SUPPORTED>STD_OFF</FEE_SET_MODE_SUPPORTED>
+        <FEE_VERSION_INFO_API>STD_OFF</FEE_VERSION_INFO_API>
+        <FEE_VIRTUAL_PAGE_SIZE>8</FEE_VIRTUAL_PAGE_SIZE>
+        <FEE_RB_GENERAL_DEVICE_INDEX>0</FEE_RB_GENERAL_DEVICE_INDEX>
+        <FEE_RB_GENERAL_DEVICE_NICKNAME>none</FEE_RB_GENERAL_DEVICE_NICKNAME>
+        <FEE_RB_FILE_SYSTEM>FS1X</FEE_RB_FILE_SYSTEM>
+        <FEE_RB_MACHINE_TYPE>FEE_RB_FULL_MANUAL_CFG</FEE_RB_MACHINE_TYPE>
+        <FEE_RB_TRIGGER_REORG>FALSE</FEE_RB_TRIGGER_REORG>
+        <FEE_RB_ENTER_STOP_MODE>FALSE</FEE_RB_ENTER_STOP_MODE>
+        <FEE_RB_ACT_SURVIVAL_EVAL>FALSE</FEE_RB_ACT_SURVIVAL_EVAL>
+        <FEE_RB_ACT_UNKNOWN_BLOCK_REORG>FALSE</FEE_RB_ACT_UNKNOWN_BLOCK_REORG>
+        <FEE_RB_ACT_UNKNOWN_BLOCK_CACHE_SIZE>0</FEE_RB_ACT_UNKNOWN_BLOCK_CACHE_SIZE>
+        <FEE_RB_GET_FREE_SPACE>FALSE</FEE_RB_GET_FREE_SPACE>
+        <FEE_RB_CHUNK_JOBS>FALSE</FEE_RB_CHUNK_JOBS>
+        <FEE_RB_CHUNK_JOB_FEATURE_REQUESTED>FEE_RB_CHUNK_FEATURE_LEVEL1</FEE_RB_CHUNK_JOB_FEATURE_REQUESTED>
+        <FEE_RB_USE_ROM_BLOCKTABLE>FALSE</FEE_RB_USE_ROM_BLOCKTABLE>
+        <FEE_RB_SET_AND_GET_JOB_MODE>FALSE</FEE_RB_SET_AND_GET_JOB_MODE>
+        <FEE_RB_SYNC_LOOP_FLS_MAIN_HOOK>(void)0</FEE_RB_SYNC_LOOP_FLS_MAIN_HOOK>
+        <FEE_RB_GET_DETAILED_BLK_INFO>FALSE</FEE_RB_GET_DETAILED_BLK_INFO>
+        <FEE_RB_GET_SECT_STATE>FALSE</FEE_RB_GET_SECT_STATE>
+        <FEE_RB_ENTER_EXIT_HIGH_SPEED_MODE>FALSE</FEE_RB_ENTER_EXIT_HIGH_SPEED_MODE>
+        <FEE_RB_ROW_SIZE_PHY>0</FEE_RB_ROW_SIZE_PHY>
+    </FEE_GENERAL>
+
+    <FEE_VERSION_INFO>
+        <!-- Information regarding the supplier -->
+        <FEE_VENDOR_ID>6</FEE_VENDOR_ID>
+        <FEE_MODULE_ID>21</FEE_MODULE_ID>
+        <FEE_INSTANCE_ID>0</FEE_INSTANCE_ID>
+
+        <!-- Information regarding version of Fee driver -->
+        <FEE_SW_MAJOR_VERSION>22</FEE_SW_MAJOR_VERSION>
+        <FEE_SW_MINOR_VERSION>0</FEE_SW_MINOR_VERSION>
+        <FEE_SW_PATCH_VERSION>1</FEE_SW_PATCH_VERSION>
+
+        <!-- Information regarding supported Autosar version -->
+        <FEE_AR_RELEASE_MAJOR_VERSION>4</FEE_AR_RELEASE_MAJOR_VERSION>
+        <FEE_AR_RELEASE_MINOR_VERSION>5</FEE_AR_RELEASE_MINOR_VERSION>
+        <FEE_AR_RELEASE_REVISION_VERSION>0</FEE_AR_RELEASE_REVISION_VERSION>
+    </FEE_VERSION_INFO>
+
+    <FEE_MATURITY_INFO>
+        <FEE_LIMITED_RELEASE>TRUE</FEE_LIMITED_RELEASE>
+    </FEE_MATURITY_INFO>
+
+ <!-- ******************************************************************************************************************
+ * SWS Item:        FEE043_Conf
+ * Container Name:  FeePublishedInformation
+ * Description:     Additional published parameters not covered by CommonPublishedInformation container.
+ *                  Note that these parameters do not have any configuration class setting, since they are published
+ *                  information.
+ * ***************************************************************************************************************** -->
+    <FEE_PUBLISHED_INFORMATION>
+        <FEE_BLOCK_OVERHEAD>14</FEE_BLOCK_OVERHEAD>
+        <FEE_PAGE_OVERHEAD>0</FEE_PAGE_OVERHEAD>
+    </FEE_PUBLISHED_INFORMATION>
+
+ <!-- ******************************************************************************************************************
+ * Description:     Flash properties, important for tools
+ * ***************************************************************************************************************** -->
+    <FEE_FLASH_PROP>
+        <FEE_FLASH_SECTOR>
+            <STRTADR>00000000</STRTADR>
+            <PAGE_SIZE_BYTE>8</PAGE_SIZE_BYTE>
+            <SEC_SIZE_BYTE>1024</SEC_SIZE_BYTE>
+            <NUM_PAGES>128</NUM_PAGES>
+            <ERASE_PATTERN>0x00</ERASE_PATTERN>
+            <INV_PATTERN>0xFF</INV_PATTERN>
+            <ERASE_CYCLES>125000</ERASE_CYCLES>
+        </FEE_FLASH_SECTOR>
+        <FEE_FLASH_SECTOR>
+            <STRTADR>00000400</STRTADR>
+            <PAGE_SIZE_BYTE>8</PAGE_SIZE_BYTE>
+            <SEC_SIZE_BYTE>1024</SEC_SIZE_BYTE>
+            <NUM_PAGES>128</NUM_PAGES>
+            <ERASE_PATTERN>0x00</ERASE_PATTERN>
+            <INV_PATTERN>0xFF</INV_PATTERN>
+            <ERASE_CYCLES>125000</ERASE_CYCLES>
+        </FEE_FLASH_SECTOR>
+    </FEE_FLASH_PROP>
+
+ <!-- ******************************************************************************************************************
+ * SWS Item:        FEE040_Conf
+ * Container Name:  FeeBlockConfiguration
+ * Description:     Configuration of block specific parameters for the Flash EEPROM Emulation module.
+ * ***************************************************************************************************************** -->
+    <FEE_BLOCKDESCRIPTOR>
+        <FEE_BLOCK_PROP>
+            <!-- Specified by Autosar -->
+            <FEE_BLOCK_SHORT_NAME>NvM_NativeBlock_2</FEE_BLOCK_SHORT_NAME>
+            <FEE_BLOCK_SIZE>2</FEE_BLOCK_SIZE>
+            <FEE_IMMEDIATE_DATA>FALSE</FEE_IMMEDIATE_DATA>
+            <FEE_NUMBER_OF_WRITE_CYCLES>1</FEE_NUMBER_OF_WRITE_CYCLES>
+            <!-- Supplier Addons -->
+            <FEE_RB_PERSISTENT_ID>0xA6C9</FEE_RB_PERSISTENT_ID>
+            <FEE_RB_DEVICE_INDEX>0</FEE_RB_DEVICE_INDEX>
+            <FEE_RB_NO_FALLBACK>FALSE</FEE_RB_NO_FALLBACK>
+            <FEE_RB_ORIGIN>NVM</FEE_RB_ORIGIN>
+            <FEE_RB_SEC_LEVEL>1</FEE_RB_SEC_LEVEL>
+            <FEE_RB_SURVIVAL>FALSE</FEE_RB_SURVIVAL>
+            <FEE_RB_ROBUSTNESS>FALSE</FEE_RB_ROBUSTNESS>
+            <FEE_RB_VAR_BLOCK_LENGTH>FALSE</FEE_RB_VAR_BLOCK_LENGTH>
+            <FEE_RB_FIRST_READ_DATA_MIGRATION>FALSE</FEE_RB_FIRST_READ_DATA_MIGRATION>
+            <FEE_RB_STATUS_FLAGS>100000000</FEE_RB_STATUS_FLAGS>
+        </FEE_BLOCK_PROP>
+        <FEE_BLOCK_PROP>
+            <!-- Specified by Autosar -->
+            <FEE_BLOCK_SHORT_NAME>NvM_NativeBlock_3</FEE_BLOCK_SHORT_NAME>
+            <FEE_BLOCK_SIZE>2</FEE_BLOCK_SIZE>
+            <FEE_IMMEDIATE_DATA>FALSE</FEE_IMMEDIATE_DATA>
+            <FEE_NUMBER_OF_WRITE_CYCLES>1</FEE_NUMBER_OF_WRITE_CYCLES>
+            <!-- Supplier Addons -->
+            <FEE_RB_PERSISTENT_ID>0xB740</FEE_RB_PERSISTENT_ID>
+            <FEE_RB_DEVICE_INDEX>0</FEE_RB_DEVICE_INDEX>
+            <FEE_RB_NO_FALLBACK>FALSE</FEE_RB_NO_FALLBACK>
+            <FEE_RB_ORIGIN>NVM</FEE_RB_ORIGIN>
+            <FEE_RB_SEC_LEVEL>1</FEE_RB_SEC_LEVEL>
+            <FEE_RB_SURVIVAL>FALSE</FEE_RB_SURVIVAL>
+            <FEE_RB_ROBUSTNESS>FALSE</FEE_RB_ROBUSTNESS>
+            <FEE_RB_VAR_BLOCK_LENGTH>FALSE</FEE_RB_VAR_BLOCK_LENGTH>
+            <FEE_RB_FIRST_READ_DATA_MIGRATION>FALSE</FEE_RB_FIRST_READ_DATA_MIGRATION>
+            <FEE_RB_STATUS_FLAGS>100000000</FEE_RB_STATUS_FLAGS>
+        </FEE_BLOCK_PROP>
+        <FEE_BLOCK_PROP>
+            <!-- Specified by Autosar -->
+            <FEE_BLOCK_SHORT_NAME>ECUM_CFG_NVM_BLOCK</FEE_BLOCK_SHORT_NAME>
+            <FEE_BLOCK_SIZE>4</FEE_BLOCK_SIZE>
+            <FEE_IMMEDIATE_DATA>FALSE</FEE_IMMEDIATE_DATA>
+            <FEE_NUMBER_OF_WRITE_CYCLES>1</FEE_NUMBER_OF_WRITE_CYCLES>
+            <!-- Supplier Addons -->
+            <FEE_RB_PERSISTENT_ID>0xF2F7</FEE_RB_PERSISTENT_ID>
+            <FEE_RB_DEVICE_INDEX>0</FEE_RB_DEVICE_INDEX>
+            <FEE_RB_NO_FALLBACK>FALSE</FEE_RB_NO_FALLBACK>
+            <FEE_RB_ORIGIN>NVM</FEE_RB_ORIGIN>
+            <FEE_RB_SEC_LEVEL>1</FEE_RB_SEC_LEVEL>
+            <FEE_RB_SURVIVAL>FALSE</FEE_RB_SURVIVAL>
+            <FEE_RB_ROBUSTNESS>FALSE</FEE_RB_ROBUSTNESS>
+            <FEE_RB_VAR_BLOCK_LENGTH>FALSE</FEE_RB_VAR_BLOCK_LENGTH>
+            <FEE_RB_FIRST_READ_DATA_MIGRATION>FALSE</FEE_RB_FIRST_READ_DATA_MIGRATION>
+            <FEE_RB_STATUS_FLAGS>100000000</FEE_RB_STATUS_FLAGS>
+        </FEE_BLOCK_PROP>
+    </FEE_BLOCKDESCRIPTOR>
+</FEE>

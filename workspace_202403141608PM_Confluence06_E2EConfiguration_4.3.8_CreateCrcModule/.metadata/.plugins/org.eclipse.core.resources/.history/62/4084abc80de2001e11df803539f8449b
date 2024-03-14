@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00051.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>Composition</SHORT-NAME>
+      <ELEMENTS>
+        <COMPOSITION-SW-COMPONENT-TYPE>
+          <SHORT-NAME>TopLevelComposition</SHORT-NAME>
+          <COMPONENTS>
+            <SW-COMPONENT-PROTOTYPE UUID="808e8719-f1b3-4dd2-aff9-15c023cd7018">
+              <SHORT-NAME>CPT_MyTransmittingSWC_ApplicationEcu</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/MyTransmittingSWC/MyTransmittingSWC</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="a329b4e4-3630-49d3-b9f5-a17a85d9754e">
+              <SHORT-NAME>CPT_MyReceivingSWC_ApplicationEcu</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/MyReceivingSWC/MyReceivingSWC</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="bd268b65-e410-4749-9762-606ad31766b5">
+              <SHORT-NAME>CPT_MyTransmittingSWC_TestEcu</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/MyTransmittingSWC/MyTransmittingSWC</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="f655d375-b93a-451b-ae11-ae55320e2a21">
+              <SHORT-NAME>CPT_MyReceivingSWC_TestEcu</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/MyReceivingSWC/MyReceivingSWC</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="c0fb552d-e0fc-41ea-9c25-e9883e586f6f">
+              <SHORT-NAME>CPT_ComM</SHORT-NAME>
+              <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/AUTOSAR_ComM/SwComponentTypes/ComM</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="0d2d51ce-7b1b-42f2-a2ec-ba9675a20dce">
+              <SHORT-NAME>CPT_NvM</SHORT-NAME>
+              <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/AUTOSAR_NvM/SwComponentTypes/NvM</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="f6f8d7ac-47a7-4d78-bdce-f2497a244e5b">
+              <SHORT-NAME>CPT_E2ESWC</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/SwComponentTypes/E2ESWC</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+          </COMPONENTS>
+          <CONNECTORS>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_MyTransmittingSWC_ApplicationEcu_PPortPrototype_0_CPT_MyReceivingSWC_TestEcu_RPortPrototype_0</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Composition/TopLevelComposition/CPT_MyTransmittingSWC_ApplicationEcu</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MyTransmittingSWC/MyTransmittingSWC/PPortPrototype_0</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Composition/TopLevelComposition/CPT_MyReceivingSWC_TestEcu</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MyReceivingSWC/MyReceivingSWC/RPortPrototype_0</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_MyTransmittingSWC_TestEcu_PPortPrototype_0_CPT_MyReceivingSWC_ApplicationEcu_RPortPrototype_0</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Composition/TopLevelComposition/CPT_MyTransmittingSWC_TestEcu</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MyTransmittingSWC/MyTransmittingSWC/PPortPrototype_0</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Composition/TopLevelComposition/CPT_MyReceivingSWC_ApplicationEcu</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MyReceivingSWC/MyReceivingSWC/RPortPrototype_0</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_NvM_PS_NvM_NativeBlock_2_CPT_MyReceivingSWC_ApplicationEcu_R_NvMService_0</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Composition/TopLevelComposition/CPT_NvM</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/AUTOSAR_NvM/SwComponentTypes/NvM/PS_NvM_NativeBlock_2</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Composition/TopLevelComposition/CPT_MyReceivingSWC_ApplicationEcu</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MyReceivingSWC/MyReceivingSWC/R_NvMService_0</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_NvM_PS_NvM_NativeBlock_3_CPT_MyReceivingSWC_ApplicationEcu_R_NvMService_0</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Composition/TopLevelComposition/CPT_NvM</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/AUTOSAR_NvM/SwComponentTypes/NvM/PS_NvM_NativeBlock_3</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Composition/TopLevelComposition/CPT_MyReceivingSWC_ApplicationEcu</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MyReceivingSWC/MyReceivingSWC/R_NvMService_0</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_NvM_PS_NvM_NativeBlock_2_CPT_MyReceivingSWC_TestEcu_R_NvMService_0</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Composition/TopLevelComposition/CPT_NvM</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/AUTOSAR_NvM/SwComponentTypes/NvM/PS_NvM_NativeBlock_2</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Composition/TopLevelComposition/CPT_MyReceivingSWC_TestEcu</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MyReceivingSWC/MyReceivingSWC/R_NvMService_0</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_MyTransmittingSWC_TestEcu_PPortPrototype_0_CPT_MyReceivingSWC_TestEcu_RPortPrototype_0</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Composition/TopLevelComposition/CPT_MyTransmittingSWC_TestEcu</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MyTransmittingSWC/MyTransmittingSWC/PPortPrototype_0</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Composition/TopLevelComposition/CPT_MyReceivingSWC_TestEcu</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MyReceivingSWC/MyReceivingSWC/RPortPrototype_0</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_MyTransmittingSWC_ApplicationEcu_PPortPrototype_0_CPT_MyReceivingSWC_ApplicationEcu_RPortPrototype_0</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Composition/TopLevelComposition/CPT_MyTransmittingSWC_ApplicationEcu</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MyTransmittingSWC/MyTransmittingSWC/PPortPrototype_0</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Composition/TopLevelComposition/CPT_MyReceivingSWC_ApplicationEcu</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MyReceivingSWC/MyReceivingSWC/RPortPrototype_0</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_NvM_PS_NvM_NativeBlock_3_CPT_MyReceivingSWC_TestEcu_R_NvMService_0</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Composition/TopLevelComposition/CPT_NvM</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/AUTOSAR_NvM/SwComponentTypes/NvM/PS_NvM_NativeBlock_3</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Composition/TopLevelComposition/CPT_MyReceivingSWC_TestEcu</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MyReceivingSWC/MyReceivingSWC/R_NvMService_0</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+          </CONNECTORS>
+        </COMPOSITION-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

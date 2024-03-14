@@ -1,0 +1,4 @@
+AutosarFileNamePrefKey=DBC_SysDesc.arxml
+Dbc\ Extension\ Templates=/C\:/ETAS/RTA-CAR_12.2.0/ISOLAR-AB_12.2.1/plugins/com.bosch.autosartool.importer.dbc4x_1.0.0.202308181721/Rules/Default_Mapping.rules;
+Dbc_FileNames_Preference_key=C\:\\ETAS\\RTA-CAR_12.2.0\\Examples\\Basic_Workflow\\example.dbc;C\:\\ETAS\\RTA-CAR_12.2.0\\RTA-CAR\\workspace\\NewProjectFromScratch\\system_config\\NewDbc.dbc;
+eclipse.preferences.version=1

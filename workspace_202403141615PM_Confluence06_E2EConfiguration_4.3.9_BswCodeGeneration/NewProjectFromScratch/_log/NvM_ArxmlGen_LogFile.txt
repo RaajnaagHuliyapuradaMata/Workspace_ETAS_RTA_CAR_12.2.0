@@ -1,0 +1,1950 @@
+common configuration:
+  NvMApiConfigClass = NVM_API_CONFIG_CLASS_3
+  NvMBswMMultiBlockJobStatusInformation = true
+  NvMCompiledConfigId = 2
+  NvMCrcNumOfBytes = 1
+  NvMCsmRetryCounter = 0
+  NvMDevErrorDetect = false
+  NvMDrvModeSwitch = false
+  NvMDynamicConfiguration = false
+  NvMJobPrioritization = false
+  NvMMainFunctionPeriod = 0.001
+  NvMMultiBlockCallback = NULL_PTR
+  NvMPollingMode = true
+  NvMRbAuxInterface = false
+  NvMRbBlockHeader = 0
+  NvMRbCallbackSignatureAR45 = false
+  NvMRbCommonCalcRamBlockCrc = false
+  NvMRbCommonWriteCounter = false
+  NvMRbDynConfigLoadDefaultsForNonResistant = false
+  NvMRbErrorInfoDetail = false
+  NvMRbExplcitSyncReadWithConst = false
+  NvMRbGenArxmlVersion = NVM_GEN_ARXML_VERSION_402
+  NvMRbInitAtLayoutChange = false
+  NvMRbInitBufferBeforeSyncWrite = false
+  NvMRbMainFunctionScheduling = NVM_RB_MAINFUNC_SCHEDULING_RTE_TIMED
+  NvMRbNoInitCallbackRomBlockConfigured = false
+  NvMRbNoSingleBlockBeforeReadAll = false
+  NvMRbNvCrcEnable = false
+  NvMRbRamInitCheck = NVM_RB_RAM_INIT_CHECK_NONE
+  NvMRbRandomNrLength = 16
+  NvMRbRemoveNonResistantBlocks = false
+  NvMRbReqMonitor = NVM_RB_REQ_MON_DISABLED
+  NvMRbRuntimeRamBlockConfiguration = false
+  NvMRbRuntimeRamBufferAddressEnd = NULL_PTR
+  NvMRbRuntimeRamBufferAddressStart = NULL_PTR
+  NvMRbSetWriteAllTriggerApi = false
+  NvMRbSwcdToEcucValuesEnable = false
+  NvMRepeatMirrorOperations = 0
+  NvMSetRamBlockStatusApi = true
+  NvMSizeImmediateJobQueue = 1
+  NvMSizeStandardJobQueue = 1
+  NvMVersionInfoApi = false
+  unused parameters:
+    NvMBufferAlignmentValue = 0
+    NvMDatasetSelectionBits = 0
+    NvMRbMultiBlockStartCallback = NULL_PTR
+    NvMRbObserverCallback = NULL_PTR
+    NvMRbReqMonDevId = 0
+    NvMEcucPartitionRef = 
+    NvMMasterEcucPartitionRef = 
+    NvMRbCsmJobRandomNrRef = 
+  END unused parameters:
+
+  START memory devices:
+  END memory devices:
+block ECUM_CFG_NVM_BLOCK:
+  NvMBlockCrcType = NVM_CRC16
+  NvMBlockHeaderInclude = EcuM
+  NvMBlockJobPriority = 1
+  NvMBlockManagementType = NVM_BLOCK_NATIVE
+  NvMBlockUseAutoValidation = false
+  NvMBlockUseCRCCompMechanism = false
+  NvMBlockUseCompression = false
+  NvMBlockUseCrc = true
+  NvMBlockUsePort = false
+  NvMBlockUseSyncMechanism = false
+  NvMBlockWriteProt = false
+  NvMCalcRamBlockCrc = false
+  NvMMaxNumOfReadRetries = 0
+  NvMMaxNumOfWriteRetries = 0
+  NvMNvBlockLength = 4
+  NvMNvBlockNum = 1
+  NvMNvramDeviceId = 0
+  NvMRamBlockDataAddress = EcuM_Rb_dataShutdownInfo_st
+  NvMRbBackupBlock = false
+  NvMRbFirstReadDataMigration = false
+  NvMRbInitBlockAtLayoutChange = false
+  NvMRbNoFallback = false
+  NvMRbRamBlockDataAddressString = NULL_PTR
+  NvMRbRamInitUnconditional = false
+  NvMRbResistantToLayoutRemoval = false
+  NvMRbSelectBlockForFirstInitAll = false
+  NvMRbSingleBlockStartCallback = NULL_PTR
+  NvMRbWriteCounter = false
+  NvMReadRamBlockFromNvCallback = NULL_PTR
+  NvMResistantToChangedSw = false
+  NvMRomBlockDataAddress = NULL_PTR
+  NvMRomBlockNum = 0
+  NvMSelectBlockForReadAll = true
+  NvMSelectBlockForWriteAll = true
+  NvMStaticBlockIDCheck = false
+  NvMWriteBlockOnce = false
+  NvMWriteRamBlockToNvCallback = NULL_PTR
+  NvMWriteVerification = false
+  NvMWriteVerificationDataSize = 0
+  unused parameters:
+    NvMNvBlockBaseNumber = 0
+    NvMRbBlockPersistentId = 0
+    NvMRbBlockVersion = 0
+    NvMRbNvBlockLengthString = NULL_PTR
+    NvMBlockCipheringRef = 
+    NvMBlockEcucPartitionRef = 
+    NvMRbRamInitAddSavedZoneNameRef = 
+  END unused parameters:
+
+  callbacks from container:
+    NvMSingleBlockCallback = EcuM_Rb_NvMSingleBlockCallbackFunction
+    NvMInitBlockCallback = UNDEFINED
+  END callbacks from container
+
+  block consists of following splits:
+  block has a total of 0 splits
+  []
+  END block splits
+
+  NvMRbBlockPersistentId = 62199
+  NvMBlock.java:NvMBlock:idxSavedZone: 0
+  ECUM_CFG_NVM_BLOCK length = 4
+  ECUM_CFG_NVM_BLOCK encrypted = 0
+  ECUM_CFG_NVM_BLOCK signature = 0
+  ECUM_CFG_NVM_BLOCK IV = 0
+  ECUM_CFG_NVM_BLOCK header = 0
+block NvM_ConfigId:
+  NvMBlockCrcType = NVM_CRC16
+  NvMBlockJobPriority = 1
+  NvMBlockManagementType = NVM_BLOCK_NATIVE
+  NvMBlockUseAutoValidation = false
+  NvMBlockUseCRCCompMechanism = false
+  NvMBlockUseCompression = false
+  NvMBlockUseCrc = true
+  NvMBlockUsePort = false
+  NvMBlockUseSyncMechanism = false
+  NvMBlockWriteProt = false
+  NvMCalcRamBlockCrc = false
+  NvMMaxNumOfReadRetries = 0
+  NvMMaxNumOfWriteRetries = 0
+  NvMNvBlockLength = 2
+  NvMNvBlockNum = 1
+  NvMNvramDeviceId = 0
+  NvMRamBlockDataAddress = NvM_Prv_idConfigStored_u16
+  NvMRbBackupBlock = false
+  NvMRbFirstReadDataMigration = false
+  NvMRbInitBlockAtLayoutChange = false
+  NvMRbNoFallback = false
+  NvMRbRamBlockDataAddressString = NULL_PTR
+  NvMRbRamInitUnconditional = false
+  NvMRbResistantToLayoutRemoval = false
+  NvMRbSelectBlockForFirstInitAll = false
+  NvMRbSingleBlockStartCallback = NULL_PTR
+  NvMRbWriteCounter = false
+  NvMReadRamBlockFromNvCallback = NULL_PTR
+  NvMResistantToChangedSw = false
+  NvMRomBlockDataAddress = NULL_PTR
+  NvMRomBlockNum = 0
+  NvMSelectBlockForReadAll = true
+  NvMSelectBlockForWriteAll = true
+  NvMStaticBlockIDCheck = false
+  NvMWriteBlockOnce = false
+  NvMWriteRamBlockToNvCallback = NULL_PTR
+  NvMWriteVerification = false
+  NvMWriteVerificationDataSize = 0
+  unused parameters:
+    NvMBlockHeaderInclude = NULL_PTR
+    NvMNvBlockBaseNumber = 0
+    NvMRbBlockPersistentId = 0
+    NvMRbBlockVersion = 0
+    NvMRbNvBlockLengthString = NULL_PTR
+    NvMBlockCipheringRef = 
+    NvMBlockEcucPartitionRef = 
+    NvMRbRamInitAddSavedZoneNameRef = 
+  END unused parameters:
+
+  callbacks from container:
+    NvMInitBlockCallback = UNDEFINED
+    NvMSingleBlockCallback = UNDEFINED
+  END callbacks from container
+
+  block consists of following splits:
+  block has a total of 0 splits
+  []
+  END block splits
+
+  NvMRbBlockPersistentId = -1
+  NvMBlock.java:NvMBlock:idxSavedZone: 0
+  NvM_ConfigId length = 2
+  NvM_ConfigId encrypted = 0
+  NvM_ConfigId signature = 0
+  NvM_ConfigId IV = 0
+  NvM_ConfigId header = 0
+block NvM_MultiBlock:
+  NvMBlockCrcType = NVM_CRC16
+  NvMBlockJobPriority = 1
+  NvMBlockManagementType = NVM_BLOCK_NATIVE
+  NvMBlockUseAutoValidation = false
+  NvMBlockUseCRCCompMechanism = false
+  NvMBlockUseCompression = false
+  NvMBlockUseCrc = true
+  NvMBlockUsePort = false
+  NvMBlockUseSyncMechanism = false
+  NvMBlockWriteProt = false
+  NvMCalcRamBlockCrc = false
+  NvMMaxNumOfReadRetries = 0
+  NvMMaxNumOfWriteRetries = 0
+  NvMNvBlockLength = 1
+  NvMNvBlockNum = 1
+  NvMNvramDeviceId = 0
+  NvMRamBlockDataAddress = NULL_PTR
+  NvMRbBackupBlock = false
+  NvMRbFirstReadDataMigration = false
+  NvMRbInitBlockAtLayoutChange = false
+  NvMRbNoFallback = false
+  NvMRbRamBlockDataAddressString = NULL_PTR
+  NvMRbRamInitUnconditional = false
+  NvMRbResistantToLayoutRemoval = false
+  NvMRbSelectBlockForFirstInitAll = false
+  NvMRbSingleBlockStartCallback = NULL_PTR
+  NvMRbWriteCounter = false
+  NvMReadRamBlockFromNvCallback = NULL_PTR
+  NvMResistantToChangedSw = false
+  NvMRomBlockDataAddress = NULL_PTR
+  NvMRomBlockNum = 0
+  NvMSelectBlockForReadAll = false
+  NvMSelectBlockForWriteAll = false
+  NvMStaticBlockIDCheck = false
+  NvMWriteBlockOnce = false
+  NvMWriteRamBlockToNvCallback = NULL_PTR
+  NvMWriteVerification = false
+  NvMWriteVerificationDataSize = 0
+  unused parameters:
+    NvMBlockHeaderInclude = NULL_PTR
+    NvMNvBlockBaseNumber = 0
+    NvMRbBlockPersistentId = 0
+    NvMRbBlockVersion = 0
+    NvMRbNvBlockLengthString = NULL_PTR
+    NvMBlockCipheringRef = 
+    NvMBlockEcucPartitionRef = 
+    NvMRbRamInitAddSavedZoneNameRef = 
+  END unused parameters:
+
+  callbacks from container:
+    NvMInitBlockCallback = UNDEFINED
+    NvMSingleBlockCallback = UNDEFINED
+  END callbacks from container
+
+  block consists of following splits:
+  block has a total of 0 splits
+  []
+  END block splits
+
+  NvMRbBlockPersistentId = -1
+  NvMBlock.java:NvMBlock:idxSavedZone: 0
+  NvM_MultiBlock length = 1
+  NvM_MultiBlock encrypted = 0
+  NvM_MultiBlock signature = 0
+  NvM_MultiBlock IV = 0
+  NvM_MultiBlock header = 0
+block NvM_NativeBlock_2:
+  NvMBlockCrcType = NVM_CRC32
+  NvMBlockJobPriority = 1
+  NvMBlockManagementType = NVM_BLOCK_NATIVE
+  NvMBlockUseAutoValidation = false
+  NvMBlockUseCRCCompMechanism = false
+  NvMBlockUseCompression = false
+  NvMBlockUseCrc = false
+  NvMBlockUsePort = true
+  NvMBlockUseSyncMechanism = false
+  NvMBlockWriteProt = false
+  NvMCalcRamBlockCrc = false
+  NvMMaxNumOfReadRetries = 0
+  NvMMaxNumOfWriteRetries = 0
+  NvMNvBlockLength = 0
+  NvMNvBlockNum = 1
+  NvMNvramDeviceId = 0
+  NvMRamBlockDataAddress = Rte_CPim_MyReceivingSWC_PIM_01
+  NvMRbBackupBlock = false
+  NvMRbFirstReadDataMigration = false
+  NvMRbInitBlockAtLayoutChange = false
+  NvMRbNoFallback = false
+  NvMRbRamBlockDataAddressString = NULL_PTR
+  NvMRbRamInitUnconditional = false
+  NvMRbResistantToLayoutRemoval = false
+  NvMRbSelectBlockForFirstInitAll = false
+  NvMRbSingleBlockStartCallback = NULL_PTR
+  NvMRbWriteCounter = false
+  NvMReadRamBlockFromNvCallback = NULL_PTR
+  NvMResistantToChangedSw = false
+  NvMRomBlockDataAddress = NULL_PTR
+  NvMRomBlockNum = 0
+  NvMSelectBlockForReadAll = true
+  NvMSelectBlockForWriteAll = true
+  NvMStaticBlockIDCheck = false
+  NvMWriteBlockOnce = false
+  NvMWriteRamBlockToNvCallback = NULL_PTR
+  NvMWriteVerification = false
+  NvMWriteVerificationDataSize = 0
+  unused parameters:
+    NvMBlockHeaderInclude = NULL_PTR
+    NvMNvBlockBaseNumber = 0
+    NvMRbBlockPersistentId = 0
+    NvMRbBlockVersion = 0
+    NvMRbNvBlockLengthString = NULL_PTR
+    NvMBlockCipheringRef = 
+    NvMBlockEcucPartitionRef = 
+    NvMRbRamInitAddSavedZoneNameRef = 
+  END unused parameters:
+
+  callbacks from container:
+    NvMInitBlockCallback = UNDEFINED
+    NvMSingleBlockCallback = UNDEFINED
+  END callbacks from container
+
+  block consists of following splits:
+  block has a total of 0 splits
+  []
+  END block splits
+
+  NvMRbBlockPersistentId = 42699
+  NvMBlock.java:NvMBlock:idxSavedZone: 0
+  NvM_NativeBlock_2 length = 0
+  NvM_NativeBlock_2 encrypted = 0
+  NvM_NativeBlock_2 signature = 0
+  NvM_NativeBlock_2 IV = 0
+  NvM_NativeBlock_2 header = 0
+block NvM_NativeBlock_3:
+  NvMBlockCrcType = NVM_CRC32
+  NvMBlockJobPriority = 1
+  NvMBlockManagementType = NVM_BLOCK_NATIVE
+  NvMBlockUseAutoValidation = false
+  NvMBlockUseCRCCompMechanism = false
+  NvMBlockUseCompression = false
+  NvMBlockUseCrc = false
+  NvMBlockUsePort = true
+  NvMBlockUseSyncMechanism = false
+  NvMBlockWriteProt = false
+  NvMCalcRamBlockCrc = false
+  NvMMaxNumOfReadRetries = 0
+  NvMMaxNumOfWriteRetries = 0
+  NvMNvBlockLength = 0
+  NvMNvBlockNum = 1
+  NvMNvramDeviceId = 0
+  NvMRamBlockDataAddress = Rte_CPim_MyReceivingSWC_PIM_02
+  NvMRbBackupBlock = false
+  NvMRbFirstReadDataMigration = false
+  NvMRbInitBlockAtLayoutChange = false
+  NvMRbNoFallback = false
+  NvMRbRamBlockDataAddressString = NULL_PTR
+  NvMRbRamInitUnconditional = false
+  NvMRbResistantToLayoutRemoval = false
+  NvMRbSelectBlockForFirstInitAll = false
+  NvMRbSingleBlockStartCallback = NULL_PTR
+  NvMRbWriteCounter = false
+  NvMReadRamBlockFromNvCallback = NULL_PTR
+  NvMResistantToChangedSw = false
+  NvMRomBlockDataAddress = NULL_PTR
+  NvMRomBlockNum = 0
+  NvMSelectBlockForReadAll = true
+  NvMSelectBlockForWriteAll = true
+  NvMStaticBlockIDCheck = false
+  NvMWriteBlockOnce = false
+  NvMWriteRamBlockToNvCallback = NULL_PTR
+  NvMWriteVerification = false
+  NvMWriteVerificationDataSize = 0
+  unused parameters:
+    NvMBlockHeaderInclude = NULL_PTR
+    NvMNvBlockBaseNumber = 0
+    NvMRbBlockPersistentId = 0
+    NvMRbBlockVersion = 0
+    NvMRbNvBlockLengthString = NULL_PTR
+    NvMBlockCipheringRef = 
+    NvMBlockEcucPartitionRef = 
+    NvMRbRamInitAddSavedZoneNameRef = 
+  END unused parameters:
+
+  callbacks from container:
+    NvMInitBlockCallback = UNDEFINED
+    NvMSingleBlockCallback = UNDEFINED
+  END callbacks from container
+
+  block consists of following splits:
+  block has a total of 0 splits
+  []
+  END block splits
+
+  NvMRbBlockPersistentId = 46914
+  NvMBlock.java:NvMBlock:idxSavedZone: 0
+  NvM_NativeBlock_3 length = 0
+  NvM_NativeBlock_3 encrypted = 0
+  NvM_NativeBlock_3 signature = 0
+  NvM_NativeBlock_3 IV = 0
+  NvM_NativeBlock_3 header = 0
+common configuration:
+  NvMApiConfigClass = NVM_API_CONFIG_CLASS_3
+  NvMBswMMultiBlockJobStatusInformation = true
+  NvMCompiledConfigId = 2
+  NvMCrcNumOfBytes = 1
+  NvMCsmRetryCounter = 0
+  NvMDevErrorDetect = false
+  NvMDrvModeSwitch = false
+  NvMDynamicConfiguration = false
+  NvMJobPrioritization = false
+  NvMMainFunctionPeriod = 0.001
+  NvMMultiBlockCallback = NULL_PTR
+  NvMPollingMode = true
+  NvMRbAuxInterface = false
+  NvMRbBlockHeader = 0
+  NvMRbCallbackSignatureAR45 = false
+  NvMRbCommonCalcRamBlockCrc = false
+  NvMRbCommonWriteCounter = false
+  NvMRbDynConfigLoadDefaultsForNonResistant = false
+  NvMRbErrorInfoDetail = false
+  NvMRbExplcitSyncReadWithConst = false
+  NvMRbGenArxmlVersion = NVM_GEN_ARXML_VERSION_402
+  NvMRbInitAtLayoutChange = false
+  NvMRbInitBufferBeforeSyncWrite = false
+  NvMRbMainFunctionScheduling = NVM_RB_MAINFUNC_SCHEDULING_RTE_TIMED
+  NvMRbNoInitCallbackRomBlockConfigured = false
+  NvMRbNoSingleBlockBeforeReadAll = false
+  NvMRbNvCrcEnable = false
+  NvMRbRamInitCheck = NVM_RB_RAM_INIT_CHECK_NONE
+  NvMRbRandomNrLength = 16
+  NvMRbRemoveNonResistantBlocks = false
+  NvMRbReqMonitor = NVM_RB_REQ_MON_DISABLED
+  NvMRbRuntimeRamBlockConfiguration = false
+  NvMRbRuntimeRamBufferAddressEnd = NULL_PTR
+  NvMRbRuntimeRamBufferAddressStart = NULL_PTR
+  NvMRbSetWriteAllTriggerApi = false
+  NvMRbSwcdToEcucValuesEnable = false
+  NvMRepeatMirrorOperations = 0
+  NvMSetRamBlockStatusApi = true
+  NvMSizeImmediateJobQueue = 1
+  NvMSizeStandardJobQueue = 1
+  NvMVersionInfoApi = false
+  unused parameters:
+    NvMBufferAlignmentValue = 0
+    NvMDatasetSelectionBits = 0
+    NvMRbMultiBlockStartCallback = NULL_PTR
+    NvMRbObserverCallback = NULL_PTR
+    NvMRbReqMonDevId = 0
+    NvMEcucPartitionRef = 
+    NvMMasterEcucPartitionRef = 
+    NvMRbCsmJobRandomNrRef = 
+  END unused parameters:
+
+  START memory devices:
+  END memory devices:
+block ECUM_CFG_NVM_BLOCK:
+  NvMBlockCrcType = NVM_CRC16
+  NvMBlockHeaderInclude = EcuM
+  NvMBlockJobPriority = 1
+  NvMBlockManagementType = NVM_BLOCK_NATIVE
+  NvMBlockUseAutoValidation = false
+  NvMBlockUseCRCCompMechanism = false
+  NvMBlockUseCompression = false
+  NvMBlockUseCrc = true
+  NvMBlockUsePort = false
+  NvMBlockUseSyncMechanism = false
+  NvMBlockWriteProt = false
+  NvMCalcRamBlockCrc = false
+  NvMMaxNumOfReadRetries = 0
+  NvMMaxNumOfWriteRetries = 0
+  NvMNvBlockLength = 4
+  NvMNvBlockNum = 1
+  NvMNvramDeviceId = 0
+  NvMRamBlockDataAddress = EcuM_Rb_dataShutdownInfo_st
+  NvMRbBackupBlock = false
+  NvMRbFirstReadDataMigration = false
+  NvMRbInitBlockAtLayoutChange = false
+  NvMRbNoFallback = false
+  NvMRbRamBlockDataAddressString = NULL_PTR
+  NvMRbRamInitUnconditional = false
+  NvMRbResistantToLayoutRemoval = false
+  NvMRbSelectBlockForFirstInitAll = false
+  NvMRbSingleBlockStartCallback = NULL_PTR
+  NvMRbWriteCounter = false
+  NvMReadRamBlockFromNvCallback = NULL_PTR
+  NvMResistantToChangedSw = false
+  NvMRomBlockDataAddress = NULL_PTR
+  NvMRomBlockNum = 0
+  NvMSelectBlockForReadAll = true
+  NvMSelectBlockForWriteAll = true
+  NvMStaticBlockIDCheck = false
+  NvMWriteBlockOnce = false
+  NvMWriteRamBlockToNvCallback = NULL_PTR
+  NvMWriteVerification = false
+  NvMWriteVerificationDataSize = 0
+  unused parameters:
+    NvMNvBlockBaseNumber = 0
+    NvMRbBlockPersistentId = 0
+    NvMRbBlockVersion = 0
+    NvMRbNvBlockLengthString = NULL_PTR
+    NvMBlockCipheringRef = 
+    NvMBlockEcucPartitionRef = 
+    NvMRbRamInitAddSavedZoneNameRef = 
+  END unused parameters:
+
+  callbacks from container:
+    NvMSingleBlockCallback = EcuM_Rb_NvMSingleBlockCallbackFunction
+    NvMInitBlockCallback = UNDEFINED
+  END callbacks from container
+
+  block consists of following splits:
+  block has a total of 0 splits
+  []
+  END block splits
+
+  NvMRbBlockPersistentId = 62199
+  NvMBlock.java:NvMBlock:idxSavedZone: 0
+  ECUM_CFG_NVM_BLOCK length = 4
+  ECUM_CFG_NVM_BLOCK encrypted = 0
+  ECUM_CFG_NVM_BLOCK signature = 0
+  ECUM_CFG_NVM_BLOCK IV = 0
+  ECUM_CFG_NVM_BLOCK header = 0
+block NvM_ConfigId:
+  NvMBlockCrcType = NVM_CRC16
+  NvMBlockJobPriority = 1
+  NvMBlockManagementType = NVM_BLOCK_NATIVE
+  NvMBlockUseAutoValidation = false
+  NvMBlockUseCRCCompMechanism = false
+  NvMBlockUseCompression = false
+  NvMBlockUseCrc = true
+  NvMBlockUsePort = false
+  NvMBlockUseSyncMechanism = false
+  NvMBlockWriteProt = false
+  NvMCalcRamBlockCrc = false
+  NvMMaxNumOfReadRetries = 0
+  NvMMaxNumOfWriteRetries = 0
+  NvMNvBlockLength = 2
+  NvMNvBlockNum = 1
+  NvMNvramDeviceId = 0
+  NvMRamBlockDataAddress = NvM_Prv_idConfigStored_u16
+  NvMRbBackupBlock = false
+  NvMRbFirstReadDataMigration = false
+  NvMRbInitBlockAtLayoutChange = false
+  NvMRbNoFallback = false
+  NvMRbRamBlockDataAddressString = NULL_PTR
+  NvMRbRamInitUnconditional = false
+  NvMRbResistantToLayoutRemoval = false
+  NvMRbSelectBlockForFirstInitAll = false
+  NvMRbSingleBlockStartCallback = NULL_PTR
+  NvMRbWriteCounter = false
+  NvMReadRamBlockFromNvCallback = NULL_PTR
+  NvMResistantToChangedSw = false
+  NvMRomBlockDataAddress = NULL_PTR
+  NvMRomBlockNum = 0
+  NvMSelectBlockForReadAll = true
+  NvMSelectBlockForWriteAll = true
+  NvMStaticBlockIDCheck = false
+  NvMWriteBlockOnce = false
+  NvMWriteRamBlockToNvCallback = NULL_PTR
+  NvMWriteVerification = false
+  NvMWriteVerificationDataSize = 0
+  unused parameters:
+    NvMBlockHeaderInclude = NULL_PTR
+    NvMNvBlockBaseNumber = 0
+    NvMRbBlockPersistentId = 0
+    NvMRbBlockVersion = 0
+    NvMRbNvBlockLengthString = NULL_PTR
+    NvMBlockCipheringRef = 
+    NvMBlockEcucPartitionRef = 
+    NvMRbRamInitAddSavedZoneNameRef = 
+  END unused parameters:
+
+  callbacks from container:
+    NvMInitBlockCallback = UNDEFINED
+    NvMSingleBlockCallback = UNDEFINED
+  END callbacks from container
+
+  block consists of following splits:
+  block has a total of 0 splits
+  []
+  END block splits
+
+  NvMRbBlockPersistentId = -1
+  NvMBlock.java:NvMBlock:idxSavedZone: 0
+  NvM_ConfigId length = 2
+  NvM_ConfigId encrypted = 0
+  NvM_ConfigId signature = 0
+  NvM_ConfigId IV = 0
+  NvM_ConfigId header = 0
+block NvM_MultiBlock:
+  NvMBlockCrcType = NVM_CRC16
+  NvMBlockJobPriority = 1
+  NvMBlockManagementType = NVM_BLOCK_NATIVE
+  NvMBlockUseAutoValidation = false
+  NvMBlockUseCRCCompMechanism = false
+  NvMBlockUseCompression = false
+  NvMBlockUseCrc = true
+  NvMBlockUsePort = false
+  NvMBlockUseSyncMechanism = false
+  NvMBlockWriteProt = false
+  NvMCalcRamBlockCrc = false
+  NvMMaxNumOfReadRetries = 0
+  NvMMaxNumOfWriteRetries = 0
+  NvMNvBlockLength = 1
+  NvMNvBlockNum = 1
+  NvMNvramDeviceId = 0
+  NvMRamBlockDataAddress = NULL_PTR
+  NvMRbBackupBlock = false
+  NvMRbFirstReadDataMigration = false
+  NvMRbInitBlockAtLayoutChange = false
+  NvMRbNoFallback = false
+  NvMRbRamBlockDataAddressString = NULL_PTR
+  NvMRbRamInitUnconditional = false
+  NvMRbResistantToLayoutRemoval = false
+  NvMRbSelectBlockForFirstInitAll = false
+  NvMRbSingleBlockStartCallback = NULL_PTR
+  NvMRbWriteCounter = false
+  NvMReadRamBlockFromNvCallback = NULL_PTR
+  NvMResistantToChangedSw = false
+  NvMRomBlockDataAddress = NULL_PTR
+  NvMRomBlockNum = 0
+  NvMSelectBlockForReadAll = false
+  NvMSelectBlockForWriteAll = false
+  NvMStaticBlockIDCheck = false
+  NvMWriteBlockOnce = false
+  NvMWriteRamBlockToNvCallback = NULL_PTR
+  NvMWriteVerification = false
+  NvMWriteVerificationDataSize = 0
+  unused parameters:
+    NvMBlockHeaderInclude = NULL_PTR
+    NvMNvBlockBaseNumber = 0
+    NvMRbBlockPersistentId = 0
+    NvMRbBlockVersion = 0
+    NvMRbNvBlockLengthString = NULL_PTR
+    NvMBlockCipheringRef = 
+    NvMBlockEcucPartitionRef = 
+    NvMRbRamInitAddSavedZoneNameRef = 
+  END unused parameters:
+
+  callbacks from container:
+    NvMInitBlockCallback = UNDEFINED
+    NvMSingleBlockCallback = UNDEFINED
+  END callbacks from container
+
+  block consists of following splits:
+  block has a total of 0 splits
+  []
+  END block splits
+
+  NvMRbBlockPersistentId = -1
+  NvMBlock.java:NvMBlock:idxSavedZone: 0
+  NvM_MultiBlock length = 1
+  NvM_MultiBlock encrypted = 0
+  NvM_MultiBlock signature = 0
+  NvM_MultiBlock IV = 0
+  NvM_MultiBlock header = 0
+block NvM_NativeBlock_2:
+  NvMBlockCrcType = NVM_CRC32
+  NvMBlockJobPriority = 1
+  NvMBlockManagementType = NVM_BLOCK_NATIVE
+  NvMBlockUseAutoValidation = false
+  NvMBlockUseCRCCompMechanism = false
+  NvMBlockUseCompression = false
+  NvMBlockUseCrc = false
+  NvMBlockUsePort = true
+  NvMBlockUseSyncMechanism = false
+  NvMBlockWriteProt = false
+  NvMCalcRamBlockCrc = false
+  NvMMaxNumOfReadRetries = 0
+  NvMMaxNumOfWriteRetries = 0
+  NvMNvBlockLength = 2
+  NvMNvBlockNum = 1
+  NvMNvramDeviceId = 0
+  NvMRamBlockDataAddress = Rte_CPim_MyReceivingSWC_PIM_01
+  NvMRbBackupBlock = false
+  NvMRbFirstReadDataMigration = false
+  NvMRbInitBlockAtLayoutChange = false
+  NvMRbNoFallback = false
+  NvMRbRamBlockDataAddressString = NULL_PTR
+  NvMRbRamInitUnconditional = false
+  NvMRbResistantToLayoutRemoval = false
+  NvMRbSelectBlockForFirstInitAll = false
+  NvMRbSingleBlockStartCallback = NULL_PTR
+  NvMRbWriteCounter = false
+  NvMReadRamBlockFromNvCallback = NULL_PTR
+  NvMResistantToChangedSw = false
+  NvMRomBlockDataAddress = NULL_PTR
+  NvMRomBlockNum = 0
+  NvMSelectBlockForReadAll = true
+  NvMSelectBlockForWriteAll = true
+  NvMStaticBlockIDCheck = false
+  NvMWriteBlockOnce = false
+  NvMWriteRamBlockToNvCallback = NULL_PTR
+  NvMWriteVerification = false
+  NvMWriteVerificationDataSize = 0
+  unused parameters:
+    NvMBlockHeaderInclude = NULL_PTR
+    NvMNvBlockBaseNumber = 0
+    NvMRbBlockPersistentId = 0
+    NvMRbBlockVersion = 0
+    NvMRbNvBlockLengthString = NULL_PTR
+    NvMBlockCipheringRef = 
+    NvMBlockEcucPartitionRef = 
+    NvMRbRamInitAddSavedZoneNameRef = 
+  END unused parameters:
+
+  callbacks from container:
+    NvMInitBlockCallback = UNDEFINED
+    NvMSingleBlockCallback = UNDEFINED
+  END callbacks from container
+
+  block consists of following splits:
+  block has a total of 0 splits
+  []
+  END block splits
+
+  NvMRbBlockPersistentId = 42697
+  NvMBlock.java:NvMBlock:idxSavedZone: 0
+  NvM_NativeBlock_2 length = 2
+  NvM_NativeBlock_2 encrypted = 0
+  NvM_NativeBlock_2 signature = 0
+  NvM_NativeBlock_2 IV = 0
+  NvM_NativeBlock_2 header = 0
+block NvM_NativeBlock_3:
+  NvMBlockCrcType = NVM_CRC32
+  NvMBlockJobPriority = 1
+  NvMBlockManagementType = NVM_BLOCK_NATIVE
+  NvMBlockUseAutoValidation = false
+  NvMBlockUseCRCCompMechanism = false
+  NvMBlockUseCompression = false
+  NvMBlockUseCrc = false
+  NvMBlockUsePort = true
+  NvMBlockUseSyncMechanism = false
+  NvMBlockWriteProt = false
+  NvMCalcRamBlockCrc = false
+  NvMMaxNumOfReadRetries = 0
+  NvMMaxNumOfWriteRetries = 0
+  NvMNvBlockLength = 0
+  NvMNvBlockNum = 1
+  NvMNvramDeviceId = 0
+  NvMRamBlockDataAddress = Rte_CPim_MyReceivingSWC_PIM_02
+  NvMRbBackupBlock = false
+  NvMRbFirstReadDataMigration = false
+  NvMRbInitBlockAtLayoutChange = false
+  NvMRbNoFallback = false
+  NvMRbRamBlockDataAddressString = NULL_PTR
+  NvMRbRamInitUnconditional = false
+  NvMRbResistantToLayoutRemoval = false
+  NvMRbSelectBlockForFirstInitAll = false
+  NvMRbSingleBlockStartCallback = NULL_PTR
+  NvMRbWriteCounter = false
+  NvMReadRamBlockFromNvCallback = NULL_PTR
+  NvMResistantToChangedSw = false
+  NvMRomBlockDataAddress = NULL_PTR
+  NvMRomBlockNum = 0
+  NvMSelectBlockForReadAll = true
+  NvMSelectBlockForWriteAll = true
+  NvMStaticBlockIDCheck = false
+  NvMWriteBlockOnce = false
+  NvMWriteRamBlockToNvCallback = NULL_PTR
+  NvMWriteVerification = false
+  NvMWriteVerificationDataSize = 0
+  unused parameters:
+    NvMBlockHeaderInclude = NULL_PTR
+    NvMNvBlockBaseNumber = 0
+    NvMRbBlockPersistentId = 0
+    NvMRbBlockVersion = 0
+    NvMRbNvBlockLengthString = NULL_PTR
+    NvMBlockCipheringRef = 
+    NvMBlockEcucPartitionRef = 
+    NvMRbRamInitAddSavedZoneNameRef = 
+  END unused parameters:
+
+  callbacks from container:
+    NvMInitBlockCallback = UNDEFINED
+    NvMSingleBlockCallback = UNDEFINED
+  END callbacks from container
+
+  block consists of following splits:
+  block has a total of 0 splits
+  []
+  END block splits
+
+  NvMRbBlockPersistentId = 46914
+  NvMBlock.java:NvMBlock:idxSavedZone: 0
+  NvM_NativeBlock_3 length = 0
+  NvM_NativeBlock_3 encrypted = 0
+  NvM_NativeBlock_3 signature = 0
+  NvM_NativeBlock_3 IV = 0
+  NvM_NativeBlock_3 header = 0
+common configuration:
+  NvMApiConfigClass = NVM_API_CONFIG_CLASS_3
+  NvMBswMMultiBlockJobStatusInformation = true
+  NvMCompiledConfigId = 2
+  NvMCrcNumOfBytes = 1
+  NvMCsmRetryCounter = 0
+  NvMDevErrorDetect = false
+  NvMDrvModeSwitch = false
+  NvMDynamicConfiguration = false
+  NvMJobPrioritization = false
+  NvMMainFunctionPeriod = 0.001
+  NvMMultiBlockCallback = NULL_PTR
+  NvMPollingMode = true
+  NvMRbAuxInterface = false
+  NvMRbBlockHeader = 0
+  NvMRbCallbackSignatureAR45 = false
+  NvMRbCommonCalcRamBlockCrc = false
+  NvMRbCommonWriteCounter = false
+  NvMRbDynConfigLoadDefaultsForNonResistant = false
+  NvMRbErrorInfoDetail = false
+  NvMRbExplcitSyncReadWithConst = false
+  NvMRbGenArxmlVersion = NVM_GEN_ARXML_VERSION_402
+  NvMRbInitAtLayoutChange = false
+  NvMRbInitBufferBeforeSyncWrite = false
+  NvMRbMainFunctionScheduling = NVM_RB_MAINFUNC_SCHEDULING_RTE_TIMED
+  NvMRbNoInitCallbackRomBlockConfigured = false
+  NvMRbNoSingleBlockBeforeReadAll = false
+  NvMRbNvCrcEnable = false
+  NvMRbRamInitCheck = NVM_RB_RAM_INIT_CHECK_NONE
+  NvMRbRandomNrLength = 16
+  NvMRbRemoveNonResistantBlocks = false
+  NvMRbReqMonitor = NVM_RB_REQ_MON_DISABLED
+  NvMRbRuntimeRamBlockConfiguration = false
+  NvMRbRuntimeRamBufferAddressEnd = NULL_PTR
+  NvMRbRuntimeRamBufferAddressStart = NULL_PTR
+  NvMRbSetWriteAllTriggerApi = false
+  NvMRbSwcdToEcucValuesEnable = false
+  NvMRepeatMirrorOperations = 0
+  NvMSetRamBlockStatusApi = true
+  NvMSizeImmediateJobQueue = 1
+  NvMSizeStandardJobQueue = 1
+  NvMVersionInfoApi = false
+  unused parameters:
+    NvMBufferAlignmentValue = 0
+    NvMDatasetSelectionBits = 0
+    NvMRbMultiBlockStartCallback = NULL_PTR
+    NvMRbObserverCallback = NULL_PTR
+    NvMRbReqMonDevId = 0
+    NvMEcucPartitionRef = 
+    NvMMasterEcucPartitionRef = 
+    NvMRbCsmJobRandomNrRef = 
+  END unused parameters:
+
+  START memory devices:
+  END memory devices:
+block ECUM_CFG_NVM_BLOCK:
+  NvMBlockCrcType = NVM_CRC16
+  NvMBlockHeaderInclude = EcuM
+  NvMBlockJobPriority = 1
+  NvMBlockManagementType = NVM_BLOCK_NATIVE
+  NvMBlockUseAutoValidation = false
+  NvMBlockUseCRCCompMechanism = false
+  NvMBlockUseCompression = false
+  NvMBlockUseCrc = true
+  NvMBlockUsePort = false
+  NvMBlockUseSyncMechanism = false
+  NvMBlockWriteProt = false
+  NvMCalcRamBlockCrc = false
+  NvMMaxNumOfReadRetries = 0
+  NvMMaxNumOfWriteRetries = 0
+  NvMNvBlockLength = 4
+  NvMNvBlockNum = 1
+  NvMNvramDeviceId = 0
+  NvMRamBlockDataAddress = EcuM_Rb_dataShutdownInfo_st
+  NvMRbBackupBlock = false
+  NvMRbFirstReadDataMigration = false
+  NvMRbInitBlockAtLayoutChange = false
+  NvMRbNoFallback = false
+  NvMRbRamBlockDataAddressString = NULL_PTR
+  NvMRbRamInitUnconditional = false
+  NvMRbResistantToLayoutRemoval = false
+  NvMRbSelectBlockForFirstInitAll = false
+  NvMRbSingleBlockStartCallback = NULL_PTR
+  NvMRbWriteCounter = false
+  NvMReadRamBlockFromNvCallback = NULL_PTR
+  NvMResistantToChangedSw = false
+  NvMRomBlockDataAddress = NULL_PTR
+  NvMRomBlockNum = 0
+  NvMSelectBlockForReadAll = true
+  NvMSelectBlockForWriteAll = true
+  NvMStaticBlockIDCheck = false
+  NvMWriteBlockOnce = false
+  NvMWriteRamBlockToNvCallback = NULL_PTR
+  NvMWriteVerification = false
+  NvMWriteVerificationDataSize = 0
+  unused parameters:
+    NvMNvBlockBaseNumber = 0
+    NvMRbBlockPersistentId = 0
+    NvMRbBlockVersion = 0
+    NvMRbNvBlockLengthString = NULL_PTR
+    NvMBlockCipheringRef = 
+    NvMBlockEcucPartitionRef = 
+    NvMRbRamInitAddSavedZoneNameRef = 
+  END unused parameters:
+
+  callbacks from container:
+    NvMSingleBlockCallback = EcuM_Rb_NvMSingleBlockCallbackFunction
+    NvMInitBlockCallback = UNDEFINED
+  END callbacks from container
+
+  block consists of following splits:
+  block has a total of 0 splits
+  []
+  END block splits
+
+  NvMRbBlockPersistentId = 62199
+  NvMBlock.java:NvMBlock:idxSavedZone: 0
+  ECUM_CFG_NVM_BLOCK length = 4
+  ECUM_CFG_NVM_BLOCK encrypted = 0
+  ECUM_CFG_NVM_BLOCK signature = 0
+  ECUM_CFG_NVM_BLOCK IV = 0
+  ECUM_CFG_NVM_BLOCK header = 0
+block NvM_ConfigId:
+  NvMBlockCrcType = NVM_CRC16
+  NvMBlockJobPriority = 1
+  NvMBlockManagementType = NVM_BLOCK_NATIVE
+  NvMBlockUseAutoValidation = false
+  NvMBlockUseCRCCompMechanism = false
+  NvMBlockUseCompression = false
+  NvMBlockUseCrc = true
+  NvMBlockUsePort = false
+  NvMBlockUseSyncMechanism = false
+  NvMBlockWriteProt = false
+  NvMCalcRamBlockCrc = false
+  NvMMaxNumOfReadRetries = 0
+  NvMMaxNumOfWriteRetries = 0
+  NvMNvBlockLength = 2
+  NvMNvBlockNum = 1
+  NvMNvramDeviceId = 0
+  NvMRamBlockDataAddress = NvM_Prv_idConfigStored_u16
+  NvMRbBackupBlock = false
+  NvMRbFirstReadDataMigration = false
+  NvMRbInitBlockAtLayoutChange = false
+  NvMRbNoFallback = false
+  NvMRbRamBlockDataAddressString = NULL_PTR
+  NvMRbRamInitUnconditional = false
+  NvMRbResistantToLayoutRemoval = false
+  NvMRbSelectBlockForFirstInitAll = false
+  NvMRbSingleBlockStartCallback = NULL_PTR
+  NvMRbWriteCounter = false
+  NvMReadRamBlockFromNvCallback = NULL_PTR
+  NvMResistantToChangedSw = false
+  NvMRomBlockDataAddress = NULL_PTR
+  NvMRomBlockNum = 0
+  NvMSelectBlockForReadAll = true
+  NvMSelectBlockForWriteAll = true
+  NvMStaticBlockIDCheck = false
+  NvMWriteBlockOnce = false
+  NvMWriteRamBlockToNvCallback = NULL_PTR
+  NvMWriteVerification = false
+  NvMWriteVerificationDataSize = 0
+  unused parameters:
+    NvMBlockHeaderInclude = NULL_PTR
+    NvMNvBlockBaseNumber = 0
+    NvMRbBlockPersistentId = 0
+    NvMRbBlockVersion = 0
+    NvMRbNvBlockLengthString = NULL_PTR
+    NvMBlockCipheringRef = 
+    NvMBlockEcucPartitionRef = 
+    NvMRbRamInitAddSavedZoneNameRef = 
+  END unused parameters:
+
+  callbacks from container:
+    NvMInitBlockCallback = UNDEFINED
+    NvMSingleBlockCallback = UNDEFINED
+  END callbacks from container
+
+  block consists of following splits:
+  block has a total of 0 splits
+  []
+  END block splits
+
+  NvMRbBlockPersistentId = -1
+  NvMBlock.java:NvMBlock:idxSavedZone: 0
+  NvM_ConfigId length = 2
+  NvM_ConfigId encrypted = 0
+  NvM_ConfigId signature = 0
+  NvM_ConfigId IV = 0
+  NvM_ConfigId header = 0
+block NvM_MultiBlock:
+  NvMBlockCrcType = NVM_CRC16
+  NvMBlockJobPriority = 1
+  NvMBlockManagementType = NVM_BLOCK_NATIVE
+  NvMBlockUseAutoValidation = false
+  NvMBlockUseCRCCompMechanism = false
+  NvMBlockUseCompression = false
+  NvMBlockUseCrc = true
+  NvMBlockUsePort = false
+  NvMBlockUseSyncMechanism = false
+  NvMBlockWriteProt = false
+  NvMCalcRamBlockCrc = false
+  NvMMaxNumOfReadRetries = 0
+  NvMMaxNumOfWriteRetries = 0
+  NvMNvBlockLength = 1
+  NvMNvBlockNum = 1
+  NvMNvramDeviceId = 0
+  NvMRamBlockDataAddress = NULL_PTR
+  NvMRbBackupBlock = false
+  NvMRbFirstReadDataMigration = false
+  NvMRbInitBlockAtLayoutChange = false
+  NvMRbNoFallback = false
+  NvMRbRamBlockDataAddressString = NULL_PTR
+  NvMRbRamInitUnconditional = false
+  NvMRbResistantToLayoutRemoval = false
+  NvMRbSelectBlockForFirstInitAll = false
+  NvMRbSingleBlockStartCallback = NULL_PTR
+  NvMRbWriteCounter = false
+  NvMReadRamBlockFromNvCallback = NULL_PTR
+  NvMResistantToChangedSw = false
+  NvMRomBlockDataAddress = NULL_PTR
+  NvMRomBlockNum = 0
+  NvMSelectBlockForReadAll = false
+  NvMSelectBlockForWriteAll = false
+  NvMStaticBlockIDCheck = false
+  NvMWriteBlockOnce = false
+  NvMWriteRamBlockToNvCallback = NULL_PTR
+  NvMWriteVerification = false
+  NvMWriteVerificationDataSize = 0
+  unused parameters:
+    NvMBlockHeaderInclude = NULL_PTR
+    NvMNvBlockBaseNumber = 0
+    NvMRbBlockPersistentId = 0
+    NvMRbBlockVersion = 0
+    NvMRbNvBlockLengthString = NULL_PTR
+    NvMBlockCipheringRef = 
+    NvMBlockEcucPartitionRef = 
+    NvMRbRamInitAddSavedZoneNameRef = 
+  END unused parameters:
+
+  callbacks from container:
+    NvMInitBlockCallback = UNDEFINED
+    NvMSingleBlockCallback = UNDEFINED
+  END callbacks from container
+
+  block consists of following splits:
+  block has a total of 0 splits
+  []
+  END block splits
+
+  NvMRbBlockPersistentId = -1
+  NvMBlock.java:NvMBlock:idxSavedZone: 0
+  NvM_MultiBlock length = 1
+  NvM_MultiBlock encrypted = 0
+  NvM_MultiBlock signature = 0
+  NvM_MultiBlock IV = 0
+  NvM_MultiBlock header = 0
+block NvM_NativeBlock_2:
+  NvMBlockCrcType = NVM_CRC32
+  NvMBlockJobPriority = 1
+  NvMBlockManagementType = NVM_BLOCK_NATIVE
+  NvMBlockUseAutoValidation = false
+  NvMBlockUseCRCCompMechanism = false
+  NvMBlockUseCompression = false
+  NvMBlockUseCrc = false
+  NvMBlockUsePort = true
+  NvMBlockUseSyncMechanism = false
+  NvMBlockWriteProt = false
+  NvMCalcRamBlockCrc = false
+  NvMMaxNumOfReadRetries = 0
+  NvMMaxNumOfWriteRetries = 0
+  NvMNvBlockLength = 2
+  NvMNvBlockNum = 1
+  NvMNvramDeviceId = 0
+  NvMRamBlockDataAddress = Rte_CPim_MyReceivingSWC_PIM_01
+  NvMRbBackupBlock = false
+  NvMRbFirstReadDataMigration = false
+  NvMRbInitBlockAtLayoutChange = false
+  NvMRbNoFallback = false
+  NvMRbRamBlockDataAddressString = NULL_PTR
+  NvMRbRamInitUnconditional = false
+  NvMRbResistantToLayoutRemoval = false
+  NvMRbSelectBlockForFirstInitAll = false
+  NvMRbSingleBlockStartCallback = NULL_PTR
+  NvMRbWriteCounter = false
+  NvMReadRamBlockFromNvCallback = NULL_PTR
+  NvMResistantToChangedSw = false
+  NvMRomBlockDataAddress = NULL_PTR
+  NvMRomBlockNum = 0
+  NvMSelectBlockForReadAll = true
+  NvMSelectBlockForWriteAll = true
+  NvMStaticBlockIDCheck = false
+  NvMWriteBlockOnce = false
+  NvMWriteRamBlockToNvCallback = NULL_PTR
+  NvMWriteVerification = false
+  NvMWriteVerificationDataSize = 0
+  unused parameters:
+    NvMBlockHeaderInclude = NULL_PTR
+    NvMNvBlockBaseNumber = 0
+    NvMRbBlockPersistentId = 0
+    NvMRbBlockVersion = 0
+    NvMRbNvBlockLengthString = NULL_PTR
+    NvMBlockCipheringRef = 
+    NvMBlockEcucPartitionRef = 
+    NvMRbRamInitAddSavedZoneNameRef = 
+  END unused parameters:
+
+  callbacks from container:
+    NvMInitBlockCallback = UNDEFINED
+    NvMSingleBlockCallback = UNDEFINED
+  END callbacks from container
+
+  block consists of following splits:
+  block has a total of 0 splits
+  []
+  END block splits
+
+  NvMRbBlockPersistentId = 42697
+  NvMBlock.java:NvMBlock:idxSavedZone: 0
+  NvM_NativeBlock_2 length = 2
+  NvM_NativeBlock_2 encrypted = 0
+  NvM_NativeBlock_2 signature = 0
+  NvM_NativeBlock_2 IV = 0
+  NvM_NativeBlock_2 header = 0
+block NvM_NativeBlock_3:
+  NvMBlockCrcType = NVM_CRC32
+  NvMBlockJobPriority = 1
+  NvMBlockManagementType = NVM_BLOCK_NATIVE
+  NvMBlockUseAutoValidation = false
+  NvMBlockUseCRCCompMechanism = false
+  NvMBlockUseCompression = false
+  NvMBlockUseCrc = false
+  NvMBlockUsePort = true
+  NvMBlockUseSyncMechanism = false
+  NvMBlockWriteProt = false
+  NvMCalcRamBlockCrc = false
+  NvMMaxNumOfReadRetries = 0
+  NvMMaxNumOfWriteRetries = 0
+  NvMNvBlockLength = 2
+  NvMNvBlockNum = 1
+  NvMNvramDeviceId = 0
+  NvMRamBlockDataAddress = Rte_CPim_MyReceivingSWC_PIM_02
+  NvMRbBackupBlock = false
+  NvMRbFirstReadDataMigration = false
+  NvMRbInitBlockAtLayoutChange = false
+  NvMRbNoFallback = false
+  NvMRbRamBlockDataAddressString = NULL_PTR
+  NvMRbRamInitUnconditional = false
+  NvMRbResistantToLayoutRemoval = false
+  NvMRbSelectBlockForFirstInitAll = false
+  NvMRbSingleBlockStartCallback = NULL_PTR
+  NvMRbWriteCounter = false
+  NvMReadRamBlockFromNvCallback = NULL_PTR
+  NvMResistantToChangedSw = false
+  NvMRomBlockDataAddress = NULL_PTR
+  NvMRomBlockNum = 0
+  NvMSelectBlockForReadAll = true
+  NvMSelectBlockForWriteAll = true
+  NvMStaticBlockIDCheck = false
+  NvMWriteBlockOnce = false
+  NvMWriteRamBlockToNvCallback = NULL_PTR
+  NvMWriteVerification = false
+  NvMWriteVerificationDataSize = 0
+  unused parameters:
+    NvMBlockHeaderInclude = NULL_PTR
+    NvMNvBlockBaseNumber = 0
+    NvMRbBlockPersistentId = 0
+    NvMRbBlockVersion = 0
+    NvMRbNvBlockLengthString = NULL_PTR
+    NvMBlockCipheringRef = 
+    NvMBlockEcucPartitionRef = 
+    NvMRbRamInitAddSavedZoneNameRef = 
+  END unused parameters:
+
+  callbacks from container:
+    NvMInitBlockCallback = UNDEFINED
+    NvMSingleBlockCallback = UNDEFINED
+  END callbacks from container
+
+  block consists of following splits:
+  block has a total of 0 splits
+  []
+  END block splits
+
+  NvMRbBlockPersistentId = 46912
+  NvMBlock.java:NvMBlock:idxSavedZone: 0
+  NvM_NativeBlock_3 length = 2
+  NvM_NativeBlock_3 encrypted = 0
+  NvM_NativeBlock_3 signature = 0
+  NvM_NativeBlock_3 IV = 0
+  NvM_NativeBlock_3 header = 0
+common configuration:
+  NvMApiConfigClass = NVM_API_CONFIG_CLASS_3
+  NvMBswMMultiBlockJobStatusInformation = true
+  NvMCompiledConfigId = 2
+  NvMCrcNumOfBytes = 1
+  NvMCsmRetryCounter = 0
+  NvMDevErrorDetect = false
+  NvMDrvModeSwitch = false
+  NvMDynamicConfiguration = false
+  NvMJobPrioritization = false
+  NvMMainFunctionPeriod = 0.001
+  NvMMultiBlockCallback = NULL_PTR
+  NvMPollingMode = true
+  NvMRbAuxInterface = false
+  NvMRbBlockHeader = 0
+  NvMRbCallbackSignatureAR45 = false
+  NvMRbCommonCalcRamBlockCrc = false
+  NvMRbCommonWriteCounter = false
+  NvMRbDynConfigLoadDefaultsForNonResistant = false
+  NvMRbErrorInfoDetail = false
+  NvMRbExplcitSyncReadWithConst = false
+  NvMRbGenArxmlVersion = NVM_GEN_ARXML_VERSION_402
+  NvMRbInitAtLayoutChange = false
+  NvMRbInitBufferBeforeSyncWrite = false
+  NvMRbMainFunctionScheduling = NVM_RB_MAINFUNC_SCHEDULING_RTE_TIMED
+  NvMRbNoInitCallbackRomBlockConfigured = false
+  NvMRbNoSingleBlockBeforeReadAll = false
+  NvMRbNvCrcEnable = false
+  NvMRbRamInitCheck = NVM_RB_RAM_INIT_CHECK_NONE
+  NvMRbRandomNrLength = 16
+  NvMRbRemoveNonResistantBlocks = false
+  NvMRbReqMonitor = NVM_RB_REQ_MON_DISABLED
+  NvMRbRuntimeRamBlockConfiguration = false
+  NvMRbRuntimeRamBufferAddressEnd = NULL_PTR
+  NvMRbRuntimeRamBufferAddressStart = NULL_PTR
+  NvMRbSetWriteAllTriggerApi = false
+  NvMRbSwcdToEcucValuesEnable = false
+  NvMRepeatMirrorOperations = 0
+  NvMSetRamBlockStatusApi = true
+  NvMSizeImmediateJobQueue = 1
+  NvMSizeStandardJobQueue = 1
+  NvMVersionInfoApi = false
+  unused parameters:
+    NvMBufferAlignmentValue = 0
+    NvMDatasetSelectionBits = 0
+    NvMRbMultiBlockStartCallback = NULL_PTR
+    NvMRbObserverCallback = NULL_PTR
+    NvMRbReqMonDevId = 0
+    NvMEcucPartitionRef = 
+    NvMMasterEcucPartitionRef = 
+    NvMRbCsmJobRandomNrRef = 
+  END unused parameters:
+
+  START memory devices:
+  END memory devices:
+block ECUM_CFG_NVM_BLOCK:
+  NvMBlockCrcType = NVM_CRC16
+  NvMBlockHeaderInclude = EcuM
+  NvMBlockJobPriority = 1
+  NvMBlockManagementType = NVM_BLOCK_NATIVE
+  NvMBlockUseAutoValidation = false
+  NvMBlockUseCRCCompMechanism = false
+  NvMBlockUseCompression = false
+  NvMBlockUseCrc = true
+  NvMBlockUsePort = false
+  NvMBlockUseSyncMechanism = false
+  NvMBlockWriteProt = false
+  NvMCalcRamBlockCrc = false
+  NvMMaxNumOfReadRetries = 0
+  NvMMaxNumOfWriteRetries = 0
+  NvMNvBlockLength = 4
+  NvMNvBlockNum = 1
+  NvMNvramDeviceId = 0
+  NvMRamBlockDataAddress = EcuM_Rb_dataShutdownInfo_st
+  NvMRbBackupBlock = false
+  NvMRbFirstReadDataMigration = false
+  NvMRbInitBlockAtLayoutChange = false
+  NvMRbNoFallback = false
+  NvMRbRamBlockDataAddressString = NULL_PTR
+  NvMRbRamInitUnconditional = false
+  NvMRbResistantToLayoutRemoval = false
+  NvMRbSelectBlockForFirstInitAll = false
+  NvMRbSingleBlockStartCallback = NULL_PTR
+  NvMRbWriteCounter = false
+  NvMReadRamBlockFromNvCallback = NULL_PTR
+  NvMResistantToChangedSw = false
+  NvMRomBlockDataAddress = NULL_PTR
+  NvMRomBlockNum = 0
+  NvMSelectBlockForReadAll = true
+  NvMSelectBlockForWriteAll = true
+  NvMStaticBlockIDCheck = false
+  NvMWriteBlockOnce = false
+  NvMWriteRamBlockToNvCallback = NULL_PTR
+  NvMWriteVerification = false
+  NvMWriteVerificationDataSize = 0
+  unused parameters:
+    NvMNvBlockBaseNumber = 0
+    NvMRbBlockPersistentId = 0
+    NvMRbBlockVersion = 0
+    NvMRbNvBlockLengthString = NULL_PTR
+    NvMBlockCipheringRef = 
+    NvMBlockEcucPartitionRef = 
+    NvMRbRamInitAddSavedZoneNameRef = 
+  END unused parameters:
+
+  callbacks from container:
+    NvMSingleBlockCallback = EcuM_Rb_NvMSingleBlockCallbackFunction
+    NvMInitBlockCallback = UNDEFINED
+  END callbacks from container
+
+  block consists of following splits:
+  block has a total of 0 splits
+  []
+  END block splits
+
+  NvMRbBlockPersistentId = 62199
+  NvMBlock.java:NvMBlock:idxSavedZone: 0
+  ECUM_CFG_NVM_BLOCK length = 4
+  ECUM_CFG_NVM_BLOCK encrypted = 0
+  ECUM_CFG_NVM_BLOCK signature = 0
+  ECUM_CFG_NVM_BLOCK IV = 0
+  ECUM_CFG_NVM_BLOCK header = 0
+block NvM_ConfigId:
+  NvMBlockCrcType = NVM_CRC16
+  NvMBlockJobPriority = 1
+  NvMBlockManagementType = NVM_BLOCK_NATIVE
+  NvMBlockUseAutoValidation = false
+  NvMBlockUseCRCCompMechanism = false
+  NvMBlockUseCompression = false
+  NvMBlockUseCrc = true
+  NvMBlockUsePort = false
+  NvMBlockUseSyncMechanism = false
+  NvMBlockWriteProt = false
+  NvMCalcRamBlockCrc = false
+  NvMMaxNumOfReadRetries = 0
+  NvMMaxNumOfWriteRetries = 0
+  NvMNvBlockLength = 2
+  NvMNvBlockNum = 1
+  NvMNvramDeviceId = 0
+  NvMRamBlockDataAddress = NvM_Prv_idConfigStored_u16
+  NvMRbBackupBlock = false
+  NvMRbFirstReadDataMigration = false
+  NvMRbInitBlockAtLayoutChange = false
+  NvMRbNoFallback = false
+  NvMRbRamBlockDataAddressString = NULL_PTR
+  NvMRbRamInitUnconditional = false
+  NvMRbResistantToLayoutRemoval = false
+  NvMRbSelectBlockForFirstInitAll = false
+  NvMRbSingleBlockStartCallback = NULL_PTR
+  NvMRbWriteCounter = false
+  NvMReadRamBlockFromNvCallback = NULL_PTR
+  NvMResistantToChangedSw = false
+  NvMRomBlockDataAddress = NULL_PTR
+  NvMRomBlockNum = 0
+  NvMSelectBlockForReadAll = true
+  NvMSelectBlockForWriteAll = true
+  NvMStaticBlockIDCheck = false
+  NvMWriteBlockOnce = false
+  NvMWriteRamBlockToNvCallback = NULL_PTR
+  NvMWriteVerification = false
+  NvMWriteVerificationDataSize = 0
+  unused parameters:
+    NvMBlockHeaderInclude = NULL_PTR
+    NvMNvBlockBaseNumber = 0
+    NvMRbBlockPersistentId = 0
+    NvMRbBlockVersion = 0
+    NvMRbNvBlockLengthString = NULL_PTR
+    NvMBlockCipheringRef = 
+    NvMBlockEcucPartitionRef = 
+    NvMRbRamInitAddSavedZoneNameRef = 
+  END unused parameters:
+
+  callbacks from container:
+    NvMInitBlockCallback = UNDEFINED
+    NvMSingleBlockCallback = UNDEFINED
+  END callbacks from container
+
+  block consists of following splits:
+  block has a total of 0 splits
+  []
+  END block splits
+
+  NvMRbBlockPersistentId = -1
+  NvMBlock.java:NvMBlock:idxSavedZone: 0
+  NvM_ConfigId length = 2
+  NvM_ConfigId encrypted = 0
+  NvM_ConfigId signature = 0
+  NvM_ConfigId IV = 0
+  NvM_ConfigId header = 0
+block NvM_MultiBlock:
+  NvMBlockCrcType = NVM_CRC16
+  NvMBlockJobPriority = 1
+  NvMBlockManagementType = NVM_BLOCK_NATIVE
+  NvMBlockUseAutoValidation = false
+  NvMBlockUseCRCCompMechanism = false
+  NvMBlockUseCompression = false
+  NvMBlockUseCrc = true
+  NvMBlockUsePort = false
+  NvMBlockUseSyncMechanism = false
+  NvMBlockWriteProt = false
+  NvMCalcRamBlockCrc = false
+  NvMMaxNumOfReadRetries = 0
+  NvMMaxNumOfWriteRetries = 0
+  NvMNvBlockLength = 1
+  NvMNvBlockNum = 1
+  NvMNvramDeviceId = 0
+  NvMRamBlockDataAddress = NULL_PTR
+  NvMRbBackupBlock = false
+  NvMRbFirstReadDataMigration = false
+  NvMRbInitBlockAtLayoutChange = false
+  NvMRbNoFallback = false
+  NvMRbRamBlockDataAddressString = NULL_PTR
+  NvMRbRamInitUnconditional = false
+  NvMRbResistantToLayoutRemoval = false
+  NvMRbSelectBlockForFirstInitAll = false
+  NvMRbSingleBlockStartCallback = NULL_PTR
+  NvMRbWriteCounter = false
+  NvMReadRamBlockFromNvCallback = NULL_PTR
+  NvMResistantToChangedSw = false
+  NvMRomBlockDataAddress = NULL_PTR
+  NvMRomBlockNum = 0
+  NvMSelectBlockForReadAll = false
+  NvMSelectBlockForWriteAll = false
+  NvMStaticBlockIDCheck = false
+  NvMWriteBlockOnce = false
+  NvMWriteRamBlockToNvCallback = NULL_PTR
+  NvMWriteVerification = false
+  NvMWriteVerificationDataSize = 0
+  unused parameters:
+    NvMBlockHeaderInclude = NULL_PTR
+    NvMNvBlockBaseNumber = 0
+    NvMRbBlockPersistentId = 0
+    NvMRbBlockVersion = 0
+    NvMRbNvBlockLengthString = NULL_PTR
+    NvMBlockCipheringRef = 
+    NvMBlockEcucPartitionRef = 
+    NvMRbRamInitAddSavedZoneNameRef = 
+  END unused parameters:
+
+  callbacks from container:
+    NvMInitBlockCallback = UNDEFINED
+    NvMSingleBlockCallback = UNDEFINED
+  END callbacks from container
+
+  block consists of following splits:
+  block has a total of 0 splits
+  []
+  END block splits
+
+  NvMRbBlockPersistentId = -1
+  NvMBlock.java:NvMBlock:idxSavedZone: 0
+  NvM_MultiBlock length = 1
+  NvM_MultiBlock encrypted = 0
+  NvM_MultiBlock signature = 0
+  NvM_MultiBlock IV = 0
+  NvM_MultiBlock header = 0
+block NvM_NativeBlock_2:
+  NvMBlockCrcType = NVM_CRC32
+  NvMBlockJobPriority = 1
+  NvMBlockManagementType = NVM_BLOCK_NATIVE
+  NvMBlockUseAutoValidation = false
+  NvMBlockUseCRCCompMechanism = false
+  NvMBlockUseCompression = false
+  NvMBlockUseCrc = false
+  NvMBlockUsePort = true
+  NvMBlockUseSyncMechanism = false
+  NvMBlockWriteProt = false
+  NvMCalcRamBlockCrc = false
+  NvMMaxNumOfReadRetries = 0
+  NvMMaxNumOfWriteRetries = 0
+  NvMNvBlockLength = 2
+  NvMNvBlockNum = 1
+  NvMNvramDeviceId = 0
+  NvMRamBlockDataAddress = Rte_CPim_MyReceivingSWC_PIM_01
+  NvMRbBackupBlock = false
+  NvMRbFirstReadDataMigration = false
+  NvMRbInitBlockAtLayoutChange = false
+  NvMRbNoFallback = false
+  NvMRbRamBlockDataAddressString = NULL_PTR
+  NvMRbRamInitUnconditional = false
+  NvMRbResistantToLayoutRemoval = false
+  NvMRbSelectBlockForFirstInitAll = false
+  NvMRbSingleBlockStartCallback = NULL_PTR
+  NvMRbWriteCounter = false
+  NvMReadRamBlockFromNvCallback = NULL_PTR
+  NvMResistantToChangedSw = false
+  NvMRomBlockDataAddress = NULL_PTR
+  NvMRomBlockNum = 0
+  NvMSelectBlockForReadAll = true
+  NvMSelectBlockForWriteAll = true
+  NvMStaticBlockIDCheck = false
+  NvMWriteBlockOnce = false
+  NvMWriteRamBlockToNvCallback = NULL_PTR
+  NvMWriteVerification = false
+  NvMWriteVerificationDataSize = 0
+  unused parameters:
+    NvMBlockHeaderInclude = NULL_PTR
+    NvMNvBlockBaseNumber = 0
+    NvMRbBlockPersistentId = 0
+    NvMRbBlockVersion = 0
+    NvMRbNvBlockLengthString = NULL_PTR
+    NvMBlockCipheringRef = 
+    NvMBlockEcucPartitionRef = 
+    NvMRbRamInitAddSavedZoneNameRef = 
+  END unused parameters:
+
+  callbacks from container:
+    NvMInitBlockCallback = UNDEFINED
+    NvMSingleBlockCallback = UNDEFINED
+  END callbacks from container
+
+  block consists of following splits:
+  block has a total of 0 splits
+  []
+  END block splits
+
+  NvMRbBlockPersistentId = 42697
+  NvMBlock.java:NvMBlock:idxSavedZone: 0
+  NvM_NativeBlock_2 length = 2
+  NvM_NativeBlock_2 encrypted = 0
+  NvM_NativeBlock_2 signature = 0
+  NvM_NativeBlock_2 IV = 0
+  NvM_NativeBlock_2 header = 0
+block NvM_NativeBlock_3:
+  NvMBlockCrcType = NVM_CRC32
+  NvMBlockJobPriority = 1
+  NvMBlockManagementType = NVM_BLOCK_NATIVE
+  NvMBlockUseAutoValidation = false
+  NvMBlockUseCRCCompMechanism = false
+  NvMBlockUseCompression = false
+  NvMBlockUseCrc = false
+  NvMBlockUsePort = true
+  NvMBlockUseSyncMechanism = false
+  NvMBlockWriteProt = false
+  NvMCalcRamBlockCrc = false
+  NvMMaxNumOfReadRetries = 0
+  NvMMaxNumOfWriteRetries = 0
+  NvMNvBlockLength = 2
+  NvMNvBlockNum = 1
+  NvMNvramDeviceId = 0
+  NvMRamBlockDataAddress = Rte_CPim_MyReceivingSWC_PIM_02
+  NvMRbBackupBlock = false
+  NvMRbFirstReadDataMigration = false
+  NvMRbInitBlockAtLayoutChange = false
+  NvMRbNoFallback = false
+  NvMRbRamBlockDataAddressString = NULL_PTR
+  NvMRbRamInitUnconditional = false
+  NvMRbResistantToLayoutRemoval = false
+  NvMRbSelectBlockForFirstInitAll = false
+  NvMRbSingleBlockStartCallback = NULL_PTR
+  NvMRbWriteCounter = false
+  NvMReadRamBlockFromNvCallback = NULL_PTR
+  NvMResistantToChangedSw = false
+  NvMRomBlockDataAddress = NULL_PTR
+  NvMRomBlockNum = 0
+  NvMSelectBlockForReadAll = true
+  NvMSelectBlockForWriteAll = true
+  NvMStaticBlockIDCheck = false
+  NvMWriteBlockOnce = false
+  NvMWriteRamBlockToNvCallback = NULL_PTR
+  NvMWriteVerification = false
+  NvMWriteVerificationDataSize = 0
+  unused parameters:
+    NvMBlockHeaderInclude = NULL_PTR
+    NvMNvBlockBaseNumber = 0
+    NvMRbBlockPersistentId = 0
+    NvMRbBlockVersion = 0
+    NvMRbNvBlockLengthString = NULL_PTR
+    NvMBlockCipheringRef = 
+    NvMBlockEcucPartitionRef = 
+    NvMRbRamInitAddSavedZoneNameRef = 
+  END unused parameters:
+
+  callbacks from container:
+    NvMInitBlockCallback = UNDEFINED
+    NvMSingleBlockCallback = UNDEFINED
+  END callbacks from container
+
+  block consists of following splits:
+  block has a total of 0 splits
+  []
+  END block splits
+
+  NvMRbBlockPersistentId = 46912
+  NvMBlock.java:NvMBlock:idxSavedZone: 0
+  NvM_NativeBlock_3 length = 2
+  NvM_NativeBlock_3 encrypted = 0
+  NvM_NativeBlock_3 signature = 0
+  NvM_NativeBlock_3 IV = 0
+  NvM_NativeBlock_3 header = 0
+common configuration:
+  NvMApiConfigClass = NVM_API_CONFIG_CLASS_3
+  NvMBswMMultiBlockJobStatusInformation = true
+  NvMCompiledConfigId = 2
+  NvMCrcNumOfBytes = 1
+  NvMCsmRetryCounter = 0
+  NvMDevErrorDetect = false
+  NvMDrvModeSwitch = false
+  NvMDynamicConfiguration = false
+  NvMJobPrioritization = false
+  NvMMainFunctionPeriod = 0.001
+  NvMMultiBlockCallback = NULL_PTR
+  NvMPollingMode = true
+  NvMRbAuxInterface = false
+  NvMRbBlockHeader = 0
+  NvMRbCallbackSignatureAR45 = false
+  NvMRbCommonCalcRamBlockCrc = false
+  NvMRbCommonWriteCounter = false
+  NvMRbDynConfigLoadDefaultsForNonResistant = false
+  NvMRbErrorInfoDetail = false
+  NvMRbExplcitSyncReadWithConst = false
+  NvMRbGenArxmlVersion = NVM_GEN_ARXML_VERSION_402
+  NvMRbInitAtLayoutChange = false
+  NvMRbInitBufferBeforeSyncWrite = false
+  NvMRbMainFunctionScheduling = NVM_RB_MAINFUNC_SCHEDULING_RTE_TIMED
+  NvMRbNoInitCallbackRomBlockConfigured = false
+  NvMRbNoSingleBlockBeforeReadAll = false
+  NvMRbNvCrcEnable = false
+  NvMRbRamInitCheck = NVM_RB_RAM_INIT_CHECK_NONE
+  NvMRbRandomNrLength = 16
+  NvMRbRemoveNonResistantBlocks = false
+  NvMRbReqMonitor = NVM_RB_REQ_MON_DISABLED
+  NvMRbRuntimeRamBlockConfiguration = false
+  NvMRbRuntimeRamBufferAddressEnd = NULL_PTR
+  NvMRbRuntimeRamBufferAddressStart = NULL_PTR
+  NvMRbSetWriteAllTriggerApi = false
+  NvMRbSwcdToEcucValuesEnable = false
+  NvMRepeatMirrorOperations = 0
+  NvMSetRamBlockStatusApi = true
+  NvMSizeImmediateJobQueue = 1
+  NvMSizeStandardJobQueue = 1
+  NvMVersionInfoApi = false
+  unused parameters:
+    NvMBufferAlignmentValue = 0
+    NvMDatasetSelectionBits = 0
+    NvMRbMultiBlockStartCallback = NULL_PTR
+    NvMRbObserverCallback = NULL_PTR
+    NvMRbReqMonDevId = 0
+    NvMEcucPartitionRef = 
+    NvMMasterEcucPartitionRef = 
+    NvMRbCsmJobRandomNrRef = 
+  END unused parameters:
+
+  START memory devices:
+  END memory devices:
+block ECUM_CFG_NVM_BLOCK:
+  NvMBlockCrcType = NVM_CRC16
+  NvMBlockHeaderInclude = EcuM
+  NvMBlockJobPriority = 1
+  NvMBlockManagementType = NVM_BLOCK_NATIVE
+  NvMBlockUseAutoValidation = false
+  NvMBlockUseCRCCompMechanism = false
+  NvMBlockUseCompression = false
+  NvMBlockUseCrc = true
+  NvMBlockUsePort = false
+  NvMBlockUseSyncMechanism = false
+  NvMBlockWriteProt = false
+  NvMCalcRamBlockCrc = false
+  NvMMaxNumOfReadRetries = 0
+  NvMMaxNumOfWriteRetries = 0
+  NvMNvBlockLength = 4
+  NvMNvBlockNum = 1
+  NvMNvramDeviceId = 0
+  NvMRamBlockDataAddress = EcuM_Rb_dataShutdownInfo_st
+  NvMRbBackupBlock = false
+  NvMRbFirstReadDataMigration = false
+  NvMRbInitBlockAtLayoutChange = false
+  NvMRbNoFallback = false
+  NvMRbRamBlockDataAddressString = NULL_PTR
+  NvMRbRamInitUnconditional = false
+  NvMRbResistantToLayoutRemoval = false
+  NvMRbSelectBlockForFirstInitAll = false
+  NvMRbSingleBlockStartCallback = NULL_PTR
+  NvMRbWriteCounter = false
+  NvMReadRamBlockFromNvCallback = NULL_PTR
+  NvMResistantToChangedSw = false
+  NvMRomBlockDataAddress = NULL_PTR
+  NvMRomBlockNum = 0
+  NvMSelectBlockForReadAll = true
+  NvMSelectBlockForWriteAll = true
+  NvMStaticBlockIDCheck = false
+  NvMWriteBlockOnce = false
+  NvMWriteRamBlockToNvCallback = NULL_PTR
+  NvMWriteVerification = false
+  NvMWriteVerificationDataSize = 0
+  unused parameters:
+    NvMNvBlockBaseNumber = 0
+    NvMRbBlockPersistentId = 0
+    NvMRbBlockVersion = 0
+    NvMRbNvBlockLengthString = NULL_PTR
+    NvMBlockCipheringRef = 
+    NvMBlockEcucPartitionRef = 
+    NvMRbRamInitAddSavedZoneNameRef = 
+  END unused parameters:
+
+  callbacks from container:
+    NvMSingleBlockCallback = EcuM_Rb_NvMSingleBlockCallbackFunction
+    NvMInitBlockCallback = UNDEFINED
+  END callbacks from container
+
+  block consists of following splits:
+  block has a total of 0 splits
+  []
+  END block splits
+
+  NvMRbBlockPersistentId = 62199
+  NvMBlock.java:NvMBlock:idxSavedZone: 0
+  ECUM_CFG_NVM_BLOCK length = 4
+  ECUM_CFG_NVM_BLOCK encrypted = 0
+  ECUM_CFG_NVM_BLOCK signature = 0
+  ECUM_CFG_NVM_BLOCK IV = 0
+  ECUM_CFG_NVM_BLOCK header = 0
+block NvM_ConfigId:
+  NvMBlockCrcType = NVM_CRC16
+  NvMBlockJobPriority = 1
+  NvMBlockManagementType = NVM_BLOCK_NATIVE
+  NvMBlockUseAutoValidation = false
+  NvMBlockUseCRCCompMechanism = false
+  NvMBlockUseCompression = false
+  NvMBlockUseCrc = true
+  NvMBlockUsePort = false
+  NvMBlockUseSyncMechanism = false
+  NvMBlockWriteProt = false
+  NvMCalcRamBlockCrc = false
+  NvMMaxNumOfReadRetries = 0
+  NvMMaxNumOfWriteRetries = 0
+  NvMNvBlockLength = 2
+  NvMNvBlockNum = 1
+  NvMNvramDeviceId = 0
+  NvMRamBlockDataAddress = NvM_Prv_idConfigStored_u16
+  NvMRbBackupBlock = false
+  NvMRbFirstReadDataMigration = false
+  NvMRbInitBlockAtLayoutChange = false
+  NvMRbNoFallback = false
+  NvMRbRamBlockDataAddressString = NULL_PTR
+  NvMRbRamInitUnconditional = false
+  NvMRbResistantToLayoutRemoval = false
+  NvMRbSelectBlockForFirstInitAll = false
+  NvMRbSingleBlockStartCallback = NULL_PTR
+  NvMRbWriteCounter = false
+  NvMReadRamBlockFromNvCallback = NULL_PTR
+  NvMResistantToChangedSw = false
+  NvMRomBlockDataAddress = NULL_PTR
+  NvMRomBlockNum = 0
+  NvMSelectBlockForReadAll = true
+  NvMSelectBlockForWriteAll = true
+  NvMStaticBlockIDCheck = false
+  NvMWriteBlockOnce = false
+  NvMWriteRamBlockToNvCallback = NULL_PTR
+  NvMWriteVerification = false
+  NvMWriteVerificationDataSize = 0
+  unused parameters:
+    NvMBlockHeaderInclude = NULL_PTR
+    NvMNvBlockBaseNumber = 0
+    NvMRbBlockPersistentId = 0
+    NvMRbBlockVersion = 0
+    NvMRbNvBlockLengthString = NULL_PTR
+    NvMBlockCipheringRef = 
+    NvMBlockEcucPartitionRef = 
+    NvMRbRamInitAddSavedZoneNameRef = 
+  END unused parameters:
+
+  callbacks from container:
+    NvMInitBlockCallback = UNDEFINED
+    NvMSingleBlockCallback = UNDEFINED
+  END callbacks from container
+
+  block consists of following splits:
+  block has a total of 0 splits
+  []
+  END block splits
+
+  NvMRbBlockPersistentId = -1
+  NvMBlock.java:NvMBlock:idxSavedZone: 0
+  NvM_ConfigId length = 2
+  NvM_ConfigId encrypted = 0
+  NvM_ConfigId signature = 0
+  NvM_ConfigId IV = 0
+  NvM_ConfigId header = 0
+block NvM_MultiBlock:
+  NvMBlockCrcType = NVM_CRC16
+  NvMBlockJobPriority = 1
+  NvMBlockManagementType = NVM_BLOCK_NATIVE
+  NvMBlockUseAutoValidation = false
+  NvMBlockUseCRCCompMechanism = false
+  NvMBlockUseCompression = false
+  NvMBlockUseCrc = true
+  NvMBlockUsePort = false
+  NvMBlockUseSyncMechanism = false
+  NvMBlockWriteProt = false
+  NvMCalcRamBlockCrc = false
+  NvMMaxNumOfReadRetries = 0
+  NvMMaxNumOfWriteRetries = 0
+  NvMNvBlockLength = 1
+  NvMNvBlockNum = 1
+  NvMNvramDeviceId = 0
+  NvMRamBlockDataAddress = NULL_PTR
+  NvMRbBackupBlock = false
+  NvMRbFirstReadDataMigration = false
+  NvMRbInitBlockAtLayoutChange = false
+  NvMRbNoFallback = false
+  NvMRbRamBlockDataAddressString = NULL_PTR
+  NvMRbRamInitUnconditional = false
+  NvMRbResistantToLayoutRemoval = false
+  NvMRbSelectBlockForFirstInitAll = false
+  NvMRbSingleBlockStartCallback = NULL_PTR
+  NvMRbWriteCounter = false
+  NvMReadRamBlockFromNvCallback = NULL_PTR
+  NvMResistantToChangedSw = false
+  NvMRomBlockDataAddress = NULL_PTR
+  NvMRomBlockNum = 0
+  NvMSelectBlockForReadAll = false
+  NvMSelectBlockForWriteAll = false
+  NvMStaticBlockIDCheck = false
+  NvMWriteBlockOnce = false
+  NvMWriteRamBlockToNvCallback = NULL_PTR
+  NvMWriteVerification = false
+  NvMWriteVerificationDataSize = 0
+  unused parameters:
+    NvMBlockHeaderInclude = NULL_PTR
+    NvMNvBlockBaseNumber = 0
+    NvMRbBlockPersistentId = 0
+    NvMRbBlockVersion = 0
+    NvMRbNvBlockLengthString = NULL_PTR
+    NvMBlockCipheringRef = 
+    NvMBlockEcucPartitionRef = 
+    NvMRbRamInitAddSavedZoneNameRef = 
+  END unused parameters:
+
+  callbacks from container:
+    NvMInitBlockCallback = UNDEFINED
+    NvMSingleBlockCallback = UNDEFINED
+  END callbacks from container
+
+  block consists of following splits:
+  block has a total of 0 splits
+  []
+  END block splits
+
+  NvMRbBlockPersistentId = -1
+  NvMBlock.java:NvMBlock:idxSavedZone: 0
+  NvM_MultiBlock length = 1
+  NvM_MultiBlock encrypted = 0
+  NvM_MultiBlock signature = 0
+  NvM_MultiBlock IV = 0
+  NvM_MultiBlock header = 0
+block NvM_NativeBlock_2:
+  NvMBlockCrcType = NVM_CRC32
+  NvMBlockJobPriority = 1
+  NvMBlockManagementType = NVM_BLOCK_NATIVE
+  NvMBlockUseAutoValidation = false
+  NvMBlockUseCRCCompMechanism = false
+  NvMBlockUseCompression = false
+  NvMBlockUseCrc = false
+  NvMBlockUsePort = true
+  NvMBlockUseSyncMechanism = false
+  NvMBlockWriteProt = false
+  NvMCalcRamBlockCrc = false
+  NvMMaxNumOfReadRetries = 0
+  NvMMaxNumOfWriteRetries = 0
+  NvMNvBlockLength = 2
+  NvMNvBlockNum = 1
+  NvMNvramDeviceId = 0
+  NvMRamBlockDataAddress = Rte_CPim_MyReceivingSWC_PIM_01
+  NvMRbBackupBlock = false
+  NvMRbFirstReadDataMigration = false
+  NvMRbInitBlockAtLayoutChange = false
+  NvMRbNoFallback = false
+  NvMRbRamBlockDataAddressString = NULL_PTR
+  NvMRbRamInitUnconditional = false
+  NvMRbResistantToLayoutRemoval = false
+  NvMRbSelectBlockForFirstInitAll = false
+  NvMRbSingleBlockStartCallback = NULL_PTR
+  NvMRbWriteCounter = false
+  NvMReadRamBlockFromNvCallback = NULL_PTR
+  NvMResistantToChangedSw = false
+  NvMRomBlockDataAddress = NULL_PTR
+  NvMRomBlockNum = 0
+  NvMSelectBlockForReadAll = true
+  NvMSelectBlockForWriteAll = true
+  NvMStaticBlockIDCheck = false
+  NvMWriteBlockOnce = false
+  NvMWriteRamBlockToNvCallback = NULL_PTR
+  NvMWriteVerification = false
+  NvMWriteVerificationDataSize = 0
+  unused parameters:
+    NvMBlockHeaderInclude = NULL_PTR
+    NvMNvBlockBaseNumber = 0
+    NvMRbBlockPersistentId = 0
+    NvMRbBlockVersion = 0
+    NvMRbNvBlockLengthString = NULL_PTR
+    NvMBlockCipheringRef = 
+    NvMBlockEcucPartitionRef = 
+    NvMRbRamInitAddSavedZoneNameRef = 
+  END unused parameters:
+
+  callbacks from container:
+    NvMInitBlockCallback = UNDEFINED
+    NvMSingleBlockCallback = UNDEFINED
+  END callbacks from container
+
+  block consists of following splits:
+  block has a total of 0 splits
+  []
+  END block splits
+
+  NvMRbBlockPersistentId = 42697
+  NvMBlock.java:NvMBlock:idxSavedZone: 0
+  NvM_NativeBlock_2 length = 2
+  NvM_NativeBlock_2 encrypted = 0
+  NvM_NativeBlock_2 signature = 0
+  NvM_NativeBlock_2 IV = 0
+  NvM_NativeBlock_2 header = 0
+block NvM_NativeBlock_3:
+  NvMBlockCrcType = NVM_CRC32
+  NvMBlockJobPriority = 1
+  NvMBlockManagementType = NVM_BLOCK_NATIVE
+  NvMBlockUseAutoValidation = false
+  NvMBlockUseCRCCompMechanism = false
+  NvMBlockUseCompression = false
+  NvMBlockUseCrc = false
+  NvMBlockUsePort = true
+  NvMBlockUseSyncMechanism = false
+  NvMBlockWriteProt = false
+  NvMCalcRamBlockCrc = false
+  NvMMaxNumOfReadRetries = 0
+  NvMMaxNumOfWriteRetries = 0
+  NvMNvBlockLength = 2
+  NvMNvBlockNum = 1
+  NvMNvramDeviceId = 0
+  NvMRamBlockDataAddress = Rte_CPim_MyReceivingSWC_PIM_02
+  NvMRbBackupBlock = false
+  NvMRbFirstReadDataMigration = false
+  NvMRbInitBlockAtLayoutChange = false
+  NvMRbNoFallback = false
+  NvMRbRamBlockDataAddressString = NULL_PTR
+  NvMRbRamInitUnconditional = false
+  NvMRbResistantToLayoutRemoval = false
+  NvMRbSelectBlockForFirstInitAll = false
+  NvMRbSingleBlockStartCallback = NULL_PTR
+  NvMRbWriteCounter = false
+  NvMReadRamBlockFromNvCallback = NULL_PTR
+  NvMResistantToChangedSw = false
+  NvMRomBlockDataAddress = NULL_PTR
+  NvMRomBlockNum = 0
+  NvMSelectBlockForReadAll = true
+  NvMSelectBlockForWriteAll = true
+  NvMStaticBlockIDCheck = false
+  NvMWriteBlockOnce = false
+  NvMWriteRamBlockToNvCallback = NULL_PTR
+  NvMWriteVerification = false
+  NvMWriteVerificationDataSize = 0
+  unused parameters:
+    NvMBlockHeaderInclude = NULL_PTR
+    NvMNvBlockBaseNumber = 0
+    NvMRbBlockPersistentId = 0
+    NvMRbBlockVersion = 0
+    NvMRbNvBlockLengthString = NULL_PTR
+    NvMBlockCipheringRef = 
+    NvMBlockEcucPartitionRef = 
+    NvMRbRamInitAddSavedZoneNameRef = 
+  END unused parameters:
+
+  callbacks from container:
+    NvMInitBlockCallback = UNDEFINED
+    NvMSingleBlockCallback = UNDEFINED
+  END callbacks from container
+
+  block consists of following splits:
+  block has a total of 0 splits
+  []
+  END block splits
+
+  NvMRbBlockPersistentId = 46912
+  NvMBlock.java:NvMBlock:idxSavedZone: 0
+  NvM_NativeBlock_3 length = 2
+  NvM_NativeBlock_3 encrypted = 0
+  NvM_NativeBlock_3 signature = 0
+  NvM_NativeBlock_3 IV = 0
+  NvM_NativeBlock_3 header = 0

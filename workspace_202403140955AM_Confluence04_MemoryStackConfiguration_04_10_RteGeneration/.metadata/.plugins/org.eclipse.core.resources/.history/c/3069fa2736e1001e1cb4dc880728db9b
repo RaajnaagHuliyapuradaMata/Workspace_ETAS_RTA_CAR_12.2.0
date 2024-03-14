@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00051.xsd">
+  <ADMIN-DATA>
+    <SDGS>
+      <SDG>
+        <SD GID=".AUTOSAR_CanIf.EcucModuleDefs.CanIf.CanIfInitCfg.CanIfTxPduCfg">2</SD>
+        <SD GID=".AUTOSAR_CanIf.EcucModuleDefs.CanIf.CanIfInitCfg">2</SD>
+        <SD GID=".AUTOSAR_CanIf.EcucModuleDefs.CanIf">2</SD>
+        <SD GID=".AUTOSAR_CanIf.EcucModuleDefs.CanIf.CanIfCtrlDrvCfg.CanIfCtrlCfg">2</SD>
+        <SD GID=".AUTOSAR_CanIf.EcucModuleDefs.CanIf.CanIfCtrlDrvCfg">2</SD>
+        <SD GID=".AUTOSAR_CanIf.EcucModuleDefs.CanIf.CanIfInitCfg.CanIfRxPduCfg">2</SD>
+        <SD GID=".AUTOSAR_ComM.EcucModuleDefs.ComM.ComMConfigSet.ComMUser">2</SD>
+        <SD GID=".AUTOSAR_ComM.EcucModuleDefs.ComM.ComMConfigSet">2</SD>
+        <SD GID=".AUTOSAR_ComM.EcucModuleDefs.ComM">2</SD>
+        <SD GID=".AUTOSAR_ComM.EcucModuleDefs.ComM.ComMConfigSet.ComMChannel">2</SD>
+        <SD GID=".AUTOSAR_EcuM.EcucModuleDefs.EcuM.EcuMConfiguration.EcuMCommonConfiguration">2</SD>
+        <SD GID=".AUTOSAR_EcuM.EcucModuleDefs.EcuM.EcuMConfiguration">2</SD>
+        <SD GID=".AUTOSAR_EcuM.EcucModuleDefs.EcuM">2</SD>
+        <SD GID=".AUTOSAR_EcuM.EcucModuleDefs.EcuM.EcuMConfiguration.EcuMCommonConfiguration.EcuMWakeupSource">10</SD>
+        <SD GID=".AUTOSAR_EcuM.EcucModuleDefs.EcuM.EcuMConfiguration.EcuMFlexConfiguration">2</SD>
+        <SD GID=".AUTOSAR_EcuM.EcucModuleDefs.EcuM.EcuMConfiguration.EcuMFlexConfiguration.EcuMResetMode">6</SD>
+        <SD GID=".AUTOSAR_EcuM.EcucModuleDefs.EcuM.EcuMConfiguration.EcuMFlexConfiguration.EcuMShutdownCause">8</SD>
+        <SD GID=".RB.RBA.rba_ArxmlGen.EcucModuleDefs.rba_ArxmlGen.rba_ArxmlGen_Comp.rba_ArxmlGen_BswModuleEntry">12</SD>
+        <SD GID=".RB.RBA.rba_ArxmlGen.EcucModuleDefs.rba_ArxmlGen.rba_ArxmlGen_Comp.rba_ArxmlGen_ExecEntity">10</SD>
+        <SD GID=".RB.RBA.rba_ArxmlGen.EcucModuleDefs.rba_ArxmlGen.rba_ArxmlGen_Comp">10</SD>
+        <SD GID=".RB.RBA.rba_ArxmlGen.EcucModuleDefs.rba_ArxmlGen">12</SD>
+        <SD GID=".AUTOSAR_CanSM.EcucModuleDefs.CanSM.CanSMConfiguration.CanSMManagerNetwork">2</SD>
+        <SD GID=".AUTOSAR_CanSM.EcucModuleDefs.CanSM.CanSMConfiguration">2</SD>
+        <SD GID=".AUTOSAR_CanSM.EcucModuleDefs.CanSM">2</SD>
+        <SD GID=".RB.RBA.rba_ArxmlGen.EcucModuleDefs.rba_ArxmlGen.rba_ArxmlGen_Comp.rba_ArxmlGen_ApplDataType">22</SD>
+        <SD GID=".RB.RBA.rba_ArxmlGen.EcucModuleDefs.rba_ArxmlGen.rba_ArxmlGen_Comp.rba_ArxmlGen_ImplDataType">22</SD>
+        <SD GID=".AUTOSAR_Com.EcucModuleDefs.Com.ComConfig.ComIPdu">4</SD>
+        <SD GID=".AUTOSAR_Com.EcucModuleDefs.Com.ComConfig">2</SD>
+        <SD GID=".AUTOSAR_Com.EcucModuleDefs.Com">2</SD>
+        <SD GID=".AUTOSAR_Com.EcucModuleDefs.Com.ComConfig.ComSignal">4</SD>
+        <SD GID=".AUTOSAR_Com.EcucModuleDefs.Com.ComConfig.ComIPduGroup">4</SD>
+        <SD GID=".AUTOSAR_PduR.EcucModuleDefs.PduR.PduRRoutingPaths">6</SD>
+        <SD GID=".AUTOSAR_PduR.EcucModuleDefs.PduR">6</SD>
+        <SD GID=".AUTOSAR_PduR.EcucModuleDefs.PduR.PduRRoutingPaths.PduRSrcPdu">4</SD>
+        <SD GID=".AUTOSAR_PduR.EcucModuleDefs.PduR.PduRRoutingPaths.PduRDestPdu">4</SD>
+        <SD GID=".RB.RBA.rba_ArxmlGen.EcucModuleDefs.rba_ArxmlGen.rba_ArxmlGen_Comp.rba_ArxmlGen_ImplDataType.rba_ArxmlGen_ImplDataTypeSub">8</SD>
+        <SD GID=".RB.RBA.rba_ArxmlGen.EcucModuleDefs.rba_ArxmlGen.rba_ArxmlGen_Comp.rba_ArxmlGen_ApplDataType.rba_ArxmlGen_ApplDataTypeSub">8</SD>
+        <SD GID=".RB.RBA.rba_ArxmlGen.EcucModuleDefs.rba_ArxmlGen.rba_ArxmlGen_Comp.rba_ArxmlGen_Measurement">10</SD>
+        <SD GID=".RB.RBA.rba_ArxmlGen.EcucModuleDefs.rba_ArxmlGen.rba_ArxmlGen_Comp.rba_ArxmlGen_Memsection">8</SD>
+      </SDG>
+    </SDGS>
+  </ADMIN-DATA>
+</AUTOSAR>
+

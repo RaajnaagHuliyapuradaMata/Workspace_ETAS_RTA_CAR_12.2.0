@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00051.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>MyReceivingSWC</SHORT-NAME>
+      <ELEMENTS>
+        <APPLICATION-SW-COMPONENT-TYPE>
+          <SHORT-NAME>MyReceivingSWC</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="Master">
+                <SD>true</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <R-PORT-PROTOTYPE UUID="551e30d2-40e9-4bf5-893c-c5eada2479e1">
+              <SHORT-NAME>RPortPrototype_0</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/My_SR_Interface</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE>
+              <SHORT-NAME>R_NvMService_0</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_NvM/PortInterfaces/NvMService</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR>
+              <SHORT-NAME>RxSwcInternalBehavior</SHORT-NAME>
+              <DATA-TYPE-MAPPING-REFS>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DataTypes/MyDataTypeMappingSet</DATA-TYPE-MAPPING-REF>
+              </DATA-TYPE-MAPPING-REFS>
+              <EVENTS>
+                <TIMING-EVENT UUID="44209fc3-5055-4137-9313-ad13e049162b">
+                  <SHORT-NAME>TE_RX</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MyReceivingSWC/MyReceivingSWC/RxSwcInternalBehavior/RE_Rx</START-ON-EVENT-REF>
+                  <PERIOD>0.1</PERIOD>
+                </TIMING-EVENT>
+              </EVENTS>
+              <PER-INSTANCE-MEMORYS>
+                <PER-INSTANCE-MEMORY>
+                  <SHORT-NAME>PIM_01</SHORT-NAME>
+                  <INIT-VALUE>0</INIT-VALUE>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/boolean</BASE-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE>boolean</TYPE>
+                  <TYPE-DEFINITION>boolean</TYPE-DEFINITION>
+                </PER-INSTANCE-MEMORY>
+                <PER-INSTANCE-MEMORY>
+                  <SHORT-NAME>PIM_02</SHORT-NAME>
+                  <INIT-VALUE>1</INIT-VALUE>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/SwBaseTypes/uint8</BASE-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE>uint8</TYPE>
+                  <TYPE-DEFINITION>uint8</TYPE-DEFINITION>
+                </PER-INSTANCE-MEMORY>
+              </PER-INSTANCE-MEMORYS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="c56ebd9f-e90b-4475-b2e9-df9d4ff350e0">
+                  <SHORT-NAME>RE_Rx</SHORT-NAME>
+                  <DATA-READ-ACCESSS>
+                    <VARIABLE-ACCESS UUID="e698248e-014a-47a3-93b1-1fd0ea6fd611">
+                      <SHORT-NAME>DRA_DE_MyDataElement_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/MyReceivingSWC/MyReceivingSWC/RPortPrototype_0</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/My_SR_Interface/DE_MyDataElement</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-READ-ACCESSS>
+                  <SERVER-CALL-POINTS>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="42599768-d4b8-4880-b201-daa50c130e18">
+                      <SHORT-NAME>SynchronousServerCallPoint_0</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MyReceivingSWC/MyReceivingSWC/R_NvMService_0</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_NvM/PortInterfaces/NvMService/EraseBlock</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="60d8e439-782c-4320-a0eb-c2820808ff3d">
+                      <SHORT-NAME>SynchronousServerCallPoint_1</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MyReceivingSWC/MyReceivingSWC/R_NvMService_0</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_NvM/PortInterfaces/NvMService/GetDataIndex</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="36583df9-cafd-4c2f-934e-cd55b97138e2">
+                      <SHORT-NAME>SynchronousServerCallPoint_2</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MyReceivingSWC/MyReceivingSWC/R_NvMService_0</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_NvM/PortInterfaces/NvMService/GetErrorStatus</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="784704a4-c06e-44ca-a4bb-92df4421afe3">
+                      <SHORT-NAME>SynchronousServerCallPoint_3</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MyReceivingSWC/MyReceivingSWC/R_NvMService_0</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_NvM/PortInterfaces/NvMService/InvalidateNvBlock</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="d987dfbf-4c8c-4057-9c66-b537ddb95116">
+                      <SHORT-NAME>SynchronousServerCallPoint_4</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MyReceivingSWC/MyReceivingSWC/R_NvMService_0</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_NvM/PortInterfaces/NvMService/ReadBlock</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="b0adbc1f-bfb0-4aa5-a273-8e4665a43377">
+                      <SHORT-NAME>SynchronousServerCallPoint_5</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MyReceivingSWC/MyReceivingSWC/R_NvMService_0</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_NvM/PortInterfaces/NvMService/ReadPRAMBlock</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="580c95ce-1a5c-4b3a-a3ba-212f7fbed47c">
+                      <SHORT-NAME>SynchronousServerCallPoint_6</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MyReceivingSWC/MyReceivingSWC/R_NvMService_0</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_NvM/PortInterfaces/NvMService/RestoreBlockDefaults</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="fa7807d3-c665-4cc0-8ca4-02fd48654928">
+                      <SHORT-NAME>SynchronousServerCallPoint_7</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MyReceivingSWC/MyReceivingSWC/R_NvMService_0</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_NvM/PortInterfaces/NvMService/RestorePRAMBlockDefaults</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="a1f5c6d8-869a-40f3-8146-e1fdcec513c8">
+                      <SHORT-NAME>SynchronousServerCallPoint_8</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MyReceivingSWC/MyReceivingSWC/R_NvMService_0</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_NvM/PortInterfaces/NvMService/SetDataIndex</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="ced5f15d-83b6-4531-b3d6-4cb58ae919bd">
+                      <SHORT-NAME>SynchronousServerCallPoint_9</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MyReceivingSWC/MyReceivingSWC/R_NvMService_0</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_NvM/PortInterfaces/NvMService/SetRamBlockStatus</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="fc4827ed-303d-485d-ad90-2327abf2d8f4">
+                      <SHORT-NAME>SynchronousServerCallPoint_10</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MyReceivingSWC/MyReceivingSWC/R_NvMService_0</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_NvM/PortInterfaces/NvMService/WriteBlock</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="297d2556-1d76-4dcc-80b9-b9ae2092d978">
+                      <SHORT-NAME>SynchronousServerCallPoint_11</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MyReceivingSWC/MyReceivingSWC/R_NvMService_0</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_NvM/PortInterfaces/NvMService/WritePRAMBlock</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                  </SERVER-CALL-POINTS>
+                  <SYMBOL>RE_Rx_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+              <SERVICE-DEPENDENCYS>
+                <SWC-SERVICE-DEPENDENCY>
+                  <SHORT-NAME>Srv_NvM_0</SHORT-NAME>
+                  <CATEGORY>NV_BLOCK_COMPONENT</CATEGORY>
+                  <ASSIGNED-DATAS>
+                    <ROLE-BASED-DATA-ASSIGNMENT>
+                      <ROLE>ramBlock</ROLE>
+                      <USED-PIM-REF DEST="PER-INSTANCE-MEMORY">/MyReceivingSWC/MyReceivingSWC/RxSwcInternalBehavior/PIM_01</USED-PIM-REF>
+                    </ROLE-BASED-DATA-ASSIGNMENT>
+                  </ASSIGNED-DATAS>
+                  <SERVICE-NEEDS>
+                    <NV-BLOCK-NEEDS>
+                      <SHORT-NAME>NvM_Needs_0</SHORT-NAME>
+                      <RAM-BLOCK-STATUS-CONTROL>API</RAM-BLOCK-STATUS-CONTROL>
+                      <RELIABILITY>NO-PROTECTION</RELIABILITY>
+                      <RESTORE-AT-START>true</RESTORE-AT-START>
+                      <STORE-AT-SHUTDOWN>true</STORE-AT-SHUTDOWN>
+                      <WRITING-PRIORITY>LOW</WRITING-PRIORITY>
+                    </NV-BLOCK-NEEDS>
+                  </SERVICE-NEEDS>
+                </SWC-SERVICE-DEPENDENCY>
+                <SWC-SERVICE-DEPENDENCY>
+                  <SHORT-NAME>Srv_NvM_1</SHORT-NAME>
+                  <CATEGORY>NV_BLOCK_COMPONENT</CATEGORY>
+                  <ASSIGNED-DATAS>
+                    <ROLE-BASED-DATA-ASSIGNMENT>
+                      <ROLE>ramBlock</ROLE>
+                      <USED-PIM-REF DEST="PER-INSTANCE-MEMORY">/MyReceivingSWC/MyReceivingSWC/RxSwcInternalBehavior/PIM_02</USED-PIM-REF>
+                    </ROLE-BASED-DATA-ASSIGNMENT>
+                  </ASSIGNED-DATAS>
+                  <SERVICE-NEEDS>
+                    <NV-BLOCK-NEEDS>
+                      <SHORT-NAME>NvM_Needs_1</SHORT-NAME>
+                      <RESTORE-AT-START>true</RESTORE-AT-START>
+                      <STORE-AT-SHUTDOWN>true</STORE-AT-SHUTDOWN>
+                    </NV-BLOCK-NEEDS>
+                  </SERVICE-NEEDS>
+                </SWC-SERVICE-DEPENDENCY>
+              </SERVICE-DEPENDENCYS>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>true</SUPPORTS-MULTIPLE-INSTANTIATION>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </APPLICATION-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

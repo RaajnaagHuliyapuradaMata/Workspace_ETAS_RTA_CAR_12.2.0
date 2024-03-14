@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <ADMIN-DATA>
+    <DOC-REVISIONS>
+      <DOC-REVISION>
+        <ISSUED-BY>RB</ISSUED-BY>
+        <DATE>2021-09-29</DATE>
+      </DOC-REVISION>
+    </DOC-REVISIONS>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>RB</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>RBA</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>rba_Amu</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE>
+                  <SHORT-NAME>EcucModuleDefs</SHORT-NAME>
+                  <ELEMENTS>
+                    <!-- Module Definition: rba_Amu -->
+                    <ECUC-MODULE-DEF>
+                      <SHORT-NAME>rba_Amu</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">MCAL ASC Modelling Unit</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">Configuration of the MCAL module for the ASC (advanced simulation for calibration) modelling unit.</L-2>
+                      </DESC>
+                      <CATEGORY>VENDOR_SPECIFIC_MODULE_DEFINITION</CATEGORY>
+                      <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                          <DOC-REVISION>
+                            <REVISION-LABEL>0.1.0</REVISION-LABEL>
+                            <ISSUED-BY>RB</ISSUED-BY>
+                            <DATE>2011-04-19</DATE>
+                          </DOC-REVISION>
+                        </DOC-REVISIONS>
+                      </ADMIN-DATA>
+                      <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <POST-BUILD-VARIANT-SUPPORT>true</POST-BUILD-VARIANT-SUPPORT>
+                      <SUPPORTED-CONFIG-VARIANTS>
+                        <SUPPORTED-CONFIG-VARIANT>VARIANT-PRE-COMPILE</SUPPORTED-CONFIG-VARIANT>
+                      </SUPPORTED-CONFIG-VARIANTS>
+                      <CONTAINERS>
+                        <!-- Container Definition: rba_AmuConfigSet -->
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>rba_AmuConfigSet</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Configuration data set</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">This is the base container that contains the post-build selectable configuration parameters</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <SUB-CONTAINERS>
+                            <!-- Container Definition: rba_AmuModel -->
+                            <ECUC-PARAM-CONF-CONTAINER-DEF>
+                              <SHORT-NAME>rba_AmuModel</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">AMU Model</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">This container for the model specific parameters.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY-INFINITE>true</UPPER-MULTIPLICITY-INFINITE>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <PARAMETERS>
+                                <!-- PARAMETER DEFINITION: rba_AmuInstance -->
+                                <ECUC-ENUMERATION-PARAM-DEF>
+                                  <SHORT-NAME>rba_AmuInstance</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Use AMU Instance</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Use Amu Instance for calculating of this model
+
+This applies for Sync-Mode only (rba_AmuInterruptMode is disabled)</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <ORIGIN>RB:2.0.0:2014-01-21</ORIGIN>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <LITERALS>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>RBA_AMU_HW_UNIT0</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">use AMU0</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB:2.0.0:2014-01-21</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>RBA_AMU_HW_UNIT1</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">use AMU1</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB:2.0.0:2014-01-21</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>RBA_AMU_HW_UNIT2</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">use AMU2</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB:4.0.0:2016-04-31</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>RBA_AMU_HW_UNIT3</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">use AMU3</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB:4.0.0:2016-04-31</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                  </LITERALS>
+                                </ECUC-ENUMERATION-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AmuMode -->
+                                <ECUC-ENUMERATION-PARAM-DEF>
+                                  <SHORT-NAME>rba_AmuMode</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Mode</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">&lt;BR&gt; Select in which mode this Model is to be calculated:
+A: Sync Mode
+B: Async Mode
+C: Async / Sync Mode</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:1.25.0:2016-04-29</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <LITERALS>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>SYNC</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Sync Mode</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB:RB:1.25.0:2016-04-29</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>ASYNC</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Async Mode</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB:RB:1.25.0:2016-04-29</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>SYNC_ASYNC</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Async / Sync Mode</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB:1.25.0:2016-04-29</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                  </LITERALS>
+                                </ECUC-ENUMERATION-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AmuModelAmuRam -->
+                                <ECUC-BOOLEAN-PARAM-DEF>
+                                  <SHORT-NAME>rba_AmuModelAmuRam</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Use AMU Ram</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Enables / disables usage of Amu Ram for this model. If there is not enough Ram within AMU Ram available this model will not be copied to Amu Ram, even if is enabled for Amu Ram.<BR/>
+true: This model is copied to Amu Ram<BR/>
+false: This Model is NOT copied to Amu Ram</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:2.0.0:2014-01-21</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>true</DEFAULT-VALUE>
+                                </ECUC-BOOLEAN-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AmuModelCalculationSpeed -->
+                                <ECUC-ENUMERATION-PARAM-DEF>
+                                  <SHORT-NAME>rba_AmuModelCalculationSpeed</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Model calculation speed</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Allows to configure the calculation speed of the amu hardware, to slow down the hardware state machine which controls the algorithm.<BR/>
+<BR/>
+1/1: calculation is performed in Full speed<BR/>
+1/2: calculation is performed in Halfe speed<BR/>
+1/4: calculation is performed in Quarter speed<BR/>
+1/8: calculation is performed in 1/8th speed</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <ORIGIN>RB:3.0.0:2014-07-16</ORIGIN>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <LITERALS>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>RBA_AMU_CALCSPEED_FULL_E</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">calculation speed 1/1</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB:3.0.0:2014-07-16</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>RBA_AMU_CALCSPEED_HALF_E</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">calculation speed 1/2</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB:3.0.0:2014-07-16</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>RBA_AMU_CALCSPEED_QUARTER_E</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">calculation speed 1/4</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB:4.0.0:2015-01-30</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>RBA_AMU_CALCSPEED_ONE_8TH_E</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">calculation speed 1/8</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB:4.0.0:2015-01-30</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                  </LITERALS>
+                                </ECUC-ENUMERATION-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AmuModelDataDimension -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_AmuModelDataDimension</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Model Dimension</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Dimension of the AMU Model</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:1.23.0:2015-10-30</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <MAX>32</MAX>
+                                  <MIN>1</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AmuModelDataErrorModelsMax -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_AmuModelDataErrorModelsMax</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Max Error Models</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Maximum number of correction Models</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:1.23.0:2015-10-30</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <MAX>4</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AmuModelDataHeaderName -->
+                                <ECUC-STRING-PARAM-DEF>
+                                  <SHORT-NAME>rba_AmuModelDataHeaderName</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Model data header name</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Name of header with external declaration of the model data to be used.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:0.7.0:2013-05-14</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                    <ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                      <MAX-LENGTH>40</MAX-LENGTH>
+                                      <MIN-LENGTH>1</MIN-LENGTH>
+                                    </ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                  </ECUC-STRING-PARAM-DEF-VARIANTS>
+                                </ECUC-STRING-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AmuModelDataLength -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_AmuModelDataLength</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Model data length</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Length of the model data in 32-Bit Words  (required for memory allocation/handling).</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:0.7.0:2013-05-14</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <MAX>32768</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AmuModelDataName -->
+                                <ECUC-STRING-PARAM-DEF>
+                                  <SHORT-NAME>rba_AmuModelDataName</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Model data name</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Name of the model data to be used.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:0.7.0:2013-05-14</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                    <ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                      <MAX-LENGTH>30</MAX-LENGTH>
+                                      <MIN-LENGTH>1</MIN-LENGTH>
+                                    </ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                  </ECUC-STRING-PARAM-DEF-VARIANTS>
+                                </ECUC-STRING-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AmuModelDataTrainingPointsBaseModelMax -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_AmuModelDataTrainingPointsBaseModelMax</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">ModelDataTrainingPointsBaseModelMax</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Maximum number of the Base Models Training Points</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:1.23.0:2015-10-30</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <MAX>1500</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AmuModelDataTrainingPointsErrorModelMax -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_AmuModelDataTrainingPointsErrorModelMax</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">ModelDataTrainingPointsErrorModelMax</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Maximum number of the Correction Models Training Points</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:1.23.0:2015-10-30</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <MAX>1500</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AmuModelGradientsMax -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_AmuModelGradientsMax</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Available Gradients  (bit coded)</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Number of availabe gradients of this model configured in ASCMO
+
+This applies for Async-Mode only (rba_AmuInterruptMode is enabled)</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:3.0.0:2014-07-16</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <MAX>4294967295</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_AmuModelTimeout -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_AmuModelTimeout</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Model Calculation timeout</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Time (us) after which the calculation is stopped 
+
+This applies for Sync-Mode only (rba_AmuInterruptMode is disabled)</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:3.0.0:2014-07-16</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <MAX>5000</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                              </PARAMETERS>
+                              <SUB-CONTAINERS>
+                                <!-- Container Definition: rba_AmuModelInRasters -->
+                                <ECUC-PARAM-CONF-CONTAINER-DEF>
+                                  <SHORT-NAME>rba_AmuModelInRasters</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Models in Raster</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">To configure the Raster(s) the model shall be calculated</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY-INFINITE>true</UPPER-MULTIPLICITY-INFINITE>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <PARAMETERS>
+                                    <!-- PARAMETER DEFINITION: rba_AmuModelGradientsToCalc -->
+                                    <ECUC-INTEGER-PARAM-DEF>
+                                      <SHORT-NAME>rba_AmuModelGradientsToCalc</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Gradients to calc (bit coded)</L-4>
+                                      </LONG-NAME>
+                                      <DESC>
+                                        <L-2 L="EN">Requested gradient(s) for this model calculation (bit coded)<BR/>
+<BR/>
+This applies for Async-Mode only (rba_AmuInterruptMode is enabled)</L-2>
+                                      </DESC>
+                                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                      <ORIGIN>R_AR40_2015_3_0:2015-07-31</ORIGIN>
+                                      <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                      <VALUE-CONFIG-CLASSES>
+                                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                                      </VALUE-CONFIG-CLASSES>
+                                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                      <MAX>4294967295</MAX>
+                                      <MIN>0</MIN>
+                                    </ECUC-INTEGER-PARAM-DEF>
+                                    <!-- PARAMETER DEFINITION: rba_AmuModelPriority -->
+                                    <ECUC-INTEGER-PARAM-DEF>
+                                      <SHORT-NAME>rba_AmuModelPriority</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Model Priority</L-4>
+                                      </LONG-NAME>
+                                      <DESC>
+                                        <L-2 L="EN">Model Priority.<BR/>
+<BR/>
+Hint: The number should be derived from the OS Task priority of the raster</L-2>
+                                      </DESC>
+                                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                      <ORIGIN>R_AR40_2015_3_0:2015-07-31</ORIGIN>
+                                      <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                      <VALUE-CONFIG-CLASSES>
+                                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                                      </VALUE-CONFIG-CLASSES>
+                                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                    </ECUC-INTEGER-PARAM-DEF>
+                                    <!-- PARAMETER DEFINITION: rba_Amu_ModelInRasterIdentifier -->
+                                    <ECUC-STRING-PARAM-DEF>
+                                      <SHORT-NAME>rba_Amu_ModelInRasterIdentifier</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">RasterIdentifier</L-4>
+                                      </LONG-NAME>
+                                      <DESC>
+                                        <L-2 L="EN">Raster Identifier</L-2>
+                                      </DESC>
+                                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                      <ORIGIN>R_AR40_2015_3_0:2015-07-31</ORIGIN>
+                                      <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                      <VALUE-CONFIG-CLASSES>
+                                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                                      </VALUE-CONFIG-CLASSES>
+                                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                      <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                        <ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                          <MAX-LENGTH>40</MAX-LENGTH>
+                                          <MIN-LENGTH>1</MIN-LENGTH>
+                                        </ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                      </ECUC-STRING-PARAM-DEF-VARIANTS>
+                                    </ECUC-STRING-PARAM-DEF>
+                                    <!-- PARAMETER DEFINITION: rba_Amu_ModelInoutVectorsMax -->
+                                    <ECUC-INTEGER-PARAM-DEF>
+                                      <SHORT-NAME>rba_Amu_ModelInoutVectorsMax</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Max. number of Input Vectors</L-4>
+                                      </LONG-NAME>
+                                      <DESC>
+                                        <L-2 L="EN">Maximum number of Input Vectors for this model calculation</L-2>
+                                      </DESC>
+                                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                      <ORIGIN>R_AR40_2015_3_0:2015-07-31</ORIGIN>
+                                      <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                      <VALUE-CONFIG-CLASSES>
+                                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                                      </VALUE-CONFIG-CLASSES>
+                                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                      <MAX>10</MAX>
+                                      <MIN>1</MIN>
+                                    </ECUC-INTEGER-PARAM-DEF>
+                                  </PARAMETERS>
+                                </ECUC-PARAM-CONF-CONTAINER-DEF>
+                              </SUB-CONTAINERS>
+                            </ECUC-PARAM-CONF-CONTAINER-DEF>
+                          </SUB-CONTAINERS>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                        <!-- Container Definition: rba_AmuGeneral -->
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>rba_AmuGeneral</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">General settings</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Container with general configuration (parameters) of the Amu Driver software module.</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <PARAMETERS>
+                            <!-- PARAMETER DEFINITION: rba_AmuDevErrorDetect -->
+                            <ECUC-BOOLEAN-PARAM-DEF>
+                              <SHORT-NAME>rba_AmuDevErrorDetect</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Development error detection</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Enables/disables the detection and notification of development errors. If this parameter is enabled, then extended error checking is performed during runtime; any errors detected by these checks are reported to the Det module. This feature should be switched off in series software.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <ORIGIN>RB:0.7.0:2013-05-14</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                            </ECUC-BOOLEAN-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: rba_AmuModelParallelUse -->
+                            <ECUC-BOOLEAN-PARAM-DEF>
+                              <SHORT-NAME>rba_AmuModelParallelUse</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Model Parallel Use</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">To speed up calculation use 2 AMUs in parallel to calculate a Model:<BR/>
+true: 2 AMU channels are used to calculate 1 Model <BR/>
+false: 1 AMU channel is used to calculate 1 Model  <BR/>
+<BR/>
+This applies for Sync-Mode only (rba_AmuInterruptMode is disabled)</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <ORIGIN>RB:3.2.0:2014-10-31</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>true</DEFAULT-VALUE>
+                            </ECUC-BOOLEAN-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: rba_Amu_EnableRbaResetUsage -->
+                            <ECUC-BOOLEAN-PARAM-DEF>
+                              <SHORT-NAME>rba_Amu_EnableRbaResetUsage</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">rba_Reset usage</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Enables/disables the usage of rba_Reset.
+Per default, if nothing is configured here, rba_Reset is used.
+If rba_Reset is not used, all resets are mapped within rba_Amu_Cfg_SchM.h to Mcu_PerformReset() per default, but can be remapped to any project specific reset, if needed</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <ORIGIN>RB:3.2.0:2021-09-10</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>true</DEFAULT-VALUE>
+                            </ECUC-BOOLEAN-PARAM-DEF>
+                          </PARAMETERS>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                      </CONTAINERS>
+                    </ECUC-MODULE-DEF>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,423 @@
+<!--
+ #######################################################################################################################
+ #
+ # COPYRIGHT (c) ETAS GmbH 2023, all rights reserved
+ #
+ #######################################################################################################################
+ #                                      
+ #                  ___ ____  _   __    
+ #                 /__/  /   / | /__    
+ #                /__   /   /  | __/    
+ #                                      
+ #                                      
+ #                MemStack/NvM - Configuration Report                
+ #
+ #######################################################################################################################
+ * *********************************************************************************************************************
+ * Information regarding the supported Autosar version
+ * NVM_AR_RELEASE_MAJOR_VERSION:    4
+ * NVM_AR_RELEASE_MINOR_VERSION:    5
+ * NVM_AR_RELEASE_REVISION_VERSION: 0
+ * ---------------------------------------------------------------------------------------------------------------------
+ * Information regarding the software version of NvM component
+ * NVM_SW_MAJOR_VERSION: 22
+ * NVM_SW_MINOR_VERSION: 0
+ * NVM_SW_PATCH_VERSION: 1
+ * ---------------------------------------------------------------------------------------------------------------------
+ * Information regarding the supplier of this software
+ * NVM_VENDOR_ID:   6
+ * NVM_MODULE_ID:   20
+ * NVM_INSTANCE_ID: 0
+************************************************************************************************************************
+* SWS Item:        ECUC_NvM_00028
+* Container Name:  NvMCommon
+* Description:     Container for common configuration options.
+************************************************************************************************************************
+************************************************************************************************************************
+* NvMApiConfigClass (ECUC_NvM_00491):                       NVM_API_CONFIG_CLASS_3
+* NvMCompiledConfigId (ECUC_NvM_00492):                     2
+* NvMCrcNumOfBytes (ECUC_NvM_00493):                        1
+* NvMCsmRetryCounter (ECUC_NvM_00572):                      0
+* NvMDevErrorDetect (ECUC_NvM_00495):                       0
+* NvMDrvModeSwitch (ECUC_NvM_00496):                        0
+* NvMDynamicConfiguration (ECUC_NvM_00497):                 0
+* NvMJobPrioritization (ECUC_NvM_00498):                    0
+* NvMMainFunctionPeriod (ECUC_NvM_00555):                   0.0010000000474975
+* NvMMultiBlockCallback (ECUC_NvM_00500):                   NULL_PTR
+* NvMPollingMode (ECUC_NvM_00501):                          1
+* NvMRbAuxInterface (RB add-on):                            0
+* NvMRbBlockHeader (RB add-on):                             0
+* NvMRbCallbackSignatureAR45 (RB add-on)                    0
+* NvMRbCommonCalcRamBlockCrc (RB add-on):                   0
+* NvMRbCommonWriteCounter (RB add-on):                      0
+* NvMRbDynConfigLoadDefaultsForNonResistant (RB add-on):    0
+* NvMRbErrorInfoDetail (RB add-on):                         0
+* NvMRbExplcitSyncReadWithConst (RB add-on):                0
+* NvMRbGenArxmlVersion (RB add-on):                         NVM_GEN_ARXML_VERSION_402
+* NvMRbInitAtLayoutChange (RB add-on):                      0
+* NvMRbInitBufferBeforeSyncWrite (RB add-on):               0
+* NvMRbMainFunctionScheduling (RB add-on):                  NVM_RB_MAINFUNC_SCHEDULING_RTE_TIMED
+* NvMRbMultiBlockStartCallback (RB add-on):                 NULL_PTR
+* NvMRbNoInitCallbackRomBlockConfigured (RB add-on):        0
+* NvMRbNoSingleBlockBeforeReadAll (RB add-on):              0
+* NvMRbNvCrcEnable (RB add-on):                             0
+* NvMRbObserverCallback (RB add-on):                        NULL_PTR
+* NvMRbRamInitCheck (RB add-on):                            NVM_RB_RAM_INIT_CHECK_NONE
+* NvMRbRandomNrLength (RB add-on):                          16
+* NvMRbRemoveNonResistantBlocks (RB add-on):                0
+* NvMRbReqMonitor (RB add-on):                              NVM_RB_REQ_MON_DISABLED
+* NvMRbRuntimeRamBlockConfiguration (RB add-on):            0
+* NvMRbRuntimeRamBufferAddressEnd (RB add-on):              NULL_PTR
+* NvMRbRuntimeRamBufferAddressStart (RB add-on):            NULL_PTR
+* NvMRbSetWriteAllTriggerApi (RB add-on):                   0
+* NvMRepeatMirrorOperations (ECUC_NvM_00518):               0
+* NvMSetRamBlockStatusApi (ECUC_NvM_00502):                 1
+* NvMSizeImmediateJobQueue (ECUC_NvM_00503):                1
+* NvMSizeStandardJobQueue (ECUC_NvM_00504):                 1
+* NvMVersionInfoApi (ECUC_NvM_00505):                       0
+* NvMRbCsmJobRandomNrRef (RB add-on):                       
+* NvMRbApiOverloading (RB add-on):
+*   NvMRbAuxGetErrorStatus (RB add-on):                     NULL_PTR
+*   NvMRbAuxInvalidateNvBlock (RB add-on):                  NULL_PTR
+*   NvMRbAuxReadBlock (RB add-on):                          NULL_PTR
+*   NvMRbAuxSetDataIndex (RB add-on):                       NULL_PTR
+*   NvMRbAuxWriteBlock (RB add-on):                         NULL_PTR
+*   NvMRbCancelWriteAll (RB add-on):                        NULL_PTR
+*   NvMRbFirstInitAll (RB add-on):                          NULL_PTR
+*   NvMRbEraseNvBlock (RB add-on):                          NULL_PTR
+*   NvMRbGetErrorStatus (RB add-on):                        NULL_PTR
+*   NvMRbInvalidateNvBlock (RB add-on):                     NULL_PTR
+*   NvMRbReadAll (RB add-on):                               NULL_PTR
+*   NvMRbReadBlock (RB add-on):                             NULL_PTR
+*   NvMRbReadPRamBlock (RB add-on):                         NULL_PTR
+*   NvMRbRestoreBlockDefaults (RB add-on):                  NULL_PTR
+*   NvMRbRestorePRamBlockDefaults (RB add-on):              NULL_PTR
+*   NvMRbSetBlockLockStatus (RB add-on):                    NULL_PTR
+*   NvMRbSetBlockProtection (RB add-on):                    NULL_PTR
+*   NvMRbSetDataIndex (RB add-on):                          NULL_PTR
+*   NvMRbSetRamBlockStatus (RB add-on):                     NULL_PTR
+*   NvMRbSetWriteAllTrigger (RB add-on):                    NULL_PTR
+*   NvMRbValidateAll (RB add-on):                           NULL_PTR
+*   NvMRbWriteAll (RB add-on):                              NULL_PTR
+*   NvMRbWriteBlock (RB add-on):                            NULL_PTR
+*   NvMRbWritePRamBlock (RB add-on):                        NULL_PTR
+
+*********************************** Additional Saved Zones *************************************************************
+* Number of NvMRbRamInitAddSavedZoneName (RB add-on):  0
+
+************************************************************************************************************************
+
+
+                                                          |\/|
+                                                          |  |
+                                                          |  |
+                                                          |  |
+                                                          |  |
+                                                          |  |
+                                                      ____|  |____
+                                                      \          /
+                                                       \        /
+                                                        \      /
+                                                         \    /
+                                                          \  /
+                                                           \/
+
+
+************************************************************************************************************************
+* SWS Item:        ECUC_NvM_00061
+* Container Name:  NvMBlockDescriptor
+* Description:     Container for a management structure to configure the composition of agiven NVRAM Block Management
+*                  Type. Its multiplicity describes thenumber of configured NVRAM blocks, one block is required to
+*                  be configured. The NVRAM block descriptors are condensed in the NVRAMblock descriptor table.
+************************************************************************************************************************
+************************************************************************************************************************
+* Blockname:    ECUM_CFG_NVM_BLOCK
+*
+* NvMBlockCrcType (ECUC_NvM_00476):                NVM_CRC16
+* NvMBlockHeaderInclude (RB add-on):               EcuM
+* NvMBlockJobPriority (ECUC_NvM_00477):            1
+* NvMBlockManagementType (ECUC_NvM_00062):         NVM_BLOCK_NATIVE
+* NvMBlockUseAutoValidation (ECUC_NvM_00557):      0
+* NvMBlockUseCompression (ECUC_NvM_00563):         0
+* NvMBlockUseCrc (ECUC_NvM_00036):                 1
+* NvMBlockUseCRCCompMechanism (ECUC_NvM_00556):    0
+* NvMBlockUsePort_Admin (ECUC_NvM_00559, RB):      0
+* NvMBlockUsePort_Service (ECUC_NvM_00559, RB):    0
+* NvMBlockUseSyncMechanism (ECUC_NvM_00519):       0
+* NvMBlockWriteProt (ECUC_NvM_00033):              0
+* NvMCalcRamBlockCrc (ECUC_NvM_00119):             0
+* NvMInitBlockCallback (ECUC_NvM_00116):           UNDEFINED
+* NvMMaxNumOfReadRetries (ECUC_NvM_00533):         0
+* NvMMaxNumOfWriteRetries (ECUC_NvM_00499):        0
+* NvMNvBlockLength (ECUC_NvM_00479):               4 Bytes
+* NvMNvBlockNum (ECUC_NvM_00480):                  1
+* NvMNvramBlockIdentifier (ECUC_NvM_00481):        2
+* NvMNvramDeviceId (ECUC_NvM_00035):               0
+* NvMRamBlockDataAddress (ECUC_NvM_00482):         EcuM_Rb_dataShutdownInfo_st
+* NvMRbBackupBlock (RB add-on):                    0
+* NvMRbBlockPersistentId (RB add-on):              62199
+* NvMRbBlockVersion (RB add-on):                   0
+* NvMRbFirstReadDataMigration (RB add-on):         0
+* NvMRbNoFallback (RB add-on):                     0
+* NvMRbNvBlockLengthString (RB add-on):            NULL_PTR
+* NvMRbRamBlockDataAddressString (RB add-on):      NULL_PTR
+* NvMRbRamInitUnconditional (RB add-on):           0
+* NvMRbResistantToLayoutRemoval (RB add-on):       0
+* NvMRbSelectBlockForFirstInitAll (RB add-on):     0
+* NvMRbWriteCounter (RB add-on):                   0
+* NvMReadRamBlockFromNvCallback (ECUC_NvM_00521):  NULL_PTR
+* NvMResistantToChangedSw (ECUC_NvM_00483):        0
+* NvMRomBlockDataAddress (ECUC_NvM_00484):         NULL_PTR
+* NvMRomBlockNum (ECUC_NvM_00485):                 0
+* NvMSelectBlockForReadAll (ECUC_NvM_00117):       1
+* NvMSelectBlockForWriteAll (ECUC_NvM_00549):      1
+* NvMSingleBlockCallback (ECUC_NvM_00506):         EcuM_Rb_NvMSingleBlockCallbackFunction
+* NvMRbSingleBlockStartCallback (RB add-on):       NULL_PTR
+* NvMStaticBlockIDCheck (ECUC_NvM_00532):          0
+* NvMWriteBlockOnce (ECUC_NvM_00072):              0
+* NvMWriteRamBlockToNvCallback (ECUC_NvM_00520):   NULL_PTR
+* NvMWriteVerification (ECUC_NvM_00534):           0
+* NvMWriteVerificationDataSize (ECUC_NvM_00538):   0
+* NvMBlockCipheringRef (ECUC_NvM_00567):           -
+*
+* NvMRbRamInitAddSavedZoneName (RB add-on):        
+* Index of NvMRbRamInitAddSavedZoneName(RB add-on):0
+*
+* Block Layout:
+*   Data payload size (Bytes):                      [4]
+*   Position user data:                             [0:3]
+************************************************************************************************************************"
+
+************************************************************************************************************************
+* Blockname:    NvM_ConfigId
+*
+* NvMBlockCrcType (ECUC_NvM_00476):                NVM_CRC16
+* NvMBlockHeaderInclude (RB add-on):               NULL_PTR
+* NvMBlockJobPriority (ECUC_NvM_00477):            1
+* NvMBlockManagementType (ECUC_NvM_00062):         NVM_BLOCK_NATIVE
+* NvMBlockUseAutoValidation (ECUC_NvM_00557):      0
+* NvMBlockUseCompression (ECUC_NvM_00563):         0
+* NvMBlockUseCrc (ECUC_NvM_00036):                 1
+* NvMBlockUseCRCCompMechanism (ECUC_NvM_00556):    0
+* NvMBlockUsePort_Admin (ECUC_NvM_00559, RB):      0
+* NvMBlockUsePort_Service (ECUC_NvM_00559, RB):    0
+* NvMBlockUseSyncMechanism (ECUC_NvM_00519):       0
+* NvMBlockWriteProt (ECUC_NvM_00033):              0
+* NvMCalcRamBlockCrc (ECUC_NvM_00119):             0
+* NvMInitBlockCallback (ECUC_NvM_00116):           UNDEFINED
+* NvMMaxNumOfReadRetries (ECUC_NvM_00533):         0
+* NvMMaxNumOfWriteRetries (ECUC_NvM_00499):        0
+* NvMNvBlockLength (ECUC_NvM_00479):               2 Bytes
+* NvMNvBlockNum (ECUC_NvM_00480):                  1
+* NvMNvramBlockIdentifier (ECUC_NvM_00481):        1
+* NvMNvramDeviceId (ECUC_NvM_00035):               0
+* NvMRamBlockDataAddress (ECUC_NvM_00482):         NULL_PTR
+* NvMRbBackupBlock (RB add-on):                    0
+* NvMRbBlockPersistentId (RB add-on):              -1
+* NvMRbBlockVersion (RB add-on):                   0
+* NvMRbFirstReadDataMigration (RB add-on):         0
+* NvMRbNoFallback (RB add-on):                     0
+* NvMRbNvBlockLengthString (RB add-on):            NULL_PTR
+* NvMRbRamBlockDataAddressString (RB add-on):      NULL_PTR
+* NvMRbRamInitUnconditional (RB add-on):           0
+* NvMRbResistantToLayoutRemoval (RB add-on):       0
+* NvMRbSelectBlockForFirstInitAll (RB add-on):     0
+* NvMRbWriteCounter (RB add-on):                   0
+* NvMReadRamBlockFromNvCallback (ECUC_NvM_00521):  NULL_PTR
+* NvMResistantToChangedSw (ECUC_NvM_00483):        0
+* NvMRomBlockDataAddress (ECUC_NvM_00484):         NULL_PTR
+* NvMRomBlockNum (ECUC_NvM_00485):                 0
+* NvMSelectBlockForReadAll (ECUC_NvM_00117):       0
+* NvMSelectBlockForWriteAll (ECUC_NvM_00549):      0
+* NvMSingleBlockCallback (ECUC_NvM_00506):         UNDEFINED
+* NvMRbSingleBlockStartCallback (RB add-on):       NULL_PTR
+* NvMStaticBlockIDCheck (ECUC_NvM_00532):          0
+* NvMWriteBlockOnce (ECUC_NvM_00072):              0
+* NvMWriteRamBlockToNvCallback (ECUC_NvM_00520):   NULL_PTR
+* NvMWriteVerification (ECUC_NvM_00534):           0
+* NvMWriteVerificationDataSize (ECUC_NvM_00538):   0
+* NvMBlockCipheringRef (ECUC_NvM_00567):           -
+*
+* NvMRbRamInitAddSavedZoneName (RB add-on):        
+* Index of NvMRbRamInitAddSavedZoneName(RB add-on):0
+*
+* Block Layout:
+*   Data payload size (Bytes):                      [2]
+*   Position user data:                             [0:1]
+************************************************************************************************************************"
+
+************************************************************************************************************************
+* Blockname:    NvM_MultiBlock
+*
+* NvMBlockCrcType (ECUC_NvM_00476):                NVM_CRC16
+* NvMBlockHeaderInclude (RB add-on):               NULL_PTR
+* NvMBlockJobPriority (ECUC_NvM_00477):            1
+* NvMBlockManagementType (ECUC_NvM_00062):         NVM_BLOCK_NATIVE
+* NvMBlockUseAutoValidation (ECUC_NvM_00557):      0
+* NvMBlockUseCompression (ECUC_NvM_00563):         0
+* NvMBlockUseCrc (ECUC_NvM_00036):                 1
+* NvMBlockUseCRCCompMechanism (ECUC_NvM_00556):    0
+* NvMBlockUsePort_Admin (ECUC_NvM_00559, RB):      0
+* NvMBlockUsePort_Service (ECUC_NvM_00559, RB):    0
+* NvMBlockUseSyncMechanism (ECUC_NvM_00519):       0
+* NvMBlockWriteProt (ECUC_NvM_00033):              0
+* NvMCalcRamBlockCrc (ECUC_NvM_00119):             0
+* NvMInitBlockCallback (ECUC_NvM_00116):           UNDEFINED
+* NvMMaxNumOfReadRetries (ECUC_NvM_00533):         0
+* NvMMaxNumOfWriteRetries (ECUC_NvM_00499):        0
+* NvMNvBlockLength (ECUC_NvM_00479):               1 Bytes
+* NvMNvBlockNum (ECUC_NvM_00480):                  1
+* NvMNvramBlockIdentifier (ECUC_NvM_00481):        0
+* NvMNvramDeviceId (ECUC_NvM_00035):               0
+* NvMRamBlockDataAddress (ECUC_NvM_00482):         NULL_PTR
+* NvMRbBackupBlock (RB add-on):                    0
+* NvMRbBlockPersistentId (RB add-on):              -1
+* NvMRbBlockVersion (RB add-on):                   0
+* NvMRbFirstReadDataMigration (RB add-on):         0
+* NvMRbNoFallback (RB add-on):                     0
+* NvMRbNvBlockLengthString (RB add-on):            NULL_PTR
+* NvMRbRamBlockDataAddressString (RB add-on):      NULL_PTR
+* NvMRbRamInitUnconditional (RB add-on):           0
+* NvMRbResistantToLayoutRemoval (RB add-on):       0
+* NvMRbSelectBlockForFirstInitAll (RB add-on):     0
+* NvMRbWriteCounter (RB add-on):                   0
+* NvMReadRamBlockFromNvCallback (ECUC_NvM_00521):  NULL_PTR
+* NvMResistantToChangedSw (ECUC_NvM_00483):        0
+* NvMRomBlockDataAddress (ECUC_NvM_00484):         NULL_PTR
+* NvMRomBlockNum (ECUC_NvM_00485):                 0
+* NvMSelectBlockForReadAll (ECUC_NvM_00117):       0
+* NvMSelectBlockForWriteAll (ECUC_NvM_00549):      0
+* NvMSingleBlockCallback (ECUC_NvM_00506):         UNDEFINED
+* NvMRbSingleBlockStartCallback (RB add-on):       NULL_PTR
+* NvMStaticBlockIDCheck (ECUC_NvM_00532):          0
+* NvMWriteBlockOnce (ECUC_NvM_00072):              0
+* NvMWriteRamBlockToNvCallback (ECUC_NvM_00520):   NULL_PTR
+* NvMWriteVerification (ECUC_NvM_00534):           0
+* NvMWriteVerificationDataSize (ECUC_NvM_00538):   0
+* NvMBlockCipheringRef (ECUC_NvM_00567):           -
+*
+* NvMRbRamInitAddSavedZoneName (RB add-on):        
+* Index of NvMRbRamInitAddSavedZoneName(RB add-on):0
+*
+* Block Layout:
+*   Data payload size (Bytes):                      [1]
+*   Position user data:                             [0:0]
+************************************************************************************************************************"
+
+************************************************************************************************************************
+* Blockname:    NvM_NativeBlock_2
+*
+* NvMBlockCrcType (ECUC_NvM_00476):                NVM_CRC32
+* NvMBlockHeaderInclude (RB add-on):               NULL_PTR
+* NvMBlockJobPriority (ECUC_NvM_00477):            1
+* NvMBlockManagementType (ECUC_NvM_00062):         NVM_BLOCK_NATIVE
+* NvMBlockUseAutoValidation (ECUC_NvM_00557):      0
+* NvMBlockUseCompression (ECUC_NvM_00563):         0
+* NvMBlockUseCrc (ECUC_NvM_00036):                 0
+* NvMBlockUseCRCCompMechanism (ECUC_NvM_00556):    0
+* NvMBlockUsePort_Admin (ECUC_NvM_00559, RB):      1
+* NvMBlockUsePort_Service (ECUC_NvM_00559, RB):    1
+* NvMBlockUseSyncMechanism (ECUC_NvM_00519):       0
+* NvMBlockWriteProt (ECUC_NvM_00033):              0
+* NvMCalcRamBlockCrc (ECUC_NvM_00119):             0
+* NvMInitBlockCallback (ECUC_NvM_00116):           UNDEFINED
+* NvMMaxNumOfReadRetries (ECUC_NvM_00533):         0
+* NvMMaxNumOfWriteRetries (ECUC_NvM_00499):        0
+* NvMNvBlockLength (ECUC_NvM_00479):               2 Bytes
+* NvMNvBlockNum (ECUC_NvM_00480):                  1
+* NvMNvramBlockIdentifier (ECUC_NvM_00481):        3
+* NvMNvramDeviceId (ECUC_NvM_00035):               0
+* NvMRamBlockDataAddress (ECUC_NvM_00482):         Rte_CPim_MyReceivingSWC_PIM_01
+* NvMRbBackupBlock (RB add-on):                    0
+* NvMRbBlockPersistentId (RB add-on):              42697
+* NvMRbBlockVersion (RB add-on):                   0
+* NvMRbFirstReadDataMigration (RB add-on):         0
+* NvMRbNoFallback (RB add-on):                     0
+* NvMRbNvBlockLengthString (RB add-on):            NULL_PTR
+* NvMRbRamBlockDataAddressString (RB add-on):      NULL_PTR
+* NvMRbRamInitUnconditional (RB add-on):           0
+* NvMRbResistantToLayoutRemoval (RB add-on):       0
+* NvMRbSelectBlockForFirstInitAll (RB add-on):     0
+* NvMRbWriteCounter (RB add-on):                   0
+* NvMReadRamBlockFromNvCallback (ECUC_NvM_00521):  NULL_PTR
+* NvMResistantToChangedSw (ECUC_NvM_00483):        0
+* NvMRomBlockDataAddress (ECUC_NvM_00484):         NULL_PTR
+* NvMRomBlockNum (ECUC_NvM_00485):                 0
+* NvMSelectBlockForReadAll (ECUC_NvM_00117):       1
+* NvMSelectBlockForWriteAll (ECUC_NvM_00549):      1
+* NvMSingleBlockCallback (ECUC_NvM_00506):         UNDEFINED
+* NvMRbSingleBlockStartCallback (RB add-on):       NULL_PTR
+* NvMStaticBlockIDCheck (ECUC_NvM_00532):          0
+* NvMWriteBlockOnce (ECUC_NvM_00072):              0
+* NvMWriteRamBlockToNvCallback (ECUC_NvM_00520):   NULL_PTR
+* NvMWriteVerification (ECUC_NvM_00534):           0
+* NvMWriteVerificationDataSize (ECUC_NvM_00538):   0
+* NvMBlockCipheringRef (ECUC_NvM_00567):           -
+*
+* NvMRbRamInitAddSavedZoneName (RB add-on):        
+* Index of NvMRbRamInitAddSavedZoneName(RB add-on):0
+*
+* Block Layout:
+*   Data payload size (Bytes):                      [2]
+*   Position user data:                             [0:1]
+************************************************************************************************************************"
+
+************************************************************************************************************************
+* Blockname:    NvM_NativeBlock_3
+*
+* NvMBlockCrcType (ECUC_NvM_00476):                NVM_CRC32
+* NvMBlockHeaderInclude (RB add-on):               NULL_PTR
+* NvMBlockJobPriority (ECUC_NvM_00477):            1
+* NvMBlockManagementType (ECUC_NvM_00062):         NVM_BLOCK_NATIVE
+* NvMBlockUseAutoValidation (ECUC_NvM_00557):      0
+* NvMBlockUseCompression (ECUC_NvM_00563):         0
+* NvMBlockUseCrc (ECUC_NvM_00036):                 0
+* NvMBlockUseCRCCompMechanism (ECUC_NvM_00556):    0
+* NvMBlockUsePort_Admin (ECUC_NvM_00559, RB):      1
+* NvMBlockUsePort_Service (ECUC_NvM_00559, RB):    1
+* NvMBlockUseSyncMechanism (ECUC_NvM_00519):       0
+* NvMBlockWriteProt (ECUC_NvM_00033):              0
+* NvMCalcRamBlockCrc (ECUC_NvM_00119):             0
+* NvMInitBlockCallback (ECUC_NvM_00116):           UNDEFINED
+* NvMMaxNumOfReadRetries (ECUC_NvM_00533):         0
+* NvMMaxNumOfWriteRetries (ECUC_NvM_00499):        0
+* NvMNvBlockLength (ECUC_NvM_00479):               2 Bytes
+* NvMNvBlockNum (ECUC_NvM_00480):                  1
+* NvMNvramBlockIdentifier (ECUC_NvM_00481):        4
+* NvMNvramDeviceId (ECUC_NvM_00035):               0
+* NvMRamBlockDataAddress (ECUC_NvM_00482):         Rte_CPim_MyReceivingSWC_PIM_02
+* NvMRbBackupBlock (RB add-on):                    0
+* NvMRbBlockPersistentId (RB add-on):              46912
+* NvMRbBlockVersion (RB add-on):                   0
+* NvMRbFirstReadDataMigration (RB add-on):         0
+* NvMRbNoFallback (RB add-on):                     0
+* NvMRbNvBlockLengthString (RB add-on):            NULL_PTR
+* NvMRbRamBlockDataAddressString (RB add-on):      NULL_PTR
+* NvMRbRamInitUnconditional (RB add-on):           0
+* NvMRbResistantToLayoutRemoval (RB add-on):       0
+* NvMRbSelectBlockForFirstInitAll (RB add-on):     0
+* NvMRbWriteCounter (RB add-on):                   0
+* NvMReadRamBlockFromNvCallback (ECUC_NvM_00521):  NULL_PTR
+* NvMResistantToChangedSw (ECUC_NvM_00483):        0
+* NvMRomBlockDataAddress (ECUC_NvM_00484):         NULL_PTR
+* NvMRomBlockNum (ECUC_NvM_00485):                 0
+* NvMSelectBlockForReadAll (ECUC_NvM_00117):       1
+* NvMSelectBlockForWriteAll (ECUC_NvM_00549):      1
+* NvMSingleBlockCallback (ECUC_NvM_00506):         UNDEFINED
+* NvMRbSingleBlockStartCallback (RB add-on):       NULL_PTR
+* NvMStaticBlockIDCheck (ECUC_NvM_00532):          0
+* NvMWriteBlockOnce (ECUC_NvM_00072):              0
+* NvMWriteRamBlockToNvCallback (ECUC_NvM_00520):   NULL_PTR
+* NvMWriteVerification (ECUC_NvM_00534):           0
+* NvMWriteVerificationDataSize (ECUC_NvM_00538):   0
+* NvMBlockCipheringRef (ECUC_NvM_00567):           -
+*
+* NvMRbRamInitAddSavedZoneName (RB add-on):        
+* Index of NvMRbRamInitAddSavedZoneName(RB add-on):0
+*
+* Block Layout:
+*   Data payload size (Bytes):                      [2]
+*   Position user data:                             [0:1]
+************************************************************************************************************************"
+
+-->

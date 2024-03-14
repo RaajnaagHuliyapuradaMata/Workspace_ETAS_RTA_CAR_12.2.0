@@ -1,0 +1,1882 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <ADMIN-DATA>
+    <DOC-REVISIONS>
+      <DOC-REVISION>
+        <ISSUED-BY>RB</ISSUED-BY>
+        <DATE>2022-04-29</DATE>
+      </DOC-REVISION>
+    </DOC-REVISIONS>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>RB</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>RBA</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>rba_Dma</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE>
+                  <SHORT-NAME>EcucModuleDefs</SHORT-NAME>
+                  <ELEMENTS>
+                    <!-- Module Definition: rba_Dma -->
+                    <ECUC-MODULE-DEF>
+                      <SHORT-NAME>rba_Dma</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">MCAL Dma</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">Container for DMA configuration.</L-2>
+                      </DESC>
+                      <CATEGORY>VENDOR_SPECIFIC_MODULE_DEFINITION</CATEGORY>
+                      <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                          <DOC-REVISION>
+                            <REVISION-LABEL>0.1.0</REVISION-LABEL>
+                            <ISSUED-BY>RB</ISSUED-BY>
+                            <DATE>2011-11-15</DATE>
+                          </DOC-REVISION>
+                        </DOC-REVISIONS>
+                      </ADMIN-DATA>
+                      <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <POST-BUILD-VARIANT-SUPPORT>true</POST-BUILD-VARIANT-SUPPORT>
+                      <SUPPORTED-CONFIG-VARIANTS>
+                        <SUPPORTED-CONFIG-VARIANT>VARIANT-PRE-COMPILE</SUPPORTED-CONFIG-VARIANT>
+                      </SUPPORTED-CONFIG-VARIANTS>
+                      <CONTAINERS>
+                        <!-- Container Definition: rba_Dma_Cfg -->
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>rba_Dma_Cfg</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">DMA configuration</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Defines one data set of post-build configuration. Which of these data sets is actually active is controlled by EcuM. Data sets can only be switched at initialization time. Multiple instances of such containers with same identifier are automatically merged. Data set ID is the short name of this container.</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <SUB-CONTAINERS>
+                            <!-- Container Definition: rba_Dma_Ch -->
+                            <ECUC-PARAM-CONF-CONTAINER-DEF>
+                              <SHORT-NAME>rba_Dma_Ch</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">DMA channel</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Container for a DMA channel configuration</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY-INFINITE>true</UPPER-MULTIPLICITY-INFINITE>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <PARAMETERS>
+                                <!-- PARAMETER DEFINITION: rba_Dma_1_Unit -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_1_Unit</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Unit</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Selects the DMA move engine (sub block). Range:<BR/>
+IFX: 0<BR/>
+ST Centauri: 0, 1<BR/>
+ST P6/X7: 0 .. 3</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <ORIGIN>RB:0.1.0:2011-04-19</ORIGIN>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_2_Ch -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_2_Ch</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Channel</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Selects the DMA channel to be configured. Range:<BR/>
+IFX: 0 .. 127<BR/>
+ST Centauri: 0 .. 63<BR/>
+ST P6/X7 move engine 0-2: 0 .. 31<BR/>
+ST P6/X7 move engine 3: 0 .. 63<BR/>
+Hint: For ST SR6 controllers all CASCADEMUX inputs need to be configured on any of the channels 0 .. 15!</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <ORIGIN>RB:0.1.0:2011-04-19</ORIGIN>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_3_TrgSrc -->
+                                <ECUC-STRING-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_3_TrgSrc</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Trigger source</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Trigger source selection.<BR/>
+ST devices use this tag to configure the actual trigger source. Keep in mind that not all trigger sources can be connected to one specific channel, cross-check controller manual for valid settings.<BR/>
+Valid examples:<BR/>
+SD_ADC_1_EOC<BR/>
+GTM_ATOM8_IRQ3<BR/>
+SAR_ADC_12bit_3</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:0.1.0:2011-07-22</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                    <ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                      <REGULAR-EXPRESSION>[A-Za-z_][A-Za-z0-9_]*</REGULAR-EXPRESSION>
+                                    </ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                  </ECUC-STRING-PARAM-DEF-VARIANTS>
+                                </ECUC-STRING-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_4_Irq -->
+                                <ECUC-STRING-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_4_Irq</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Interrupt generation</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">This tag is deprecated and not evaluated, use container rba_Dma_Irq instead.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:0.1.0:2011-05-09</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                    <ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                      <REGULAR-EXPRESSION>[A-Za-z_][A-Za-z0-9_]*</REGULAR-EXPRESSION>
+                                    </ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                  </ECUC-STRING-PARAM-DEF-VARIANTS>
+                                </ECUC-STRING-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_5_LinkCh -->
+                                <ECUC-STRING-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_5_LinkCh</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Target linked channel</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Specify the target DMA channel name which shall be triggered by this channel.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:3.0.0:2014-04-23</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                    <ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                      <REGULAR-EXPRESSION>[A-Za-z_][A-Za-z0-9_]*</REGULAR-EXPRESSION>
+                                    </ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                                  </ECUC-STRING-PARAM-DEF-VARIANTS>
+                                </ECUC-STRING-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_6_VmidSel -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_6_VmidSel</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">VMID selection</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">ST SR6P6 (and successors) only: Selects which of the four pre-defined VMIDs this channel shall use for its operation.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:0.1.0:2011-04-19</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <MAX>3</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                              </PARAMETERS>
+                              <SUB-CONTAINERS>
+                                <!-- Container Definition: rba_Dma_Irq -->
+                                <ECUC-PARAM-CONF-CONTAINER-DEF>
+                                  <SHORT-NAME>rba_Dma_Irq</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">IRQ trigger</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Container for a DMA channel ISR configuration</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <PARAMETERS>
+                                    <!-- PARAMETER DEFINITION: rba_Dma_Irq_IsrFunction -->
+                                    <ECUC-STRING-PARAM-DEF>
+                                      <SHORT-NAME>rba_Dma_Irq_IsrFunction</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Interrupt Service Routine</L-4>
+                                      </LONG-NAME>
+                                      <DESC>
+                                        <L-2 L="EN">Name of the ISR function to be called on DMA channel events.</L-2>
+                                      </DESC>
+                                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                      <MULTIPLICITY-CONFIG-CLASSES>
+                                        <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                        </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      </MULTIPLICITY-CONFIG-CLASSES>
+                                      <ORIGIN>RB:5.0.0:2021-04-28</ORIGIN>
+                                      <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                      <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                      <VALUE-CONFIG-CLASSES>
+                                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                                      </VALUE-CONFIG-CLASSES>
+                                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                      <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                        <ECUC-STRING-PARAM-DEF-CONDITIONAL/>
+                                      </ECUC-STRING-PARAM-DEF-VARIANTS>
+                                    </ECUC-STRING-PARAM-DEF>
+                                    <!-- PARAMETER DEFINITION: rba_Dma_Irq_IsrHeader -->
+                                    <ECUC-STRING-PARAM-DEF>
+                                      <SHORT-NAME>rba_Dma_Irq_IsrHeader</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">ISR Header File</L-4>
+                                      </LONG-NAME>
+                                      <DESC>
+                                        <L-2 L="EN">Header file to be included which contains the extern declaration for the configured ISR function.</L-2>
+                                      </DESC>
+                                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                      <MULTIPLICITY-CONFIG-CLASSES>
+                                        <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                        </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      </MULTIPLICITY-CONFIG-CLASSES>
+                                      <ORIGIN>RB:5.0.0:2021-04-28</ORIGIN>
+                                      <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                      <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                      <VALUE-CONFIG-CLASSES>
+                                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                                      </VALUE-CONFIG-CLASSES>
+                                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                      <ECUC-STRING-PARAM-DEF-VARIANTS>
+                                        <ECUC-STRING-PARAM-DEF-CONDITIONAL/>
+                                      </ECUC-STRING-PARAM-DEF-VARIANTS>
+                                    </ECUC-STRING-PARAM-DEF>
+                                  </PARAMETERS>
+                                </ECUC-PARAM-CONF-CONTAINER-DEF>
+                              </SUB-CONTAINERS>
+                            </ECUC-PARAM-CONF-CONTAINER-DEF>
+                            <!-- Container Definition: rba_Dma_MeSettingsSt -->
+                            <ECUC-PARAM-CONF-CONTAINER-DEF>
+                              <SHORT-NAME>rba_Dma_MeSettingsSt</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Move engine specific configuration (ST)</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Move engine specific settings for ST Controllers. Depending on controller / available HW ressources not all configuration tags are evaluated. See controller manual for available features, move engines, channels and channel groups per move engine.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <PARAMETERS>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me0DsblSysCall -->
+                                <ECUC-BOOLEAN-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me0DsblSysCall</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 0 Disable SystemCall usage</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">This tag is used to override System Call usage for this move engine if System Calls are globally enbled. If set to &apos;TRUE&apos; than no System Calls are used for accessing HW registers of this move engines by SW. If System Calls are globally disabled the setting of this tag has no effect. System Calls can be enabled in component rba_McalSrv and are normally only required in IPP environments.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                                </ECUC-BOOLEAN-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me0EnblErca -->
+                                <ECUC-BOOLEAN-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me0EnblErca</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 0 Enable Round Robin Channel Arbitration</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">When enabling this option Round-robin arbitration is used for channel selection within each group (see manual).</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                                </ECUC-BOOLEAN-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me0EnblErga -->
+                                <ECUC-BOOLEAN-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me0EnblErga</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 0 Enable Round Robin Group Arbitration</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">When enabling this option Round-robin arbitration is used for selection among the groups (see manual).</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                                </ECUC-BOOLEAN-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me0Grp0Pri -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me0Grp0Pri</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 0 group 0 priority (channel 0 .. 15)</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Channel group 0 (channels 0 .. 15) priority setting, range 0 .. 3<BR/>
+Note: group priorites must be unique!</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                                  <MAX>3</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me0Grp0Vmid -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me0Grp0Vmid</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 0 VMID 0</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">For SR6X7 this is the group 0 VMID, for all other controllers this is the setting for VMID register 0. If a value is configured here the VMID usage is automatically enabled.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                                  <MAX>255</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me0Grp1Pri -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me0Grp1Pri</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 0 group 1 priority (channel 16 .. 31)</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Channel group 1 (channels 16 .. 31) priority setting, range 0 .. 3<BR/>
+Note: group priorites must be unique!</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>1</DEFAULT-VALUE>
+                                  <MAX>3</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me0Grp1Vmid -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me0Grp1Vmid</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 0 VMID 1</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">For SR6X7 this is the group 1 VMID, for all other controllers this is the setting for VMID register 1. See rba_Dma_Me0Grp0Vmid for further information.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                                  <MAX>255</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me0Grp2Pri -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me0Grp2Pri</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 0 group 2 priority (channel 32 .. 47)</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Channel group 2 (channels 32 .. 47) priority setting, range 0 .. 3<BR/>
+Note: group priorites must be unique!</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>2</DEFAULT-VALUE>
+                                  <MAX>3</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me0Grp2Vmid -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me0Grp2Vmid</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 0 VMID 2</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">This is the setting for VMID register 2. See rba_Dma_Me0Grp0Vmid for further information.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                                  <MAX>255</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me0Grp3Pri -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me0Grp3Pri</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 0 group 3 priority (channel 48 .. 63)</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Channel group 3 (channels 48 .. 63) priority setting, range 0 .. 3<BR/>
+Note: group priorites must be unique!</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>3</DEFAULT-VALUE>
+                                  <MAX>3</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me0Grp3Vmid -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me0Grp3Vmid</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 0 VMID 3</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">This is the setting for VMID register 3. See rba_Dma_Me0Grp0Vmid for further information.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                                  <MAX>255</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me1DsblSysCall -->
+                                <ECUC-BOOLEAN-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me1DsblSysCall</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 1 Disable SystemCall usage</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">This tag is used to override System Call usage for this move engine if System Calls are globally enbled. If set to &apos;TRUE&apos; than no System Calls are used for accessing HW registers of this move engines by SW. If System Calls are globally disabled the setting of this tag has no effect. System Calls can be enabled in component rba_McalSrv and are normally only required in IPP environments.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                                </ECUC-BOOLEAN-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me1EnblErca -->
+                                <ECUC-BOOLEAN-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me1EnblErca</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 1 Enable Round Robin Channel Arbitration</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">When enabling this option Round-robin arbitration is used for channel selection within each group (see manual).</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                                </ECUC-BOOLEAN-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me1EnblErga -->
+                                <ECUC-BOOLEAN-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me1EnblErga</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 1 Enable Round Robin Group Arbitration</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">When enabling this option Round-robin arbitration is used for selection among the groups (see manual).</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                                </ECUC-BOOLEAN-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me1Grp0Pri -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me1Grp0Pri</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 1 group 0 priority (channel 0 .. 15)</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Channel group 0 (channels 0 .. 15) priority setting, range 0 .. 3<BR/>
+Note: group priorites must be unique!</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                                  <MAX>3</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me1Grp0Vmid -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me1Grp0Vmid</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 1 VMID 0</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">For SR6X7 this is the group 0 VMID, for all other controllers this is the setting for VMID register 0. See rba_Dma_Me0Grp0Vmid for further information.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                                  <MAX>255</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me1Grp1Pri -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me1Grp1Pri</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 1 group 1 priority (channel 16 .. 31)</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Channel group 1 (channels 16 .. 31) priority setting, range 0 .. 3<BR/>
+Note: group priorites must be unique!</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>1</DEFAULT-VALUE>
+                                  <MAX>3</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me1Grp1Vmid -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me1Grp1Vmid</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 1 VMID 1</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">For SR6X7 this is the group 1 VMID, for all other controllers this is the setting for VMID register 1. See rba_Dma_Me0Grp0Vmid for further information.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                                  <MAX>255</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me1Grp2Pri -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me1Grp2Pri</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 1 group 2 priority (channel 32 .. 47)</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Channel group 2 (channels 32 .. 47) priority setting, range 0 .. 3<BR/>
+Note: group priorites must be unique!</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>2</DEFAULT-VALUE>
+                                  <MAX>3</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me1Grp2Vmid -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me1Grp2Vmid</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 1 VMID 2</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">This is the setting for VMID register 2. See rba_Dma_Me0Grp0Vmid for further information.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                                  <MAX>255</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me1Grp3Pri -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me1Grp3Pri</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 1 group 3 priority (channel 48 .. 63)</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Channel group 3 (channels 48 .. 63) priority setting, range 0 .. 3<BR/>
+Note: group priorites must be unique!</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>3</DEFAULT-VALUE>
+                                  <MAX>3</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me1Grp3Vmid -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me1Grp3Vmid</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 1 VMID 3</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">This is the setting for VMID register 3. See rba_Dma_Me0Grp0Vmid for further information.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                                  <MAX>255</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me2DsblSysCall -->
+                                <ECUC-BOOLEAN-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me2DsblSysCall</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 2 Disable SystemCall usage</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">This tag is used to override System Call usage for this move engine if System Calls are globally enbled. If set to &apos;TRUE&apos; than no System Calls are used for accessing HW registers of this move engines by SW. If System Calls are globally disabled the setting of this tag has no effect. System Calls can be enabled in component rba_McalSrv and are normally only required in IPP environments.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                                </ECUC-BOOLEAN-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me2EnblErca -->
+                                <ECUC-BOOLEAN-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me2EnblErca</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 2 Enable Round Robin Channel Arbitration</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">When enabling this option Round-robin arbitration is used for channel selection within each group (see manual).</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                                </ECUC-BOOLEAN-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me2EnblErga -->
+                                <ECUC-BOOLEAN-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me2EnblErga</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 2 Enable Round Robin Group Arbitration</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">When enabling this option Round-robin arbitration is used for selection among the groups (see manual).</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                                </ECUC-BOOLEAN-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me2Grp0Pri -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me2Grp0Pri</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 2 group 0 priority (channel 0 .. 15)</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Channel group 0 (channels 0 .. 15) priority setting, range 0 .. 3<BR/>
+Note: group priorites must be unique!</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                                  <MAX>3</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me2Grp0Vmid -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me2Grp0Vmid</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 2 VMID 0</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">For SR6X7 this is the group 0 VMID, for all other controllers this is the setting for VMID register 0. See rba_Dma_Me0Grp0Vmid for further information.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                                  <MAX>255</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me2Grp1Pri -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me2Grp1Pri</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 2 group 1 priority (channel 16 .. 31)</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Channel group 1 (channels 16 .. 31) priority setting, range 0 .. 3<BR/>
+Note: group priorites must be unique!</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>1</DEFAULT-VALUE>
+                                  <MAX>3</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me2Grp1Vmid -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me2Grp1Vmid</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 2 VMID 1</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">For SR6X7 this is the group 1 VMID, for all other controllers this is the setting for VMID register 1. See rba_Dma_Me0Grp0Vmid for further information.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                                  <MAX>255</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me2Grp2Pri -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me2Grp2Pri</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 2 group 2 priority (channel 32 .. 47)</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Channel group 2 (channels 32 .. 47) priority setting, range 0 .. 3<BR/>
+Note: group priorites must be unique!</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>0</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>2</DEFAULT-VALUE>
+                                  <MAX>3</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me2Grp2Vmid -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me2Grp2Vmid</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 2 VMID 2</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">This is the setting for VMID register 2. See rba_Dma_Me0Grp0Vmid for further information.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                                  <MAX>255</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me2Grp3Pri -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me2Grp3Pri</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 2 group 3 priority (channel 48 .. 63)</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Channel group 3 (channels 48 .. 63) priority setting, range 0 .. 3<BR/>
+Note: group priorites must be unique!</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>0</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>3</DEFAULT-VALUE>
+                                  <MAX>3</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me2Grp3Vmid -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me2Grp3Vmid</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 2 VMID 3</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">This is the setting for VMID register 3. See rba_Dma_Me0Grp0Vmid for further information.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                                  <MAX>255</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me3DsblSysCall -->
+                                <ECUC-BOOLEAN-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me3DsblSysCall</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 3 Disable SystemCall usage</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">This tag is used to override System Call usage for this move engine if System Calls are globally enbled. If set to &apos;TRUE&apos; than no System Calls are used for accessing HW registers of this move engines by SW. If System Calls are globally disabled the setting of this tag has no effect. System Calls can be enabled in component rba_McalSrv and are normally only required in IPP environments.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                                </ECUC-BOOLEAN-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me3EnblErca -->
+                                <ECUC-BOOLEAN-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me3EnblErca</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 3 Enable Round Robin Channel Arbitration</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">When enabling this option Round-robin arbitration is used for channel selection within each group (see manual).</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                                </ECUC-BOOLEAN-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me3EnblErga -->
+                                <ECUC-BOOLEAN-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me3EnblErga</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 3 Enable Round Robin Group Arbitration</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">When enabling this option Round-robin arbitration is used for selection among the groups (see manual).</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                                </ECUC-BOOLEAN-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me3Grp0Pri -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me3Grp0Pri</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 3 group 0 priority (channel 0 .. 15)</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Channel group 0 (channels 0 .. 15) priority setting, range 0 .. 3<BR/>
+Note: group priorites must be unique!</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                                  <MAX>3</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me3Grp0Vmid -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me3Grp0Vmid</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 3 VMID 0</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">For SR6X7 this is the group 0 VMID, for all other controllers this is the setting for VMID register 0. See rba_Dma_Me0Grp0Vmid for further information.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                                  <MAX>255</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me3Grp1Pri -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me3Grp1Pri</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 3 group 1 priority (channel 16 .. 31)</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Channel group 1 (channels 16 .. 31) priority setting, range 0 .. 3<BR/>
+Note: group priorites must be unique!</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>1</DEFAULT-VALUE>
+                                  <MAX>3</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me3Grp1Vmid -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me3Grp1Vmid</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 3 VMID 1</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">For SR6X7 this is the group 1 VMID, for all other controllers this is the setting for VMID register 1. See rba_Dma_Me0Grp0Vmid for further information.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                                  <MAX>255</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me3Grp2Pri -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me3Grp2Pri</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 3 group 2 priority (channel 32 .. 47)</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Channel group 2 (channels 32 .. 47) priority setting, range 0 .. 3<BR/>
+Note: group priorites must be unique!</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>2</DEFAULT-VALUE>
+                                  <MAX>3</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me3Grp2Vmid -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me3Grp2Vmid</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 3 VMID 2</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">For SR6X7 this is the group 2 VMID, for all other controllers this is the setting for VMID register 2.See rba_Dma_Me0Grp0Vmid for further information.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                                  <MAX>255</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me3Grp3Pri -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me3Grp3Pri</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 3 group 3 priority (channel 48 .. 63)</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Channel group 3 (channels 48 .. 63) priority setting, range 0 .. 3<BR/>
+Note: group priorites must be unique!</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>3</DEFAULT-VALUE>
+                                  <MAX>3</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                                <!-- PARAMETER DEFINITION: rba_Dma_Me3Grp3Vmid -->
+                                <ECUC-INTEGER-PARAM-DEF>
+                                  <SHORT-NAME>rba_Dma_Me3Grp3Vmid</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Move engine 3 VMID 3</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">For SR6X7 this is the group 3 VMID, for all other controllers this is the setting for VMID register 3. See rba_Dma_Me0Grp0Vmid for further information.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:4.0.0:2021-01-31</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                                  <MAX>255</MAX>
+                                  <MIN>0</MIN>
+                                </ECUC-INTEGER-PARAM-DEF>
+                              </PARAMETERS>
+                            </ECUC-PARAM-CONF-CONTAINER-DEF>
+                          </SUB-CONTAINERS>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                        <!-- Container Definition: rba_Dma_General -->
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>rba_Dma_General</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">General configuration</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">General DMA configuration valid for all post build configurations.</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <PARAMETERS>
+                            <!-- PARAMETER DEFINITION: rba_Dma_ActErrDet -->
+                            <ECUC-BOOLEAN-PARAM-DEF>
+                              <SHORT-NAME>rba_Dma_ActErrDet</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Development error detection</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Enables/disables the detection and notification of development errors. If this parameter is enabled, then extended error checking is performed during runtime; This feature should be switched off in series software. --&gt; currently not supported</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB:0.1.0:2011-04-19</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                            </ECUC-BOOLEAN-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: rba_Dma_EnblEmlm -->
+                            <ECUC-BOOLEAN-PARAM-DEF>
+                              <SHORT-NAME>rba_Dma_EnblEmlm</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Enable Minor Loop Mapping</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Enables Minor Loop Mapping for all Move Engines on ST controllers. Enabling this feature gives additional increment/decrement options at the end of each minor eDMA loop. However, the maximum transfer size per trigger is reduced (see manual).</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB:1.0.0:2019-07-30</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                            </ECUC-BOOLEAN-PARAM-DEF>
+                            <!-- PARAMETER DEFINITION: rba_Dma_ErrReaction -->
+                            <ECUC-ENUMERATION-PARAM-DEF>
+                              <SHORT-NAME>rba_Dma_ErrReaction</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Error Reaction</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Selects how rba_Dma shall handle internal DMA errors.<BR/>
+If Count/Det is selected a counter is raised and a Det entry will be generated if activated by rba_Dma_ActErrDet.<BR/>
+If Reset is selected a configuration of a suitable rba_Reset event is necessary.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB:2.1.0:2014-02-19</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>None</DEFAULT-VALUE>
+                              <LITERALS>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>None</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">no reaction</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB:v2.1.0:2014-02-19</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>Det</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Count/Det</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB:v2.1.0:2014-02-19</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>Reset</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">trigger a Reset</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB:v2.1.0:2014-02-19</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                              </LITERALS>
+                            </ECUC-ENUMERATION-PARAM-DEF>
+                          </PARAMETERS>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                      </CONTAINERS>
+                    </ECUC-MODULE-DEF>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

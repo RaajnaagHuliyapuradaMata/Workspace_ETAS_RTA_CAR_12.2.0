@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>AUTOSAR_Dem</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>EcucModuleDefs</SHORT-NAME>
+          <ELEMENTS>
+            <ECUC-MODULE-DEF>
+              <SHORT-NAME>Dem</SHORT-NAME>
+              <DESC>
+                <L-2 L="EN">Configuration of the Dem (Diagnostic Event Manager) module.</L-2>
+              </DESC>
+              <CATEGORY>VENDOR_SPECIFIC_MODULE_DEFINITION</CATEGORY>
+              <ADMIN-DATA>
+                <DOC-REVISIONS>
+                  <DOC-REVISION>
+                    <REVISION-LABEL>4.5.0</REVISION-LABEL>
+                    <ISSUED-BY>AUTOSAR</ISSUED-BY>
+                    <DATE>2021-06-07</DATE>
+                  </DOC-REVISION>
+                  <DOC-REVISION>
+                    <REVISION-LABEL>45.0.1.0</REVISION-LABEL>
+                    <ISSUED-BY>RB</ISSUED-BY>
+                    <DATE>2021-06-07</DATE>
+                  </DOC-REVISION>
+                </DOC-REVISIONS>
+              </ADMIN-DATA>
+              <RELATED-TRACE-ITEM-REF BASE="ArTrace" DEST="TRACEABLE">ECUC_Dem_00928</RELATED-TRACE-ITEM-REF>             
+              <REFINED-MODULE-DEF-REF DEST="ECUC-MODULE-DEF">/AUTOSAR/EcucDefs/Dem</REFINED-MODULE-DEF-REF>             
+              <CONTAINERS>
+                <ECUC-PARAM-CONF-CONTAINER-DEF>
+                  <SHORT-NAME>DemConfigSet</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">This container contains the configuration parameters and sub containers of the Dem module supporting multiple configuration sets.</L-2>
+                  </DESC>
+                  <SUB-CONTAINERS>
+                    <ECUC-PARAM-CONF-CONTAINER-DEF>
+                      <SHORT-NAME>DemEventParameter</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">This container contains the configuration (parameters) for events.</L-2>
+                      </DESC>
+                      <PARAMETERS>
+                        <ECUC-BOOLEAN-PARAM-DEF>
+                          <SHORT-NAME>DemRbIgnorePFCCycleQualificationForPDTCRemoval</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">DemRbIgnorePFCCycleQualificationForPDTCRemoval</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">This parameter defines whether the deletion of the permanent DTC subsequent to a code clear requires the PFC cycle qualification to be satisfied as well (see DemOBDPFCCycleRef). This parameter is relevant only for OBD relevant events and only when Permanent DTC feature is enabled (see DemMaxNumberEventEntryPermanent).</L-2>
+                          </DESC>
+                          <INTRODUCTION>
+                            <P>
+                              <L-1 L="EN">true: The PFC cycle qualification is not necessary for the PDTC removal following a code clear.
+                                          false: The PFC cycle qualification is required for the PDTC removal following a code clear.</L-1>
+                            </P>
+                          </INTRODUCTION>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <SCOPE>LOCAL</SCOPE>
+                          <ORIGIN>RB:AR45.4.1.0:2023-03-06</ORIGIN>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                          <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                        </ECUC-BOOLEAN-PARAM-DEF>
+                      </PARAMETERS>
+                    </ECUC-PARAM-CONF-CONTAINER-DEF>
+                  </SUB-CONTAINERS>
+                </ECUC-PARAM-CONF-CONTAINER-DEF>
+                <ECUC-PARAM-CONF-CONTAINER-DEF>
+                  <SHORT-NAME>DemGeneral</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">This container contains the configuration (parameters) of the BSW Dem.</L-2>
+                  </DESC>
+                  <SUB-CONTAINERS>
+                    <ECUC-PARAM-CONF-CONTAINER-DEF>
+                      <SHORT-NAME>DemGeneralOBD</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">This container contains the Rb configuration (parameters) of the BSW Dem.</L-2>
+                      </DESC>
+                      <SUB-CONTAINERS>
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>DemRbGeneralOBD</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="EN">This container contains the configuration (parameters) of the BSW Dem. Delete container if ObdBasic is not required.</L-2>
+                          </DESC>  
+                          <PARAMETERS>
+                            <ECUC-BOOLEAN-PARAM-DEF>
+                              <SHORT-NAME>DemRbEnableApiSignalEndOfOBDIgnitionCycle</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="EN">
+                                      This configuration switch enables or disables the functionality of the API "Dem_SignalEndOfOBDIgnitionCycle".
+                                      This API can be used to explicitly signal the end of the ignition cycle. Basically this API controls the storing and visibility of Permanent DTCs (see DemRbOBDPermanentDTCVisibilityTiming).
+                                      TRUE: The storing and visibility of permanent DTCs is updated when the API Dem_SignalEndOfOBDIgnitionCycle gets called.
+                                      FALSE: The storing and visibility of permanent DTCs is updated when the ignition cycle is restarted (see DemRbOBDIgnitionCycleRef).
+                                 </L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB:2019-04-25</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                            </ECUC-BOOLEAN-PARAM-DEF>   
+                            <ECUC-BOOLEAN-PARAM-DEF>
+                              <SHORT-NAME>DemRbOBDCalculatePID4D</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">DemRbOBDCalculatePID4D</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">[NON-AUTOSAR] This configuration switch enables or disables the calculationf of PID4D</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB:AR45.0.1.0:2021-06-07</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                            </ECUC-BOOLEAN-PARAM-DEF> 
+                            <ECUC-BOOLEAN-PARAM-DEF>
+                              <SHORT-NAME>DemRbOBDCalculatePID4E</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">DemRbOBDCalculatePID4E</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">[NON-AUTOSAR] This configuration switch enables or disables the calculationf of PID4E</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB:AR45.0.1.0:2021-06-07</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                            </ECUC-BOOLEAN-PARAM-DEF> 							
+                            <ECUC-BOOLEAN-PARAM-DEF>
+                              <SHORT-NAME>DemRbOBDDtcCodesConfigurable</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">DemRbOBDDtcCodesConfigurable</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">This configuration switch defines whether the OBD Dtc codes are configuratble or not. If configurable, the DemDtcCode has to be entered in the DemDtcClass. If not configurable, the 2 higher bytes of the DemDtc is the OBD Dtc code.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB:AR40.8.0.0:2014-02-01</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>true</DEFAULT-VALUE>
+                            </ECUC-BOOLEAN-PARAM-DEF>                           
+                            <ECUC-ENUMERATION-PARAM-DEF>
+                              <SHORT-NAME>DemRbOBDFreezeFrameCapture</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">DemRbOBDFreezeFrameCapture</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">[NON-AUTOSAR] This parameter defines the point in time, when the OBD freeze frame data collection is done for the initial event memory entry.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB:AR40.5.0.0:2013-01-01</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>DEM_TRIGGER_PENDINGDTC</DEFAULT-VALUE>
+                              <LITERALS>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>DEM_TRIGGER_CONFIRMEDDTC</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">DEM_TRIGGER_CONFIRMEDDTC</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB:AR40.5.0.0:2013-01-01</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>DEM_TRIGGER_PENDINGDTC</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">DEM_TRIGGER_PENDINGDTC</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB:AR40.5.0.0:2013-01-01</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                              </LITERALS>
+                            </ECUC-ENUMERATION-PARAM-DEF>
+                            <ECUC-ENUMERATION-PARAM-DEF>
+                              <SHORT-NAME>DemRbOBDFreezeFrameVisibility</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">DemRbOBDFreezeFrameVisibility</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">[NON-AUTOSAR] This parameter defines the point of time, when the OBD freeze frame data is visible to scan tool tester.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB:AR40.10.0.0:2015-04-02</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>DEM_OBDFF_CONFIRMED_DTCS</DEFAULT-VALUE>
+                              <LITERALS>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>DEM_OBDFF_PENDING_AND_CONFIRMED_DTCS</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">DEM_OBDFF_PENDING_AND_CONFIRMED_DTCS</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB:AR40.10.0.0:2015-04-02</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>DEM_OBDFF_CONFIRMED_DTCS</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">DEM_OBDFF_CONFIRMED_DTCS</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB:AR40.10.0.0:2015-04-02</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                              </LITERALS>
+                            </ECUC-ENUMERATION-PARAM-DEF>
+                            <ECUC-ENUMERATION-PARAM-DEF>
+                              <SHORT-NAME>DemRbOBDPermanentDTCVisibilityTiming</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">DemRbOBDPermanentDTCVisibilityTiming</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">[NON-AUTOSAR] This configuration switch defines whether the permanent DTCs are visible immediately, or only after the next init of the Dem or at the end of Ignition Cycle.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB:AR42.7.0.0:2019-11-06</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>IMMEDIATELY</DEFAULT-VALUE>
+                              <LITERALS>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>END_OF_CYCLE</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">END_OF_CYCLE</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB:AR42.7.0.0:2019-11-06</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                                <ECUC-ENUMERATION-LITERAL-DEF>
+                                  <SHORT-NAME>IMMEDIATELY</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">IMMEDIATELY</L-4>
+                                  </LONG-NAME>
+                                  <ORIGIN>RB:AR42.7.0.0:2019-11-06</ORIGIN>
+                                </ECUC-ENUMERATION-LITERAL-DEF>
+                              </LITERALS>
+                            </ECUC-ENUMERATION-PARAM-DEF>                        
+                            <ECUC-BOOLEAN-PARAM-DEF>
+                              <SHORT-NAME>DemRbOBDPid01MisfireMonitorForcedReady</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">DemRbOBDPid01MisfireMonitorForcedReady</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">This parameter controls whether the misfire monitoring group within PID $01 is always indicated as "ready". This parameter is relevant only for compression ignition vehicles. For spark ignition vehicles, the misfire group is automatically indicated as "ready" in PID$01, if it is supported.<BR />
+                                  True: Misfire group status is forced as "ready" <BR />
+                                  False: Misfire group status is not forced as "ready" </L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB-AR45.5.0.0:2023-04-21</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                            </ECUC-BOOLEAN-PARAM-DEF>
+                          <ECUC-ENUMERATION-PARAM-DEF>
+                          <SHORT-NAME>DemRbOBDProtocol</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">DemRbOBDProtocol</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">This parameter defines which OBD protocol shall be used for readiness computation <BR />
+                            (1) DEM_RB_J1979 (OBD Standard) <BR />
+                            (2) DEM_RB_J1979_2 (OBDonUDS)<BR />
+                            (3) DEM_BOTH_PROTOCOL(switch between OBD standard and OBD on UDS in runtime)</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <ORIGIN>RB:RT8 2022.07:2022-07-06</ORIGIN>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                          <DEFAULT-VALUE>DEM_RB_J1979</DEFAULT-VALUE>
+                          <LITERALS>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>DEM_RB_J1979</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">DEM_RB_J1979</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:RT8 2022.07:2022-07-06</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>DEM_RB_J1979_2</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">DEM_RB_J1979_2</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:RT8 2022.07:2022-07-06</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>                         
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>DEM_RB_BOTH_PROTOCOL</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">DEM_RB_BOTH_PROTOCOL</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:RT8 2022.07:2022-07-06</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                          </LITERALS>
+                        </ECUC-ENUMERATION-PARAM-DEF>     
+                        <ECUC-FUNCTION-NAME-DEF>
+                          <SHORT-NAME>DemRbOBDProtocolFnc</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">DemRbOBDProtocolFnc</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Specifies the name of the function which returns the OBD protocol (refer to data type DemRb_ObdProtocolType for implementation) to be used for readiness computation. This parameter is optional, but becomes mandatory if demRbOBDProtocol is set to DEM_RB_BOTH_PROTOCOL.</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <ORIGIN>RB:RT8 2022.07:2022-07-06</ORIGIN>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                        </ECUC-FUNCTION-NAME-DEF>              
+        
+                            <ECUC-BOOLEAN-PARAM-DEF>
+                              <SHORT-NAME>DemRbOBDSupportBlockingPermanentDTC</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">DemRbOBDSupportBlockingPermanentDTC</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">This configuration switch enables the feature to block storing of OBD DTCs to Permanent memory.CAUTION: THIS FEATURE MUST USED ONLY DURING PRODUCTION.!!! OTHERWISE OBD CONFORMITY IS VIOLATED.See document description of the callback API rba_DemObdBasic_IsPermanentDTCStorageDisabled</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB-AR40.13.0.0:2016-10-04</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                            </ECUC-BOOLEAN-PARAM-DEF>
+                            <ECUC-BOOLEAN-PARAM-DEF>
+                              <SHORT-NAME>DemRbOBDSupportObdVariantCoding</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">DemRbOBDSupportObdVariantCoding</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">This configuration switch enables the feature to deactivate the OBD functionality. This feature could be used for variant coding to dynamically switch an OBD project to behave like a non OBD variant. This feature only controls the MIL status. Project specific implementation is necessary. Refer the interface documentation of the API rba_DemObdBasic_IsObdDeactivatedByVariant provided as a template file.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB-AR40.12.0.0:2016-04-12</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                            </ECUC-BOOLEAN-PARAM-DEF>
+                          </PARAMETERS>
+                          <REFERENCES>
+			    <ECUC-REFERENCE-DEF>
+                              <SHORT-NAME>DemRbOBDonUDSFreezeFrameClassRef</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="EN">This reference defines the link to the freeze frame for emission related diagnostics over UDS.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <SCOPE>LOCAL</SCOPE>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <DESTINATION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcucDefs/Dem/DemGeneral/DemFreezeFrameClass</DESTINATION-REF>
+                            </ECUC-REFERENCE-DEF>			
+                            <ECUC-REFERENCE-DEF>
+                              <SHORT-NAME>DemRbOBDIgnitionCycleRef</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="EN">
+                                References the operationCycle which denotes the OBD ignition cycle. The OBD Ignition Cycle is required to compute the ignition cycle counter.
+                                It is also used to control the visibility of Permanent DTCs (see DemRbEnableApiSignalEndOfOBDIgnitionCycle)
+                                </L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <ORIGIN>RB:2019-04-25</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <DESTINATION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcucDefs/Dem/DemGeneral/DemOperationCycle</DESTINATION-REF>
+                            </ECUC-REFERENCE-DEF>
+                            <ECUC-REFERENCE-DEF>
+                              <SHORT-NAME>DemRbOBDSecondIgnitionCycleRef</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="EN">
+                                References the operationCycle which can be used in hybrid vehicles for the fueled engine operation ignition cycle.
+                                </L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <ORIGIN>RB:2022-05-11</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <DESTINATION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcucDefs/Dem/DemGeneral/DemOperationCycle</DESTINATION-REF>
+                            </ECUC-REFERENCE-DEF>
+                          </REFERENCES>           
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                      </SUB-CONTAINERS>
+                    </ECUC-PARAM-CONF-CONTAINER-DEF>
+                   </SUB-CONTAINERS>
+               </ECUC-PARAM-CONF-CONTAINER-DEF>
+             </CONTAINERS>            
+            </ECUC-MODULE-DEF>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

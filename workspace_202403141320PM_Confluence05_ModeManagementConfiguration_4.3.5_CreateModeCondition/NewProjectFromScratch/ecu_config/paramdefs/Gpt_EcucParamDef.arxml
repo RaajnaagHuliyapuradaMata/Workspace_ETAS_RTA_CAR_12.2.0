@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <ADMIN-DATA>
+    <DOC-REVISIONS>
+      <DOC-REVISION>
+        <ISSUED-BY>RB</ISSUED-BY>
+        <DATE>2021-11-30</DATE>
+      </DOC-REVISION>
+    </DOC-REVISIONS>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>AUTOSAR_Gpt</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>EcucModuleDefs</SHORT-NAME>
+          <ELEMENTS>
+            <!-- Module Definition: Gpt -->
+            <ECUC-MODULE-DEF>
+              <SHORT-NAME>Gpt</SHORT-NAME>
+              <LONG-NAME>
+                <L-4 L="EN">MCAL Gpt Driver</L-4>
+              </LONG-NAME>
+              <DESC>
+                <L-2 L="EN">Configuration of the MCAL module GPT</L-2>
+              </DESC>
+              <CATEGORY>VENDOR_SPECIFIC_MODULE_DEFINITION</CATEGORY>
+              <ADMIN-DATA>
+                <DOC-REVISIONS>
+                  <DOC-REVISION>
+                    <REVISION-LABEL>4.2.2</REVISION-LABEL>
+                    <ISSUED-BY>AUTOSAR</ISSUED-BY>
+                    <DATE>2019-04-30</DATE>
+                  </DOC-REVISION>
+                  <DOC-REVISION>
+                    <REVISION-LABEL>0.1.0</REVISION-LABEL>
+                    <ISSUED-BY>RB</ISSUED-BY>
+                    <DATE>2019-04-30</DATE>
+                  </DOC-REVISION>
+                </DOC-REVISIONS>
+              </ADMIN-DATA>
+              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+              <POST-BUILD-VARIANT-SUPPORT>true</POST-BUILD-VARIANT-SUPPORT>
+              <REFINED-MODULE-DEF-REF DEST="ECUC-MODULE-DEF">/AUTOSAR/EcucDefs/Gpt</REFINED-MODULE-DEF-REF>
+              <SUPPORTED-CONFIG-VARIANTS>
+                <SUPPORTED-CONFIG-VARIANT>VARIANT-PRE-COMPILE</SUPPORTED-CONFIG-VARIANT>
+              </SUPPORTED-CONFIG-VARIANTS>
+              <CONTAINERS>
+                <!-- Container Definition: GptChannelConfigSet -->
+                <ECUC-PARAM-CONF-CONTAINER-DEF>
+                  <SHORT-NAME>GptChannelConfigSet</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Channel configuration data set</L-4>
+                  </LONG-NAME>
+                  <DESC>
+                    <L-2 L="EN">This container is the base of a Configuration Set which contains the configured GPT channels. This way, different configuration sets can be defined for post-build process.</L-2>
+                  </DESC>
+                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                  <SUB-CONTAINERS>
+                    <!-- Container Definition: GptChannelConfiguration -->
+                    <ECUC-PARAM-CONF-CONTAINER-DEF>
+                      <SHORT-NAME>GptChannelConfiguration</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">Gpt channel Channel configuration</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">Configuration of an individual GPT channel.</L-2>
+                      </DESC>
+                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1000</UPPER-MULTIPLICITY>
+                      <MULTIPLICITY-CONFIG-CLASSES>
+                        <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                      </MULTIPLICITY-CONFIG-CLASSES>
+                      <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                      <PARAMETERS>
+                        <!-- PARAMETER DEFINITION: GptChannelId -->
+                        <ECUC-INTEGER-PARAM-DEF>
+                          <SHORT-NAME>GptChannelId</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Gpt channel Id</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Channel Id of the GPT channel. This value will be assigned to the symbolic name derived of the GptChannelConfiguration container short name.Please don&apos;t assign any value to this parameter. It would be calculated automatically.</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>true</SYMBOLIC-NAME-VALUE>
+                          <WITH-AUTO>true</WITH-AUTO>
+                          <MAX>4294967295</MAX>
+                          <MIN>0</MIN>
+                        </ECUC-INTEGER-PARAM-DEF>
+                        <!-- PARAMETER DEFINITION: GptChannelMode -->
+                        <ECUC-ENUMERATION-PARAM-DEF>
+                          <SHORT-NAME>GptChannelMode</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Gpt channel Mode</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Specifies the behaviour of the timer channel after the target time is reached.</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                          <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                          <LITERALS>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>GPT_CH_MODE_CONTINUOUS</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Timer restarts after reaching the target time</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>GPT_CH_MODE_ONESHOT</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Timer stops after reaching the target time</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                          </LITERALS>
+                        </ECUC-ENUMERATION-PARAM-DEF>
+                        <!-- PARAMETER DEFINITION: GptChannelTickFrequency -->
+                        <ECUC-FLOAT-PARAM-DEF>
+                          <SHORT-NAME>GptChannelTickFrequency</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Gpt channel Tick Frequency</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Specifies the tick frequency of the timer channel in Hz.<BR/>
+<BR/>
+Here are the possible values for ATOM:<BR/>
+1. 50000000 (50 MHz)<BR/>
+2. 20000000 (20 MHz)<BR/>
+3. 2500000 (2.5 MHz)<BR/>
+4. 100000000 (100 MHz)<BR/>
+<BR/>
+For TOM:<BR/>
+1) 50000000 (50 MHz)<BR/>
+2) 3125000 (3.125 MHz)<BR/>
+3) 195312 (195.312 KHz)<BR/>
+4) 12207 <BR/>
+5) 763</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                          <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                          <MAX>INF</MAX>
+                          <MIN>0</MIN>
+                        </ECUC-FLOAT-PARAM-DEF>
+                        <!-- PARAMETER DEFINITION: GptChannelTickValueMax -->
+                        <ECUC-INTEGER-PARAM-DEF>
+                          <SHORT-NAME>GptChannelTickValueMax</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Gpt Channel Tick Value Max</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Maximum value in ticks, the timer channel is able to count.With the next tick, the timer rolls over to zero</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                          <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                          <MAX>16777215</MAX>
+                          <MIN>0</MIN>
+                        </ECUC-INTEGER-PARAM-DEF>
+                        <!-- PARAMETER DEFINITION: GptEnableWakeup -->
+                        <ECUC-BOOLEAN-PARAM-DEF>
+                          <SHORT-NAME>GptEnableWakeup</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Gpt Enable Wakeup</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Enables the wakeup capability of a Gpt channel.<BR/>
+Wake up functionality is not supported by Gpt driver.<BR/>
+Irrespective of the value given for &quot;Gpt Enable Wakeup&quot;, it will always be taken as FALSE.</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                          <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                        </ECUC-BOOLEAN-PARAM-DEF>
+                        <!-- PARAMETER DEFINITION: GptNotification -->
+                        <ECUC-FUNCTION-NAME-DEF>
+                          <SHORT-NAME>GptNotification</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Gpt Notification</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Function pointer to callback function (for non-wakeup notification)</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                          <ECUC-FUNCTION-NAME-DEF-VARIANTS>
+                            <ECUC-FUNCTION-NAME-DEF-CONDITIONAL/>
+                          </ECUC-FUNCTION-NAME-DEF-VARIANTS>
+                        </ECUC-FUNCTION-NAME-DEF>
+                        <!-- PARAMETER DEFINITION: GptRbUserHeaderFileNameInclusion -->
+                        <ECUC-FUNCTION-NAME-DEF>
+                          <SHORT-NAME>GptRbUserHeaderFileNameInclusion</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Gpt User Header File Name Inclusion</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Include end user (Application) required header file name into Gpt Notifiy file.    Example if one want to include &quot; Gpt.h &quot; header file, just enter &quot; Gpt &quot;</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                          <ECUC-FUNCTION-NAME-DEF-VARIANTS>
+                            <ECUC-FUNCTION-NAME-DEF-CONDITIONAL/>
+                          </ECUC-FUNCTION-NAME-DEF-VARIANTS>
+                        </ECUC-FUNCTION-NAME-DEF>
+                        <!-- PARAMETER DEFINITION: rba_GtmChannel -->
+                        <ECUC-ENUMERATION-PARAM-DEF>
+                          <SHORT-NAME>rba_GtmChannel</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">GTM Timer channel</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">GTM Timer channel. If you are still assigning the GTM Timer channel in the rba_Gtm configuration, please don&apos;t create this element.</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <ORIGIN>RB:0.1.0:2012-08-28</ORIGIN>
+                          <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                          <LITERALS>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>CH0</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">CH0</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-07-05</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>CH1</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">CH1</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-07-05</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>CH2</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">CH2</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-07-05</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>CH3</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">CH3</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-07-05</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>CH4</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">CH4</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-07-05</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>CH5</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">CH5</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-07-05</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>CH6</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">CH6</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-07-05</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>CH7</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">CH7</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-07-05</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>CH8</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">CH8</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-07-05</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>CH9</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">CH9</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-07-05</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>CH10</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">CH10</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-07-05</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>CH11</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">CH11</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-07-05</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>CH12</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">CH12</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-07-05</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>CH13</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">CH13</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-07-05</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>CH14</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">CH14</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-07-05</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>CH15</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">CH15</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-07-05</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                          </LITERALS>
+                        </ECUC-ENUMERATION-PARAM-DEF>
+                        <!-- PARAMETER DEFINITION: rba_GtmModule -->
+                        <ECUC-ENUMERATION-PARAM-DEF>
+                          <SHORT-NAME>rba_GtmModule</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">GTM Timer module</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">GTM Timer module.  If you are still assigning the GTM Timer module in the rba_Gtm configuration, please don&apos;t create this element.</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <ORIGIN>RB:0.1.0:2012-08-28</ORIGIN>
+                          <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                          <LITERALS>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>ATOM0</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">ATOM0</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-08-23</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>ATOM1</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">ATOM1</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-08-23</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>ATOM2</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">ATOM2</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-08-23</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>ATOM3</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">ATOM3</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-08-23</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>ATOM4</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">ATOM4</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-08-23</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>ATOM5</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">ATOM5</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-08-23</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>ATOM6</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">ATOM6</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-08-23</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>ATOM7</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">ATOM7</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-08-23</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>ATOM8</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">ATOM8</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-08-23</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>ATOM9</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">ATOM9</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RBv1.23.0:2015-10-06</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>ATOM10</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">ATOM10</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RBv1.23.0:2015-10-06</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>ATOM11</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">ATOM11</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RBv1.23.0:2015-10-06</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>TOM0</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">TOM0</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-06-15</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>TOM1</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">TOM1</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-06-15</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>TOM2</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">TOM2</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-06-15</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>TOM3</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">TOM3</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RB:v0.1.0:2011-06-15</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>TOM4</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">TOM4</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RBv1.23.0:2015-10-06</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                            <ECUC-ENUMERATION-LITERAL-DEF>
+                              <SHORT-NAME>TOM5</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">TOM5</L-4>
+                              </LONG-NAME>
+                              <ORIGIN>RBv1.23.0:2015-10-06</ORIGIN>
+                            </ECUC-ENUMERATION-LITERAL-DEF>
+                          </LITERALS>
+                        </ECUC-ENUMERATION-PARAM-DEF>
+                      </PARAMETERS>
+                      <REFERENCES>
+                        <!-- Reference Definition: GptChannelClkSrcRef -->
+                        <ECUC-REFERENCE-DEF>
+                          <SHORT-NAME>GptChannelClkSrcRef</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Reference to GptClockReference</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Reference to the GptClockReferencePoint from which the channel clock is derived</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <DESTINATION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Gpt/EcucModuleDefs/Gpt/GptDriverConfiguration/GptClockReferencePoint</DESTINATION-REF>
+                        </ECUC-REFERENCE-DEF>
+                      </REFERENCES>
+                      <SUB-CONTAINERS>
+                        <!-- Container Definition: GptWakeupConfiguration -->
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>GptWakeupConfiguration</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Gpt Wakeup  configuration</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Function pointer to callback function (for non-wakeup notification). Wake up functionality is not supported by Gpt driver.</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <REFERENCES>
+                            <!-- Reference Definition: GptWakeupSourceRef -->
+                            <ECUC-REFERENCE-DEF>
+                              <SHORT-NAME>GptWakeupSourceRef</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Gpt Wakeup Ref</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">In case the wakeup-capability is true this value is transmitted to the Ecu State Manager. Implementation Type: reference to EcuM_WakeupSourceType. Wake up functionality is not supported by Gpt driver.</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                              <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <DESTINATION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Mcu/EcucModuleDefs/Mcu/McuModuleConfiguration/EcuMWakeupSource</DESTINATION-REF>
+                            </ECUC-REFERENCE-DEF>
+                          </REFERENCES>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                      </SUB-CONTAINERS>
+                    </ECUC-PARAM-CONF-CONTAINER-DEF>
+                  </SUB-CONTAINERS>
+                </ECUC-PARAM-CONF-CONTAINER-DEF>
+                <!-- Container Definition: GptConfigurationOfOptApiServices -->
+                <ECUC-PARAM-CONF-CONTAINER-DEF>
+                  <SHORT-NAME>GptConfigurationOfOptApiServices</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Gpt Configuration of optional API services</L-4>
+                  </LONG-NAME>
+                  <DESC>
+                    <L-2 L="EN">This container contains all configuration switches for configuring optional API services of the GPT driver</L-2>
+                  </DESC>
+                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                  <PARAMETERS>
+                    <!-- PARAMETER DEFINITION: GptEnableDisableNotificationApi -->
+                    <ECUC-BOOLEAN-PARAM-DEF>
+                      <SHORT-NAME>GptEnableDisableNotificationApi</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">GptEnableDisableNotificationApi</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">Adds / removes the services Gpt_EnableNotification() and Gpt_DisableNotification from the code.</L-2>
+                      </DESC>
+                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                    </ECUC-BOOLEAN-PARAM-DEF>
+                    <!-- PARAMETER DEFINITION: GptTimeElapsedApi -->
+                    <ECUC-BOOLEAN-PARAM-DEF>
+                      <SHORT-NAME>GptTimeElapsedApi</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">Gpt Time Elapsed API</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">Adds / removes the service Gpt_GetTimeElapsed() from the code</L-2>
+                      </DESC>
+                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                    </ECUC-BOOLEAN-PARAM-DEF>
+                    <!-- PARAMETER DEFINITION: GptTimeRemainingApi -->
+                    <ECUC-BOOLEAN-PARAM-DEF>
+                      <SHORT-NAME>GptTimeRemainingApi</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">Gpt Time RemainingApi API</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">Adds / removes the service Gpt_GetTimeRemaining() from the code.</L-2>
+                      </DESC>
+                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                    </ECUC-BOOLEAN-PARAM-DEF>
+                    <!-- PARAMETER DEFINITION: GptVersionInfoApi -->
+                    <ECUC-BOOLEAN-PARAM-DEF>
+                      <SHORT-NAME>GptVersionInfoApi</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">Gpt VersionInfo API</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">Adds / removes the service Gpt_GetVersionInfo() from the code.</L-2>
+                      </DESC>
+                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                    </ECUC-BOOLEAN-PARAM-DEF>
+                    <!-- PARAMETER DEFINITION: GptWakeupFunctionalityApi -->
+                    <ECUC-BOOLEAN-PARAM-DEF>
+                      <SHORT-NAME>GptWakeupFunctionalityApi</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">Gpt Wakeup functionality</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">Adds / removes the services Gpt_SetMode(), Gpt_EnableWakeup() Gpt_DisableWakeup() and Gpt_CheckWakeup() from the code. 
+Wake up functionality is not supported by Gpt driver.</L-2>
+                      </DESC>
+                      <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <MULTIPLICITY-CONFIG-CLASSES>
+                        <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                      </MULTIPLICITY-CONFIG-CLASSES>
+                      <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                      <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                    </ECUC-BOOLEAN-PARAM-DEF>
+                  </PARAMETERS>
+                </ECUC-PARAM-CONF-CONTAINER-DEF>
+                <!-- Container Definition: GptDriverConfiguration -->
+                <ECUC-PARAM-CONF-CONTAINER-DEF>
+                  <SHORT-NAME>GptDriverConfiguration</SHORT-NAME>
+                  <LONG-NAME>
+                    <L-4 L="EN">Gpt Driver configuration</L-4>
+                  </LONG-NAME>
+                  <DESC>
+                    <L-2 L="EN">This container contains configuration options for general services of the GPT driver</L-2>
+                  </DESC>
+                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                  <PARAMETERS>
+                    <!-- PARAMETER DEFINITION: GptDevErrorDetect -->
+                    <ECUC-BOOLEAN-PARAM-DEF>
+                      <SHORT-NAME>GptDevErrorDetect</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">Gpt Error Detection</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">Enables/Disables development error detection.</L-2>
+                      </DESC>
+                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                    </ECUC-BOOLEAN-PARAM-DEF>
+                    <!-- PARAMETER DEFINITION: GptReportWakeupSource -->
+                    <ECUC-BOOLEAN-PARAM-DEF>
+                      <SHORT-NAME>GptReportWakeupSource</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">GPT Report Wakeup source</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">Enables/Disables wakeup source reporting.
+Wake up functionality is not supported by Gpt driver.</L-2>
+                      </DESC>
+                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                      <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                      <VALUE-CONFIG-CLASSES>
+                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                      </VALUE-CONFIG-CLASSES>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                    </ECUC-BOOLEAN-PARAM-DEF>
+                  </PARAMETERS>
+                  <SUB-CONTAINERS>
+                    <!-- Container Definition: GptClockReferencePoint -->
+                    <ECUC-PARAM-CONF-CONTAINER-DEF>
+                      <SHORT-NAME>GptClockReferencePoint</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">Gpt clock reference point</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">This container contains a parameter, which represents a reference to a container of the type McuClockReferencePoint (defined in module MCU).</L-2>
+                      </DESC>
+                      <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY-INFINITE>true</UPPER-MULTIPLICITY-INFINITE>
+                      <MULTIPLICITY-CONFIG-CLASSES>
+                        <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                      </MULTIPLICITY-CONFIG-CLASSES>
+                      <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                      <REFERENCES>
+                        <!-- Reference Definition: GptClockReference -->
+                        <ECUC-REFERENCE-DEF>
+                          <SHORT-NAME>GptClockReference</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">GPT  Clock Reference</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">Reference to a container of the type McuClockReferencePoint, to select an input clock. The configuration editor for the GPT module can support the integrator by only allowing a selection of those clock referencepoints that can be connected physically to the GPT hardware peripheral. The desired frequency (desired by GPT) has to be the same as the selected and provided frequency of the MCU configuration. This has to be checked automatically.</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <ORIGIN>AUTOSAR_ECUC</ORIGIN>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                          <VALUE-CONFIG-CLASSES>
+                            <ECUC-VALUE-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-VALUE-CONFIGURATION-CLASS>
+                          </VALUE-CONFIG-CLASSES>
+                          <DESTINATION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Mcu/EcucModuleDefs/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint</DESTINATION-REF>
+                        </ECUC-REFERENCE-DEF>
+                      </REFERENCES>
+                    </ECUC-PARAM-CONF-CONTAINER-DEF>
+                  </SUB-CONTAINERS>
+                </ECUC-PARAM-CONF-CONTAINER-DEF>
+              </CONTAINERS>
+            </ECUC-MODULE-DEF>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

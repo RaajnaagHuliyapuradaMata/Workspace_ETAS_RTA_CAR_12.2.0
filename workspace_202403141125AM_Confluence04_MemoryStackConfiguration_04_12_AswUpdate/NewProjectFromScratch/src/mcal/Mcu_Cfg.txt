@@ -1,0 +1,30 @@
+# Auto Generated
+general_configuration: 
+ dev_error_detect = false
+ get_ram_state_api = false
+ init_clock = true
+ no_pll = true
+ perform_reset_api = true
+ version_info_api = false
+module_configuration: 
+ clock_src_failure_notification = DISABLED
+ number_of_mcu_modes = 1
+ ram_sectors = 0
+ reset_setting = 1
+ clock_setting_config: 
+  0: McuClockSettingConfig
+   setting_id = 1
+   clock_reference_point: 
+    0: McuClockReferencePoint
+     frequency = 0.0
+ dem_event_parameter_refs: 
+  mcu_e_clock_failure = 
+ mode_setting_conf: 
+  0: McuModeSettingConf
+   mode = 1
+ ram_sector_setting_conf: 
+published_information: 
+ reset_reason_conf: 
+  0: McuResetReasonConf
+   reset_reason = 0
+
